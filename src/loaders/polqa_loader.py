@@ -7,8 +7,6 @@ from questions import OpenQuestion, Question
 
 from .base import Loader
 
-JSONL_PATH = Path("datasets/polqa.csv")
-
 class PolQALoader(Loader):
     def load(self) -> list[Question]:
         """Load questions from the PolQA CSV file, keeping only relevant=True rows."""
@@ -16,7 +14,7 @@ class PolQALoader(Loader):
         questions: list[Question] = []
         seen: set[tuple[str, str]] = set()
 
-        with JSONL_PATH.open("r", encoding="utf-8") as file:
+        with Path("datasets/polqa.csv").open("r", encoding="utf-8") as file:
             reader = csv.DictReader(file)
             for row in reader:
                 if row.get("relevant", "").strip() != "True":

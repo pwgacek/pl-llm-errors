@@ -12,16 +12,14 @@ from .base import Loader
 
 TARGET_TYPE = "Egzaminy Maturalne"
 TARGET_NAME = "Matematyka"
-JSONL_PATH = Path("datasets/llmzszl.jsonl")
 
 
 class LLMZSZLLoader(Loader):
     def load(self) -> list[Question]:
         """Load questions from a JSONL file filtered to Matura Math entries."""
-        path = JSONL_PATH
         questions: list[Question] = []
 
-        with path.open("r", encoding="utf-8") as file:
+        with Path("datasets/llmzszl.jsonl").open("r", encoding="utf-8") as file:
             for line_no, raw_line in enumerate(file, start=1):
                 line = raw_line.strip()
                 if not line:

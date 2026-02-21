@@ -8,16 +8,13 @@ from questions import MultipleChoiceQuestion, Question
 
 from .base import Loader
 
-JSONL_PATH = Path("datasets/belebele-pol.jsonl")
-
 
 class BelebeleLoader(Loader):
     def load(self) -> list[Question]:
         """Load questions from Belebele JSONL file."""
-        path = JSONL_PATH
         questions: list[Question] = []
 
-        with path.open("r", encoding="utf-8") as file:
+        with Path("datasets/belebele-pol.jsonl").open("r", encoding="utf-8") as file:
             for line_no, raw_line in enumerate(file, start=1):
                 line = raw_line.strip()
                 if not line:
