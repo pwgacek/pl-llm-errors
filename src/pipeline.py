@@ -6,13 +6,13 @@ import random
 import sys
 import time
 import urllib.error
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 
 from download import download_file
 from loaders import BelebeleLoader, CDSLoader, LDEKLoader, LLMZSZLLoader, PolQALoader
-from ollama import ask_ollama
-from questions import VerificationResult
+from model import ask_model
 
 DATASETS = [
     {
@@ -96,11 +96,13 @@ def step_load() -> dict[str, list]:
 def step_evaluate(
     loaded: dict[str, list],
     model: str,
-    host: str,
+    base_url: str,
+    api_key: str,
     num_questions: int,
     seed: int,
+    workers: int = 4,
 ) -> dict[str, dict]:
-    print("\n=== Step 3: Evaluating with Ollama ===")
+    print("\n=== Step 3: Evaluating ===")
     rng = random.Random(seed)
     results: dict[str, dict] = {}
 
@@ -109,35 +111,35 @@ def step_evaluate(
         sampled = rng.sample(questions, sample_size)
         print(f"\n  [{name}] Asking {sample_size}/{len(questions)} questions ...")
 
-        correct = incorrect = error = 0
-        records = []
         dataset_start = time.perf_counter()
 
-        for i, q in enumerate(sampled, start=1):
+        def ask_one(args: tuple[int, object]) -> dict:
+            i, q = args
             prompt = q.build_prompt()
             t0 = time.perf_counter()
             try:
-                raw = ask_ollama(model, prompt, host)
+                raw = ask_model(model, prompt, base_url, api_key)
             except RuntimeError as e:
-                print(f"    [{i}/{sample_size}] Ollama error: {e}")
-                error += 1
-                records.append({"question": q.build_prompt(), "result": "ERROR", "elapsed": 0.0})
-                continue
+                print(f"    [{i}/{sample_size}] Model error: {e}")
+                return {"index": i, "question": prompt, "result": "ERROR", "elapsed": 0.0}
             elapsed = time.perf_counter() - t0
-
             verdict = q.verify_answer(raw)
-            label = verdict.name  # "CORRECT" / "INCORRECT" / "ERROR"
-            if verdict == VerificationResult.CORRECT:
-                correct += 1
-            elif verdict == VerificationResult.INCORRECT:
-                incorrect += 1
-            else:
-                error += 1
-
+            label = verdict.name
             symbol = {"CORRECT": "✅", "INCORRECT": "❌", "ERROR": "⚠️"}.get(label, "")
             print(f"    [{i}/{sample_size}] {label} {symbol}  ({elapsed:.2f}s)")
-            records.append({"question": q.build_prompt(), "raw_answer": raw, "result": label, "elapsed": round(elapsed, 3)})
+            return {"index": i, "question": prompt, "raw_answer": raw, "result": label, "elapsed": round(elapsed, 3)}
 
+        with ThreadPoolExecutor(max_workers=workers) as executor:
+            futures = {executor.submit(ask_one, (i, q)): i for i, q in enumerate(sampled, start=1)}
+            raw_records = [f.result() for f in as_completed(futures)]
+
+        # Sort by original index to keep deterministic order in the report
+        raw_records.sort(key=lambda r: r["index"])
+        records = [{k: v for k, v in r.items() if k != "index"} for r in raw_records]
+
+        correct = sum(1 for r in records if r["result"] == "CORRECT")
+        incorrect = sum(1 for r in records if r["result"] == "INCORRECT")
+        error = sum(1 for r in records if r["result"] == "ERROR")
         dataset_elapsed = time.perf_counter() - dataset_start
         total = correct + incorrect + error
         accuracy = correct / total if total > 0 else 0.0
@@ -162,9 +164,11 @@ def step_evaluate(
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="End-to-end pipeline: download → load → evaluate → report.")
-    parser.add_argument("--model", default="SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0", help="Ollama model name.")
-    parser.add_argument("--host", default="http://localhost:11434", help="Ollama host URL.")
+    parser.add_argument("--model", default="SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0", help="Model name.")
+    parser.add_argument("--base-url", default="http://localhost:11434/v1", help="OpenAI-compatible API base URL (Ollama: http://localhost:11434/v1, vLLM: http://<server>:8000/v1).")
+    parser.add_argument("--api-key", default="ollama", help="API key (use 'ollama' for Ollama, set appropriately for vLLM).")
     parser.add_argument("--num-questions", type=int, default=20, help="Random questions per dataset (default: 20).")
+    parser.add_argument("--workers", type=int, default=1, help="Parallel workers for model requests (default: 1).")
     parser.add_argument("--seed", type=int, default=42, help="Random seed (default: 42).")
     parser.add_argument("--report", default="results/report.json", help="Output report file path (default: report.json).")
     parser.add_argument("--skip-download", action="store_true", help="Skip the download step.")
@@ -180,7 +184,7 @@ def main() -> None:
         print("No datasets loaded. Exiting.")
         sys.exit(1)
 
-    results = step_evaluate(loaded, args.model, args.host, args.num_questions, args.seed)
+    results = step_evaluate(loaded, args.model, args.base_url, args.api_key, args.num_questions, args.seed, args.workers)
 
     # Overall summary
     total_correct = sum(r["correct"] for r in results.values())
@@ -193,10 +197,15 @@ def main() -> None:
     print(f"  correct={total_correct}  incorrect={total_incorrect}  error={total_error}  accuracy={overall_accuracy:.2%}")
 
     # Write report
+    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d_%H-%M-%S")
+    base_path = Path(args.report)
+    report_path = base_path.parent / f"{base_path.stem}_{timestamp}{base_path.suffix}"
     report = {
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "model": args.model,
+        "base_url": args.base_url,
         "seed": args.seed,
+        "workers": args.workers,
         "num_questions_per_dataset": args.num_questions,
         "overall": {
             "correct": total_correct,
@@ -207,8 +216,7 @@ def main() -> None:
         },
         "datasets": results,
     }
-
-    report_path = Path(args.report)
+    report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"\nReport written to: {report_path}")
 
