@@ -1,8 +1,6 @@
 from __future__ import annotations
 
-import sys
 import tempfile
-import urllib.error
 import urllib.request
 import zipfile
 from pathlib import Path
