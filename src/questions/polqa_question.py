@@ -5,8 +5,8 @@ import ast
 from .base import Question, VerificationResult
 
 
-class OpenQuestion(Question):
-    """Open-ended question with a context passage and a list of accepted free-text answers."""
+class PolqaQuestion(Question):
+    """PolQA open-ended question with a context passage and a list of accepted free-text answers."""
 
     def __init__(self, question: str, context: str, answers: list[str]) -> None:
         self.question = question
@@ -42,7 +42,7 @@ class OpenQuestion(Question):
         return (
             "Odpowiedz na pytanie na podstawie załączonego kontekstu.\n"
             "Odpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n"
-            f"<KONTEKST>:{self.context}</KONTEKST>\n"
-            f"<PYTANIE>:{question}</PYTANIE>\n"
+            f"<KONTEKST>{self.context}</KONTEKST>\n"
+            f"<PYTANIE>{question}</PYTANIE>\n"
             
         )

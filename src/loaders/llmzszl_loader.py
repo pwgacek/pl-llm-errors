@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from questions import MultipleChoiceQuestion, Question
+from questions import LlmzszlQuestion, Question
 
 from .base import Loader
 
@@ -37,6 +37,6 @@ class LLMZSZLLoader(Loader):
                     question_text = str(record.get("question", ""))
                     answers = list(record.get("answers", []))
                     correct_index = int(record.get("correct_answer_index", -1))
-                    questions.append(MultipleChoiceQuestion(question_text, answers, correct_index))
+                    questions.append(LlmzszlQuestion(question_text, answers, correct_index))
 
         return questions

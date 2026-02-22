@@ -3,7 +3,7 @@ from __future__ import annotations
 from .base import Question, VerificationResult
 
 
-class TextualEntailmentQuestion(Question):
+class CdsQuestion(Question):
     def __init__(self, sentence_a: str, sentence_b: str, entailment_judgment: str) -> None:
         self.sentence_a = sentence_a
         self.sentence_b = sentence_b
@@ -35,6 +35,6 @@ class TextualEntailmentQuestion(Question):
             "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), "
             "sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\n"
             "Odpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n"
-            f"<ZDANIE_A>:{self.sentence_a}</ZDANIE_A>\n"
-            f"<ZDANIE_B>:{self.sentence_b}</ZDANIE_B>\n"
+            f"<ZDANIE_A>{self.sentence_a}</ZDANIE_A>\n"
+            f"<ZDANIE_B>{self.sentence_b}</ZDANIE_B>\n"
         )

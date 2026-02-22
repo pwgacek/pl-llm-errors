@@ -1,7 +1,8 @@
 from .base import Question, VerificationResult
-from .contextual_multiple_choice import ContextualMultipleChoiceQuestion
-from .multiple_choice import MultipleChoiceQuestion
-from .open_question import OpenQuestion
-from .textual_entailment import TextualEntailmentQuestion
+from .belebele_question import BelebeleQuestion
+from .cds_question import CdsQuestion
+from .ldek_question import LDEKQuestion
+from .llmzszl_question import LlmzszlQuestion
+from .polqa_question import PolqaQuestion
 
-__all__ = ["Question", "VerificationResult", "MultipleChoiceQuestion", "ContextualMultipleChoiceQuestion", "OpenQuestion", "TextualEntailmentQuestion"]
+__all__ = ["Question", "VerificationResult", "LlmzszlQuestion", "BelebeleQuestion", "PolqaQuestion", "CdsQuestion", "LDEKQuestion"]

@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from questions import MultipleChoiceQuestion, Question
+from questions import LlmzszlQuestion, Question
 
 from .base import Loader
 
@@ -34,6 +34,6 @@ class BelebeleLoader(Loader):
                 ]
                 correct_num = int(record.get("correct_answer_num", 0))
                 correct_index = correct_num - 1  # Shift from 1-4 to 0-3
-                questions.append(MultipleChoiceQuestion(question_text, answers, correct_index))
+                questions.append(LlmzszlQuestion(question_text, answers, correct_index))
 
         return questions

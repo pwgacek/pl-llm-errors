@@ -3,7 +3,7 @@ from __future__ import annotations
 import csv
 from pathlib import Path
 
-from questions import OpenQuestion, Question
+from questions import PolqaQuestion, Question
 
 from .base import Loader
 
@@ -27,7 +27,7 @@ class PolQALoader(Loader):
                     continue
                 seen.add(key)
 
-                answers = OpenQuestion.parse_answers(row.get("answers", "[]"))
-                questions.append(OpenQuestion(question_text, context, answers))
+                answers = PolqaQuestion.parse_answers(row.get("answers", "[]"))
+                questions.append(PolqaQuestion(question_text, context, answers))
 
         return questions

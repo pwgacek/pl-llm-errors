@@ -6,7 +6,7 @@ from typing import Any
 from .base import Question, VerificationResult
 
 
-class MultipleChoiceQuestion(Question):
+class LlmzszlQuestion(Question):
     def __init__(self, question: str, answers: list[str], correct_answer_index: int) -> None:
         self.question = question
         self.answers = answers
@@ -56,6 +56,6 @@ class MultipleChoiceQuestion(Question):
         return (
             "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród 4 możliwych.\n"
             "Odpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n"
-            f"<PYTANIE>:{question}</PYTANIE>\n"
-            f"<ODPOWIEDZI>:{choices}</ODPOWIEDZI>\n"
+            f"<PYTANIE>{question}</PYTANIE>\n"
+            f"<ODPOWIEDZI>{choices}</ODPOWIEDZI>\n"
         )

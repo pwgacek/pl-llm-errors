@@ -3,7 +3,7 @@ from __future__ import annotations
 import csv
 from pathlib import Path
 
-from questions import TextualEntailmentQuestion, Question
+from questions import CdsQuestion, Question
 
 from .base import Loader
 
@@ -21,6 +21,6 @@ class CDSLoader(Loader):
                 entailment_judgment = row.get("entailment_judgment", "").strip()
                 
                 if sentence_a and sentence_b and entailment_judgment:
-                    questions.append(TextualEntailmentQuestion(sentence_a, sentence_b, entailment_judgment))
+                    questions.append(CdsQuestion(sentence_a, sentence_b, entailment_judgment))
 
         return questions
