@@ -3,6 +3,8 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from enum import Enum
 
+from errors.base import ErrorGenerator
+
 
 class VerificationResult(Enum):
     CORRECT = "Correct"
@@ -16,5 +18,5 @@ class Question(ABC):
         raise NotImplementedError
     
     @abstractmethod
-    def build_prompt(self) -> str:
+    def build_prompt(self, error_generator: ErrorGenerator) -> str:
         raise NotImplementedError

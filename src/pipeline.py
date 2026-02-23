@@ -11,8 +11,16 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from download import download_file
+from errors import DiacriticErrorGenerator, IdentityGenerator, PunctuationErrorGenerator
+from errors.base import ErrorGenerator
 from loaders import BelebeleLoader, CDSLoader, LDEKLoader, LLMZSZLLoader, PolQALoader
 from model import ask_model
+
+GENERATORS: dict[str, ErrorGenerator] = {
+    "identity": IdentityGenerator(),
+    "diacritic": DiacriticErrorGenerator(),
+    "punctuation": PunctuationErrorGenerator(),
+}
 
 DATASETS = [
     {
@@ -109,51 +117,53 @@ def step_evaluate(
     for name, questions in loaded.items():
         sample_size = min(num_questions, len(questions))
         sampled = rng.sample(questions, sample_size)
-        print(f"\n  [{name}] Asking {sample_size}/{len(questions)} questions ...")
+        results[name] = {}
 
-        dataset_start = time.perf_counter()
+        for gen_name, error_generator in GENERATORS.items():
+            print(f"\n  [{name}] generator={gen_name}  asking {sample_size}/{len(questions)} questions ...")
 
-        def ask_one(args: tuple[int, object]) -> dict:
-            i, q = args
-            prompt = q.build_prompt()
-            t0 = time.perf_counter()
-            try:
-                raw = ask_model(model, prompt, base_url, api_key)
-            except RuntimeError as e:
-                print(f"    [{i}/{sample_size}] Model error: {e}")
-                return {"index": i, "question": prompt, "result": "ERROR", "elapsed": 0.0}
-            elapsed = time.perf_counter() - t0
-            verdict = q.verify_answer(raw)
-            label = verdict.name
-            symbol = {"CORRECT": "✅", "INCORRECT": "❌", "ERROR": "⚠️"}.get(label, "")
-            print(f"    [{i}/{sample_size}] {label} {symbol}  ({elapsed:.2f}s)")
-            return {"index": i, "question": prompt, "raw_answer": raw, "result": label, "elapsed": round(elapsed, 3)}
+            dataset_start = time.perf_counter()
 
-        with ThreadPoolExecutor(max_workers=workers) as executor:
-            futures = {executor.submit(ask_one, (i, q)): i for i, q in enumerate(sampled, start=1)}
-            raw_records = [f.result() for f in as_completed(futures)]
+            def ask_one(args: tuple[int, object]) -> dict:
+                i, q = args
+                prompt = q.build_prompt(error_generator)
+                t0 = time.perf_counter()
+                try:
+                    raw = ask_model(model, prompt, base_url, api_key)
+                except RuntimeError as e:
+                    print(f"    [{i}/{sample_size}] Model error: {e}")
+                    return {"index": i, "prompt": prompt, "result": "ERROR", "elapsed": 0.0}
+                elapsed = time.perf_counter() - t0
+                verdict = q.verify_answer(raw)
+                label = verdict.name
+                symbol = {"CORRECT": "✅", "INCORRECT": "❌", "ERROR": "⚠️"}.get(label, "")
+                print(f"    [{i}/{sample_size}] {label} {symbol}  ({elapsed:.2f}s)")
+                return {"index": i, "prompt": prompt, "raw_answer": raw, "result": label, "elapsed": round(elapsed, 3)}
 
-        # Sort by original index to keep deterministic order in the report
-        raw_records.sort(key=lambda r: r["index"])
-        records = [{k: v for k, v in r.items() if k != "index"} for r in raw_records]
+            with ThreadPoolExecutor(max_workers=workers) as executor:
+                futures = {executor.submit(ask_one, (i, q)): i for i, q in enumerate(sampled, start=1)}
+                raw_records = [f.result() for f in as_completed(futures)]
 
-        correct = sum(1 for r in records if r["result"] == "CORRECT")
-        incorrect = sum(1 for r in records if r["result"] == "INCORRECT")
-        error = sum(1 for r in records if r["result"] == "ERROR")
-        dataset_elapsed = time.perf_counter() - dataset_start
-        total = correct + incorrect + error
-        accuracy = correct / total if total > 0 else 0.0
-        print(f"  [{name}] correct={correct}  incorrect={incorrect}  error={error}  accuracy={accuracy:.2%}  time={dataset_elapsed:.1f}s")
+            raw_records.sort(key=lambda r: r["index"])
+            records = [{k: v for k, v in r.items() if k != "index"} for r in raw_records]
 
-        results[name] = {
-            "num_sampled": sample_size,
-            "correct": correct,
-            "incorrect": incorrect,
-            "error": error,
-            "accuracy": accuracy,
-            "elapsed_sec": round(dataset_elapsed, 2),
-            "questions": records,
-        }
+            correct = sum(1 for r in records if r["result"] == "CORRECT")
+            incorrect = sum(1 for r in records if r["result"] == "INCORRECT")
+            error = sum(1 for r in records if r["result"] == "ERROR")
+            dataset_elapsed = time.perf_counter() - dataset_start
+            total = correct + incorrect + error
+            accuracy = correct / total if total > 0 else 0.0
+            print(f"  [{name}/{gen_name}] correct={correct}  incorrect={incorrect}  error={error}  accuracy={accuracy:.2%}  time={dataset_elapsed:.1f}s")
+
+            results[name][gen_name] = {
+                "num_sampled": sample_size,
+                "correct": correct,
+                "incorrect": incorrect,
+                "error": error,
+                "accuracy": accuracy,
+                "elapsed_sec": round(dataset_elapsed, 2),
+                "questions": records,
+            }
 
     return results
 
@@ -187,14 +197,14 @@ def main() -> None:
     results = step_evaluate(loaded, args.model, args.base_url, args.api_key, args.num_questions, args.seed, args.workers)
 
     # Overall summary
-    total_correct = sum(r["correct"] for r in results.values())
-    total_incorrect = sum(r["incorrect"] for r in results.values())
-    total_error = sum(r["error"] for r in results.values())
-    total_all = total_correct + total_incorrect + total_error
-    overall_accuracy = total_correct / total_all if total_all > 0 else 0.0
-
     print("\n=== Overall Summary ===")
-    print(f"  correct={total_correct}  incorrect={total_incorrect}  error={total_error}  accuracy={overall_accuracy:.2%}")
+    for gen_name in GENERATORS:
+        total_correct = sum(results[ds][gen_name]["correct"] for ds in results)
+        total_incorrect = sum(results[ds][gen_name]["incorrect"] for ds in results)
+        total_error = sum(results[ds][gen_name]["error"] for ds in results)
+        total_all = total_correct + total_incorrect + total_error
+        overall_accuracy = total_correct / total_all if total_all > 0 else 0.0
+        print(f"  [{gen_name}] correct={total_correct}  incorrect={total_incorrect}  error={total_error}  accuracy={overall_accuracy:.2%}")
 
     # Write report
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d_%H-%M-%S")
@@ -207,13 +217,7 @@ def main() -> None:
         "seed": args.seed,
         "workers": args.workers,
         "num_questions_per_dataset": args.num_questions,
-        "overall": {
-            "correct": total_correct,
-            "incorrect": total_incorrect,
-            "error": total_error,
-            "accuracy": overall_accuracy,
-            "elapsed_sec": round(time.perf_counter() - pipeline_start, 2),
-        },
+        "elapsed_sec": round(time.perf_counter() - pipeline_start, 2),
         "datasets": results,
     }
     report_path.parent.mkdir(parents=True, exist_ok=True)

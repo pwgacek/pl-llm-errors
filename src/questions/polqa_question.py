@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import ast
 
+from errors.base import ErrorGenerator
+
 from .base import Question, VerificationResult
 
 
@@ -35,14 +37,14 @@ class PolqaQuestion(Question):
             pass
         return [raw]
     
-    def build_prompt(self) -> str:
-        question = self.question
-        answers = self.answers
+    def build_prompt(self, error_generator: ErrorGenerator) -> str:
+        question = error_generator.apply(self.question)
+        context = error_generator.apply(self.context)
 
         return (
-            "Odpowiedz na pytanie na podstawie załączonego kontekstu.\n"
+            "Przemyśl pytanie krok po kroku korzystając z kontekstu.\n"
             "Odpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n"
-            f"<KONTEKST>{self.context}</KONTEKST>\n"
+            f"<KONTEKST>{context}</KONTEKST>\n"
             f"<PYTANIE>{question}</PYTANIE>\n"
             
         )

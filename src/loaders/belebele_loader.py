@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from questions import LlmzszlQuestion, Question
+from questions import BelebeleQuestion, Question
 
 from .base import Loader
 
@@ -23,6 +23,7 @@ class BelebeleLoader(Loader):
                 except json.JSONDecodeError:
                     continue
 
+                passage = str(record.get("flores_passage", ""))
                 question_text = str(record.get("question", ""))
                 answers = [
                     str(record.get("mc_answer1", "")),
@@ -32,6 +33,6 @@ class BelebeleLoader(Loader):
                 ]
                 correct_num = int(record.get("correct_answer_num", 0))
                 correct_index = correct_num - 1  # Shift from 1-4 to 0-3
-                questions.append(LlmzszlQuestion(question_text, answers, correct_index))
+                questions.append(BelebeleQuestion(question_text, answers, correct_index, passage))
 
         return questions

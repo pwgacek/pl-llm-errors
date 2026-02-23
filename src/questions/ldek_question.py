@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import json
 
+from errors.base import ErrorGenerator
+
 from .base import Question, VerificationResult
 
 VALID_LETTERS = frozenset("ABCDE")
@@ -43,13 +45,14 @@ class LDEKQuestion(Question):
         normalized = answer_raw.strip().upper()
         return normalized if normalized in VALID_LETTERS else None
 
-    def build_prompt(self) -> str:
+    def build_prompt(self, error_generator: ErrorGenerator) -> str:
         letters = ["A", "B", "C", "D", "E"]
-        choices = "\n".join(f"{letters[i]}. {answer}" for i, answer in enumerate(self.answers))
-
+        answers = [error_generator.apply(answer) for answer in self.answers]
+        choices = "\n".join(f"{letters[i]}. {answer}" for i, answer in enumerate(answers))
+        question = error_generator.apply(self.question)
         return (
             "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\n"
             "Odpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n"
-            f"<PYTANIE>{self.question}</PYTANIE>\n"
+            f"<PYTANIE>{question}</PYTANIE>\n"
             f"<ODPOWIEDZI>{choices}</ODPOWIEDZI>\n"
         )
