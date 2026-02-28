@@ -1,7 +1,7 @@
 LANGUAGES = {
     "german": "de", "english": "en", "french": "fr", "greek": "el", "russian": "ru",
     "arabic": "ar", "hindi": "hi", "armenian": "hy", "georgian": "ka", "hebrew": "he",
-    "bengali": "bn", "tamil": "ta",
+    "bengali": "bn", "tamil": "ta", "polish": "pl",
 }
 
             #United kingdom
@@ -86,6 +86,13 @@ KEYBOARDS = {"en": [['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'],
                     ['௳', '௴', '௵', '௶', '௷', 'ௐ'],
                     ['ஔ', 'ஓ', 'ஒ', 'வ', 'ங', 'ல', 'ர', '', 'ழ']
                     ],
+
+            # Polish Programmers (QWERTY base + AltGr diacritics)
+            # Physical layout is standard QWERTY – diacritics (ą,ę,ś,ć,ż,ź,ł,ó,ń)
+            # live on an AltGr modifier layer and are handled via DIACRITICAL_MAPS.
+             "pl": [['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'],
+                    ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l'],
+                    ['z', 'x', 'c', 'v', 'b', 'n', 'm']],
              }
 # KEYBOARD = KEYBOARDS[LANGUAGES[LANGUAGE]]
 
@@ -126,11 +133,17 @@ LEFT_RIGHTS = {"en": {'left': ['q', 'w', 'e', 'r', 't', 'a', 's', 'd', 'f', 'g',
 
                 "ta": {'left': ['ஸ', 'ஷ', 'ஜ', 'ஹ', 'க்ஷ', 'ஆ', 'ஈ', 'ஊ', 'ஐ', 'ஏ', '௹', '௺', '௸', 'ஃ', 'எ', 'அ', 'இ', 'உ', '்', 'எ', '௳', '௴', '௵', '௶', '௷', 'ஔ', 'ஓ', 'ஒ', 'வ', 'ங'],
                         'right': ['ஶ்ரீ', 'ஶ', 'ள', 'ற', 'ன', 'ட', 'ண', 'ச', 'ஞ', 'க', 'ப', 'க', 'ப', 'ம', 'த', 'ந', 'ய', 'ௐ', 'ல', 'ர', 'ழ']},
+
+                # Polish – same QWERTY hand split; diacritics inherit base-char hand
+                "pl": {'left': ['q', 'w', 'e', 'r', 't', 'a', 's', 'd', 'f', 'g', 'z', 'x', 'c', 'v', 'b',
+                                 'ę', 'ą', 'ś', 'ć', 'ż', 'ź'],
+                        'right': ['y', 'u', 'i', 'o', 'p', 'h', 'j', 'k', 'l', 'n', 'm',
+                                  'ó', 'ł', 'ń']},
               }
 # LEFT_RIGHT = LEFT_RIGHTS[LANGUAGES[LANGUAGE]]
 
 # IGNORING = True
-IGNORES = {"en": {'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fifteen', 'twenty', 'thirty', 'forty', 'fifty', 'hundred', 'thousand', 'million', 'billion'
+IGNORES = {"en": {'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fifteen', 'twenty', 'thirty', 'forty', 'fifty', 'hundred', 'thousand', 'million', 'billion',
                   '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'},
 
            "de": {'null', 'eins', 'zwei', 'drei', 'vier', 'fünf', 'sechs', 'sieben', 'acht', 'neun', 'zehn', 'elf', 'zwölf', 'zwanzig', 'sechzig', 'siebzig', 'hundert', 'tausend', 'million', 'milliarde',
@@ -170,4 +183,28 @@ IGNORES = {"en": {'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven',
 
            "ta": {'ஒன்று', 'நான்கு', 'பத்து', 'இலட்சம்', 'இரண்டு', 'பதினேழு', 'எட்டு', 'நூறு', 'ஆயிரம்', 'பத்தொன்பது', 'ஏழு', 'ஐம்பது', 'பதினொன்று', 'ஆறு', 'ஐந்து', 'ஒன்பது', 'பதினாறு', 'மில்லியன்', 'தொன்னூறு', 'எழுபது', 'பதினைந்து', 'நாற்பது', 'பதினெட்டு', 'பூஜியம்', 'முப்பது', 'அறுபது', 'பதினான்கு', 'மூன்று', 'பன்னிரண்டு', 'எண்பது', 'இருபது', 'பில்லியன்',
                   '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'},
+
+           "pl": {'zero', 'jeden', 'jedna', 'jedno', 'dwa', 'dwie', 'trzy', 'cztery', 'pięć', 'sześć', 'siedem', 'osiem', 'dziewięć',
+                  'dziesięć', 'jedenaście', 'dwanaście', 'trzynaście', 'czternaście', 'piętnaście', 'szesnaście', 'siedemnaście', 'osiemnaście', 'dziewiętnaście',
+                  'dwadzieścia', 'trzydzieści', 'czterdzieści', 'pięćdziesiąt', 'sześćdziesiąt', 'siedemdziesiąt', 'osiemdziesiąt', 'dziewięćdziesiąt',
+                  'sto', 'dwieście', 'tysiąc', 'milion', 'miliard',
+                  '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'},
            }
+
+# Diacritical maps for languages where diacritics are produced via a modifier
+# key (e.g. AltGr) on the same physical key as the base character.
+# Maps diacritical char → base char on the physical keyboard.
+DIACRITICAL_MAPS = {
+    "pl": {
+        "ą": "a", "ę": "e", "ś": "s", "ć": "c",
+        "ż": "z", "ź": "x", "ł": "l", "ó": "o", "ń": "n",
+    },
+}
+
+# AltGr-layer keyboards for languages where diacritics are typed via a modifier
+# key on the same physical position.  Empty strings mean "no AltGr char here".
+ALTGR_KEYBOARDS = {
+    "pl": [['q', 'w', 'ę', 'r', 't', 'y', 'u', 'i', 'ó', 'p'],
+           ['ą', 'ś', 'd', 'f', 'g', 'h', 'j', 'k', 'ł'],
+           ['ż', 'ź', 'ć', 'v', 'b', 'ń', 'm']],
+}

@@ -35,7 +35,7 @@ except ImportError:
 
 
 # Languages handled by different backends
-NLTK_LANGUAGES = {"german", "french", "russian", "english", "greek"}
+NLTK_LANGUAGES = {"german", "french", "russian", "english", "greek", "polish"}
 STANZA_LANGUAGES = {"armenian", "georgian", "hebrew", "hindi", "tamil"}
 
 

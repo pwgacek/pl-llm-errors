@@ -6,7 +6,7 @@ from typing import Dict, List, Tuple, Optional, Callable, Iterable
 import random
 import math
 
-from .keyboards import LANGUAGES, KEYBOARDS, LEFT_RIGHTS, IGNORES
+from .keyboards import LANGUAGES, KEYBOARDS, LEFT_RIGHTS, IGNORES, DIACRITICAL_MAPS, ALTGR_KEYBOARDS
 from .tokenization import tokenize_sentences as _tokenize_sentences
 
 
@@ -47,6 +47,8 @@ class MultiTypoGenerator:
         self.keyboard = KEYBOARDS[self.lang_code]
         self.left_right = LEFT_RIGHTS.get(self.lang_code, {"left": [], "right": []})
         self.ignore_set = IGNORES.get(self.lang_code, set())
+        self.diacritical_map = DIACRITICAL_MAPS.get(self.lang_code, {})
+        self.altgr_keyboard = ALTGR_KEYBOARDS.get(self.lang_code, None)
 
         self._normalize_distribution()
 
@@ -65,9 +67,15 @@ class MultiTypoGenerator:
         """
         h_weight, v_weight = self.horizontal_vs_vertical
 
-        # find position(s) of char on keyboard
+        base_char = self.diacritical_map.get(char)
+        if base_char is not None and self.altgr_keyboard is not None:
+            grid = self.altgr_keyboard
+        else:
+            grid = self.keyboard
+
+        # find position(s) of char on grid
         positions = []
-        for r_idx, row in enumerate(self.keyboard):
+        for r_idx, row in enumerate(grid):
             for c_idx, k in enumerate(row):
                 if k == char:
                     positions.append((r_idx, c_idx))
@@ -79,21 +87,21 @@ class MultiTypoGenerator:
         for r_idx, c_idx in positions:
             # horizontal neighbors in same row
             if c_idx > 0:
-                left = self.keyboard[r_idx][c_idx - 1]
+                left = grid[r_idx][c_idx - 1]
                 if left:
                     candidates.extend([left] * max(1, int(round(h_weight))))
-            if c_idx < len(self.keyboard[r_idx]) - 1:
-                right = self.keyboard[r_idx][c_idx + 1]
+            if c_idx < len(grid[r_idx]) - 1:
+                right = grid[r_idx][c_idx + 1]
                 if right:
                     candidates.extend([right] * max(1, int(round(h_weight))))
 
             # vertical neighbors (same column index, row up/down)
-            if r_idx > 0 and c_idx < len(self.keyboard[r_idx - 1]):
-                up = self.keyboard[r_idx - 1][c_idx]
+            if r_idx > 0 and c_idx < len(grid[r_idx - 1]):
+                up = grid[r_idx - 1][c_idx]
                 if up:
                     candidates.extend([up] * max(1, int(round(v_weight))))
-            if r_idx < len(self.keyboard) - 1 and c_idx < len(self.keyboard[r_idx + 1]):
-                down = self.keyboard[r_idx + 1][c_idx]
+            if r_idx < len(grid) - 1 and c_idx < len(grid[r_idx + 1]):
+                down = grid[r_idx + 1][c_idx]
                 if down:
                     candidates.extend([down] * max(1, int(round(v_weight))))
 
