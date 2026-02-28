@@ -14,7 +14,8 @@ def ask_model(model: str, prompt: str, base_url: str, api_key: str = "ollama", t
     response = client.chat.completions.create(
         model=model,
         messages=[{"role": "user", "content": prompt}],
-        temperature=1,
+        temperature=0,
+        seed=42,
         response_format={"type": "json_object"},
     )
 
