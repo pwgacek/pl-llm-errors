@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from download import download_file
-from errors import DiacriticErrorGenerator, IdentityGenerator, PunctuationErrorGenerator, SpellingErrorGeneratorV2
+from errors import DiacriticErrorGenerator, IdentityGenerator, PunctuationErrorGenerator, SpellingErrorGeneratorV2, TypoErrorGenerator
 from errors.base import ErrorGenerator
 from loaders import BelebeleLoader, CDSLoader, LDEKLoader, LLMZSZLLoader, PolQALoader
 from model import ask_model
@@ -21,6 +21,9 @@ GENERATORS: dict[str, ErrorGenerator] = {
     "diacritic": DiacriticErrorGenerator(),
     "punctuation": PunctuationErrorGenerator(),
     "spelling": SpellingErrorGeneratorV2(),
+    "typo1": TypoErrorGenerator(typo_rate=0.3),
+    "typo2": TypoErrorGenerator(typo_rate=0.7),
+    "typo3": TypoErrorGenerator(typo_rate=1.0),
 }
 
 DATASETS = [
@@ -178,7 +181,7 @@ def main() -> None:
     parser.add_argument("--model", default="SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0", help="Model name.")
     parser.add_argument("--base-url", default="http://localhost:11434/v1", help="OpenAI-compatible API base URL (Ollama: http://localhost:11434/v1, vLLM: http://<server>:8000/v1).")
     parser.add_argument("--api-key", default="ollama", help="API key (use 'ollama' for Ollama, set appropriately for vLLM).")
-    parser.add_argument("--num-questions", type=int, default=20, help="Random questions per dataset (default: 20).")
+    parser.add_argument("--num-questions", type=int, default=100, help="Random questions per dataset (default: 20).")
     parser.add_argument("--workers", type=int, default=1, help="Parallel workers for model requests (default: 1).")
     parser.add_argument("--seed", type=int, default=42, help="Random seed (default: 42).")
     parser.add_argument("--report", default="results/report.json", help="Output report file path (default: report.json).")
