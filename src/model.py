@@ -3,8 +3,16 @@ from __future__ import annotations
 from openai import OpenAI
 
 
-def ask_model(model: str, prompt: str, base_url: str, api_key: str = "ollama", timeout: int = 120) -> str:
+def ask_model(
+    model: str,
+    prompt: str,
+    base_url: str,
+    api_key: str = "ollama",
+    timeout: int = 60,
+) -> str:
     """Call any OpenAI-compatible endpoint (Ollama or vLLM).
+
+    Times out after *timeout* seconds — caller should treat the exception as an error.
 
     Ollama:  base_url="http://localhost:11434/v1", api_key="ollama"
     vLLM:    base_url="http://<server>:8000/v1",   api_key=<whatever is set>

@@ -105,6 +105,13 @@ def step_load() -> dict[str, list]:
     return loaded
 
 
+def _save_partial(report_path: Path, report: dict) -> None:
+    """Atomically write a partial report so progress is never lost."""
+    tmp = report_path.with_suffix(".tmp")
+    tmp.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+    tmp.rename(report_path)
+
+
 def step_evaluate(
     loaded: dict[str, list],
     model: str,
@@ -113,17 +120,26 @@ def step_evaluate(
     num_questions: int,
     seed: int,
     workers: int = 4,
+    report_path: Path | None = None,
+    report_skeleton: dict | None = None,
+    existing_results: dict[str, dict] | None = None,
 ) -> dict[str, dict]:
     print("\n=== Step 3: Evaluating ===")
     rng = random.Random(seed)
-    results: dict[str, dict] = {}
+    results: dict[str, dict] = existing_results if existing_results is not None else {}
 
     for name, questions in loaded.items():
         sample_size = min(num_questions, len(questions))
         sampled = rng.sample(questions, sample_size)
-        results[name] = {}
+        if name not in results:
+            results[name] = {}
 
         for gen_name, error_generator in GENERATORS.items():
+            # Skip dataset+generator pairs that were already completed (--resume)
+            if name in results and gen_name in results[name]:
+                print(f"\n  [{name}] generator={gen_name}  already completed, skipping (resume).")
+                continue
+
             print(f"\n  [{name}] generator={gen_name}  asking {sample_size}/{len(questions)} questions ...")
 
             dataset_start = time.perf_counter()
@@ -134,7 +150,7 @@ def step_evaluate(
                 t0 = time.perf_counter()
                 try:
                     raw = ask_model(model, prompt, base_url, api_key)
-                except RuntimeError as e:
+                except Exception as e:
                     print(f"    [{i}/{sample_size}] Model error: {e}")
                     return {"index": i, "prompt": prompt, "result": "ERROR", "elapsed": 0.0}
                 elapsed = time.perf_counter() - t0
@@ -169,6 +185,12 @@ def step_evaluate(
                 "questions": records,
             }
 
+            # Save progress after every dataset+generator pair
+            if report_path is not None and report_skeleton is not None:
+                partial = {**report_skeleton, "datasets": results, "status": "partial"}
+                _save_partial(report_path, partial)
+                print(f"  💾 Progress saved to {report_path}")
+
     return results
 
 
@@ -178,7 +200,7 @@ def step_evaluate(
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="End-to-end pipeline: download → load → evaluate → report.")
-    parser.add_argument("--model", default="SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0", help="Model name.")
+    parser.add_argument("--model", default="gemma3:4b", help="Model name.")
     parser.add_argument("--base-url", default="http://localhost:11434/v1", help="OpenAI-compatible API base URL (Ollama: http://localhost:11434/v1, vLLM: http://<server>:8000/v1).")
     parser.add_argument("--api-key", default="ollama", help="API key (use 'ollama' for Ollama, set appropriately for vLLM).")
     parser.add_argument("--num-questions", type=int, default=100, help="Random questions per dataset (default: 20).")
@@ -186,6 +208,7 @@ def main() -> None:
     parser.add_argument("--seed", type=int, default=42, help="Random seed (default: 42).")
     parser.add_argument("--report", default="results/report.json", help="Output report file path (default: report.json).")
     parser.add_argument("--skip-download", action="store_true", help="Skip the download step.")
+    parser.add_argument("--resume", type=str, default=None, metavar="REPORT", help="Resume from a partial report JSON file, skipping already-completed dataset+generator pairs.")
     args = parser.parse_args()
 
     pipeline_start = time.perf_counter()
@@ -198,7 +221,39 @@ def main() -> None:
         print("No datasets loaded. Exiting.")
         sys.exit(1)
 
-    results = step_evaluate(loaded, args.model, args.base_url, args.api_key, args.num_questions, args.seed, args.workers)
+    # Prepare report path & skeleton for incremental saves
+    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d_%H-%M-%S")
+    base_path = Path(args.report)
+    report_path = base_path.parent / f"{base_path.stem}_{timestamp}{base_path.suffix}"
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+
+    report_skeleton = {
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "model": args.model,
+        "base_url": args.base_url,
+        "seed": args.seed,
+        "workers": args.workers,
+        "num_questions_per_dataset": args.num_questions,
+    }
+
+    # If resuming, load existing results
+    existing_results: dict[str, dict] | None = None
+    if args.resume:
+        resume_path = Path(args.resume)
+        if resume_path.exists():
+            prev = json.loads(resume_path.read_text(encoding="utf-8"))
+            existing_results = prev.get("datasets", {})
+            # Reuse the same report path so we keep appending
+            report_path = resume_path
+            done = sum(len(gens) for gens in existing_results.values())
+            print(f"  Resuming from {resume_path} ({done} dataset+generator pairs already done).")
+        else:
+            print(f"  Resume file {resume_path} not found, starting fresh.")
+
+    results = step_evaluate(
+        loaded, args.model, args.base_url, args.api_key, args.num_questions, args.seed, args.workers,
+        report_path=report_path, report_skeleton=report_skeleton, existing_results=existing_results,
+    )
 
     # Overall summary
     print("\n=== Overall Summary ===")
@@ -210,21 +265,13 @@ def main() -> None:
         overall_accuracy = total_correct / total_all if total_all > 0 else 0.0
         print(f"  [{gen_name}] correct={total_correct}  incorrect={total_incorrect}  error={total_error}  accuracy={overall_accuracy:.2%}")
 
-    # Write report
-    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d_%H-%M-%S")
-    base_path = Path(args.report)
-    report_path = base_path.parent / f"{base_path.stem}_{timestamp}{base_path.suffix}"
+    # Write final report
     report = {
-        "timestamp": datetime.now(timezone.utc).isoformat(),
-        "model": args.model,
-        "base_url": args.base_url,
-        "seed": args.seed,
-        "workers": args.workers,
-        "num_questions_per_dataset": args.num_questions,
+        **report_skeleton,
         "elapsed_sec": round(time.perf_counter() - pipeline_start, 2),
         "datasets": results,
+        "status": "complete",
     }
-    report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"\nReport written to: {report_path}")
 
