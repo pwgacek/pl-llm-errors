@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from download import download_file
-from errors import DiacriticErrorGenerator, IdentityGenerator, PunctuationErrorGenerator, SpellingErrorGeneratorV2, TypoErrorGenerator
+from errors import DiacriticErrorGenerator, IdentityGenerator, PunctuationAllErrorGenerator, PunctuationInnerErrorGenerator, SpellingErrorGeneratorV2, TypoErrorGenerator
 from errors.base import ErrorGenerator
 from loaders import BelebeleLoader, CDSLoader, LDEKLoader, LLMZSZLLoader, PolQALoader
 from model import ask_model
@@ -19,7 +19,8 @@ from model import ask_model
 GENERATORS: dict[str, ErrorGenerator] = {
     "identity": IdentityGenerator(),
     "diacritic": DiacriticErrorGenerator(),
-    "punctuation": PunctuationErrorGenerator(),
+    "punctuation_all": PunctuationAllErrorGenerator(),
+    "punctuation_inner": PunctuationInnerErrorGenerator(),
     "spelling": SpellingErrorGeneratorV2(),
     "typo1": TypoErrorGenerator(typo_rate=0.3),
     "typo2": TypoErrorGenerator(typo_rate=0.7),
