@@ -31,11 +31,14 @@ GENERATORS: dict[str, ErrorGenerator] = {
     "diacritic": DiacriticErrorGenerator(),
     "punctuation_all": PunctuationAllErrorGenerator(),
     "punctuation_inner": PunctuationInnerErrorGenerator(),
-    "spelling": SpellingErrorGenerator(),
-    "typo1": TypoErrorGenerator(typo_rate=0.3),
-    "typo2": TypoErrorGenerator(typo_rate=0.7),
-    "typo3": TypoErrorGenerator(typo_rate=1.0),
+    "spelling_10%": SpellingErrorGenerator(rate=0.1),
+    "spelling_30%": SpellingErrorGenerator(rate=0.3),
+    "spelling_50%": SpellingErrorGenerator(rate=0.5),
+    "typo_10%": TypoErrorGenerator(typo_rate=0.1),
+    "typo_30%": TypoErrorGenerator(typo_rate=0.3),
+    "typo_50%": TypoErrorGenerator(typo_rate=0.5),
 }
+
 
 DATASETS = [
     {
@@ -151,6 +154,16 @@ class PromptBuilder:
 
     def build_and_save(self, loaded: dict[str, list[Question]]) -> None:
         print("\n=== Step 3: Building and saving noised prompts ===")
+        # Clean output_dir if it exists and is not empty
+        if self.output_dir.exists() and any(self.output_dir.iterdir()):
+            print(f"  [info] Cleaning output directory: {self.output_dir}")
+            import shutil
+            for item in self.output_dir.iterdir():
+                if item.is_dir():
+                    shutil.rmtree(item)
+                else:
+                    item.unlink()
+
         rng = random.Random(self.seed)
 
         for gen_name, generator in GENERATORS.items():
@@ -160,8 +173,8 @@ class PromptBuilder:
             for dataset_name, questions in loaded.items():
                 out_path = gen_dir / f"{dataset_name}.jsonl"
                 if out_path.exists():
-                    print(f"  [{gen_name}/{dataset_name}] Already exists, skipping.")
-                    continue
+                    out_path.unlink()
+                    print(f"  [{gen_name}/{dataset_name}] Overwriting existing file.")
 
                 sample_size = min(self.num_questions, len(questions))
                 sampled = rng.sample(questions, sample_size)
@@ -174,7 +187,7 @@ class PromptBuilder:
                     lines.append(json.dumps(record, ensure_ascii=False))
 
                 out_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
-                print(f"  [{gen_name}/{dataset_name}] Saved {sample_size} prompts → {out_path}")
+                print(f"  [{gen_name}/{dataset_name}] Saved {sample_size} prompts  {out_path}")
 
     # ------------------------------------------------------------------
     # Orchestrator

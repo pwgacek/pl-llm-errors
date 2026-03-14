@@ -80,10 +80,10 @@ _SPELLING_DICT: dict[str, str] = {
 
 _RULE_DEFS: list[tuple[str, str, str]] = [
     # ── Nasal vowels ────────────────────────────────────────────────────
-    ("ą→on",      r"ą(?=[tdcnszśźć])",  "on"),
+    ("ą→on",      r"ą(?=[tdcnszśźćkg])",  "on"),
     ("ą→om",      r"ą(?=[bpm])",         "om"),
     ("ą→o",       r"ą$",                 "o"),
-    ("ę→en",      r"ę(?=[tdcnszśźć])",  "en"),
+    ("ę→en",      r"ę(?=[tdcnszśźćkg])",  "en"),
     ("ę→em",      r"ę(?=[bpm])",         "em"),
     ("ę→e",       r"ę$",                 "e"),
 
@@ -95,7 +95,6 @@ _RULE_DEFS: list[tuple[str, str, str]] = [
 
     # ── ó / u ───────────────────────────────────────────────────────────
     ("ó→u",       r"ó",                  "u"),
-    ("u→ó",       r"u",                  "ó"),
 
     # ── Soft consonants (before vowels) ─────────────────────────────────
     ("ci→ć",      r"ci(?=[aeouyąęó])",   "ć"),
@@ -137,18 +136,18 @@ RULE_NAMES: frozenset[str] = frozenset(name for name, _, _ in _RULE_DEFS)
 class SpellingErrorGenerator(ErrorGenerator):
     """Introduces Polish spelling errors via phonetic rules + dictionary.
 
-    For each word the generator:
+     For each input text the generator:
 
-    1. Checks the dictionary for an exact match (case-insensitive).
-    2. If no match, collects all applicable rules, picks one at random,
-       and applies it to a random occurrence within the word.
-    3. Each word is modified with probability *rate*.
+     1. Computes a target number of spelling errors from *rate* and word count.
+     2. Tries to spend this budget first on multi-word dictionary entries.
+     3. Spends remaining budget on eligible single words (dict/rules),
+         allowing multiple non-overlapping changes per word.
 
     Multi-word dictionary entries (e.g. ``na pewno → napewno``) are matched
     first, longest-phrase-first.
 
     Args:
-        rate:  Probability (0.0–1.0) of modifying each eligible word.
+        rate:  Target fraction (0.0–1.0) of words to modify.
         seed:  RNG seed for reproducibility.
     """
 
@@ -184,50 +183,153 @@ class SpellingErrorGenerator(ErrorGenerator):
     # ── public API ──────────────────────────────────────────────────────
 
     def apply(self, text: str) -> str:
-        # Phase 1: multi-word dictionary entries.
-        for pattern, replacement in self._multi_word:
-            text = self._replace_matches(text, pattern, replacement)
+        # Budget is counted in modified words, not in random Bernoulli trials.
+        target = int(self._round_it(self.rate * len([word for word in text.split(" ")])))
+        if target <= 0:
+            return text
 
-        # Phase 2: single-word processing (dict lookup → random rule).
-        return self._process_words(text)
+        # Phase 1: spend budget on multi-word dictionary entries.
+        remaining = target
+        for pattern, replacement in self._multi_word:
+            if remaining <= 0:
+                break
+            text, used = self._replace_matches_budget(text, pattern, replacement, remaining)
+            remaining -= used
+
+        if remaining <= 0:
+            return text
+
+        # Phase 2: spend remaining budget on eligible single words.
+        return self._process_words_budget(text, remaining)
+
 
     # ── internals ───────────────────────────────────────────────────────
+    @staticmethod
+    def _round_it(number: float, position: int = 0) -> float:
+        factor = 10 ** position
+        return int(number * factor + 0.5) / factor
+    
+    @staticmethod
+    def _count_match_words(text: str) -> int:
+        return sum(1 for part in text.split() if part and part[0].isalpha())
 
-    def _replace_matches(
-        self, text: str, pattern: re.Pattern[str], replacement: str,
-    ) -> str:
-        """Replace *pattern* matches in *text* with probability *rate*."""
+    def _replace_matches_budget(
+        self, text: str, pattern: re.Pattern[str], replacement: str, budget: int,
+    ) -> tuple[str, int]:
+        """Replace non-overlapping matches while consuming at most *budget* words."""
+        if budget <= 0:
+            return text, 0
+
+        matches = list(pattern.finditer(text))
+        if not matches:
+            return text, 0
+
+        order = list(range(len(matches)))
+        self._rng.shuffle(order)
+
+        selected: set[int] = set()
+        consumed = 0
+        for idx in order:
+            m = matches[idx]
+            cost = max(1, self._count_match_words(m.group()))
+            if consumed + cost > budget:
+                continue
+            selected.add(idx)
+            consumed += cost
+            if consumed >= budget:
+                break
+
+        if not selected:
+            return text, 0
+
         parts: list[str] = []
         prev = 0
-        for m in pattern.finditer(text):
+        for idx, m in enumerate(matches):
             parts.append(text[prev : m.start()])
-            if self._rng.random() < self.rate:
+            if idx in selected:
                 parts.append(replacement)
             else:
                 parts.append(m.group())
             prev = m.end()
         parts.append(text[prev:])
-        return "".join(parts)
+        return "".join(parts), consumed
 
-    def _process_words(self, text: str) -> str:
-        """Iterate over words, applying dict lookup or a random rule."""
+    def _get_all_changes(self, word: str) -> list[tuple[int, int, str]]:
+        """Collect all currently applicable changes for one word token."""
+        if len(word) <= 2:
+            return []
+
+        low = word.lower()
+        changes: list[tuple[int, int, str]] = []
+
+        # Whole-word dictionary replacement.
+        if low in self._single_word:
+            changes.append((0, len(word), self._single_word[low]))
+
+        # Rule-based replacements at all match positions.
+        for _, pattern, repl in self._rules:
+            for m in pattern.finditer(low):
+                changes.append((m.start(), m.end(), repl))
+
+        return changes
+
+    def _process_words_budget(self, text: str, budget: int) -> str:
+        """Apply up to *budget* individual non-overlapping changes."""
         tokens = re.findall(r"\w+|\W+", text, flags=re.UNICODE)
-        out: list[str] = []
+        if budget <= 0:
+            return "".join(tokens)
 
-        for tok in tokens:
-            # Pass non-alphabetic tokens through unchanged.
-            if not tok[0].isalpha():
-                out.append(tok)
-                continue
+        # token index -> list of candidate changes (start, end, replacement)
+        pending: dict[int, list[tuple[int, int, str]]] = {}
+        for i, tok in enumerate(tokens):
+            if tok and tok[0].isalpha():
+                changes = self._get_all_changes(tok)
+                if changes:
+                    pending[i] = changes
 
-            # Modify with probability *rate*.
-            if self._rng.random() >= self.rate:
-                out.append(tok)
-                continue
+        if not pending:
+            return "".join(tokens)
 
-            out.append(self._modify_word(tok))
+        while budget > 0 and pending:
+            token_idx = self._rng.choice(list(pending.keys()))
+            changes = pending[token_idx]
 
-        return "".join(out)
+            chosen_idx = self._rng.randrange(len(changes))
+            start, end, repl = changes[chosen_idx]
+
+            tok = tokens[token_idx]
+            tokens[token_idx] = tok[:start] + repl + tok[end:]
+            budget -= 1
+
+            # Keep only non-overlapping candidates and shift those after edit.
+            delta = len(repl) - (end - start)
+            next_changes: list[tuple[int, int, str]] = []
+            for i, (s, e, r) in enumerate(changes):
+                if i == chosen_idx:
+                    continue
+                if e <= start:
+                    next_changes.append((s, e, r))
+                elif s >= end:
+                    next_changes.append((s + delta, e + delta, r))
+                # overlapping change is dropped
+
+            if next_changes:
+                pending[token_idx] = next_changes
+            else:
+                del pending[token_idx]
+
+        return "".join(tokens)
+
+    def _can_modify_word(self, word: str) -> bool:
+        if len(word) <= 2:
+            return False
+        low = word.lower()
+        if low in self._single_word:
+            return True
+        for _, pattern, _ in self._rules:
+            if pattern.search(low):
+                return True
+        return False
 
     def _modify_word(self, word: str) -> str:
         """Try dict, then rules.  Returns modified or original word."""
