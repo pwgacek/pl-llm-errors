@@ -6,7 +6,9 @@ from .base import Question
 
 class BelebeleQuestion(Question):
     def __init__(self, question: str, answers: list[str], correct_answer_index: int, context: str) -> None:
-        super().__init__(question, answers, correct_answer_index)
+        self.question = question
+        self.answers = answers
+        self.correct_answer_index = correct_answer_index
         self.context = context
 
     def build_prompt(self, error_generator: ErrorGenerator) -> str:
