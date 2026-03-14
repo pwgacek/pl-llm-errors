@@ -1,7 +1,7 @@
 venv_llm/
 /datasets/
 /results/
-polish-gec-datasets
+/prompts/
 
 # Python cache / bytecode
 __pycache__/

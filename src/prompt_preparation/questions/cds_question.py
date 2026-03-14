@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from errors.base import ErrorGenerator
 
-from .base import Question, VerificationResult
+from .base import Question
 
 
 class CdsQuestion(Question):
@@ -10,27 +10,6 @@ class CdsQuestion(Question):
         self.sentence_a = sentence_a
         self.sentence_b = sentence_b
         self.entailment_judgment = entailment_judgment.upper()
-
-    def verify_answer(self, llm_answer: str) -> VerificationResult:
-        # Expected answers: NEUTRAL, CONTRADICTION, ENTAILMENT
-        normalized = llm_answer.strip().upper()
-        
-        # Try to extract from JSON format first
-        import json
-        try:
-            payload = json.loads(llm_answer)
-            answer = payload.get("odpowiedź", "").strip().upper()
-            if answer in ["NEUTRAL", "CONTRADICTION", "ENTAILMENT"]:
-                normalized = answer
-        except json.JSONDecodeError:
-            pass
-
-        if normalized == self.entailment_judgment:
-            return VerificationResult.CORRECT
-        elif normalized in ["NEUTRAL", "CONTRADICTION", "ENTAILMENT"]:
-            return VerificationResult.INCORRECT
-        else:
-            return VerificationResult.ERROR
 
     def build_prompt(self, error_generator: ErrorGenerator) -> str:
         sentence_a = error_generator.apply(self.sentence_a)

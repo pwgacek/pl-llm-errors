@@ -2,10 +2,9 @@ from __future__ import annotations
 
 from errors.base import ErrorGenerator
 
-from .llmzszl_question import LlmzszlQuestion
+from .base import Question
 
-
-class BelebeleQuestion(LlmzszlQuestion):
+class BelebeleQuestion(Question):
     def __init__(self, question: str, answers: list[str], correct_answer_index: int, context: str) -> None:
         super().__init__(question, answers, correct_answer_index)
         self.context = context

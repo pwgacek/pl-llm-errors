@@ -4,7 +4,7 @@ import ast
 
 from errors.base import ErrorGenerator
 
-from .base import Question, VerificationResult
+from .base import Question
 
 
 class PolqaQuestion(Question):
@@ -14,17 +14,6 @@ class PolqaQuestion(Question):
         self.question = question
         self.context = context
         self.answers = answers
-
-    def verify_answer(self, llm_answer: str) -> VerificationResult:
-        normalized = llm_answer.strip().lower()
-        if not normalized:
-            return VerificationResult.ERROR
-
-        for accepted in self.answers:
-            if accepted.strip().lower() in normalized:
-                return VerificationResult.CORRECT
-
-        return VerificationResult.INCORRECT
 
     @staticmethod
     def parse_answers(raw: str) -> list[str]:
