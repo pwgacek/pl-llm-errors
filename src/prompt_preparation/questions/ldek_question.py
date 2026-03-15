@@ -17,8 +17,8 @@ class LDEKQuestion(Question):
         choices = "\n".join(f"{letters[i]}. {answer}" for i, answer in enumerate(answers))
         question = error_generator.apply(self.question)
         return (
-            "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\n"
-            "Odpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n"
+            "Wybierz poprawną odpowiedź spośród możliwych.\n"
+            "Odpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n"
             f"<PYTANIE>{question}</PYTANIE>\n"
             f"<ODPOWIEDZI>{choices}</ODPOWIEDZI>\n"
         )

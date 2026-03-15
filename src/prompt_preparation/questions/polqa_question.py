@@ -31,8 +31,8 @@ class PolqaQuestion(Question):
         context = error_generator.apply(self.context)
 
         return (
-            "Przemyśl pytanie krok po kroku korzystając z kontekstu.\n"
-            "Odpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n"
+            "Odpowiedz na pytanie korzystając z dostarczonego kontekstu.\n"
+            "Odpowiedź powinna mieć format: {\"odpowiedź\": \"WYRAŻENIE\"}\n"
             f"<KONTEKST>{context}</KONTEKST>\n"
             f"<PYTANIE>{question}</PYTANIE>\n"
             
