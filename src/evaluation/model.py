@@ -21,7 +21,10 @@ def ask_model(
 
     response = client.chat.completions.create(
         model=model,
-        messages=[{"role": "user", "content": prompt}],
+        messages=[
+            {"role": "system", "content": "Jesteś pomocnym asystentem, który odpowiada na pytania w formacie JSON."},
+            {"role": "user", "content": prompt}
+            ],
         temperature=0,
         seed=42,
         response_format={"type": "json_object"},
