@@ -16,9 +16,8 @@ from errors import (
     TypoErrorGenerator,
 )
 from errors.base import ErrorGenerator
-from loaders import BelebeleLoader, CDSLoader, LDEKLoader, LLMZSZLLoader, PolQALoader
+from loaders import CDSLoader, LDEKLoader, LLMZSZLLoader, PolQALoader
 from questions import (
-    BelebeleQuestion,
     CdsQuestion,
     LDEKQuestion,
     LlmzszlQuestion,
@@ -48,12 +47,6 @@ DATASETS = [
         "loader": LLMZSZLLoader,
     },
     {
-        "name": "belebele-pol",
-        "url": "https://huggingface.co/datasets/facebook/belebele/resolve/main/data/pol_Latn.jsonl",
-        "output": Path("datasets/belebele-pol.jsonl"),
-        "loader": BelebeleLoader,
-    },
-    {
         "name": "polqa",
         "url": "https://huggingface.co/datasets/ipipan/polqa/resolve/main/data/test.csv",
         "output": Path("datasets/polqa.csv"),
@@ -76,9 +69,6 @@ DATASETS = [
 
 def _serialize_expected(question: Question) -> dict:
     """Return a minimal, serialisable dict describing the correct answer."""
-    # BelebeleQuestion inherits from LlmzszlQuestion — check it first.
-    if isinstance(question, BelebeleQuestion):
-        return {"type": "multiple_choice_index", "correct_index": question.correct_answer_index}
     if isinstance(question, LlmzszlQuestion):
         return {"type": "multiple_choice_index", "correct_index": question.correct_answer_index}
     if isinstance(question, LDEKQuestion):
@@ -203,7 +193,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description="Offline pipeline: download → load → noisify → save prompts."
     )
-    parser.add_argument("--num-questions", type=int, default=2, help="Questions sampled per dataset (default: 100).")
+    parser.add_argument("--num-questions", type=int, default=100, help="Questions sampled per dataset (default: 100).")
     parser.add_argument("--seed", type=int, default=42, help="Random seed (default: 42).")
     parser.add_argument("--output-dir", default="prompts", help="Root directory for saved prompts (default: prompts/).")
     parser.add_argument("--skip-download", action="store_true", help="Skip the download step.")
