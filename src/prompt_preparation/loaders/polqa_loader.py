@@ -8,9 +8,8 @@ from questions import PolqaQuestion, Question
 from .base import Loader
 
 class PolQALoader(Loader):
-    def load(self) -> list[Question]:
-        """Load questions from the PolQA CSV file, keeping only relevant=True rows."""
-        
+    def load(self, num_samples: int | None = None, seed: int = 42) -> list[Question]:
+        """Load questions from the PolQA CSV file, keeping only relevant=True rows, optionally sampling deterministically."""
         questions: list[Question] = []
         seen: set[tuple[str, str]] = set()
 
@@ -30,4 +29,4 @@ class PolQALoader(Loader):
                 answers = PolqaQuestion.parse_answers(row.get("answers", "[]"))
                 questions.append(PolqaQuestion(question_text, context, answers))
 
-        return questions
+        return self._deterministic_sample(questions, num_samples, seed)

@@ -15,7 +15,7 @@ class LlmzszlQuestion(Question):
         question = error_generator.apply(self.question)
         answers = [error_generator.apply(answer) for answer in self.answers]
 
-        letters = ["A", "B", "C", "D"]
+        letters = [chr(ord('A') + i) for i in range(len(answers))]
         choices = "\n".join(f"{letters[i]}. {answer}" for i, answer in enumerate(answers))
 
         return (

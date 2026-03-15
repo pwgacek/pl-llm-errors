@@ -141,7 +141,7 @@ class PromptBuilder:
                 print(f"  [{name}] File missing, skipping.")
                 continue
             try:
-                questions = dataset["loader"]().load()
+                questions = dataset["loader"]().load(num_samples=self.num_questions, seed=self.seed)
                 loaded[name] = questions
                 print(f"  [{name}] Loaded {len(questions)} questions.")
             except Exception as e:
@@ -164,8 +164,6 @@ class PromptBuilder:
                 else:
                     item.unlink()
 
-        rng = random.Random(self.seed)
-
         for gen_name, generator in GENERATORS.items():
             gen_dir = self.output_dir / gen_name
             gen_dir.mkdir(parents=True, exist_ok=True)
@@ -176,18 +174,15 @@ class PromptBuilder:
                     out_path.unlink()
                     print(f"  [{gen_name}/{dataset_name}] Overwriting existing file.")
 
-                sample_size = min(self.num_questions, len(questions))
-                sampled = rng.sample(questions, sample_size)
-
                 lines: list[str] = []
-                for question in sampled:
+                for question in questions:
                     prompt = question.build_prompt(generator)
                     expected = _serialize_expected(question)
                     record = {"prompt": prompt, "expected": expected}
                     lines.append(json.dumps(record, ensure_ascii=False))
 
                 out_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
-                print(f"  [{gen_name}/{dataset_name}] Saved {sample_size} prompts  {out_path}")
+                print(f"  [{gen_name}/{dataset_name}] Saved {len(questions)} prompts to {out_path}")
 
     # ------------------------------------------------------------------
     # Orchestrator
@@ -208,7 +203,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description="Offline pipeline: download → load → noisify → save prompts."
     )
-    parser.add_argument("--num-questions", type=int, default=100, help="Questions sampled per dataset (default: 100).")
+    parser.add_argument("--num-questions", type=int, default=2, help="Questions sampled per dataset (default: 100).")
     parser.add_argument("--seed", type=int, default=42, help="Random seed (default: 42).")
     parser.add_argument("--output-dir", default="prompts", help="Root directory for saved prompts (default: prompts/).")
     parser.add_argument("--skip-download", action="store_true", help="Skip the download step.")

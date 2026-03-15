@@ -34,8 +34,8 @@ def _parse_question_w_options(raw: str) -> tuple[str, list[str]] | None:
 
 
 class LDEKLoader(Loader):
-    def load(self) -> list[Question]:
-        """Load multiple-choice questions from the LDEK medical exam JSON file."""
+    def load(self, num_samples: int | None = None, seed: int = 42) -> list[Question]:
+        """Load multiple-choice questions from the LDEK medical exam JSON file, optionally sampling deterministically."""
         questions: list[Question] = []
 
         with Path("datasets/medical-exams-LDEK-PL-2008-2024.json").open("r", encoding="utf-8") as file:
@@ -55,4 +55,4 @@ class LDEKLoader(Loader):
             question_text, answers = parsed
             questions.append(LDEKQuestion(question_text, answers, answer_letter))
 
-        return questions
+        return self._deterministic_sample(questions, num_samples, seed)

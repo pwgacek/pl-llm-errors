@@ -9,8 +9,8 @@ from .base import Loader
 
 
 class CDSLoader(Loader):
-    def load(self) -> list[Question]:
-        """Load textual entailment questions from CDS_test.csv file."""
+    def load(self, num_samples: int | None = None, seed: int = 42) -> list[Question]:
+        """Load textual entailment questions from CDS_test.csv file, optionally sampling deterministically."""
         questions: list[Question] = []
 
         with Path("datasets/CDS_test.csv").open("r", encoding="utf-8") as file:
@@ -23,4 +23,4 @@ class CDSLoader(Loader):
                 if sentence_a and sentence_b and entailment_judgment:
                     questions.append(CdsQuestion(sentence_a, sentence_b, entailment_judgment))
 
-        return questions
+        return self._deterministic_sample(questions, num_samples, seed)

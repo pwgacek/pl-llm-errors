@@ -8,8 +8,8 @@ from .base import Loader
 
 
 class BelebeleLoader(Loader):
-    def load(self) -> list[Question]:
-        """Load questions from Belebele JSONL file."""
+    def load(self, num_samples: int | None = None, seed: int = 42) -> list[Question]:
+        """Load questions from Belebele JSONL file, optionally sampling deterministically."""
         questions: list[Question] = []
 
         with Path("datasets/belebele-pol.jsonl").open("r", encoding="utf-8") as file:
@@ -35,4 +35,4 @@ class BelebeleLoader(Loader):
                 correct_index = correct_num - 1  # Shift from 1-4 to 0-3
                 questions.append(BelebeleQuestion(question_text, answers, correct_index, passage))
 
-        return questions
+        return self._deterministic_sample(questions, num_samples, seed)
