@@ -6,7 +6,7 @@ import requests
 
 # Config
 filename = "src/scripts/translate/test-00000-of-00001.parquet"
-output_file = "src/scripts/translate/bbh-gemma-12B_v3.json"
+output_file = "src/scripts/translate/bbh-gemma-12B_final.json"
 ollama_url = "http://localhost:11434/api/generate"
 ollama_model = "translategemma:12b"
 
@@ -94,7 +94,7 @@ try:
     except FileNotFoundError:
         results = []
     
-    for idx, row in df.tail(10).iterrows():
+    for idx, row in df.iterrows():
         input_text = row.get('input', '')
         clean_text = input_text.replace(COMMON_PREFIX, "").strip()
         
@@ -130,13 +130,12 @@ Translate the following text into Polish. Provide ONLY the translation:
         
         if response.status_code == 200:
             translated_text = response.json()["response"].strip()
-            full_translated = f"{TRANSLATED_PREFIX}\n\n{translated_text}"
             
             result_item = {
                 "id": idx,
                 "category": category,
-                "original": input_text,
-                "translated": full_translated,
+                "original": clean_text,
+                "translated": translated_text,
             }
             results.append(result_item)
             
