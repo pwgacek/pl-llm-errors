@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import random
 import urllib.error
 from pathlib import Path
 
@@ -31,11 +30,9 @@ GENERATORS: dict[str, ErrorGenerator] = {
     "punctuation_all": PunctuationAllErrorGenerator(),
     "punctuation_inner": PunctuationInnerErrorGenerator(),
     "spelling_10%": SpellingErrorGenerator(rate=0.1),
-    "spelling_30%": SpellingErrorGenerator(rate=0.3),
-    "spelling_50%": SpellingErrorGenerator(rate=0.5),
+    "spelling_40%": SpellingErrorGenerator(rate=0.4),
     "typo_10%": TypoErrorGenerator(typo_rate=0.1),
-    "typo_30%": TypoErrorGenerator(typo_rate=0.3),
-    "typo_50%": TypoErrorGenerator(typo_rate=0.5),
+    "typo_40%": TypoErrorGenerator(typo_rate=0.4),
 }
 
 
