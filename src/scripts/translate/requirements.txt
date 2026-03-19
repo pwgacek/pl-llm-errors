@@ -4,3 +4,4 @@ fastparquet
 transformers
 torch
 accelerate
+requests

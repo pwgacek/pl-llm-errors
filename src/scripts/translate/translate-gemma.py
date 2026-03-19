@@ -4,10 +4,10 @@ import pandas as pd
 import json
 import requests
 
-filename = "./test-00000-of-00001.parquet"
-output_file = "bbh-gemma.json"
+filename = "src/scripts/translate/test-00000-of-00001.parquet"
+output_file = "src/scripts/translate/bbh-gemma-12B.json"
 ollama_url = "http://localhost:11434/api/generate"
-ollama_model = "translategemma:4b"
+ollama_model = "translategemma:12b"
 
 # Translation settings
 SOURCE_LANG = "English"
