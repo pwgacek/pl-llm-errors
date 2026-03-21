@@ -15,8 +15,9 @@ from errors import (
     TypoErrorGenerator,
 )
 from errors.base import ErrorGenerator
-from loaders import CDSLoader, LDEKLoader, LLMZSZLLoader, PolQALoader
+from loaders import CDSLoader, LDEKLoader, LLMZSZLLoader, PolQALoader, BBHLoader
 from questions import (
+    BBHQuestion,
     CdsQuestion,
     LDEKQuestion,
     LlmzszlQuestion,
@@ -61,6 +62,12 @@ DATASETS = [
         "output": Path("datasets/medical-exams-LDEK-PL-2008-2024.json"),
         "loader": LDEKLoader,
     },
+    {
+        "name": "bbh",
+        "url": "https://huggingface.co/datasets/pawel04/bbh-logical-deduction-seven-objects-pl/resolve/main/data.jsonl",
+        "output": Path("datasets/bbh-logical-deduction-seven-objects-pl.jsonl"),
+        "loader": BBHLoader,
+    },
 ]
 
 
@@ -74,6 +81,8 @@ def _serialize_expected(question: Question) -> dict:
         return {"type": "open_contained", "accepted_answers": question.answers}
     if isinstance(question, CdsQuestion):
         return {"type": "entailment", "judgment": question.entailment_judgment}
+    if isinstance(question, BBHQuestion):
+        return {"type": "multiple_choice_letter", "correct_letter": question.answer}
     raise TypeError(f"Unknown question type: {type(question)}")
 
 
