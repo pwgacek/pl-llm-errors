@@ -28,6 +28,55 @@ from ._rng import deterministic_seed
 # ── Dictionary of irregular spelling errors ─────────────────────────────
 # These cannot be expressed as simple character-substitution rules
 # (word boundary changes, prefix splits/joins, irregular forms).
+def _capitalize_first_alpha(text: str) -> str:
+    idx = next((i for i, ch in enumerate(text) if ch.isalpha()), None)
+    if idx is None:
+        return text
+    chars = list(text)
+    chars[idx] = chars[idx].upper()
+    return "".join(chars)
+
+
+def _match_casing(
+    template: str,
+    replacement: str,
+    *,
+    container: str | None = None,
+    start_index: int | None = None,
+) -> str:
+    """Return *replacement* adjusted to mimic the casing of the source text."""
+    if not template or not replacement:
+        return replacement
+
+    context = container or template
+    if context.isupper():
+        return replacement.upper()
+    if context.islower():
+        return replacement.lower()
+    if container and start_index == 0 and container == container.capitalize():
+        return _capitalize_first_alpha(replacement)
+
+    if template.isupper():
+        if (
+            len(template) == 1
+            and container
+            and start_index == 0
+            and not container.isupper()
+        ):
+            return _capitalize_first_alpha(replacement)
+        return replacement.upper()
+    if template.islower():
+        return replacement.lower()
+    if template == template.capitalize():
+        return _capitalize_first_alpha(replacement)
+
+    first_alpha = next((i for i, ch in enumerate(template) if ch.isalpha()), None)
+    if first_alpha is not None and template[first_alpha].isupper():
+        return _capitalize_first_alpha(replacement)
+
+    return replacement
+
+
 _SPELLING_DICT: dict[str, str] = {
     # ── Preposition / particle merging ──────────────────────────────────
     "na pewno": "napewno",
@@ -257,7 +306,7 @@ class SpellingErrorGenerator(ErrorGenerator):
         for idx, m in enumerate(matches):
             parts.append(text[prev : m.start()])
             if idx in selected:
-                parts.append(replacement)
+                parts.append(_match_casing(m.group(), replacement))
             else:
                 parts.append(m.group())
             prev = m.end()
@@ -308,11 +357,12 @@ class SpellingErrorGenerator(ErrorGenerator):
             start, end, repl = changes[chosen_idx]
 
             tok = tokens[token_idx]
-            tokens[token_idx] = tok[:start] + repl + tok[end:]
+            adjusted = _match_casing(tok[start:end], repl, container=tok, start_index=start)
+            tokens[token_idx] = tok[:start] + adjusted + tok[end:]
             budget -= 1
 
             # Keep only non-overlapping candidates and shift those after edit.
-            delta = len(repl) - (end - start)
+            delta = len(adjusted) - (end - start)
             next_changes: list[tuple[int, int, str]] = []
             for i, (s, e, r) in enumerate(changes):
                 if i == chosen_idx:
