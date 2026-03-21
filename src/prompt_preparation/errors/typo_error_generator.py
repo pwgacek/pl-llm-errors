@@ -6,6 +6,7 @@ from dataclasses import dataclass, field
 from typing import Callable, Dict, List, Optional, Tuple
 
 from .base import ErrorGenerator
+from ._rng import deterministic_seed
 
 # ---------------------------------------------------------------------------
 # Polish keyboard data (QWERTY Programmers layout)
@@ -147,14 +148,14 @@ class _TypoEngine:
             return "right"
         return None
 
-    def _replace(self, word: str) -> Tuple[str, Optional[Tuple[int, ...]]]:
+    def _replace(self, word: str, rng: random.Random) -> Tuple[str, Optional[Tuple[int, ...]]]:
         word_list = list(word)
         weights = self._get_weights_of_idx(word)
-        idx, char = random.choices(list(enumerate(word_list)), weights=weights, k=1)[0]
+        idx, char = rng.choices(list(enumerate(word_list)), weights=weights, k=1)[0]
 
         neighbours = self._get_neighbours_with_orientation(char.lower())
         if neighbours:
-            replacement = random.choice(neighbours)
+            replacement = rng.choice(neighbours)
             if char.isupper():
                 replacement = replacement.upper()
 
@@ -173,28 +174,28 @@ class _TypoEngine:
 
         return "".join(word_list), (idx,)
 
-    def _delete(self, word: str) -> Tuple[str, Optional[Tuple[int, ...]]]:
+    def _delete(self, word: str, rng: random.Random) -> Tuple[str, Optional[Tuple[int, ...]]]:
         word_list = list(word)
         weights = self._get_weights_of_idx(word)
-        idx, _ = random.choices(list(enumerate(word_list)), weights=weights, k=1)[0]
+        idx, _ = rng.choices(list(enumerate(word_list)), weights=weights, k=1)[0]
         del word_list[idx]
         return "".join(word_list), (idx,)
 
-    def _insert(self, word: str) -> Tuple[str, Optional[Tuple[int, ...]]]:
+    def _insert(self, word: str, rng: random.Random) -> Tuple[str, Optional[Tuple[int, ...]]]:
         word_list = list(word)
         weights = self._get_weights_of_idx(word)
-        idx, char = random.choices(list(enumerate(word_list)), weights=weights, k=1)[0]
+        idx, char = rng.choices(list(enumerate(word_list)), weights=weights, k=1)[0]
 
         neighbours = self._get_neighbours_with_orientation(char.lower())
         if neighbours:
-            inserted = random.choice(neighbours)
+            inserted = rng.choice(neighbours)
             if char.isupper():
                 inserted = inserted.upper()
             word_list.insert(idx + 1, inserted)
 
         return "".join(word_list), (idx + 1,)
 
-    def _transpose(self, word: str) -> Tuple[str, Optional[Tuple[int, ...]]]:
+    def _transpose(self, word: str, rng: random.Random) -> Tuple[str, Optional[Tuple[int, ...]]]:
         word_list = list(word[1:])
         if len(word) <= 1:
             return word, None
@@ -214,7 +215,7 @@ class _TypoEngine:
         if sum(weights) == 0:
             return word, None
 
-        first, second = random.choices(transposable, weights=weights, k=1)[0]
+        first, second = rng.choices(transposable, weights=weights, k=1)[0]
         word_list[first], word_list[second] = word_list[second], word_list[first]
 
         return word[0] + "".join(word_list), (first, second)
@@ -261,8 +262,10 @@ class _TypoEngine:
         text: str,
         typo_rate: float,
         max_tries: int = 1000,
+        rng: Optional[random.Random] = None,
     ) -> str:
         """Insert typos into *text*. *typo_rate* is the fraction of words to corrupt."""
+        rng = rng or random.Random()
         words = [[word] for word in text.split(" ")]
         typos_target = self._round_it(typo_rate * len(words))
 
@@ -293,7 +296,7 @@ class _TypoEngine:
         while typoed < typos_target and tries <= max_tries:
             while ignore and tries <= max_tries:
                 tries += 1
-                word_idx, word_info = random.choices(
+                word_idx, word_info = rng.choices(
                     list(enumerate(words)), weights=weights, k=1
                 )[0]
                 word = word_info[0]
@@ -312,7 +315,7 @@ class _TypoEngine:
 
             while ((new_word == word) or not is_valid) and tries <= max_tries:
                 tries += 1
-                typo_name = random.choices(typo_names, weights=typo_weights, k=1)[0]
+                typo_name = rng.choices(typo_names, weights=typo_weights, k=1)[0]
                 typo_function = typo_funcs[typo_name]
 
                 if (typo_function is self._transpose
@@ -320,7 +323,7 @@ class _TypoEngine:
                     and " " not in word):
                     word = word + " "
 
-                new_word, idxs = typo_function(word)
+                new_word, idxs = typo_function(word, rng)
                 if new_word != word:
                     is_valid = self._is_valid_operation(words[word_idx], idxs, typo_function)
 
@@ -368,8 +371,10 @@ class TypoErrorGenerator(ErrorGenerator):
             raise ValueError(f"typo_rate must be between 0.0 and 1.0, got {typo_rate!r}")
         self._engine = _TypoEngine()
         self._typo_rate = typo_rate
-        if seed is not None:
-            random.seed(seed)
+        self._seed = seed if seed is not None else 0
+        self._salt = "typo"
 
     def apply(self, text: str) -> str:
-        return self._engine.insert_typos(text, typo_rate=self._typo_rate)
+        seed = deterministic_seed(self._seed, text, self._salt)
+        rng = random.Random(seed)
+        return self._engine.insert_typos(text, typo_rate=self._typo_rate, rng=rng)

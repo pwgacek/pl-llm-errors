@@ -208,7 +208,7 @@ def step_evaluate(
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Evaluation pipeline: read prompts → ask model → report.")
-    parser.add_argument("--model", default="gemma3:4b", help="Model name.")
+    parser.add_argument("--model", default="SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0", help="Model name.")
     parser.add_argument("--base-url", default="http://localhost:11434/v1", help="OpenAI-compatible API base URL.")
     parser.add_argument("--api-key", default="ollama", help="API key.")
     parser.add_argument("--prompts-dir", default="prompts", help="Directory with pre-built prompts (default: prompts/).")

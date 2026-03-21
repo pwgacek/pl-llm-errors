@@ -23,6 +23,7 @@ import random
 import re
 
 from .base import ErrorGenerator
+from ._rng import deterministic_seed
 
 # ── Dictionary of irregular spelling errors ─────────────────────────────
 # These cannot be expressed as simple character-substitution rules
@@ -160,7 +161,8 @@ class SpellingErrorGenerator(ErrorGenerator):
             raise ValueError(f"rate must be between 0.0 and 1.0, got {rate!r}")
 
         self.rate = rate
-        self._rng = random.Random(seed)
+        self._seed = seed if seed is not None else 0
+        self._salt = "spelling"
         self._rules = list(_RULES)
 
         # Build dictionary lookup structures.
@@ -183,6 +185,9 @@ class SpellingErrorGenerator(ErrorGenerator):
     # ── public API ──────────────────────────────────────────────────────
 
     def apply(self, text: str) -> str:
+        rng_seed = deterministic_seed(self._seed, text, self._salt)
+        rng = random.Random(rng_seed)
+
         # Budget is counted in modified words, not in random Bernoulli trials.
         target = int(self._round_it(self.rate * len([word for word in text.split(" ")])))
         if target <= 0:
@@ -193,14 +198,14 @@ class SpellingErrorGenerator(ErrorGenerator):
         for pattern, replacement in self._multi_word:
             if remaining <= 0:
                 break
-            text, used = self._replace_matches_budget(text, pattern, replacement, remaining)
+            text, used = self._replace_matches_budget(text, pattern, replacement, remaining, rng)
             remaining -= used
 
         if remaining <= 0:
             return text
 
         # Phase 2: spend remaining budget on eligible single words.
-        return self._process_words_budget(text, remaining)
+        return self._process_words_budget(text, remaining, rng)
 
 
     # ── internals ───────────────────────────────────────────────────────
@@ -214,7 +219,12 @@ class SpellingErrorGenerator(ErrorGenerator):
         return sum(1 for part in text.split() if part and part[0].isalpha())
 
     def _replace_matches_budget(
-        self, text: str, pattern: re.Pattern[str], replacement: str, budget: int,
+        self,
+        text: str,
+        pattern: re.Pattern[str],
+        replacement: str,
+        budget: int,
+        rng: random.Random,
     ) -> tuple[str, int]:
         """Replace non-overlapping matches while consuming at most *budget* words."""
         if budget <= 0:
@@ -225,7 +235,7 @@ class SpellingErrorGenerator(ErrorGenerator):
             return text, 0
 
         order = list(range(len(matches)))
-        self._rng.shuffle(order)
+        rng.shuffle(order)
 
         selected: set[int] = set()
         consumed = 0
@@ -273,7 +283,7 @@ class SpellingErrorGenerator(ErrorGenerator):
 
         return changes
 
-    def _process_words_budget(self, text: str, budget: int) -> str:
+    def _process_words_budget(self, text: str, budget: int, rng: random.Random) -> str:
         """Apply up to *budget* individual non-overlapping changes."""
         tokens = re.findall(r"\w+|\W+", text, flags=re.UNICODE)
         if budget <= 0:
@@ -291,10 +301,10 @@ class SpellingErrorGenerator(ErrorGenerator):
             return "".join(tokens)
 
         while budget > 0 and pending:
-            token_idx = self._rng.choice(list(pending.keys()))
+            token_idx = rng.choice(list(pending.keys()))
             changes = pending[token_idx]
 
-            chosen_idx = self._rng.randrange(len(changes))
+            chosen_idx = rng.randrange(len(changes))
             start, end, repl = changes[chosen_idx]
 
             tok = tokens[token_idx]
@@ -331,7 +341,7 @@ class SpellingErrorGenerator(ErrorGenerator):
                 return True
         return False
 
-    def _modify_word(self, word: str) -> str:
+    def _modify_word(self, word: str, rng: random.Random) -> str:
         """Try dict, then rules.  Returns modified or original word."""
         low = word.lower()
 
@@ -349,7 +359,7 @@ class SpellingErrorGenerator(ErrorGenerator):
             return word  # nothing to change
 
         # 3) Pick a random rule, apply to a random match position.
-        _, pattern, repl = self._rng.choice(applicable)
+        _, pattern, repl = rng.choice(applicable)
         matches = list(pattern.finditer(low))
-        m = self._rng.choice(matches)
+        m = rng.choice(matches)
         return word[: m.start()] + repl + word[m.end() :]
