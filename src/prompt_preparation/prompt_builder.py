@@ -171,10 +171,14 @@ class PromptBuilder:
                     print(f"  [{gen_name}/{dataset_name}] Overwriting existing file.")
 
                 lines: list[str] = []
-                for question in questions:
+                for idx, question in enumerate(questions, start=0):
                     prompt = question.build_prompt(generator)
                     expected = _serialize_expected(question)
-                    record = {"prompt": prompt, "expected": expected}
+                    record = {
+                        "id": f"{dataset_name}-{gen_name}-{idx:03d}",
+                        "prompt": prompt,
+                        "expected": expected,
+                    }
                     lines.append(json.dumps(record, ensure_ascii=False))
 
                 out_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
