@@ -2,10 +2,11 @@ from __future__ import annotations
 
 import argparse
 import json
+import shutil
+import urllib.request
 import urllib.error
 from pathlib import Path
 
-from download import download_file
 from errors import (
     DiacriticErrorGenerator,
     IdentityGenerator,
@@ -52,7 +53,7 @@ DATASETS = [
     },
     {
         "name": "cds",
-        "url": "https://git.nlp.ipipan.waw.pl/Scwad/SCWAD-CDSCorpus/repository/archive.zip",
+        "url": "http://git.nlp.ipipan.waw.pl/Scwad/SCWAD-CDSCorpus/raw/master/CDSCorpus/CDS_test.csv",
         "output": Path("datasets/CDS_test.csv"),
         "loader": CDSLoader,
     },
@@ -69,6 +70,12 @@ DATASETS = [
         "loader": BBHLoader,
     },
 ]
+
+def _download_file(url: str, output: Path, timeout: int = 120) -> None:
+    output.parent.mkdir(parents=True, exist_ok=True)
+    with urllib.request.urlopen(url, timeout=timeout) as response:
+        with output.open("wb") as file:
+            shutil.copyfileobj(response, file, length=1024 * 1024)
 
 
 def _serialize_expected(question: Question) -> dict:
@@ -114,7 +121,7 @@ class PromptBuilder:
                 continue
             print(f"  [{name}] Downloading {url} ...")
             try:
-                download_file(url, output)
+                _download_file(url, output)
                 print(f"  [{name}] Done.")
                 downloaded += 1
             except urllib.error.URLError as e:
