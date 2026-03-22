@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import string
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -9,6 +10,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from model import ask_model
+
+UPPERCASE_LETTERS = string.ascii_uppercase
 
 # ---------------------------------------------------------------------------
 # Verification
@@ -23,7 +26,9 @@ def _verify(raw: str, expected: dict) -> str:
         predicted = _extract_letter(raw)
         if predicted is None:
             return "ERROR"
-        correct_letter = "ABCD"[expected["correct_index"]]
+        correct_letter = _index_to_letter(expected["correct_index"])
+        if correct_letter is None:
+            return "ERROR"
         return "CORRECT" if predicted == correct_letter else "INCORRECT"
 
     if kind == "multiple_choice_letter":
@@ -55,7 +60,7 @@ def _verify(raw: str, expected: dict) -> str:
 
 
 def _extract_letter(text: str) -> str | None:
-    """Parse a JSON response and return the answer letter (A-E), or None."""
+    """Parse a JSON response and return the answer letter (A-Z), or None."""
     try:
         payload = json.loads(text)
     except json.JSONDecodeError:
@@ -63,12 +68,24 @@ def _extract_letter(text: str) -> str | None:
     raw_answer = _extract_json_field_from_dict(payload, ("odpowiedź", "odpowiedz", "answer"))
     if raw_answer is None:
         return None
-    if isinstance(raw_answer, int) and 0 <= raw_answer <= 4:
-        return "ABCDE"[raw_answer]
+    if isinstance(raw_answer, int):
+        return _index_to_letter(raw_answer)
     if not isinstance(raw_answer, str):
         return None
     normalized = raw_answer.strip().upper()
-    return normalized if normalized in "ABCDE" and len(normalized) == 1 else None
+    if not normalized:
+        return None
+    if normalized.isdigit():
+        letter = _index_to_letter(int(normalized))
+        if letter is not None:
+            return letter
+    return normalized if len(normalized) == 1 and normalized in UPPERCASE_LETTERS else None
+
+
+def _index_to_letter(index: int) -> str | None:
+    if 0 <= index < len(UPPERCASE_LETTERS):
+        return UPPERCASE_LETTERS[index]
+    return None
 
 
 def _extract_json_field(text: str, keys: tuple[str, ...]) -> str | None:
