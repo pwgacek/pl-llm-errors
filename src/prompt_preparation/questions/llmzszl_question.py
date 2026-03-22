@@ -14,9 +14,7 @@ class LlmzszlQuestion(Question):
     def build_prompt(self, error_generator: ErrorGenerator) -> str:
         question = error_generator.apply(self.question)
         answers = [error_generator.apply(answer) for answer in self.answers]
-
-        letters = [chr(ord('A') + i) for i in range(len(answers))]
-        choices = "\n".join(f"{letters[i]}. {answer}" for i, answer in enumerate(answers))
+        choices = self._format_lettered_choices(answers)
 
         return (
             "Odpowiedz na poniższe pytanie, wybierając poprawną odpowiedź spośród podanych.\n"

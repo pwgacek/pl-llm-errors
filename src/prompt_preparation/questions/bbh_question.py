@@ -1,3 +1,7 @@
+from __future__ import annotations
+
+from errors.base import ErrorGenerator
+
 from .base import Question
 
 
@@ -8,10 +12,9 @@ class BBHQuestion(Question):
         self.options = options
         self.answer = answer
 
-    def build_prompt(self, error_generator) -> str:
-        letters = ["A", "B", "C", "D", "E", "F", "G"]
+    def build_prompt(self, error_generator: ErrorGenerator) -> str:
         options = [error_generator.apply(option) for option in self.options]
-        choices = "\n".join(f"{letters[i]}. {option}" for i, option in enumerate(options))
+        choices = self._format_lettered_choices(options)
         text = error_generator.apply(self.text)
 
         return (
@@ -20,5 +23,4 @@ class BBHQuestion(Question):
             "Odpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n"
             f"<PYTANIE>{text}</PYTANIE>\n"
             f"<ODPOWIEDZI>\n{choices}\n</ODPOWIEDZI>\n"
-            
         )

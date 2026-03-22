@@ -6,13 +6,11 @@ from .base import Question
 
 
 class PolQAQuestion(Question):
-    """PolQA open-ended question with a context passage and a list of accepted free-text answers."""
-
     def __init__(self, question: str, context: str, answers: list[str]) -> None:
         self.question = question
         self.context = context
         self.answers = answers
-    
+
     def build_prompt(self, error_generator: ErrorGenerator) -> str:
         question = error_generator.apply(self.question)
         context = error_generator.apply(self.context)
@@ -22,5 +20,5 @@ class PolQAQuestion(Question):
             "Odpowiedź powinna mieć format: {\"odpowiedź\": \"WYRAŻENIE\"}\n"
             f"<KONTEKST>{context}</KONTEKST>\n"
             f"<PYTANIE>{question}</PYTANIE>\n"
-            
+
         )

@@ -9,12 +9,11 @@ class LDEKQuestion(Question):
     def __init__(self, question: str, answers: list[str], correct_answer: str) -> None:
         self.question = question
         self.answers = answers
-        self.correct_answer = correct_answer.upper()
+        self.correct_answer = correct_answer
 
     def build_prompt(self, error_generator: ErrorGenerator) -> str:
-        letters = ["A", "B", "C", "D", "E"]
         answers = [error_generator.apply(answer) for answer in self.answers]
-        choices = "\n".join(f"{letters[i]}. {answer}" for i, answer in enumerate(answers))
+        choices = self._format_lettered_choices(answers)
         question = error_generator.apply(self.question)
         return (
             "Wybierz poprawną odpowiedź spośród możliwych.\n"
