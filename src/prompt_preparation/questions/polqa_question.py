@@ -1,30 +1,17 @@
 from __future__ import annotations
 
-import ast
-
 from errors.base import ErrorGenerator
 
 from .base import Question
 
 
-class PolqaQuestion(Question):
+class PolQAQuestion(Question):
     """PolQA open-ended question with a context passage and a list of accepted free-text answers."""
 
     def __init__(self, question: str, context: str, answers: list[str]) -> None:
         self.question = question
         self.context = context
         self.answers = answers
-
-    @staticmethod
-    def parse_answers(raw: str) -> list[str]:
-        """Parse a Python list serialized as a string, e.g. \"['tak', 'yes']\"."""
-        try:
-            parsed = ast.literal_eval(raw)
-            if isinstance(parsed, list):
-                return [str(a) for a in parsed]
-        except (ValueError, SyntaxError):
-            pass
-        return [raw]
     
     def build_prompt(self, error_generator: ErrorGenerator) -> str:
         question = error_generator.apply(self.question)

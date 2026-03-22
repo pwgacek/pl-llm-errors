@@ -9,50 +9,46 @@ from questions import BBHQuestion, Question
 OPTION_PATTERN = re.compile(r"^\(([A-G])\)\s*(.+)$")
 
 
-def _parse_bbh_input(raw: str) -> tuple[str, list[str]] | None:
+def _parse_bbh_input(raw: str) -> tuple[str, list[str]]:
     """Split input into (question_text, [option_a, ..., option_g])."""
-    # Split on "Opcje:" to separate narrative from options
+
     parts = raw.split("Opcje:")
     if len(parts) != 2:
-        return None
+        raise ValueError(f"Unexpected BBH input format, missing 'Opcje:' separator: {raw}")
     
     question_text = parts[0].strip()
     options_text = parts[1].strip()
     
     lines = [line.strip() for line in options_text.splitlines() if line.strip()]
-    answers: dict[str, str] = {}
+    answers: list[str] = []
     
     for line in lines:
         m = OPTION_PATTERN.match(line)
         if m:
-            answers[m.group(1)] = m.group(2).strip()
+            answers.append(m.group(2).strip())
     
-    if not question_text or not answers:
-        return None
-    
-    ordered = [answers[letter] for letter in "ABCDEFG" if letter in answers]
-    return question_text, ordered
+    if not question_text or not len(answers) == 7:
+        raise ValueError(f"Unexpected BBH input format, missing question text or options: {raw}")
+
+    return question_text, answers
 
 
 class BBHLoader(Loader):
-    def load(self, num_samples: int | None = None, seed: int = 42) -> list[Question]:
-        """Load questions from the BBH logical deduction dataset JSONL file, optionally sampling deterministically."""
+    def load(self, path: Path, num_samples: int, seed: int) -> list[Question]:
         questions: list[Question] = []
 
-        with Path("datasets/bbh-logical-deduction-seven-objects-pl.jsonl").open("r", encoding="utf-8") as file:
-            for line in file:
-                record = json.loads(line)
-                input_text = record.get("input", "").strip()
-                answer = record.get("target", "").strip().strip("()")
+        lines = self._load_lines(path)
+        lines = self._deterministic_sample(lines, num_samples, seed)
 
-                if not input_text or not answer:
-                    continue
-                
-                parsed = _parse_bbh_input(input_text)
-                if parsed is None:
-                    continue
-                
-                question_text, options = parsed
-                questions.append(BBHQuestion(question_text, options, answer))
+        for line in lines:
+            record = json.loads(line)
+            input_text = record.get("input", "").strip()
+            answer = record.get("target", "").strip().strip("()")
 
-        return self._deterministic_sample(questions, num_samples, seed)
+            if not input_text or not answer:
+                raise ValueError(f"Invalid BBH record, missing input or target: {line}")
+            
+            question_text, options = _parse_bbh_input(input_text)
+            questions.append(BBHQuestion(question_text, options, answer))
+
+        return questions

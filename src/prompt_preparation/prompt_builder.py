@@ -22,7 +22,7 @@ from questions import (
     CdsQuestion,
     LDEKQuestion,
     LlmzszlQuestion,
-    PolqaQuestion,
+    PolQAQuestion,
     Question,
 )
 
@@ -84,7 +84,7 @@ def _serialize_expected(question: Question) -> dict:
         return {"type": "multiple_choice_index", "correct_index": question.correct_answer_index}
     if isinstance(question, LDEKQuestion):
         return {"type": "multiple_choice_letter", "correct_letter": question.correct_answer}
-    if isinstance(question, PolqaQuestion):
+    if isinstance(question, PolQAQuestion):
         return {"type": "open_contained", "accepted_answers": question.answers}
     if isinstance(question, CdsQuestion):
         return {"type": "entailment", "judgment": question.entailment_judgment}
@@ -144,7 +144,7 @@ class PromptBuilder:
                 print(f"  [{name}] File missing, skipping.")
                 continue
             try:
-                questions = dataset["loader"]().load(num_samples=self.num_questions, seed=self.seed)
+                questions = dataset["loader"]().load(path=dataset["output"], num_samples=self.num_questions, seed=self.seed)
                 loaded[name] = questions
                 print(f"  [{name}] Loaded {len(questions)} questions.")
             except Exception as e:
