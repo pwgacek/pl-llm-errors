@@ -1,3 +1,7 @@
+---
+applyTo: "**/*.py"
+---
+
 # Copilot Instructions for Python Code Generation
 
 ## General Principles
@@ -25,6 +29,7 @@ def get_user(id: int) -> dict[str, str]:
 
 def process(items: list[int]) -> None:
     ...
+```
 
 ## Documentation
 - Do NOT document code
