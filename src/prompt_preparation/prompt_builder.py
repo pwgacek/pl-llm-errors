@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import argparse
 import json
 import shutil
 import urllib.request
@@ -17,6 +16,7 @@ from errors import (
 )
 from errors.base import ErrorGenerator
 from loaders import CDSLoader, LDEKLoader, LLMZSZLLoader, PolQALoader, BBHLoader
+from settings import settings
 from questions import (
     BBHQuestion,
     CdsQuestion,
@@ -93,135 +93,140 @@ def _serialize_expected(question: Question) -> dict:
     raise TypeError(f"Unknown question type: {type(question)}")
 
 
-class PromptBuilder:
-    def __init__(
-        self,
-        num_questions: int = 100,
-        seed: int = 42,
-        output_dir: Path = Path("prompts"),
-        skip_download: bool = False,
-    ) -> None:
-        self.num_questions = num_questions
-        self.seed = seed
-        self.output_dir = output_dir
-        self.skip_download = skip_download
+def _download_datasets() -> None:
+    print("\n=== Step 1: Downloading datasets ===")
+    downloaded = skipped = failed = 0
+    for dataset in DATASETS:
+        name, url, output = dataset["name"], dataset["url"], dataset["output"]
+        if output.exists():
+            print(f"  [{name}] Already exists, skipping.")
+            skipped += 1
+            continue
+        print(f"  [{name}] Downloading {url} ...")
+        try:
+            _download_file(url, output)
+            print(f"  [{name}] Done.")
+            downloaded += 1
+        except urllib.error.URLError as e:
+            print(f"  [{name}] FAILED: {e}")
+            failed += 1
+    print(f"  downloaded={downloaded}  skipped={skipped}  failed={failed}")
+    if failed:
+        print("  Some downloads failed. Proceeding with available datasets.")
 
-    # ------------------------------------------------------------------
-    # Step 1: Download
-    # ------------------------------------------------------------------
 
-    def download(self) -> None:
-        print("\n=== Step 1: Downloading datasets ===")
-        downloaded = skipped = failed = 0
-        for dataset in DATASETS:
-            name, url, output = dataset["name"], dataset["url"], dataset["output"]
-            if output.exists():
-                print(f"  [{name}] Already exists, skipping.")
-                skipped += 1
-                continue
-            print(f"  [{name}] Downloading {url} ...")
-            try:
-                _download_file(url, output)
-                print(f"  [{name}] Done.")
-                downloaded += 1
-            except urllib.error.URLError as e:
-                print(f"  [{name}] FAILED: {e}")
-                failed += 1
-        print(f"  downloaded={downloaded}  skipped={skipped}  failed={failed}")
-        if failed:
-            print("  Some downloads failed. Proceeding with available datasets.")
+def _load_datasets(num_questions: int, seed: int) -> dict[str, list[Question]]:
+    print("\n=== Step 2: Loading datasets ===")
+    loaded: dict[str, list[Question]] = {}
+    for dataset in DATASETS:
+        name = dataset["name"]
+        if not dataset["output"].exists():
+            print(f"  [{name}] File missing, skipping.")
+            continue
+        try:
+            questions = dataset["loader"]().load(
+                path=dataset["output"], num_samples=num_questions, seed=seed
+            )
+            loaded[name] = questions
+            print(f"  [{name}] Loaded {len(questions)} questions.")
+        except Exception as e:
+            print(f"  [{name}] Load error: {e}")
+    return loaded
 
-    # ------------------------------------------------------------------
-    # Step 2: Load
-    # ------------------------------------------------------------------
 
-    def load(self) -> dict[str, list[Question]]:
-        print("\n=== Step 2: Loading datasets ===")
-        loaded: dict[str, list[Question]] = {}
-        for dataset in DATASETS:
-            name = dataset["name"]
-            if not dataset["output"].exists():
-                print(f"  [{name}] File missing, skipping.")
-                continue
-            try:
-                questions = dataset["loader"]().load(path=dataset["output"], num_samples=self.num_questions, seed=self.seed)
-                loaded[name] = questions
-                print(f"  [{name}] Loaded {len(questions)} questions.")
-            except Exception as e:
-                print(f"  [{name}] Load error: {e}")
-        return loaded
+def _clean_output_directory(output_dir: Path) -> None:
+    if not output_dir.exists() or not any(output_dir.iterdir()):
+        return
 
-    # ------------------------------------------------------------------
-    # Step 3: Build & save prompts
-    # ------------------------------------------------------------------
+    print(f"  [info] Cleaning output directory: {output_dir}")
+    for item in output_dir.iterdir():
+        if item.is_dir():
+            shutil.rmtree(item)
+        else:
+            item.unlink()
 
-    def build_and_save(self, loaded: dict[str, list[Question]]) -> None:
-        print("\n=== Step 3: Building and saving noised prompts ===")
-        # Clean output_dir if it exists and is not empty
-        if self.output_dir.exists() and any(self.output_dir.iterdir()):
-            print(f"  [info] Cleaning output directory: {self.output_dir}")
-            import shutil
-            for item in self.output_dir.iterdir():
-                if item.is_dir():
-                    shutil.rmtree(item)
-                else:
-                    item.unlink()
 
-        for gen_name, generator in GENERATORS.items():
-            gen_dir = self.output_dir / gen_name
-            gen_dir.mkdir(parents=True, exist_ok=True)
+def _build_prompt_lines(
+    questions: list[Question],
+    dataset_name: str,
+    gen_name: str,
+    generator: ErrorGenerator,
+) -> list[str]:
+    lines: list[str] = []
+    for idx, question in enumerate(questions, start=0):
+        prompt = question.build_prompt(generator)
+        expected = _serialize_expected(question)
+        record = {
+            "id": f"{dataset_name}-{gen_name}-{idx:03d}",
+            "prompt": prompt,
+            "expected": expected,
+        }
+        lines.append(json.dumps(record, ensure_ascii=False))
+    return lines
 
-            for dataset_name, questions in loaded.items():
-                out_path = gen_dir / f"{dataset_name}.jsonl"
-                if out_path.exists():
-                    out_path.unlink()
-                    print(f"  [{gen_name}/{dataset_name}] Overwriting existing file.")
 
-                lines: list[str] = []
-                for idx, question in enumerate(questions, start=0):
-                    prompt = question.build_prompt(generator)
-                    expected = _serialize_expected(question)
-                    record = {
-                        "id": f"{dataset_name}-{gen_name}-{idx:03d}",
-                        "prompt": prompt,
-                        "expected": expected,
-                    }
-                    lines.append(json.dumps(record, ensure_ascii=False))
+def _save_dataset_prompts(
+    dataset_name: str,
+    questions: list[Question],
+    gen_name: str,
+    generator: ErrorGenerator,
+    gen_dir: Path,
+) -> None:
+    out_path = gen_dir / f"{dataset_name}.jsonl"
+    if out_path.exists():
+        out_path.unlink()
+        print(f"  [{gen_name}/{dataset_name}] Overwriting existing file.")
 
-                out_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
-                print(f"  [{gen_name}/{dataset_name}] Saved {len(questions)} prompts to {out_path}")
+    lines = _build_prompt_lines(
+        questions=questions,
+        dataset_name=dataset_name,
+        gen_name=gen_name,
+        generator=generator,
+    )
+    out_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    print(f"  [{gen_name}/{dataset_name}] Saved {len(questions)} prompts to {out_path}")
 
-    # ------------------------------------------------------------------
-    # Orchestrator
-    # ------------------------------------------------------------------
 
-    def build(self) -> None:
-        if not self.skip_download:
-            self.download()
-        loaded = self.load()
-        if not loaded:
-            print("No datasets loaded. Nothing to build.")
-            return
-        self.build_and_save(loaded)
-        print("\nDone. Prompts saved to:", self.output_dir)
+def _build_and_save_prompts(loaded: dict[str, list[Question]], output_dir: Path) -> None:
+    print("\n=== Step 3: Building and saving noised prompts ===")
+    _clean_output_directory(output_dir)
+
+    for gen_name, generator in GENERATORS.items():
+        gen_dir = output_dir / gen_name
+        gen_dir.mkdir(parents=True, exist_ok=True)
+
+        for dataset_name, questions in loaded.items():
+            _save_dataset_prompts(
+                dataset_name=dataset_name,
+                questions=questions,
+                gen_name=gen_name,
+                generator=generator,
+                gen_dir=gen_dir,
+            )
+
+
+def build_prompts(
+    num_questions: int,
+    seed: int,
+    output_dir: Path,
+) -> None:
+    _download_datasets()
+
+    loaded = _load_datasets(num_questions=num_questions, seed=seed)
+    if not loaded:
+        print("No datasets loaded. Nothing to build.")
+        return
+
+    _build_and_save_prompts(loaded=loaded, output_dir=output_dir)
+    print("\nDone. Prompts saved to:", output_dir)
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(
-        description="Offline pipeline: download → load → noisify → save prompts."
+    build_prompts(
+        num_questions=settings.prompt_preparation.num_questions,
+        seed=settings.prompt_preparation.seed,
+        output_dir=Path(settings.prompt_preparation.output_dir),
     )
-    parser.add_argument("--num-questions", type=int, default=100, help="Questions sampled per dataset (default: 100).")
-    parser.add_argument("--seed", type=int, default=42, help="Random seed (default: 42).")
-    parser.add_argument("--output-dir", default="prompts", help="Root directory for saved prompts (default: prompts/).")
-    parser.add_argument("--skip-download", action="store_true", help="Skip the download step.")
-    args = parser.parse_args()
-
-    PromptBuilder(
-        num_questions=args.num_questions,
-        seed=args.seed,
-        output_dir=Path(args.output_dir),
-        skip_download=args.skip_download,
-    ).build()
 
 
 if __name__ == "__main__":

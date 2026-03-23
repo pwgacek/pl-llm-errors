@@ -1,0 +1,4 @@
+prompt_preparation:
+  num_questions: 100
+  seed: 42
+  output_dir: prompts
