@@ -2,3 +2,11 @@ prompt_preparation:
   num_questions: 100
   seed: 42
   output_dir: prompts
+
+evaluation:
+  model: SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0
+  base_url: http://localhost:11434/v1
+  api_key: ollama
+  workers: 1
+  report: results/report.json
+  resume: null

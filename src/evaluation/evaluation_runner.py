@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import argparse
 import json
 import string
 import sys
@@ -10,6 +9,10 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from model import ask_model
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from settings import settings
 
 UPPERCASE_LETTERS = string.ascii_uppercase
 
@@ -224,39 +227,37 @@ def step_evaluate(
 # ---------------------------------------------------------------------------
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Evaluation pipeline: read prompts → ask model → report.")
-    parser.add_argument("--model", default="SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0", help="Model name.")
-    parser.add_argument("--base-url", default="http://localhost:11434/v1", help="OpenAI-compatible API base URL.")
-    parser.add_argument("--api-key", default="ollama", help="API key.")
-    parser.add_argument("--prompts-dir", default="prompts", help="Directory with pre-built prompts (default: prompts/).")
-    parser.add_argument("--workers", type=int, default=1, help="Parallel workers for model requests (default: 1).")
-    parser.add_argument("--report", default="results/report.json", help="Output report file path (default: results/report.json).")
-    parser.add_argument("--resume", type=str, default=None, metavar="REPORT", help="Resume from a partial report JSON file.")
-    args = parser.parse_args()
+    model = settings.evaluation.model
+    base_url = settings.evaluation.base_url
+    api_key = settings.evaluation.api_key
+    prompts_dir = Path(settings.prompt_preparation.output_dir)
+    workers = int(settings.evaluation.workers)
+    report = Path(settings.evaluation.report)
+    resume = settings.evaluation.get("resume")
 
     pipeline_start = time.perf_counter()
 
-    prompts = step_load_prompts(Path(args.prompts_dir))
+    prompts = step_load_prompts(prompts_dir)
     if not prompts:
         print("No prompts loaded. Run prompt_builder.py first.")
         sys.exit(1)
 
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d_%H-%M-%S")
-    base_path = Path(args.report)
+    base_path = report
     report_path = base_path.parent / f"{base_path.stem}_{timestamp}{base_path.suffix}"
     report_path.parent.mkdir(parents=True, exist_ok=True)
 
     report_skeleton = {
         "timestamp": datetime.now(timezone.utc).isoformat(),
-        "model": args.model,
-        "base_url": args.base_url,
-        "workers": args.workers,
-        "prompts_dir": args.prompts_dir,
+        "model": model,
+        "base_url": base_url,
+        "workers": workers,
+        "prompts_dir": str(prompts_dir),
     }
 
     existing_results: dict[str, dict] | None = None
-    if args.resume:
-        resume_path = Path(args.resume)
+    if resume:
+        resume_path = Path(str(resume))
         if resume_path.exists():
             prev = json.loads(resume_path.read_text(encoding="utf-8"))
             existing_results = prev.get("datasets", {})
@@ -267,7 +268,7 @@ def main() -> None:
             print(f"  Resume file {resume_path} not found, starting fresh.")
 
     results = step_evaluate(
-        prompts, args.model, args.base_url, args.api_key, args.workers,
+        prompts, model, base_url, api_key, workers,
         report_path=report_path, report_skeleton=report_skeleton, existing_results=existing_results,
     )
 
