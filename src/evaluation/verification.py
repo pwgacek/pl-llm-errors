@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-from collections import Counter
 import json
 import re
 import string
@@ -19,8 +18,8 @@ def verify_response(raw: str, expected: dict) -> VerificationResult:
     if kind == "multiple_choice_letter":
         return verify_multiple_choice_letter(raw, expected)
 
-    if kind == "open_contained":
-        return verify_open_contained(raw, expected)
+    if kind == "open_short_answer":
+        return verify_open_short_answer(raw, expected)
 
     if kind == "entailment":
         return verify_entailment(raw, expected)
@@ -48,28 +47,57 @@ def verify_multiple_choice_letter(raw: str, expected: dict) -> VerificationResul
     return (1.0, False) if predicted == expected["correct_letter"].upper() else (0.0, False)
 
 
-def verify_open_contained(raw: str, expected: dict) -> VerificationResult:
+def verify_open_short_answer(raw: str, expected: dict) -> VerificationResult:
     answer = extract_json_field(raw, ANSWER_FIELD_KEYS)
     if answer is None:
-        normalized_answer = normalize_for_f1(raw)
+        normalized_answer = normalize(raw)
     else:
-        normalized_answer = normalize_for_f1(answer)
+        normalized_answer = normalize(answer)
 
-    if not normalized_answer:
+    normalized_expected = [ normalize(accepted) for accepted in expected["accepted_answers"]]
+
+    if not normalized_expected or not normalized_answer:
         return 0.0, True
 
-    normalized_expected = [
-        normalize_for_f1(accepted)
-        for accepted in expected["accepted_answers"]
-        if isinstance(accepted, str)
-    ]
-    normalized_expected = [candidate for candidate in normalized_expected if candidate]
+    best_score = max(
+        levenshtein_score(normalized_answer, candidate)
+        for candidate in normalized_expected
+    )
+    return best_score, False
 
-    if not normalized_expected:
-        return 0.0, True
 
-    best_f1 = max(compute_f1_score(normalized_answer, candidate) for candidate in normalized_expected)
-    return best_f1, False
+def normalize(text: str) -> str:
+    return text.strip().lower()
+
+
+def levenshtein_distance(s1: str, s2: str) -> int:
+    rows = len(s1) + 1
+    cols = len(s2) + 1
+    dist = [[0 for _ in range(cols)] for _ in range(rows)]
+
+    for i in range(1, rows):
+        dist[i][0] = i
+    for j in range(1, cols):
+        dist[0][j] = j
+
+    for i in range(1, rows):
+        for j in range(1, cols):
+            cost = 0 if s1[i - 1] == s2[j - 1] else 1
+            dist[i][j] = min(
+                dist[i - 1][j] + 1,
+                dist[i][j - 1] + 1,
+                dist[i - 1][j - 1] + cost,
+            )
+
+    return dist[rows - 1][cols - 1]
+
+
+def levenshtein_score(pred: str, ref: str) -> float:
+    max_len = max(len(pred), len(ref))
+    distance = levenshtein_distance(pred, ref)
+    return 1.0 - (distance / max_len)
+
+
 
 
 def verify_entailment(raw: str, expected: dict) -> VerificationResult:
@@ -83,28 +111,6 @@ def verify_entailment(raw: str, expected: dict) -> VerificationResult:
         return 0.0, True
 
     return (1.0, False) if normalized_answer == expected["judgment"].upper() else (0.0, False)
-
-
-def normalize_for_f1(text: str) -> str:
-    lowered = text.strip().lower()
-    cleaned = re.sub(r"[^\w\s]", " ", lowered)
-    return " ".join(cleaned.split())
-
-
-def compute_f1_score(prediction: str, reference: str) -> float:
-    pred_tokens = prediction.split()
-    ref_tokens = reference.split()
-    if not pred_tokens or not ref_tokens:
-        return 0.0
-
-    common = Counter(pred_tokens) & Counter(ref_tokens)
-    overlap = sum(common.values())
-    if overlap == 0:
-        return 0.0
-
-    precision = overlap / len(pred_tokens)
-    recall = overlap / len(ref_tokens)
-    return (2.0 * precision * recall) / (precision + recall)
 
 
 def extract_letter(text: str) -> str | None:

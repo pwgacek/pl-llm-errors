@@ -16,7 +16,7 @@ class CdsQuestion(Question):
         sentence_b = error_generator.apply(self.sentence_b)
         return (
             "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\n"
-            "Odpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n"
+            "Odpowiedź powinna mieć format: {\"odpowiedź\": \"RELACJA\"}.\n"
             f"<ZDANIE_A>{sentence_a}</ZDANIE_A>\n"
             f"<ZDANIE_B>{sentence_b}</ZDANIE_B>\n"
         )

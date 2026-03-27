@@ -17,6 +17,7 @@ class PolQAQuestion(Question):
 
         return (
             "Odpowiedz na pytanie korzystając z dostarczonego kontekstu.\n"
+            "Zwróć tylko krótką frazę, nie pełne zdanie.\n"
             "Odpowiedź powinna mieć format: {\"odpowiedź\": \"WYRAŻENIE\"}\n"
             f"<KONTEKST>{context}</KONTEKST>\n"
             f"<PYTANIE>{question}</PYTANIE>\n"

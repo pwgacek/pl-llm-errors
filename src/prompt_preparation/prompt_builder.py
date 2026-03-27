@@ -88,7 +88,7 @@ def _serialize_expected(question: Question) -> dict:
     if isinstance(question, LDEKQuestion):
         return {"type": "multiple_choice_letter", "correct_letter": question.correct_answer}
     if isinstance(question, PolQAQuestion):
-        return {"type": "open_contained", "accepted_answers": question.answers}
+        return {"type": "open_short_answer", "accepted_answers": question.answers}
     if isinstance(question, CdsQuestion):
         return {"type": "entailment", "judgment": question.entailment_judgment}
     if isinstance(question, BBHQuestion):
