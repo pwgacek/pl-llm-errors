@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import json
-import string
+import re
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -9,134 +9,56 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from llm_client import LLMClient
+from verification import verify_response
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from settings import settings
 
-UPPERCASE_LETTERS = string.ascii_uppercase
 
-# ---------------------------------------------------------------------------
-# Verification
-# ---------------------------------------------------------------------------
-
-def _verify(raw: str, expected: dict) -> str:
-    """Return 'CORRECT', 'INCORRECT', or 'ERROR' by comparing the model's raw
-    response against the *expected* dict saved by PromptBuilder."""
-    kind = expected.get("type")
-
-    if kind == "multiple_choice_index":
-        predicted = _extract_letter(raw)
-        if predicted is None:
-            return "ERROR"
-        correct_letter = _index_to_letter(expected["correct_index"])
-        if correct_letter is None:
-            return "ERROR"
-        return "CORRECT" if predicted == correct_letter else "INCORRECT"
-
-    if kind == "multiple_choice_letter":
-        predicted = _extract_letter(raw)
-        if predicted is None:
-            return "ERROR"
-        return "CORRECT" if predicted == expected["correct_letter"].upper() else "INCORRECT"
-
-    if kind == "open_contained":
-        normalized = raw.strip().lower()
-        if not normalized:
-            return "ERROR"
-        for accepted in expected["accepted_answers"]:
-            if accepted.strip().lower() in normalized:
-                return "CORRECT"
-        return "INCORRECT"
-
-    if kind == "entailment":
-        answer = _extract_json_field(raw, ("odpowiedź", "odpowiedz", "answer"))
-        if answer is None:
-            answer = raw.strip().upper()
-        else:
-            answer = answer.strip().upper()
-        if answer not in {"NEUTRAL", "CONTRADICTION", "ENTAILMENT"}:
-            return "ERROR"
-        return "CORRECT" if answer == expected["judgment"].upper() else "INCORRECT"
-
-    return "ERROR"
-
-
-def _extract_letter(text: str) -> str | None:
-    """Parse a JSON response and return the answer letter (A-Z), or None."""
-    try:
-        payload = json.loads(text)
-    except json.JSONDecodeError:
-        return None
-    raw_answer = _extract_json_field_from_dict(payload, ("odpowiedź", "odpowiedz", "answer"))
-    if raw_answer is None:
-        return None
-    if isinstance(raw_answer, int):
-        return _index_to_letter(raw_answer)
-    if not isinstance(raw_answer, str):
-        return None
-    normalized = raw_answer.strip().upper()
-    if not normalized:
-        return None
-    if normalized.isdigit():
-        letter = _index_to_letter(int(normalized))
-        if letter is not None:
-            return letter
-    return normalized if len(normalized) == 1 and normalized in UPPERCASE_LETTERS else None
-
-
-def _index_to_letter(index: int) -> str | None:
-    if 0 <= index < len(UPPERCASE_LETTERS):
-        return UPPERCASE_LETTERS[index]
-    return None
-
-
-def _extract_json_field(text: str, keys: tuple[str, ...]) -> str | None:
-    try:
-        payload = json.loads(text)
-    except json.JSONDecodeError:
-        return None
-    return _extract_json_field_from_dict(payload, keys)
-
-
-def _extract_json_field_from_dict(payload: dict, keys: tuple[str, ...]) -> object | None:
-    for key in keys:
-        value = payload.get(key)
-        if value is not None:
-            return value
-    return None
-
-
-# ---------------------------------------------------------------------------
-# Pipeline steps
-# ---------------------------------------------------------------------------
-
-# Prompts structure loaded from disk:
-#   dict[generator_name, dict[dataset_name, list[{"prompt": str, "expected": dict}]]]
 Prompts = dict[str, dict[str, list[dict]]]
+RESULT_SYMBOLS = {"CORRECT": "✅", "INCORRECT": "❌", "ERROR": "⚠️"}
+
+
+def _sanitize_filename_component(value: str) -> str:
+    sanitized = re.sub(r'[<>:"/\\|?*\x00-\x1F]', "_", value)
+    sanitized = re.sub(r"\s+", "_", sanitized).strip(" ._")
+    return sanitized or "model"
+
+
+def _build_report_path(model: str, timestamp: str) -> Path:
+    safe_model_name = _sanitize_filename_component(str(model))
+    return Path("results") / f"{safe_model_name}_{timestamp}.json"
+
+
+def _load_jsonl_records(prompt_file: Path) -> list[dict]:
+    records: list[dict] = []
+    for raw_line in prompt_file.read_text(encoding="utf-8").splitlines():
+        line = raw_line.strip()
+        if not line:
+            continue
+        records.append(json.loads(line))
+    return records
 
 
 def step_load_prompts(prompts_dir: Path) -> Prompts:
     print(f"\n=== Step 1: Loading prompts from {prompts_dir} ===")
     prompts: Prompts = {}
     if not prompts_dir.is_dir():
-        print(f"  Prompts directory '{prompts_dir}' not found.")
-        return prompts
+        raise ValueError(f"  Prompts directory '{prompts_dir}' not found.")
 
-    for gen_dir in sorted(prompts_dir.iterdir()):
-        if not gen_dir.is_dir():
-            continue
+    generator_dirs = sorted(path for path in prompts_dir.iterdir() if path.is_dir())
+    for gen_dir in generator_dirs:
         gen_name = gen_dir.name
-        prompts[gen_name] = {}
+        datasets: dict[str, list[dict]] = {}
+
         for prompt_file in sorted(gen_dir.glob("*.jsonl")):
             dataset_name = prompt_file.stem
-            records = []
-            for line in prompt_file.read_text(encoding="utf-8").splitlines():
-                line = line.strip()
-                if line:
-                    records.append(json.loads(line))
-            prompts[gen_name][dataset_name] = records
+            records = _load_jsonl_records(prompt_file)
+            datasets[dataset_name] = records
             print(f"  [{gen_name}/{dataset_name}] Loaded {len(records)} prompts.")
+
+        prompts[gen_name] = datasets
 
     return prompts
 
@@ -147,12 +69,58 @@ def _save_partial(report_path: Path, report: dict) -> None:
     tmp.rename(report_path)
 
 
+def _count_results(records: list[dict]) -> tuple[int, int, int]:
+    correct = sum(1 for record in records if record["result"] == "CORRECT")
+    incorrect = sum(1 for record in records if record["result"] == "INCORRECT")
+    error = sum(1 for record in records if record["result"] == "ERROR")
+    return correct, incorrect, error
+
+
+def _evaluate_records(
+    records: list[dict],
+    model_client: LLMClient,
+    workers: int,
+) -> list[dict]:
+    total = len(records)
+
+    def ask_one(args: tuple[int, dict]) -> dict:
+        i, record = args
+        prompt = record["prompt"]
+        expected = record["expected"]
+        t0 = time.perf_counter()
+
+        try:
+            raw = model_client.ask(prompt)
+        except Exception as e:
+            print(f"    [{i}/{total}] Model error: {e}")
+            return {"index": i, "prompt": prompt, "result": "ERROR", "elapsed": 0.0}
+
+        elapsed = time.perf_counter() - t0
+        label = verify_response(raw, expected)
+        symbol = RESULT_SYMBOLS.get(label, "")
+        print(f"    [{i}/{total}] {label} {symbol}  ({elapsed:.2f}s)")
+        return {
+            "index": i,
+            "prompt": prompt,
+            "raw_answer": raw,
+            "result": label,
+            "elapsed": round(elapsed, 3),
+        }
+
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        futures = {executor.submit(ask_one, (i, r)): i for i, r in enumerate(records, start=1)}
+        raw_records = [future.result() for future in as_completed(futures)]
+
+    raw_records.sort(key=lambda record: record["index"])
+    return [{k: v for k, v in record.items() if k != "index"} for record in raw_records]
+
+
 def step_evaluate(
     prompts: Prompts,
     model_client: LLMClient,
-    workers: int = 1,
-    report_path: Path | None = None,
-    report_skeleton: dict | None = None,
+    workers: int,
+    report_path: Path,
+    report_skeleton: dict,
     existing_results: dict[str, dict] | None = None,
 ) -> dict[str, dict]:
     print("\n=== Step 2: Evaluating ===")
@@ -172,32 +140,8 @@ def step_evaluate(
             print(f"\n  [{gen_name}/{dataset_name}] Asking {total} questions ...")
             dataset_start = time.perf_counter()
 
-            def ask_one(args: tuple[int, dict]) -> dict:
-                i, record = args
-                prompt = record["prompt"]
-                expected = record["expected"]
-                t0 = time.perf_counter()
-                try:
-                    raw = model_client.ask(prompt)
-                except Exception as e:
-                    print(f"    [{i}/{total}] Model error: {e}")
-                    return {"index": i, "prompt": prompt, "result": "ERROR", "elapsed": 0.0}
-                elapsed = time.perf_counter() - t0
-                label = _verify(raw, expected)
-                symbol = {"CORRECT": "✅", "INCORRECT": "❌", "ERROR": "⚠️"}.get(label, "")
-                print(f"    [{i}/{total}] {label} {symbol}  ({elapsed:.2f}s)")
-                return {"index": i, "prompt": prompt, "raw_answer": raw, "result": label, "elapsed": round(elapsed, 3)}
-
-            with ThreadPoolExecutor(max_workers=workers) as executor:
-                futures = {executor.submit(ask_one, (i, r)): i for i, r in enumerate(records, start=1)}
-                raw_records = [f.result() for f in as_completed(futures)]
-
-            raw_records.sort(key=lambda r: r["index"])
-            output_records = [{k: v for k, v in r.items() if k != "index"} for r in raw_records]
-
-            correct = sum(1 for r in output_records if r["result"] == "CORRECT")
-            incorrect = sum(1 for r in output_records if r["result"] == "INCORRECT")
-            error = sum(1 for r in output_records if r["result"] == "ERROR")
+            output_records = _evaluate_records(records, model_client, workers)
+            correct, incorrect, error = _count_results(output_records)
             dataset_elapsed = time.perf_counter() - dataset_start
             accuracy = correct / total if total > 0 else 0.0
             print(f"  [{gen_name}/{dataset_name}] correct={correct}  incorrect={incorrect}  error={error}  accuracy={accuracy:.2%}  time={dataset_elapsed:.1f}s")
@@ -212,17 +156,13 @@ def step_evaluate(
                 "questions": output_records,
             }
 
-            if report_path is not None and report_skeleton is not None:
-                partial = {**report_skeleton, "datasets": results, "status": "partial"}
-                _save_partial(report_path, partial)
-                print(f"  💾 Progress saved to {report_path}")
+            partial = {**report_skeleton, "datasets": results, "status": "partial"}
+            _save_partial(report_path, partial)
+            print(f"  💾 Progress saved to {report_path}")
 
     return results
 
 
-# ---------------------------------------------------------------------------
-# Main
-# ---------------------------------------------------------------------------
 
 def main() -> None:
     model = settings.evaluation.model
@@ -232,7 +172,6 @@ def main() -> None:
     temperature = int(settings.evaluation.temperature)
     prompts_dir = Path(settings.common.prompt_dir)
     workers = int(settings.evaluation.workers)
-    report = Path(settings.evaluation.report)
     resume = settings.evaluation.resume
 
     llm_client = LLMClient(
@@ -246,13 +185,9 @@ def main() -> None:
     pipeline_start = time.perf_counter()
 
     prompts = step_load_prompts(prompts_dir)
-    if not prompts:
-        print("No prompts loaded. Run prompt_builder.py first.")
-        sys.exit(1)
 
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d_%H-%M-%S")
-    base_path = report
-    report_path = base_path.parent / f"{base_path.stem}_{timestamp}{base_path.suffix}"
+    report_path = _build_report_path(str(model), timestamp)
     report_path.parent.mkdir(parents=True, exist_ok=True)
 
     report_skeleton = {
@@ -279,7 +214,6 @@ def main() -> None:
         prompts, llm_client, workers, report_path, report_skeleton, existing_results,
     )
 
-    # Overall summary per generator
     print("\n=== Overall Summary ===")
     for gen_name, datasets in results.items():
         total_correct = sum(d["correct"] for d in datasets.values())

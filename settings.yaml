@@ -11,5 +11,4 @@ evaluation:
   temperature: 0  
   api_key: ollama
   workers: 1
-  report: results/report.json
   resume: null
