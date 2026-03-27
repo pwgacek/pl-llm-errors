@@ -17,7 +17,6 @@ from settings import settings
 
 
 Prompts = dict[str, dict[str, list[dict]]]
-RESULT_SYMBOLS = {"CORRECT": "✅", "INCORRECT": "❌", "ERROR": "⚠️"}
 
 
 def _sanitize_filename_component(value: str) -> str:
@@ -69,11 +68,10 @@ def _save_partial(report_path: Path, report: dict) -> None:
     tmp.rename(report_path)
 
 
-def _count_results(records: list[dict]) -> tuple[int, int, int]:
-    correct = sum(1 for record in records if record["result"] == "CORRECT")
-    incorrect = sum(1 for record in records if record["result"] == "INCORRECT")
-    error = sum(1 for record in records if record["result"] == "ERROR")
-    return correct, incorrect, error
+def _summarize_scores(records: list[dict]) -> tuple[float, int]:
+    score_sum = sum(float(record["score"]) for record in records)
+    error_count = sum(1 for record in records if bool(record["error"]))
+    return score_sum, error_count
 
 
 def _evaluate_records(
@@ -85,6 +83,7 @@ def _evaluate_records(
 
     def ask_one(args: tuple[int, dict]) -> dict:
         i, record = args
+        prompt_id = str(record.get("id", f"row-{i:03d}"))
         prompt = record["prompt"]
         expected = record["expected"]
         t0 = time.perf_counter()
@@ -93,17 +92,25 @@ def _evaluate_records(
             raw = model_client.ask(prompt)
         except Exception as e:
             print(f"    [{i}/{total}] Model error: {e}")
-            return {"index": i, "prompt": prompt, "result": "ERROR", "elapsed": 0.0}
+            return {
+                "index": i,
+                "prompt_id": prompt_id,
+                "raw_answer": "",
+                "score": 0.0,
+                "error": True,
+                "elapsed": 0.0,
+            }
 
         elapsed = time.perf_counter() - t0
-        label = verify_response(raw, expected)
-        symbol = RESULT_SYMBOLS.get(label, "")
-        print(f"    [{i}/{total}] {label} {symbol}  ({elapsed:.2f}s)")
+        score, error = verify_response(raw, expected)
+        status = "ERROR" if error else f"score={score:.3f}"
+        print(f"    [{i}/{total}] {status}  ({elapsed:.2f}s)")
         return {
             "index": i,
-            "prompt": prompt,
+            "prompt_id": prompt_id,
             "raw_answer": raw,
-            "result": label,
+            "score": score,
+            "error": error,
             "elapsed": round(elapsed, 3),
         }
 
@@ -141,17 +148,19 @@ def step_evaluate(
             dataset_start = time.perf_counter()
 
             output_records = _evaluate_records(records, model_client, workers)
-            correct, incorrect, error = _count_results(output_records)
+            score_sum, error_count = _summarize_scores(output_records)
             dataset_elapsed = time.perf_counter() - dataset_start
-            accuracy = correct / total if total > 0 else 0.0
-            print(f"  [{gen_name}/{dataset_name}] correct={correct}  incorrect={incorrect}  error={error}  accuracy={accuracy:.2%}  time={dataset_elapsed:.1f}s")
+            score_avg = score_sum / total if total > 0 else 0.0
+            print(
+                f"  [{gen_name}/{dataset_name}] score_avg={score_avg:.3f}  "
+                f"errors={error_count}  time={dataset_elapsed:.1f}s"
+            )
 
             results[gen_name][dataset_name] = {
                 "num_sampled": total,
-                "correct": correct,
-                "incorrect": incorrect,
-                "error": error,
-                "accuracy": accuracy,
+                "score_sum": round(score_sum, 6),
+                "score_avg": round(score_avg, 6),
+                "error_count": error_count,
                 "elapsed_sec": round(dataset_elapsed, 2),
                 "questions": output_records,
             }
@@ -216,12 +225,11 @@ def main() -> None:
 
     print("\n=== Overall Summary ===")
     for gen_name, datasets in results.items():
-        total_correct = sum(d["correct"] for d in datasets.values())
-        total_incorrect = sum(d["incorrect"] for d in datasets.values())
-        total_error = sum(d["error"] for d in datasets.values())
-        total_all = total_correct + total_incorrect + total_error
-        overall_accuracy = total_correct / total_all if total_all > 0 else 0.0
-        print(f"  [{gen_name}] correct={total_correct}  incorrect={total_incorrect}  error={total_error}  accuracy={overall_accuracy:.2%}")
+        total_samples = sum(d["num_sampled"] for d in datasets.values())
+        total_score = sum(d["score_sum"] for d in datasets.values())
+        total_errors = sum(d["error_count"] for d in datasets.values())
+        overall_score = total_score / total_samples if total_samples > 0 else 0.0
+        print(f"  [{gen_name}] score_avg={overall_score:.3f}  errors={total_errors}")
 
     report = {
         **report_skeleton,
