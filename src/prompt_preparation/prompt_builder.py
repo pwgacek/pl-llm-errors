@@ -227,8 +227,8 @@ def build_prompts(
 def main() -> None:
     build_prompts(
         num_questions=settings.prompt_preparation.num_questions,
-        seed=settings.prompt_preparation.seed,
-        output_dir=Path(settings.prompt_preparation.output_dir),
+        seed=settings.common.seed,
+        output_dir=Path(settings.common.prompt_dir),
     )
 
 

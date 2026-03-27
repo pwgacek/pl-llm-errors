@@ -8,7 +8,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 
-from model import ask_model
+from llm_client import LLMClient
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
@@ -149,9 +149,7 @@ def _save_partial(report_path: Path, report: dict) -> None:
 
 def step_evaluate(
     prompts: Prompts,
-    model: str,
-    base_url: str,
-    api_key: str,
+    model_client: LLMClient,
     workers: int = 1,
     report_path: Path | None = None,
     report_skeleton: dict | None = None,
@@ -180,7 +178,7 @@ def step_evaluate(
                 expected = record["expected"]
                 t0 = time.perf_counter()
                 try:
-                    raw = ask_model(model, prompt, base_url, api_key)
+                    raw = model_client.ask(prompt)
                 except Exception as e:
                     print(f"    [{i}/{total}] Model error: {e}")
                     return {"index": i, "prompt": prompt, "result": "ERROR", "elapsed": 0.0}
@@ -230,10 +228,20 @@ def main() -> None:
     model = settings.evaluation.model
     base_url = settings.evaluation.base_url
     api_key = settings.evaluation.api_key
-    prompts_dir = Path(settings.prompt_preparation.output_dir)
+    seed = int(settings.common.seed)
+    temperature = int(settings.evaluation.temperature)
+    prompts_dir = Path(settings.common.prompt_dir)
     workers = int(settings.evaluation.workers)
     report = Path(settings.evaluation.report)
-    resume = settings.evaluation.get("resume")
+    resume = settings.evaluation.resume
+
+    llm_client = LLMClient(
+        model=model,
+        base_url=base_url,
+        api_key=api_key,
+        seed=seed,
+        temperature=temperature,
+    )
 
     pipeline_start = time.perf_counter()
 
@@ -268,8 +276,7 @@ def main() -> None:
             print(f"  Resume file {resume_path} not found, starting fresh.")
 
     results = step_evaluate(
-        prompts, model, base_url, api_key, workers,
-        report_path=report_path, report_skeleton=report_skeleton, existing_results=existing_results,
+        prompts, llm_client, workers, report_path, report_skeleton, existing_results,
     )
 
     # Overall summary per generator
