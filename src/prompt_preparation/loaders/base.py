@@ -32,7 +32,7 @@ class Loader(ABC):
             return [row for row in reader]
 
     @staticmethod
-    def _load_json(path: Path, delimiter: str = ',') -> Any:
+    def _load_json(path: Path) -> Any:
         """Load records from the dataset file."""
         with path.open("r", encoding="utf-8") as file:
             return json.load(file)
