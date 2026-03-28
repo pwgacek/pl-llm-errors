@@ -4,7 +4,7 @@ from abc import ABC, abstractmethod
 import csv
 import json
 from typing import Any
-from questions import Question
+from ..questions import Question
 from pathlib import Path
 
 class Loader(ABC):

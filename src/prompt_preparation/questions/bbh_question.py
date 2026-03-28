@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from errors.base import ErrorGenerator
+from ..errors.base import ErrorGenerator
 
 from .base import Question
 

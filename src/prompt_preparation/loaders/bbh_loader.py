@@ -4,7 +4,7 @@ import re
 from pathlib import Path
 
 from .base import Loader
-from questions import BBHQuestion, Question
+from ..questions import BBHQuestion, Question
 
 OPTION_PATTERN = re.compile(r"^\(([A-G])\)\s*(.+)$")
 

@@ -1,6 +1,6 @@
 import re
 from pathlib import Path
-from questions import LDEKQuestion, Question
+from ..questions import LDEKQuestion, Question
 from .base import Loader
 
 OPTION_PATTERN = re.compile(r"^([A-E])\.\s*(.+)$")

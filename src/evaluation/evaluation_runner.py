@@ -2,18 +2,15 @@ from __future__ import annotations
 
 import json
 import re
-import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 
-from llm_client import LLMClient
-from verification import verify_response
+from .llm_client import LLMClient
+from .verification import verify_response
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-
-from settings import settings
+from src.settings import settings
 
 
 Prompts = dict[str, dict[str, list[dict]]]

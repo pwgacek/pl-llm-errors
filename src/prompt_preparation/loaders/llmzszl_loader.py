@@ -1,5 +1,5 @@
 import json
-from questions import LlmzszlQuestion, Question
+from ..questions import LlmzszlQuestion, Question
 from .base import Loader
 from pathlib import Path
 

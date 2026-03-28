@@ -1,6 +1,6 @@
 from __future__ import annotations
 import ast
-from questions import PolQAQuestion, Question
+from ..questions import PolQAQuestion, Question
 from .base import Loader
 from pathlib import Path
 

@@ -1,4 +1,4 @@
-from questions import CdsQuestion, Question
+from ..questions import CdsQuestion, Question
 from .base import Loader
 from pathlib import Path
 

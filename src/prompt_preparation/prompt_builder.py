@@ -2,14 +2,11 @@ from __future__ import annotations
 
 import json
 import shutil
-import sys
 import urllib.request
 import urllib.error
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-
-from errors import (
+from .errors import (
     DiacriticErrorGenerator,
     IdentityGenerator,
     PunctuationAllErrorGenerator,
@@ -17,10 +14,9 @@ from errors import (
     SpellingErrorGenerator,
     TypoErrorGenerator,
 )
-from errors.base import ErrorGenerator
-from loaders import CDSLoader, LDEKLoader, LLMZSZLLoader, PolQALoader, BBHLoader
-from settings import settings
-from questions import (
+from .errors.base import ErrorGenerator
+from .loaders import CDSLoader, LDEKLoader, LLMZSZLLoader, PolQALoader, BBHLoader
+from .questions import (
     BBHQuestion,
     CdsQuestion,
     LDEKQuestion,
@@ -28,6 +24,8 @@ from questions import (
     PolQAQuestion,
     Question,
 )
+
+from src.settings import settings
 
 GENERATORS: dict[str, ErrorGenerator] = {
     "identity": IdentityGenerator(),
