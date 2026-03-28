@@ -1,22 +1,6 @@
-"""Rule-based Polish spelling error generator (v2).
+"""Rule-based Polish spelling error generator.
 
-Combines phonetic substitution rules with a fallback dictionary.
-
-**Rules** cover common Polish spelling confusions:
-
-- ó ↔ u, rz ↔ ż, ch ↔ h
-- Nasal vowels: ą → on/om/o, ę → en/em/e
-- Soft consonants: ci → ć, si → ś, zi → ź, ni → ń, dzi → dź
-- Final consonant voicing confusion: g ↔ k, d ↔ t, b → p, w ↔ f, z → s
-- Suffix simplification: -cji → -ci, -ii → -i
-- Past tense nasals: -nął → -noł, -nęła → -neła
-- ść → źć
-
-**Dictionary** covers cases that cannot be expressed as simple rules:
-
-- *nie-* prefix split/join (niedaleko ↔ nie daleko)
-- Preposition merging (na pewno → napewno)
-- Word boundary changes (naprawdę → na prawdę)
+Applies dictionary replacements first, then rule-based substitutions.
 """
 
 import random
@@ -25,60 +9,10 @@ import re
 from .base import ErrorGenerator
 from ._rng import deterministic_seed
 
-# ── Dictionary of irregular spelling errors ─────────────────────────────
-# These cannot be expressed as simple character-substitution rules
-# (word boundary changes, prefix splits/joins, irregular forms).
-def _capitalize_first_alpha(text: str) -> str:
-    idx = next((i for i, ch in enumerate(text) if ch.isalpha()), None)
-    if idx is None:
-        return text
-    chars = list(text)
-    chars[idx] = chars[idx].upper()
-    return "".join(chars)
-
-
-def _match_casing(
-    template: str,
-    replacement: str,
-    *,
-    container: str | None = None,
-    start_index: int | None = None,
-) -> str:
-    """Return *replacement* adjusted to mimic the casing of the source text."""
-    if not template or not replacement:
-        return replacement
-
-    context = container or template
-    if context.isupper():
-        return replacement.upper()
-    if context.islower():
-        return replacement.lower()
-    if container and start_index == 0 and container == container.capitalize():
-        return _capitalize_first_alpha(replacement)
-
-    if template.isupper():
-        if (
-            len(template) == 1
-            and container
-            and start_index == 0
-            and not container.isupper()
-        ):
-            return _capitalize_first_alpha(replacement)
-        return replacement.upper()
-    if template.islower():
-        return replacement.lower()
-    if template == template.capitalize():
-        return _capitalize_first_alpha(replacement)
-
-    first_alpha = next((i for i, ch in enumerate(template) if ch.isalpha()), None)
-    if first_alpha is not None and template[first_alpha].isupper():
-        return _capitalize_first_alpha(replacement)
-
-    return replacement
-
+# Irregular spelling mappings.
 
 _SPELLING_DICT: dict[str, str] = {
-    # ── Preposition / particle merging ──────────────────────────────────
+    # ── 1. Zrosty przyimków i partykuł (rozdzielone -> złączone) ────────
     "na pewno": "napewno",
     "na razie": "narazie",
     "od razu": "odrazu",
@@ -95,44 +29,108 @@ _SPELLING_DICT: dict[str, str] = {
     "nie byle": "niebyle",
     "można by": "możnaby",
     "trzeba by": "trzebaby",
-    "dookoła": "do okoła",
-    "z wyjątkiem": "za wyjątkiem",
 
-    # ── Word splitting (joined → split) ─────────────────────────────────
+    # ── 2. Rozdzielanie słów (złączone -> rozdzielone) ──────────────────
     "naprawdę": "na prawdę",
-    "nieprawda": "nie prawda",
     "naprzeciwko": "na przeciwko",
     "naprzeciw": "na przeciw",
     "niemniej": "nie mniej",
     "pośrodku": "po środku",
-
-    # ── Prefix z-/s- confusion ──────────────────────────────────────────
-    "stąd": "z tąd",
-    "stamtąd": "z tamtąd",
-    "znikąd": "z nikąd",
-    "sprzed": "z przed",
-    "znad": "z nad",
-    "spod": "z pod",
-    "spomiędzy": "z pomiędzy",
-    "spośród": "z pośród",
-    "spoza": "z poza",
+    "dookoła": "do okoła",
     "wśród": "w śród",
     "wzdłuż": "w zdłuż",
     "wskutek": "w skutek",
     "zza": "z za",
-    "skąd": "zkąd"
+
+    # ── 3. Przedrostki z-/s- (mylenie zapisu fonetycznego) ──────────────
+    "stąd": "z tąd",
+    "stamtąd": "z tamtąd",
+    "znikąd": "z nikąd",
+    "znad": "z nad",
+    "sprzed": "z przed",
+    "spod": "z pod",
+    "spomiędzy": "z pomiędzy",
+    "spośród": "z pośród",
+    "spoza": "z poza",
+    "skąd": "zkąd",
+
+    # ── 4. Pisownia z "NIE": Przymiotniki/Przysłówki (złącz. -> rozdz.) ─
+    # Niezależny, Niebezpieczny, Niewielki
+    "niezależny": "nie zależny", "niezależna": "nie zależna", "niezależne": "nie zależne", "niezależnie": "nie zależnie",
+    "niebezpieczny": "nie bezpieczny", "niebezpieczna": "nie bezpieczna", "niebezpieczne": "nie bezpieczne", "niebezpiecznie": "nie bezpiecznie",
+    "niewielki": "nie wielki", "niewielka": "nie wielka", "niewielkie": "nie wielkie", "niewiele": "nie wiele",
+    
+    # Niedobry, Niezły, Niedługi
+    "niedobry": "nie dobry", "niedobra": "nie dobra", "niedobre": "nie dobre", "niedobrze": "nie dobrze",
+    "niezły": "nie zły", "niezła": "nie zła", "niezłe": "nie złe", "nieźle": "nie źle",
+    "niedługi": "nie długi", "niedługa": "nie długa", "niedługie": "nie długie", "niedługo": "nie długo",
+    
+    # Inne popularne przymiotniki i przysłówki
+    "niełatwy": "nie łatwy", "niełatwa": "nie łatwa", "niełatwe": "nie łatwe", "niełatwo": "nie łatwo",
+    "nietrudny": "nie trudny", "nietrudna": "nie trudna", "nietrudne": "nie trudne", "nietrudno": "nie trudno",
+    "niezwykły": "nie zwykły", "niezwykła": "nie zwykła", "niezwykłe": "nie zwykłe", "niezwykle": "nie zwykle",
+    "niesamowity": "nie samowity", "niesamowita": "nie samowita", "niesamowite": "nie samowite",
+    "nieważny": "nie ważny", "nieważna": "nie ważna", "nieważne": "nie ważne",
+    "niepotrzebny": "nie potrzebny", "niepotrzebna": "nie potrzebna", "niepotrzebne": "nie potrzebne", "niepotrzebnie": "nie potrzebnie",
+    "niepewny": "nie pewny", "niepewna": "nie pewna", "niepewne": "nie pewne", "niepewnie": "nie pewnie",
+    "nieznany": "nie znany", "nieznana": "nie znana", "nieznane": "nie znane",
+    "niejasny": "nie jasny", "niejasna": "nie jasna", "niejasne": "nie jasne",
+    "nieobecny": "nie obecny", "nieobecna": "nie obecna", "nieobecne": "nie obecne",
+    "nielegalny": "nie legalny", "nielegalna": "nie legalna", "nielegalne": "nie legalne",
+    
+    # Rzeczowniki
+    "nieprawda": "nie prawda", "nieporozumienie": "nie porozumienie", "niebezpieczeństwo": "nie bezpieczeństwo",
+
+    # ── 5. Pisownia z "NIE": Czasowniki (rozdzielone -> złączone) ───────
+    # Wiedzieć / Mieć
+    "nie wiem": "niewiem", "nie wiemy": "niewiemy", "nie wiecie": "niewiecie", "nie wiedzą": "niewiedzą", "nie wiedział": "niewiedział", "nie wiedziała": "niewiedziała",
+    "nie ma": "niema", "nie mam": "niemam", "nie masz": "niemasz", "nie mamy": "niemamy", "nie macie": "niemacie", "nie mają": "niemają",
+    "nie miał": "niemiał", "nie miała": "niemiała", "nie mieli": "niemieli", "nie miałem": "niemiałem", "nie miałam": "niemiałam",
+
+    # Móc / Chcieć
+    "nie mogę": "niemogę", "nie możesz": "niemożesz", "nie może": "niemoże", "nie możemy": "niemożemy", "nie możecie": "niemożecie", "nie mogą": "niemogą", "nie mogłem": "niemogłem", "nie mogłam": "niemogłam",
+    "nie chcę": "niechcę", "nie chce": "niechce", "nie chcesz": "niechcesz", "nie chcemy": "niechcemy", "nie chcecie": "niechcecie", "nie chcą": "niechcą", "nie chciał": "niechciał", "nie chciała": "niechciała",
+
+    # Rozumieć / Lubić / Pamiętać
+    "nie rozumiem": "nierozumiem", "nie rozumiesz": "nierozumiesz", "nie rozumie": "nierozumie",
+    "nie lubię": "nielubię", "nie lubi": "nielubi", "nie lubisz": "nielubisz",
+    "nie pamiętam": "niepamiętam", "nie pamiętasz": "niepamiętasz", "nie pamięta": "niepamięta",
+
+    # Widzieć / Słyszeć
+    "nie widzę": "niewidzę", "nie widzi": "niewidzi", "nie widział": "niewidział", "nie widziała": "niewidziała",
+    "nie słyszę": "niesłyszę", "nie słyszy": "niesłyszy", "nie słyszał": "niesłyszał", "nie słyszała": "niesłyszała",
+
+    # Działać / Być / Będzie
+    "nie działa": "niedziała", "nie działają": "niedziałają", "nie działało": "niedziałało",
+    "nie było": "niebyło", "nie był": "niebył", "nie była": "niebyła", "nie byli": "niebyli",
+    "nie będzie": "niebędzie", "nie będą": "niebędą",
+
+    # Robić / Zrobić
+    "nie robi": "nierobi", "nie robią": "nierobią", "nie robił": "nierobił", "nie robiła": "nierobiła", "nie robić": "nierobić",
+    "nie zrobisz": "niezrobisz", "nie zrobi": "niezrobi", "nie zrobił": "niezrobił", "nie zrobiła": "niezrobiła",
+
+    # Dać / Pójść
+    "nie da": "nieda", "nie dam": "niedam", "nie dasz": "niedasz", "nie dają": "niedają",
+    "nie poszedł": "nieposzedł", "nie poszła": "nieposzła",
+
+    # Wyrażenia predykatywne i bezokoliczniki
+    "nie widać": "niewidać", "nie słychać": "niesłychać",
+    "nie wolno": "niewolno", "nie warto": "niewarto", "nie trzeba": "nietrzeba", "nie można": "niemożna",
+
+    # ── 6. Inne błędy i archaizmy składniowe ────────────────────────────
+    "z wyjątkiem": "za wyjątkiem",
+    "już": "jusz",
+
 }
 
-# ── Rule definitions ────────────────────────────────────────────────────
-# (name, regex_pattern, replacement)
-# Patterns are matched against *lowercased* individual word tokens.
-# ``$`` = end of word, ``^`` = start of word.
+# Rule definitions: (name, regex pattern, replacement).
 
 _RULE_DEFS: list[tuple[str, str, str]] = [
     # ── Nasal vowels ────────────────────────────────────────────────────
     ("ą→on",      r"ą(?=[tdcnszśźćkg])",  "on"),
     ("ą→om",      r"ą(?=[bpm])",         "om"),
-    ("ą→o",       r"ą$",                 "o"),
+    ("ą→om",      r"ą$",                 "om"),
+    ("om→ą",      r"om$",                "ą"),
     ("ę→en",      r"ę(?=[tdcnszśźćkg])",  "en"),
     ("ę→em",      r"ę(?=[bpm])",         "em"),
     ("ę→e",       r"ę$",                 "e"),
@@ -140,11 +138,12 @@ _RULE_DEFS: list[tuple[str, str, str]] = [
     # ── Digraph confusions ──────────────────────────────────────────────
     ("ch→h",      r"ch",                 "h"),
     ("h→ch",      r"(?<!c)h",            "ch"),
-    ("rz→ż",     r"rz",                 "ż"),
-    ("ż→rz",     r"ż",                  "rz"),
+    ("rz→ż",      r"rz",                 "ż"),
+    ("ż→rz",      r"ż",                  "rz"),
 
     # ── ó / u ───────────────────────────────────────────────────────────
-    ("ó→u",       r"ó",                  "u"),
+    ("ó→u",       r"ó",                 "u"),
+    ("u→ó",       r"u(?=\w)",            "ó"),
 
     # ── Soft consonants (before vowels) ─────────────────────────────────
     ("ci→ć",      r"ci(?=[aeouyąęó])",   "ć"),
@@ -153,10 +152,7 @@ _RULE_DEFS: list[tuple[str, str, str]] = [
     ("ni→ń",      r"ni(?=[aeouyąęó])",   "ń"),
     ("dzi→dź",    r"dzi(?=[aeouyąęó])",  "dź"),
 
-    # ── ść → źć ─────────────────────────────────────────────────────────
-    ("ść→źć",     r"ść",                 "źć"),
-
-    # ── Final consonant confusion (bidirectional) ───────────────────────
+    # ── Final consonant confusion ──────────────────────────────────────
     ("g→k",       r"g$",                 "k"),
     ("k→g",       r"k$",                 "g"),
     ("d→t",       r"d$",                 "t"),
@@ -167,84 +163,84 @@ _RULE_DEFS: list[tuple[str, str, str]] = [
     ("z→s",       r"z$",                 "s"),
 
     # ── Common suffix patterns ──────────────────────────────────────────
-    ("nął→noł",   r"nął",               "noł"),
-    ("nęła→neła", r"nęła",              "neła"),
-    ("cji→ci",    r"cji$",              "ci"),
-    ("ii→i",      r"ii$",               "i"),
+    ("ął→oł",    r"ął$",               "oł"),
+    ("ęła→eła",  r"ęła$",              "eła"),
+    ("ji→i",     r"ji$",               "i"),
+    ("ii→i",     r"ii$",               "i"),
+    ("ść→źć",     r"ść$",                "źć"),
+    ("źć→ść",     r"źć$",                "ść"),
+    ("dź→ć",     r"dź$",                "ć")
+
+    # ── Consonant cluster simplifications ("Połykanie" liter) ───────────
+    ("rwsz→rsz",  r"rwsz",               "rsz"),
+    ("błk→bk",    r"błk",                "bk"),
+    ("stn→sn",    r"stn",                "sn"), 
+
+    # Consonant cluster reductions (rz -> sz, trz -> cz)
+    ("prz→psz", r"prz", "psz"),
+    ("krz→ksz", r"krz", "ksz"),
+    ("grz→gsz", r"grz", "gsz"),
+    ("trz→cz", r"trz", "cz")
 ]
 
-# Pre-compile all rule patterns.
 _RULES: list[tuple[str, re.Pattern[str], str]] = [
     (name, re.compile(pat, re.UNICODE), repl)
     for name, pat, repl in _RULE_DEFS
 ]
 
-#: Set of all available rule names.
 RULE_NAMES: frozenset[str] = frozenset(name for name, _, _ in _RULE_DEFS)
 
 
+def _match_casing(
+    template: str,
+    replacement: str,
+    *,
+    container: str | None = None,
+    start_index: int | None = None,
+) -> str:
+    source = container if (container is not None and start_index == 0) else template
+
+    if source.isupper():
+        return replacement.upper()
+    if source.islower():
+        return replacement.lower()
+
+    return replacement.capitalize()
+
+
 class SpellingErrorGenerator(ErrorGenerator):
-    """Introduces Polish spelling errors via phonetic rules + dictionary.
+    """Applies dictionary and rule-based spelling errors with a word budget."""
 
-     For each input text the generator:
-
-     1. Computes a target number of spelling errors from *rate* and word count.
-     2. Tries to spend this budget first on multi-word dictionary entries.
-     3. Spends remaining budget on eligible single words (dict/rules),
-         allowing multiple non-overlapping changes per word.
-
-    Multi-word dictionary entries (e.g. ``na pewno → napewno``) are matched
-    first, longest-phrase-first.
-
-    Args:
-        rate:  Target fraction (0.0–1.0) of words to modify.
-        seed:  RNG seed for reproducibility.
-    """
-
-    def __init__(
-        self,
-        rate: float = 1.0,
-        seed: int | None = None,
-    ) -> None:
+    def __init__(self, rate: float, seed: int) -> None:
         if not 0.0 <= rate <= 1.0:
             raise ValueError(f"rate must be between 0.0 and 1.0, got {rate!r}")
 
         self.rate = rate
-        self._seed = seed if seed is not None else 0
+        self._seed = seed
         self._salt = "spelling"
         self._rules = list(_RULES)
 
-        # Build dictionary lookup structures.
-        self._multi_word: list[tuple[re.Pattern[str], str]] = []
-        self._single_word: dict[str, str] = {}
+        self._dictionary_patterns: list[tuple[re.Pattern[str], str]] = []
 
         for correct, incorrect in _SPELLING_DICT.items():
-            if " " in correct:
-                pat = re.compile(
-                    rf"\b{re.escape(correct)}\b",
-                    re.IGNORECASE | re.UNICODE,
-                )
-                self._multi_word.append((pat, incorrect))
-            else:
-                self._single_word[correct.lower()] = incorrect
+            pat = re.compile(
+                rf"\b{re.escape(correct)}\b",
+                re.IGNORECASE | re.UNICODE,
+            )
+            self._dictionary_patterns.append((pat, incorrect))
 
-        # Longer phrases matched first.
-        self._multi_word.sort(key=lambda x: -len(x[0].pattern))
-
-    # ── public API ──────────────────────────────────────────────────────
 
     def apply(self, text: str) -> str:
         rng_seed = deterministic_seed(self._seed, text, self._salt)
         rng = random.Random(rng_seed)
 
-        # Budget is counted in modified words, not in random Bernoulli trials.
-        target = int(self._round_it(self.rate * len([word for word in text.split(" ")])))
+        target = int(self.rate * len(text.split(" ")) + 0.5)
         if target <= 0:
             return text
 
-        # Phase 1: spend budget on multi-word dictionary entries.
+        # Phase 1: apply dictionary matches first.
         remaining = target
-        for pattern, replacement in self._multi_word:
+        for pattern, replacement in self._dictionary_patterns:
             if remaining <= 0:
                 break
             text, used = self._replace_matches_budget(text, pattern, replacement, remaining, rng)
@@ -253,20 +249,9 @@ class SpellingErrorGenerator(ErrorGenerator):
         if remaining <= 0:
             return text
 
-        # Phase 2: spend remaining budget on eligible single words.
+        # Phase 2: apply rule-based edits on remaining words.
         return self._process_words_budget(text, remaining, rng)
-
-
-    # ── internals ───────────────────────────────────────────────────────
-    @staticmethod
-    def _round_it(number: float, position: int = 0) -> float:
-        factor = 10 ** position
-        return int(number * factor + 0.5) / factor
     
-    @staticmethod
-    def _count_match_words(text: str) -> int:
-        return sum(1 for part in text.split() if part and part[0].isalpha())
-
     def _replace_matches_budget(
         self,
         text: str,
@@ -276,9 +261,7 @@ class SpellingErrorGenerator(ErrorGenerator):
         rng: random.Random,
     ) -> tuple[str, int]:
         """Replace non-overlapping matches while consuming at most *budget* words."""
-        if budget <= 0:
-            return text, 0
-
+        
         matches = list(pattern.finditer(text))
         if not matches:
             return text, 0
@@ -290,7 +273,7 @@ class SpellingErrorGenerator(ErrorGenerator):
         consumed = 0
         for idx in order:
             m = matches[idx]
-            cost = max(1, self._count_match_words(m.group()))
+            cost = 1
             if consumed + cost > budget:
                 continue
             selected.add(idx)
@@ -321,11 +304,7 @@ class SpellingErrorGenerator(ErrorGenerator):
         low = word.lower()
         changes: list[tuple[int, int, str]] = []
 
-        # Whole-word dictionary replacement.
-        if low in self._single_word:
-            changes.append((0, len(word), self._single_word[low]))
-
-        # Rule-based replacements at all match positions.
+        # Collect all rule matches for this word.
         for _, pattern, repl in self._rules:
             for m in pattern.finditer(low):
                 changes.append((m.start(), m.end(), repl))
@@ -338,7 +317,7 @@ class SpellingErrorGenerator(ErrorGenerator):
         if budget <= 0:
             return "".join(tokens)
 
-        # token index -> list of candidate changes (start, end, replacement)
+        # token index -> candidate changes (start, end, replacement)
         pending: dict[int, list[tuple[int, int, str]]] = {}
         for i, tok in enumerate(tokens):
             if tok and tok[0].isalpha():
@@ -361,7 +340,7 @@ class SpellingErrorGenerator(ErrorGenerator):
             tokens[token_idx] = tok[:start] + adjusted + tok[end:]
             budget -= 1
 
-            # Keep only non-overlapping candidates and shift those after edit.
+            # Keep non-overlapping candidates and shift trailing spans.
             delta = len(adjusted) - (end - start)
             next_changes: list[tuple[int, int, str]] = []
             for i, (s, e, r) in enumerate(changes):
@@ -380,36 +359,3 @@ class SpellingErrorGenerator(ErrorGenerator):
 
         return "".join(tokens)
 
-    def _can_modify_word(self, word: str) -> bool:
-        if len(word) <= 2:
-            return False
-        low = word.lower()
-        if low in self._single_word:
-            return True
-        for _, pattern, _ in self._rules:
-            if pattern.search(low):
-                return True
-        return False
-
-    def _modify_word(self, word: str, rng: random.Random) -> str:
-        """Try dict, then rules.  Returns modified or original word."""
-        low = word.lower()
-
-        # 1) Dictionary lookup.
-        if low in self._single_word:
-            return self._single_word[low]
-
-        # 2) Collect applicable rules.
-        applicable: list[tuple[str, re.Pattern[str], str]] = []
-        for name, pattern, repl in self._rules:
-            if pattern.search(low):
-                applicable.append((name, pattern, repl))
-
-        if not applicable:
-            return word  # nothing to change
-
-        # 3) Pick a random rule, apply to a random match position.
-        _, pattern, repl = rng.choice(applicable)
-        matches = list(pattern.finditer(low))
-        m = rng.choice(matches)
-        return word[: m.start()] + repl + word[m.end() :]

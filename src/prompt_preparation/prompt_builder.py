@@ -32,8 +32,8 @@ GENERATORS: dict[str, ErrorGenerator] = {
     "diacritic": DiacriticErrorGenerator(),
     "punctuation_all": PunctuationAllErrorGenerator(),
     "punctuation_inner": PunctuationInnerErrorGenerator(),
-    "spelling_10%": SpellingErrorGenerator(rate=0.1),
-    "spelling_40%": SpellingErrorGenerator(rate=0.4),
+    "spelling_10%": SpellingErrorGenerator(rate=0.1, seed=settings.common.seed),
+    "spelling_40%": SpellingErrorGenerator(rate=0.4, seed=settings.common.seed),
     "typo_10%": TypoErrorGenerator(typo_rate=0.1),
     "typo_40%": TypoErrorGenerator(typo_rate=0.4),
 }
