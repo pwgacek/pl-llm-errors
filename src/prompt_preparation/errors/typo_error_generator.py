@@ -8,10 +8,6 @@ from typing import Callable, Dict, List, Optional, Tuple
 from .base import ErrorGenerator
 from ._rng import deterministic_seed
 
-# ---------------------------------------------------------------------------
-# Polish keyboard data (QWERTY Programmers layout)
-# ---------------------------------------------------------------------------
-
 _KEYBOARD: list[list[str]] = [
     ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'],
     ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l'],
@@ -31,9 +27,8 @@ _LEFT_RIGHT: dict[str, list[str]] = {
               'ó', 'ł', 'ń'],
 }
 
-_DIACRITICAL_MAP: dict[str, str] = {
-    "ą": "a", "ę": "e", "ś": "s", "ć": "c",
-    "ż": "z", "ź": "x", "ł": "l", "ó": "o", "ń": "n",
+_DIACRITICAL_CHARS: set[str] = {
+    "ą", "ę", "ś", "ć", "ż", "ź", "ł", "ó", "ń",
 }
 
 _IGNORE_SET: set[str] = {
@@ -43,10 +38,6 @@ _IGNORE_SET: set[str] = {
     'sto', 'dwieście', 'tysiąc', 'milion', 'miliard',
     '1', '2', '3', '4', '5', '6', '7', '8', '9', '0',
 }
-
-# ---------------------------------------------------------------------------
-# Typo generation engine
-# ---------------------------------------------------------------------------
 
 TypoFunc = Callable[[str, "_TypoEngine"], Tuple[str, Optional[Tuple[int, ...]]]]
 
@@ -70,7 +61,7 @@ class _TypoEngine:
         self.keyboard = _KEYBOARD
         self.left_right = _LEFT_RIGHT
         self.ignore_set = _IGNORE_SET
-        self.diacritical_map = _DIACRITICAL_MAP
+        self.diacritical_chars = _DIACRITICAL_CHARS
         self.altgr_keyboard = _ALTGR_KEYBOARD
         self._normalize_distribution()
 
@@ -84,8 +75,7 @@ class _TypoEngine:
     def _get_neighbours_with_orientation(self, char: str) -> List[str]:
         h_weight, v_weight = self.horizontal_vs_vertical
 
-        base_char = self.diacritical_map.get(char)
-        if base_char is not None and self.altgr_keyboard is not None:
+        if char in self.diacritical_chars:
             grid = self.altgr_keyboard
         else:
             grid = self.keyboard
@@ -349,10 +339,6 @@ class _TypoEngine:
         return result.strip()
 
 
-# ---------------------------------------------------------------------------
-# Public ErrorGenerator subclass
-# ---------------------------------------------------------------------------
-
 class TypoErrorGenerator(ErrorGenerator):
     """Introduces realistic keyboard-based typos (delete, insert, replace, transpose)
     using Polish QWERTY keyboard-proximity data.
@@ -364,14 +350,14 @@ class TypoErrorGenerator(ErrorGenerator):
 
     def __init__(
         self,
-        typo_rate: float = 0.3,
-        seed: int | None = None,
+        typo_rate: float,
+        seed: int,
     ) -> None:
         if not 0.0 <= typo_rate <= 1.0:
             raise ValueError(f"typo_rate must be between 0.0 and 1.0, got {typo_rate!r}")
         self._engine = _TypoEngine()
         self._typo_rate = typo_rate
-        self._seed = seed if seed is not None else 0
+        self._seed = seed
         self._salt = "typo"
 
     def apply(self, text: str) -> str:
