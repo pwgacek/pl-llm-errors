@@ -145,42 +145,31 @@ _RULE_DEFS: list[tuple[str, str, str]] = [
     ("ó→u",       r"ó",                 "u"),
     ("u→ó",       r"u(?=\w)",            "ó"),
 
-    # ── Soft consonants (before vowels) ─────────────────────────────────
-    ("ci→ć",      r"ci(?=[aeouyąęó])",   "ć"),
-    ("si→ś",      r"si(?=[aeouyąęó])",   "ś"),
-    ("zi→ź",      r"zi(?=[aeouyąęó])",   "ź"),
-    ("ni→ń",      r"ni(?=[aeouyąęó])",   "ń"),
-    ("dzi→dź",    r"dzi(?=[aeouyąęó])",  "dź"),
-
-    # ── Final consonant confusion ──────────────────────────────────────
-    ("g→k",       r"g$",                 "k"),
-    ("k→g",       r"k$",                 "g"),
-    ("d→t",       r"d$",                 "t"),
-    ("t→d",       r"t$",                 "d"),
-    ("b→p",       r"b$",                 "p"),
-    ("w→f",       r"w$",                 "f"),
-    ("f→w",       r"f$",                 "w"),
-    ("z→s",       r"z$",                 "s"),
 
     # ── Common suffix patterns ──────────────────────────────────────────
     ("ął→oł",    r"ął$",               "oł"),
     ("ęła→eła",  r"ęła$",              "eła"),
     ("ji→i",     r"ji$",               "i"),
     ("ii→i",     r"ii$",               "i"),
+    ("ei→eji",     r"ei$",               "eji"),
+    ("ai→aji",     r"ai$",               "aji"),
+    ("oi→oji",     r"oi$",               "oji"),
     ("ść→źć",     r"ść$",                "źć"),
     ("źć→ść",     r"źć$",                "ść"),
-    ("dź→ć",     r"dź$",                "ć")
+    ("dź→ć",     r"dź$",                "ć"),
 
     # ── Consonant cluster simplifications ("Połykanie" liter) ───────────
     ("rwsz→rsz",  r"rwsz",               "rsz"),
     ("błk→bk",    r"błk",                "bk"),
     ("stn→sn",    r"stn",                "sn"), 
+    ("szcz→scz",  r"szcz",               "scz"),
 
     # Consonant cluster reductions (rz -> sz, trz -> cz)
     ("prz→psz", r"prz", "psz"),
     ("krz→ksz", r"krz", "ksz"),
     ("grz→gsz", r"grz", "gsz"),
     ("trz→cz", r"trz", "cz")
+
 ]
 
 _RULES: list[tuple[str, re.Pattern[str], str]] = [
