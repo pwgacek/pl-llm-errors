@@ -34,6 +34,17 @@ def _parse_bbh_input(raw: str) -> tuple[str, list[str]]:
 
 
 class BBHLoader(Loader):
+    def __init__(self, answer_permutation: list[int] | None = None) -> None:
+        self.answer_permutation = answer_permutation
+
+    @staticmethod
+    def _validate_permutation(permutation: list[int], num_answers: int) -> None:
+        expected = list(range(num_answers))
+        if sorted(permutation) != expected:
+            raise ValueError(
+                f"Invalid BBH answer_permutation={permutation}, expected permutation of {expected}"
+            )
+
     def load(self, path: Path, num_samples: int, seed: int) -> list[Question]:
         questions: list[Question] = []
 
@@ -49,6 +60,16 @@ class BBHLoader(Loader):
                 raise ValueError(f"Invalid BBH record, missing input or target: {line}")
             
             question_text, options = _parse_bbh_input(input_text)
+            correct_index = ord(answer.upper()) - ord("A")
+            if correct_index < 0 or correct_index >= len(options):
+                raise ValueError(f"Invalid BBH target answer '{answer}' for options: {line}")
+
+            if self.answer_permutation is not None:
+                self._validate_permutation(self.answer_permutation, len(options))
+                options = [options[idx] for idx in self.answer_permutation]
+                correct_index = self.answer_permutation.index(correct_index)
+
+            answer = chr(ord("A") + correct_index)
             questions.append(BBHQuestion(question_text, options, answer))
 
         return questions

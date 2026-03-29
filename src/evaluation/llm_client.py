@@ -10,14 +10,16 @@ class LLMClient:
         base_url: str,
         api_key: str,
         seed: int,
-        temperature: int,
+        temperature: float,
     ) -> None:
         self.model = model
         self.seed = seed
         self.temperature = temperature
         self.client = OpenAI(base_url=base_url, api_key=api_key, timeout=60)
 
-    def ask(self, prompt: str) -> str:
+    def ask(self, prompt: str, temperature: float | None = None) -> str:
+        request_temperature = self.temperature if temperature is None else float(temperature)
+
         response = self.client.chat.completions.create(
             model=self.model,
             messages=[
@@ -30,7 +32,7 @@ class LLMClient:
                 },
                 {"role": "user", "content": prompt},
             ],
-            temperature=self.temperature,
+            temperature=request_temperature,
             seed=self.seed,
             response_format={"type": "json_object"},
         )

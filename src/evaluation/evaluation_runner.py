@@ -83,10 +83,11 @@ def _evaluate_records(
         prompt_id = str(record.get("id", f"row-{i:03d}"))
         prompt = record["prompt"]
         expected = record["expected"]
+        record_temperature = record.get("temperature")
         t0 = time.perf_counter()
 
         try:
-            raw = model_client.ask(prompt)
+            raw = model_client.ask(prompt, temperature=record_temperature)
         except Exception as e:
             print(f"    [{i}/{total}] Model error: {e}")
             return {

@@ -29,13 +29,15 @@ from src.settings import settings
 
 GENERATORS: dict[str, ErrorGenerator] = {
     "identity": IdentityGenerator(),
-    "diacritic": DiacriticErrorGenerator(),
-    "punctuation_all": PunctuationAllErrorGenerator(),
-    "punctuation_inner": PunctuationInnerErrorGenerator(),
-    "spelling_10%": SpellingErrorGenerator(rate=0.1, seed=settings.common.seed),
-    "spelling_40%": SpellingErrorGenerator(rate=0.4, seed=settings.common.seed),
-    "typo_10%": TypoErrorGenerator(typo_rate=0.1, seed=settings.common.seed),
-    "typo_40%": TypoErrorGenerator(typo_rate=0.4, seed=settings.common.seed),
+    "temp_1": IdentityGenerator(
+        temperature=0.1,
+    ),
+    "temp_2": IdentityGenerator(
+        temperature=0.3,
+    ),
+    "temp_3": IdentityGenerator(
+        temperature=0.5,
+    ),
 }
 
 
@@ -47,30 +49,84 @@ DATASETS = [
         "loader": LLMZSZLLoader,
     },
     {
-        "name": "polqa",
-        "url": "https://huggingface.co/datasets/ipipan/polqa/resolve/main/data/test.csv",
-        "output": Path("datasets/polqa.csv"),
-        "loader": PolQALoader,
-    },
-    {
-        "name": "cds",
-        "url": "http://git.nlp.ipipan.waw.pl/Scwad/SCWAD-CDSCorpus/raw/master/CDSCorpus/CDS_test.csv",
-        "output": Path("datasets/CDS_test.csv"),
-        "loader": CDSLoader,
-    },
-    {
-        "name": "ldek",
-        "url": "https://huggingface.co/datasets/amu-cai/medical-exams-LDEK-PL-2008-2024/resolve/main/medical-exams-LDEK-PL-2008-2024.json",
-        "output": Path("datasets/medical-exams-LDEK-PL-2008-2024.json"),
-        "loader": LDEKLoader,
-    },
-    {
         "name": "bbh",
         "url": "https://huggingface.co/datasets/pawel04/bbh-logical-deduction-seven-objects-pl/resolve/main/data.jsonl",
         "output": Path("datasets/bbh-logical-deduction-seven-objects-pl.jsonl"),
         "loader": BBHLoader,
     },
 ]
+
+
+def _generator_answer_permutations(generator: ErrorGenerator) -> dict[str, list[int]]:
+    raw = getattr(generator, "answer_permutations", {})
+    if raw is None:
+        return {}
+    if not isinstance(raw, dict):
+        raise ValueError("IdentityGenerator.answer_permutations must be a dictionary")
+
+    normalized: dict[str, list[int]] = {}
+    for dataset_name, permutation in raw.items():
+        if not isinstance(dataset_name, str):
+            raise ValueError("Permutation dataset name must be a string")
+        if not isinstance(permutation, (list, tuple)):
+            raise ValueError(
+                f"Permutation for dataset '{dataset_name}' must be a list of integers"
+            )
+        try:
+            normalized[dataset_name] = [int(value) for value in permutation]
+        except (TypeError, ValueError) as error:
+            raise ValueError(
+                f"Permutation for dataset '{dataset_name}' contains a non-integer value"
+            ) from error
+    return normalized
+
+
+def _generator_temperature(generator: ErrorGenerator) -> float | None:
+    raw = getattr(generator, "temperature", None)
+    if raw is None:
+        return None
+    try:
+        return float(raw)
+    except (TypeError, ValueError) as error:
+        raise ValueError("Generator temperature must be a number or None") from error
+
+
+def _permuted_question(
+    question: Question,
+    dataset_name: str,
+    answer_permutations: dict[str, list[int]],
+) -> Question:
+    permutation = answer_permutations.get(dataset_name)
+    if permutation is None:
+        return question
+
+    if isinstance(question, LlmzszlQuestion):
+        expected = list(range(len(question.answers)))
+        if sorted(permutation) != expected:
+            raise ValueError(
+                f"Invalid llmzszl permutation={permutation}, expected permutation of {expected}"
+            )
+        answers = [question.answers[idx] for idx in permutation]
+        correct_answer_index = permutation.index(question.correct_answer_index)
+        return LlmzszlQuestion(question.question, answers, correct_answer_index)
+
+    if isinstance(question, BBHQuestion):
+        expected = list(range(len(question.options)))
+        if sorted(permutation) != expected:
+            raise ValueError(
+                f"Invalid bbh permutation={permutation}, expected permutation of {expected}"
+            )
+        options = [question.options[idx] for idx in permutation]
+        correct_index = ord(question.answer.upper()) - ord("A")
+        if correct_index < 0 or correct_index >= len(question.options):
+            raise ValueError(f"Invalid BBH correct answer letter: {question.answer}")
+        remapped_correct_index = permutation.index(correct_index)
+        answer = chr(ord("A") + remapped_correct_index)
+        return BBHQuestion(question.text, options, answer)
+
+    raise ValueError(
+        f"Answer permutation configured for unsupported dataset '{dataset_name}' and question type '{type(question).__name__}'"
+    )
 
 def _download_file(url: str, output: Path, timeout: int = 120) -> None:
     output.parent.mkdir(parents=True, exist_ok=True)
@@ -152,16 +208,21 @@ def _build_prompt_lines(
     dataset_name: str,
     gen_name: str,
     generator: ErrorGenerator,
+    answer_permutations: dict[str, list[int]],
+    generator_temperature: float | None,
 ) -> list[str]:
     lines: list[str] = []
     for idx, question in enumerate(questions, start=0):
-        prompt = question.build_prompt(generator)
-        expected = _serialize_expected(question)
+        effective_question = _permuted_question(question, dataset_name, answer_permutations)
+        prompt = effective_question.build_prompt(generator)
+        expected = _serialize_expected(effective_question)
         record = {
             "id": f"{dataset_name}-{gen_name}-{idx:03d}",
             "prompt": prompt,
             "expected": expected,
         }
+        if generator_temperature is not None:
+            record["temperature"] = generator_temperature
         lines.append(json.dumps(record, ensure_ascii=False))
     return lines
 
@@ -172,6 +233,8 @@ def _save_dataset_prompts(
     gen_name: str,
     generator: ErrorGenerator,
     gen_dir: Path,
+    answer_permutations: dict[str, list[int]],
+    generator_temperature: float | None,
 ) -> None:
     out_path = gen_dir / f"{dataset_name}.jsonl"
     if out_path.exists():
@@ -183,6 +246,8 @@ def _save_dataset_prompts(
         dataset_name=dataset_name,
         gen_name=gen_name,
         generator=generator,
+        answer_permutations=answer_permutations,
+        generator_temperature=generator_temperature,
     )
     out_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"  [{gen_name}/{dataset_name}] Saved {len(questions)} prompts to {out_path}")
@@ -193,6 +258,8 @@ def _build_and_save_prompts(loaded: dict[str, list[Question]], output_dir: Path)
     _clean_output_directory(output_dir)
 
     for gen_name, generator in GENERATORS.items():
+        answer_permutations = _generator_answer_permutations(generator)
+        generator_temperature = _generator_temperature(generator)
         gen_dir = output_dir / gen_name
         gen_dir.mkdir(parents=True, exist_ok=True)
 
@@ -203,6 +270,8 @@ def _build_and_save_prompts(loaded: dict[str, list[Question]], output_dir: Path)
                 gen_name=gen_name,
                 generator=generator,
                 gen_dir=gen_dir,
+                answer_permutations=answer_permutations,
+                generator_temperature=generator_temperature,
             )
 
 
