@@ -11,4 +11,4 @@ evaluation:
   temperature: 0  
   api_key: ollama
   workers: 1
-  resume: /home/pawel/Desktop/pl-llm-errors/results/SpeakLeash_bielik-4.5b-v3.0-instruct_Q8_0_2026-03-29_14-22-03.json
+  resume: None

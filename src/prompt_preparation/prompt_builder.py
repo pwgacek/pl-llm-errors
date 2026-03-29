@@ -30,13 +30,13 @@ from src.settings import settings
 GENERATORS: dict[str, ErrorGenerator] = {
     "identity": IdentityGenerator(),
     "temp_1": IdentityGenerator(
-        temperature=0.1,
+        temperature=0.7,
     ),
     "temp_2": IdentityGenerator(
-        temperature=0.3,
+        temperature=0.8,
     ),
     "temp_3": IdentityGenerator(
-        temperature=0.5,
+        temperature=0.9,
     ),
 }
 
