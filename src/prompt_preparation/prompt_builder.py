@@ -15,8 +15,9 @@ from .errors import (
     TypoErrorGenerator,
 )
 from .errors.base import ErrorGenerator
-from .loaders import CDSLoader, LDEKLoader, LLMZSZLLoader, PolQALoader, BBHLoader
+from .loaders import CDSLoader, LDEKLoader, LLMZSZLLoader, PolQALoader, BBHLoader, BBHOpenLoader
 from .questions import (
+    BBHOpenQuestion,
     BBHQuestion,
     CdsQuestion,
     LDEKQuestion,
@@ -40,35 +41,41 @@ GENERATORS: dict[str, ErrorGenerator] = {
 
 
 DATASETS = [
+    # {
+    #     "name": "llmzszl",
+    #     "url": "https://huggingface.co/datasets/amu-cai/llmzszl-dataset/resolve/main/llmzszl-test.jsonl",
+    #     "output": Path("datasets/llmzszl.jsonl"),
+    #     "loader": LLMZSZLLoader,
+    # },
+    # {
+    #     "name": "polqa",
+    #     "url": "https://huggingface.co/datasets/ipipan/polqa/resolve/main/data/test.csv",
+    #     "output": Path("datasets/polqa.csv"),
+    #     "loader": PolQALoader,
+    # },
+    # {
+    #     "name": "cds",
+    #     "url": "http://git.nlp.ipipan.waw.pl/Scwad/SCWAD-CDSCorpus/raw/master/CDSCorpus/CDS_test.csv",
+    #     "output": Path("datasets/CDS_test.csv"),
+    #     "loader": CDSLoader,
+    # },
+    # {
+    #     "name": "ldek",
+    #     "url": "https://huggingface.co/datasets/amu-cai/medical-exams-LDEK-PL-2008-2024/resolve/main/medical-exams-LDEK-PL-2008-2024.json",
+    #     "output": Path("datasets/medical-exams-LDEK-PL-2008-2024.json"),
+    #     "loader": LDEKLoader,
+    # },
+    # {
+    #     "name": "bbh",
+    #     "url": "https://huggingface.co/datasets/pawel04/bbh-logical-deduction-seven-objects-pl/resolve/main/closed.jsonl",
+    #     "output": Path("datasets/bbh-logical-deduction-seven-objects-pl.jsonl"),
+    #     "loader": BBHLoader,
+    # },
     {
-        "name": "llmzszl",
-        "url": "https://huggingface.co/datasets/amu-cai/llmzszl-dataset/resolve/main/llmzszl-test.jsonl",
-        "output": Path("datasets/llmzszl.jsonl"),
-        "loader": LLMZSZLLoader,
-    },
-    {
-        "name": "polqa",
-        "url": "https://huggingface.co/datasets/ipipan/polqa/resolve/main/data/test.csv",
-        "output": Path("datasets/polqa.csv"),
-        "loader": PolQALoader,
-    },
-    {
-        "name": "cds",
-        "url": "http://git.nlp.ipipan.waw.pl/Scwad/SCWAD-CDSCorpus/raw/master/CDSCorpus/CDS_test.csv",
-        "output": Path("datasets/CDS_test.csv"),
-        "loader": CDSLoader,
-    },
-    {
-        "name": "ldek",
-        "url": "https://huggingface.co/datasets/amu-cai/medical-exams-LDEK-PL-2008-2024/resolve/main/medical-exams-LDEK-PL-2008-2024.json",
-        "output": Path("datasets/medical-exams-LDEK-PL-2008-2024.json"),
-        "loader": LDEKLoader,
-    },
-    {
-        "name": "bbh",
-        "url": "https://huggingface.co/datasets/pawel04/bbh-logical-deduction-seven-objects-pl/resolve/main/data.jsonl",
-        "output": Path("datasets/bbh-logical-deduction-seven-objects-pl.jsonl"),
-        "loader": BBHLoader,
+        "name": "bbh_open",
+        "url": "https://huggingface.co/datasets/pawel04/bbh-logical-deduction-seven-objects-pl/resolve/main/open.jsonl",
+        "output": Path("datasets/bbh-logical-deduction-seven-objects-pl-open.jsonl"),
+        "loader": BBHOpenLoader,
     },
 ]
 
@@ -86,6 +93,8 @@ def _serialize_expected(question: Question) -> dict:
     if isinstance(question, LDEKQuestion):
         return {"type": "multiple_choice_letter", "correct_letter": question.correct_answer}
     if isinstance(question, PolQAQuestion):
+        return {"type": "open_short_answer", "accepted_answers": question.answers}
+    if isinstance(question, BBHOpenQuestion):
         return {"type": "open_short_answer", "accepted_answers": question.answers}
     if isinstance(question, CdsQuestion):
         return {"type": "entailment", "judgment": question.entailment_judgment}
