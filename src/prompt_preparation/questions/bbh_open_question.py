@@ -5,9 +5,9 @@ from .base import Question
 
 
 class BBHOpenQuestion(Question):
-    def __init__(self, text: str, answers: list[str]) -> None:
+    def __init__(self, text: str, correct_order: list[list[str]]) -> None:
         self.text = text
-        self.answers = answers
+        self.correct_order = correct_order
 
     def build_prompt(self, error_generator: ErrorGenerator) -> str:
         text = error_generator.apply(self.text)

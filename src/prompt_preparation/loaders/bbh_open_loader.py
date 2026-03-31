@@ -17,15 +17,28 @@ class BBHOpenLoader(Loader):
         for line in lines:
             record = json.loads(line)
             input_text = str(record.get("input", "")).strip()
-            target = record.get("target", [])
+            correct_order = record.get("correct_order", [])
 
-            if not input_text or not isinstance(target, list) or not target:
-                raise ValueError(f"Invalid BBH open record, missing input or target list: {line}")
+            if not input_text:
+                raise ValueError(f"Invalid BBH open record, missing input: {line}")
 
-            answers = [str(answer).strip() for answer in target if str(answer).strip()]
-            if not answers:
-                raise ValueError(f"Invalid BBH open record, empty target list: {line}")
+            if not isinstance(correct_order, list) or not correct_order:
+                raise ValueError(f"Invalid BBH open record, missing correct_order list: {line}")
 
-            questions.append(BBHOpenQuestion(text=input_text, answers=answers))
+            normalized_correct_order: list[list[str]] = []
+            for slot in correct_order:
+                if not isinstance(slot, list) or not slot:
+                    raise ValueError(f"Invalid BBH open record, malformed correct_order slot: {line}")
+                normalized_slot = [str(variant).strip() for variant in slot if str(variant).strip()]
+                if not normalized_slot:
+                    raise ValueError(f"Invalid BBH open record, empty correct_order slot: {line}")
+                normalized_correct_order.append(normalized_slot)
+
+            questions.append(
+                BBHOpenQuestion(
+                    text=input_text,
+                    correct_order=normalized_correct_order,
+                )
+            )
 
         return questions

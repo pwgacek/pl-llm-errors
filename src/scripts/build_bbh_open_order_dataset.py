@@ -93,49 +93,6 @@ def _build_aliases(entities: list[str], task_type: str) -> dict[str, list[str]]:
     return aliases
 
 
-def _numbered_line_sequence(entities: list[str]) -> str:
-    return "\n".join(f"{idx + 1}. {entity}" for idx, entity in enumerate(entities))
-
-
-def _numbered_inline_sequence(entities: list[str]) -> str:
-    return ", ".join(f"{idx + 1}. {entity}" for idx, entity in enumerate(entities))
-
-
-def _build_accepted_answers(solution_order: list[str], aliases: dict[str, list[str]]) -> list[str]:
-    alias_variants_per_slot: list[list[str]] = []
-    for entity in solution_order:
-        canonical = entity.strip().lower()
-        variants = aliases.get(canonical)
-        if not variants:
-            variants = [canonical]
-        alias_variants_per_slot.append(variants)
-
-    accepted: set[str] = set()
-
-    def add_for_sequence(seq: list[str]) -> None:
-        accepted.add(", ".join(seq))
-        accepted.add(" ".join(seq))
-        accepted.add(" -> ".join(seq))
-        accepted.add(" > ".join(seq))
-        accepted.add(" | ".join(seq))
-        accepted.add(_numbered_inline_sequence(seq))
-        accepted.add(_numbered_line_sequence(seq))
-
-    # Canonical sequence
-    canonical_seq = [entity.strip().lower() for entity in solution_order]
-    add_for_sequence(canonical_seq)
-
-    # Mixed alias variants (first alias from each slot)
-    first_alias_seq = [variants[0] for variants in alias_variants_per_slot]
-    add_for_sequence(first_alias_seq)
-
-    # Another mixed alias variants (last alias from each slot)
-    last_alias_seq = [variants[-1] for variants in alias_variants_per_slot]
-    add_for_sequence(last_alias_seq)
-
-    return sorted(answer for answer in accepted if answer.strip())
-
-
 def _build_static_en_to_pl_dictionary(
     polish_lines: list[str],
     english_solved: list[dict[str, object]],
@@ -227,11 +184,15 @@ def build_open_bbh_dataset(
         open_prompt = f"{stem}\n{order_question}"
 
         aliases = _build_aliases(polish_entities, task_type=task_type)
-        accepted_answers = _build_accepted_answers(polish_solution_order, aliases)
+        solution_order_variants: list[list[str]] = []
+        for entity in polish_solution_order:
+            canonical = entity.strip().lower()
+            variants = aliases.get(canonical, [canonical])
+            solution_order_variants.append(variants)
 
         out_record = {
             "input": open_prompt,
-            "target": accepted_answers,
+            "correct_order": solution_order_variants,
         }
         out_lines.append(json.dumps(out_record, ensure_ascii=False))
 

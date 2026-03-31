@@ -95,7 +95,10 @@ def _serialize_expected(question: Question) -> dict:
     if isinstance(question, PolQAQuestion):
         return {"type": "open_short_answer", "accepted_answers": question.answers}
     if isinstance(question, BBHOpenQuestion):
-        return {"type": "open_short_answer", "accepted_answers": question.answers}
+        return {
+            "type": "bbh_open_position_match",
+            "correct_order": question.correct_order,
+        }
     if isinstance(question, CdsQuestion):
         return {"type": "entailment", "judgment": question.entailment_judgment}
     if isinstance(question, BBHQuestion):
