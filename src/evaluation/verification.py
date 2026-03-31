@@ -7,7 +7,7 @@ import string
 UPPERCASE_LETTERS = string.ascii_uppercase
 ANSWER_FIELD_KEYS = ("odpowiedź", "odpowiedz", "answer")
 VerificationResult = tuple[float, bool]
-BBH_OPEN_MIN_ENTITY_SCORE = 0.8
+BBH_MIN_ENTITY_SCORE = 0.8
 
 
 def verify_response(raw: str, expected: dict) -> VerificationResult:
@@ -15,18 +15,13 @@ def verify_response(raw: str, expected: dict) -> VerificationResult:
 
     if kind == "multiple_choice_index":
         return verify_multiple_choice_index(raw, expected)
-
-    if kind == "multiple_choice_letter":
-        return verify_multiple_choice_letter(raw, expected)
-
+    
     if kind == "open_short_answer":
         return verify_open_short_answer(raw, expected)
 
-    if kind == "bbh_open_position_match":
-        return verify_bbh_open_position_match(raw, expected)
+    if kind == "bbh_position_match":
+        return verify_bbh_position_match(raw, expected)
 
-    if kind == "entailment":
-        return verify_entailment(raw, expected)
 
     return 0.0, True
 
@@ -42,13 +37,6 @@ def verify_multiple_choice_index(raw: str, expected: dict) -> VerificationResult
 
     return (1.0, False) if predicted == correct_letter else (0.0, False)
 
-
-def verify_multiple_choice_letter(raw: str, expected: dict) -> VerificationResult:
-    predicted = extract_letter(raw)
-    if predicted is None:
-        return 0.0, True
-
-    return (1.0, False) if predicted == expected["correct_letter"].upper() else (0.0, False)
 
 
 def verify_open_short_answer(raw: str, expected: dict) -> VerificationResult:
@@ -70,7 +58,7 @@ def verify_open_short_answer(raw: str, expected: dict) -> VerificationResult:
     return best_score, False
 
 
-def verify_bbh_open_position_match(raw: str, expected: dict) -> VerificationResult:
+def verify_bbh_position_match(raw: str, expected: dict) -> VerificationResult:
     correct_order_raw = expected.get("correct_order")
     if not isinstance(correct_order_raw, list) or not correct_order_raw:
         return 0.0, True
@@ -142,7 +130,7 @@ def map_predicted_entity_to_key(predicted_entity: str, keys: list[str]) -> str |
             best_score = score
             best_key = key
 
-    if best_score >= BBH_OPEN_MIN_ENTITY_SCORE:
+    if best_score >= BBH_MIN_ENTITY_SCORE:
         return best_key
     return None
 

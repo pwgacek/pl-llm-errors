@@ -1,36 +1,10 @@
+from __future__ import annotations
 
 import json
-import re
 from pathlib import Path
 
 from .base import Loader
 from ..questions import BBHQuestion, Question
-
-OPTION_PATTERN = re.compile(r"^\(([A-G])\)\s*(.+)$")
-
-
-def _parse_bbh_input(raw: str) -> tuple[str, list[str]]:
-    """Split input into (question_text, [option_a, ..., option_g])."""
-
-    parts = raw.split("Opcje:")
-    if len(parts) != 2:
-        raise ValueError(f"Unexpected BBH input format, missing 'Opcje:' separator: {raw}")
-    
-    question_text = parts[0].strip()
-    options_text = parts[1].strip()
-    
-    lines = [line.strip() for line in options_text.splitlines() if line.strip()]
-    answers: list[str] = []
-    
-    for line in lines:
-        m = OPTION_PATTERN.match(line)
-        if m:
-            answers.append(m.group(2).strip())
-    
-    if not question_text or not len(answers) == 7:
-        raise ValueError(f"Unexpected BBH input format, missing question text or options: {raw}")
-
-    return question_text, answers
 
 
 class BBHLoader(Loader):
@@ -42,13 +16,29 @@ class BBHLoader(Loader):
 
         for line in lines:
             record = json.loads(line)
-            input_text = record.get("input", "").strip()
-            answer = record.get("target", "").strip().strip("()")
+            input_text = str(record.get("input", "")).strip()
+            correct_order = record.get("correct_order", [])
 
-            if not input_text or not answer:
-                raise ValueError(f"Invalid BBH record, missing input or target: {line}")
-            
-            question_text, options = _parse_bbh_input(input_text)
-            questions.append(BBHQuestion(question_text, options, answer))
+            if not input_text:
+                raise ValueError(f"Invalid BBH open record, missing input: {line}")
+
+            if not isinstance(correct_order, list) or not correct_order:
+                raise ValueError(f"Invalid BBH open record, missing correct_order list: {line}")
+
+            normalized_correct_order: list[list[str]] = []
+            for slot in correct_order:
+                if not isinstance(slot, list) or not slot:
+                    raise ValueError(f"Invalid BBH open record, malformed correct_order slot: {line}")
+                normalized_slot = [str(variant).strip() for variant in slot if str(variant).strip()]
+                if not normalized_slot:
+                    raise ValueError(f"Invalid BBH open record, empty correct_order slot: {line}")
+                normalized_correct_order.append(normalized_slot)
+
+            questions.append(
+                BBHQuestion(
+                    text=input_text,
+                    correct_order=normalized_correct_order,
+                )
+            )
 
         return questions

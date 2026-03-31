@@ -3,10 +3,10 @@ common:
   prompt_dir: prompts
 
 prompt_preparation:
-  num_questions: 100
+  num_questions: 10
 
 evaluation:
-  model: gemma3:4b
+  model: SpeakLeash/bielik-11b-v3.0-instruct:Q6_K
   base_url: http://localhost:11434/v1
   temperature: 0  
   api_key: ollama
