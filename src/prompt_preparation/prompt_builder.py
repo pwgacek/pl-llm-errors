@@ -44,19 +44,19 @@ DATASETS = [
         "output": Path("datasets/llmzszl-open-ended.jsonl"),
         "loader": LLMZSZLLoader,
     },
-    # {
-    #     "name": "polqa",
-    #     "url": "https://huggingface.co/datasets/ipipan/polqa/resolve/main/data/test.csv",
-    #     "output": Path("datasets/polqa.csv"),
-    #     "loader": PolQALoader,
-    # },
+    {
+        "name": "polqa",
+        "url": "https://huggingface.co/datasets/ipipan/polqa/resolve/main/data/test.csv",
+        "output": Path("datasets/polqa.csv"),
+        "loader": PolQALoader,
+    },
 
-    # {
-    #     "name": "bbh",
-    #     "url": "https://huggingface.co/datasets/pawel04/bbh-logical-deduction-seven-objects-pl/resolve/main/open.jsonl",
-    #     "output": Path("datasets/bbh.jsonl"),
-    #     "loader": BBHLoader,
-    # },
+    {
+        "name": "bbh",
+        "url": "https://huggingface.co/datasets/pawel04/bbh-logical-deduction-seven-objects-pl/resolve/main/open.jsonl",
+        "output": Path("datasets/bbh.jsonl"),
+        "loader": BBHLoader,
+    },
 ]
 
 def _download_file(url: str, output: Path, timeout: int = 120) -> None:

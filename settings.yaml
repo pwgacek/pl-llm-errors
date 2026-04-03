@@ -3,7 +3,7 @@ common:
   prompt_dir: prompts
 
 prompt_preparation:
-  num_questions: 10
+  num_questions: 150
 
 evaluation:
   model: SpeakLeash/bielik-11b-v3.0-instruct:Q6_K
