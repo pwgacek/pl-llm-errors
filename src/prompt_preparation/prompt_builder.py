@@ -40,23 +40,23 @@ GENERATORS: dict[str, ErrorGenerator] = {
 DATASETS = [
     {
         "name": "llmzszl",
-        "url": "https://huggingface.co/datasets/amu-cai/llmzszl-dataset/resolve/main/llmzszl-test.jsonl",
-        "output": Path("datasets/llmzszl.jsonl"),
+        "url": "https://huggingface.co/datasets/pawel04/llmzszl-open-ended/resolve/main/llmzszl-open-ended.jsonl",
+        "output": Path("datasets/llmzszl-open-ended.jsonl"),
         "loader": LLMZSZLLoader,
     },
-    {
-        "name": "polqa",
-        "url": "https://huggingface.co/datasets/ipipan/polqa/resolve/main/data/test.csv",
-        "output": Path("datasets/polqa.csv"),
-        "loader": PolQALoader,
-    },
+    # {
+    #     "name": "polqa",
+    #     "url": "https://huggingface.co/datasets/ipipan/polqa/resolve/main/data/test.csv",
+    #     "output": Path("datasets/polqa.csv"),
+    #     "loader": PolQALoader,
+    # },
 
-    {
-        "name": "bbh",
-        "url": "https://huggingface.co/datasets/pawel04/bbh-logical-deduction-seven-objects-pl/resolve/main/open.jsonl",
-        "output": Path("datasets/bbh.jsonl"),
-        "loader": BBHLoader,
-    },
+    # {
+    #     "name": "bbh",
+    #     "url": "https://huggingface.co/datasets/pawel04/bbh-logical-deduction-seven-objects-pl/resolve/main/open.jsonl",
+    #     "output": Path("datasets/bbh.jsonl"),
+    #     "loader": BBHLoader,
+    # },
 ]
 
 def _download_file(url: str, output: Path, timeout: int = 120) -> None:
@@ -69,7 +69,7 @@ def _download_file(url: str, output: Path, timeout: int = 120) -> None:
 def _serialize_expected(question: Question) -> dict:
     """Return a minimal, serialisable dict describing the correct answer."""
     if isinstance(question, LlmzszlQuestion):
-        return {"type": "multiple_choice_index", "correct_index": question.correct_answer_index}
+        return {"type": "open_short_answer", "accepted_answers": question.answers}
     if isinstance(question, PolQAQuestion):
         return {"type": "open_short_answer", "accepted_answers": question.answers}
     if isinstance(question, BBHQuestion):

@@ -13,9 +13,6 @@ BBH_MIN_ENTITY_SCORE = 0.8
 def verify_response(raw: str, expected: dict) -> VerificationResult:
     kind = expected.get("type")
 
-    if kind == "multiple_choice_index":
-        return verify_multiple_choice_index(raw, expected)
-    
     if kind == "open_short_answer":
         return verify_open_short_answer(raw, expected)
 
@@ -24,20 +21,6 @@ def verify_response(raw: str, expected: dict) -> VerificationResult:
 
 
     return 0.0, True
-
-
-def verify_multiple_choice_index(raw: str, expected: dict) -> VerificationResult:
-    predicted = extract_letter(raw)
-    if predicted is None:
-        return 0.0, True
-
-    correct_letter = index_to_letter(expected["correct_index"])
-    if correct_letter is None:
-        return 0.0, True
-
-    return (1.0, False) if predicted == correct_letter else (0.0, False)
-
-
 
 def verify_open_short_answer(raw: str, expected: dict) -> VerificationResult:
     answer = extract_json_field(raw, ANSWER_FIELD_KEYS)
@@ -178,41 +161,6 @@ def verify_entailment(raw: str, expected: dict) -> VerificationResult:
         return 0.0, True
 
     return (1.0, False) if normalized_answer == expected["judgment"].upper() else (0.0, False)
-
-
-def extract_letter(text: str) -> str | None:
-    payload = parse_json_payload(text)
-    if payload is None:
-        return None
-
-    raw_answer = extract_json_field_from_dict(
-        payload,
-        ANSWER_FIELD_KEYS,
-    )
-    if raw_answer is None:
-        return None
-    if isinstance(raw_answer, int):
-        return index_to_letter(raw_answer)
-    if not isinstance(raw_answer, str):
-        return None
-
-    normalized = raw_answer.strip().upper()
-    if not normalized:
-        return None
-    if normalized.isdigit():
-        letter = index_to_letter(int(normalized))
-        if letter is not None:
-            return letter
-    if len(normalized) == 1 and normalized in UPPERCASE_LETTERS:
-        return normalized
-    return None
-
-
-def index_to_letter(index: int) -> str | None:
-    if 0 <= index < len(UPPERCASE_LETTERS):
-        return UPPERCASE_LETTERS[index]
-    return None
-
 
 def extract_json_field(text: str, keys: tuple[str, ...]) -> str | None:
     payload = parse_json_payload(text)

@@ -4,9 +4,6 @@ from .base import Loader
 from pathlib import Path
 
 
-TARGET_TYPE = "Egzaminy Maturalne"
-
-
 class LLMZSZLLoader(Loader):
     def load(self, path: Path, num_samples: int, seed: int) -> list[Question]:
         questions: list[Question] = []
@@ -16,16 +13,12 @@ class LLMZSZLLoader(Loader):
         for line in lines:
             record = json.loads(line)
 
-            if (
-                record.get("type") == TARGET_TYPE
-            ):
-                question_text = str(record.get("question", ""))
-                answers = list(record.get("answers", []))
-                correct_index = int(record.get("correct_answer_index", -1))
+            question_text = str(record.get("question", ""))
+            answer = str(record.get("answer", ""))
 
-                if not question_text or not answers or correct_index < 0 or correct_index >= len(answers):
-                    raise ValueError(f"Invalid LLMZSZL record, missing question text, answers, or correct index: {line}")
+            if not question_text or not answer:
+                raise ValueError(f"Invalid LLMZSZL record, missing question or answer: {line}")
 
-                questions.append(LlmzszlQuestion(question_text, answers, correct_index))
+            questions.append(LlmzszlQuestion(question_text, answer))
 
         return self._deterministic_sample(questions, num_samples, seed)

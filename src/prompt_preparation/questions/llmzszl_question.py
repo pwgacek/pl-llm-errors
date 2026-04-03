@@ -6,19 +6,15 @@ from .base import Question
 
 
 class LlmzszlQuestion(Question):
-    def __init__(self, question: str, answers: list[str], correct_answer_index: int) -> None:
+    def __init__(self, question: str, answer: str) -> None:
         self.question = question
-        self.answers = answers
-        self.correct_answer_index = correct_answer_index
+        self.answers = [answer]
 
     def build_prompt(self, error_generator: ErrorGenerator) -> str:
         question = error_generator.apply(self.question)
-        answers = [error_generator.apply(answer) for answer in self.answers]
-        choices = self._format_lettered_choices(answers)
 
         return (
-            "Odpowiedz na poniższe pytanie, wybierając poprawną odpowiedź spośród podanych.\n"
-            "Odpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n"
+            "Odpowiedz na poniższe pytanie krótko i zwięźle.\n"
+            "Odpowiedź powinna mieć format: {\"odpowiedź\": \"WYRAŻENIE\"}\n"
             f"<PYTANIE>{question}</PYTANIE>\n"
-            f"<ODPOWIEDZI>{choices}</ODPOWIEDZI>\n"
         )
