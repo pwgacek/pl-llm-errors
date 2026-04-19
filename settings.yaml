@@ -9,6 +9,5 @@ evaluation:
   model: SpeakLeash/bielik-11b-v3.0-instruct:Q6_K
   base_url: http://localhost:11434/v1
   temperature: 0  
-  api_key: "@format {env[API_KEY]}"
   workers: 1
   resume: null
