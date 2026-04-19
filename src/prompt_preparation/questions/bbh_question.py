@@ -12,7 +12,15 @@ class BBHQuestion(Question):
     def build_prompt(self, error_generator: ErrorGenerator) -> str:
         text = error_generator.apply(self.text)
         return (
-            "Przemyśl swoją odpowiedź krok po kroku.\n"
-            "Odpowiedź powinna mieć format: {\"odpowiedź\": \"NAZWY OBIEKTÓW ODDZIELONE PRZECINKAMI\"}\n"
-            f"<PYTANIE>{text}</PYTANIE>\n"
+            "Rozwiąż poniższe zadanie krok po kroku.\n"
+            "\n"
+            "Zasady:\n"
+            "- zapisuj kolejne kroki rozumowania,\n"
+            "- wykorzystuj wszystkie podane informacje,\n"
+            "- rozumowanie ma być zwięzłe, ale kompletne.\n"
+            "\n"
+            "Na końcu podaj wynik jako uporządkowaną listę wszystkich obiektów w formacie:\n"
+            "<ODPOWIEDŹ>obiekt1, obiekt2, obiekt3, obiekt4, obiekt5, obiekt6, obiekt7</ODPOWIEDŹ>\n"
+            "\n"
+            f"<ZADANIE>{text}</ZADANIE>\n"
         )
