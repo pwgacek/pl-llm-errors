@@ -16,10 +16,10 @@ class PolQAQuestion(Question):
         context = error_generator.apply(self.context)
 
         return (
-            "Odpowiedz na pytanie korzystając z dostarczonego kontekstu.\n"
-            "Zwróć tylko krótką frazę, nie pełne zdanie.\n"
-            "Odpowiedź powinna mieć format: {\"odpowiedź\": \"WYRAŻENIE\"}\n"
+            "Odpowiedz na pytanie korzystając wyłącznie z dostarczonego kontekstu.\n"
+            "Zwróć jedno słowo lub krótką frazę.\n"
+            "Nie odpowiadaj pełnym zdaniem.\n"
+            "Nie podawaj wyjaśnień.\n"
             f"<KONTEKST>{context}</KONTEKST>\n"
             f"<PYTANIE>{question}</PYTANIE>\n"
-
         )

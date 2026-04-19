@@ -25,7 +25,6 @@ class LLMClient:
             ],
             temperature=self.temperature,
             seed=self.seed,
-            response_format={"type": "json_object"},
         )
 
         content = response.choices[0].message.content
