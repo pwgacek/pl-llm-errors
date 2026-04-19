@@ -71,6 +71,24 @@ def _summarize_scores(records: list[dict]) -> tuple[float, int]:
     return score_sum, error_count
 
 
+def _extract_correct_answer(expected: dict) -> str:
+    accepted_answers = expected.get("accepted_answers")
+    if isinstance(accepted_answers, list) and accepted_answers:
+        return str(accepted_answers[0])
+
+    correct_order = expected.get("correct_order")
+    if isinstance(correct_order, list) and correct_order:
+        flattened: list[str] = []
+        for slot in correct_order:
+            if isinstance(slot, list) and slot:
+                flattened.append(str(slot[0]))
+            else:
+                flattened.append(str(slot))
+        return " | ".join(flattened)
+
+    return ""
+
+
 def _evaluate_records(
     records: list[dict],
     model_client: LLMClient,
@@ -83,6 +101,7 @@ def _evaluate_records(
         prompt_id = str(record.get("id", f"row-{i:03d}"))
         prompt = record["prompt"]
         expected = record["expected"]
+        correct_answer = _extract_correct_answer(expected)
         t0 = time.perf_counter()
 
         try:
@@ -93,6 +112,7 @@ def _evaluate_records(
                 "index": i,
                 "prompt_id": prompt_id,
                 "raw_answer": "",
+                "correct_answer": correct_answer,
                 "score": 0.0,
                 "error": True,
                 "elapsed": 0.0,
@@ -106,6 +126,7 @@ def _evaluate_records(
             "index": i,
             "prompt_id": prompt_id,
             "raw_answer": raw,
+            "correct_answer": correct_answer,
             "score": score,
             "error": error,
             "elapsed": round(elapsed, 3),

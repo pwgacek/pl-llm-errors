@@ -21,13 +21,6 @@ class LLMClient:
         response = self.client.chat.completions.create(
             model=self.model,
             messages=[
-                {
-                    "role": "system",
-                    "content": (
-                        "Jesteś pomocnym asystentem, który odpowiada na "
-                        "pytania w formacie JSON."
-                    ),
-                },
                 {"role": "user", "content": prompt},
             ],
             temperature=self.temperature,

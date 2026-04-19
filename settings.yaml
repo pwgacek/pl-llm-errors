@@ -3,12 +3,12 @@ common:
   prompt_dir: prompts
 
 prompt_preparation:
-  num_questions: 150
+  num_questions: 100
 
 evaluation:
   model: SpeakLeash/bielik-11b-v3.0-instruct:Q6_K
   base_url: http://localhost:11434/v1
   temperature: 0  
-  api_key: ollama
+  api_key: "@format {env[API_KEY]}"
   workers: 1
   resume: null
