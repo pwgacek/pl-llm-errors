@@ -1,13 +1,25 @@
-common:
-  seed: 42
-  prompt_dir: prompts
+default:
+  common:
+    seed: 42
+    prompt_dir: prompts
+  evaluation:
+    temperature: 0
+    workers: 1
+    resume: null
 
-prompt_preparation:
-  num_questions: 100
+local:
+  prompt_preparation:
+    num_questions: 100
+  evaluation:
+    model: SpeakLeash/bielik-11b-v3.0-instruct:Q6_K
+    base_url: http://localhost:11434/v1
+    api_key: ollama
+    timeout: 60
 
-evaluation:
-  model: SpeakLeash/bielik-11b-v3.0-instruct:Q6_K
-  base_url: http://localhost:11434/v1
-  temperature: 0  
-  workers: 1
-  resume: null
+remote:
+  prompt_preparation:
+    num_questions: 10
+  evaluation:
+    model: speakleash/Bielik-11B-v3.0-Instruct
+    base_url: https://llmlab.plgrid.pl/api/v1
+    timeout: 120
