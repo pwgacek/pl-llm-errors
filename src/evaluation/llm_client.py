@@ -11,11 +11,12 @@ class LLMClient:
         api_key: str,
         seed: int,
         temperature: int,
+        timeout: int = 60,
     ) -> None:
         self.model = model
         self.seed = seed
         self.temperature = temperature
-        self.client = OpenAI(base_url=base_url, api_key=api_key, timeout=60)
+        self.client = OpenAI(base_url=base_url, api_key=api_key, timeout=timeout)
 
     def ask(self, prompt: str) -> str:
         response = self.client.chat.completions.create(
