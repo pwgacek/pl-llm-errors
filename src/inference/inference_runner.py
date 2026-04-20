@@ -8,7 +8,6 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from .llm_client import LLMClient
-from .verification import verify_response
 
 from src.settings import settings
 
@@ -65,31 +64,7 @@ def _save_partial(report_path: Path, report: dict) -> None:
     tmp.rename(report_path)
 
 
-def _summarize_scores(records: list[dict]) -> tuple[float, int]:
-    score_sum = sum(float(record["score"]) for record in records)
-    error_count = sum(1 for record in records if bool(record["error"]))
-    return score_sum, error_count
-
-
-def _extract_correct_answer(expected: dict) -> str:
-    accepted_answers = expected.get("accepted_answers")
-    if isinstance(accepted_answers, list) and accepted_answers:
-        return str(accepted_answers[0])
-
-    correct_order = expected.get("correct_order")
-    if isinstance(correct_order, list) and correct_order:
-        flattened: list[str] = []
-        for slot in correct_order:
-            if isinstance(slot, list) and slot:
-                flattened.append(str(slot[0]))
-            else:
-                flattened.append(str(slot))
-        return " | ".join(flattened)
-
-    return ""
-
-
-def _evaluate_records(
+def _ask_records(
     records: list[dict],
     model_client: LLMClient,
     workers: int,
@@ -100,8 +75,7 @@ def _evaluate_records(
         i, record = args
         prompt_id = str(record.get("id", f"row-{i:03d}"))
         prompt = record["prompt"]
-        expected = record["expected"]
-        correct_answer = _extract_correct_answer(expected)
+        judgement_context = record.get("judgement_context", {})
         t0 = time.perf_counter()
 
         try:
@@ -112,24 +86,20 @@ def _evaluate_records(
                 "index": i,
                 "prompt_id": prompt_id,
                 "raw_answer": "",
-                "correct_answer": correct_answer,
-                "score": 0.0,
-                "error": True,
                 "elapsed": 0.0,
+                "error": True,
+                "judgement_context": judgement_context,
             }
 
         elapsed = time.perf_counter() - t0
-        score, error = verify_response(raw, expected)
-        status = "ERROR" if error else f"score={score:.3f}"
-        print(f"    [{i}/{total}] {status}  ({elapsed:.2f}s)")
+        print(f"    [{i}/{total}] ok  ({elapsed:.2f}s)")
         return {
             "index": i,
             "prompt_id": prompt_id,
             "raw_answer": raw,
-            "correct_answer": correct_answer,
-            "score": score,
-            "error": error,
             "elapsed": round(elapsed, 3),
+            "error": False,
+            "judgement_context": judgement_context,
         }
 
     with ThreadPoolExecutor(max_workers=workers) as executor:
@@ -140,24 +110,23 @@ def _evaluate_records(
     return [{k: v for k, v in record.items() if k != "index"} for record in raw_records]
 
 
-def step_evaluate(
+def step_run(
     prompts: Prompts,
     model_client: LLMClient,
     workers: int,
     report_path: Path,
     report_skeleton: dict,
-    existing_results: dict[str, dict] | None = None,
+    existing_answers: dict[str, dict] | None = None,
 ) -> dict[str, dict]:
-    print("\n=== Step 2: Evaluating ===")
-    results: dict[str, dict] = existing_results if existing_results is not None else {}
+    print("\n=== Step 2: Asking LLM ===")
+    answers: dict[str, dict] = existing_answers if existing_answers is not None else {}
 
     for gen_name, datasets in prompts.items():
-        if gen_name not in results:
-            results[gen_name] = {}
+        if gen_name not in answers:
+            answers[gen_name] = {}
 
         for dataset_name, records in datasets.items():
-            # Skip pairs already completed when resuming
-            if dataset_name in results[gen_name]:
+            if dataset_name in answers[gen_name]:
                 print(f"\n  [{gen_name}/{dataset_name}] Already completed, skipping (resume).")
                 continue
 
@@ -165,42 +134,37 @@ def step_evaluate(
             print(f"\n  [{gen_name}/{dataset_name}] Asking {total} questions ...")
             dataset_start = time.perf_counter()
 
-            output_records = _evaluate_records(records, model_client, workers)
-            score_sum, error_count = _summarize_scores(output_records)
+            output_records = _ask_records(records, model_client, workers)
+            error_count = sum(1 for r in output_records if r["error"])
             dataset_elapsed = time.perf_counter() - dataset_start
-            score_avg = score_sum / total if total > 0 else 0.0
             print(
-                f"  [{gen_name}/{dataset_name}] score_avg={score_avg:.3f}  "
-                f"errors={error_count}  time={dataset_elapsed:.1f}s"
+                f"  [{gen_name}/{dataset_name}] errors={error_count}  time={dataset_elapsed:.1f}s"
             )
 
-            results[gen_name][dataset_name] = {
+            answers[gen_name][dataset_name] = {
                 "num_sampled": total,
-                "score_sum": round(score_sum, 6),
-                "score_avg": round(score_avg, 6),
                 "error_count": error_count,
                 "elapsed_sec": round(dataset_elapsed, 2),
                 "questions": output_records,
             }
 
-            partial = {**report_skeleton, "datasets": results, "status": "partial"}
+            partial = {**report_skeleton, "datasets": answers, "status": "partial"}
             _save_partial(report_path, partial)
-            print(f"  💾 Progress saved to {report_path}")
+            print(f"  Progress saved to {report_path}")
 
-    return results
-
+    return answers
 
 
 def main() -> None:
-    model = settings.evaluation.model
-    base_url = settings.evaluation.base_url
-    api_key = settings.evaluation.api_key
+    model = settings.inference.model
+    base_url = settings.inference.base_url
+    api_key = settings.inference.api_key
     seed = int(settings.common.seed)
-    temperature = int(settings.evaluation.temperature)
+    temperature = int(settings.inference.temperature)
     prompts_dir = Path(settings.common.prompt_dir)
-    workers = int(settings.evaluation.workers)
-    resume = settings.evaluation.resume
-    timeout = int(settings.evaluation.timeout)
+    workers = int(settings.inference.workers)
+    resume = settings.inference.resume
+    timeout = int(settings.inference.timeout)
 
     llm_client = LLMClient(
         model=model,
@@ -227,34 +191,32 @@ def main() -> None:
         "prompts_dir": str(prompts_dir),
     }
 
-    existing_results: dict[str, dict] | None = None
+    existing_answers: dict[str, dict] | None = None
     if resume:
         resume_path = Path(str(resume))
         if resume_path.exists():
             prev = json.loads(resume_path.read_text(encoding="utf-8"))
-            existing_results = prev.get("datasets", {})
+            existing_answers = prev.get("datasets", {})
             report_path = resume_path
-            done = sum(len(ds) for ds in existing_results.values())
-            print(f"  Resuming from {resume_path} ({done} generator+dataset pairs already done).")
+            done = sum(len(ds) for ds in existing_answers.values())
+            print(f"  Resuming from {resume_path} ({done} generator+dataset pairs already done.)")  
         else:
             print(f"  Resume file {resume_path} not found, starting fresh.")
 
-    results = step_evaluate(
-        prompts, llm_client, workers, report_path, report_skeleton, existing_results,
+    answers = step_run(
+        prompts, llm_client, workers, report_path, report_skeleton, existing_answers,
     )
 
-    print("\n=== Overall Summary ===")
-    for gen_name, datasets in results.items():
+    print("\n=== Summary ===")
+    for gen_name, datasets in answers.items():
         total_samples = sum(d["num_sampled"] for d in datasets.values())
-        total_score = sum(d["score_sum"] for d in datasets.values())
         total_errors = sum(d["error_count"] for d in datasets.values())
-        overall_score = total_score / total_samples if total_samples > 0 else 0.0
-        print(f"  [{gen_name}] score_avg={overall_score:.3f}  errors={total_errors}")
+        print(f"  [{gen_name}] total={total_samples}  errors={total_errors}")
 
     report = {
         **report_skeleton,
         "elapsed_sec": round(time.perf_counter() - pipeline_start, 2),
-        "datasets": results,
+        "datasets": answers,
         "status": "complete",
     }
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")

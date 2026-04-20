@@ -66,16 +66,23 @@ def _download_file(url: str, output: Path, timeout: int = 120) -> None:
             shutil.copyfileobj(response, file, length=1024 * 1024)
 
 
-def _serialize_expected(question: Question) -> dict:
-    """Return a minimal, serialisable dict describing the correct answer."""
+def _serialize_judgement_context(question: Question) -> dict:
+    """Return question text, optional context, and correct answer for LLM-as-a-judge."""
     if isinstance(question, LlmzszlQuestion):
-        return {"type": "open_short_answer", "accepted_answers": question.answers}
+        return {
+            "question": question.question,
+            "correct_answer": question.answers,
+        }
     if isinstance(question, PolQAQuestion):
-        return {"type": "open_short_answer", "accepted_answers": question.answers}
+        return {
+            "question": question.question,
+            "context": question.context,
+            "correct_answer": question.answers,
+        }
     if isinstance(question, BBHQuestion):
         return {
-            "type": "bbh_position_match",
-            "correct_order": question.correct_order,
+            "question": question.text,
+            "correct_answer": question.correct_order,
         }
     raise TypeError(f"Unknown question type: {type(question)}")
 
@@ -142,11 +149,10 @@ def _build_prompt_lines(
     lines: list[str] = []
     for idx, question in enumerate(questions, start=0):
         prompt = question.build_prompt(generator)
-        expected = _serialize_expected(question)
         record = {
             "id": f"{dataset_name}-{gen_name}-{idx:03d}",
             "prompt": prompt,
-            "expected": expected,
+            "judgement_context": _serialize_judgement_context(question),
         }
         lines.append(json.dumps(record, ensure_ascii=False))
     return lines

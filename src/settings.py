@@ -14,7 +14,7 @@ settings = Dynaconf(
 )
 
 
-if not settings.get("evaluation.api_key"):
+if not settings.get("inference.api_key"):
 	env_api_key = os.getenv("API_KEY")
 	if env_api_key:
-		settings.set("evaluation.api_key", env_api_key)
+		settings.set("inference.api_key", env_api_key)

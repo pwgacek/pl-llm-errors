@@ -3,18 +3,21 @@ This repository contains the source code and datasets for experiments conducted 
 
 # how to run
 
-to build prompts run:
+## Build prompts
 
-```
+```bash
 python -m src.prompt_preparation.prompt_builder
 ```
 
-to evaluate prompts run:
-```
-python -m src.evaluation.evaluation_runner
+## Run inference (collect LLM responses)
+
+```bash
+python -m src.inference.inference_runner
 ```
 
-# Results
+This generates a JSON report with raw LLM responses for each prompt, stored in `answers/`.
+
+---
 
 ### bielik-4.5b-v3.0-instruct
 
