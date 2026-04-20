@@ -7,7 +7,9 @@ from dynaconf import Dynaconf
 
 settings = Dynaconf(
 	settings_files=["settings.yaml"],
-	environments=False,
+	environments=True,
+	env_switcher="ENV_FOR_DYNACONF",
+	default_env="local",
 	load_dotenv=True,
 )
 

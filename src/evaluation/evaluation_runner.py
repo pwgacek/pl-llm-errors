@@ -200,6 +200,7 @@ def main() -> None:
     prompts_dir = Path(settings.common.prompt_dir)
     workers = int(settings.evaluation.workers)
     resume = settings.evaluation.resume
+    timeout = int(settings.evaluation.timeout)
 
     llm_client = LLMClient(
         model=model,
@@ -207,6 +208,7 @@ def main() -> None:
         api_key=api_key,
         seed=seed,
         temperature=temperature,
+        timeout=timeout,
     )
 
     pipeline_start = time.perf_counter()
