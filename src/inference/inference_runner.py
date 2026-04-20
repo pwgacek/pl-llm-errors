@@ -23,7 +23,8 @@ def _sanitize_filename_component(value: str) -> str:
 
 def _build_report_path(model: str, timestamp: str) -> Path:
     safe_model_name = _sanitize_filename_component(str(model))
-    return Path("results") / f"{safe_model_name}_{timestamp}.json"
+    answers_dir = Path(str(settings.common.answers_dir))
+    return answers_dir / f"{safe_model_name}_{timestamp}.json"
 
 
 def _load_jsonl_records(prompt_file: Path) -> list[dict]:

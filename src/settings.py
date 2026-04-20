@@ -9,12 +9,8 @@ settings = Dynaconf(
 	settings_files=["settings.yaml"],
 	environments=True,
 	env_switcher="ENV_FOR_DYNACONF",
-	default_env="local",
+	default_env="default",
+	env="local",
+	merge_enabled=True,
 	load_dotenv=True,
 )
-
-
-if not settings.get("inference.api_key"):
-	env_api_key = os.getenv("API_KEY")
-	if env_api_key:
-		settings.set("inference.api_key", env_api_key)
