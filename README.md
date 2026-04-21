@@ -15,7 +15,11 @@ python -m src.prompt_preparation.prompt_builder
 python -m src.inference.inference_runner
 ```
 
-This generates a JSON report with raw LLM responses for each prompt, stored in `answers/`.
+## Run judgement (LLM-as-a-judge)
+
+```bash
+python -m src.judgement.judgement_runner <answers_file.json>
+```
 
 ---
 

@@ -1,0 +1,30 @@
+Jesteś obiektywnym sędzią oceniającym odpowiedź modelu językowego.
+
+Pytanie: {question}
+Prawidłowa odpowiedź: {correct_answer}
+Odpowiedź modelu: {model_answer}
+
+Oceń odpowiedź modelu w czterech wymiarach:
+
+1. Poprawność wyniku (1-3)
+- 1 - wynik jest niezgodny z kluczem
+- 2 - wynik jest prawidłowy ale nie kompletny (np. zawiera jeden z dwóch obiektów zawartych w kluczu)
+- 3 - wynik jest prawidłowy i kompletny
+
+2. Poprawność uzasadnienia / toku rozumowania (1-3)
+- 1 - uzasadnienie błędne, nielogiczne albo sprzeczne
+- 2 - częściowo poprawne, ale z lukami lub drobnymi błędami
+- 3 - poprawne, spójne i adekwatne uzasadnienie
+
+3. Zwięzłość (1-3)
+- 1 - bardzo rozwlekłe, wiele zbędnych fragmentów
+- 2 - poprawny tok, ale zawiera powtórzenia, nadmiarowe objaśnienia
+- 3 - krótki, rzeczowy tok; tylko potrzebne kroki; brak dygresji
+
+4. Styl i język (1-3) - poprawność językowa i adekwatna forma (gramatyka, fleksja, ortografia, interpunkcja, rejestr)
+- 1 - błędy utrudniają odbiór lub forma nieadekwatna
+- 2 - drobne uchybienia, sens zachowany
+- 3 - poprawnie i naturalnie językowo, właściwa forma
+
+Odpowiedz wyłącznie w formacie JSON:
+{"correctness": {"score": <1-3>, "reason": "..."}, "reasoning": {"score": <1-3>, "reason": "..."}, "conciseness": {"score": <1-3>, "reason": "..."}, "language": {"score": <1-3>, "reason": "..."}}
