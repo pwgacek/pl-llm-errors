@@ -2,11 +2,11 @@ from __future__ import annotations
 
 from pathlib import Path
 
-_PROMPTS_DIR = Path(__file__).parent / "prompts"
+_TEMPLATES_DIR = Path(__file__).parent / "templates"
 
 
 def _load(name: str) -> str:
-    return (_PROMPTS_DIR / f"{name}.txt").read_text(encoding="utf-8")
+    return (_TEMPLATES_DIR / f"{name}.txt").read_text(encoding="utf-8")
 
 
 def _render(name: str, values: dict[str, str]) -> str:
