@@ -22,7 +22,7 @@ local:
     timeout: 60
   judgement:
     model: openai/gpt-oss-120b
-    base_url: api.groq.com/openai/v1
+    base_url: https://api.groq.com/openai/v1
     api_key: "@format {env[GROQ_API_KEY]}"
     timeout: 60
 
@@ -36,6 +36,6 @@ remote:
     timeout: 120
   judgement:
     model: openai/gpt-oss-120b
-    base_url: api.groq.com/openai/v1
+    base_url: https://api.groq.com/openai/v1
     api_key: "@format {env[GROQ_API_KEY]}"
     timeout: 60

@@ -9,30 +9,46 @@ def _load(name: str) -> str:
     return (_PROMPTS_DIR / f"{name}.txt").read_text(encoding="utf-8")
 
 
+def _render(name: str, values: dict[str, str]) -> str:
+    template = _load(name)
+    for key, value in values.items():
+        template = template.replace(f"{{{key}}}", value)
+    return template
+
+
 def build_llmzszl_judge_prompt(question: str, correct_answer: list[str], model_answer: str) -> str:
-    return _load("llmzszl").format(
-        question=question,
-        correct_answer=", ".join(correct_answer),
-        model_answer=model_answer,
+    return _render(
+        "llmzszl",
+        {
+            "question": question,
+            "correct_answer": ", ".join(correct_answer),
+            "model_answer": model_answer,
+        },
     )
 
 
 def build_polqa_judge_prompt(
     question: str, context: str, correct_answer: list[str], model_answer: str
 ) -> str:
-    return _load("polqa").format(
-        question=question,
-        context=context,
-        correct_answer=", ".join(correct_answer),
-        model_answer=model_answer,
+    return _render(
+        "polqa",
+        {
+            "question": question,
+            "context": context,
+            "correct_answer": ", ".join(correct_answer),
+            "model_answer": model_answer,
+        },
     )
 
 
 def build_bbh_judge_prompt(
     question: str, correct_answer: list[list[str]], model_answer: str
 ) -> str:
-    return _load("bbh").format(
-        question=question,
-        correct_answer=" | ".join(", ".join(order) for order in correct_answer),
-        model_answer=model_answer,
+    return _render(
+        "bbh",
+        {
+            "question": question,
+            "correct_answer": " | ".join(", ".join(order) for order in correct_answer),
+            "model_answer": model_answer,
+        },
     )

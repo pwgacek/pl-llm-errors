@@ -3,6 +3,7 @@ venv_llm/
 /results/
 /prompts/
 /answers/
+/judgements/
 
 # Python cache / bytecode
 __pycache__/
