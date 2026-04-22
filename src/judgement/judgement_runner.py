@@ -82,16 +82,23 @@ def run_judgement(
     judge_client: LLMClient,
     workers: int,
     output_path: Path,
+    existing_judgements: dict[str, dict] | None = None,
 ) -> None:
     print(f"\n=== Judgement: loading {answers_path} ===")
     report = json.loads(answers_path.read_text(encoding="utf-8"))
     datasets: dict[str, dict] = report.get("datasets", {})
 
-    judgements: dict[str, dict] = {}
+    judgements: dict[str, dict] = existing_judgements if existing_judgements is not None else {}
 
     for gen_name, gen_datasets in datasets.items():
-        judgements[gen_name] = {}
+        if gen_name not in judgements:
+            judgements[gen_name] = {}
+
         for dataset_name, dataset_data in gen_datasets.items():
+            if dataset_name in judgements[gen_name]:
+                print(f"\n  [{gen_name}/{dataset_name}] Already completed, skipping (resume).")
+                continue
+
             print(f"\n  [{gen_name}/{dataset_name}] Judging ...")
             records: list[dict] = dataset_data.get("questions", [])
             judged = _judge_records(records, dataset_name, judge_client, workers)
@@ -102,9 +109,28 @@ def run_judgement(
                 "questions": judged,
             }
 
-        output_path.parent.mkdir(parents=True, exist_ok=True)
-        _save(output_path, {"source": str(answers_path), "judge_model": judge_client.model, "datasets": judgements})
-        print(f"  Progress saved to {output_path}")
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+            _save(
+                output_path,
+                {
+                    "source": str(answers_path),
+                    "judge_model": judge_client.model,
+                    "datasets": judgements,
+                    "status": "partial",
+                },
+            )
+            print(f"  Progress saved to {output_path}")
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    _save(
+        output_path,
+        {
+            "source": str(answers_path),
+            "judge_model": judge_client.model,
+            "datasets": judgements,
+            "status": "complete",
+        },
+    )
 
     print(f"\n=== Judgement complete: {output_path} ===")
 
@@ -125,6 +151,7 @@ def main() -> None:
     seed = int(settings.common.seed)
     temperature = int(settings.judgement.temperature)
     workers = int(settings.judgement.workers)
+    resume = settings.judgement.resume
     timeout = int(settings.judgement.timeout)
     judgements_dir = Path(str(settings.common.judgements_dir))
 
@@ -139,8 +166,20 @@ def main() -> None:
 
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d_%H-%M-%S")
     output_path = judgements_dir / f"{answers_path.stem}_judged_{timestamp}.json"
+    existing_judgements: dict[str, dict] | None = None
 
-    run_judgement(answers_path, judge_client, workers, output_path)
+    if resume:
+        resume_path = Path(str(resume))
+        if resume_path.exists():
+            prev = json.loads(resume_path.read_text(encoding="utf-8"))
+            existing_judgements = prev.get("datasets", {})
+            output_path = resume_path
+            done = sum(len(ds) for ds in existing_judgements.values())
+            print(f"  Resuming from {resume_path} ({done} generator+dataset pairs already done.)")
+        else:
+            print(f"  Resume file {resume_path} not found, starting fresh.")
+
+    run_judgement(answers_path, judge_client, workers, output_path, existing_judgements)
 
 
 if __name__ == "__main__":
