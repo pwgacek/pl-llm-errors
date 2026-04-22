@@ -1,0 +1,11 @@
+Rozwiąż poniższe zadanie krok po kroku.
+
+Zasady:
+- zapisuj kolejne kroki rozumowania,
+- wykorzystuj wszystkie podane informacje,
+- rozumowanie ma być zwięzłe, ale kompletne.
+
+Na końcu podaj wynik jako uporządkowaną listę wszystkich obiektów w formacie:
+<ODPOWIEDŹ>obiekt1, obiekt2, obiekt3, obiekt4, obiekt5, obiekt6, obiekt7</ODPOWIEDŹ>
+
+<ZADANIE>{text}</ZADANIE>

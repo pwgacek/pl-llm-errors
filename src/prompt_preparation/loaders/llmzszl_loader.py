@@ -1,12 +1,12 @@
 import json
-from ..questions import LlmzszlQuestion, Question
+from ..prompts import LlmzszlPrompt, Prompt
 from .base import Loader
 from pathlib import Path
 
 
 class LLMZSZLLoader(Loader):
-    def load(self, path: Path, num_samples: int, seed: int) -> list[Question]:
-        questions: list[Question] = []
+    def load(self, path: Path, num_samples: int, seed: int) -> list[Prompt]:
+        prompts: list[Prompt] = []
 
         lines = self._load_lines(path)
 
@@ -19,6 +19,6 @@ class LLMZSZLLoader(Loader):
             if not question_text or not answer:
                 raise ValueError(f"Invalid LLMZSZL record, missing question or answer: {line}")
 
-            questions.append(LlmzszlQuestion(question_text, answer))
+            prompts.append(LlmzszlPrompt(question_text, answer))
 
-        return self._deterministic_sample(questions, num_samples, seed)
+        return self._deterministic_sample(prompts, num_samples, seed)

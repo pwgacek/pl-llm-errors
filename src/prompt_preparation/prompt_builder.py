@@ -16,11 +16,11 @@ from .errors import (
 )
 from .errors.base import ErrorGenerator
 from .loaders import LLMZSZLLoader, PolQALoader, BBHLoader
-from .questions import (
-    BBHQuestion,
-    LlmzszlQuestion,
-    PolQAQuestion,
-    Question,
+from .prompts import (
+    BBHPrompt,
+    LlmzszlPrompt,
+    PolQAPrompt,
+    Prompt,
 )
 
 from src.settings import settings
@@ -66,25 +66,25 @@ def _download_file(url: str, output: Path, timeout: int = 120) -> None:
             shutil.copyfileobj(response, file, length=1024 * 1024)
 
 
-def _serialize_judgement_context(question: Question) -> dict:
-    """Return question text, optional context, and correct answer for LLM-as-a-judge."""
-    if isinstance(question, LlmzszlQuestion):
+def _serialize_judgement_context(prompt_item: Prompt) -> dict:
+    """Return prompt source text, optional context, and correct answer for LLM-as-a-judge."""
+    if isinstance(prompt_item, LlmzszlPrompt):
         return {
-            "question": question.question,
-            "correct_answer": question.answers,
+            "question": prompt_item.question,
+            "correct_answer": prompt_item.answers,
         }
-    if isinstance(question, PolQAQuestion):
+    if isinstance(prompt_item, PolQAPrompt):
         return {
-            "question": question.question,
-            "context": question.context,
-            "correct_answer": question.answers,
+            "question": prompt_item.question,
+            "context": prompt_item.context,
+            "correct_answer": prompt_item.answers,
         }
-    if isinstance(question, BBHQuestion):
+    if isinstance(prompt_item, BBHPrompt):
         return {
-            "question": question.text,
-            "correct_answer": question.correct_order,
+            "question": prompt_item.text,
+            "correct_answer": prompt_item.correct_order,
         }
-    raise TypeError(f"Unknown question type: {type(question)}")
+    raise TypeError(f"Unknown prompt type: {type(prompt_item)}")
 
 
 def _download_datasets() -> None:
@@ -109,20 +109,20 @@ def _download_datasets() -> None:
         print("  Some downloads failed. Proceeding with available datasets.")
 
 
-def _load_datasets(num_questions: int, seed: int) -> dict[str, list[Question]]:
+def _load_datasets(num_questions: int, seed: int) -> dict[str, list[Prompt]]:
     print("\n=== Step 2: Loading datasets ===")
-    loaded: dict[str, list[Question]] = {}
+    loaded: dict[str, list[Prompt]] = {}
     for dataset in DATASETS:
         name = dataset["name"]
         if not dataset["output"].exists():
             print(f"  [{name}] File missing, skipping.")
             continue
         try:
-            questions = dataset["loader"]().load(
+            prompts = dataset["loader"]().load(
                 path=dataset["output"], num_samples=num_questions, seed=seed
             )
-            loaded[name] = questions
-            print(f"  [{name}] Loaded {len(questions)} questions.")
+            loaded[name] = prompts
+            print(f"  [{name}] Loaded {len(prompts)} prompts.")
         except Exception as e:
             print(f"  [{name}] Load error: {e}")
     return loaded
@@ -141,18 +141,18 @@ def _clean_output_directory(output_dir: Path) -> None:
 
 
 def _build_prompt_lines(
-    questions: list[Question],
+    prompts: list[Prompt],
     dataset_name: str,
     gen_name: str,
     generator: ErrorGenerator,
 ) -> list[str]:
     lines: list[str] = []
-    for idx, question in enumerate(questions, start=0):
-        prompt = question.build_prompt(generator)
+    for idx, prompt_item in enumerate(prompts, start=0):
+        prompt = prompt_item.build_prompt(generator)
         record = {
             "id": f"{dataset_name}-{gen_name}-{idx:03d}",
             "prompt": prompt,
-            "judgement_context": _serialize_judgement_context(question),
+            "judgement_context": _serialize_judgement_context(prompt_item),
         }
         lines.append(json.dumps(record, ensure_ascii=False))
     return lines
@@ -160,7 +160,7 @@ def _build_prompt_lines(
 
 def _save_dataset_prompts(
     dataset_name: str,
-    questions: list[Question],
+    prompts: list[Prompt],
     gen_name: str,
     generator: ErrorGenerator,
     gen_dir: Path,
@@ -171,16 +171,16 @@ def _save_dataset_prompts(
         print(f"  [{gen_name}/{dataset_name}] Overwriting existing file.")
 
     lines = _build_prompt_lines(
-        questions=questions,
+        prompts=prompts,
         dataset_name=dataset_name,
         gen_name=gen_name,
         generator=generator,
     )
     out_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
-    print(f"  [{gen_name}/{dataset_name}] Saved {len(questions)} prompts to {out_path}")
+    print(f"  [{gen_name}/{dataset_name}] Saved {len(prompts)} prompts to {out_path}")
 
 
-def _build_and_save_prompts(loaded: dict[str, list[Question]], output_dir: Path) -> None:
+def _build_and_save_prompts(loaded: dict[str, list[Prompt]], output_dir: Path) -> None:
     print("\n=== Step 3: Building and saving noised prompts ===")
     _clean_output_directory(output_dir)
 
@@ -188,10 +188,10 @@ def _build_and_save_prompts(loaded: dict[str, list[Question]], output_dir: Path)
         gen_dir = output_dir / gen_name
         gen_dir.mkdir(parents=True, exist_ok=True)
 
-        for dataset_name, questions in loaded.items():
+        for dataset_name, prompts in loaded.items():
             _save_dataset_prompts(
                 dataset_name=dataset_name,
-                questions=questions,
+            prompts=prompts,
                 gen_name=gen_name,
                 generator=generator,
                 gen_dir=gen_dir,

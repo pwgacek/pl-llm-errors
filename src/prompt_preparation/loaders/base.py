@@ -4,13 +4,13 @@ from abc import ABC, abstractmethod
 import csv
 import json
 from typing import Any
-from ..questions import Question
+from ..prompts import Prompt
 from pathlib import Path
 
 class Loader(ABC):
     @staticmethod
-    def _deterministic_sample(data: list[Any], num_samples: int, seed: int) -> list[Question]:
-        """Deterministically sample num_samples from questions using the given seed."""
+    def _deterministic_sample(data: list[Any], num_samples: int, seed: int) -> list[Prompt]:
+        """Deterministically sample num_samples from prompts using the given seed."""
         if num_samples > len(data):
             raise ValueError(f"num_samples={num_samples} exceeds available data size {len(data)}")
         
@@ -38,9 +38,9 @@ class Loader(ABC):
             return json.load(file)
     
     @abstractmethod
-    def load(self, path: Path, num_samples: int, seed: int) -> list[Question]:
+    def load(self, path: Path, num_samples: int, seed: int) -> list[Prompt]:
         """
-        Load up to num_samples questions, deterministically if seed is set.
-        If num_samples is None, load all questions.
+        Load up to num_samples prompts, deterministically if seed is set.
+        If num_samples is None, load all prompts.
         """
         raise NotImplementedError

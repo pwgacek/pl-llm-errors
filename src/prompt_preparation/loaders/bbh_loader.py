@@ -4,12 +4,12 @@ import json
 from pathlib import Path
 
 from .base import Loader
-from ..questions import BBHQuestion, Question
+from ..prompts import BBHPrompt, Prompt
 
 
 class BBHLoader(Loader):
-    def load(self, path: Path, num_samples: int, seed: int) -> list[Question]:
-        questions: list[Question] = []
+    def load(self, path: Path, num_samples: int, seed: int) -> list[Prompt]:
+        prompts: list[Prompt] = []
 
         lines = self._load_lines(path)
         lines = self._deterministic_sample(lines, num_samples, seed)
@@ -34,11 +34,11 @@ class BBHLoader(Loader):
                     raise ValueError(f"Invalid BBH open record, empty correct_order slot: {line}")
                 normalized_correct_order.append(normalized_slot)
 
-            questions.append(
-                BBHQuestion(
+            prompts.append(
+                BBHPrompt(
                     text=input_text,
                     correct_order=normalized_correct_order,
                 )
             )
 
-        return questions
+        return prompts
