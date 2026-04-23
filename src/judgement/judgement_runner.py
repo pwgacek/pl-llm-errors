@@ -4,12 +4,16 @@ import json
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime, timezone
+from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from src.inference.llm_client import LLMClient
 from src.settings import settings
 from .prompts import build_bbh_judge_prompt, build_llmzszl_judge_prompt, build_polqa_judge_prompt
+
+
+POLISH_TZ = ZoneInfo("Europe/Warsaw")
 
 
 def _build_judge_prompt(dataset_name: str, model_answer: str, judgement_context: dict) -> str | None:
@@ -164,8 +168,9 @@ def main() -> None:
         timeout=timeout,
     )
 
-    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d_%H-%M-%S")
-    output_path = judgements_dir / f"{answers_path.stem}_judged_{timestamp}.json"
+    timestamp = datetime.now(POLISH_TZ).strftime("%Y-%m-%d_%H-%M-%S")
+    model_dir = answers_path.parent.name
+    output_path = judgements_dir / model_dir / f"{answers_path.stem}_judged_{timestamp}.json"
     existing_judgements: dict[str, dict] | None = None
 
     if resume:

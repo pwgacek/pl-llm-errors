@@ -4,8 +4,9 @@ import json
 import re
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime, timezone
+from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from .llm_client import LLMClient
 
@@ -13,6 +14,7 @@ from src.settings import settings
 
 
 Prompts = dict[str, dict[str, list[dict]]]
+POLISH_TZ = ZoneInfo("Europe/Warsaw")
 
 
 def _sanitize_filename_component(value: str) -> str:
@@ -24,7 +26,7 @@ def _sanitize_filename_component(value: str) -> str:
 def _build_report_path(model: str, timestamp: str) -> Path:
     safe_model_name = _sanitize_filename_component(str(model))
     answers_dir = Path(str(settings.common.answers_dir))
-    return answers_dir / f"{safe_model_name}_{timestamp}.json"
+    return answers_dir / safe_model_name / f"{timestamp}.json"
 
 
 def _load_jsonl_records(prompt_file: Path) -> list[dict]:
@@ -180,12 +182,12 @@ def main() -> None:
 
     prompts = step_load_prompts(prompts_dir)
 
-    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d_%H-%M-%S")
+    timestamp = datetime.now(POLISH_TZ).strftime("%Y-%m-%d_%H-%M-%S")
     report_path = _build_report_path(str(model), timestamp)
     report_path.parent.mkdir(parents=True, exist_ok=True)
 
     report_skeleton = {
-        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "timestamp": datetime.now(POLISH_TZ).isoformat(),
         "model": model,
         "base_url": base_url,
         "workers": workers,
