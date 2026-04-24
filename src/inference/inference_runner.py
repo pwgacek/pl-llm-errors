@@ -3,7 +3,6 @@ from __future__ import annotations
 import json
 import re
 import time
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -67,77 +66,95 @@ def _save_partial(report_path: Path, report: dict) -> None:
     tmp.rename(report_path)
 
 
-def _ask_records(
-    records: list[dict],
-    model_client: LLMClient,
-    workers: int,
-) -> list[dict]:
-    total = len(records)
-
-    def ask_one(args: tuple[int, dict]) -> dict:
-        i, record = args
-        prompt_id = str(record.get("id", f"row-{i:03d}"))
-        prompt = record["prompt"]
-        judgement_context = record.get("judgement_context", {})
-        t0 = time.perf_counter()
-
-        try:
-            raw = model_client.ask(prompt)
-        except Exception as e:
-            print(f"    [{i}/{total}] Model error: {e}")
-            return {
-                "index": i,
-                "prompt_id": prompt_id,
-                "raw_answer": "",
-                "elapsed": 0.0,
-                "error": True,
-                "judgement_context": judgement_context,
-            }
-
-        elapsed = time.perf_counter() - t0
-        print(f"    [{i}/{total}] ok  ({elapsed:.2f}s)")
-        return {
-            "index": i,
-            "prompt_id": prompt_id,
-            "raw_answer": raw,
-            "elapsed": round(elapsed, 3),
-            "error": False,
-            "judgement_context": judgement_context,
-        }
-
-    with ThreadPoolExecutor(max_workers=workers) as executor:
-        futures = {executor.submit(ask_one, (i, r)): i for i, r in enumerate(records, start=1)}
-        raw_records = [future.result() for future in as_completed(futures)]
-
-    raw_records.sort(key=lambda record: record["index"])
-    return [{k: v for k, v in record.items() if k != "index"} for record in raw_records]
-
-
 def step_run(
     prompts: Prompts,
     model_client: LLMClient,
-    workers: int,
     report_path: Path,
     report_skeleton: dict,
     existing_answers: dict[str, dict] | None = None,
-) -> dict[str, dict]:
+) -> tuple[dict[str, dict], bool]:
     print("\n=== Step 2: Asking LLM ===")
     answers: dict[str, dict] = existing_answers if existing_answers is not None else {}
+    processed_any = False
 
     for gen_name, datasets in prompts.items():
         if gen_name not in answers:
             answers[gen_name] = {}
 
         for dataset_name, records in datasets.items():
-            if dataset_name in answers[gen_name]:
-                print(f"\n  [{gen_name}/{dataset_name}] Already completed, skipping (resume).")
-                continue
-
             total = len(records)
-            print(f"\n  [{gen_name}/{dataset_name}] Asking {total} questions ...")
+            existing_dataset = answers[gen_name].get(dataset_name)
+            output_records: list[dict] = []
+            start_idx = 0
+
+            if existing_dataset is not None:
+                existing_questions = existing_dataset.get("questions", [])
+                if isinstance(existing_questions, list):
+                    output_records = list(existing_questions)
+                done_count = len(output_records)
+
+                if done_count >= total:
+                    if done_count > total:
+                        output_records = output_records[:total]
+                        answers[gen_name][dataset_name] = {
+                            "num_sampled": total,
+                            "error_count": sum(1 for r in output_records if r.get("error")),
+                            "elapsed_sec": existing_dataset.get("elapsed_sec", 0.0),
+                            "questions": output_records,
+                        }
+                        partial = {**report_skeleton, "datasets": answers, "status": "partial"}
+                        _save_partial(report_path, partial)
+
+                    print(f"\n  [{gen_name}/{dataset_name}] Already completed, skipping (resume).")
+                    continue
+
+                start_idx = done_count
+            else:
+                print(f"\n  [{gen_name}/{dataset_name}] Asking {total} questions ...")
+
+            processed_any = True
             dataset_start = time.perf_counter()
 
-            output_records = _ask_records(records, model_client, workers)
+            for i, record in enumerate(records[start_idx:], start=start_idx + 1):
+                prompt_id = str(record.get("id", f"row-{i:03d}"))
+                prompt = record["prompt"]
+                judgement_context = record.get("judgement_context", {})
+                t0 = time.perf_counter()
+
+                try:
+                    raw = model_client.ask(prompt)
+                    elapsed = time.perf_counter() - t0
+                    print(f"    [{i}/{total}] ok  ({elapsed:.2f}s)")
+                    current = {
+                        "prompt_id": prompt_id,
+                        "raw_answer": raw,
+                        "elapsed": round(elapsed, 3),
+                        "error": False,
+                        "judgement_context": judgement_context,
+                    }
+                except Exception as e:
+                    print(f"    [{i}/{total}] Model error: {e}")
+                    current = {
+                        "prompt_id": prompt_id,
+                        "raw_answer": "",
+                        "elapsed": 0.0,
+                        "error": True,
+                        "judgement_context": judgement_context,
+                    }
+
+                output_records.append(current)
+
+                error_count = sum(1 for r in output_records if r["error"])
+                answers[gen_name][dataset_name] = {
+                    "num_sampled": total,
+                    "error_count": error_count,
+                    "elapsed_sec": round(time.perf_counter() - dataset_start, 2),
+                    "questions": output_records,
+                }
+
+                partial = {**report_skeleton, "datasets": answers, "status": "partial"}
+                _save_partial(report_path, partial)
+
             error_count = sum(1 for r in output_records if r["error"])
             dataset_elapsed = time.perf_counter() - dataset_start
             print(
@@ -151,11 +168,7 @@ def step_run(
                 "questions": output_records,
             }
 
-            partial = {**report_skeleton, "datasets": answers, "status": "partial"}
-            _save_partial(report_path, partial)
-            print(f"  Progress saved to {report_path}")
-
-    return answers
+    return answers, processed_any
 
 
 def main() -> None:
@@ -165,7 +178,6 @@ def main() -> None:
     seed = int(settings.common.seed)
     temperature = int(settings.inference.temperature)
     prompts_dir = Path(settings.common.prompt_dir)
-    workers = int(settings.inference.workers)
     resume = settings.inference.resume
     timeout = int(settings.inference.timeout)
 
@@ -190,7 +202,6 @@ def main() -> None:
         "timestamp": datetime.now(POLISH_TZ).isoformat(),
         "model": model,
         "base_url": base_url,
-        "workers": workers,
         "prompts_dir": str(prompts_dir),
     }
 
@@ -206,9 +217,12 @@ def main() -> None:
         else:
             print(f"  Resume file {resume_path} not found, starting fresh.")
 
-    answers = step_run(
-        prompts, llm_client, workers, report_path, report_skeleton, existing_answers,
+    answers, processed_any = step_run(
+        prompts, llm_client, report_path, report_skeleton, existing_answers,
     )
+
+    if not processed_any and resume:
+        return
 
     print("\n=== Summary ===")
     for gen_name, datasets in answers.items():

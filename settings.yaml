@@ -6,11 +6,9 @@ default:
     judgements_dir: judgements
   inference:
     temperature: 0
-    workers: 1
     resume: null
   judgement:
     temperature: 0
-    workers: 1
     resume: null
 
 local:
