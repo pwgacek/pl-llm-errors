@@ -84,39 +84,35 @@ def step_run(
         for dataset_name, records in datasets.items():
             total = len(records)
             existing_dataset = answers[gen_name].get(dataset_name)
-            output_records: list[dict] = []
-            start_idx = 0
-
+            existing_questions: list[dict] = []
             if existing_dataset is not None:
-                existing_questions = existing_dataset.get("questions", [])
-                if isinstance(existing_questions, list):
-                    output_records = list(existing_questions)
-                done_count = len(output_records)
+                raw_existing_questions = existing_dataset.get("questions", [])
+                if isinstance(raw_existing_questions, list):
+                    existing_questions = raw_existing_questions
 
-                if done_count >= total:
-                    if done_count > total:
-                        output_records = output_records[:total]
-                        answers[gen_name][dataset_name] = {
-                            "num_sampled": total,
-                            "error_count": sum(1 for r in output_records if r.get("error")),
-                            "elapsed_sec": existing_dataset.get("elapsed_sec", 0.0),
-                            "questions": output_records,
-                        }
-                        partial = {**report_skeleton, "datasets": answers, "status": "partial"}
-                        _save_partial(report_path, partial)
-
-                    print(f"\n  [{gen_name}/{dataset_name}] Already completed, skipping (resume).")
-                    continue
-
-                start_idx = done_count
-            else:
-                print(f"\n  [{gen_name}/{dataset_name}] Asking {total} questions ...")
-
-            processed_any = True
+            output_records: list[dict] = []
+            did_retry = False
             dataset_start = time.perf_counter()
 
-            for i, record in enumerate(records[start_idx:], start=start_idx + 1):
+            for i, record in enumerate(records, start=1):
                 prompt_id = str(record.get("id", f"row-{i:03d}"))
+                existing_record = (
+                    existing_questions[i - 1] if i - 1 < len(existing_questions) else None
+                )
+                can_reuse = (
+                    isinstance(existing_record, dict)
+                    and existing_record.get("prompt_id") == prompt_id
+                    and not bool(existing_record.get("error", False))
+                )
+                if can_reuse:
+                    output_records.append(existing_record)
+                    continue
+
+                if not did_retry:
+                    print(f"\n  [{gen_name}/{dataset_name}] Asking {total} questions ...")
+                did_retry = True
+                processed_any = True
+
                 prompt = record["prompt"]
                 judgement_context = record.get("judgement_context", {})
                 t0 = time.perf_counter()
@@ -154,6 +150,18 @@ def step_run(
 
                 partial = {**report_skeleton, "datasets": answers, "status": "partial"}
                 _save_partial(report_path, partial)
+
+            if not did_retry:
+                answers[gen_name][dataset_name] = {
+                    "num_sampled": total,
+                    "error_count": sum(1 for r in output_records if r.get("error", False)),
+                    "elapsed_sec": existing_dataset.get("elapsed_sec", 0.0)
+                    if existing_dataset is not None
+                    else 0.0,
+                    "questions": output_records,
+                }
+                print(f"\n  [{gen_name}/{dataset_name}] Already completed, skipping (resume).")
+                continue
 
             error_count = sum(1 for r in output_records if r["error"])
             dataset_elapsed = time.perf_counter() - dataset_start

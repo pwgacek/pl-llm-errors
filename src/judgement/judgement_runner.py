@@ -65,43 +65,35 @@ def run_judgement(
             records: list[dict] = dataset_data.get("questions", [])
             total = len(records)
             existing_dataset = judgements[gen_name].get(dataset_name)
-            judged: list[dict] = []
-            start_idx = 0
-
+            existing_questions: list[dict] = []
             if existing_dataset is not None:
-                existing_questions = existing_dataset.get("questions", [])
-                if isinstance(existing_questions, list):
-                    judged = list(existing_questions)
-                done_count = len(judged)
+                raw_existing_questions = existing_dataset.get("questions", [])
+                if isinstance(raw_existing_questions, list):
+                    existing_questions = raw_existing_questions
 
-                if done_count >= total:
-                    if done_count > total:
-                        judged = judged[:total]
-                        judgements[gen_name][dataset_name] = {
-                            **{k: v for k, v in dataset_data.items() if k != "questions"},
-                            "judge_error_count": sum(1 for r in judged if r.get("judge_error")),
-                            "questions": judged,
-                        }
-                        output_path.parent.mkdir(parents=True, exist_ok=True)
-                        _save(
-                            output_path,
-                            {
-                                "source": str(answers_path),
-                                "judge_model": judge_client.model,
-                                "datasets": judgements,
-                                "status": "partial",
-                            },
-                        )
+            judged: list[dict] = []
+            did_retry = False
+            dataset_start = time.perf_counter()
 
-                    print(f"\n  [{gen_name}/{dataset_name}] Already completed, skipping (resume).")
+            for i, record in enumerate(records, start=1):
+                prompt_id = str(record.get("prompt_id", f"row-{i:03d}"))
+                existing_record = (
+                    existing_questions[i - 1] if i - 1 < len(existing_questions) else None
+                )
+                can_reuse = (
+                    isinstance(existing_record, dict)
+                    and existing_record.get("prompt_id") == prompt_id
+                    and not bool(existing_record.get("judge_error", False))
+                )
+                if can_reuse:
+                    judged.append(existing_record)
                     continue
 
-                start_idx = done_count
+                if not did_retry:
+                    print(f"\n  [{gen_name}/{dataset_name}] Judging ...")
+                did_retry = True
+                processed_any = True
 
-            print(f"\n  [{gen_name}/{dataset_name}] Judging ...")
-            processed_any = True
-            dataset_start = time.perf_counter()
-            for i, record in enumerate(records[start_idx:], start=start_idx + 1):
                 model_answer = record.get("raw_answer", "")
                 judgement_context = record.get("judgement_context", {})
 
@@ -137,6 +129,15 @@ def run_judgement(
                         "status": "partial",
                     },
                 )
+
+            if not did_retry:
+                judgements[gen_name][dataset_name] = {
+                    **{k: v for k, v in dataset_data.items() if k != "questions"},
+                    "judge_error_count": sum(1 for r in judged if r.get("judge_error", False)),
+                    "questions": judged,
+                }
+                print(f"\n  [{gen_name}/{dataset_name}] Already completed, skipping (resume).")
+                continue
 
             error_count = sum(1 for r in judged if r["judge_error"])
             judgements[gen_name][dataset_name] = {
