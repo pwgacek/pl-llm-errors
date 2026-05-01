@@ -1,9 +1,9 @@
 default:
   common:
     seed: 42
-    prompt_dir: prompts
-    answers_dir: answers
-    judgements_dir: judgements
+    prompt_dir: results/prompts
+    answers_dir: results/answers
+    judgements_dir: results/judgements
   inference:
     temperature: 0
     resume: null
