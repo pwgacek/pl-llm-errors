@@ -10,12 +10,11 @@ default:
   judgement:
     temperature: 0
     resume: null
-
 local:
   prompt_preparation:
     num_questions: 100
   inference:
-    model: SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0
+    model: SpeakLeash/bielik-11b-v3.0-instruct:Q6_K
     base_url: http://localhost:11434/v1
     api_key: ollama
     timeout: 60
