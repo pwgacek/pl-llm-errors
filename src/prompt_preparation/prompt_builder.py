@@ -6,6 +6,7 @@ import urllib.request
 import urllib.error
 from pathlib import Path
 
+
 from .errors import (
     DiacriticErrorGenerator,
     IdentityGenerator,
@@ -15,10 +16,11 @@ from .errors import (
     TypoErrorGenerator,
 )
 from .errors.base import ErrorGenerator
-from .loaders import LLMZSZLLoader, PolQALoader, BBHLoader
+from .loaders import LLMZSZLLoader, PolQALoader, BBHLoader, LLMZSZLMCLoader
 from .prompts import (
     BBHPrompt,
     LlmzszlPrompt,
+    LlmzszlMCPrompt,
     PolQAPrompt,
     Prompt,
 )
@@ -27,36 +29,24 @@ from src.settings import settings
 
 GENERATORS: dict[str, ErrorGenerator] = {
     "identity": IdentityGenerator(),
-    "diacritic": DiacriticErrorGenerator(),
-    "punctuation_all": PunctuationAllErrorGenerator(),
-    "punctuation_inner": PunctuationInnerErrorGenerator(),
-    "spelling_10%": SpellingErrorGenerator(rate=0.1, seed=settings.common.seed),
-    "spelling_40%": SpellingErrorGenerator(rate=0.4, seed=settings.common.seed),
-    "typo_10%": TypoErrorGenerator(typo_rate=0.1, seed=settings.common.seed),
     "typo_40%": TypoErrorGenerator(typo_rate=0.4, seed=settings.common.seed),
 }
 
 
 DATASETS = [
+    # {
+    #     "name": "llmzszl",
+    #     "url": "https://huggingface.co/datasets/pawel04/llmzszl-open-ended/resolve/main/llmzszl-open-ended.jsonl",
+    #     "output": Path("datasets/llmzszl-open.jsonl"),
+    #     "loader": LLMZSZLLoader,
+    # },
     {
-        "name": "llmzszl",
-        "url": "https://huggingface.co/datasets/pawel04/llmzszl-open-ended/resolve/main/llmzszl-open-ended.jsonl",
-        "output": Path("datasets/llmzszl-open-ended.jsonl"),
-        "loader": LLMZSZLLoader,
-    },
-    {
-        "name": "polqa",
-        "url": "https://huggingface.co/datasets/ipipan/polqa/resolve/main/data/test.csv",
-        "output": Path("datasets/polqa.csv"),
-        "loader": PolQALoader,
-    },
+        "name": "llmzszl_mc",
+        "url": "https://huggingface.co/datasets/pawel04/llmzszl-multiple-choice/resolve/main/llmzszl-multiple-choice.jsonl",
+        "output": Path("datasets/llmzszl-mcq.jsonl"),
+        "loader": LLMZSZLMCLoader,
+    }
 
-    {
-        "name": "bbh",
-        "url": "https://huggingface.co/datasets/pawel04/bbh-logical-deduction-seven-objects-pl/resolve/main/open.jsonl",
-        "output": Path("datasets/bbh.jsonl"),
-        "loader": BBHLoader,
-    },
 ]
 
 def _download_file(url: str, output: Path, timeout: int = 120) -> None:
@@ -68,7 +58,7 @@ def _download_file(url: str, output: Path, timeout: int = 120) -> None:
 
 def _serialize_judgement_context(prompt_item: Prompt) -> dict:
     """Return prompt source text, optional context, and correct answer for LLM-as-a-judge."""
-    if isinstance(prompt_item, LlmzszlPrompt):
+    if isinstance(prompt_item, LlmzszlPrompt) or isinstance(prompt_item, LlmzszlMCPrompt):
         return {
             "question": prompt_item.question,
             "correct_answer": prompt_item.answers,

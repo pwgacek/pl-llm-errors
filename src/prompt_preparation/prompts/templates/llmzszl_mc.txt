@@ -1,4 +1,5 @@
 Odpowiedz na poniższe pytanie:
 <PYTANIE>
 {question}
+{choices}
 </PYTANIE>
