@@ -6,10 +6,10 @@ default:
     judgements_dir: results/judgements
   inference:
     temperature: 0
-    resume: null
+    resume: /home/pawel/Desktop/pl-llm-errors/results/answers/speakleash_Bielik-11B-v3.0-Instruct/2026-05-17_12-02-09.json
   judgement:
     temperature: 0
-    resume: null
+    resume: /home/pawel/Desktop/pl-llm-errors/results/judgements/speakleash_Bielik-11B-v3.0-Instruct/2026-05-17_12-02-09_sam40p_judged_2026-05-17_16-33-40.json
 local:
   prompt_preparation:
     num_questions: 100
@@ -26,7 +26,7 @@ local:
 
 remote:
   prompt_preparation:
-    num_questions: 10
+    num_questions: 132
   inference:
     model: speakleash/Bielik-11B-v3.0-Instruct
     base_url: https://llmlab.plgrid.pl/api/v1

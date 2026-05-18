@@ -52,3 +52,17 @@ def build_bbh_judge_prompt(
             "model_answer": model_answer,
         },
     )
+
+
+def build_matematyka_rozszerzona_cke_judge_prompt(
+    task: str, key: str, points: int | str, model_answer: str
+) -> str:
+    return _render(
+        "matematyka_rozszerzona_cke",
+        {
+            "task": task,
+            "key": key,
+            "points": str(points),
+            "model_answer": model_answer,
+        },
+    )

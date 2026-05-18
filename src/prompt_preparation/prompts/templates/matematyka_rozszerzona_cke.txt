@@ -1,0 +1,9 @@
+Rozwiąż poniższe zadanie krok po kroku.
+
+Zasady:
+- zapisuj kolejne kroki rozumowania,
+- wykorzystuj wszystkie podane informacje,
+- nie pomijaj istotnych przekształceń,
+- rozumowanie ma być zwięzłe, ale kompletne.
+
+<ZADANIE>{text}</ZADANIE>
