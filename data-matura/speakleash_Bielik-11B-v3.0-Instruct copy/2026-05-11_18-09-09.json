@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-05-11T18:09:09.425421+02:00",
+  "model": "speakleash/Bielik-11B-v3.0-Instruct",
+  "base_url": "https://llmlab.plgrid.pl/api/v1",
+  "prompts_dir": "results/prompts",
+  "elapsed_sec": 2.97,
+  "datasets": {
+    "identity": {
+      "polqa_fixed": {
+        "num_sampled": 1,
+        "error_count": 0,
+        "elapsed_sec": 2.96,
+        "questions": [
+          {
+            "prompt_id": "polqa-identity-000",
+            "raw_answer": "Ostatnim nadżupanem komitatu spiskiego był Geza Alapi Salamon.",
+            "elapsed": 2.964,
+            "error": false,
+            "judgement_context": {
+              "question": "Jakie imię nosiła kobieta z Jerozolimy, która podała chustę Jezusowi?",
+              "context": "św. Weronika – matrona, która niosącemu krzyż Chrystusowi podała chustę do otarcia twarzy",
+              "correct_answer": [
+                "Weronika"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

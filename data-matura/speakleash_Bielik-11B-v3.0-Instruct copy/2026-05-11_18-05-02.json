@@ -1,0 +1,52 @@
+{
+  "timestamp": "2026-05-11T18:05:02.348144+02:00",
+  "model": "speakleash/Bielik-11B-v3.0-Instruct",
+  "base_url": "https://llmlab.plgrid.pl/api/v1",
+  "prompts_dir": "results/prompts",
+  "elapsed_sec": 6.17,
+  "datasets": {
+    "identity": {
+      "polqa": {
+        "num_sampled": 1,
+        "error_count": 0,
+        "elapsed_sec": 3.21,
+        "questions": [
+          {
+            "prompt_id": "polqa-identity-000",
+            "raw_answer": "Ostatnim nadżupanem komitatu spiskiego był Geza Alapi Salamon.",
+            "elapsed": 3.205,
+            "error": false,
+            "judgement_context": {
+              "question": "Jakie imię nosiła kobieta z Jerozolimy, która podała chustę Jezusowi?",
+              "context": "św. Weronika – matrona, która niosącemu krzyż Chrystusowi podała chustę do otarcia twarzy",
+              "correct_answer": [
+                "Weronika"
+              ]
+            }
+          }
+        ]
+      },
+      "polqa_fixed": {
+        "num_sampled": 1,
+        "error_count": 0,
+        "elapsed_sec": 2.96,
+        "questions": [
+          {
+            "prompt_id": "polqa-identity-000",
+            "raw_answer": "Ostatnim nadżupanem komitatu spiskiego był Geza Alapi Salamon.",
+            "elapsed": 2.962,
+            "error": false,
+            "judgement_context": {
+              "question": "Jakie imię nosiła kobieta z Jerozolimy, która podała chustę Jezusowi?",
+              "context": "św. Weronika – matrona, która niosącemu krzyż Chrystusowi podała chustę do otarcia twarzy",
+              "correct_answer": [
+                "Weronika"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

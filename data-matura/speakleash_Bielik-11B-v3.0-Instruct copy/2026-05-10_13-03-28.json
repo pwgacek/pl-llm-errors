@@ -1,0 +1,96 @@
+{
+  "timestamp": "2026-05-10T13:03:28.691493+02:00",
+  "model": "speakleash/Bielik-11B-v3.0-Instruct",
+  "base_url": "https://llmlab.plgrid.pl/api/v1",
+  "prompts_dir": "results/prompts",
+  "elapsed_sec": 38.5,
+  "datasets": {
+    "identity": {
+      "llmzszl": {
+        "num_sampled": 1,
+        "error_count": 0,
+        "elapsed_sec": 9.93,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-identity-000",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy skorzystać z podanego warunku \\(2x = 3y\\) i wyrażenia \\(\\frac{x^2 + y^2}{xy}\\).\n\n1. **Zapiszmy dany warunek:**\n   \\[\n   2x = 3y\n   \\]\n\n2. **Wyrażenie, które musimy obliczyć:**\n   \\[\n   \\frac{x^2 + y^2}{xy}\n   \\]\n\n3. **Z warunku \\(2x = 3y\\) możemy wyrazić \\(y\\) w terminach \\(x\\):**\n   \\[\n   y = \\frac{2x}{3}\n   \\]\n\n4. **Podstawmy \\(y = \\frac{2x}{3}\\) do wyrażenia \\(\\frac{x^2 + y^2}{xy}\\):**\n   \\[\n   \\frac{x^2 + \\left(\\frac{2x}{3}\\right)^2}{x \\cdot \\frac{2x}{3}}\n   \\]\n\n5. **Obliczmy licznik:**\n   \\[\n   x^2 + \\left(\\frac{2x}{3}\\right)^2 = x^2 + \\frac{4x^2}{9} = \\frac{9x^2}{9} + \\frac{4x^2}{9} = \\frac{13x^2}{9}\n   \\]\n\n6. **Obliczmy mianownik:**\n   \\[\n   x \\cdot \\frac{2x}{3} = \\frac{2x^2}{3}\n   \\]\n\n7. **Podstawmy obliczone wartości do wyrażenia:**\n   \\[\n   \\frac{\\frac{13x^2}{9}}{\\frac{2x^2}{3}} = \\frac{13x^2}{9} \\cdot \\frac{3}{2x^2} = \\frac{13 \\cdot 3}{9 \\cdot 2} = \\frac{39}{18} = \\frac{13}{6}\n   \\]\n\n8. **Ostateczny wynik:**\n   \\[\n   \\frac{x^2 + y^2}{xy} = \\frac{13}{6}\n   \\]\n\n**Odpowiedź:**\n\\[\n\\boxed{\\frac{13}{6}}\n\\]",
+            "elapsed": 9.933,
+            "error": false,
+            "judgement_context": {
+              "question": "Dodatnie liczby x i y spełniają warunek 2x=3y. Jaką wartość ma wyrażenie (x^2+y^2)/(x⋅y)?",
+              "correct_answer": [
+                "13/6"
+              ]
+            }
+          }
+        ]
+      },
+      "llmzszl_mc": {
+        "num_sampled": 1,
+        "error_count": 0,
+        "elapsed_sec": 10.47,
+        "questions": [
+          {
+            "prompt_id": "llmzszl_mc-identity-000",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy skorzystać z podanego warunku \\(2x = 3y\\) i obliczyć wartość wyrażenia \\(\\frac{x^2 + y^2}{x \\cdot y}\\).\n\n1. Zaczynamy od warunku \\(2x = 3y\\). Możemy wyrazić \\(y\\) w terminach \\(x\\):\n\\[ y = \\frac{2x}{3} \\]\n\n2. Teraz podstawiamy \\(y = \\frac{2x}{3}\\) do wyrażenia \\(\\frac{x^2 + y^2}{x \\cdot y}\\):\n\\[ \\frac{x^2 + \\left(\\frac{2x}{3}\\right)^2}{x \\cdot \\frac{2x}{3}} \\]\n\n3. Obliczamy \\(y^2\\):\n\\[ y^2 = \\left(\\frac{2x}{3}\\right)^2 = \\frac{4x^2}{9} \\]\n\n4. Podstawiamy \\(y^2\\) do wyrażenia:\n\\[ \\frac{x^2 + \\frac{4x^2}{9}}{x \\cdot \\frac{2x}{3}} \\]\n\n5. Upraszczamy mianownik:\n\\[ x \\cdot \\frac{2x}{3} = \\frac{2x^2}{3} \\]\n\n6. Teraz mamy:\n\\[ \\frac{x^2 + \\frac{4x^2}{9}}{\\frac{2x^2}{3}} \\]\n\n7. Upraszczamy licznik:\n\\[ x^2 + \\frac{4x^2}{9} = \\frac{9x^2}{9} + \\frac{4x^2}{9} = \\frac{13x^2}{9} \\]\n\n8. Podstawiamy uproszczony licznik:\n\\[ \\frac{\\frac{13x^2}{9}}{\\frac{2x^2}{3}} \\]\n\n9. Dzielimy ułamki:\n\\[ \\frac{13x^2}{9} \\cdot \\frac{3}{2x^2} = \\frac{13 \\cdot 3}{9 \\cdot 2} = \\frac{39}{18} = \\frac{13}{6} \\]\n\nZatem wartość wyrażenia \\(\\frac{x^2 + y^2}{x \\cdot y}\\) jest równa \\(\\frac{13}{6}\\).\n\nPoprawna odpowiedź to:\nB. 13/6",
+            "elapsed": 10.466,
+            "error": false,
+            "judgement_context": {
+              "question": "Dodatnie liczby x i y spełniają warunek 2x=3y. Wynika stąd, że wartość wyrażenia (x^2+y^2)/(x⋅y) jest równa",
+              "correct_answer": [
+                "2/3",
+                "13/6",
+                "6/13",
+                "3/2"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "typo_40%": {
+      "llmzszl": {
+        "num_sampled": 1,
+        "error_count": 0,
+        "elapsed_sec": 9.31,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-typo_40%-000",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy skorzystać z podanego warunku \\(2x = 3y\\) i wyrażenia \\(\\frac{x^2 + y^2}{xy}\\).\n\n1. **Zapiszmy warunek w bardziej użytecznej formie:**\n   \\[\n   2x = 3y\n   \\]\n   Możemy wyrazić \\(x\\) w terminach \\(y\\):\n   \\[\n   x = \\frac{3y}{2}\n   \\]\n\n2. **Podstawmy \\(x\\) w wyrażeniu \\(\\frac{x^2 + y^2}{xy}\\):**\n   \\[\n   \\frac{x^2 + y^2}{xy} = \\frac{\\left(\\frac{3y}{2}\\right)^2 + y^2}{\\left(\\frac{3y}{2}\\right) \\cdot y}\n   \\]\n\n3. **Obliczmy licznik:**\n   \\[\n   \\left(\\frac{3y}{2}\\right)^2 + y^2 = \\frac{9y^2}{4} + y^2 = \\frac{9y^2}{4} + \\frac{4y^2}{4} = \\frac{13y^2}{4}\n   \\]\n\n4. **Obliczmy mianownik:**\n   \\[\n   \\left(\\frac{3y}{2}\\right) \\cdot y = \\frac{3y^2}{2}\n   \\]\n\n5. **Podstawmy obliczone wartości do wyrażenia:**\n   \\[\n   \\frac{\\frac{13y^2}{4}}{\\frac{3y^2}{2}} = \\frac{13y^2}{4} \\cdot \\frac{2}{3y^2} = \\frac{13 \\cdot 2}{4 \\cdot 3} = \\frac{26}{12} = \\frac{13}{6}\n   \\]\n\n6. **Uprośćmy wynik:**\n   \\[\n   \\frac{13}{6}\n   \\]\n\nZatem wartość wyrażenia \\(\\frac{x^2 + y^2}{xy}\\) wynosi \\(\\frac{13}{6}\\).\n\n\\boxed{\\frac{13}{6}}",
+            "elapsed": 9.29,
+            "error": false,
+            "judgement_context": {
+              "question": "Dodatnie liczby x i y spełniają warunek 2x=3y. Jaką wartość ma wyrażenie (x^2+y^2)/(x⋅y)?",
+              "correct_answer": [
+                "13/6"
+              ]
+            }
+          }
+        ]
+      },
+      "llmzszl_mc": {
+        "num_sampled": 1,
+        "error_count": 0,
+        "elapsed_sec": 8.78,
+        "questions": [
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-000",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy skorzystać z podanego warunku \\(2x = 3y\\) i obliczyć wartość wyrażenia \\(\\frac{x^2 + y^2}{x \\cdot y}\\).\n\n1. Z warunku \\(2x = 3y\\) możemy wyrazić \\(y\\) w terminach \\(x\\):\n\\[ y = \\frac{2x}{3} \\]\n\n2. Teraz podstawmy \\(y = \\frac{2x}{3}\\) do wyrażenia \\(\\frac{x^2 + y^2}{x \\cdot y}\\):\n\\[ \\frac{x^2 + \\left(\\frac{2x}{3}\\right)^2}{x \\cdot \\frac{2x}{3}} \\]\n\n3. Obliczmy licznik:\n\\[ x^2 + \\left(\\frac{2x}{3}\\right)^2 = x^2 + \\frac{4x^2}{9} = \\frac{9x^2}{9} + \\frac{4x^2}{9} = \\frac{13x^2}{9} \\]\n\n4. Obliczmy mianownik:\n\\[ x \\cdot \\frac{2x}{3} = \\frac{2x^2}{3} \\]\n\n5. Teraz mamy wyrażenie:\n\\[ \\frac{\\frac{13x^2}{9}}{\\frac{2x^2}{3}} \\]\n\n6. Uprośćmy to wyrażenie, dzieląc licznik przez mianownik:\n\\[ \\frac{13x^2}{9} \\cdot \\frac{3}{2x^2} = \\frac{13 \\cdot 3}{9 \\cdot 2} = \\frac{39}{18} = \\frac{13}{6} \\]\n\nZatem wartość wyrażenia \\(\\frac{x^2 + y^2}{x \\cdot y}\\) jest równa \\(\\frac{13}{6}\\).\n\nPoprawna odpowiedź to:\nB. 13/6",
+            "elapsed": 8.784,
+            "error": false,
+            "judgement_context": {
+              "question": "Dodatnie liczby x i y spełniają warunek 2x=3y. Wynika stąd, że wartość wyrażenia (x^2+y^2)/(x⋅y) jest równa",
+              "correct_answer": [
+                "2/3",
+                "13/6",
+                "6/13",
+                "3/2"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}
