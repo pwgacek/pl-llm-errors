@@ -6,10 +6,10 @@ default:
     judgements_dir: results/judgements
   inference:
     temperature: 0
-    resume: /home/pawel/Desktop/pl-llm-errors/results/answers/speakleash_Bielik-11B-v3.0-Instruct/2026-05-17_12-02-09.json
+    resume: None
   judgement:
     temperature: 0
-    resume: /home/pawel/Desktop/pl-llm-errors/results/judgements/speakleash_Bielik-11B-v3.0-Instruct/2026-05-17_12-02-09_sam40p_judged_2026-05-17_16-33-40.json
+    resume: None
 local:
   prompt_preparation:
     num_questions: 100
@@ -26,14 +26,14 @@ local:
 
 remote:
   prompt_preparation:
-    num_questions: 132
+    num_questions: 100
   inference:
     model: speakleash/Bielik-11B-v3.0-Instruct
     base_url: https://llmlab.plgrid.pl/api/v1
     api_key: "@format {env[PLGRID_API_KEY]}"
     timeout: 120
   judgement:
-    model: openai/gpt-oss-120b
+    model: qwen/qwen3-32b
     base_url: https://api.groq.com/openai/v1
     api_key: "@format {env[GROQ_API_KEY]}"
     timeout: 60

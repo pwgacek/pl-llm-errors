@@ -33,40 +33,40 @@ from src.settings import settings
 
 GENERATORS: dict[str, ErrorGenerator] = {
     "identity": IdentityGenerator(),
-    # "diacritic": DiacriticErrorGenerator(),
-    # "punctuation_all": PunctuationAllErrorGenerator(),
-    # "punctuation_inner": PunctuationInnerErrorGenerator(),
-    # "spelling_10%": SpellingErrorGenerator(rate=0.1, seed=settings.common.seed),
-    # "spelling_40%": SpellingErrorGenerator(rate=0.4, seed=settings.common.seed),
-    # "typo_10%": TypoErrorGenerator(typo_rate=0.1, seed=settings.common.seed),
+    "diacritic": DiacriticErrorGenerator(),
+    "punctuation_all": PunctuationAllErrorGenerator(),
+    "punctuation_inner": PunctuationInnerErrorGenerator(),
+    "spelling_10%": SpellingErrorGenerator(rate=0.1, seed=settings.common.seed),
+    "spelling_40%": SpellingErrorGenerator(rate=0.4, seed=settings.common.seed),
+    "typo_10%": TypoErrorGenerator(typo_rate=0.1, seed=settings.common.seed),
     "typo_40%": TypoErrorGenerator(typo_rate=0.4, seed=settings.common.seed),
 }
 
 
 DATASETS = [
-    # {
-    #     "name": "llmzszl",
-    #     "url": "https://huggingface.co/datasets/pawel04/llmzszl-open-ended/resolve/main/llmzszl-open-ended.jsonl",
-    #     "output": Path("datasets/llmzszl-open-ended.jsonl"),
-    #     "loader": LLMZSZLLoader,
-    # },
-    # {
-    #     "name": "polqa",
-    #     "url": "https://huggingface.co/datasets/ipipan/polqa/resolve/main/data/test.csv",
-    #     "output": Path("datasets/polqa.csv"),
-    #     "loader": PolQALoader,
-    # },
-
-    # {
-    #     "name": "bbh",
-    #     "url": "https://huggingface.co/datasets/pawel04/bbh-logical-deduction-seven-objects-pl/resolve/main/open.jsonl",
-    #     "output": Path("datasets/bbh.jsonl"),
-    #     "loader": BBHLoader,
-    # },
     {
-        "name": "matematyka_rozszerzona_cke",
-        "url": "https://example.com/matematyka_rozszerzona_cke.jsonl",
-        "output": Path("datasets/matury_obliczeniowe_sorted.jsonl"),
+        "name": "llmzszl",
+        "url": "https://huggingface.co/datasets/pawel04/llmzszl-open-ended/resolve/main/llmzszl-open-ended.jsonl",
+        "output": Path("datasets/llmzszl-open-ended.jsonl"),
+        "loader": LLMZSZLLoader,
+    },
+    {
+        "name": "polqa",
+        "url": "https://huggingface.co/datasets/ipipan/polqa/resolve/main/data/test.csv",
+        "output": Path("datasets/polqa.csv"),
+        "loader": PolQALoader,
+    },
+
+    {
+        "name": "bbh",
+        "url": "https://huggingface.co/datasets/pawel04/bbh-logical-deduction-seven-objects-pl/resolve/main/open.jsonl",
+        "output": Path("datasets/bbh.jsonl"),
+        "loader": BBHLoader,
+    },
+    {
+        "name": "otwarte-pytania-matura-cke",
+        "url": "https://huggingface.co/datasets/pawel04/otwarte-pytania-matura-cke-100/resolve/main/otwarte-pytania-matura-cke-100.jsonl",
+        "output": Path("datasets/pawel04/otwarte-pytania-matura-cke-100.jsonl"),
         "loader": MatematykaRozszerzonaCKELoader,
     },
 ]
