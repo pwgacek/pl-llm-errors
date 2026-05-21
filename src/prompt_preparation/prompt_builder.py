@@ -64,9 +64,9 @@ DATASETS = [
         "loader": BBHLoader,
     },
     {
-        "name": "otwarte-pytania-matura-cke",
+        "name": "cke",
         "url": "https://huggingface.co/datasets/pawel04/otwarte-pytania-matura-cke-100/resolve/main/otwarte-pytania-matura-cke-100.jsonl",
-        "output": Path("datasets/pawel04/otwarte-pytania-matura-cke-100.jsonl"),
+        "output": Path("datasets/otwarte-pytania-matura-cke-100.jsonl"),
         "loader": MatematykaRozszerzonaCKELoader,
     },
 ]
