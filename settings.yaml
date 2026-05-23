@@ -26,7 +26,7 @@ local:
 
 remote:
   prompt_preparation:
-    num_questions: 100
+    num_questions: 200
   inference:
     model: speakleash/Bielik-11B-v3.0-Instruct
     base_url: https://llmlab.plgrid.pl/api/v1
