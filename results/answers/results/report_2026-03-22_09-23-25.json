@@ -1,0 +1,622 @@
+{
+  "timestamp": "2026-03-22T09:23:25.311125+00:00",
+  "model": "gemma3:4b",
+  "base_url": "http://localhost:11434/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "datasets": {
+    "diacritic": {
+      "bbh": {
+        "num_sampled": 100,
+        "correct": 43,
+        "incorrect": 57,
+        "error": 0,
+        "accuracy": 0.43,
+        "elapsed_sec": 299.09,
+        "questions": [
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na galezi siedzi siedem ptakow: jastrzab, kruk, koliber, sokol, sowa, przepiorka i kardynal. Przepiorka znajduje sie po lewej stronie kolibra. Kruk znajduje sie po prawej stronie kolibra. Kardynal jest drugi od lewej. Sowa znajduje sie po lewej stronie kardynala. Kruk jest trzeci od prawej. Sokol jest najbardziej po prawej.</PYTANIE>\n<ODPOWIEDZI>\nA. Jastrzab jest najbardziej po lewej\nB. Kruk jest najbardziej po lewej\nC. Koliber jest najbardziej po lewej\nD. Sokol jest najbardziej po lewej\nE. Sowa jest najbardziej po lewej\nF. Przepiorka jest najbardziej po lewej\nG. Kardynal jest najbardziej po lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 6.198
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na wystawie zabytkowych samochodow znajduje sie siedem pojazdow: limuzyna, kabriolet, kombi, minivan, autobus, ciagnik i ciezarowka. Minivan jest najstarszym pojazdem. Ciezarowka jest starsza od kombi. Ciezarowka jest nowsza od limuzyny. Autobus jest nowszy od kabrioletu. Autobus jest starszy od ciagnika. Limuzyna jest nowsza od ciagnika.</PYTANIE>\n<ODPOWIEDZI>\nA. Limuzyna jest drugim najstarszym pojazdem\nB. Kabriolet jest drugim najstarszym pojazdem\nC. Kombi jest drugim najstarszym pojazdem\nD. Minivan jest drugim najstarszym pojazdem\nE. Autobus jest drugim najstarszym pojazdem\nF. Ciagnik jest drugim najstarszym pojazdem\nG. Ciezarowka jest drugim najstarszym pojazdem\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.092
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. W turnieju golfowym uczestniczylo siedmiu golfistow: Amy, Eve, Ada, Rob, Dan, Mel i Joe. Joe zajal trzecie miejsce. Dan zajal ostatnie miejsce. Eve zajela pierwsze miejsce. Mel ukonczyl ponizej Roba. Ada ukonczyla powyzej Joe. Rob zajal trzecie miejsce od konca.</PYTANIE>\n<ODPOWIEDZI>\nA. Amy zajela ostatnie miejsce\nB. Eve zajela ostatnie miejsce\nC. Ada zajela ostatnie miejsce\nD. Rob zajal ostatnie miejsce\nE. Dan zajal ostatnie miejsce\nF. Mel zajal ostatnie miejsce\nG. Joe zajal ostatnie miejsce\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "result": "CORRECT",
+            "elapsed": 2.395
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na polce znajduje sie siedem ksiazek: pomaranczowa, czerwona, zielona, biala, fioletowa, brazowa i zolta. Zielona ksiazka znajduje sie po lewej stronie fioletowej ksiazki. Biala ksiazka znajduje sie po prawej stronie pomaranczowej ksiazki. Zielona ksiazka znajduje sie po prawej stronie brazowej ksiazki. Zolta ksiazka znajduje sie po prawej stronie bialej ksiazki. Czerwona ksiazka znajduje sie po prawej stronie zoltej ksiazki. Brazowa ksiazka znajduje sie po prawej stronie czerwonej ksiazki.</PYTANIE>\n<ODPOWIEDZI>\nA. Pomaranczowa ksiazka jest czwarta od lewej\nB. Czerwona ksiazka jest czwarta od lewej\nC. Zielona ksiazka jest czwarta od lewej\nD. Biala ksiazka jest czwarta od lewej\nE. Fioletowa ksiazka jest czwarta od lewej\nF. Brazowa ksiazka jest czwarta od lewej\nG. Zolta ksiazka jest czwarta od lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "CORRECT",
+            "elapsed": 3.632
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na galezi siedzi siedem ptakow: sojka, sowa, jastrzab, sokol, koliber, rudzik i przepiorka. Koliber znajduje sie po lewej stronie sokola. Sowa jest druga od lewej. Rudzik znajduje sie po lewej stronie kolibra. Przepiorka znajduje sie po prawej stronie sokola. Rudzik znajduje sie po prawej stronie sowy. Sojka jest trzecia od prawej.</PYTANIE>\n<ODPOWIEDZI>\nA. Sojka jest druga od lewej\nB. Sowa jest druga od lewej\nC. Jastrzab jest drugi od lewej\nD. Sokol jest drugi od lewej\nE. Koliber jest drugi od lewej\nF. Rudzik jest drugi od lewej\nG. Przepiorka jest druga od lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "CORRECT",
+            "elapsed": 2.758
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na polce znajduje sie siedem ksiazek: brazowa, szara, pomaranczowa, zielona, czarna, fioletowa i zolta. Fioletowa ksiazka jest najbardziej po lewej. Brazowa ksiazka znajduje sie po prawej stronie zoltej ksiazki. Zielona ksiazka znajduje sie po lewej stronie pomaranczowej ksiazki. Pomaranczowa ksiazka znajduje sie po lewej stronie szarej ksiazki. Czarna ksiazka jest trzecia od lewej. Zielona ksiazka jest trzecia od prawej.</PYTANIE>\n<ODPOWIEDZI>\nA. Brazowa ksiazka jest najbardziej po prawej\nB. Szara ksiazka jest najbardziej po prawej\nC. Pomaranczowa ksiazka jest najbardziej po prawej\nD. Zielona ksiazka jest najbardziej po prawej\nE. Czarna ksiazka jest najbardziej po prawej\nF. Fioletowa ksiazka jest najbardziej po prawej\nG. Zolta ksiazka jest najbardziej po prawej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.34
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na galezi siedzi siedem ptakow: kardynal, wrona, koliber, sojka, sowa, rudzik i przepiorka. Kardynal znajduje sie po prawej stronie wrony. Przepiorka jest trzecia od lewej. Sowa znajduje sie po prawej stronie rudzika. Koliber znajduje sie po prawej stronie sojki. Kardynal jest drugi od lewej. Sowa jest trzecia od prawej.</PYTANIE>\n<ODPOWIEDZI>\nA. Kardynal jest czwarty od lewej\nB. Wrona jest czwarta od lewej\nC. Koliber jest czwarty od lewej\nD. Sojka jest czwarta od lewej\nE. Sowa jest czwarta od lewej\nF. Rudzik jest czwarty od lewej\nG. Przepiorka jest czwarta od lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.901
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na polce znajduje sie siedem ksiazek: czerwona, fioletowa, zielona, biala, pomaranczowa, niebieska i szara. Zielona ksiazka znajduje sie po lewej stronie bialej ksiazki. Czerwona ksiazka znajduje sie po lewej stronie fioletowej ksiazki. Czerwona ksiazka znajduje sie po prawej stronie pomaranczowej ksiazki. Szara ksiazka jest druga od lewej. Fioletowa ksiazka znajduje sie po lewej stronie zielonej ksiazki. Niebieska ksiazka jest czwarta od lewej.</PYTANIE>\n<ODPOWIEDZI>\nA. Czerwona ksiazka jest trzecia od lewej\nB. Fioletowa ksiazka jest trzecia od lewej\nC. Zielona ksiazka jest trzecia od lewej\nD. Biala ksiazka jest trzecia od lewej\nE. Pomaranczowa ksiazka jest trzecia od lewej\nF. Niebieska ksiazka jest trzecia od lewej\nG. Szara ksiazka jest trzecia od lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.488
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. W turnieju golfowym uczestniczylo siedmiu golfistow: Joe, Rob, Eli, Dan, Mya, Ada i Ana. Joe zajal wyzsza pozycje niz Ana. Ana zajela przedostatnie miejsce. Mya zajela czwarte miejsce. Dan zajal trzecie miejsce. Ada zajela drugie miejsce. Eli zajal trzecie od konca miejsce.</PYTANIE>\n<ODPOWIEDZI>\nA. Joe zajal trzecie miejsce od konca\nB. Rob zajal trzecie miejsce od konca\nC. Eli zajal trzecie miejsce od konca\nD. Dan zajal trzecie miejsce od konca\nE. Mya zajela trzecie miejsce od konca\nF. Ada zajela trzecie miejsce od konca\nG. Ana zajela trzecie miejsce od konca\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.752
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na wystawie zabytkowych samochodow znajduje sie siedem pojazdow: sedan, minivan, motocykl, limuzyna, hatchback, ciezarowka i ciagnik. Motocykl jest starszy od ciagnika. Hatchback jest starszy od limuzyny. Hatchback jest nowszy od ciezarowki. Ciezarowka jest nowsza od ciagnika. Minivan jest drugim najnowszym pojazdem. Sedan jest trzecim najnowszym pojazdem.</PYTANIE>\n<ODPOWIEDZI>\nA. Sedan jest trzecim najstarszym pojazdem\nB. Minivan jest trzecim najstarszym pojazdem\nC. Motocykl jest trzecim najstarszym pojazdem\nD. Limuzyna jest trzecim najstarszym pojazdem\nE. Hatchback jest trzecim najstarszym pojazdem\nF. Ciezarowka jest trzecim najstarszym pojazdem\nG. Ciagnik jest trzecim najstarszym pojazdem\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.22
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. W turnieju golfowym uczestniczylo siedmiu golfistow: Mya, Eli, Ana, Amy, Mel, Dan i Joe. Amy zajela miejsce ponizej Joe. Dan zajal miejsce powyzej Mya. Eli zajal trzecie miejsce. Ana zajela pierwsze miejsce. Amy zajela przedostatnie miejsce. Mya zajela czwarte miejsce.</PYTANIE>\n<ODPOWIEDZI>\nA. Mya zajela ostatnie miejsce\nB. Eli zajal ostatnie miejsce\nC. Ana zajela ostatnie miejsce\nD. Amy zajela ostatnie miejsce\nE. Mel zajal ostatnie miejsce\nF. Dan zajal ostatnie miejsce\nG. Joe zajal ostatnie miejsce\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.489
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na galezi siedzi siedem ptakow: jastrzab, koliber, przepiorka, sowa, wrona, rudzik i kardynal. Kardynal jest drugi od prawej. Jastrzab jest najbardziej po prawej. Sowa jest po lewej stronie kolibra. Rudzik jest po lewej stronie przepiorki. Sowa jest po prawej stronie wrony. Rudzik jest czwarty od lewej.</PYTANIE>\n<ODPOWIEDZI>\nA. Jastrzab jest drugi od lewej\nB. Koliber jest drugi od lewej\nC. Przepiorka jest druga od lewej\nD. Sowa jest druga od lewej\nE. Wrona jest druga od lewej\nF. Rudzik jest drugi od lewej\nG. Kardynal jest drugi od lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.749
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na wystawie zabytkowych samochodow znajduje sie siedem pojazdow: limuzyna, sedan, ciagnik, motocykl, minivan, hatchback i ciezarowka. Minivan jest nowszy niz limuzyna. Ciagnik jest drugim najnowszym pojazdem. Ciezarowka jest starsza niz sedan. Minivan jest starszy niz ciezarowka. Hatchback jest nowszy niz ciagnik. Motocykl jest czwartym najnowszym pojazdem.</PYTANIE>\n<ODPOWIEDZI>\nA. Limuzyna jest drugim najstarszym pojazdem\nB. Sedan jest drugim najstarszym pojazdem\nC. Ciagnik jest drugim najstarszym pojazdem\nD. Motocykl jest drugim najstarszym pojazdem\nE. Minivan jest drugim najstarszym pojazdem\nF. Hatchback jest drugim najstarszym pojazdem\nG. Ciezarowka jest drugim najstarszym pojazdem\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.151
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. W turnieju golfowym uczestniczylo siedmiu golfistow: Ana, Rob, Eve, Mel, Mya, Joe i Eli. Joe zajal przedostatnie miejsce. Eli zajal pierwsze miejsce. Mya zakonczyla rywalizacje ponizej Joe. Mel zajal drugie miejsce. Rob zajal trzecie miejsce od konca. Ana zajela trzecie miejsce.</PYTANIE>\n<ODPOWIEDZI>\nA. Ana zajela ostatnie miejsce\nB. Rob zajal ostatnie miejsce\nC. Eve zajela ostatnie miejsce\nD. Mel zajal ostatnie miejsce\nE. Mya zajela ostatnie miejsce\nF. Joe zajal ostatnie miejsce\nG. Eli zajal ostatnie miejsce\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.479
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na galezi siedzi siedem ptakow: sowa, wrona, sokol, kardynal, koliber, przepiorka i jastrzab. Sokol znajduje sie po lewej stronie wrony. Przepiorka znajduje sie po prawej stronie kardynala. Koliber znajduje sie po prawej stronie przepiorki. Sokol jest drugi od prawej. Koliber znajduje sie po lewej stronie jastrzebia. Sowa jest trzecia od lewej.</PYTANIE>\n<ODPOWIEDZI>\nA. Sowa jest trzecia od lewej\nB. Wrona jest trzecia od lewej\nC. Sokol jest trzeci od lewej\nD. Kardynal jest trzeci od lewej\nE. Koliber jest trzeci od lewej\nF. Przepiorka jest trzecia od lewej\nG. Jastrzab jest trzeci od lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "CORRECT",
+            "elapsed": 2.889
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na wystawie zabytkowych samochodow znajduje sie siedem pojazdow: motocykl, sedan, kombi, ciagnik, minivan, autobus i ciezarowka. Motocykl jest starszy niz minivan. Minivan jest starszy niz ciagnik. Autobus jest nowszy niz ciezarowka. Kombi jest trzecim najnowszym pojazdem. Sedan jest starszy niz ciezarowka. Ciagnik jest starszy niz sedan.</PYTANIE>\n<ODPOWIEDZI>\nA. Motocykl jest trzecim najnowszym pojazdem\nB. Sedan jest trzecim najnowszym pojazdem\nC. Kombi jest trzecim najnowszym pojazdem\nD. Ciagnik jest trzecim najnowszym pojazdem\nE. Minivan jest trzecim najnowszym pojazdem\nF. Autobus jest trzecim najnowszym pojazdem\nG. Ciezarowka jest trzecim najnowszym pojazdem\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "CORRECT",
+            "elapsed": 3.076
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. W turnieju golfowym uczestniczylo siedmiu golfistow: Joe, Eli, Ada, Mel, Eve, Rob i Ana. Joe zajal pierwsze miejsce. Mel zajal przedostatnie miejsce. Rob zajal miejsce wyzej niz Eve. Mel zajal miejsce wyzej niz Eli. Rob zajal miejsce nizej niz Ada. Eve zajela czwarte miejsce.</PYTANIE>\n<ODPOWIEDZI>\nA. Joe zajal drugie miejsce\nB. Eli zajal drugie miejsce\nC. Ada zajela drugie miejsce\nD. Mel zajal drugie miejsce\nE. Eve zajela drugie miejsce\nF. Rob zajal drugie miejsce\nG. Ana zajela drugie miejsce\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.516
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na wystawie zabytkowych samochodow znajduje sie siedem pojazdow: limuzyna, ciezarowka, minivan, ciagnik, hatchback, autobus i kabriolet. Kabriolet jest drugim najstarszym pojazdem. Ciagnik jest czwartym najnowszym pojazdem. Minivan jest starszy od ciezarowki. Ciezarowka jest starsza od limuzyny. Hatchback jest trzecim najstarszym pojazdem. Autobus jest nowszy od limuzyny.</PYTANIE>\n<ODPOWIEDZI>\nA. Limuzyna jest najstarsza\nB. Ciezarowka jest najstarsza\nC. Minivan jest najstarszy\nD. Ciagnik jest najstarszy\nE. Hatchback jest najstarszy\nF. Autobus jest najstarszy\nG. Kabriolet jest najstarszy\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.904
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Sklep z owocami sprzedaje siedem rodzajow owocow: pomarancze, lokwaty, jablka, kiwi, mango, sliwki i brzoskwinie. Jablka sa drugimi najtanszymi owocami. Brzoskwinie sa najtansze. Sliwki sa czwartymi najdrozszymi owocami. Lokwaty sa trzecimi najtanszymi owocami. Kiwi sa drozsze niz mango. Pomarancze sa tansze niz mango.</PYTANIE>\n<ODPOWIEDZI>\nA. Pomarancze sa trzecimi najtanszymi owocami\nB. Lokwaty sa trzecimi najtanszymi owocami\nC. Jablka sa trzecimi najtanszymi owocami\nD. Kiwi sa trzecimi najtanszymi owocami\nE. Mango sa trzecimi najtanszymi owocami\nF. Sliwki sa trzecimi najtanszymi owocami\nG. Brzoskwinie sa trzecimi najtanszymi owocami\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "CORRECT",
+            "elapsed": 3.323
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Sklep z owocami sprzedaje siedem rodzajow owocow: arbuzy, mango, kiwi, gruszki, kantalupy, pomarancze i brzoskwinie. Pomarancze sa drozsze niz brzoskwinie. Kantalupy sa czwartymi najdrozszymi owocami. Gruszki sa tansze niz kantalupy. Brzoskwinie sa drugimi najdrozszymi owocami. Mango sa najtansze. Kiwi sa trzecimi najtanszymi owocami.</PYTANIE>\n<ODPOWIEDZI>\nA. Arbuzy sa czwartymi najdrozszymi owocami\nB. Mango sa czwartymi najdrozszymi owocami\nC. Kiwi sa czwartymi najdrozszymi owocami\nD. Gruszki sa czwartymi najdrozszymi owocami\nE. Kantalupy sa czwartymi najdrozszymi owocami\nF. Pomarancze sa czwartymi najdrozszymi owocami\nG. Brzoskwinie sa czwartymi najdrozszymi owocami\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "result": "CORRECT",
+            "elapsed": 3.473
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na galezi siedzi siedem ptakow: kruk, koliber, rudzik, wrona, przepiorka, sojka i kardynal. Koliber znajduje sie po lewej stronie wrony. Przepiorka znajduje sie po prawej stronie wrony. Kruk znajduje sie po lewej stronie rudzika. Sojka jest trzecia od prawej. Kardynal jest najbardziej po lewej. Koliber jest czwarty od lewej.</PYTANIE>\n<ODPOWIEDZI>\nA. Kruk jest najbardziej po prawej\nB. Koliber jest najbardziej po prawej\nC. Rudzik jest najbardziej po prawej\nD. Wrona jest najbardziej po prawej\nE. Przepiorka jest najbardziej po prawej\nF. Sojka jest najbardziej po prawej\nG. Kardynal jest najbardziej po prawej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "result": "CORRECT",
+            "elapsed": 2.745
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na polce znajduje sie siedem ksiazek: czerwona, biala, fioletowa, czarna, szara, pomaranczowa i niebieska. Czerwona ksiazka znajduje sie po prawej stronie bialej ksiazki. Szara ksiazka znajduje sie po lewej stronie pomaranczowej ksiazki. Szara ksiazka znajduje sie po prawej stronie niebieskiej ksiazki. Czerwona ksiazka jest druga od prawej. Czarna ksiazka jest czwarta od lewej. Pomaranczowa ksiazka znajduje sie po lewej stronie bialej ksiazki.</PYTANIE>\n<ODPOWIEDZI>\nA. Czerwona ksiazka jest czwarta od lewej\nB. Biala ksiazka jest czwarta od lewej\nC. Fioletowa ksiazka jest czwarta od lewej\nD. Czarna ksiazka jest czwarta od lewej\nE. Szara ksiazka jest czwarta od lewej\nF. Pomaranczowa ksiazka jest czwarta od lewej\nG. Niebieska ksiazka jest czwarta od lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "CORRECT",
+            "elapsed": 3.631
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Sklep z owocami sprzedaje siedem rodzajow owocow: kiwi, kantalupy, pomarancze, lokwaty, gruszki, arbuzy i brzoskwinie. Lokwaty sa tansze niz brzoskwinie. Gruszki sa trzecimi najtanszymi. Pomarancze sa tansze niz kantalupy. Lokwaty sa drozsze niz arbuzy. Brzoskwinie sa tansze niz pomarancze. Kiwi sa drugimi najdrozszymi owocami.</PYTANIE>\n<ODPOWIEDZI>\nA. Kiwi sa drugimi najdrozszymi owocami\nB. Kantalupy sa drugimi najdrozszymi owocami\nC. Pomarancze sa drugimi najdrozszymi owocami\nD. Lokwaty sa drugimi najdrozszymi owocami\nE. Gruszki sa drugimi najdrozszymi owocami\nF. Arbuzy sa drugimi najdrozszymi owocami\nG. Brzoskwinie sa drugimi najdrozszymi owocami\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "CORRECT",
+            "elapsed": 3.577
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na polce znajduje sie siedem ksiazek: czarna, pomaranczowa, zolta, biala, niebieska, czerwona i zielona. Czerwona ksiazka znajduje sie po prawej stronie zoltej ksiazki. Biala ksiazka jest druga od prawej. Czerwona ksiazka znajduje sie po lewej stronie zielonej ksiazki. Niebieska ksiazka znajduje sie po prawej stronie czarnej ksiazki. Czarna ksiazka jest trzecia od prawej. Pomaranczowa ksiazka jest najbardziej po lewej.</PYTANIE>\n<ODPOWIEDZI>\nA. Czarna ksiazka jest druga od lewej\nB. Pomaranczowa ksiazka jest druga od lewej\nC. Zolta ksiazka jest druga od lewej\nD. Biala ksiazka jest druga od lewej\nE. Niebieska ksiazka jest druga od lewej\nF. Czerwona ksiazka jest druga od lewej\nG. Zielona ksiazka jest druga od lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.328
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na polce znajduje sie siedem ksiazek: biala, szara, zolta, fioletowa, czerwona, czarna i zielona. Czarna ksiazka jest druga od prawej. Czerwona ksiazka znajduje sie po lewej stronie zielonej ksiazki. Czerwona ksiazka jest druga od lewej. Szara ksiazka jest trzecia od prawej. Zolta ksiazka jest trzecia od lewej. Biala ksiazka jest czwarta od lewej.</PYTANIE>\n<ODPOWIEDZI>\nA. Biala ksiazka jest czwarta od lewej\nB. Szara ksiazka jest czwarta od lewej\nC. Zolta ksiazka jest czwarta od lewej\nD. Fioletowa ksiazka jest czwarta od lewej\nE. Czerwona ksiazka jest czwarta od lewej\nF. Czarna ksiazka jest czwarta od lewej\nG. Zielona ksiazka jest czwarta od lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "CORRECT",
+            "elapsed": 3.413
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na galezi siedzi siedem ptakow: sojka, sowa, sokol, jastrzab, kruk, wrona i koliber. Sokol jest drugi od lewej. Wrona jest najbardziej po prawej. Koliber jest po prawej stronie sojki. Jastrzab jest po prawej stronie kolibra. Sojka jest po prawej stronie sowy. Kruk jest po lewej stronie sokola.</PYTANIE>\n<ODPOWIEDZI>\nA. Sojka jest trzecia od lewej\nB. Sowa jest trzecia od lewej\nC. Sokol jest trzeci od lewej\nD. Jastrzab jest trzeci od lewej\nE. Kruk jest trzeci od lewej\nF. Wrona jest trzecia od lewej\nG. Koliber jest trzeci od lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "CORRECT",
+            "elapsed": 2.846
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Sklep z owocami sprzedaje siedem rodzajow owocow: mango, kantalupy, jablka, sliwki, lokwaty, arbuzy i brzoskwinie. Sliwki sa drozsze niz mango. Arbuzy sa drozsze niz lokwaty. Lokwaty sa drugimi najtanszymi owocami. Sliwki sa tansze niz brzoskwinie. Mango sa czwartymi najdrozszymi owocami. Brzoskwinie sa tansze niz kantalupy.</PYTANIE>\n<ODPOWIEDZI>\nA. Mango sa trzecimi najtanszymi owocami\nB. Kantalupy sa trzecimi najtanszymi owocami\nC. Jablka sa trzecimi najtanszymi owocami\nD. Sliwki sa trzecimi najtanszymi owocami\nE. Lokwaty sa trzecimi najtanszymi owocami\nF. Arbuzy sa trzecimi najtanszymi owocami\nG. Brzoskwinie sa trzecimi najtanszymi owocami\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.437
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. W turnieju golfowym uczestniczylo siedmiu golfistow: Ada, Ana, Rob, Amy, Dan, Joe i Eli. Eli zajal miejsce ponizej Amy. Ada zajela trzecie miejsce. Amy zajela miejsce ponizej Roba. Dan zajal ostatnie miejsce. Rob zajal drugie miejsce. Ana zajela czwarte miejsce.</PYTANIE>\n<ODPOWIEDZI>\nA. Ada zajela czwarte miejsce\nB. Ana zajela czwarte miejsce\nC. Rob zajal czwarte miejsce\nD. Amy zajela czwarte miejsce\nE. Dan zajal czwarte miejsce\nF. Joe zajal czwarte miejsce\nG. Eli zajal czwarte miejsce\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.433
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Sklep z owocami sprzedaje siedem rodzajow owocow: mango, kiwi, pomarancze, arbuzy, jablka, gruszki i lokwaty. Lokwaty sa tansze od pomaranczy. Pomarancze sa drugimi najdrozszymi owocami. Jablka sa najtansze. Kiwi sa drozsze od gruszek. Mango sa drozsze od arbuzow. Lokwaty sa drozsze od kiwi.</PYTANIE>\n<ODPOWIEDZI>\nA. Mango sa trzecimi najdrozszymi owocami\nB. Kiwi sa trzecimi najdrozszymi owocami\nC. Pomarancze sa trzecimi najdrozszymi owocami\nD. Arbuzy sa trzecimi najdrozszymi owocami\nE. Jablka sa trzecimi najdrozszymi owocami\nF. Gruszki sa trzecimi najdrozszymi owocami\nG. Lokwaty sa trzecimi najdrozszymi owocami\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.389
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Sklep z owocami sprzedaje siedem rodzajow owocow: pomarancze, arbuzy, brzoskwinie, gruszki, kiwi, kantalupy i sliwki. Kiwi sa drugimi najtanszymi owocami. Sliwki sa najtansze. Kantalupy sa tansze niz arbuzy. Pomarancze sa najdrozsze. Gruszki sa trzecimi najtanszymi owocami. Brzoskwinie sa trzecimi najdrozszymi owocami.</PYTANIE>\n<ODPOWIEDZI>\nA. Pomarancze to drugie najdrozsze owoce\nB. Arbuzy to drugie najdrozsze owoce\nC. Brzoskwinie to drugie najdrozsze owoce\nD. Gruszki to drugie najdrozsze owoce\nE. Kiwi to drugie najdrozsze owoce\nF. Kantalupy to drugie najdrozsze owoce\nG. Sliwki to drugie najdrozsze owoce\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.338
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na wystawie zabytkowych samochodow znajduje sie siedem pojazdow: minivan, autobus, limuzyna, ciezarowka, kabriolet, ciagnik i motocykl. Limuzyna jest starsza od minivana. Ciagnik jest starszy od limuzyny. Autobus jest najnowszy. Ciezarowka jest trzecim najnowszym pojazdem. Motocykl jest czwartym najnowszym pojazdem. Kabriolet jest starszy od ciagnika.</PYTANIE>\n<ODPOWIEDZI>\nA. Minivan jest drugim najstarszym pojazdem\nB. Autobus jest drugim najstarszym pojazdem\nC. Limuzyna jest drugim najstarszym pojazdem\nD. Ciezarowka jest drugim najstarszym pojazdem\nE. Kabriolet jest drugim najstarszym pojazdem\nF. Ciagnik jest drugim najstarszym pojazdem\nG. Motocykl jest drugim najstarszym pojazdem\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.167
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na galezi siedzi siedem ptakow: kardynal, sojka, rudzik, wrona, sokol, jastrzab i kruk. Jastrzab jest drugi od prawej. Kruk jest czwarty od lewej. Rudzik jest drugi od lewej. Kardynal znajduje sie po lewej stronie kruka. Sokol znajduje sie po lewej stronie rudzika. Wrona znajduje sie po prawej stronie sojki.</PYTANIE>\n<ODPOWIEDZI>\nA. Kardynal jest drugi od lewej\nB. Sojka jest druga od lewej\nC. Rudzik jest drugi od lewej\nD. Wrona jest druga od lewej\nE. Sokol jest drugi od lewej\nF. Jastrzab jest drugi od lewej\nG. Kruk jest drugi od lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "CORRECT",
+            "elapsed": 2.719
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na wystawie zabytkowych samochodow znajduje sie siedem pojazdow: ciezarowka, kabriolet, autobus, kombi, minivan, sedan i motocykl. Autobus jest nowszy niz sedan. Motocykl jest starszy niz ciezarowka. Kombi jest starsze niz motocykl. Sedan jest nowszy niz kabriolet. Kombi jest nowsze niz autobus. Minivan jest czwartym najnowszym pojazdem.</PYTANIE>\n<ODPOWIEDZI>\nA. Ciezarowka jest drugim najnowszym pojazdem\nB. Kabriolet jest drugim najnowszym pojazdem\nC. Autobus jest drugim najnowszym pojazdem\nD. Kombi jest drugim najnowszym pojazdem\nE. Minivan jest drugim najnowszym pojazdem\nF. Sedan jest drugim najnowszym pojazdem\nG. Motocykl jest drugim najnowszym pojazdem\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.079
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na polce znajduje sie siedem ksiazek: zolta, czerwona, szara, niebieska, biala, pomaranczowa  i fioletowa. Czerwona ksiazka jest trzecia od prawej. Biala ksiazka znajduje sie po prawej stronie pomaranczowej ksiazki. Fioletowa ksiazka jest trzecia od lewej. Zolta ksiazka znajduje sie po prawej stronie fioletowej ksiazki. Niebieska ksiazka znajduje sie po prawej stronie czerwonej ksiazki. Niebieska ksiazka znajduje sie po lewej stronie szarej ksiazki.</PYTANIE>\n<ODPOWIEDZI>\nA. Zolta ksiazka jest trzecia od lewej\nB. Czerwona ksiazka jest trzecia od lewej\nC. Szara ksiazka jest trzecia od lewej\nD. Niebieska ksiazka jest trzecia od lewej\nE. Biala ksiazka jest trzecia od lewej\nF. Pomaranczowa ksiazka jest trzecia od lewej\nG. Fioletowa ksiazka jest trzecia od lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.506
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na wystawie zabytkowych samochodow znajduje sie siedem pojazdow: minivan, autobus, limuzyna, ciezarowka, kabriolet, ciagnik i motocykl. Limuzyna jest starsza od minivana. Ciagnik jest starszy od limuzyny. Autobus jest najnowszy. Ciezarowka jest trzecia najnowsza. Motocykl jest czwarty najnowszy. Kabriolet jest starszy od ciagnika.</PYTANIE>\n<ODPOWIEDZI>\nA. Minivan jest trzecim najnowszym pojazdem\nB. Autobus jest trzecim najnowszym pojazdem\nC. Limuzyna jest trzecim najnowszym pojazdem\nD. Ciezarowka jest trzecim najnowszym pojazdem\nE. Kabriolet jest trzecim najnowszym pojazdem\nF. Ciagnik jest trzecim najnowszym pojazdem\nG. Motocykl jest trzecim najnowszym pojazdem\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "CORRECT",
+            "elapsed": 3.14
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na polce znajduje sie siedem ksiazek: pomaranczowa, czerwona ksiazka, brazowa, niebieska, czarna, szara i biala. Biala ksiazka jest najbardziej po lewej. Czerwona ksiazka znajduje sie po prawej stronie niebieskiej ksiazki. Pomaranczowa ksiazka jest druga od prawej. Szara ksiazka jest czwarta od lewej. Czarna ksiazka jest najbardziej po prawej. Szara ksiazka znajduje sie po prawej stronie czerwonej ksiazki.</PYTANIE>\n<ODPOWIEDZI>\nA. Pomaranczowa ksiazka jest trzecia od prawej\nB. Czerwona ksiazka jest trzecia od prawej\nC. Brazowa ksiazka jest trzecia od prawej\nD. Niebieska ksiazka jest trzecia od prawej\nE. Czarna ksiazka jest trzecia od prawej\nF. Szara ksiazka jest trzecia od prawej\nG. Biala ksiazka jest trzecia od prawej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.291
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Sklep z owocami sprzedaje siedem rodzajow owocow: sliwki, kiwi, kantalupy, gruszki, arbuzy, jablka i lokwaty. Arbuzy sa drozsze niz kantalupy. Jablka sa tansze niz kantalupy. Arbuzy sa drugimi najdrozszymi owocami. Lokwaty sa tansze niz kiwi. Jablka sa drozsze niz lokwaty. Lokwaty sa trzecimi najtanszymi owocami. Sliwki sa najtansze.</PYTANIE>\n<ODPOWIEDZI>\nA. Sliwki sa najtansze\nB. Kiwi sa najtansze\nC. Kantalupy sa najtansze\nD. Gruszki sa najtansze\nE. Arbuzy sa najtansze\nF. Jablka sa najtansze\nG. Lokwaty sa najtansze\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "CORRECT",
+            "elapsed": 2.893
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na wystawie zabytkowych samochodow znajduje sie siedem pojazdow: autobus, motocykl, hatchback, kombi, minivan, ciezarowka i limuzyna. Kombi jest czwartym najnowszym pojazdem. Motocykl jest nowszy od ciezarowki. Kombi jest starsze od hatchbacka. Minivan jest nowszy od hatchbacka. Autobus jest nowszy od minivana. Ciezarowka jest nowsza od limuzyny.</PYTANIE>\n<ODPOWIEDZI>\nA. Autobus jest trzecim najstarszym pojazdem\nB. Motocykl jest trzecim najstarszym pojazdem\nC. Hatchback jest trzecim najstarszym pojazdem\nD. Kombi jest trzecim najstarszym pojazdem\nE. Minivan jest trzecim najstarszym pojazdem\nF. Ciezarowka jest trzecim najstarszym pojazdem\nG. Limuzyna jest trzecim najstarszym pojazdem\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.183
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na galezi siedzi siedem ptakow: przepiorka, kruk, koliber, rudzik, sokol, sowa i sojka. Sojka znajduje sie po lewej stronie sokola. Sojka jest druga od prawej. Kruk znajduje sie po lewej stronie rudzika. Sowa jest trzecia od prawej. Koliber znajduje sie po lewej stronie przepiorki. Kruk jest trzeci od lewej.</PYTANIE>\n<ODPOWIEDZI>\nA. Przepiorka jest druga od prawej\nB. Kruk jest druga od prawej\nC. Koliber jest druga od prawej\nD. Rudzik jest druga od prawej\nE. Sokol jest druga od prawej\nF. Sowa jest druga od prawej\nG. Sojka jest druga od prawej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "result": "CORRECT",
+            "elapsed": 2.686
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Sklep z owocami sprzedaje siedem rodzajow owocow: kantalupy, sliwki, mango, jablka, lokwaty, gruszki i brzoskwinie. Jablka sa tansze niz kantalupy. Jablka sa drozsze niz brzoskwinie. Mango sa czwartymi najdrozszymi owocami. Brzoskwinie sa drozsze niz sliwki. Gruszki sa trzecimi najdrozszymi owocami. Lokwaty sa trzecimi najtanszymi owocami.</PYTANIE>\n<ODPOWIEDZI>\nA. Kantalupy sa najtansze\nB. Sliwki sa najtansze\nC. Mango sa najtansze\nD. Jablka sa najtansze\nE. Lokwaty sa najtansze\nF. Gruszki sa najtansze\nG. Brzoskwinie sa najtansze\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.013
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Sklep z owocami sprzedaje siedem rodzajow owocow: jablka, sliwki, mango, arbuzy, pomarancze, kiwi i lokwaty. Arbuzy sa tansze niz sliwki. Arbuzy sa drozsze niz pomarancze. Kiwi sa tansze niz pomarancze. Jablka sa drozsze niz lokwaty. Sliwki sa tansze niz mango. Mango sa trzecimi najdrozszymi owocami.</PYTANIE>\n<ODPOWIEDZI>\nA. Jablka sa trzecimi najdrozszymi owocami\nB. Sliwki sa trzecimi najdrozszymi owocami\nC. Mango sa trzecimi najdrozszymi owocami\nD. Arbuzy sa trzecimi najdrozszymi owocami\nE. Pomarancze sa trzecimi najdrozszymi owocami\nF. Kiwi sa trzecimi najdrozszymi owocami\nG. Lokwaty sa trzecimi najdrozszymi owocami\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "CORRECT",
+            "elapsed": 3.232
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. W turnieju golfowym uczestniczylo siedmiu golfistow: Joe, Dan, Ana, Mel, Ada, Eve i Amy. Eve zajela miejsce wyzsze niz Amy. Dan zajal drugie miejsce. Ada zajela miejsce nizsze niz Ana. Ana zajela trzecie miejsce od konca. Mel zajal ostatnie miejsce. Amy zajela trzecie miejsce.</PYTANIE>\n<ODPOWIEDZI>\nA. Joe zajal czwarte miejsce\nB. Dan zajal czwarte miejsce\nC. Ana zajela czwarte miejsce\nD. Mel zajal czwarte miejsce\nE. Ada zajela czwarte miejsce\nF. Eve zajela czwarte miejsce\nG. Amy zajela czwarte miejsce\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.437
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na wystawie zabytkowych samochodow znajduje sie siedem pojazdow: kombi, sedan, autobus, motocykl, hatchback, ciagnik i minivan. Sedan jest trzecim najstarszym pojazdem. Ciagnik jest nowszy niz motocykl. Autobus jest starszy niz motocykl. Autobus jest nowszy niz hatchback. Minivan jest najnowszym pojazdem. Kombi jest najstarszym pojazdem.</PYTANIE>\n<ODPOWIEDZI>\nA. Kombi jest czwartym najnowszym pojazdem\nB. Sedan jest czwartym najnowszym pojazdem\nC. Autobus jest czwartym najnowszym pojazdem\nD. Motocykl jest czwartym najnowszym pojazdem\nE. Hatchback jest czwartym najnowszym pojazdem\nF. Ciagnik jest czwartym najnowszym pojazdem\nG. Minivan jest czwartym najnowszym pojazdem\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.049
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na wystawie zabytkowych samochodow znajduje sie siedem pojazdow: kombi, limuzyna, ciezarowka, minivan, motocykl, hatchback i autobus. Motocykl jest starszy od ciezarowki. Kombi jest starsze od hatchbacka. Motocykl jest nowszy od hatchbacka. Autobus jest drugim najnowszym pojazdem. Minivan jest najstarszym pojazdem. Limuzyna jest starsza od kombi.</PYTANIE>\n<ODPOWIEDZI>\nA. Kombi jest najstarszym pojazdem\nB. Limuzyna jest najstarszym pojazdem\nC. Ciezarowka jest najstarszym pojazdem\nD. Minivan jest najstarszym pojazdem\nE. Motocykl jest najstarszym pojazdem\nF. Hatchback jest najstarszym pojazdem\nG. Autobus jest najstarszym pojazdem\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "CORRECT",
+            "elapsed": 2.734
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. W turnieju golfowym uczestniczylo siedmiu golfistow: Mel, Rob, Eli, Dan, Ana, Ada i Mya. Ana zajela ostatnie miejsce. Mya zajela miejsce wyzsze niz Rob. Dan zajal miejsce wyzsze niz Mya. Rob zajal czwarte miejsce. Eli zajal drugie miejsce. Mel zajal miejsce wyzsze niz Ada.</PYTANIE>\n<ODPOWIEDZI>\nA. Mel zajal drugie miejsce\nB. Rob zajal drugie miejsce\nC. Eli zajal drugie miejsce\nD. Dan zajal drugie miejsce\nE. Ana zajela drugie miejsce\nF. Ada zajela drugie miejsce\nG. Mya zajela drugie miejsce\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "CORRECT",
+            "elapsed": 2.488
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. W turnieju golfowym uczestniczylo siedmiu golfistow: Ana, Eli, Mya, Amy, Joe, Mel i Ada. Ada zajela miejsce wyzsze niz Mel. Ada zajela trzecie miejsce od konca. Amy zajela miejsce wyzsze niz Ana. Mya zajela przedostatnie miejsce. Joe zajal miejsce wyzsze niz Amy. Eli zajal miejsce nizsze niz Ana.</PYTANIE>\n<ODPOWIEDZI>\nA. Ana zajela trzecie miejsce od konca\nB. Eli zajal trzecie miejsce od konca\nC. Mya zajela trzecie miejsce od konca\nD. Amy zajela trzecie miejsce od konca\nE. Joe zajal trzecie miejsce od konca\nF. Mel zajal trzecie miejsce od konca\nG. Ada zajela trzecie miejsce od konca\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "result": "CORRECT",
+            "elapsed": 2.604
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na polce znajduje sie siedem ksiazek: brazowa, szara, pomaranczowa, zielona, czarna, fioletowa i zolta. Fioletowa ksiazka jest najbardziej po lewej. Brazowa ksiazka znajduje sie po prawej stronie zoltej ksiazki. Zielona ksiazka znajduje sie po lewej stronie pomaranczowej ksiazki. Pomaranczowa ksiazka znajduje sie po lewej stronie szarej ksiazki. Czarna ksiazka jest trzecia od lewej. Zielona ksiazka jest trzecia od prawej.</PYTANIE>\n<ODPOWIEDZI>\nA. Brazowa ksiazka jest trzecia od lewej\nB. Szara ksiazka jest trzecia od lewej\nC. Pomaranczowa ksiazka jest trzecia od lewej\nD. Zielona ksiazka jest trzecia od lewej\nE. Czarna ksiazka jest trzecia od lewej\nF. Fioletowa ksiazka jest trzecia od lewej\nG. Zolta ksiazka jest trzecia od lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "result": "CORRECT",
+            "elapsed": 3.337
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Sklep z owocami sprzedaje siedem rodzajow owocow: lokwaty, arbuzy, pomarancze, kiwi, jablka, sliwki i brzoskwinie. Sliwki sa najtansze. Arbuzy sa trzecimi najdrozszymi owocami. Jablka sa drozsze niz pomarancze. Kiwi sa najdrozsze. Jablka sa tansze niz brzoskwinie. Lokwaty sa trzecimi najtanszymi owocami.</PYTANIE>\n<ODPOWIEDZI>\nA. Lokwaty sa drugimi najtanszymi owocami\nB. Arbuzy sa drugimi najtanszymi owocami\nC. Pomarancze sa drugimi najtanszymi owocami\nD. Kiwi sa drugimi najtanszymi owocami\nE. Jablka sa drugimi najtanszymi owocami\nF. Sliwki sa drugimi najtanszymi owocami\nG. Brzoskwinie sa drugimi najtanszymi owocami\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.339
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na wystawie zabytkowych samochodow znajduje sie siedem pojazdow: autobus, motocykl, hatchback, kombi, minivan, ciezarowka i limuzyna. Kombi jest czwartym najnowszym pojazdem. Motocykl jest nowszy od ciezarowki. Kombi jest starsze od hatchbacka. Minivan jest nowszy od hatchbacka. Autobus jest nowszy od minivana. Ciezarowka jest nowsza od limuzyny.</PYTANIE>\n<ODPOWIEDZI>\nA. Autobus jest czwartym najnowszym pojazdem\nB. Motocykl jest czwartym najnowszym pojazdem\nC. Hatchback jest czwartym najnowszym pojazdem\nD. Kombi jest czwartym najnowszym pojazdem\nE. Minivan jest czwartym najnowszym pojazdem\nF. Ciezarowka jest czwartym najnowszym pojazdem\nG. Limuzyna jest czwartym najnowszym pojazdem\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "CORRECT",
+            "elapsed": 3.18
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na wystawie zabytkowych samochodow znajduje sie siedem pojazdow: limuzyna, kabriolet, kombi, minivan, autobus, ciagnik i ciezarowka. Minivan jest najstarszym pojazdem. Ciezarowka jest starsza od kombi. Ciezarowka jest nowsza od limuzyny. Autobus jest nowszy od kabrioletu. Autobus jest starszy od ciagnika. Limuzyna jest nowsza od ciagnika.</PYTANIE>\n<ODPOWIEDZI>\nA. Limuzyna jest trzecim najstarszym pojazdem\nB. Kabriolet jest trzecim najstarszym pojazdem\nC. Kombi jest trzecim najstarszym pojazdem\nD. Minivan jest trzecim najstarszym pojazdem\nE. Autobus jest trzecim najstarszym pojazdem\nF. Ciagnik jest trzecim najstarszym pojazdem\nG. Ciezarowka jest trzecim najstarszym pojazdem\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.023
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Sklep z owocami sprzedaje siedem rodzajow owocow: pomarancze, lokwaty, jablka, kiwi, mango, sliwki i brzoskwinie. Jablka sa drugimi najtanszymi owocami. Brzoskwinie sa najtansze. Sliwki sa czwartymi najdrozszymi owocami. Lokwaty sa trzecimi najtanszymi owocami. Kiwi sa drozsze niz mango. Pomarancze sa tansze niz mango.</PYTANIE>\n<ODPOWIEDZI>\nA. Pomarancze sa czwartymi najdrozszymi owocami\nB. Lokwaty sa czwartymi najdrozszymi owocami\nC. Jablka sa czwartymi najdrozszymi owocami\nD. Kiwi sa czwartymi najdrozszymi owocami\nE. Mango sa czwartymi najdrozszymi owocami\nF. Sliwki sa czwartymi najdrozszymi owocami\nG. Brzoskwinie sa czwartymi najdrozszymi owocami\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "result": "CORRECT",
+            "elapsed": 3.545
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. W turnieju golfowym uczestniczylo siedmiu golfistow: Ana, Eve, Ada, Dan, Rob, Amy i Joe. Dan zajal trzecie miejsce. Ana zajela miejsce wyzsze niz Ada. Amy zajela ostatnie miejsce. Dan zajal miejsce nizsze niz Rob. Eve zajela miejsce nizsze niz Ada. Rob zajal miejsce nizsze niz Joe.</PYTANIE>\n<ODPOWIEDZI>\nA. Ana zajela drugie miejsce\nB. Eve zajela drugie miejsce\nC. Ada zajela drugie miejsce\nD. Dan zajal drugie miejsce\nE. Rob zajal drugie miejsce\nF. Amy zajela drugie miejsce\nG. Joe zajal drugie miejsce\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.563
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na galezi siedzi siedem ptakow: kardynal, sojka, rudzik, sokol, przepiorka, koliber i kruk. Sokol znajduje sie po prawej stronie przepiorki. Rudzik znajduje sie po prawej stronie kolibra. Kruk znajduje sie po lewej stronie przepiorki. Sojka jest druga od lewej. Rudzik jest trzeci od lewej. Kardynal jest trzeci od prawej.</PYTANIE>\n<ODPOWIEDZI>\nA. Kardynal jest najbardziej po prawej\nB. Sojka jest najbardziej po prawej\nC. Rudzik jest najbardziej po prawej\nD. Sokol jest najbardziej po prawej\nE. Przepiorka jest najbardziej po prawej\nF. Koliber jest najbardziej po prawej\nG. Kruk jest najbardziej po prawej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.725
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na galezi siedzi siedem ptakow: kardynal, sojka, rudzik, sokol, przepiorka, koliber i kruk. Sokol znajduje sie po prawej stronie przepiorki. Rudzik znajduje sie po prawej stronie kolibra. Kruk znajduje sie po lewej stronie przepiorki. Sojka jest druga od lewej. Rudzik jest trzeci od lewej. Kardynal jest trzeci od prawej.</PYTANIE>\n<ODPOWIEDZI>\nA. Kardynal jest najbardziej po lewej\nB. Sojka jest najbardziej po lewej\nC. Rudzik jest najbardziej po lewej\nD. Sokol jest najbardziej po lewej\nE. Przepiorka jest najbardziej po lewej\nF. Koliber jest najbardziej po lewej\nG. Kruk jest najbardziej po lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.442
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na polce znajduje sie siedem ksiazek: pomaranczowa, czerwona, zielona, biala, fioletowa, brazowa i zolta. Zielona ksiazka znajduje sie po lewej stronie fioletowej ksiazki. Biala ksiazka znajduje sie po prawej stronie pomaranczowej ksiazki. Zielona ksiazka znajduje sie po prawej stronie brazowej ksiazki. Zolta ksiazka znajduje sie po prawej stronie bialej ksiazki. Czerwona ksiazka znajduje sie po prawej stronie zoltej ksiazki. Brazowa ksiazka znajduje sie po prawej stronie czerwonej ksiazki.</PYTANIE>\n<ODPOWIEDZI>\nA. Pomaranczowa ksiazka jest najbardziej po prawej\nB. Czerwona ksiazka jest najbardziej po prawej\nC. Zielona ksiazka jest najbardziej po prawej\nD. Biala ksiazka jest najbardziej po prawej\nE. Fioletowa ksiazka jest najbardziej po prawej\nF. Brazowa ksiazka jest najbardziej po prawej\nG. Zolta ksiazka jest najbardziej po prawej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.464
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. W turnieju golfowym uczestniczylo siedmiu golfistow: Joe, Mel, Mya, Eve, Rob, Ada i Dan. Rob zajal pierwsze miejsce. Eve zajela ostatnie miejsce. Dan zajal miejsce wyzsze niz Ada. Mel zajal miejsce wyzsze niz Mya. Joe zajal przedostatnie miejsce. Mya zajela trzecie miejsce.</PYTANIE>\n<ODPOWIEDZI>\nA. Joe zajal drugie miejsce\nB. Mel zajal drugie miejsce\nC. Mya zajela drugie miejsce\nD. Eve zajela drugie miejsce\nE. Rob zajal drugie miejsce\nF. Ada zajela drugie miejsce\nG. Dan zajal drugie miejsce\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.459
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. W turnieju golfowym uczestniczylo siedmiu golfistow: Mya, Eli, Ana, Amy, Mel, Dan i Joe. Amy zajela miejsce ponizej Joe. Dan zajal miejsce powyzej Mya. Eli zajal trzecie miejsce. Ana zajela pierwsze miejsce. Amy zajela przedostatnie miejsce. Mya zajela czwarte miejsce.</PYTANIE>\n<ODPOWIEDZI>\nA. Mya zajela pierwsze miejsce\nB. Eli zajal pierwsze miejsce\nC. Ana zajela pierwsze miejsce\nD. Amy zajela pierwsze miejsce\nE. Mel zajal pierwsze miejsce\nF. Dan zajal pierwsze miejsce\nG. Joe zajal pierwsze miejsce\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "CORRECT",
+            "elapsed": 2.169
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na polce znajduje sie siedem ksiazek: brazowa, biala, czarna, zolta, pomaranczowa, niebieska i zielona. Zolta ksiazka jest najbardziej po prawej. Niebieska ksiazka znajduje sie po lewej stronie pomaranczowej ksiazki. Zielona ksiazka znajduje sie po prawej stronie bialej ksiazki. Niebieska ksiazka znajduje sie po prawej stronie zielonej ksiazki. Czarna ksiazka jest czwarta od lewej. Brazowa ksiazka jest trzecia od prawej.</PYTANIE>\n<ODPOWIEDZI>\nA. Brazowa ksiazka jest czwarta od lewej\nB. Biala ksiazka jest czwarta od lewej\nC. Czarna ksiazka jest czwarta od lewej\nD. Zolta ksiazka jest czwarta od lewej\nE. Pomaranczowa ksiazka jest czwarta od lewej\nF. Niebieska ksiazka jest czwarta od lewej\nG. Zielona ksiazka jest czwarta od lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "CORRECT",
+            "elapsed": 3.425
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. W turnieju golfowym uczestniczylo siedmiu golfistow: Joe, Rob, Eli, Dan, Mya, Ada i Ana. Joe zajal wyzsza pozycje niz Ana. Ana zajela przedostatnie miejsce. Mya zajela czwarte miejsce. Dan zajal trzecie miejsce. Ada zajela drugie miejsce. Eli zajal trzecie od konca miejsce.</PYTANIE>\n<ODPOWIEDZI>\nA. Joe zajal przedostatnie miejsce\nB. Rob zajal przedostatnie miejsce\nC. Eli zajal przedostatnie miejsce\nD. Dan zajal przedostatnie miejsce\nE. Mya zajela przedostatnie miejsce\nF. Ada zajela przedostatnie miejsce\nG. Ana zajela przedostatnie miejsce\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "result": "CORRECT",
+            "elapsed": 2.567
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Sklep z owocami sprzedaje siedem rodzajow owocow: arbuzy, pomarancze, mango, kantalupy, kiwi, gruszki i brzoskwinie. Gruszki sa drugimi najtanszymi owocami. Brzoskwinie sa drozsze niz kantalupy. Brzoskwinie sa tansze niz mango. Kantalupy sa drozsze niz kiwi. Pomarancze sa czwartymi najdrozszymi owocami. Arbuzy sa drugimi najdrozszymi owocami.</PYTANIE>\n<ODPOWIEDZI>\nA. Arbuzy sa trzecimi najtanszymi owocami\nB. Pomarancze sa trzecimi najtanszymi owocami\nC. Mango sa trzecimi najtanszymi owocami\nD. Kantalupy sa trzecimi najtanszymi owocami\nE. Kiwi sa trzecimi najtanszymi owocami\nF. Gruszki sa trzecimi najtanszymi owocami\nG. Brzoskwinie sa trzecimi najtanszymi owocami\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.456
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na polce znajduje sie siedem ksiazek: zolta, brazowa, biala, pomaranczowa, czarna, niebieska i fioletowa. Czarna ksiazka jest druga od lewej. Biala ksiazka znajduje sie po prawej stronie pomaranczowej ksiazki. Czarna ksiazka znajduje sie po prawej stronie brazowej ksiazki. Zolta ksiazka jest trzecia od prawej. Fioletowa ksiazka jest trzecia od lewej. Pomaranczowa ksiazka jest druga od prawej.</PYTANIE>\n<ODPOWIEDZI>\nA. Zolta ksiazka jest druga od lewej\nB. Brazowa ksiazka jest druga od lewej\nC. Biala ksiazka jest druga od lewej\nD. Pomaranczowa ksiazka jest druga od lewej\nE. Czarna ksiazka jest druga od lewej\nF. Niebieska ksiazka jest druga od lewej\nG. Fioletowa ksiazka jest druga od lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "result": "CORRECT",
+            "elapsed": 3.202
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. W turnieju golfowym uczestniczylo siedmiu golfistow: Joe, Dan, Ada, Amy, Rob, Mya i Mel. Ada zajela miejsce za Amy. Joe zajal miejsce za Danem. Dan zajal miejsce za Ada. Mel zajal trzecie miejsce od konca. Amy zajela trzecie miejsce. Rob zajal miejsce za Mya.</PYTANIE>\n<ODPOWIEDZI>\nA. Joe zajal trzecie miejsce\nB. Dan zajal trzecie miejsce\nC. Ada zajela trzecie miejsce\nD. Amy zajela trzecie miejsce\nE. Rob zajal trzecie miejsce\nF. Mya zajela trzecie miejsce\nG. Mel zajal trzecie miejsce\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "CORRECT",
+            "elapsed": 2.452
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. W jednym ze straganow z owocami mozna kupic siedem rodzajow owocow: sliwki, kiwi, kantalupy, gruszki, arbuzy, jablka i lokwaty. Arbuzy sa drozsze niz kantalupy. Jablka sa tansze niz kantalupy. Arbuzy sa drugimi najdrozszymi owocami. Lokwaty sa tansze niz kiwi. Jablka sa drozsze niz lokwaty. Lokwaty sa trzecimi najtanszymi owocami. Sliwki sa najtansze.</PYTANIE>\n<ODPOWIEDZI>\nA. Sliwki sa trzecimi najtanszymi owocami\nB. Kiwi sa trzecimi najtanszymi owocami\nC. Kantalupy sa trzecimi najtanszymi owocami\nD. Gruszki sa trzecimi najtanszymi owocami\nE. Arbuzy sa trzecimi najtanszymi owocami\nF. Jablka sa trzecimi najtanszymi owocami\nG. Lokwaty sa trzecimi najtanszymi owocami\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "result": "CORRECT",
+            "elapsed": 3.452
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na galezi siedzi siedem ptakow: kruk, kardynal, sokol, sowa, sojka, przepiorka i rudzik. Sowa jest druga od prawej. Kardynal jest czwarty od lewej. Sokol znajduje sie po lewej stronie sojki. Przepiorka znajduje sie po lewej stronie sokola. Kruk jest drugi od lewej. Rudzik znajduje sie po lewej stronie przepiorki.</PYTANIE>\n<ODPOWIEDZI>\nA. Kruk jest drugi od prawej\nB. Kardynal jest drugi od prawej\nC. Sokol jest drugi od prawej\nD. Sowa jest druga od prawej\nE. Sojka jest druga od prawej\nF. Przepiorka jest druga od prawej\nG. Rudzik jest drugi od prawej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "CORRECT",
+            "elapsed": 2.674
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na polce znajduje sie siedem ksiazek: zolta, czerwona, szara, niebieska, biala, pomaranczowa  i fioletowa. Czerwona ksiazka jest trzecia od prawej. Biala ksiazka znajduje sie po prawej stronie pomaranczowej ksiazki. Fioletowa ksiazka jest trzecia od lewej. Zolta ksiazka znajduje sie po prawej stronie fioletowej ksiazki. Niebieska ksiazka znajduje sie po prawej stronie czerwonej ksiazki. Niebieska ksiazka znajduje sie po lewej stronie szarej ksiazki.</PYTANIE>\n<ODPOWIEDZI>\nA. Zolta ksiazka jest najbardziej po prawej\nB. Czerwona ksiazka jest najbardziej po prawej\nC. Szara ksiazka jest najbardziej po prawej\nD. Niebieska ksiazka jest najbardziej po prawej\nE. Biala ksiazka jest najbardziej po prawej\nF. Pomaranczowa ksiazka jest najbardziej po prawej\nG. Fioletowa ksiazka jest najbardziej po prawej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.412
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na galezi siedzi siedem ptakow: jastrzab, wrona, sowa, kruk, sokol, przepiorka i koliber. Koliber jest drugi od lewej. Kruk jest czwarty od lewej. Kruk jest po prawej stronie jastrzebia. Sowa jest po prawej stronie wrony. Sokol jest najbardziej po prawej. Jastrzab jest po prawej stronie kolibra. Przepiorka jest druga od prawej.</PYTANIE>\n<ODPOWIEDZI>\nA. Jastrzab jest trzeci od prawej\nB. Wrona jest trzecia od prawej\nC. Sowa jest trzecia od prawej\nD. Kruk jest trzeci od prawej\nE. Sokol jest trzeci od prawej\nF. Przepiorka jest trzecia od prawej\nG. Koliber jest trzeci od prawej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "CORRECT",
+            "elapsed": 2.8
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na polce znajduje sie siedem ksiazek: pomaranczowa, zielona, szara, fioletowa, czarna, zolta i biala. Pomaranczowa ksiazka znajduje sie po prawej stronie szarej ksiazki. Zolta ksiazka jest trzecia od prawej. Fioletowa ksiazka jest druga od lewej. Zolta ksiazka znajduje sie po prawej stronie pomaranczowej ksiazki. Biala ksiazka jest druga od prawej. Czarna ksiazka jest najbardziej po lewej.</PYTANIE>\n<ODPOWIEDZI>\nA. Pomaranczowa ksiazka jest najbardziej po lewej\nB. Zielona ksiazka jest najbardziej po lewej\nC. Szara ksiazka jest najbardziej po lewej\nD. Fioletowa ksiazka jest najbardziej po lewej\nE. Czarna ksiazka jest najbardziej po lewej\nF. Zolta ksiazka jest najbardziej po lewej\nG. Biala ksiazka jest najbardziej po lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "result": "CORRECT",
+            "elapsed": 3.193
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na galezi siedzi siedem ptakow: sojka, sokol, kruk, wrona, rudzik, sowa i koliber. Rudzik znajduje sie po lewej stronie sowy. Wrona jest najbardziej po prawej. Koliber jest czwarty od lewej. Sowa jest trzecia od prawej. Sojka znajduje sie po lewej stronie rudzika. Kruk jest drugi od lewej.</PYTANIE>\n<ODPOWIEDZI>\nA. Sojka jest druga od prawej\nB. Sokol jest drugi od prawej\nC. Kruk jest drugi od prawej\nD. Wrona jest druga od prawej\nE. Rudzik jest drugi od prawej\nF. Sowa jest druga od prawej\nG. Koliber jest drugi od prawej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.616
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na polce znajduje sie siedem ksiazek: brazowa, biala, czarna, zolta, pomaranczowa, niebieska i zielona. Zolta ksiazka jest najbardziej po prawej. Niebieska ksiazka znajduje sie po lewej stronie pomaranczowej ksiazki. Zielona ksiazka znajduje sie po prawej stronie bialej ksiazki. Niebieska ksiazka znajduje sie po prawej stronie zielonej ksiazki. Czarna ksiazka jest czwarta od lewej. Brazowa ksiazka jest trzecia od prawej.</PYTANIE>\n<ODPOWIEDZI>\nA. Brazowa ksiazka jest najbardziej po prawej\nB. Biala ksiazka jest najbardziej po prawej\nC. Czarna ksiazka jest najbardziej po prawej\nD. Zolta ksiazka jest najbardziej po prawej\nE. Pomaranczowa ksiazka jest najbardziej po prawej\nF. Niebieska ksiazka jest najbardziej po prawej\nG. Zielona ksiazka jest najbardziej po prawej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "CORRECT",
+            "elapsed": 3.239
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na wystawie zabytkowych samochodow znajduje sie siedem pojazdow: kombi, sedan, autobus, motocykl, hatchback, ciagnik i minivan. Sedan jest trzecim najstarszym pojazdem. Ciagnik jest nowszy niz motocykl. Autobus jest starszy niz motocykl. Autobus jest nowszy niz hatchback. Minivan jest najnowszym pojazdem. Kombi jest najstarszym pojazdem.</PYTANIE>\n<ODPOWIEDZI>\nA. Kombi jest drugim najnowszym pojazdem\nB. Sedan jest drugim najnowszym pojazdem\nC. Autobus jest drugim najnowszym pojazdem\nD. Motocykl jest drugim najnowszym pojazdem\nE. Hatchback jest drugim najnowszym pojazdem\nF. Ciagnik jest drugim najnowszym pojazdem\nG. Minivan jest drugim najnowszym pojazdem\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.935
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Sklep z owocami sprzedaje siedem rodzajow owocow: jablka, sliwki, mango, arbuzy, pomarancze, kiwi i lokwaty. Arbuzy sa tansze niz sliwki. Arbuzy sa drozsze niz pomarancze. Kiwi sa tansze niz pomarancze. Jablka sa drozsze niz lokwaty. Sliwki sa tansze niz mango. Mango sa trzecimi najdrozszymi owocami.</PYTANIE>\n<ODPOWIEDZI>\nA. Jablka sa najtansze\nB. Sliwki sa najtansze\nC. Mango sa najtansze\nD. Arbuzy sa najtansze\nE. Pomarancze sa najtansze\nF. Kiwi sa najtansze\nG. Lokwaty sa najtansze\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.804
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na polce znajduje sie siedem ksiazek: zielona, brazowa, biala, czarna, pomaranczowa, fioletowa i zolta. Fioletowa ksiazka znajduje sie po lewej stronie zoltej ksiazki. Zielona ksiazka znajduje sie po lewej stronie bialej ksiazki. Brazowa ksiazka znajduje sie po prawej stronie zoltej ksiazki. Biala ksiazka jest czwarta od lewej. Zielona ksiazka znajduje sie po prawej stronie pomaranczowej ksiazki. Czarna ksiazka jest druga od lewej.</PYTANIE>\n<ODPOWIEDZI>\nA. Zielona ksiazka jest najbardziej po lewej\nB. Brazowa ksiazka jest najbardziej po lewej\nC. Biala ksiazka jest najbardziej po lewej\nD. Czarna ksiazka jest najbardziej po lewej\nE. Pomaranczowa ksiazka jest najbardziej po lewej\nF. Fioletowa ksiazka jest najbardziej po lewej\nG. Zolta ksiazka jest najbardziej po lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.31
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. W turnieju golfowym uczestniczylo siedmiu golfistow: Joe, Rob, Eli, Dan, Mya, Ada i Ana. Joe zajal wyzsza pozycje niz Ana. Ana zajela przedostatnie miejsce. Mya zajela czwarte miejsce. Dan zajal trzecie miejsce. Ada zajela drugie miejsce. Eli zajal trzecie od konca miejsce.</PYTANIE>\n<ODPOWIEDZI>\nA. Joe zajal czwarte miejsce\nB. Rob zajal czwarte miejsce\nC. Eli zajal czwarte miejsce\nD. Dan zajal czwarte miejsce\nE. Mya zajela czwarte miejsce\nF. Ada zajela czwarte miejsce\nG. Ana zajela czwarte miejsce\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "result": "CORRECT",
+            "elapsed": 2.583
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na galezi siedzi siedem ptakow: rudzik, koliber, kruk, sojka, wrona, kardynal i przepiorka. Koliber znajduje sie po lewej stronie wrony. Kardynal znajduje sie po prawej stronie przepiorki. Sojka jest czwartym ptakiem od lewej. Rudzik jest drugim ptakiem od lewej. Przepiorka znajduje sie po prawej stronie wrony. Kruk znajduje sie po lewej stronie rudzika.</PYTANIE>\n<ODPOWIEDZI>\nA. Rudzik jest najbardziej po lewej\nB. Koliber jest najbardziej po lewej\nC. Kruk jest najbardziej po lewej\nD. Sojka jest najbardziej po lewej\nE. Wrona jest najbardziej po lewej\nF. Kardynal jest najbardziej po lewej\nG. Przepiorka jest najbardziej po lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.908
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Sklep z owocami sprzedaje siedem rodzajow owocow: lokwaty, kantalupy, arbuzy, jablka, pomarancze, gruszki i mango. Pomarancze sa drugimi najtanszymi owocami. Jablka sa tansze niz gruszki. Mango sa drozsze niz kantalupy. Mango sa trzecimi najtanszymi owocami. Arbuzy sa drugimi najdrozszymi owocami. Lokwaty sa trzecimi najdrozszymi owocami.</PYTANIE>\n<ODPOWIEDZI>\nA. Lokwaty sa czwartymi najdrozszymi owocami\nB. Kantalupy sa czwartymi najdrozszymi owocami\nC. Arbuzy sa czwartymi najdrozszymi owocami\nD. Jablka sa czwartymi najdrozszymi owocami\nE. Pomarancze sa czwartymi najdrozszymi owocami\nF. Gruszki sa czwartymi najdrozszymi owocami\nG. Mango sa czwartymi najdrozszymi owocami\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.628
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na wystawie zabytkowych samochodow znajduje sie siedem pojazdow: autobus, motocykl, hatchback, kombi, minivan, ciezarowka i limuzyna. Kombi jest czwartym najnowszym pojazdem. Motocykl jest nowszy od ciezarowki. Kombi jest starsze od hatchbacka. Minivan jest nowszy od hatchbacka. Autobus jest nowszy od minivana. Ciezarowka jest nowsza od limuzyny.</PYTANIE>\n<ODPOWIEDZI>\nA. Autobus jest najnowszy\nB. Motocykl jest najnowszy\nC. Hatchback jest najnowszy\nD. Kombi jest najnowsze\nE. Minivan jest najnowszy\nF. Ciezarowka jest najnowsza\nG. Limuzyna jest najnowsza\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.844
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Sklep z owocami sprzedaje siedem rodzajow owocow: lokwaty, arbuzy, pomarancze, kiwi, jablka, sliwki i brzoskwinie. Sliwki sa najtansze. Arbuzy sa trzecimi najdrozszymi owocami. Jablka sa drozsze niz pomarancze. Kiwi sa najdrozsze. Jablka sa tansze niz brzoskwinie. Lokwaty sa trzecimi najtanszymi owocami.</PYTANIE>\n<ODPOWIEDZI>\nA. Lokwaty sa czwartymi najdrozszymi owocami\nB. Arbuzy sa czwartymi najdrozszymi owocami\nC. Pomarancze sa czwartymi najdrozszymi owocami\nD. Kiwi sa czwartymi najdrozszymi owocami\nE. Jablka sa czwartymi najdrozszymi owocami\nF. Sliwki sa czwartymi najdrozszymi owocami\nG. Brzoskwinie sa czwartymi najdrozszymi owocami\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.654
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na wystawie zabytkowych samochodow znajduje sie siedem pojazdow: limuzyna, ciezarowka, sedan, ciagnik, minivan, motocykl i hatchback. Minivan jest starszy od ciagnika. Hatchback jest starszy od sedana. Ciezarowka jest trzecia najnowsza. Hatchback jest drugi najnowszy. Ciagnik jest starszy od limuzyny. Motocykl jest nowszy od limuzyny.</PYTANIE>\n<ODPOWIEDZI>\nA. Limuzyna jest trzecia najstarsza\nB. Ciezarowka jest trzecia najstarsza\nC. Sedan jest trzeci najstarszy\nD. Ciagnik jest trzeci najstarszy\nE. Minivan jest trzeci najstarszy\nF. Motocykl jest trzeci najstarszy\nG. Hatchback jest trzeci najstarszy\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.852
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na galezi siedzi siedem ptakow: sojka, sowa, sokol, jastrzab, kruk, wrona i koliber. Sokol jest drugi od lewej. Wrona jest najbardziej po prawej. Koliber jest po prawej stronie sojki. Jastrzab jest po prawej stronie kolibra. Sojka jest po prawej stronie sowy. Kruk jest po lewej stronie sokola.</PYTANIE>\n<ODPOWIEDZI>\nA. Sojka jest czwarta od lewej\nB. Sowa jest czwarta od lewej\nC. Sokol jest czwarty od lewej\nD. Jastrzab jest czwarty od lewej\nE. Kruk jest czwarty od lewej\nF. Wrona jest czwarta od lewej\nG. Koliber jest czwarty od lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.824
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na galezi siedzi siedem ptakow: jastrzab, kruk, sokol, wrona, koliber, rudzik i kardynal. Jastrzab jest drugi od prawej. Rudzik jest po lewej stronie kruka. Kruk jest po lewej stronie wrony. Sokol jest po lewej stronie kardynala. Koliber jest drugi od lewej. Sokol jest trzeci od prawej.</PYTANIE>\n<ODPOWIEDZI>\nA. Jastrzab jest trzeci od lewej\nB. Kruk jest trzeci od lewej\nC. Sokol jest trzeci od lewej\nD. Wrona jest trzecia od lewej\nE. Koliber jest trzeci od lewej\nF. Rudzik jest trzeci od lewej\nG. Kardynal jest trzeci od lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.578
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na galezi siedzi siedem ptakow: rudzik, sowa, przepiorka, sokol, koliber, kardynal i wrona. Koliber znajduje sie po lewej stronie sokola. Wrona znajduje sie po prawej stronie kardynala. Kardynal jest drugi od prawej. Przepiorka jest trzecia od prawej. Sokol znajduje sie po lewej stronie rudzika. Sowa jest druga od lewej.</PYTANIE>\n<ODPOWIEDZI>\nA. Rudzik jest trzeci od lewej\nB. Sowa jest trzecia od lewej\nC. Przepiorka jest trzeci od lewej\nD. Sokol jest trzeci od lewej\nE. Koliber jest trzeci od lewej\nF. Kardynal jest trzeci od lewej\nG. Wrona jest trzecia od lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.665
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na wystawie zabytkowych samochodow znajduje sie siedem pojazdow: limuzyna, sedan, ciagnik, motocykl, minivan, hatchback i ciezarowka. Minivan jest nowszy niz limuzyna. Ciagnik jest drugim najnowszym pojazdem. Ciezarowka jest starsza niz sedan. Minivan jest starszy niz ciezarowka. Hatchback jest nowszy niz ciagnik. Motocykl jest czwartym najnowszym pojazdem.</PYTANIE>\n<ODPOWIEDZI>\nA. Limuzyna jest czwartym najnowszym pojazdem\nB. Sedan jest czwartym najnowszym pojazdem\nC. Ciagnik jest czwartym najnowszym pojazdem\nD. Motocykl jest czwartym najnowszym pojazdem\nE. Minivan jest czwartym najnowszym pojazdem\nF. Hatchback jest czwartym najnowszym pojazdem\nG. Ciezarowka jest czwartym najnowszym pojazdem\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "CORRECT",
+            "elapsed": 3.208
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na wystawie zabytkowych samochodow znajduje sie siedem pojazdow: kabriolet, limuzyna, hatchback, autobus, kombi, ciagnik i minivan. Kombi jest czwartym najnowszym pojazdem. Hatchback jest starszy od autobusu. Hatchback jest drugim najnowszym pojazdem. Minivan jest nowszy od limuzyny. Kabriolet jest starszy od limuzyny. Ciagnik jest drugim najstarszym pojazdem.</PYTANIE>\n<ODPOWIEDZI>\nA. Kabriolet jest drugim najstarszym pojazdem\nB. Limuzyna jest drugim najstarszym pojazdem\nC. Hatchback jest drugim najstarszym pojazdem\nD. Autobus jest drugim najstarszym pojazdem\nE. Kombi jest drugim najstarszym pojazdem\nF. Ciagnik jest drugim najstarszym pojazdem\nG. Minivan jest drugim najstarszym pojazdem\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "result": "CORRECT",
+            "elapsed": 2.89
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na polce znajduje sie siedem ksiazek: zielona, brazowa, biala, czarna, pomaranczowa, fioletowa i zolta. Fioletowa ksiazka znajduje sie po lewej stronie zoltej ksiazki. Zielona ksiazka znajduje sie po lewej stronie bialej ksiazki. Brazowa ksiazka znajduje sie po prawej stronie zoltej ksiazki. Biala ksiazka jest czwarta od lewej. Zielona ksiazka znajduje sie po prawej stronie pomaranczowej ksiazki. Czarna ksiazka jest druga od lewej.</PYTANIE>\n<ODPOWIEDZI>\nA. Zielona ksiazka jest druga od prawej\nB. Brazowa ksiazka jest druga od prawej\nC. Biala ksiazka jest druga od prawej\nD. Czarna ksiazka jest druga od prawej\nE. Pomaranczowa ksiazka jest druga od prawej\nF. Fioletowa ksiazka jest druga od prawej\nG. Zolta ksiazka jest druga od prawej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.287
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na polce znajduje sie siedem ksiazek: biala, szara, zolta, fioletowa, czerwona, czarna i zielona. Czarna ksiazka jest druga od prawej. Czerwona ksiazka znajduje sie po lewej stronie zielonej ksiazki. Czerwona ksiazka jest druga od lewej. Szara ksiazka jest trzecia od prawej. Zolta ksiazka jest trzecia od lewej. Biala ksiazka jest czwarta od lewej.</PYTANIE>\n<ODPOWIEDZI>\nA. Biala ksiazka jest najbardziej po lewej\nB. Szara ksiazka jest najbardziej po lewej\nC. Zolta ksiazka jest najbardziej po lewej\nD. Fioletowa ksiazka jest najbardziej po lewej\nE. Czerwona ksiazka jest najbardziej po lewej\nF. Czarna ksiazka jest najbardziej po lewej\nG. Zielona ksiazka jest najbardziej po lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.94
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. W turnieju golfowym uczestniczylo siedmiu golfistow: Ada, Amy, Eli, Rob, Joe, Eve i Ana. Rob zajal drugie miejsce. Rob zajal wyzsza pozycje niz Eve. Joe zajal wyzsza pozycje niz Ada. Joe zajal nizsza pozycje niz Eve. Ada zajela wyzsza pozycje niz Ana. Eli zajal trzecie miejsce od konca.</PYTANIE>\n<ODPOWIEDZI>\nA. Ada zajela drugie miejsce\nB. Amy zajela drugie miejsce\nC. Eli zajal drugie miejsce\nD. Rob zajal drugie miejsce\nE. Joe zajal drugie miejsce\nF. Eve zajela drugie miejsce\nG. Ana zajela drugie miejsce\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "CORRECT",
+            "elapsed": 2.549
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. W turnieju golfowym uczestniczylo siedmiu golfistow: Joe, Eli, Ada, Mel, Eve, Rob i Ana. Joe zajal pierwsze miejsce. Mel zajal przedostatnie miejsce. Rob zajal miejsce wyzej niz Eve. Mel zajal miejsce wyzej niz Eli. Rob zajal miejsce nizej niz Ada. Eve zajela czwarte miejsce.</PYTANIE>\n<ODPOWIEDZI>\nA. Joe zajal trzecie miejsce\nB. Eli zajal trzecie miejsce\nC. Ada zajela trzecie miejsce\nD. Mel zajal trzecie miejsce\nE. Eve zajela trzecie miejsce\nF. Rob zajal trzecie miejsce\nG. Ana zajela trzecie miejsce\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.227
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na wystawie zabytkowych samochodow znajduje sie siedem pojazdow: ciezarowka, motocykl, sedan, minivan, kombi, hatchback i ciagnik. Hatchback jest nowszy niz ciezarowka. Sedan jest trzecim najnowszym pojazdem. Kombi jest najnowszym pojazdem. Motocykl jest starszy niz ciezarowka. Minivan jest nowszy niz sedan. Ciagnik jest trzecim najstarszym pojazdem.</PYTANIE>\n<ODPOWIEDZI>\nA. Ciezarowka jest drugim najnowszym pojazdem\nB. Motocykl jest drugim najnowszym pojazdem\nC. Sedan jest drugim najnowszym pojazdem\nD. Minivan jest drugim najnowszym pojazdem\nE. Kombi jest drugim najnowszym pojazdem\nF. Hatchback jest drugim najnowszym pojazdem\nG. Ciagnik jest drugim najnowszym pojazdem\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.104
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Sklep z owocami sprzedaje siedem rodzajow owocow: jablka, gruszki, mango, pomarancze, arbuzy, brzoskwinie i kantalupy. Gruszki sa drozsze niz pomarancze. Pomarancze sa drozsze niz kantalupy. Brzoskwinie sa tansze niz kantalupy. Jablka to trzecie najtansze owoce. Arbuzy to drugie najdrozsze owoce. Mango sa czwartymi najdrozszymi owocami.</PYTANIE>\n<ODPOWIEDZI>\nA. Jablka sa najtansze\nB. Gruszki sa najtansze\nC. Mango sa najtansze\nD. Pomarancze sa najtansze\nE. Arbuzy sa najtansze\nF. Brzoskwinie sa najtansze\nG. Kantalupy sa najtansze\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "result": "CORRECT",
+            "elapsed": 3.051
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na wystawie zabytkowych samochodow znajduje sie siedem pojazdow: ciezarowka, hatchback, minivan, autobus, ciagnik, kombi i kabriolet. Kombi jest czwartym najnowszym pojazdem. Minivan jest trzecim najnowszym pojazdem. Ciagnik jest drugim najstarszym pojazdem. Kabriolet jest starszy od kombi. Ciezarowka jest nowsza od autobusu. Hatchback jest starszy od kabrioletu.</PYTANIE>\n<ODPOWIEDZI>\nA. Ciezarowka jest trzecim najstarszym pojazdem\nB. Hatchback jest trzecim najstarszym pojazdem\nC. Minivan jest trzecim najstarszym pojazdem\nD. Autobus jest trzecim najstarszym pojazdem\nE. Ciagnik jest trzecim najstarszym pojazdem\nF. Kombi jest trzecim najstarszym pojazdem\nG. Kabriolet jest trzecim najstarszym pojazdem\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.189
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na wystawie zabytkowych samochodow znajduje sie siedem pojazdow: limuzyna, minivan, autobus, kombi, ciagnik, ciezarowka i hatchback. Ciezarowka jest najstarsza. Ciagnik jest starszy od minivana. Minivan jest trzecim najnowszym pojazdem. Limuzyna jest czwartym najnowszym pojazdem. Kombi jest nowsze od hatchbacka. Autobus jest drugim najstarszym pojazdem.</PYTANIE>\n<ODPOWIEDZI>\nA. Limuzyna jest trzecim najstarszym pojazdem\nB. Minivan jest trzecim najstarszym pojazdem\nC. Autobus jest trzecim najstarszym pojazdem\nD. Kombi jest trzecim najstarszym pojazdem\nE. Ciagnik jest trzecim najstarszym pojazdem\nF. Ciezarowka jest trzecim najstarszym pojazdem\nG. Hatchback jest trzecim najstarszym pojazdem\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.961
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na galezi siedzi siedem ptakow: sojka, sokol, kruk, wrona, rudzik, sowa i koliber. Rudzik znajduje sie po lewej stronie sowy. Wrona jest najbardziej po prawej. Koliber jest czwarty od lewej. Sowa jest trzecia od prawej. Sojka znajduje sie po lewej stronie rudzika. Kruk jest drugi od lewej.</PYTANIE>\n<ODPOWIEDZI>\nA. Sojka jest najbardziej po prawej\nB. Sokol jest najbardziej po prawej\nC. Kruk jest najbardziej po prawej\nD. Wrona jest najbardziej po prawej\nE. Rudzik jest najbardziej po prawej\nF. Sowa jest najbardziej po prawej\nG. Koliber jest najbardziej po prawej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "CORRECT",
+            "elapsed": 2.573
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. W turnieju golfowym uczestniczylo siedmiu golfistow: Ada, Amy, Eli, Rob, Joe, Eve i Ana. Rob zajal drugie miejsce. Rob zajal wyzsza pozycje niz Eve. Joe zajal wyzsza pozycje niz Ada. Joe zajal nizsza pozycje niz Eve. Ada zajela wyzsza pozycje niz Ana. Eli zajal trzecie miejsce od konca.</PYTANIE>\n<ODPOWIEDZI>\nA. Ada zajela pierwsze miejsce\nB. Amy zajela pierwsze miejsce\nC. Eli zajal pierwsze miejsce\nD. Rob zajal pierwsze miejsce\nE. Joe zajal pierwsze miejsce\nF. Eve zajela pierwsze miejsce\nG. Ana zajela pierwsze miejsce\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.61
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Sklep z owocami sprzedaje siedem rodzajow owocow: arbuzy, mango, kiwi, gruszki, kantalupy, pomarancze i brzoskwinie. Pomarancze sa drozsze niz brzoskwinie. Kantalupy sa czwartymi najdrozszymi owocami. Gruszki sa tansze niz kantalupy. Brzoskwinie sa drugimi najdrozszymi owocami. Mango sa najtansze. Kiwi sa trzecimi najtanszymi owocami.</PYTANIE>\n<ODPOWIEDZI>\nA. Arbuzy sa trzecimi najtanszymi owocami\nB. Mango sa trzecimi najtanszymi owocami\nC. Kiwi sa trzecimi najtanszymi owocami\nD. Gruszki sa trzecimi najtanszymi owocami\nE. Kantalupy sa trzecimi najtanszymi owocami\nF. Pomarancze sa trzecimi najtanszymi owocami\nG. Brzoskwinie sa trzecimi najtanszymi owocami\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "CORRECT",
+            "elapsed": 3.336
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. W turnieju golfowym uczestniczylo siedmiu golfistow: Amy, Eve, Ada, Rob, Dan, Mel i Joe. Joe zajal trzecie miejsce. Dan zajal ostatnie miejsce. Eve zajela pierwsze miejsce. Mel zajal miejsce ponizej Roba. Ada zajela miejsce powyzej Joe. Rob zajal trzecie miejsce od konca.</PYTANIE>\n<ODPOWIEDZI>\nA. Amy zajela pierwsze miejsce\nB. Eve zajela pierwsze miejsce\nC. Ada zajela pierwsze miejsce\nD. Rob zajal pierwsze miejsce\nE. Dan zajal pierwsze miejsce\nF. Mel zajal pierwsze miejsce\nG. Joe zajal pierwsze miejsce\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "CORRECT",
+            "elapsed": 2.313
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na galezi siedzi siedem ptakow: kardynal, sojka, rudzik, wrona, sokol, jastrzab i kruk. Jastrzab jest drugi od prawej. Kruk jest czwarty od lewej. Rudzik jest drugi od lewej. Kardynal znajduje sie po lewej stronie kruka. Sokol znajduje sie po lewej stronie rudzika. Wrona znajduje sie po prawej stronie sojki.</PYTANIE>\n<ODPOWIEDZI>\nA. Kardynal jest czwarty od lewej\nB. Sojka jest czwarta od lewej\nC. Rudzik jest czwarty od lewej\nD. Wrona jest czwarta od lewej\nE. Sokol jest czwarty od lewej\nF. Jastrzab jest czwarty od lewej\nG. Kruk jest czwarty od lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "result": "CORRECT",
+            "elapsed": 2.908
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na galezi siedzi siedem ptakow: kardynal, sojka, rudzik, wrona, sokol, jastrzab i kruk. Jastrzab jest drugi od prawej. Kruk jest czwarty od lewej. Rudzik jest drugi od lewej. Kardynal znajduje sie po lewej stronie kruka. Sokol znajduje sie po lewej stronie rudzika. Wrona znajduje sie po prawej stronie sojki.</PYTANIE>\n<ODPOWIEDZI>\nA. Kardynal jest trzeci od lewej\nB. Sojka jest trzecia od lewej\nC. Rudzik jest trzeci od lewej\nD. Wrona jest trzecia od lewej\nE. Sokol jest trzeci od lewej\nF. Jastrzab jest trzeci od lewej\nG. Kruk jest trzeci od lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.577
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na polce znajduje sie siedem ksiazek: brazowa, szara, pomaranczowa, zielona, czarna, fioletowa i zolta. Fioletowa ksiazka jest najbardziej po lewej. Brazowa ksiazka znajduje sie po prawej stronie zoltej ksiazki. Zielona ksiazka znajduje sie po lewej stronie pomaranczowej ksiazki. Pomaranczowa ksiazka znajduje sie po lewej stronie szarej ksiazki. Czarna ksiazka jest trzecia od lewej. Zielona ksiazka jest trzecia od prawej.</PYTANIE>\n<ODPOWIEDZI>\nA. Brazowa ksiazka jest druga od lewej\nB. Szara ksiazka jest druga od lewej\nC. Pomaranczowa ksiazka jest druga od lewej\nD. Zielona ksiazka jest druga od lewej\nE. Czarna ksiazka jest druga od lewej\nF. Fioletowa ksiazka jest druga od lewej\nG. Zolta ksiazka jest druga od lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.292
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na galezi siedzi siedem ptakow: sokol, wrona, jastrzab, koliber, sojka, rudzik i kruk. Sojka znajduje sie po prawej stronie rudzika. Jastrzab znajduje sie po lewej stronie kolibra. Rudzik jest drugi od prawej. Sokol jest trzeci od lewej. Wrona znajduje sie po prawej stronie kolibra. Kruk jest drugi od lewej.</PYTANIE>\n<ODPOWIEDZI>\nA. Sokol jest czwarty od lewej\nB. Wrona jest czwarta od lewej\nC. Jastrzab jest czwarty od lewej\nD. Koliber jest czwarty od lewej\nE. Sojka jest czwarta od lewej\nF. Rudzik jest czwarty od lewej\nG. Kruk jest czwarty od lewej\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.847
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród podanych.\nPrzemyśl swoją odpowiedź krok po kroku.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Nastepne akapity opisuja zestaw siedmiu obiektow ulozonych w ustalonej kolejnosci. Stwierdzenia sa logicznie spojne w kazdym akapicie. Na wystawie zabytkowych samochodow znajduje sie siedem pojazdow: sedan, ciezarowka, autobus, kombi, ciagnik, kabriolet i limuzyna. Ciezarowka jest najstarsza. Ciagnik jest najnowszy. Sedan jest starszy od kombi. Kombi jest trzecim najnowszym pojazdem. Autobus jest starszy od kabrioletu. Sedan jest nowszy od kabrioletu.</PYTANIE>\n<ODPOWIEDZI>\nA. Sedan jest najstarszy\nB. Ciezarowka jest najstarsza\nC. Autobus jest najstarszy\nD. Kombi jest najstarsze\nE. Ciagnik jest najstarszy\nF. Kabriolet jest najstarszy\nG. Limuzyna jest najstarsza\n</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "CORRECT",
+            "elapsed": 2.709
+          }
+        ]
+      }
+    }
+  },
+  "status": "partial"
+}

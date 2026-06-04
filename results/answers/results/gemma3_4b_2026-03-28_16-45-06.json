@@ -1,0 +1,5699 @@
+{
+  "timestamp": "2026-03-28T16:45:06.450289+00:00",
+  "model": "gemma3:4b",
+  "base_url": "http://localhost:11434/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "elapsed_sec": 2475.81,
+  "datasets": {
+    "diacritic": {
+      "bbh": {
+        "num_sampled": 100,
+        "score_sum": 45.0,
+        "score_avg": 0.45,
+        "error_count": 0,
+        "elapsed_sec": 287.73,
+        "questions": [
+          {
+            "prompt_id": "bbh-diacritic-000",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 5.235
+          },
+          {
+            "prompt_id": "bbh-diacritic-001",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.866
+          },
+          {
+            "prompt_id": "bbh-diacritic-002",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.343
+          },
+          {
+            "prompt_id": "bbh-diacritic-003",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.518
+          },
+          {
+            "prompt_id": "bbh-diacritic-004",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.637
+          },
+          {
+            "prompt_id": "bbh-diacritic-005",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.211
+          },
+          {
+            "prompt_id": "bbh-diacritic-006",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.793
+          },
+          {
+            "prompt_id": "bbh-diacritic-007",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.392
+          },
+          {
+            "prompt_id": "bbh-diacritic-008",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.642
+          },
+          {
+            "prompt_id": "bbh-diacritic-009",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.048
+          },
+          {
+            "prompt_id": "bbh-diacritic-010",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.357
+          },
+          {
+            "prompt_id": "bbh-diacritic-011",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.657
+          },
+          {
+            "prompt_id": "bbh-diacritic-012",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.054
+          },
+          {
+            "prompt_id": "bbh-diacritic-013",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.462
+          },
+          {
+            "prompt_id": "bbh-diacritic-014",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.786
+          },
+          {
+            "prompt_id": "bbh-diacritic-015",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.041
+          },
+          {
+            "prompt_id": "bbh-diacritic-016",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.42
+          },
+          {
+            "prompt_id": "bbh-diacritic-017",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.771
+          },
+          {
+            "prompt_id": "bbh-diacritic-018",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.257
+          },
+          {
+            "prompt_id": "bbh-diacritic-019",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.363
+          },
+          {
+            "prompt_id": "bbh-diacritic-020",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.648
+          },
+          {
+            "prompt_id": "bbh-diacritic-021",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.506
+          },
+          {
+            "prompt_id": "bbh-diacritic-022",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.444
+          },
+          {
+            "prompt_id": "bbh-diacritic-023",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.218
+          },
+          {
+            "prompt_id": "bbh-diacritic-024",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.028
+          },
+          {
+            "prompt_id": "bbh-diacritic-025",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.693
+          },
+          {
+            "prompt_id": "bbh-diacritic-026",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.303
+          },
+          {
+            "prompt_id": "bbh-diacritic-027",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.322
+          },
+          {
+            "prompt_id": "bbh-diacritic-028",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.323
+          },
+          {
+            "prompt_id": "bbh-diacritic-029",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.18
+          },
+          {
+            "prompt_id": "bbh-diacritic-030",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.047
+          },
+          {
+            "prompt_id": "bbh-diacritic-031",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.659
+          },
+          {
+            "prompt_id": "bbh-diacritic-032",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.911
+          },
+          {
+            "prompt_id": "bbh-diacritic-033",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.393
+          },
+          {
+            "prompt_id": "bbh-diacritic-034",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.0
+          },
+          {
+            "prompt_id": "bbh-diacritic-035",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.272
+          },
+          {
+            "prompt_id": "bbh-diacritic-036",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.806
+          },
+          {
+            "prompt_id": "bbh-diacritic-037",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.057
+          },
+          {
+            "prompt_id": "bbh-diacritic-038",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.62
+          },
+          {
+            "prompt_id": "bbh-diacritic-039",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.949
+          },
+          {
+            "prompt_id": "bbh-diacritic-040",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.116
+          },
+          {
+            "prompt_id": "bbh-diacritic-041",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.368
+          },
+          {
+            "prompt_id": "bbh-diacritic-042",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.995
+          },
+          {
+            "prompt_id": "bbh-diacritic-043",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.685
+          },
+          {
+            "prompt_id": "bbh-diacritic-044",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.404
+          },
+          {
+            "prompt_id": "bbh-diacritic-045",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.517
+          },
+          {
+            "prompt_id": "bbh-diacritic-046",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.297
+          },
+          {
+            "prompt_id": "bbh-diacritic-047",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.273
+          },
+          {
+            "prompt_id": "bbh-diacritic-048",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.103
+          },
+          {
+            "prompt_id": "bbh-diacritic-049",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.934
+          },
+          {
+            "prompt_id": "bbh-diacritic-050",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.418
+          },
+          {
+            "prompt_id": "bbh-diacritic-051",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.418
+          },
+          {
+            "prompt_id": "bbh-diacritic-052",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.608
+          },
+          {
+            "prompt_id": "bbh-diacritic-053",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.422
+          },
+          {
+            "prompt_id": "bbh-diacritic-054",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.363
+          },
+          {
+            "prompt_id": "bbh-diacritic-055",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.373
+          },
+          {
+            "prompt_id": "bbh-diacritic-056",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.083
+          },
+          {
+            "prompt_id": "bbh-diacritic-057",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.359
+          },
+          {
+            "prompt_id": "bbh-diacritic-058",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.489
+          },
+          {
+            "prompt_id": "bbh-diacritic-059",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.342
+          },
+          {
+            "prompt_id": "bbh-diacritic-060",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.194
+          },
+          {
+            "prompt_id": "bbh-diacritic-061",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.366
+          },
+          {
+            "prompt_id": "bbh-diacritic-062",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.285
+          },
+          {
+            "prompt_id": "bbh-diacritic-063",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.59
+          },
+          {
+            "prompt_id": "bbh-diacritic-064",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.298
+          },
+          {
+            "prompt_id": "bbh-diacritic-065",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.723
+          },
+          {
+            "prompt_id": "bbh-diacritic-066",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.124
+          },
+          {
+            "prompt_id": "bbh-diacritic-067",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.515
+          },
+          {
+            "prompt_id": "bbh-diacritic-068",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.117
+          },
+          {
+            "prompt_id": "bbh-diacritic-069",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.79
+          },
+          {
+            "prompt_id": "bbh-diacritic-070",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.674
+          },
+          {
+            "prompt_id": "bbh-diacritic-071",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.219
+          },
+          {
+            "prompt_id": "bbh-diacritic-072",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.398
+          },
+          {
+            "prompt_id": "bbh-diacritic-073",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.75
+          },
+          {
+            "prompt_id": "bbh-diacritic-074",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.531
+          },
+          {
+            "prompt_id": "bbh-diacritic-075",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.669
+          },
+          {
+            "prompt_id": "bbh-diacritic-076",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.456
+          },
+          {
+            "prompt_id": "bbh-diacritic-077",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.797
+          },
+          {
+            "prompt_id": "bbh-diacritic-078",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.725
+          },
+          {
+            "prompt_id": "bbh-diacritic-079",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.532
+          },
+          {
+            "prompt_id": "bbh-diacritic-080",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.543
+          },
+          {
+            "prompt_id": "bbh-diacritic-081",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.104
+          },
+          {
+            "prompt_id": "bbh-diacritic-082",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.74
+          },
+          {
+            "prompt_id": "bbh-diacritic-083",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.27
+          },
+          {
+            "prompt_id": "bbh-diacritic-084",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.829
+          },
+          {
+            "prompt_id": "bbh-diacritic-085",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.484
+          },
+          {
+            "prompt_id": "bbh-diacritic-086",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.179
+          },
+          {
+            "prompt_id": "bbh-diacritic-087",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.948
+          },
+          {
+            "prompt_id": "bbh-diacritic-088",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.908
+          },
+          {
+            "prompt_id": "bbh-diacritic-089",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.023
+          },
+          {
+            "prompt_id": "bbh-diacritic-090",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.832
+          },
+          {
+            "prompt_id": "bbh-diacritic-091",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.479
+          },
+          {
+            "prompt_id": "bbh-diacritic-092",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.424
+          },
+          {
+            "prompt_id": "bbh-diacritic-093",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.284
+          },
+          {
+            "prompt_id": "bbh-diacritic-094",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.218
+          },
+          {
+            "prompt_id": "bbh-diacritic-095",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.789
+          },
+          {
+            "prompt_id": "bbh-diacritic-096",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.539
+          },
+          {
+            "prompt_id": "bbh-diacritic-097",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.201
+          },
+          {
+            "prompt_id": "bbh-diacritic-098",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.744
+          },
+          {
+            "prompt_id": "bbh-diacritic-099",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.617
+          }
+        ]
+      }
+    },
+    "identity": {
+      "bbh": {
+        "num_sampled": 100,
+        "score_sum": 43.0,
+        "score_avg": 0.43,
+        "error_count": 0,
+        "elapsed_sec": 283.0,
+        "questions": [
+          {
+            "prompt_id": "bbh-identity-000",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.094
+          },
+          {
+            "prompt_id": "bbh-identity-001",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.974
+          },
+          {
+            "prompt_id": "bbh-identity-002",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.386
+          },
+          {
+            "prompt_id": "bbh-identity-003",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.329
+          },
+          {
+            "prompt_id": "bbh-identity-004",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.674
+          },
+          {
+            "prompt_id": "bbh-identity-005",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.985
+          },
+          {
+            "prompt_id": "bbh-identity-006",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.815
+          },
+          {
+            "prompt_id": "bbh-identity-007",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.13
+          },
+          {
+            "prompt_id": "bbh-identity-008",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.604
+          },
+          {
+            "prompt_id": "bbh-identity-009",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.976
+          },
+          {
+            "prompt_id": "bbh-identity-010",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.369
+          },
+          {
+            "prompt_id": "bbh-identity-011",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.662
+          },
+          {
+            "prompt_id": "bbh-identity-012",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.943
+          },
+          {
+            "prompt_id": "bbh-identity-013",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.453
+          },
+          {
+            "prompt_id": "bbh-identity-014",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.841
+          },
+          {
+            "prompt_id": "bbh-identity-015",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.89
+          },
+          {
+            "prompt_id": "bbh-identity-016",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.434
+          },
+          {
+            "prompt_id": "bbh-identity-017",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.701
+          },
+          {
+            "prompt_id": "bbh-identity-018",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.371
+          },
+          {
+            "prompt_id": "bbh-identity-019",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.272
+          },
+          {
+            "prompt_id": "bbh-identity-020",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.688
+          },
+          {
+            "prompt_id": "bbh-identity-021",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.216
+          },
+          {
+            "prompt_id": "bbh-identity-022",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.402
+          },
+          {
+            "prompt_id": "bbh-identity-023",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.989
+          },
+          {
+            "prompt_id": "bbh-identity-024",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.909
+          },
+          {
+            "prompt_id": "bbh-identity-025",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.682
+          },
+          {
+            "prompt_id": "bbh-identity-026",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.428
+          },
+          {
+            "prompt_id": "bbh-identity-027",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.361
+          },
+          {
+            "prompt_id": "bbh-identity-028",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.169
+          },
+          {
+            "prompt_id": "bbh-identity-029",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.09
+          },
+          {
+            "prompt_id": "bbh-identity-030",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.011
+          },
+          {
+            "prompt_id": "bbh-identity-031",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.648
+          },
+          {
+            "prompt_id": "bbh-identity-032",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.835
+          },
+          {
+            "prompt_id": "bbh-identity-033",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.2
+          },
+          {
+            "prompt_id": "bbh-identity-034",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.991
+          },
+          {
+            "prompt_id": "bbh-identity-035",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.0
+          },
+          {
+            "prompt_id": "bbh-identity-036",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.976
+          },
+          {
+            "prompt_id": "bbh-identity-037",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.983
+          },
+          {
+            "prompt_id": "bbh-identity-038",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.66
+          },
+          {
+            "prompt_id": "bbh-identity-039",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.035
+          },
+          {
+            "prompt_id": "bbh-identity-040",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.036
+          },
+          {
+            "prompt_id": "bbh-identity-041",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.399
+          },
+          {
+            "prompt_id": "bbh-identity-042",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.987
+          },
+          {
+            "prompt_id": "bbh-identity-043",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.551
+          },
+          {
+            "prompt_id": "bbh-identity-044",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.484
+          },
+          {
+            "prompt_id": "bbh-identity-045",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.416
+          },
+          {
+            "prompt_id": "bbh-identity-046",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.091
+          },
+          {
+            "prompt_id": "bbh-identity-047",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.369
+          },
+          {
+            "prompt_id": "bbh-identity-048",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.056
+          },
+          {
+            "prompt_id": "bbh-identity-049",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.941
+          },
+          {
+            "prompt_id": "bbh-identity-050",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.362
+          },
+          {
+            "prompt_id": "bbh-identity-051",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.423
+          },
+          {
+            "prompt_id": "bbh-identity-052",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.728
+          },
+          {
+            "prompt_id": "bbh-identity-053",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.443
+          },
+          {
+            "prompt_id": "bbh-identity-054",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.132
+          },
+          {
+            "prompt_id": "bbh-identity-055",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.444
+          },
+          {
+            "prompt_id": "bbh-identity-056",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.145
+          },
+          {
+            "prompt_id": "bbh-identity-057",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.149
+          },
+          {
+            "prompt_id": "bbh-identity-058",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.545
+          },
+          {
+            "prompt_id": "bbh-identity-059",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.469
+          },
+          {
+            "prompt_id": "bbh-identity-060",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.98
+          },
+          {
+            "prompt_id": "bbh-identity-061",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.426
+          },
+          {
+            "prompt_id": "bbh-identity-062",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.503
+          },
+          {
+            "prompt_id": "bbh-identity-063",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.657
+          },
+          {
+            "prompt_id": "bbh-identity-064",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.097
+          },
+          {
+            "prompt_id": "bbh-identity-065",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.837
+          },
+          {
+            "prompt_id": "bbh-identity-066",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.916
+          },
+          {
+            "prompt_id": "bbh-identity-067",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.541
+          },
+          {
+            "prompt_id": "bbh-identity-068",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.996
+          },
+          {
+            "prompt_id": "bbh-identity-069",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.845
+          },
+          {
+            "prompt_id": "bbh-identity-070",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.83
+          },
+          {
+            "prompt_id": "bbh-identity-071",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.036
+          },
+          {
+            "prompt_id": "bbh-identity-072",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.453
+          },
+          {
+            "prompt_id": "bbh-identity-073",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.768
+          },
+          {
+            "prompt_id": "bbh-identity-074",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.418
+          },
+          {
+            "prompt_id": "bbh-identity-075",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.639
+          },
+          {
+            "prompt_id": "bbh-identity-076",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.36
+          },
+          {
+            "prompt_id": "bbh-identity-077",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.781
+          },
+          {
+            "prompt_id": "bbh-identity-078",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.739
+          },
+          {
+            "prompt_id": "bbh-identity-079",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.526
+          },
+          {
+            "prompt_id": "bbh-identity-080",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.621
+          },
+          {
+            "prompt_id": "bbh-identity-081",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.057
+          },
+          {
+            "prompt_id": "bbh-identity-082",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.739
+          },
+          {
+            "prompt_id": "bbh-identity-083",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.052
+          },
+          {
+            "prompt_id": "bbh-identity-084",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.752
+          },
+          {
+            "prompt_id": "bbh-identity-085",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.57
+          },
+          {
+            "prompt_id": "bbh-identity-086",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.271
+          },
+          {
+            "prompt_id": "bbh-identity-087",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.902
+          },
+          {
+            "prompt_id": "bbh-identity-088",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.024
+          },
+          {
+            "prompt_id": "bbh-identity-089",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.018
+          },
+          {
+            "prompt_id": "bbh-identity-090",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.811
+          },
+          {
+            "prompt_id": "bbh-identity-091",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.511
+          },
+          {
+            "prompt_id": "bbh-identity-092",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.512
+          },
+          {
+            "prompt_id": "bbh-identity-093",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.448
+          },
+          {
+            "prompt_id": "bbh-identity-094",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.325
+          },
+          {
+            "prompt_id": "bbh-identity-095",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.822
+          },
+          {
+            "prompt_id": "bbh-identity-096",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.534
+          },
+          {
+            "prompt_id": "bbh-identity-097",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.999
+          },
+          {
+            "prompt_id": "bbh-identity-098",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.764
+          },
+          {
+            "prompt_id": "bbh-identity-099",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.551
+          }
+        ]
+      }
+    },
+    "punctuation_all": {
+      "bbh": {
+        "num_sampled": 100,
+        "score_sum": 34.0,
+        "score_avg": 0.34,
+        "error_count": 0,
+        "elapsed_sec": 271.02,
+        "questions": [
+          {
+            "prompt_id": "bbh-punctuation_all-000",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.957
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-001",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.737
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-002",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.28
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-003",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.129
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-004",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.554
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-005",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.864
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-006",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.719
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-007",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.978
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-008",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.474
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-009",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.76
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-010",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.269
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-011",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.532
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-012",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.731
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-013",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.339
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-014",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.683
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-015",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.736
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-016",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.305
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-017",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.503
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-018",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.347
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-019",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.141
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-020",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.515
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-021",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.054
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-022",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.3
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-023",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.845
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-024",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.73
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-025",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.566
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-026",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.309
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-027",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.238
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-028",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.03
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-029",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.916
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-030",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.834
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-031",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.535
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-032",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.671
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-033",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.013
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-034",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.81
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-035",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.866
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-036",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.848
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-037",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.822
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-038",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.533
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-039",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.898
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-040",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.91
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-041",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.291
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-042",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.751
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-043",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.4
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-044",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.345
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-045",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.324
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-046",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.944
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-047",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.225
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-048",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.863
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-049",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.653
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-050",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.225
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-051",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.272
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-052",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.571
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-053",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.436
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-054",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.972
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-055",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.381
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-056",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.055
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-057",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.191
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-058",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.532
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-059",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.374
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-060",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.128
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-061",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.343
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-062",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.403
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-063",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.59
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-064",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.972
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-065",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.798
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-066",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.933
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-067",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.517
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-068",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.952
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-069",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.657
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-070",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.714
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-071",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.944
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-072",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.371
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-073",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.682
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-074",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.402
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-075",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.499
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-076",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.32
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-077",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.613
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-078",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.709
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-079",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.51
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-080",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.563
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-081",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.903
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-082",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.593
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-083",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.881
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-084",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.581
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-085",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.46
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-086",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.172
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-087",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.704
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-088",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.952
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-089",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.832
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-090",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.635
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-091",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.411
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-092",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.381
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-093",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.304
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-094",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.246
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-095",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.705
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-096",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.566
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-097",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.875
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-098",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.691
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-099",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.402
+          }
+        ]
+      }
+    },
+    "punctuation_inner": {
+      "bbh": {
+        "num_sampled": 100,
+        "score_sum": 42.0,
+        "score_avg": 0.42,
+        "error_count": 0,
+        "elapsed_sec": 281.7,
+        "questions": [
+          {
+            "prompt_id": "bbh-punctuation_inner-000",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.047
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-001",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.925
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-002",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.342
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-003",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.25
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-004",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.682
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-005",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.972
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-006",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.799
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-007",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.098
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-008",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.581
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-009",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.979
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-010",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.356
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-011",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.673
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-012",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.931
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-013",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.393
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-014",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.783
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-015",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.111
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-016",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.462
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-017",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.667
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-018",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.376
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-019",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.248
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-020",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.712
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-021",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.231
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-022",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.421
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-023",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.968
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-024",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.882
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-025",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.688
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-026",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.41
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-027",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.333
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-028",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.105
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-029",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.053
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-030",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.975
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-031",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.626
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-032",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.811
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-033",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.147
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-034",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.955
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-035",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.946
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-036",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.006
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-037",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.974
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-038",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.669
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-039",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.007
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-040",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.025
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-041",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.379
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-042",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.998
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-043",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.59
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-044",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.403
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-045",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.397
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-046",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.084
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-047",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.402
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-048",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.077
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-049",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.927
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-050",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.372
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-051",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.388
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-052",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.647
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-053",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.434
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-054",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.111
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-055",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.388
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-056",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.154
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-057",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.115
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-058",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.527
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-059",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.421
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-060",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.914
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-061",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.412
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-062",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.423
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-063",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.642
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-064",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.129
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-065",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.848
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-066",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.914
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-067",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.515
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-068",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.963
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-069",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.779
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-070",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.843
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-071",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.033
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-072",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.432
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-073",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.764
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-074",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.41
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-075",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.604
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-076",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.332
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-077",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.719
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-078",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.737
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-079",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.561
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-080",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.615
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-081",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.026
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-082",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.752
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-083",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.967
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-084",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.714
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-085",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.584
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-086",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.266
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-087",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.916
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-088",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.061
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-089",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.02
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-090",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.839
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-091",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.527
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-092",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.493
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-093",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.469
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-094",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.315
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-095",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.818
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-096",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.57
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-097",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.026
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-098",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.728
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-099",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.562
+          }
+        ]
+      }
+    },
+    "spelling_10%": {
+      "bbh": {
+        "num_sampled": 100,
+        "score_sum": 33.0,
+        "score_avg": 0.33,
+        "error_count": 0,
+        "elapsed_sec": 333.43,
+        "questions": [
+          {
+            "prompt_id": "bbh-spelling_10%-000",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.21
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-001",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.596
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-002",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.82
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-003",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 4.005
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-004",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.284
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-005",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.707
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-006",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.237
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-007",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.785
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-008",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.13
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-009",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.632
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-010",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.539
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-011",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.278
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-012",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.625
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-013",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.923
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-014",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.173
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-015",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.459
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-016",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.818
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-017",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.1
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-018",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.939
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-019",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.906
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-020",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.108
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-021",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.99
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-022",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.626
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-023",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.574
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-024",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.668
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-025",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.226
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-026",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.837
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-027",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.786
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-028",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.579
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-029",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.696
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-030",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.567
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-031",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.317
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-032",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.841
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-033",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.823
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-034",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.587
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-035",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.584
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-036",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.481
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-037",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.481
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-038",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.078
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-039",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.15
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-040",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.742
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-041",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.93
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-042",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.525
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-043",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.365
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-044",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.991
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-045",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.171
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-046",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.681
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-047",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.666
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-048",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.522
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-049",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.518
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-050",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.908
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-051",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.908
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-052",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.106
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-053",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.426
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-054",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.897
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-055",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.926
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-056",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.635
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-057",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.671
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-058",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.954
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-059",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.976
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-060",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.519
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-061",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.865
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-062",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.882
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-063",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.24
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-064",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.761
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-065",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.296
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-066",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.534
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-067",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.023
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-068",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.738
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-069",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.42
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-070",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.864
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-071",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.6
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-072",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.782
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-073",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.264
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-074",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.921
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-075",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.021
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-076",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.905
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-077",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.221
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-078",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.098
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-079",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.085
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-080",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.252
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-081",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.364
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-082",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.534
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-083",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.753
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-084",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.297
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-085",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.003
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-086",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.807
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-087",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.396
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-088",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.306
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-089",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.483
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-090",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.511
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-091",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.048
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-092",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.912
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-093",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.891
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-094",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.625
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-095",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.033
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-096",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.594
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-097",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.645
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-098",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.28
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-099",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.948
+          }
+        ]
+      }
+    },
+    "spelling_40%": {
+      "bbh": {
+        "num_sampled": 100,
+        "score_sum": 36.0,
+        "score_avg": 0.36,
+        "error_count": 0,
+        "elapsed_sec": 349.43,
+        "questions": [
+          {
+            "prompt_id": "bbh-spelling_40%-000",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.329
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-001",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.664
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-002",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.901
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-003",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 4.241
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-004",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.487
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-005",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.906
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-006",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.406
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-007",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 4.001
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-008",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.061
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-009",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.696
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-010",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.835
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-011",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.279
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-012",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.671
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-013",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.954
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-014",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.421
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-015",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.755
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-016",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.042
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-017",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.253
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-018",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.915
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-019",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.907
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-020",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.103
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-021",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.821
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-022",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.959
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-023",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 4.043
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-024",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.807
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-025",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.985
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-026",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 4.172
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-027",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.941
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-028",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.494
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-029",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 4.015
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-030",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.788
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-031",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.393
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-032",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.676
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-033",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 4.215
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-034",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.699
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-035",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.916
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-036",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.482
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-037",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.651
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-038",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.237
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-039",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.558
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-040",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.816
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-041",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.856
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-042",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.594
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-043",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.467
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-044",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.142
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-045",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.153
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-046",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.984
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-047",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.97
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-048",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.631
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-049",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.707
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-050",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.947
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-051",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.053
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-052",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.224
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-053",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.482
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-054",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 4.064
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-055",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.025
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-056",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.958
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-057",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 4.037
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-058",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.094
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-059",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 4.104
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-060",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.726
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-061",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.986
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-062",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 4.092
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-063",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.369
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-064",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 4.009
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-065",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.886
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-066",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.863
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-067",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.234
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-068",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.885
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-069",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.53
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-070",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.363
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-071",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.93
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-072",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.982
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-073",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.36
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-074",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 4.043
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-075",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.16
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-076",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.825
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-077",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.406
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-078",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.248
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-079",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.13
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-080",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.26
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-081",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.676
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-082",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.672
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-083",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 4.157
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-084",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.766
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-085",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.183
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-086",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.988
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-087",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.684
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-088",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.674
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-089",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.812
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-090",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.776
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-091",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.094
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-092",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.072
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-093",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 4.081
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-094",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.939
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-095",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.343
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-096",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.599
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-097",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 4.081
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-098",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.357
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-099",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.189
+          }
+        ]
+      }
+    },
+    "typo_10%": {
+      "bbh": {
+        "num_sampled": 100,
+        "score_sum": 40.0,
+        "score_avg": 0.4,
+        "error_count": 0,
+        "elapsed_sec": 324.8,
+        "questions": [
+          {
+            "prompt_id": "bbh-typo_10%-000",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.187
+          },
+          {
+            "prompt_id": "bbh-typo_10%-001",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.47
+          },
+          {
+            "prompt_id": "bbh-typo_10%-002",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.822
+          },
+          {
+            "prompt_id": "bbh-typo_10%-003",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.91
+          },
+          {
+            "prompt_id": "bbh-typo_10%-004",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.163
+          },
+          {
+            "prompt_id": "bbh-typo_10%-005",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.436
+          },
+          {
+            "prompt_id": "bbh-typo_10%-006",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.162
+          },
+          {
+            "prompt_id": "bbh-typo_10%-007",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.48
+          },
+          {
+            "prompt_id": "bbh-typo_10%-008",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.128
+          },
+          {
+            "prompt_id": "bbh-typo_10%-009",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.41
+          },
+          {
+            "prompt_id": "bbh-typo_10%-010",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.806
+          },
+          {
+            "prompt_id": "bbh-typo_10%-011",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.146
+          },
+          {
+            "prompt_id": "bbh-typo_10%-012",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.353
+          },
+          {
+            "prompt_id": "bbh-typo_10%-013",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.078
+          },
+          {
+            "prompt_id": "bbh-typo_10%-014",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.27
+          },
+          {
+            "prompt_id": "bbh-typo_10%-015",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.39
+          },
+          {
+            "prompt_id": "bbh-typo_10%-016",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.891
+          },
+          {
+            "prompt_id": "bbh-typo_10%-017",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.102
+          },
+          {
+            "prompt_id": "bbh-typo_10%-018",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.802
+          },
+          {
+            "prompt_id": "bbh-typo_10%-019",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.943
+          },
+          {
+            "prompt_id": "bbh-typo_10%-020",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.1
+          },
+          {
+            "prompt_id": "bbh-typo_10%-021",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.625
+          },
+          {
+            "prompt_id": "bbh-typo_10%-022",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.805
+          },
+          {
+            "prompt_id": "bbh-typo_10%-023",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.421
+          },
+          {
+            "prompt_id": "bbh-typo_10%-024",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.099
+          },
+          {
+            "prompt_id": "bbh-typo_10%-025",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.064
+          },
+          {
+            "prompt_id": "bbh-typo_10%-026",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.788
+          },
+          {
+            "prompt_id": "bbh-typo_10%-027",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.786
+          },
+          {
+            "prompt_id": "bbh-typo_10%-028",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.591
+          },
+          {
+            "prompt_id": "bbh-typo_10%-029",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.64
+          },
+          {
+            "prompt_id": "bbh-typo_10%-030",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.473
+          },
+          {
+            "prompt_id": "bbh-typo_10%-031",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.027
+          },
+          {
+            "prompt_id": "bbh-typo_10%-032",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.179
+          },
+          {
+            "prompt_id": "bbh-typo_10%-033",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.647
+          },
+          {
+            "prompt_id": "bbh-typo_10%-034",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.62
+          },
+          {
+            "prompt_id": "bbh-typo_10%-035",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.581
+          },
+          {
+            "prompt_id": "bbh-typo_10%-036",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.3
+          },
+          {
+            "prompt_id": "bbh-typo_10%-037",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.371
+          },
+          {
+            "prompt_id": "bbh-typo_10%-038",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.076
+          },
+          {
+            "prompt_id": "bbh-typo_10%-039",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.463
+          },
+          {
+            "prompt_id": "bbh-typo_10%-040",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.687
+          },
+          {
+            "prompt_id": "bbh-typo_10%-041",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.691
+          },
+          {
+            "prompt_id": "bbh-typo_10%-042",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.146
+          },
+          {
+            "prompt_id": "bbh-typo_10%-043",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.203
+          },
+          {
+            "prompt_id": "bbh-typo_10%-044",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.887
+          },
+          {
+            "prompt_id": "bbh-typo_10%-045",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.152
+          },
+          {
+            "prompt_id": "bbh-typo_10%-046",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.529
+          },
+          {
+            "prompt_id": "bbh-typo_10%-047",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.838
+          },
+          {
+            "prompt_id": "bbh-typo_10%-048",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.64
+          },
+          {
+            "prompt_id": "bbh-typo_10%-049",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.461
+          },
+          {
+            "prompt_id": "bbh-typo_10%-050",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.841
+          },
+          {
+            "prompt_id": "bbh-typo_10%-051",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.857
+          },
+          {
+            "prompt_id": "bbh-typo_10%-052",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.046
+          },
+          {
+            "prompt_id": "bbh-typo_10%-053",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.581
+          },
+          {
+            "prompt_id": "bbh-typo_10%-054",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.734
+          },
+          {
+            "prompt_id": "bbh-typo_10%-055",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.861
+          },
+          {
+            "prompt_id": "bbh-typo_10%-056",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.782
+          },
+          {
+            "prompt_id": "bbh-typo_10%-057",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.704
+          },
+          {
+            "prompt_id": "bbh-typo_10%-058",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.913
+          },
+          {
+            "prompt_id": "bbh-typo_10%-059",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.814
+          },
+          {
+            "prompt_id": "bbh-typo_10%-060",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.185
+          },
+          {
+            "prompt_id": "bbh-typo_10%-061",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.606
+          },
+          {
+            "prompt_id": "bbh-typo_10%-062",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.857
+          },
+          {
+            "prompt_id": "bbh-typo_10%-063",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.206
+          },
+          {
+            "prompt_id": "bbh-typo_10%-064",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.606
+          },
+          {
+            "prompt_id": "bbh-typo_10%-065",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.323
+          },
+          {
+            "prompt_id": "bbh-typo_10%-066",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.367
+          },
+          {
+            "prompt_id": "bbh-typo_10%-067",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.823
+          },
+          {
+            "prompt_id": "bbh-typo_10%-068",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.175
+          },
+          {
+            "prompt_id": "bbh-typo_10%-069",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.979
+          },
+          {
+            "prompt_id": "bbh-typo_10%-070",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.097
+          },
+          {
+            "prompt_id": "bbh-typo_10%-071",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.511
+          },
+          {
+            "prompt_id": "bbh-typo_10%-072",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.836
+          },
+          {
+            "prompt_id": "bbh-typo_10%-073",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.254
+          },
+          {
+            "prompt_id": "bbh-typo_10%-074",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.617
+          },
+          {
+            "prompt_id": "bbh-typo_10%-075",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.834
+          },
+          {
+            "prompt_id": "bbh-typo_10%-076",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.827
+          },
+          {
+            "prompt_id": "bbh-typo_10%-077",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.162
+          },
+          {
+            "prompt_id": "bbh-typo_10%-078",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.107
+          },
+          {
+            "prompt_id": "bbh-typo_10%-079",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.095
+          },
+          {
+            "prompt_id": "bbh-typo_10%-080",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.225
+          },
+          {
+            "prompt_id": "bbh-typo_10%-081",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.495
+          },
+          {
+            "prompt_id": "bbh-typo_10%-082",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.403
+          },
+          {
+            "prompt_id": "bbh-typo_10%-083",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.543
+          },
+          {
+            "prompt_id": "bbh-typo_10%-084",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.193
+          },
+          {
+            "prompt_id": "bbh-typo_10%-085",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.845
+          },
+          {
+            "prompt_id": "bbh-typo_10%-086",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.842
+          },
+          {
+            "prompt_id": "bbh-typo_10%-087",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.331
+          },
+          {
+            "prompt_id": "bbh-typo_10%-088",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.34
+          },
+          {
+            "prompt_id": "bbh-typo_10%-089",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.482
+          },
+          {
+            "prompt_id": "bbh-typo_10%-090",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.381
+          },
+          {
+            "prompt_id": "bbh-typo_10%-091",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.892
+          },
+          {
+            "prompt_id": "bbh-typo_10%-092",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.754
+          },
+          {
+            "prompt_id": "bbh-typo_10%-093",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.816
+          },
+          {
+            "prompt_id": "bbh-typo_10%-094",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.617
+          },
+          {
+            "prompt_id": "bbh-typo_10%-095",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.106
+          },
+          {
+            "prompt_id": "bbh-typo_10%-096",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.61
+          },
+          {
+            "prompt_id": "bbh-typo_10%-097",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.366
+          },
+          {
+            "prompt_id": "bbh-typo_10%-098",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.144
+          },
+          {
+            "prompt_id": "bbh-typo_10%-099",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.952
+          }
+        ]
+      }
+    },
+    "typo_40%": {
+      "bbh": {
+        "num_sampled": 100,
+        "score_sum": 30.0,
+        "score_avg": 0.3,
+        "error_count": 0,
+        "elapsed_sec": 344.67,
+        "questions": [
+          {
+            "prompt_id": "bbh-typo_40%-000",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.359
+          },
+          {
+            "prompt_id": "bbh-typo_40%-001",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.596
+          },
+          {
+            "prompt_id": "bbh-typo_40%-002",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.011
+          },
+          {
+            "prompt_id": "bbh-typo_40%-003",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 4.222
+          },
+          {
+            "prompt_id": "bbh-typo_40%-004",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.303
+          },
+          {
+            "prompt_id": "bbh-typo_40%-005",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.876
+          },
+          {
+            "prompt_id": "bbh-typo_40%-006",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.239
+          },
+          {
+            "prompt_id": "bbh-typo_40%-007",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.805
+          },
+          {
+            "prompt_id": "bbh-typo_40%-008",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.144
+          },
+          {
+            "prompt_id": "bbh-typo_40%-009",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.577
+          },
+          {
+            "prompt_id": "bbh-typo_40%-010",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.021
+          },
+          {
+            "prompt_id": "bbh-typo_40%-011",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.222
+          },
+          {
+            "prompt_id": "bbh-typo_40%-012",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.621
+          },
+          {
+            "prompt_id": "bbh-typo_40%-013",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.12
+          },
+          {
+            "prompt_id": "bbh-typo_40%-014",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.358
+          },
+          {
+            "prompt_id": "bbh-typo_40%-015",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.52
+          },
+          {
+            "prompt_id": "bbh-typo_40%-016",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.117
+          },
+          {
+            "prompt_id": "bbh-typo_40%-017",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.236
+          },
+          {
+            "prompt_id": "bbh-typo_40%-018",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.846
+          },
+          {
+            "prompt_id": "bbh-typo_40%-019",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.955
+          },
+          {
+            "prompt_id": "bbh-typo_40%-020",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.342
+          },
+          {
+            "prompt_id": "bbh-typo_40%-021",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.93
+          },
+          {
+            "prompt_id": "bbh-typo_40%-022",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.99
+          },
+          {
+            "prompt_id": "bbh-typo_40%-023",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.655
+          },
+          {
+            "prompt_id": "bbh-typo_40%-024",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.561
+          },
+          {
+            "prompt_id": "bbh-typo_40%-025",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.178
+          },
+          {
+            "prompt_id": "bbh-typo_40%-026",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.966
+          },
+          {
+            "prompt_id": "bbh-typo_40%-027",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.936
+          },
+          {
+            "prompt_id": "bbh-typo_40%-028",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.683
+          },
+          {
+            "prompt_id": "bbh-typo_40%-029",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.723
+          },
+          {
+            "prompt_id": "bbh-typo_40%-030",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.588
+          },
+          {
+            "prompt_id": "bbh-typo_40%-031",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.264
+          },
+          {
+            "prompt_id": "bbh-typo_40%-032",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.438
+          },
+          {
+            "prompt_id": "bbh-typo_40%-033",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.917
+          },
+          {
+            "prompt_id": "bbh-typo_40%-034",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.587
+          },
+          {
+            "prompt_id": "bbh-typo_40%-035",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.797
+          },
+          {
+            "prompt_id": "bbh-typo_40%-036",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.458
+          },
+          {
+            "prompt_id": "bbh-typo_40%-037",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.556
+          },
+          {
+            "prompt_id": "bbh-typo_40%-038",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.259
+          },
+          {
+            "prompt_id": "bbh-typo_40%-039",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.505
+          },
+          {
+            "prompt_id": "bbh-typo_40%-040",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.724
+          },
+          {
+            "prompt_id": "bbh-typo_40%-041",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.064
+          },
+          {
+            "prompt_id": "bbh-typo_40%-042",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.608
+          },
+          {
+            "prompt_id": "bbh-typo_40%-043",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.371
+          },
+          {
+            "prompt_id": "bbh-typo_40%-044",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.958
+          },
+          {
+            "prompt_id": "bbh-typo_40%-045",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.273
+          },
+          {
+            "prompt_id": "bbh-typo_40%-046",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.695
+          },
+          {
+            "prompt_id": "bbh-typo_40%-047",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.948
+          },
+          {
+            "prompt_id": "bbh-typo_40%-048",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.622
+          },
+          {
+            "prompt_id": "bbh-typo_40%-049",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.63
+          },
+          {
+            "prompt_id": "bbh-typo_40%-050",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.835
+          },
+          {
+            "prompt_id": "bbh-typo_40%-051",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.156
+          },
+          {
+            "prompt_id": "bbh-typo_40%-052",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.361
+          },
+          {
+            "prompt_id": "bbh-typo_40%-053",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.64
+          },
+          {
+            "prompt_id": "bbh-typo_40%-054",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 4.088
+          },
+          {
+            "prompt_id": "bbh-typo_40%-055",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.113
+          },
+          {
+            "prompt_id": "bbh-typo_40%-056",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.849
+          },
+          {
+            "prompt_id": "bbh-typo_40%-057",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.957
+          },
+          {
+            "prompt_id": "bbh-typo_40%-058",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.209
+          },
+          {
+            "prompt_id": "bbh-typo_40%-059",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.878
+          },
+          {
+            "prompt_id": "bbh-typo_40%-060",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.693
+          },
+          {
+            "prompt_id": "bbh-typo_40%-061",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.963
+          },
+          {
+            "prompt_id": "bbh-typo_40%-062",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.994
+          },
+          {
+            "prompt_id": "bbh-typo_40%-063",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.227
+          },
+          {
+            "prompt_id": "bbh-typo_40%-064",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.91
+          },
+          {
+            "prompt_id": "bbh-typo_40%-065",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.455
+          },
+          {
+            "prompt_id": "bbh-typo_40%-066",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.599
+          },
+          {
+            "prompt_id": "bbh-typo_40%-067",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.126
+          },
+          {
+            "prompt_id": "bbh-typo_40%-068",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.878
+          },
+          {
+            "prompt_id": "bbh-typo_40%-069",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.488
+          },
+          {
+            "prompt_id": "bbh-typo_40%-070",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.234
+          },
+          {
+            "prompt_id": "bbh-typo_40%-071",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.841
+          },
+          {
+            "prompt_id": "bbh-typo_40%-072",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.112
+          },
+          {
+            "prompt_id": "bbh-typo_40%-073",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.507
+          },
+          {
+            "prompt_id": "bbh-typo_40%-074",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.888
+          },
+          {
+            "prompt_id": "bbh-typo_40%-075",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.188
+          },
+          {
+            "prompt_id": "bbh-typo_40%-076",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.879
+          },
+          {
+            "prompt_id": "bbh-typo_40%-077",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.332
+          },
+          {
+            "prompt_id": "bbh-typo_40%-078",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.262
+          },
+          {
+            "prompt_id": "bbh-typo_40%-079",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.263
+          },
+          {
+            "prompt_id": "bbh-typo_40%-080",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.383
+          },
+          {
+            "prompt_id": "bbh-typo_40%-081",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.677
+          },
+          {
+            "prompt_id": "bbh-typo_40%-082",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.508
+          },
+          {
+            "prompt_id": "bbh-typo_40%-083",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.729
+          },
+          {
+            "prompt_id": "bbh-typo_40%-084",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.456
+          },
+          {
+            "prompt_id": "bbh-typo_40%-085",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.11
+          },
+          {
+            "prompt_id": "bbh-typo_40%-086",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.025
+          },
+          {
+            "prompt_id": "bbh-typo_40%-087",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.515
+          },
+          {
+            "prompt_id": "bbh-typo_40%-088",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.429
+          },
+          {
+            "prompt_id": "bbh-typo_40%-089",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.633
+          },
+          {
+            "prompt_id": "bbh-typo_40%-090",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.623
+          },
+          {
+            "prompt_id": "bbh-typo_40%-091",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.277
+          },
+          {
+            "prompt_id": "bbh-typo_40%-092",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.135
+          },
+          {
+            "prompt_id": "bbh-typo_40%-093",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.975
+          },
+          {
+            "prompt_id": "bbh-typo_40%-094",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.863
+          },
+          {
+            "prompt_id": "bbh-typo_40%-095",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.31
+          },
+          {
+            "prompt_id": "bbh-typo_40%-096",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.625
+          },
+          {
+            "prompt_id": "bbh-typo_40%-097",
+            "raw_answer": "{\"odpowiedź\": \"X\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.74
+          },
+          {
+            "prompt_id": "bbh-typo_40%-098",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.242
+          },
+          {
+            "prompt_id": "bbh-typo_40%-099",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.1
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

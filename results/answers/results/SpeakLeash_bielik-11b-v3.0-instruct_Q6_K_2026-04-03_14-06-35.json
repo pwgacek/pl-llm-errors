@@ -1,0 +1,172 @@
+{
+  "timestamp": "2026-04-03T14:06:35.988691+00:00",
+  "model": "SpeakLeash/bielik-11b-v3.0-instruct:Q6_K",
+  "base_url": "http://localhost:11434/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "datasets": {
+    "diacritic": {
+      "llmzszl": {
+        "num_sampled": 10,
+        "score_sum": 1.067977,
+        "score_avg": 0.106798,
+        "error_count": 0,
+        "elapsed_sec": 107.33,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-diacritic-000",
+            "raw_answer": "{\"odpowiedź\": \"Pole rombu wynosi 8√3.\"}",
+            "score": 0.045454545454545414,
+            "error": false,
+            "elapsed": 20.881
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-001",
+            "raw_answer": "{\"odpowiedź\": \"Klient otrzyma 35% zniżki na okulary warte 240 zł. Obliczając: 240 zł * (1 - 0.35) = 240 zł * 0.65 = 156 zł. Klient zapłaci 156 zł.\"}",
+            "score": 0.03816793893129766,
+            "error": false,
+            "elapsed": 16.55
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-002",
+            "raw_answer": "{ \"odpowiedź\": \"2p + p/2 + p/k\" }",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 7.275
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-003",
+            "raw_answer": "{\"odpowiedź\": \"Replikacja DNA zachodzi w fazie S (syntetycznej) cyklu komórkowego.\"}",
+            "score": 0.13432835820895528,
+            "error": false,
+            "elapsed": 6.333
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-004",
+            "raw_answer": "{\"odpowiedź\": \"Antarktyda ma około 14 milionów km², podczas gdy Europa (włączając Rosję) ma około 10,2 miliona km². Różnica wynosi więc około 3,8 miliona km².\"}",
+            "score": 0.0699300699300699,
+            "error": false,
+            "elapsed": 11.354
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-005",
+            "raw_answer": "{ \"odpowiedź\": \"W dolnej części szczeliny, gdzie prąd powietrza jest słabszy.\" }",
+            "score": 0.1311475409836066,
+            "error": false,
+            "elapsed": 9.246
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-006",
+            "raw_answer": "{\"odpowiedź\": \"W grupie jest 24 chłopców.\"}",
+            "score": 0.038461538461538436,
+            "error": false,
+            "elapsed": 5.375
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-007",
+            "raw_answer": "{ \"odpowiedź\": \"Ostrosłup ma 9 wierzchołków.\" }",
+            "score": 0.0357142857142857,
+            "error": false,
+            "elapsed": 5.799
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-008",
+            "raw_answer": "{ \"odpowiedź\": \"Prawdopodobieństwo wylosowania kuli białej wynosi 1/6 * (3/10) + 5/6 * (1/10) = 1/20 + 1/12 = 8/60 = 2/15.\" }",
+            "score": 0.037735849056603765,
+            "error": false,
+            "elapsed": 19.142
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-009",
+            "raw_answer": "{\"odpowiedź\": \"Objętość stożka wynosi 16π.\"}",
+            "score": 0.03703703703703709,
+            "error": false,
+            "elapsed": 5.371
+          }
+        ]
+      }
+    },
+    "identity": {
+      "llmzszl": {
+        "num_sampled": 10,
+        "score_sum": 1.226751,
+        "score_avg": 0.122675,
+        "error_count": 0,
+        "elapsed_sec": 82.96,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-identity-000",
+            "raw_answer": "{ \"odpowiedź\": \"8√3\" }",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 3.804
+          },
+          {
+            "prompt_id": "llmzszl-identity-001",
+            "raw_answer": "{\"odpowiedź\": \"Klient otrzyma 35% zniżki na okulary warte 240 zł. Zniżka wynosi 84 zł (240 zł * 35%), więc klient zapłaci 156 zł.\"}",
+            "score": 0.04385964912280704,
+            "error": false,
+            "elapsed": 14.199
+          },
+          {
+            "prompt_id": "llmzszl-identity-002",
+            "raw_answer": "{ \"odpowiedź\": \"2p + p/2 + p/k\" }",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 7.374
+          },
+          {
+            "prompt_id": "llmzszl-identity-003",
+            "raw_answer": "{\"odpowiedź\": \"Replikacja DNA zachodzi w fazie S (syntetycznej) cyklu komórkowego.\"}",
+            "score": 0.13432835820895528,
+            "error": false,
+            "elapsed": 6.15
+          },
+          {
+            "prompt_id": "llmzszl-identity-004",
+            "raw_answer": "{\"odpowiedź\": \"Antarktyda ma około 14 milionów km², podczas gdy Europa (włączając Rosję) ma około 10,2 miliona km². Różnica wynosi więc około 3,8 miliona km².\"}",
+            "score": 0.0699300699300699,
+            "error": false,
+            "elapsed": 11.162
+          },
+          {
+            "prompt_id": "llmzszl-identity-005",
+            "raw_answer": "{ \"odpowiedź\": \"W dolnym fragmencie szczeliny, gdzie zimne powietrze napływa i wypiera ciepłe.\" }",
+            "score": 0.08974358974358976,
+            "error": false,
+            "elapsed": 10.842
+          },
+          {
+            "prompt_id": "llmzszl-identity-006",
+            "raw_answer": "{\"odpowiedź\": \"16\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 4.168
+          },
+          {
+            "prompt_id": "llmzszl-identity-007",
+            "raw_answer": "{ \"odpowiedź\": \"Ostrosłup ma 6 wierzchołków.\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 6.05
+          },
+          {
+            "prompt_id": "llmzszl-identity-008",
+            "raw_answer": "{ \"odpowiedź\": \"Prawdopodobieństwo wylosowania kuli białej wynosi 1/3.\" }",
+            "score": 0.01851851851851849,
+            "error": false,
+            "elapsed": 13.528
+          },
+          {
+            "prompt_id": "llmzszl-identity-009",
+            "raw_answer": "{ \"odpowiedź\": \"Objętość stożka wynosi 16π.\" }",
+            "score": 0.03703703703703709,
+            "error": false,
+            "elapsed": 5.686
+          }
+        ]
+      }
+    }
+  },
+  "status": "partial"
+}

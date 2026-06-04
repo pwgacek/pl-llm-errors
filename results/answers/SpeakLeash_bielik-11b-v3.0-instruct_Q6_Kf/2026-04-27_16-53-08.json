@@ -1,0 +1,106 @@
+{
+  "timestamp": "2026-04-27T16:53:08.570120+02:00",
+  "model": "SpeakLeash/bielik-11b-v3.0-instruct:Q6_Kf",
+  "base_url": "http://localhost:11434/v1",
+  "prompts_dir": "prompts",
+  "elapsed_sec": 0.16,
+  "datasets": {
+    "diacritic": {
+      "polqa": {
+        "num_sampled": 3,
+        "error_count": 3,
+        "elapsed_sec": 0.15,
+        "questions": [
+          {
+            "prompt_id": "polqa-diacritic-000",
+            "raw_answer": "",
+            "elapsed": 0.0,
+            "error": true,
+            "judgement_context": {
+              "question": "Jak nazywa się element kwiatu produkujący pyłek, składający się u roślin okrytonasiennych z główki i nitki?",
+              "context": "Pręcik (łac. \"stamen\") – męski organ płciowy w kwiecie wytwarzający pyłek, czyli odpowiednik męskiego gametofitu powstający z mikrospory. Pręciki są występującymi u okrytonasiennych mikrosporofilami. Składają się z nitki i główki tworzonej zazwyczaj przez dwa pylniki zawierające po dwa woreczki pyłkowe, czyli mikrosporangia. Pyłek po dojrzeniu wysypywany jest z pękających pylników i przenoszony przez wiatr, wodę lub zwierzęta, by po osadzeniu na znamionach słupków wrosnąć i dokonać zapłodnienia.",
+              "correct_answer": [
+                "pręcik"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-diacritic-001",
+            "raw_answer": "",
+            "elapsed": 0.0,
+            "error": true,
+            "judgement_context": {
+              "question": "Co to za część mowy: półtora?",
+              "context": "liczebniki - oznaczające (określające) liczbę, część, kolejność rzeczy, przedmiotów, osób:\nliczebniki główne określają liczbę przedmiotów, osób, zdarzeń, np. jeden, dwa, trzy, sześć, siedem, osiem, dziesięć, trzydzieści.\nliczebniki zbiorowe określają zbiorowość ludzi, zwierząt, przedmiotów, nazw, np. dwoje, troje, pięcioro, siedmioro, ośmioro, dziewięcioro, trzydzieścioro.\nliczebniki porządkowe określają miejsce w szeregu, np. drugi, trzeci, szósty, dwudziesty, czterdziesty, setny, tysięczny.\nułamkowe, określają części ułamkowe czasu, przedmiotów, odległości, np. pół, półtora, ćwierć.",
+              "correct_answer": [
+                "liczebnik"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-diacritic-002",
+            "raw_answer": "",
+            "elapsed": 0.0,
+            "error": true,
+            "judgement_context": {
+              "question": "Z której świątyni papież udziela błogosławieństwa Urbi et Orbi?",
+              "context": "Najświętszej Maryi Panny Po zakończeniu konklawe, błogosławieństwo miało miejsce tam, gdzie wybrano papieża; przed 1871 roku w Pałacu Kwirynalskim. Mimo iż tradycja nakazuje wygłaszać błogosławieństwo \"Urbi et Orbi\" z głównego balkonu Bazyliki św. Piotra, zdarzają się sytuacje wyjątkowe. Jan Paweł II przy okazji Świąt Bożego Narodzenia 2004 wygłaszał tekst \"Urbi et Orbi\" na placu św. Piotra. Podobnie uczynił Benedykt XVI po mszy św. w Uroczystość Zmartwychwstania Chrystusa, 23 marca 2008.",
+              "correct_answer": [
+                "z Bazyliki św. Piotra"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "identity": {
+      "polqa": {
+        "num_sampled": 3,
+        "error_count": 3,
+        "elapsed_sec": 0.01,
+        "questions": [
+          {
+            "prompt_id": "polqa-identity-000",
+            "raw_answer": "",
+            "elapsed": 0.0,
+            "error": true,
+            "judgement_context": {
+              "question": "Jak nazywa się element kwiatu produkujący pyłek, składający się u roślin okrytonasiennych z główki i nitki?",
+              "context": "Pręcik (łac. \"stamen\") – męski organ płciowy w kwiecie wytwarzający pyłek, czyli odpowiednik męskiego gametofitu powstający z mikrospory. Pręciki są występującymi u okrytonasiennych mikrosporofilami. Składają się z nitki i główki tworzonej zazwyczaj przez dwa pylniki zawierające po dwa woreczki pyłkowe, czyli mikrosporangia. Pyłek po dojrzeniu wysypywany jest z pękających pylników i przenoszony przez wiatr, wodę lub zwierzęta, by po osadzeniu na znamionach słupków wrosnąć i dokonać zapłodnienia.",
+              "correct_answer": [
+                "pręcik"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-001",
+            "raw_answer": "",
+            "elapsed": 0.0,
+            "error": true,
+            "judgement_context": {
+              "question": "Co to za część mowy: półtora?",
+              "context": "liczebniki - oznaczające (określające) liczbę, część, kolejność rzeczy, przedmiotów, osób:\nliczebniki główne określają liczbę przedmiotów, osób, zdarzeń, np. jeden, dwa, trzy, sześć, siedem, osiem, dziesięć, trzydzieści.\nliczebniki zbiorowe określają zbiorowość ludzi, zwierząt, przedmiotów, nazw, np. dwoje, troje, pięcioro, siedmioro, ośmioro, dziewięcioro, trzydzieścioro.\nliczebniki porządkowe określają miejsce w szeregu, np. drugi, trzeci, szósty, dwudziesty, czterdziesty, setny, tysięczny.\nułamkowe, określają części ułamkowe czasu, przedmiotów, odległości, np. pół, półtora, ćwierć.",
+              "correct_answer": [
+                "liczebnik"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-002",
+            "raw_answer": "",
+            "elapsed": 0.0,
+            "error": true,
+            "judgement_context": {
+              "question": "Z której świątyni papież udziela błogosławieństwa Urbi et Orbi?",
+              "context": "Najświętszej Maryi Panny Po zakończeniu konklawe, błogosławieństwo miało miejsce tam, gdzie wybrano papieża; przed 1871 roku w Pałacu Kwirynalskim. Mimo iż tradycja nakazuje wygłaszać błogosławieństwo \"Urbi et Orbi\" z głównego balkonu Bazyliki św. Piotra, zdarzają się sytuacje wyjątkowe. Jan Paweł II przy okazji Świąt Bożego Narodzenia 2004 wygłaszał tekst \"Urbi et Orbi\" na placu św. Piotra. Podobnie uczynił Benedykt XVI po mszy św. w Uroczystość Zmartwychwstania Chrystusa, 23 marca 2008.",
+              "correct_answer": [
+                "z Bazyliki św. Piotra"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

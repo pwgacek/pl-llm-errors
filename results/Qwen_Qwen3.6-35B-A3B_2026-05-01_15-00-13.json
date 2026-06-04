@@ -1,0 +1,87 @@
+{
+  "timestamp": "2026-05-01T15:00:13.089699+00:00",
+  "model": "Qwen/Qwen3.6-35B-A3B",
+  "base_url": "https://llmlab.plgrid.pl/api/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "elapsed_sec": 1.93,
+  "datasets": {
+    "identity": {
+      "llmzszl_mcq": {
+        "num_sampled": 1,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 0,
+        "elapsed_sec": 1.4,
+        "questions": [
+          {
+            "prompt_id": "llmzszl_mcq-identity-000",
+            "raw_answer": "{\n\"odpowiedź\": \"C\"\n}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.401
+          }
+        ]
+      }
+    },
+    "permutation_1": {
+      "llmzszl_mcq": {
+        "num_sampled": 1,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 0,
+        "elapsed_sec": 0.2,
+        "questions": [
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-000",
+            "raw_answer": "{\n\"odpowiedź\": \"A\"\n}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.197
+          }
+        ]
+      }
+    },
+    "permutation_2": {
+      "llmzszl_mcq": {
+        "num_sampled": 1,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 0,
+        "elapsed_sec": 0.16,
+        "questions": [
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-000",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.164
+          }
+        ]
+      }
+    },
+    "permutation_3": {
+      "llmzszl_mcq": {
+        "num_sampled": 1,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 0,
+        "elapsed_sec": 0.16,
+        "questions": [
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-000",
+            "raw_answer": "{ \"odpowiedź\": \"D\" }",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.163
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

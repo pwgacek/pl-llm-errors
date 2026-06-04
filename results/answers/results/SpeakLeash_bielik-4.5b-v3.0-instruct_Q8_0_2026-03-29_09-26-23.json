@@ -1,0 +1,5691 @@
+{
+  "timestamp": "2026-03-29T09:26:23.518902+00:00",
+  "model": "SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+  "base_url": "http://localhost:11434/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "elapsed_sec": 2133.35,
+  "datasets": {
+    "identity": {
+      "bbh": {
+        "num_sampled": 100,
+        "score_sum": 43.0,
+        "score_avg": 0.43,
+        "error_count": 0,
+        "elapsed_sec": 312.26,
+        "questions": [
+          {
+            "prompt_id": "bbh-identity-000",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 10.405
+          },
+          {
+            "prompt_id": "bbh-identity-001",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.162
+          },
+          {
+            "prompt_id": "bbh-identity-002",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.798
+          },
+          {
+            "prompt_id": "bbh-identity-003",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.315
+          },
+          {
+            "prompt_id": "bbh-identity-004",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.028
+          },
+          {
+            "prompt_id": "bbh-identity-005",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.274
+          },
+          {
+            "prompt_id": "bbh-identity-006",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.043
+          },
+          {
+            "prompt_id": "bbh-identity-007",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.233
+          },
+          {
+            "prompt_id": "bbh-identity-008",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.972
+          },
+          {
+            "prompt_id": "bbh-identity-009",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.219
+          },
+          {
+            "prompt_id": "bbh-identity-010",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.735
+          },
+          {
+            "prompt_id": "bbh-identity-011",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.009
+          },
+          {
+            "prompt_id": "bbh-identity-012",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.139
+          },
+          {
+            "prompt_id": "bbh-identity-013",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.797
+          },
+          {
+            "prompt_id": "bbh-identity-014",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.023
+          },
+          {
+            "prompt_id": "bbh-identity-015",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.997
+          },
+          {
+            "prompt_id": "bbh-identity-016",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.874
+          },
+          {
+            "prompt_id": "bbh-identity-017",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.124
+          },
+          {
+            "prompt_id": "bbh-identity-018",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.425
+          },
+          {
+            "prompt_id": "bbh-identity-019",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.416
+          },
+          {
+            "prompt_id": "bbh-identity-020",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.97
+          },
+          {
+            "prompt_id": "bbh-identity-021",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.24
+          },
+          {
+            "prompt_id": "bbh-identity-022",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.644
+          },
+          {
+            "prompt_id": "bbh-identity-023",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.157
+          },
+          {
+            "prompt_id": "bbh-identity-024",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.861
+          },
+          {
+            "prompt_id": "bbh-identity-025",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.95
+          },
+          {
+            "prompt_id": "bbh-identity-026",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.566
+          },
+          {
+            "prompt_id": "bbh-identity-027",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.725
+          },
+          {
+            "prompt_id": "bbh-identity-028",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.424
+          },
+          {
+            "prompt_id": "bbh-identity-029",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.188
+          },
+          {
+            "prompt_id": "bbh-identity-030",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.101
+          },
+          {
+            "prompt_id": "bbh-identity-031",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.995
+          },
+          {
+            "prompt_id": "bbh-identity-032",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.014
+          },
+          {
+            "prompt_id": "bbh-identity-033",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.264
+          },
+          {
+            "prompt_id": "bbh-identity-034",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.018
+          },
+          {
+            "prompt_id": "bbh-identity-035",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.117
+          },
+          {
+            "prompt_id": "bbh-identity-036",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.204
+          },
+          {
+            "prompt_id": "bbh-identity-037",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.217
+          },
+          {
+            "prompt_id": "bbh-identity-038",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.94
+          },
+          {
+            "prompt_id": "bbh-identity-039",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.144
+          },
+          {
+            "prompt_id": "bbh-identity-040",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.376
+          },
+          {
+            "prompt_id": "bbh-identity-041",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.717
+          },
+          {
+            "prompt_id": "bbh-identity-042",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.997
+          },
+          {
+            "prompt_id": "bbh-identity-043",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.867
+          },
+          {
+            "prompt_id": "bbh-identity-044",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.786
+          },
+          {
+            "prompt_id": "bbh-identity-045",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.811
+          },
+          {
+            "prompt_id": "bbh-identity-046",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.242
+          },
+          {
+            "prompt_id": "bbh-identity-047",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.381
+          },
+          {
+            "prompt_id": "bbh-identity-048",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.989
+          },
+          {
+            "prompt_id": "bbh-identity-049",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.0
+          },
+          {
+            "prompt_id": "bbh-identity-050",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.509
+          },
+          {
+            "prompt_id": "bbh-identity-051",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.747
+          },
+          {
+            "prompt_id": "bbh-identity-052",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.977
+          },
+          {
+            "prompt_id": "bbh-identity-053",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.874
+          },
+          {
+            "prompt_id": "bbh-identity-054",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.282
+          },
+          {
+            "prompt_id": "bbh-identity-055",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.838
+          },
+          {
+            "prompt_id": "bbh-identity-056",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.644
+          },
+          {
+            "prompt_id": "bbh-identity-057",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.233
+          },
+          {
+            "prompt_id": "bbh-identity-058",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.987
+          },
+          {
+            "prompt_id": "bbh-identity-059",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.416
+          },
+          {
+            "prompt_id": "bbh-identity-060",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.24
+          },
+          {
+            "prompt_id": "bbh-identity-061",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.78
+          },
+          {
+            "prompt_id": "bbh-identity-062",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.501
+          },
+          {
+            "prompt_id": "bbh-identity-063",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.99
+          },
+          {
+            "prompt_id": "bbh-identity-064",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.235
+          },
+          {
+            "prompt_id": "bbh-identity-065",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.11
+          },
+          {
+            "prompt_id": "bbh-identity-066",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.115
+          },
+          {
+            "prompt_id": "bbh-identity-067",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.941
+          },
+          {
+            "prompt_id": "bbh-identity-068",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.133
+          },
+          {
+            "prompt_id": "bbh-identity-069",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.948
+          },
+          {
+            "prompt_id": "bbh-identity-070",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.155
+          },
+          {
+            "prompt_id": "bbh-identity-071",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.219
+          },
+          {
+            "prompt_id": "bbh-identity-072",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.728
+          },
+          {
+            "prompt_id": "bbh-identity-073",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.081
+          },
+          {
+            "prompt_id": "bbh-identity-074",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.621
+          },
+          {
+            "prompt_id": "bbh-identity-075",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.965
+          },
+          {
+            "prompt_id": "bbh-identity-076",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.493
+          },
+          {
+            "prompt_id": "bbh-identity-077",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.072
+          },
+          {
+            "prompt_id": "bbh-identity-078",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.945
+          },
+          {
+            "prompt_id": "bbh-identity-079",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.855
+          },
+          {
+            "prompt_id": "bbh-identity-080",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.858
+          },
+          {
+            "prompt_id": "bbh-identity-081",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.088
+          },
+          {
+            "prompt_id": "bbh-identity-082",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.041
+          },
+          {
+            "prompt_id": "bbh-identity-083",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.207
+          },
+          {
+            "prompt_id": "bbh-identity-084",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.916
+          },
+          {
+            "prompt_id": "bbh-identity-085",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.768
+          },
+          {
+            "prompt_id": "bbh-identity-086",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.689
+          },
+          {
+            "prompt_id": "bbh-identity-087",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.018
+          },
+          {
+            "prompt_id": "bbh-identity-088",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.09
+          },
+          {
+            "prompt_id": "bbh-identity-089",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.143
+          },
+          {
+            "prompt_id": "bbh-identity-090",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.014
+          },
+          {
+            "prompt_id": "bbh-identity-091",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.908
+          },
+          {
+            "prompt_id": "bbh-identity-092",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.767
+          },
+          {
+            "prompt_id": "bbh-identity-093",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.469
+          },
+          {
+            "prompt_id": "bbh-identity-094",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.816
+          },
+          {
+            "prompt_id": "bbh-identity-095",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.987
+          },
+          {
+            "prompt_id": "bbh-identity-096",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.853
+          },
+          {
+            "prompt_id": "bbh-identity-097",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.176
+          },
+          {
+            "prompt_id": "bbh-identity-098",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.968
+          },
+          {
+            "prompt_id": "bbh-identity-099",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.947
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 100,
+        "score_sum": 48.0,
+        "score_avg": 0.48,
+        "error_count": 0,
+        "elapsed_sec": 223.17,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-identity-000",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.729
+          },
+          {
+            "prompt_id": "llmzszl-identity-001",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.207
+          },
+          {
+            "prompt_id": "llmzszl-identity-002",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.245
+          },
+          {
+            "prompt_id": "llmzszl-identity-003",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.454
+          },
+          {
+            "prompt_id": "llmzszl-identity-004",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.932
+          },
+          {
+            "prompt_id": "llmzszl-identity-005",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.531
+          },
+          {
+            "prompt_id": "llmzszl-identity-006",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.762
+          },
+          {
+            "prompt_id": "llmzszl-identity-007",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.639
+          },
+          {
+            "prompt_id": "llmzszl-identity-008",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.838
+          },
+          {
+            "prompt_id": "llmzszl-identity-009",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.561
+          },
+          {
+            "prompt_id": "llmzszl-identity-010",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.194
+          },
+          {
+            "prompt_id": "llmzszl-identity-011",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.065
+          },
+          {
+            "prompt_id": "llmzszl-identity-012",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.301
+          },
+          {
+            "prompt_id": "llmzszl-identity-013",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.378
+          },
+          {
+            "prompt_id": "llmzszl-identity-014",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.222
+          },
+          {
+            "prompt_id": "llmzszl-identity-015",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.492
+          },
+          {
+            "prompt_id": "llmzszl-identity-016",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.513
+          },
+          {
+            "prompt_id": "llmzszl-identity-017",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.055
+          },
+          {
+            "prompt_id": "llmzszl-identity-018",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.219
+          },
+          {
+            "prompt_id": "llmzszl-identity-019",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.92
+          },
+          {
+            "prompt_id": "llmzszl-identity-020",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.907
+          },
+          {
+            "prompt_id": "llmzszl-identity-021",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.869
+          },
+          {
+            "prompt_id": "llmzszl-identity-022",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.425
+          },
+          {
+            "prompt_id": "llmzszl-identity-023",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.937
+          },
+          {
+            "prompt_id": "llmzszl-identity-024",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.9
+          },
+          {
+            "prompt_id": "llmzszl-identity-025",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.07
+          },
+          {
+            "prompt_id": "llmzszl-identity-026",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.328
+          },
+          {
+            "prompt_id": "llmzszl-identity-027",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.186
+          },
+          {
+            "prompt_id": "llmzszl-identity-028",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.301
+          },
+          {
+            "prompt_id": "llmzszl-identity-029",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.305
+          },
+          {
+            "prompt_id": "llmzszl-identity-030",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.814
+          },
+          {
+            "prompt_id": "llmzszl-identity-031",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.569
+          },
+          {
+            "prompt_id": "llmzszl-identity-032",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.807
+          },
+          {
+            "prompt_id": "llmzszl-identity-033",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.814
+          },
+          {
+            "prompt_id": "llmzszl-identity-034",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.492
+          },
+          {
+            "prompt_id": "llmzszl-identity-035",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.518
+          },
+          {
+            "prompt_id": "llmzszl-identity-036",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.228
+          },
+          {
+            "prompt_id": "llmzszl-identity-037",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.847
+          },
+          {
+            "prompt_id": "llmzszl-identity-038",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.013
+          },
+          {
+            "prompt_id": "llmzszl-identity-039",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.004
+          },
+          {
+            "prompt_id": "llmzszl-identity-040",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.741
+          },
+          {
+            "prompt_id": "llmzszl-identity-041",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.018
+          },
+          {
+            "prompt_id": "llmzszl-identity-042",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.035
+          },
+          {
+            "prompt_id": "llmzszl-identity-043",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.731
+          },
+          {
+            "prompt_id": "llmzszl-identity-044",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.987
+          },
+          {
+            "prompt_id": "llmzszl-identity-045",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.677
+          },
+          {
+            "prompt_id": "llmzszl-identity-046",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.056
+          },
+          {
+            "prompt_id": "llmzszl-identity-047",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.264
+          },
+          {
+            "prompt_id": "llmzszl-identity-048",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.243
+          },
+          {
+            "prompt_id": "llmzszl-identity-049",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.355
+          },
+          {
+            "prompt_id": "llmzszl-identity-050",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.991
+          },
+          {
+            "prompt_id": "llmzszl-identity-051",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.384
+          },
+          {
+            "prompt_id": "llmzszl-identity-052",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.562
+          },
+          {
+            "prompt_id": "llmzszl-identity-053",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.219
+          },
+          {
+            "prompt_id": "llmzszl-identity-054",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.929
+          },
+          {
+            "prompt_id": "llmzszl-identity-055",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.947
+          },
+          {
+            "prompt_id": "llmzszl-identity-056",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.113
+          },
+          {
+            "prompt_id": "llmzszl-identity-057",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.132
+          },
+          {
+            "prompt_id": "llmzszl-identity-058",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.263
+          },
+          {
+            "prompt_id": "llmzszl-identity-059",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.023
+          },
+          {
+            "prompt_id": "llmzszl-identity-060",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.97
+          },
+          {
+            "prompt_id": "llmzszl-identity-061",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.531
+          },
+          {
+            "prompt_id": "llmzszl-identity-062",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.013
+          },
+          {
+            "prompt_id": "llmzszl-identity-063",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.158
+          },
+          {
+            "prompt_id": "llmzszl-identity-064",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.46
+          },
+          {
+            "prompt_id": "llmzszl-identity-065",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.513
+          },
+          {
+            "prompt_id": "llmzszl-identity-066",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.795
+          },
+          {
+            "prompt_id": "llmzszl-identity-067",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.012
+          },
+          {
+            "prompt_id": "llmzszl-identity-068",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.138
+          },
+          {
+            "prompt_id": "llmzszl-identity-069",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.201
+          },
+          {
+            "prompt_id": "llmzszl-identity-070",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.261
+          },
+          {
+            "prompt_id": "llmzszl-identity-071",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.318
+          },
+          {
+            "prompt_id": "llmzszl-identity-072",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.282
+          },
+          {
+            "prompt_id": "llmzszl-identity-073",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.723
+          },
+          {
+            "prompt_id": "llmzszl-identity-074",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.78
+          },
+          {
+            "prompt_id": "llmzszl-identity-075",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.166
+          },
+          {
+            "prompt_id": "llmzszl-identity-076",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.155
+          },
+          {
+            "prompt_id": "llmzszl-identity-077",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.147
+          },
+          {
+            "prompt_id": "llmzszl-identity-078",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.779
+          },
+          {
+            "prompt_id": "llmzszl-identity-079",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.26
+          },
+          {
+            "prompt_id": "llmzszl-identity-080",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.382
+          },
+          {
+            "prompt_id": "llmzszl-identity-081",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.404
+          },
+          {
+            "prompt_id": "llmzszl-identity-082",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.309
+          },
+          {
+            "prompt_id": "llmzszl-identity-083",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.967
+          },
+          {
+            "prompt_id": "llmzszl-identity-084",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.816
+          },
+          {
+            "prompt_id": "llmzszl-identity-085",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.144
+          },
+          {
+            "prompt_id": "llmzszl-identity-086",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.1
+          },
+          {
+            "prompt_id": "llmzszl-identity-087",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.152
+          },
+          {
+            "prompt_id": "llmzszl-identity-088",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.799
+          },
+          {
+            "prompt_id": "llmzszl-identity-089",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.795
+          },
+          {
+            "prompt_id": "llmzszl-identity-090",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.133
+          },
+          {
+            "prompt_id": "llmzszl-identity-091",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.059
+          },
+          {
+            "prompt_id": "llmzszl-identity-092",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.075
+          },
+          {
+            "prompt_id": "llmzszl-identity-093",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.972
+          },
+          {
+            "prompt_id": "llmzszl-identity-094",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.897
+          },
+          {
+            "prompt_id": "llmzszl-identity-095",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.366
+          },
+          {
+            "prompt_id": "llmzszl-identity-096",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.215
+          },
+          {
+            "prompt_id": "llmzszl-identity-097",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.869
+          },
+          {
+            "prompt_id": "llmzszl-identity-098",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.812
+          },
+          {
+            "prompt_id": "llmzszl-identity-099",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.981
+          }
+        ]
+      }
+    },
+    "permutation_1": {
+      "bbh": {
+        "num_sampled": 100,
+        "score_sum": 39.0,
+        "score_avg": 0.39,
+        "error_count": 0,
+        "elapsed_sec": 305.32,
+        "questions": [
+          {
+            "prompt_id": "bbh-permutation_1-000",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.851
+          },
+          {
+            "prompt_id": "bbh-permutation_1-001",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.17
+          },
+          {
+            "prompt_id": "bbh-permutation_1-002",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.749
+          },
+          {
+            "prompt_id": "bbh-permutation_1-003",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.34
+          },
+          {
+            "prompt_id": "bbh-permutation_1-004",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.009
+          },
+          {
+            "prompt_id": "bbh-permutation_1-005",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.18
+          },
+          {
+            "prompt_id": "bbh-permutation_1-006",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.973
+          },
+          {
+            "prompt_id": "bbh-permutation_1-007",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.215
+          },
+          {
+            "prompt_id": "bbh-permutation_1-008",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.939
+          },
+          {
+            "prompt_id": "bbh-permutation_1-009",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.145
+          },
+          {
+            "prompt_id": "bbh-permutation_1-010",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.836
+          },
+          {
+            "prompt_id": "bbh-permutation_1-011",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.919
+          },
+          {
+            "prompt_id": "bbh-permutation_1-012",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.172
+          },
+          {
+            "prompt_id": "bbh-permutation_1-013",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.758
+          },
+          {
+            "prompt_id": "bbh-permutation_1-014",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.988
+          },
+          {
+            "prompt_id": "bbh-permutation_1-015",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.954
+          },
+          {
+            "prompt_id": "bbh-permutation_1-016",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.782
+          },
+          {
+            "prompt_id": "bbh-permutation_1-017",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.986
+          },
+          {
+            "prompt_id": "bbh-permutation_1-018",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.491
+          },
+          {
+            "prompt_id": "bbh-permutation_1-019",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.405
+          },
+          {
+            "prompt_id": "bbh-permutation_1-020",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.057
+          },
+          {
+            "prompt_id": "bbh-permutation_1-021",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.33
+          },
+          {
+            "prompt_id": "bbh-permutation_1-022",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.586
+          },
+          {
+            "prompt_id": "bbh-permutation_1-023",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.161
+          },
+          {
+            "prompt_id": "bbh-permutation_1-024",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.845
+          },
+          {
+            "prompt_id": "bbh-permutation_1-025",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.912
+          },
+          {
+            "prompt_id": "bbh-permutation_1-026",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.449
+          },
+          {
+            "prompt_id": "bbh-permutation_1-027",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.714
+          },
+          {
+            "prompt_id": "bbh-permutation_1-028",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.432
+          },
+          {
+            "prompt_id": "bbh-permutation_1-029",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.252
+          },
+          {
+            "prompt_id": "bbh-permutation_1-030",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.056
+          },
+          {
+            "prompt_id": "bbh-permutation_1-031",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.962
+          },
+          {
+            "prompt_id": "bbh-permutation_1-032",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.06
+          },
+          {
+            "prompt_id": "bbh-permutation_1-033",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.178
+          },
+          {
+            "prompt_id": "bbh-permutation_1-034",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.044
+          },
+          {
+            "prompt_id": "bbh-permutation_1-035",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.103
+          },
+          {
+            "prompt_id": "bbh-permutation_1-036",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.098
+          },
+          {
+            "prompt_id": "bbh-permutation_1-037",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.147
+          },
+          {
+            "prompt_id": "bbh-permutation_1-038",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.958
+          },
+          {
+            "prompt_id": "bbh-permutation_1-039",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.179
+          },
+          {
+            "prompt_id": "bbh-permutation_1-040",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.444
+          },
+          {
+            "prompt_id": "bbh-permutation_1-041",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.728
+          },
+          {
+            "prompt_id": "bbh-permutation_1-042",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.993
+          },
+          {
+            "prompt_id": "bbh-permutation_1-043",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.959
+          },
+          {
+            "prompt_id": "bbh-permutation_1-044",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.789
+          },
+          {
+            "prompt_id": "bbh-permutation_1-045",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.814
+          },
+          {
+            "prompt_id": "bbh-permutation_1-046",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.215
+          },
+          {
+            "prompt_id": "bbh-permutation_1-047",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.435
+          },
+          {
+            "prompt_id": "bbh-permutation_1-048",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.083
+          },
+          {
+            "prompt_id": "bbh-permutation_1-049",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.05
+          },
+          {
+            "prompt_id": "bbh-permutation_1-050",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.572
+          },
+          {
+            "prompt_id": "bbh-permutation_1-051",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.781
+          },
+          {
+            "prompt_id": "bbh-permutation_1-052",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.006
+          },
+          {
+            "prompt_id": "bbh-permutation_1-053",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.886
+          },
+          {
+            "prompt_id": "bbh-permutation_1-054",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.271
+          },
+          {
+            "prompt_id": "bbh-permutation_1-055",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.829
+          },
+          {
+            "prompt_id": "bbh-permutation_1-056",
+            "raw_answer": "{\"odpowiedź\": \"G\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.608
+          },
+          {
+            "prompt_id": "bbh-permutation_1-057",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.242
+          },
+          {
+            "prompt_id": "bbh-permutation_1-058",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.913
+          },
+          {
+            "prompt_id": "bbh-permutation_1-059",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.481
+          },
+          {
+            "prompt_id": "bbh-permutation_1-060",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.208
+          },
+          {
+            "prompt_id": "bbh-permutation_1-061",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.768
+          },
+          {
+            "prompt_id": "bbh-permutation_1-062",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.522
+          },
+          {
+            "prompt_id": "bbh-permutation_1-063",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.938
+          },
+          {
+            "prompt_id": "bbh-permutation_1-064",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.267
+          },
+          {
+            "prompt_id": "bbh-permutation_1-065",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.044
+          },
+          {
+            "prompt_id": "bbh-permutation_1-066",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.192
+          },
+          {
+            "prompt_id": "bbh-permutation_1-067",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.963
+          },
+          {
+            "prompt_id": "bbh-permutation_1-068",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.291
+          },
+          {
+            "prompt_id": "bbh-permutation_1-069",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.935
+          },
+          {
+            "prompt_id": "bbh-permutation_1-070",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.152
+          },
+          {
+            "prompt_id": "bbh-permutation_1-071",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.225
+          },
+          {
+            "prompt_id": "bbh-permutation_1-072",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.717
+          },
+          {
+            "prompt_id": "bbh-permutation_1-073",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.087
+          },
+          {
+            "prompt_id": "bbh-permutation_1-074",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.559
+          },
+          {
+            "prompt_id": "bbh-permutation_1-075",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.944
+          },
+          {
+            "prompt_id": "bbh-permutation_1-076",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.496
+          },
+          {
+            "prompt_id": "bbh-permutation_1-077",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.068
+          },
+          {
+            "prompt_id": "bbh-permutation_1-078",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.996
+          },
+          {
+            "prompt_id": "bbh-permutation_1-079",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.825
+          },
+          {
+            "prompt_id": "bbh-permutation_1-080",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.922
+          },
+          {
+            "prompt_id": "bbh-permutation_1-081",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.065
+          },
+          {
+            "prompt_id": "bbh-permutation_1-082",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.038
+          },
+          {
+            "prompt_id": "bbh-permutation_1-083",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.163
+          },
+          {
+            "prompt_id": "bbh-permutation_1-084",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.799
+          },
+          {
+            "prompt_id": "bbh-permutation_1-085",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.787
+          },
+          {
+            "prompt_id": "bbh-permutation_1-086",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.653
+          },
+          {
+            "prompt_id": "bbh-permutation_1-087",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.011
+          },
+          {
+            "prompt_id": "bbh-permutation_1-088",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.168
+          },
+          {
+            "prompt_id": "bbh-permutation_1-089",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.132
+          },
+          {
+            "prompt_id": "bbh-permutation_1-090",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.927
+          },
+          {
+            "prompt_id": "bbh-permutation_1-091",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.967
+          },
+          {
+            "prompt_id": "bbh-permutation_1-092",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.828
+          },
+          {
+            "prompt_id": "bbh-permutation_1-093",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.44
+          },
+          {
+            "prompt_id": "bbh-permutation_1-094",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.708
+          },
+          {
+            "prompt_id": "bbh-permutation_1-095",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.95
+          },
+          {
+            "prompt_id": "bbh-permutation_1-096",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.901
+          },
+          {
+            "prompt_id": "bbh-permutation_1-097",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.247
+          },
+          {
+            "prompt_id": "bbh-permutation_1-098",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.98
+          },
+          {
+            "prompt_id": "bbh-permutation_1-099",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.947
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 100,
+        "score_sum": 37.0,
+        "score_avg": 0.37,
+        "error_count": 0,
+        "elapsed_sec": 224.5,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-permutation_1-000",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.771
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-001",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.214
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-002",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.298
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-003",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.402
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-004",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.898
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-005",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.697
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-006",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.785
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-007",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.599
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-008",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.89
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-009",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.621
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-010",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.377
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-011",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.076
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-012",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.27
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-013",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.394
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-014",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.251
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-015",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.441
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-016",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.526
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-017",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.959
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-018",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.245
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-019",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.953
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-020",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.895
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-021",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.881
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-022",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.467
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-023",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.89
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-024",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.942
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-025",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.119
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-026",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.32
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-027",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.17
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-028",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.324
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-029",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.268
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-030",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.817
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-031",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.467
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-032",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.815
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-033",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.828
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-034",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.527
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-035",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.599
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-036",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.218
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-037",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.958
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-038",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.984
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-039",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.021
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-040",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.774
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-041",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.027
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-042",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.116
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-043",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.72
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-044",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.002
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-045",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.719
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-046",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.024
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-047",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.191
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-048",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.214
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-049",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.306
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-050",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.047
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-051",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.45
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-052",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.63
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-053",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.215
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-054",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.945
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-055",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.924
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-056",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.118
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-057",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.169
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-058",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.236
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-059",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.899
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-060",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.94
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-061",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.517
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-062",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.02
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-063",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.178
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-064",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.597
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-065",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.526
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-066",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.827
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-067",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.942
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-068",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.108
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-069",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.207
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-070",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.223
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-071",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.347
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-072",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.181
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-073",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.758
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-074",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.767
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-075",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.125
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-076",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.269
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-077",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.179
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-078",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.901
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-079",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.324
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-080",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.453
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-081",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.437
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-082",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.373
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-083",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.925
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-084",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.807
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-085",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.114
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-086",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.058
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-087",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.173
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-088",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.787
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-089",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.848
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-090",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.168
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-091",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.161
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-092",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.124
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-093",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.974
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-094",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.01
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-095",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.35
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-096",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.233
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-097",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.81
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-098",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.853
+          },
+          {
+            "prompt_id": "llmzszl-permutation_1-099",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.001
+          }
+        ]
+      }
+    },
+    "permutation_2": {
+      "bbh": {
+        "num_sampled": 100,
+        "score_sum": 32.0,
+        "score_avg": 0.32,
+        "error_count": 0,
+        "elapsed_sec": 306.46,
+        "questions": [
+          {
+            "prompt_id": "bbh-permutation_2-000",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.845
+          },
+          {
+            "prompt_id": "bbh-permutation_2-001",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.115
+          },
+          {
+            "prompt_id": "bbh-permutation_2-002",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.675
+          },
+          {
+            "prompt_id": "bbh-permutation_2-003",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.344
+          },
+          {
+            "prompt_id": "bbh-permutation_2-004",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.053
+          },
+          {
+            "prompt_id": "bbh-permutation_2-005",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.238
+          },
+          {
+            "prompt_id": "bbh-permutation_2-006",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.965
+          },
+          {
+            "prompt_id": "bbh-permutation_2-007",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.197
+          },
+          {
+            "prompt_id": "bbh-permutation_2-008",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.934
+          },
+          {
+            "prompt_id": "bbh-permutation_2-009",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.141
+          },
+          {
+            "prompt_id": "bbh-permutation_2-010",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.814
+          },
+          {
+            "prompt_id": "bbh-permutation_2-011",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.93
+          },
+          {
+            "prompt_id": "bbh-permutation_2-012",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.159
+          },
+          {
+            "prompt_id": "bbh-permutation_2-013",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.874
+          },
+          {
+            "prompt_id": "bbh-permutation_2-014",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.969
+          },
+          {
+            "prompt_id": "bbh-permutation_2-015",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.955
+          },
+          {
+            "prompt_id": "bbh-permutation_2-016",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.785
+          },
+          {
+            "prompt_id": "bbh-permutation_2-017",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.06
+          },
+          {
+            "prompt_id": "bbh-permutation_2-018",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.43
+          },
+          {
+            "prompt_id": "bbh-permutation_2-019",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.384
+          },
+          {
+            "prompt_id": "bbh-permutation_2-020",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.062
+          },
+          {
+            "prompt_id": "bbh-permutation_2-021",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.217
+          },
+          {
+            "prompt_id": "bbh-permutation_2-022",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.566
+          },
+          {
+            "prompt_id": "bbh-permutation_2-023",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.15
+          },
+          {
+            "prompt_id": "bbh-permutation_2-024",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.874
+          },
+          {
+            "prompt_id": "bbh-permutation_2-025",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.021
+          },
+          {
+            "prompt_id": "bbh-permutation_2-026",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.482
+          },
+          {
+            "prompt_id": "bbh-permutation_2-027",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.734
+          },
+          {
+            "prompt_id": "bbh-permutation_2-028",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.454
+          },
+          {
+            "prompt_id": "bbh-permutation_2-029",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.14
+          },
+          {
+            "prompt_id": "bbh-permutation_2-030",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.044
+          },
+          {
+            "prompt_id": "bbh-permutation_2-031",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.954
+          },
+          {
+            "prompt_id": "bbh-permutation_2-032",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.075
+          },
+          {
+            "prompt_id": "bbh-permutation_2-033",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.212
+          },
+          {
+            "prompt_id": "bbh-permutation_2-034",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.018
+          },
+          {
+            "prompt_id": "bbh-permutation_2-035",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.041
+          },
+          {
+            "prompt_id": "bbh-permutation_2-036",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.085
+          },
+          {
+            "prompt_id": "bbh-permutation_2-037",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.204
+          },
+          {
+            "prompt_id": "bbh-permutation_2-038",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.953
+          },
+          {
+            "prompt_id": "bbh-permutation_2-039",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.155
+          },
+          {
+            "prompt_id": "bbh-permutation_2-040",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.428
+          },
+          {
+            "prompt_id": "bbh-permutation_2-041",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.802
+          },
+          {
+            "prompt_id": "bbh-permutation_2-042",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.011
+          },
+          {
+            "prompt_id": "bbh-permutation_2-043",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.923
+          },
+          {
+            "prompt_id": "bbh-permutation_2-044",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.836
+          },
+          {
+            "prompt_id": "bbh-permutation_2-045",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.814
+          },
+          {
+            "prompt_id": "bbh-permutation_2-046",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.266
+          },
+          {
+            "prompt_id": "bbh-permutation_2-047",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.398
+          },
+          {
+            "prompt_id": "bbh-permutation_2-048",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.0
+          },
+          {
+            "prompt_id": "bbh-permutation_2-049",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.063
+          },
+          {
+            "prompt_id": "bbh-permutation_2-050",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.562
+          },
+          {
+            "prompt_id": "bbh-permutation_2-051",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.754
+          },
+          {
+            "prompt_id": "bbh-permutation_2-052",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.046
+          },
+          {
+            "prompt_id": "bbh-permutation_2-053",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.888
+          },
+          {
+            "prompt_id": "bbh-permutation_2-054",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.284
+          },
+          {
+            "prompt_id": "bbh-permutation_2-055",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.791
+          },
+          {
+            "prompt_id": "bbh-permutation_2-056",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.636
+          },
+          {
+            "prompt_id": "bbh-permutation_2-057",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.248
+          },
+          {
+            "prompt_id": "bbh-permutation_2-058",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.915
+          },
+          {
+            "prompt_id": "bbh-permutation_2-059",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.456
+          },
+          {
+            "prompt_id": "bbh-permutation_2-060",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.32
+          },
+          {
+            "prompt_id": "bbh-permutation_2-061",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.858
+          },
+          {
+            "prompt_id": "bbh-permutation_2-062",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.54
+          },
+          {
+            "prompt_id": "bbh-permutation_2-063",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.008
+          },
+          {
+            "prompt_id": "bbh-permutation_2-064",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.48
+          },
+          {
+            "prompt_id": "bbh-permutation_2-065",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.171
+          },
+          {
+            "prompt_id": "bbh-permutation_2-066",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.119
+          },
+          {
+            "prompt_id": "bbh-permutation_2-067",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.978
+          },
+          {
+            "prompt_id": "bbh-permutation_2-068",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.257
+          },
+          {
+            "prompt_id": "bbh-permutation_2-069",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.948
+          },
+          {
+            "prompt_id": "bbh-permutation_2-070",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.079
+          },
+          {
+            "prompt_id": "bbh-permutation_2-071",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.23
+          },
+          {
+            "prompt_id": "bbh-permutation_2-072",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.886
+          },
+          {
+            "prompt_id": "bbh-permutation_2-073",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.154
+          },
+          {
+            "prompt_id": "bbh-permutation_2-074",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.516
+          },
+          {
+            "prompt_id": "bbh-permutation_2-075",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.898
+          },
+          {
+            "prompt_id": "bbh-permutation_2-076",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.546
+          },
+          {
+            "prompt_id": "bbh-permutation_2-077",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.054
+          },
+          {
+            "prompt_id": "bbh-permutation_2-078",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.022
+          },
+          {
+            "prompt_id": "bbh-permutation_2-079",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.897
+          },
+          {
+            "prompt_id": "bbh-permutation_2-080",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.927
+          },
+          {
+            "prompt_id": "bbh-permutation_2-081",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.228
+          },
+          {
+            "prompt_id": "bbh-permutation_2-082",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.025
+          },
+          {
+            "prompt_id": "bbh-permutation_2-083",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.174
+          },
+          {
+            "prompt_id": "bbh-permutation_2-084",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.864
+          },
+          {
+            "prompt_id": "bbh-permutation_2-085",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.806
+          },
+          {
+            "prompt_id": "bbh-permutation_2-086",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.697
+          },
+          {
+            "prompt_id": "bbh-permutation_2-087",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.024
+          },
+          {
+            "prompt_id": "bbh-permutation_2-088",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.186
+          },
+          {
+            "prompt_id": "bbh-permutation_2-089",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.166
+          },
+          {
+            "prompt_id": "bbh-permutation_2-090",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.937
+          },
+          {
+            "prompt_id": "bbh-permutation_2-091",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.003
+          },
+          {
+            "prompt_id": "bbh-permutation_2-092",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.829
+          },
+          {
+            "prompt_id": "bbh-permutation_2-093",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.438
+          },
+          {
+            "prompt_id": "bbh-permutation_2-094",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.741
+          },
+          {
+            "prompt_id": "bbh-permutation_2-095",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.978
+          },
+          {
+            "prompt_id": "bbh-permutation_2-096",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.898
+          },
+          {
+            "prompt_id": "bbh-permutation_2-097",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.239
+          },
+          {
+            "prompt_id": "bbh-permutation_2-098",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.935
+          },
+          {
+            "prompt_id": "bbh-permutation_2-099",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.96
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 100,
+        "score_sum": 39.0,
+        "score_avg": 0.39,
+        "error_count": 0,
+        "elapsed_sec": 223.53,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-permutation_2-000",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.813
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-001",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.25
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-002",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.389
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-003",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.404
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-004",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.976
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-005",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.684
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-006",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.743
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-007",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.644
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-008",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.874
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-009",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.607
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-010",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.298
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-011",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.144
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-012",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.194
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-013",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.51
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-014",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.198
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-015",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.411
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-016",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.488
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-017",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.931
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-018",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.174
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-019",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.916
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-020",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.875
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-021",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.903
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-022",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.412
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-023",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.94
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-024",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.904
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-025",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.073
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-026",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.413
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-027",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.171
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-028",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.344
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-029",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.313
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-030",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.81
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-031",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.456
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-032",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.811
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-033",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.794
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-034",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.504
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-035",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.533
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-036",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.223
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-037",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.858
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-038",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.945
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-039",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.041
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-040",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.84
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-041",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.994
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-042",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.054
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-043",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.727
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-044",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.006
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-045",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.641
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-046",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.019
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-047",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.149
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-048",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.199
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-049",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.313
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-050",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.987
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-051",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.407
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-052",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.629
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-053",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.204
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-054",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.02
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-055",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.944
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-056",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.12
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-057",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.183
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-058",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.216
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-059",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.912
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-060",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.927
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-061",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.463
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-062",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.982
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-063",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.193
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-064",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.407
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-065",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.527
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-066",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.823
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-067",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.014
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-068",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.156
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-069",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.225
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-070",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.216
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-071",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.361
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-072",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.23
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-073",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.803
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-074",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.732
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-075",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.142
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-076",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.161
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-077",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.226
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-078",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.814
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-079",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.336
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-080",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.381
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-081",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.441
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-082",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.344
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-083",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.921
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-084",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.805
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-085",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.093
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-086",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.983
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-087",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.172
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-088",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.764
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-089",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.842
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-090",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.124
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-091",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.036
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-092",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.087
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-093",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.963
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-094",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.947
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-095",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.34
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-096",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.28
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-097",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.846
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-098",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.806
+          },
+          {
+            "prompt_id": "llmzszl-permutation_2-099",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.07
+          }
+        ]
+      }
+    },
+    "permutation_3": {
+      "bbh": {
+        "num_sampled": 100,
+        "score_sum": 43.0,
+        "score_avg": 0.43,
+        "error_count": 0,
+        "elapsed_sec": 308.66,
+        "questions": [
+          {
+            "prompt_id": "bbh-permutation_3-000",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.749
+          },
+          {
+            "prompt_id": "bbh-permutation_3-001",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.125
+          },
+          {
+            "prompt_id": "bbh-permutation_3-002",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.713
+          },
+          {
+            "prompt_id": "bbh-permutation_3-003",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.301
+          },
+          {
+            "prompt_id": "bbh-permutation_3-004",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.123
+          },
+          {
+            "prompt_id": "bbh-permutation_3-005",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.241
+          },
+          {
+            "prompt_id": "bbh-permutation_3-006",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.953
+          },
+          {
+            "prompt_id": "bbh-permutation_3-007",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.263
+          },
+          {
+            "prompt_id": "bbh-permutation_3-008",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.975
+          },
+          {
+            "prompt_id": "bbh-permutation_3-009",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.173
+          },
+          {
+            "prompt_id": "bbh-permutation_3-010",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.701
+          },
+          {
+            "prompt_id": "bbh-permutation_3-011",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.89
+          },
+          {
+            "prompt_id": "bbh-permutation_3-012",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.178
+          },
+          {
+            "prompt_id": "bbh-permutation_3-013",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.898
+          },
+          {
+            "prompt_id": "bbh-permutation_3-014",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.043
+          },
+          {
+            "prompt_id": "bbh-permutation_3-015",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.069
+          },
+          {
+            "prompt_id": "bbh-permutation_3-016",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.84
+          },
+          {
+            "prompt_id": "bbh-permutation_3-017",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.086
+          },
+          {
+            "prompt_id": "bbh-permutation_3-018",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.518
+          },
+          {
+            "prompt_id": "bbh-permutation_3-019",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.443
+          },
+          {
+            "prompt_id": "bbh-permutation_3-020",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.976
+          },
+          {
+            "prompt_id": "bbh-permutation_3-021",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.253
+          },
+          {
+            "prompt_id": "bbh-permutation_3-022",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.569
+          },
+          {
+            "prompt_id": "bbh-permutation_3-023",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.173
+          },
+          {
+            "prompt_id": "bbh-permutation_3-024",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.905
+          },
+          {
+            "prompt_id": "bbh-permutation_3-025",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.028
+          },
+          {
+            "prompt_id": "bbh-permutation_3-026",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.628
+          },
+          {
+            "prompt_id": "bbh-permutation_3-027",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.743
+          },
+          {
+            "prompt_id": "bbh-permutation_3-028",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.522
+          },
+          {
+            "prompt_id": "bbh-permutation_3-029",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.136
+          },
+          {
+            "prompt_id": "bbh-permutation_3-030",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.091
+          },
+          {
+            "prompt_id": "bbh-permutation_3-031",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.959
+          },
+          {
+            "prompt_id": "bbh-permutation_3-032",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.019
+          },
+          {
+            "prompt_id": "bbh-permutation_3-033",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.331
+          },
+          {
+            "prompt_id": "bbh-permutation_3-034",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.041
+          },
+          {
+            "prompt_id": "bbh-permutation_3-035",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.244
+          },
+          {
+            "prompt_id": "bbh-permutation_3-036",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.161
+          },
+          {
+            "prompt_id": "bbh-permutation_3-037",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.147
+          },
+          {
+            "prompt_id": "bbh-permutation_3-038",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.941
+          },
+          {
+            "prompt_id": "bbh-permutation_3-039",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.138
+          },
+          {
+            "prompt_id": "bbh-permutation_3-040",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.361
+          },
+          {
+            "prompt_id": "bbh-permutation_3-041",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.708
+          },
+          {
+            "prompt_id": "bbh-permutation_3-042",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.973
+          },
+          {
+            "prompt_id": "bbh-permutation_3-043",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.899
+          },
+          {
+            "prompt_id": "bbh-permutation_3-044",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.811
+          },
+          {
+            "prompt_id": "bbh-permutation_3-045",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.802
+          },
+          {
+            "prompt_id": "bbh-permutation_3-046",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.204
+          },
+          {
+            "prompt_id": "bbh-permutation_3-047",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.461
+          },
+          {
+            "prompt_id": "bbh-permutation_3-048",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.018
+          },
+          {
+            "prompt_id": "bbh-permutation_3-049",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.055
+          },
+          {
+            "prompt_id": "bbh-permutation_3-050",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.536
+          },
+          {
+            "prompt_id": "bbh-permutation_3-051",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.769
+          },
+          {
+            "prompt_id": "bbh-permutation_3-052",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.99
+          },
+          {
+            "prompt_id": "bbh-permutation_3-053",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.885
+          },
+          {
+            "prompt_id": "bbh-permutation_3-054",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.301
+          },
+          {
+            "prompt_id": "bbh-permutation_3-055",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.908
+          },
+          {
+            "prompt_id": "bbh-permutation_3-056",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.73
+          },
+          {
+            "prompt_id": "bbh-permutation_3-057",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.539
+          },
+          {
+            "prompt_id": "bbh-permutation_3-058",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.185
+          },
+          {
+            "prompt_id": "bbh-permutation_3-059",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.553
+          },
+          {
+            "prompt_id": "bbh-permutation_3-060",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.255
+          },
+          {
+            "prompt_id": "bbh-permutation_3-061",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.835
+          },
+          {
+            "prompt_id": "bbh-permutation_3-062",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.534
+          },
+          {
+            "prompt_id": "bbh-permutation_3-063",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.011
+          },
+          {
+            "prompt_id": "bbh-permutation_3-064",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.318
+          },
+          {
+            "prompt_id": "bbh-permutation_3-065",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.087
+          },
+          {
+            "prompt_id": "bbh-permutation_3-066",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.152
+          },
+          {
+            "prompt_id": "bbh-permutation_3-067",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.951
+          },
+          {
+            "prompt_id": "bbh-permutation_3-068",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.194
+          },
+          {
+            "prompt_id": "bbh-permutation_3-069",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.975
+          },
+          {
+            "prompt_id": "bbh-permutation_3-070",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.09
+          },
+          {
+            "prompt_id": "bbh-permutation_3-071",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.3
+          },
+          {
+            "prompt_id": "bbh-permutation_3-072",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.732
+          },
+          {
+            "prompt_id": "bbh-permutation_3-073",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.071
+          },
+          {
+            "prompt_id": "bbh-permutation_3-074",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.705
+          },
+          {
+            "prompt_id": "bbh-permutation_3-075",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.035
+          },
+          {
+            "prompt_id": "bbh-permutation_3-076",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.633
+          },
+          {
+            "prompt_id": "bbh-permutation_3-077",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.163
+          },
+          {
+            "prompt_id": "bbh-permutation_3-078",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.079
+          },
+          {
+            "prompt_id": "bbh-permutation_3-079",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.967
+          },
+          {
+            "prompt_id": "bbh-permutation_3-080",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.145
+          },
+          {
+            "prompt_id": "bbh-permutation_3-081",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.177
+          },
+          {
+            "prompt_id": "bbh-permutation_3-082",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.121
+          },
+          {
+            "prompt_id": "bbh-permutation_3-083",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.201
+          },
+          {
+            "prompt_id": "bbh-permutation_3-084",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.913
+          },
+          {
+            "prompt_id": "bbh-permutation_3-085",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.841
+          },
+          {
+            "prompt_id": "bbh-permutation_3-086",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.722
+          },
+          {
+            "prompt_id": "bbh-permutation_3-087",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.099
+          },
+          {
+            "prompt_id": "bbh-permutation_3-088",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.135
+          },
+          {
+            "prompt_id": "bbh-permutation_3-089",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.163
+          },
+          {
+            "prompt_id": "bbh-permutation_3-090",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.972
+          },
+          {
+            "prompt_id": "bbh-permutation_3-091",
+            "raw_answer": "{\"odpowiedź\": \"F\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.934
+          },
+          {
+            "prompt_id": "bbh-permutation_3-092",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.875
+          },
+          {
+            "prompt_id": "bbh-permutation_3-093",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.432
+          },
+          {
+            "prompt_id": "bbh-permutation_3-094",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.793
+          },
+          {
+            "prompt_id": "bbh-permutation_3-095",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.998
+          },
+          {
+            "prompt_id": "bbh-permutation_3-096",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.919
+          },
+          {
+            "prompt_id": "bbh-permutation_3-097",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.215
+          },
+          {
+            "prompt_id": "bbh-permutation_3-098",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.968
+          },
+          {
+            "prompt_id": "bbh-permutation_3-099",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.971
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 100,
+        "score_sum": 36.0,
+        "score_avg": 0.36,
+        "error_count": 0,
+        "elapsed_sec": 229.43,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-permutation_3-000",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.781
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-001",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.231
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-002",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.269
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-003",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.399
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-004",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.908
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-005",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.824
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-006",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.769
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-007",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.708
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-008",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.947
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-009",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.61
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-010",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.337
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-011",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.082
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-012",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.301
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-013",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.343
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-014",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.163
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-015",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.405
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-016",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.541
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-017",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.173
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-018",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.212
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-019",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.936
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-020",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.921
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-021",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.954
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-022",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.557
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-023",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.025
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-024",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.946
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-025",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.147
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-026",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.41
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-027",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.275
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-028",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.363
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-029",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.453
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-030",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.91
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-031",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.543
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-032",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.843
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-033",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.906
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-034",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.617
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-035",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.631
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-036",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.297
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-037",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.921
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-038",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.966
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-039",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.034
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-040",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.848
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-041",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.079
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-042",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.111
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-043",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.79
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-044",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.125
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-045",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.708
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-046",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.111
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-047",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.286
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-048",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.325
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-049",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.384
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-050",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.056
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-051",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.458
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-052",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.749
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-053",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.262
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-054",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.047
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-055",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.009
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-056",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.21
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-057",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.182
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-058",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.271
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-059",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.007
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-060",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.041
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-061",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.558
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-062",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.073
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-063",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.192
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-064",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.554
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-065",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.595
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-066",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.832
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-067",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.105
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-068",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.146
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-069",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.336
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-070",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.338
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-071",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.387
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-072",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.283
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-073",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.797
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-074",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.886
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-075",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.21
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-076",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.179
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-077",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.216
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-078",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.902
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-079",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.352
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-080",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.449
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-081",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.457
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-082",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.375
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-083",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.067
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-084",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.851
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-085",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.16
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-086",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.082
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-087",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.192
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-088",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.957
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-089",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.936
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-090",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.161
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-091",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.108
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-092",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.183
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-093",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.051
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-094",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.106
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-095",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.442
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-096",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.244
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-097",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.0
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-098",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.92
+          },
+          {
+            "prompt_id": "llmzszl-permutation_3-099",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.02
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

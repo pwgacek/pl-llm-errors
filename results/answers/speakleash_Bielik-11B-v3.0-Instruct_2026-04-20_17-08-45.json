@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-04-20T17:08:45.762149+00:00",
+  "model": "speakleash/Bielik-11B-v3.0-Instruct",
+  "base_url": "https://llmlab.plgrid.pl/api/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "datasets": {
+    "identity": {
+      "llmzszl": {
+        "num_sampled": 2,
+        "error_count": 0,
+        "elapsed_sec": 11.46,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-identity-000",
+            "raw_answer": "Aby obliczyć pole rombu, możemy skorzystać z wzoru na pole rombu, który jest równy iloczynowi długości boku i wysokości opuszczonej na ten bok. Ponieważ znamy długość boku (4) i kąt rozwarty (150°), możemy obliczyć wysokość.\n\nKrok 1: Zauważmy, że wysokość rombu można wyrazić za pomocą funkcji trygonometrycznych kąta rozwartego. Wysokość \\( h \\) jest równa długości boku pomnożonej przez sinus kąta rozwartego.\n\n\\[ h = 4 \\cdot \\sin(150°) \\]\n\nKrok 2: Obliczmy wartość \\( \\sin(150°) \\). Wiemy, że \\( \\sin(150°) = \\sin(180° - 30°) = \\sin(30°) = \\frac{1}{2} \\).\n\n\\[ h = 4 \\cdot \\frac{1}{2} = 2 \\]\n\nKrok 3: Teraz możemy obliczyć pole rombu, korzystając z wzoru:\n\n\\[ P = a \\cdot h \\]\n\ngdzie \\( a \\) to długość boku, a \\( h \\) to wysokość.\n\n\\[ P = 4 \\cdot 2 = 8 \\]\n\nOdpowiedź:\n<ODPOWIEDŹ>8</ODPOWIEDŹ>",
+            "elapsed": 7.093,
+            "error": false,
+            "judgement_context": {
+              "question": "Dany jest romb o boku długości 4 i kącie rozwartym 150°. Ile wynosi pole tego rombu?",
+              "correct_answer": [
+                "8"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl-identity-001",
+            "raw_answer": "Aby obliczyć, ile zapłaci klient za okulary, muszę najpierw określić wysokość zniżki, a następnie odjąć ją od ceny podstawowej.\n\nKrok 1: Obliczenie wysokości zniżki.\nKlient ma 35 lat, więc otrzymuje 35% zniżki.\n\nKrok 2: Obliczenie kwoty zniżki.\nCena okularów bez promocji wynosi 240 zł.\nZniżka = 35% z 240 zł = 0,35 × 240 zł = 84 zł.\n\nKrok 3: Obliczenie ceny po zniżce.\nCena po zniżce = cena podstawowa - zniżka = 240 zł - 84 zł = 156 zł.\n\n<ODPOWIEDŹ>156</ODPOWIEDŹ>",
+            "elapsed": 4.369,
+            "error": false,
+            "judgement_context": {
+              "question": "Promocja w zakładzie optycznym jest związana z wiekiem klienta i polega na tym, że klient otrzymuje tyle procent zniżki, ile ma lat. Cena okularów bez promocji wynosi 240 zł. Ile zapłaci za te okulary klient, który ma 35 lat?",
+              "correct_answer": [
+                "156zł"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "status": "partial"
+}

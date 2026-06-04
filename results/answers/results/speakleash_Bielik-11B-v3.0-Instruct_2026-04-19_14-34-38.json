@@ -1,0 +1,102 @@
+{
+  "timestamp": "2026-04-19T14:34:38.905883+00:00",
+  "model": "speakleash/Bielik-11B-v3.0-Instruct",
+  "base_url": "https://llmlab.plgrid.pl/api/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "elapsed_sec": 79.52,
+  "datasets": {
+    "identity": {
+      "llmzszl": {
+        "num_sampled": 10,
+        "score_sum": 0.092063,
+        "score_avg": 0.009206,
+        "error_count": 0,
+        "elapsed_sec": 79.52,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-identity-000",
+            "raw_answer": "Aby obliczyć pole rombu, możemy skorzystać ze wzoru na pole rombu, który jest równy iloczynowi długości boku i wysokości opuszczonej na ten bok. Ponieważ znamy długość boku (4) i kąt rozwarty (150°), możemy obliczyć wysokość.\n\nW rombie wysokość \\( h \\) można wyrazić jako:\n\\[ h = b \\cdot \\sin(\\alpha) \\]\ngdzie \\( b \\) to długość boku, a \\( \\alpha \\) to kąt ostry rombu. Ponieważ kąt rozwarty wynosi 150°, kąt ostry \\( \\alpha \\) wynosi:\n\\[ \\alpha = 180° - 150° = 30° \\]\n\nTeraz możemy obliczyć wysokość:\n\\[ h = 4 \\cdot \\sin(30°) \\]\nWiemy, że \\( \\sin(30°) = 0.5 \\), więc:\n\\[ h = 4 \\cdot 0.5 = 2 \\]\n\nPole rombu \\( P \\) jest równe iloczynowi długości boku i wysokości:\n\\[ P = b \\cdot h = 4 \\cdot 2 = 8 \\]\n\nAlternatywnie, możemy skorzystać ze wzoru na pole rombu w zależności od kąta:\n\\[ P = b^2 \\cdot \\sin(\\alpha) \\]\ngdzie \\( \\alpha \\) to kąt rozwarty. W tym przypadku:\n\\[ P = 4^2 \\cdot \\sin(150°) \\]\nWiemy, że \\( \\sin(150°) = \\sin(30°) = 0.5 \\), więc:\n\\[ P = 16 \\cdot 0.5 = 8 \\]\n\nOba sposoby dają ten sam wynik.\n\n**Odpowiedź:** Pole rombu wynosi 8.",
+            "correct_answer": "8",
+            "score": 0.0009578544061302763,
+            "error": false,
+            "elapsed": 9.177
+          },
+          {
+            "prompt_id": "llmzszl-identity-001",
+            "raw_answer": "Aby obliczyć, ile zapłaci klient za okulary, należy najpierw obliczyć wysokość zniżki. Klient ma 35 lat, więc otrzymuje 35% zniżki.\n\nCena okularów bez promocji wynosi 240 zł. Zniżka w wysokości 35% oznacza, że klient zapłaci 65% ceny (100% - 35% = 65%).\n\nObliczamy 65% z 240 zł:\n\\[ 0,65 \\times 240 = 156 \\]\n\nZatem klient zapłaci 156 zł za okulary.\n\n**Odpowiedź:** Klient zapłaci za okulary 156 zł.",
+            "correct_answer": "156zł",
+            "score": 0.012594458438287104,
+            "error": false,
+            "elapsed": 3.609
+          },
+          {
+            "prompt_id": "llmzszl-identity-002",
+            "raw_answer": "Aby określić wyrażenie opisujące liczbę ludności tego państwa, musimy przeanalizować podane informacje i wyrazić je w postaci matematycznej.\n\n1. Liczba osób niepełnoletnich wynosi \\( p \\).\n2. Liczba osób pełnoletnich w wieku poniżej 60 lat jest o połowę mniejsza niż liczba osób niepełnoletnich. Oznacza to, że liczba tych osób wynosi \\( \\frac{p}{2} \\).\n3. Liczba pozostałych dorosłych (czyli osób w wieku 60 lat i starszych) jest \\( k \\) razy mniejsza niż liczba osób niepełnoletnich. Oznacza to, że liczba tych osób wynosi \\( \\frac{p}{k} \\).\n\nAby znaleźć całkowitą liczbę ludności, musimy zsumować wszystkie te grupy:\n\n\\[ \\text{Ludność} = p + \\frac{p}{2} + \\frac{p}{k} \\]\n\nAby uprościć to wyrażenie, możemy znaleźć wspólny mianownik. Wspólnym mianownikiem dla 2 i \\( k \\) jest \\( 2k \\). Przekształcamy więc każdy składnik:\n\n\\[ p = \\frac{2kp}{2k} \\]\n\\[ \\frac{p}{2} = \\frac{kp}{2k} \\]\n\\[ \\frac{p}{k} = \\frac{2p}{2k} \\]\n\nTeraz sumujemy te wyrażenia:\n\n\\[ \\text{Ludność} = \\frac{2kp}{2k} + \\frac{kp}{2k} + \\frac{2p}{2k} \\]\n\\[ \\text{Ludność} = \\frac{2kp + kp + 2p}{2k} \\]\n\\[ \\text{Ludność} = \\frac{(2k + k + 2)p}{2k} \\]\n\\[ \\text{Ludność} = \\frac{(3k + 2)p}{2k} \\]\n\nZatem wyrażenie opisujące liczbę ludności tego państwa to:\n\n\\[ \\boxed{\\dfrac{(3k + 2)p}{2k}} \\]",
+            "correct_answer": "1,5p + p/k",
+            "score": 0.006369426751592355,
+            "error": false,
+            "elapsed": 10.412
+          },
+          {
+            "prompt_id": "llmzszl-identity-003",
+            "raw_answer": "Replikacja DNA zachodzi w fazie S (syntetycznej) cyklu komórkowego. W tej fazie komórka syntetyzuje kopię swojego DNA, co jest niezbędne do podziału komórki w mitozie lub mejozie. Faza S następuje po fazie G1 (wzrostu) i przed fazą G2 (przygotowania do mitozy) oraz mitozą.",
+            "correct_answer": "w fazie S",
+            "score": 0.03296703296703296,
+            "error": false,
+            "elapsed": 2.042
+          },
+          {
+            "prompt_id": "llmzszl-identity-004",
+            "raw_answer": "Aby odpowiedzieć na pytanie o różnicę w powierzchni między Antarktydą a Europą, należy najpierw podać ich przybliżone wartości. Powierzchnia Antarktydy wynosi około 14 milionów kilometrów kwadratowych, podczas gdy powierzchnia Europy to około 10,18 miliona kilometrów kwadratowych. Różnica między tymi wartościami wynosi około 3,82 miliona kilometrów kwadratowych. Oznacza to, że Antarktyda jest o około 38% większa od Europy. Ta różnica jest znacząca i podkreśla ogromne rozmiary Antarktydy w porównaniu z kontynentem europejskim.",
+            "correct_answer": "o 3 mln km^2",
+            "score": 0.01883239171374762,
+            "error": false,
+            "elapsed": 3.686
+          },
+          {
+            "prompt_id": "llmzszl-identity-005",
+            "raw_answer": "Płomień świeczki powinien odchylić się od pionu najmniej w górnej części szczeliny.\n\n**Uzasadnienie:**\n\nKiedy Paweł uchyla drzwi z ciepłego pokoju do zimnego korytarza, powstaje różnica temperatur między wnętrzem pokoju a korytarzem. Ciepłe powietrze z pokoju unosi się ku górze, tworząc strumień ciepłego powietrza w górnej części szczeliny. Zimne powietrze z korytarza napływa do pokoju w dolnej części szczeliny.\n\nPłomień świeczki jest wrażliwy na ruchy powietrza. W górnej części szczeliny, gdzie ciepłe powietrze unosi się, ruch powietrza jest mniej intensywny w porównaniu do dolnej części, gdzie zimne powietrze napływa. Dlatego płomień świeczki będzie odchylał się od pionu najmniej w górnej części szczeliny, ponieważ tam wpływ ruchów powietrza jest najmniejszy.",
+            "correct_answer": "W środkowym",
+            "score": 0.014267185473411104,
+            "error": false,
+            "elapsed": 5.725
+          },
+          {
+            "prompt_id": "llmzszl-identity-006",
+            "raw_answer": "Aby rozwiązać to zadanie, możemy użyć prostego równania. Oznaczmy liczbę dziewcząt jako \\(d\\), a liczbę chłopców jako \\(c\\).\n\nZ treści zadania wiemy, że:\n1. Całkowita liczba uczniów wynosi 32, więc:\n\\[ d + c = 32 \\]\n\n2. Chłopców jest o 8 więcej niż dziewcząt, więc:\n\\[ c = d + 8 \\]\n\nTeraz podstawmy drugie równanie do pierwszego:\n\\[ d + (d + 8) = 32 \\]\n\\[ 2d + 8 = 32 \\]\n\nOdejmijmy 8 od obu stron:\n\\[ 2d = 24 \\]\n\nPodzielmy obie strony przez 2:\n\\[ d = 12 \\]\n\nTeraz, gdy znamy liczbę dziewcząt, możemy obliczyć liczbę chłopców:\n\\[ c = d + 8 = 12 + 8 = 20 \\]\n\nZatem w grupie jest 20 chłopców.\n\n**Odpowiedź:** W grupie jest 20 chłopców.",
+            "correct_answer": "20",
+            "score": 0.0031645569620253333,
+            "error": false,
+            "elapsed": 5.593
+          },
+          {
+            "prompt_id": "llmzszl-identity-007",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy zrozumieć, jak liczba wierzchołków zależy od rodzaju bryły.\n\nOstrosłup i graniastosłup mają takie same podstawy. Oznacza to, że liczba wierzchołków podstawy jest taka sama dla obu brył.\n\nOznaczmy liczbę wierzchołków podstawy jako \\( n \\).\n\n### Ostrosłup\n- Ostrosłup ma \\( n \\) wierzchołków podstawy.\n- Dodatkowo, ostrosłup ma jeden wierzchołek szczytowy.\n- Zatem, ostrosłup ma \\( n + 1 \\) wierzchołków.\n\n### Graniastosłup\n- Graniastosłup ma dwie podstawy, każda z \\( n \\) wierzchołkami.\n- Zatem, graniastosłup ma \\( 2n \\) wierzchołków podstaw.\n- Graniastosłup nie ma dodatkowego wierzchołka szczytowego, ponieważ jest to bryła o równoległych podstawach.\n- Zatem, graniastosłup ma \\( 2n \\) wierzchołków.\n\n### Łączna liczba wierzchołków\nWiemy, że łączna liczba wierzchołków obu brył wynosi 25. Możemy to zapisać jako równanie:\n\\[ (n + 1) + 2n = 25 \\]\n\n### Rozwiązanie równania\n\\[ n + 1 + 2n = 25 \\]\n\\[ 3n + 1 = 25 \\]\n\\[ 3n = 24 \\]\n\\[ n = 8 \\]\n\n### Liczba wierzchołków ostrosłupa\nTeraz, gdy znamy \\( n \\), możemy obliczyć liczbę wierzchołków ostrosłupa:\n\\[ n + 1 = 8 + 1 = 9 \\]\n\n### Odpowiedź\nOstrosłup ma 9 wierzchołków.\n\n\\boxed{9}",
+            "correct_answer": "9",
+            "score": 0.000860585197934638,
+            "error": false,
+            "elapsed": 9.359
+          },
+          {
+            "prompt_id": "llmzszl-identity-008",
+            "raw_answer": "Aby obliczyć prawdopodobieństwo wylosowania kuli białej, musimy rozważyć dwa scenariusze: losowanie z pierwszej urny i losowanie z drugiej urny.\n\n1. **Losowanie z pierwszej urny:**\n   - W pierwszej urnie jest 3 kule białe i 7 kul czarnych, co daje łącznie 10 kul.\n   - Prawdopodobieństwo wylosowania kuli białej z pierwszej urny wynosi:\n     \\[\n     P(\\text{biała z urny 1}) = \\frac{3}{10}\n     \\]\n   - Prawdopodobieństwo rzutu kostką, które daje jedno oczko (co oznacza losowanie z pierwszej urny), wynosi:\n     \\[\n     P(\\text{jedno oczko}) = \\frac{1}{6}\n     \\]\n   - Zatem prawdopodobieństwo wylosowania kuli białej przy losowaniu z pierwszej urny wynosi:\n     \\[\n     P(\\text{biała z urny 1 i jedno oczko}) = P(\\text{jedno oczko}) \\times P(\\text{biała z urny 1}) = \\frac{1}{6} \\times \\frac{3}{10} = \\frac{3}{60} = \\frac{1}{20}\n     \\]\n\n2. **Losowanie z drugiej urny:**\n   - W drugiej urnie jest 1 kula biała i 9 kul czarnych, co daje łącznie 10 kul.\n   - Prawdopodobieństwo wylosowania kuli białej z drugiej urny wynosi:\n     \\[\n     P(\\text{biała z urny 2}) = \\frac{1}{10}\n     \\]\n   - Prawdopodobieństwo rzutu kostką, które nie daje jednego oczka (co oznacza losowanie z drugiej urny), wynosi:\n     \\[\n     P(\\text{nie jedno oczko}) = 1 - P(\\text{jedno oczko}) = 1 - \\frac{1}{6} = \\frac{5}{6}\n     \\]\n   - Zatem prawdopodobieństwo wylosowania kuli białej przy losowaniu z drugiej urny wynosi:\n     \\[\n     P(\\text{biała z urny 2 i nie jedno oczko}) = P(\\text{nie jedno oczko}) \\times P(\\text{biała z urny 2}) = \\frac{5}{6} \\times \\frac{1}{10} = \\frac{5}{60} = \\frac{1}{12}\n     \\]\n\n3. **Całkowite prawdopodobieństwo wylosowania kuli białej:**\n   - Sumujemy prawdopodobieństwa z obu scenariuszy:\n     \\[\n     P(\\text{biała kula}) = P(\\text{biała z urny 1 i jedno oczko}) + P(\\text{biała z urny 2 i nie jedno oczko}) = \\frac{1}{20} + \\frac{1}{12}\n     \\]\n   - Aby dodać te ułamki, znajdujemy wspólny mianownik, który wynosi 60:\n     \\[\n     \\frac{1}{20} = \\frac{3}{60}, \\quad \\frac{1}{12} = \\frac{5}{60}\n     \\]\n   - Dodajemy ułamki:\n     \\[\n     P(\\text{biała kula}) = \\frac{3}{60} + \\frac{5}{60} = \\frac{8}{60} = \\frac{2}{15}\n     \\]\n\nZatem prawdopodobieństwo wylosowania kuli białej wynosi \\(\\frac{2}{15}\\).\n\n\\boxed{\\dfrac{2}{15}}",
+            "correct_answer": "2/15",
+            "score": 0.0013410818059901297,
+            "error": false,
+            "elapsed": 17.511
+          },
+          {
+            "prompt_id": "llmzszl-identity-009",
+            "raw_answer": "Aby obliczyć objętość stożka, musimy znać promień podstawy (r) oraz wysokość stożka (h). Dane są: kąt rozwarcia stożka α = 120° oraz tworząca l = 4.\n\n### Krok 1: Znalezienie promienia podstawy (r)\nKąt rozwarcia stożka α jest związany z promieniem podstawy i tworzącą. W trójkącie prostokątnym utworzonym przez wysokość, promień i tworzącą, kąt przy podstawie wynosi α/2.\n\n\\[ \\tan\\left(\\frac{\\alpha}{2}\\right) = \\frac{r}{h} \\]\n\nPonieważ α = 120°, to:\n\n\\[ \\frac{\\alpha}{2} = 60° \\]\n\nZatem:\n\n\\[ \\tan(60°) = \\sqrt{3} = \\frac{r}{h} \\]\n\n### Krok 2: Znalezienie wysokości stożka (h)\nW trójkącie prostokątnym, tworząca jest przeciwprostokątną, więc:\n\n\\[ l^2 = r^2 + h^2 \\]\n\nPodstawiając l = 4:\n\n\\[ 4^2 = r^2 + h^2 \\]\n\\[ 16 = r^2 + h^2 \\]\n\nZ wcześniejszego równania mamy:\n\n\\[ r = h \\cdot \\sqrt{3} \\]\n\nPodstawiając to do równania:\n\n\\[ 16 = (h \\cdot \\sqrt{3})^2 + h^2 \\]\n\\[ 16 = 3h^2 + h^2 \\]\n\\[ 16 = 4h^2 \\]\n\\[ h^2 = 4 \\]\n\\[ h = 2 \\]\n\n### Krok 3: Znalezienie promienia podstawy (r)\nTeraz, gdy znamy h, możemy znaleźć r:\n\n\\[ r = h \\cdot \\sqrt{3} = 2 \\cdot \\sqrt{3} = 2\\sqrt{3} \\]\n\n### Krok 4: Obliczenie objętości stożka\nObjętość stożka V jest dana wzorem:\n\n\\[ V = \\frac{1}{3} \\pi r^2 h \\]\n\nPodstawiając r i h:\n\n\\[ V = \\frac{1}{3} \\pi (2\\sqrt{3})^2 \\cdot 2 \\]\n\\[ V = \\frac{1}{3} \\pi \\cdot 4 \\cdot 3 \\cdot 2 \\]\n\\[ V = \\frac{1}{3} \\pi \\cdot 24 \\]\n\\[ V = 8\\pi \\]\n\n### Odpowiedź\nObjętość stożka wynosi \\( 8\\pi \\).\n\n\\boxed{8\\pi}",
+            "correct_answer": "8π",
+            "score": 0.0007082152974504652,
+            "error": false,
+            "elapsed": 12.388
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

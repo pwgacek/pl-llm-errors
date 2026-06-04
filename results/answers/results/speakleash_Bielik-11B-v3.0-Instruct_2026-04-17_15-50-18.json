@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-04-17T15:50:18.923423+00:00",
+  "model": "speakleash/Bielik-11B-v3.0-Instruct",
+  "base_url": "https://llmlab.plgrid.pl/api/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "elapsed_sec": 0.59,
+  "datasets": {
+    "identity": {
+      "llmzszl": {
+        "num_sampled": 1,
+        "score_sum": 0.333333,
+        "score_avg": 0.333333,
+        "error_count": 0,
+        "elapsed_sec": 0.59,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-identity-000",
+            "raw_answer": "{\"odpowiedź\": \"8√3\"}",
+            "correct_answer": "8",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 0.587
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

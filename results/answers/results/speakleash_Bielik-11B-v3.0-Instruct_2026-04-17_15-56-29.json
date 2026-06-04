@@ -1,0 +1,3255 @@
+{
+  "timestamp": "2026-04-17T15:56:29.463464+00:00",
+  "model": "speakleash/Bielik-11B-v3.0-Instruct",
+  "base_url": "https://llmlab.plgrid.pl/api/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "elapsed_sec": 179.57,
+  "datasets": {
+    "identity": {
+      "llmzszl_mcq": {
+        "num_sampled": 100,
+        "score_sum": 48.0,
+        "score_avg": 0.48,
+        "error_count": 14,
+        "elapsed_sec": 33.02,
+        "questions": [
+          {
+            "prompt_id": "llmzszl_mcq-identity-000",
+            "raw_answer": "{\"odpowiedź\": \"C. 8√3\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.627
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-001",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.277
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-002",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.287
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-003",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.413
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-004",
+            "raw_answer": "{\"odpowiedź\": \"D. 34,5 mln km2\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.437
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-005",
+            "raw_answer": "{\"odpowiedź\": \"C. W górnym.\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.43
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-006",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.279
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-007",
+            "raw_answer": "{\"odpowiedź\": \"C. 9\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.429
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-008",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.284
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-009",
+            "raw_answer": "{\"odpowiedź\": \"C. 12 cm\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.44
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-010",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.278
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-011",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.274
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-012",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.277
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-013",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.268
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-014",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.285
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-015",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.359
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-016",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.282
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-017",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.264
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-018",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.374
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-019",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.286
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-020",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.278
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-021",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.357
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-022",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.274
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-023",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.274
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-024",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.266
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-025",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.27
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-026",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.269
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-027",
+            "raw_answer": "{\"odpowiedź\": \"B. 50%\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.36
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-028",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.438
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-029",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.268
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-030",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.284
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-031",
+            "raw_answer": "{\"odpowiedź\": \"D. około 2778\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.674
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-032",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.268
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-033",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.288
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-034",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.282
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-035",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.325
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-036",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.577
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-037",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.273
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-038",
+            "raw_answer": "{\"odpowiedź\": \"B. 31/32\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.44
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-039",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.305
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-040",
+            "raw_answer": "{\"odpowiedź\": \"C. 50%\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.351
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-041",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.269
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-042",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.267
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-043",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.347
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-044",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.264
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-045",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.27
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-046",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.38
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-047",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.325
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-048",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.28
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-049",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.289
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-050",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.271
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-051",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.279
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-052",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.314
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-053",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.399
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-054",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.283
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-055",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.43
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-056",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.289
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-057",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.275
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-058",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.27
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-059",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.321
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-060",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.271
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-061",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.276
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-062",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.277
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-063",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.38
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-064",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.273
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-065",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.269
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-066",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.378
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-067",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.33
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-068",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.387
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-069",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.286
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-070",
+            "raw_answer": "{\"odpowiedź\": \"D. 35/50\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.427
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-071",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.3
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-072",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.283
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-073",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.504
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-074",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.276
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-075",
+            "raw_answer": "{\"odpowiedź\": \"C. 4 godziny 40 minut\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.462
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-076",
+            "raw_answer": "{\"odpowiedź\": \"C. tylko Mirek.\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.535
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-077",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.286
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-078",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.278
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-079",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.281
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-080",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.275
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-081",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.292
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-082",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.328
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-083",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.286
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-084",
+            "raw_answer": "{\"odpowiedź\": \"C. 1/14\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.398
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-085",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.281
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-086",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.366
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-087",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.274
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-088",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.287
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-089",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.533
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-090",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.308
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-091",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.305
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-092",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.335
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-093",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.283
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-094",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.304
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-095",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.301
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-096",
+            "raw_answer": "{\"odpowiedź\": \"C. 16\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.408
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-097",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.285
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-098",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.324
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-099",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.285
+          }
+        ]
+      }
+    },
+    "permutation_1": {
+      "llmzszl_mcq": {
+        "num_sampled": 100,
+        "score_sum": 43.0,
+        "score_avg": 0.43,
+        "error_count": 10,
+        "elapsed_sec": 73.93,
+        "questions": [
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-000",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.474
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-001",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.291
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-002",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.287
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-003",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.279
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-004",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.33
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-005",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.306
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-006",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.29
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-007",
+            "raw_answer": "{\"odpowiedź\": \"A. 9\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.366
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-008",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.303
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-009",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.295
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-010",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.297
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-011",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.297
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-012",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.321
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-013",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.293
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-014",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.301
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-015",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.302
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-016",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.324
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-017",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.28
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-018",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.276
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-019",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.292
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-020",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.339
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-021",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.299
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-022",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.388
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-023",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.299
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-024",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.408
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-025",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.297
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-026",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.3
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-027",
+            "raw_answer": "{\"odpowiedź\": \"A. 45%\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.382
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-028",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.315
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-029",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.28
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-030",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.378
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-031",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.309
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-032",
+            "raw_answer": "{\"odpowiedź\": \"D. 10°\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.536
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-033",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.444
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-034",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.566
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-035",
+            "raw_answer": "{\"odpowiedź\": \"B. 25%\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.49
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-036",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.04
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-037",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.363
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-038",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.722
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-039",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.459
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-040",
+            "raw_answer": "{\"odpowiedź\": \"C. 75%\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.783
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-041",
+            "raw_answer": "{\"odpowiedź\": \"B. 8 i 6\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.725
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-042",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.817
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-043",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.809
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-044",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.852
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-045",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.347
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-046",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.694
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-047",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.834
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-048",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.877
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-049",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.396
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-050",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.059
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-051",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.454
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-052",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.254
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-053",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.084
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-054",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.734
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-055",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.875
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-056",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.376
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-057",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.628
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-058",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.423
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-059",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.915
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-060",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.503
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-061",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.572
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-062",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.274
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-063",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.607
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-064",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.288
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-065",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.429
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-066",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.655
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-067",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.467
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-068",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.414
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-069",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.357
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-070",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.402
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-071",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.822
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-072",
+            "raw_answer": "{\"odpowiedź\": \"D. √2 + √5\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.774
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-073",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.505
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-074",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.562
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-075",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.365
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-076",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.584
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-077",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.024
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-078",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.71
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-079",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.76
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-080",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.477
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-081",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.698
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-082",
+            "raw_answer": "{\"odpowiedź\": \"D. 5\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.364
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-083",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.281
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-084",
+            "raw_answer": "{\"odpowiedź\": \"B. 1/7\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.011
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-085",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.332
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-086",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.506
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-087",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.821
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-088",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.067
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-089",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.333
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-090",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.101
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-091",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.662
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-092",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.908
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-093",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.761
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-094",
+            "raw_answer": "{\"odpowiedź\": \"B. 15√2\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.717
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-095",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.333
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-096",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.401
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-097",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.597
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-098",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 3.238
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_1-099",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.482
+          }
+        ]
+      }
+    },
+    "permutation_2": {
+      "llmzszl_mcq": {
+        "num_sampled": 100,
+        "score_sum": 36.0,
+        "score_avg": 0.36,
+        "error_count": 15,
+        "elapsed_sec": 39.51,
+        "questions": [
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-000",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.505
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-001",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.462
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-002",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.731
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-003",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.411
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-004",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.335
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-005",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.381
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-006",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.618
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-007",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.615
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-008",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.498
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-009",
+            "raw_answer": "{\"odpowiedź\": \"C. 10 cm\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.43
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-010",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.488
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-011",
+            "raw_answer": "{\"odpowiedź\": \"C. 4 Ω\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.772
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-012",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.969
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-013",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.835
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-014",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.368
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-015",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.759
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-016",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.716
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-017",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.642
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-018",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.366
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-019",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.471
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-020",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.38
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-021",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.392
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-022",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.394
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-023",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.478
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-024",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.454
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-025",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.36
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-026",
+            "raw_answer": "{\"odpowiedź\": \"C. 9π√3\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.652
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-027",
+            "raw_answer": "{\"odpowiedź\": \"C. 50%\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.566
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-028",
+            "raw_answer": "{\"odpowiedź\": \"C. 3 1/4\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.647
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-029",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.503
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-030",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.329
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-031",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.422
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-032",
+            "raw_answer": "{\"odpowiedź\": \"C. 10°\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.54
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-033",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.622
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-034",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.485
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-035",
+            "raw_answer": "{\"odpowiedź\": \"D. 25%\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.513
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-036",
+            "raw_answer": "{\"odpowiedź\": \"B. √42\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.614
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-037",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.314
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-038",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.275
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-039",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.278
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-040",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.3
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-041",
+            "raw_answer": "{\"odpowiedź\": \"D. 8 i 6\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.368
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-042",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.298
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-043",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.279
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-044",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.288
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-045",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.363
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-046",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.282
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-047",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.282
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-048",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.352
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-049",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.278
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-050",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.28
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-051",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.362
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-052",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.284
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-053",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.272
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-054",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.36
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-055",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.27
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-056",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.284
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-057",
+            "raw_answer": "{\"odpowiedź\": \"C. 5 m\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.377
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-058",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.283
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-059",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.272
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-060",
+            "raw_answer": "{\"odpowiedź\": \"D. 50 N/kg\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.461
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-061",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.279
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-062",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.27
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-063",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.379
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-064",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.295
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-065",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.28
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-066",
+            "raw_answer": "{\"odpowiedź\": \"A. Dwa atomy, dwa pierwiastki.\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.494
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-067",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.266
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-068",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.274
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-069",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.333
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-070",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.27
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-071",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.268
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-072",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.297
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-073",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.287
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-074",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.272
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-075",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.28
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-076",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.299
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-077",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.279
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-078",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.265
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-079",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.282
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-080",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.789
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-081",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.274
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-082",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.273
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-083",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.269
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-084",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.299
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-085",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.27
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-086",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.283
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-087",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.268
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-088",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.29
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-089",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.277
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-090",
+            "raw_answer": "{\"odpowiedź\": \"B. 60√3\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.465
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-091",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.279
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-092",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.277
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-093",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.365
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-094",
+            "raw_answer": "{\"odpowiedź\": \"C. 45\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.345
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-095",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.363
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-096",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.287
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-097",
+            "raw_answer": "{\"odpowiedź\": \"C. 13:57\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.432
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-098",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.269
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_2-099",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.269
+          }
+        ]
+      }
+    },
+    "permutation_3": {
+      "llmzszl_mcq": {
+        "num_sampled": 100,
+        "score_sum": 40.0,
+        "score_avg": 0.4,
+        "error_count": 13,
+        "elapsed_sec": 33.1,
+        "questions": [
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-000",
+            "raw_answer": "{\"odpowiedź\": \"D. 8√3\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.489
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-001",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.357
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-002",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.365
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-003",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.294
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-004",
+            "raw_answer": "{\"odpowiedź\": \"B. 34,5 mln km2\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.459
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-005",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.309
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-006",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.365
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-007",
+            "raw_answer": "{\"odpowiedź\": \"D. 9\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.635
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-008",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.456
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-009",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.301
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-010",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.442
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-011",
+            "raw_answer": "{\"odpowiedź\": \"C. 1 Ω\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.514
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-012",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.297
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-013",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.506
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-014",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.295
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-015",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.296
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-016",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.353
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-017",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.284
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-018",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.295
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-019",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.342
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-020",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.296
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-021",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.301
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-022",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.291
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-023",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.289
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-024",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.35
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-025",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.289
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-026",
+            "raw_answer": "{\"odpowiedź\": \"C. 27π√3\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.404
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-027",
+            "raw_answer": "{\"odpowiedź\": \"A. 25%\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.442
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-028",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.292
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-029",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.29
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-030",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.316
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-031",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.304
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-032",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.288
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-033",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.292
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-034",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.338
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-035",
+            "raw_answer": "{\"odpowiedź\": \"C. 25%\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.371
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-036",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.376
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-037",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.275
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-038",
+            "raw_answer": "{\"odpowiedź\": \"C. 1/32\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.436
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-039",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.286
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-040",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.285
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-041",
+            "raw_answer": "{\"odpowiedź\": \"C. 8 i 6\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.449
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-042",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.292
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-043",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.28
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-044",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.281
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-045",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.286
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-046",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.297
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-047",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.278
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-048",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.275
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-049",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.278
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-050",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.292
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-051",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.286
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-052",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.332
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-053",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.273
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-054",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.279
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-055",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.58
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-056",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.286
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-057",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.279
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-058",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.276
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-059",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.591
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-060",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.281
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-061",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.287
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-062",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.388
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-063",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.272
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-064",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.27
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-065",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.268
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-066",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.288
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-067",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.267
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-068",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.269
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-069",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.278
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-070",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.332
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-071",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.273
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-072",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.599
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-073",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.268
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-074",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.284
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-075",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "B",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.285
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-076",
+            "raw_answer": "{\"odpowiedź\": \"D. tylko Mirek.\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.489
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-077",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.274
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-078",
+            "raw_answer": "{\"odpowiedź\": \"D. H/2\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.341
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-079",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.267
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-080",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.267
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-081",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.303
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-082",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "D",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.289
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-083",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.275
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-084",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.317
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-085",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.269
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-086",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.386
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-087",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "correct_answer": "C",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.286
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-088",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.286
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-089",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.335
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-090",
+            "raw_answer": "{\"odpowiedź\": \"D. 60√3\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.383
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-091",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.355
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-092",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.278
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-093",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.274
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-094",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "correct_answer": "A",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.362
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-095",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.271
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-096",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.265
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-097",
+            "raw_answer": "{\"odpowiedź\": \"C. 13:53\"}",
+            "correct_answer": "D",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.39
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-098",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "correct_answer": "B",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.281
+          },
+          {
+            "prompt_id": "llmzszl_mcq-permutation_3-099",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "correct_answer": "C",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.279
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

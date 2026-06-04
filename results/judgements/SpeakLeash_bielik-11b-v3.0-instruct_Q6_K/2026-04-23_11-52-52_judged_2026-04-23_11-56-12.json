@@ -1,0 +1,298 @@
+{
+  "source": "/home/pawel/Desktop/pl-llm-errors/answers/SpeakLeash_bielik-11b-v3.0-instruct_Q6_K/2026-04-23_11-52-52.json",
+  "judge_model": "openai/gpt-oss-120b",
+  "datasets": {
+    "identity": {
+      "polqa": {
+        "num_sampled": 10,
+        "error_count": 0,
+        "elapsed_sec": 137.1,
+        "judge_error_count": 0,
+        "questions": [
+          {
+            "prompt_id": "polqa-identity-000",
+            "raw_answer": "Pręcik",
+            "elapsed": 27.139,
+            "error": false,
+            "judgement_context": {
+              "question": "Jak nazywa się element kwiatu produkujący pyłek, składający się u roślin okrytonasiennych z główki i nitki?",
+              "context": "Pręcik (łac. \"stamen\") – męski organ płciowy w kwiecie wytwarzający pyłek, czyli odpowiednik męskiego gametofitu powstający z mikrospory. Pręciki są występującymi u okrytonasiennych mikrosporofilami. Składają się z nitki i główki tworzonej zazwyczaj przez dwa pylniki zawierające po dwa woreczki pyłkowe, czyli mikrosporangia. Pyłek po dojrzeniu wysypywany jest z pękających pylników i przenoszony przez wiatr, wodę lub zwierzęta, by po osadzeniu na znamionach słupków wrosnąć i dokonać zapłodnienia.",
+              "correct_answer": [
+                "pręcik"
+              ]
+            },
+            "judge_scores": {
+              "correctness": {
+                "score": 3,
+                "reason": "The answer exactly matches the expected term \"pręcik\"."
+              },
+              "conciseness": {
+                "score": 2,
+                "reason": "The response is a single word, fully concise."
+              },
+              "language": {
+                "score": 3,
+                "reason": "Spelling, capitalization, and grammar are correct; the form is appropriate."
+              }
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "polqa-identity-001",
+            "raw_answer": "liczebnik",
+            "elapsed": 14.199,
+            "error": false,
+            "judgement_context": {
+              "question": "Co to za część mowy: półtora?",
+              "context": "liczebniki - oznaczające (określające) liczbę, część, kolejność rzeczy, przedmiotów, osób:\nliczebniki główne określają liczbę przedmiotów, osób, zdarzeń, np. jeden, dwa, trzy, sześć, siedem, osiem, dziesięć, trzydzieści.\nliczebniki zbiorowe określają zbiorowość ludzi, zwierząt, przedmiotów, nazw, np. dwoje, troje, pięcioro, siedmioro, ośmioro, dziewięcioro, trzydzieścioro.\nliczebniki porządkowe określają miejsce w szeregu, np. drugi, trzeci, szósty, dwudziesty, czterdziesty, setny, tysięczny.\nułamkowe, określają części ułamkowe czasu, przedmiotów, odległości, np. pół, półtora, ćwierć.",
+              "correct_answer": [
+                "liczebnik"
+              ]
+            },
+            "judge_scores": {
+              "correctness": {
+                "score": 3,
+                "reason": "Model gave exactly the expected answer 'liczebnik', matching the key."
+              },
+              "conciseness": {
+                "score": 2,
+                "reason": "Answer is a single word, very brief."
+              },
+              "language": {
+                "score": 3,
+                "reason": "Spelling and grammar are correct; appropriate form."
+              }
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "polqa-identity-002",
+            "raw_answer": "Bazylika św. Piotra",
+            "elapsed": 13.427,
+            "error": false,
+            "judgement_context": {
+              "question": "Z której świątyni papież udziela błogosławieństwa Urbi et Orbi?",
+              "context": "Najświętszej Maryi Panny Po zakończeniu konklawe, błogosławieństwo miało miejsce tam, gdzie wybrano papieża; przed 1871 roku w Pałacu Kwirynalskim. Mimo iż tradycja nakazuje wygłaszać błogosławieństwo \"Urbi et Orbi\" z głównego balkonu Bazyliki św. Piotra, zdarzają się sytuacje wyjątkowe. Jan Paweł II przy okazji Świąt Bożego Narodzenia 2004 wygłaszał tekst \"Urbi et Orbi\" na placu św. Piotra. Podobnie uczynił Benedykt XVI po mszy św. w Uroczystość Zmartwychwstania Chrystusa, 23 marca 2008.",
+              "correct_answer": [
+                "z Bazyliki św. Piotra"
+              ]
+            },
+            "judge_scores": {
+              "correctness": {
+                "score": 3,
+                "reason": "The answer exactly matches the expected answer, specifying the Basilica of St. Peter as the location of the Urbi et Orbi blessing."
+              },
+              "conciseness": {
+                "score": 2,
+                "reason": "The response is brief, consisting of only the essential phrase without unnecessary elaboration."
+              },
+              "language": {
+                "score": 3,
+                "reason": "The answer is grammatically correct, properly capitalized, and contains no spelling or punctuation errors."
+              }
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "polqa-identity-003",
+            "raw_answer": "śpiewaczka",
+            "elapsed": 12.474,
+            "error": false,
+            "judgement_context": {
+              "question": "Teresa Żylis-Gara jest aktorką, śpiewaczką czy malarką?",
+              "context": "średniowiecznej, profesor KUL (zm. 2017) 23 stycznia – Teresa Żylis-Gara, polska śpiewaczka (sopran) (zm. 2021) 27 stycznia Bobby Blue Bland, amerykański piosenkarz bluesowy (zm. 2013) Usko Meriläinen, fiński kompozytor i dyrygent (zm. 2004) 28 stycznia Jasraj, indyjski wokalista muzyki hindustańskiej (zm. 2020) Luis de Pablo, hiszpański kompozytor (zm. 2021) 29 stycznia – Norio Ōga, japoński śpiewak operowy, przedsiębiorca, dyrektor generalny Sony Corporation (zm. 2011) 30 stycznia – Buddy",
+              "correct_answer": [
+                "śpiewaczką"
+              ]
+            },
+            "judge_scores": {
+              "correctness": {
+                "score": 1,
+                "reason": "Model odpowiedź \"śpiewaczka\" nie zgadza się z kluczem, który wymaga formy \"śpiewaczką\""
+              },
+              "conciseness": {
+                "score": 2,
+                "reason": "Odpowiedź jest jednowyrazowa i bardzo zwięzła"
+              },
+              "language": {
+                "score": 3,
+                "reason": "Użyto poprawnego słowa bez błędów ortograficznych czy gramatycznych"
+              }
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "polqa-identity-004",
+            "raw_answer": "tak",
+            "elapsed": 10.265,
+            "error": false,
+            "judgement_context": {
+              "question": "Czy gong to instrument muzyczny?",
+              "context": "Gong – instrument muzyczny z grupy idiofonów płytowych uderzanych. Jest to wisząca lub ustawiona na specjalnym stojaku tarcza z brązu lub mosiądzu, o wypukłej, czasem falistej powierzchni i lekko zagiętych brzegach. Wprowadza się ją w drgania poprzez uderzenie pałką lub młoteczkiem o miękkiej główce, przy czym rodzaj wzbudzonego dźwięku zależy od miejsca uderzenia. Przybył do średniowiecznej Europy z Azji. W orkiestrach wprowadzony został pod koniec XVIII wieku. Istnieje wiele odmian gongów.",
+              "correct_answer": [
+                "tak"
+              ]
+            },
+            "judge_scores": {
+              "correctness": {
+                "score": 3,
+                "reason": "Model odpowiedział dokładnie 'tak', co jest zgodne z kluczem i w pełni odpowiada na pytanie"
+              },
+              "conciseness": {
+                "score": 2,
+                "reason": "Odpowiedź jest jednowyrazowa, więc bardzo zwięzła"
+              },
+              "language": {
+                "score": 3,
+                "reason": "Użyto poprawnego, bezbłędnego języka polskiego"
+              }
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "polqa-identity-005",
+            "raw_answer": "cepeen",
+            "elapsed": 10.627,
+            "error": false,
+            "judgement_context": {
+              "question": "Jakim trzyliterowym skrótem określano w PRL stacje benzynowe?",
+              "context": "), od nazwy producenta ITT Cannon cepeen – stacja benzynowa, od skrótu nieistniejącej obecnie Centrali Produktów Naftowych cola – rodzaj słodkiego napoju gazowanego, od nazwy Coca-Cola dyktafon – urządzenie do nagrywania dźwięku, od amerykańskiego przedsiębiorstwa Dictaphone dżip – samochód terenowy, od amerykańskiej firmy Jeep elektroluks – regionalne potoczne określenie odkurzacza, od szwedzkiej firmy Electrolux eros – przestarzale prezerwatywa, od nazwy prezerwatyw dostępnych w PRL eternit –",
+              "correct_answer": [
+                "CPN"
+              ]
+            },
+            "judge_scores": {
+              "correctness": {
+                "score": 1,
+                "reason": "The model answered \"cepeen\" which does not match the required three‑letter abbreviation \"CPN\"."
+              },
+              "conciseness": {
+                "score": 2,
+                "reason": "The response is a single word, making it brief and to the point."
+              },
+              "language": {
+                "score": 3,
+                "reason": "The answer contains no grammatical, orthographic, or stylistic errors."
+              }
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "polqa-identity-006",
+            "raw_answer": "UNRRA",
+            "elapsed": 12.903,
+            "error": false,
+            "judgement_context": {
+              "question": "Która międzynarodowa organizacja została utworzona w Stanach Zjednoczonych w 1943 roku pod hasłem niesienia pomocy ekonomicznej ludności krajów zniszczonych przez wojnę, a rozwiązana w 1947 roku?",
+              "context": "Organizacja Narodów Zjednoczonych uruchomiła szereg starań humanitarnych i pomocowych, finansowanych prawie w całości przez Stany Zjednoczone. Starania te odniosły znaczące efekty, ale brakowało im scentralizowanej organizacji i planowania, wskutek czego nie zdołały zaspokoić wielu spośród podstawowych potrzeb Europy. W 1943 została założona Administracja Narodów Zjednoczonych do Spraw Pomocy i Odbudowy (UNRRA), aby po II wojnie światowej zapewniać pomoc obszarom wyzwolonym spod okupacji sił Osi.",
+              "correct_answer": [
+                "United Nations Relief and Rehabilitation Administration",
+                "UNRRA"
+              ]
+            },
+            "judge_scores": {
+              "correctness": {
+                "score": 2,
+                "reason": "Odpowiedź zawiera jedynie skrót UNRRA, brak pełnej nazwy organizacji"
+              },
+              "conciseness": {
+                "score": 2,
+                "reason": "Odpowiedź jest bardzo krótka i zwięzła"
+              },
+              "language": {
+                "score": 3,
+                "reason": "Brak błędów językowych, poprawna forma"
+              }
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "polqa-identity-007",
+            "raw_answer": "indyjskiego",
+            "elapsed": 11.773,
+            "error": false,
+            "judgement_context": {
+              "question": "Maharadża jest tytułem władcy indyjskiego, chińskiego czy tureckiego?",
+              "context": "Radża, radźa (hindi \"rājā,\" sanskryt राज \"rājan\" – „król”, ang. \"raja\" lub \"rajah\") – historyczny tytuł władcy państwa na subkontynencie indyjskim i w Azji Południowo-Wschodniej, odpowiednik księcia lub króla. Miał władzę sądowniczą i był zwierzchnikiem wojsk; żonie radży przysługiwał tytuł \"rani\". Ponadto posługiwano się tym tytułem w Imperium Brytyjskim zwracając się do niższych rangą dygniarzy i możnowładców, stawiając go przed nazwiskiem. Niższy rangą od maharadży.",
+              "correct_answer": [
+                "indyjskiego"
+              ]
+            },
+            "judge_scores": {
+              "correctness": {
+                "score": 3,
+                "reason": "Odpowiedź jest zgodna z kluczem i w pełni odpowiada na pytanie."
+              },
+              "conciseness": {
+                "score": 2,
+                "reason": "Odpowiedź jest bardzo krótka, składa się z jednego słowa."
+              },
+              "language": {
+                "score": 3,
+                "reason": "Brak błędów językowych, forma poprawna."
+              }
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "polqa-identity-008",
+            "raw_answer": "średniowiecze",
+            "elapsed": 12.301,
+            "error": false,
+            "judgement_context": {
+              "question": "Czy Czyngis Chan stworzył Imperium Mongolskie w średniowieczu, czy w starożytności?",
+              "context": "Organizacja i rozbudowa imperium. Wielki kurułtaj. W 1206 roku odbył się wielki kurułtaj – zjazd wszystkich podbitych ludów u źródeł Ononu. Zjazd ten formalnie uznał Temudżyna władcą wszystkich podbitych ludów z tytułem Kagana. Oznaczało to formalny początek nowego organizmu politycznego: imperium mongolskiego. Doszło tam również do organizacji dworu Czyngis-chana oraz reorganizacji armii: podział na 95 minganów (a zatem liczyła ona w tym momencie ok. 95 tys. żołnierzy) i wyznaczenie ich dowódców.",
+              "correct_answer": [
+                "w średniowieczu"
+              ]
+            },
+            "judge_scores": {
+              "correctness": {
+                "score": 2,
+                "reason": "Model podało jedynie słowo \"średniowiecze\" zamiast pełnej frazy \"w średniowieczu\", co jest semantycznie poprawne, ale niekompletne względem klucza."
+              },
+              "conciseness": {
+                "score": 2,
+                "reason": "Odpowiedź jest bardzo krótka i zwięzła."
+              },
+              "language": {
+                "score": 3,
+                "reason": "Brak błędów językowych, poprawna forma."
+              }
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "polqa-identity-009",
+            "raw_answer": "pchnięciu kulą",
+            "elapsed": 11.993,
+            "error": false,
+            "judgement_context": {
+              "question": "W której dyscyplinie lekkoatletycznej Władysław Komar zdobył złoty medal olimpijski?",
+              "context": "na igrzyskach w Monachium Władysław Komar zdobył złoty medal w pchnięciu kulą. 10 września – reprezentacja Polski w piłce nożnej pod wodzą Kazimierza Górskiego zdobyła złoty medal na igrzyskach olimpijskich w Monachium. 11 września – zakończyły się XX Letnie Igrzyska Olimpijskie w Monachium. 17 września – w USA wyemitowano pierwszy odcinek serialu \"M*A*S*H\". 19 września – izraelski dyplomata Ami Sachori zginął w ambasadzie w Londynie w wyniku wybuchu bomby umieszczonej w liście.",
+              "correct_answer": [
+                "w pchnięciu kulą"
+              ]
+            },
+            "judge_scores": {
+              "correctness": {
+                "score": 2,
+                "reason": "Odpowiedź podaje właściwą dyscyplinę, ale brakuje przyimka \"w\", więc nie jest w pełni zgodna z kluczem."
+              },
+              "conciseness": {
+                "score": 2,
+                "reason": "Odpowiedź jest bardzo krótka i zwięzła, nie zawiera zbędnych słów."
+              },
+              "language": {
+                "score": 2,
+                "reason": "Fraza jest zrozumiała, ale brak przyimka powoduje drobny błąd gramatyczny."
+              }
+            },
+            "judge_error": false
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

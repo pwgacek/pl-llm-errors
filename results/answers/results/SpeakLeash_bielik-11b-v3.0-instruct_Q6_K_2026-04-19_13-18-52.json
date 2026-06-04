@@ -1,0 +1,422 @@
+{
+  "timestamp": "2026-04-19T13:18:52.799701+00:00",
+  "model": "SpeakLeash/bielik-11b-v3.0-instruct:Q6_K",
+  "base_url": "http://localhost:11434/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "elapsed_sec": 379.47,
+  "datasets": {
+    "identity": {
+      "polqa": {
+        "num_sampled": 50,
+        "score_sum": 45.278724,
+        "score_avg": 0.905574,
+        "error_count": 0,
+        "elapsed_sec": 379.46,
+        "questions": [
+          {
+            "prompt_id": "polqa-identity-000",
+            "raw_answer": "Sulejman",
+            "correct_answer": "Sulejman",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 15.635
+          },
+          {
+            "prompt_id": "polqa-identity-001",
+            "raw_answer": "NBP",
+            "correct_answer": "Narodowy Bank Polski",
+            "score": 0.15000000000000002,
+            "error": false,
+            "elapsed": 2.71
+          },
+          {
+            "prompt_id": "polqa-identity-002",
+            "raw_answer": "wierszem",
+            "correct_answer": "wierszem",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 4.755
+          },
+          {
+            "prompt_id": "polqa-identity-003",
+            "raw_answer": "tak",
+            "correct_answer": "tak",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 10.832
+          },
+          {
+            "prompt_id": "polqa-identity-004",
+            "raw_answer": "wosku",
+            "correct_answer": "w wosku",
+            "score": 0.7142857142857143,
+            "error": false,
+            "elapsed": 10.792
+          },
+          {
+            "prompt_id": "polqa-identity-005",
+            "raw_answer": "Marsa",
+            "correct_answer": "Marsa",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 8.156
+          },
+          {
+            "prompt_id": "polqa-identity-006",
+            "raw_answer": "50 Hz",
+            "correct_answer": "50 Hz",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 11.283
+          },
+          {
+            "prompt_id": "polqa-identity-007",
+            "raw_answer": "argentyńskiej",
+            "correct_answer": "argentyńskiej",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 4.341
+          },
+          {
+            "prompt_id": "polqa-identity-008",
+            "raw_answer": "Szklarski",
+            "correct_answer": "Szklarski",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 5.564
+          },
+          {
+            "prompt_id": "polqa-identity-009",
+            "raw_answer": "Niemcy",
+            "correct_answer": "Niemcy",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 5.844
+          },
+          {
+            "prompt_id": "polqa-identity-010",
+            "raw_answer": "osa",
+            "correct_answer": "osy",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 4.239
+          },
+          {
+            "prompt_id": "polqa-identity-011",
+            "raw_answer": "Lehman Brothers",
+            "correct_answer": "Lehman Brothers",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 6.74
+          },
+          {
+            "prompt_id": "polqa-identity-012",
+            "raw_answer": "ZSRR",
+            "correct_answer": "ZSRR",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 4.744
+          },
+          {
+            "prompt_id": "polqa-identity-013",
+            "raw_answer": "wielbłądowatych",
+            "correct_answer": "wielbłądowatych",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 10.039
+          },
+          {
+            "prompt_id": "polqa-identity-014",
+            "raw_answer": "USS Nautilus",
+            "correct_answer": "Nautilus",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 8.621
+          },
+          {
+            "prompt_id": "polqa-identity-015",
+            "raw_answer": "Towarzystwo Jezusowe",
+            "correct_answer": "jezuici",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 6.055
+          },
+          {
+            "prompt_id": "polqa-identity-016",
+            "raw_answer": "myto",
+            "correct_answer": "myto",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 7.521
+          },
+          {
+            "prompt_id": "polqa-identity-017",
+            "raw_answer": "Loyola",
+            "correct_answer": "Loyola",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 6.233
+          },
+          {
+            "prompt_id": "polqa-identity-018",
+            "raw_answer": "Nil",
+            "correct_answer": "Nil",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.155
+          },
+          {
+            "prompt_id": "polqa-identity-019",
+            "raw_answer": "Discovery",
+            "correct_answer": "Discovery",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 10.66
+          },
+          {
+            "prompt_id": "polqa-identity-020",
+            "raw_answer": "przednie",
+            "correct_answer": "przednie",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 4.755
+          },
+          {
+            "prompt_id": "polqa-identity-021",
+            "raw_answer": "Kieślowski",
+            "correct_answer": "Krzysztof Kieślowski",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 5.542
+          },
+          {
+            "prompt_id": "polqa-identity-022",
+            "raw_answer": "sowy",
+            "correct_answer": "sowy",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 5.194
+          },
+          {
+            "prompt_id": "polqa-identity-023",
+            "raw_answer": "Huygens",
+            "correct_answer": "Christiaan Huygens",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.772
+          },
+          {
+            "prompt_id": "polqa-identity-024",
+            "raw_answer": "Hannibal",
+            "correct_answer": "Hannibal",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 12.915
+          },
+          {
+            "prompt_id": "polqa-identity-025",
+            "raw_answer": "admirał",
+            "correct_answer": "admirał",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.682
+          },
+          {
+            "prompt_id": "polqa-identity-026",
+            "raw_answer": "Nowej Zelandii",
+            "correct_answer": "od Nowej Zelandii",
+            "score": 0.8235294117647058,
+            "error": false,
+            "elapsed": 8.982
+          },
+          {
+            "prompt_id": "polqa-identity-027",
+            "raw_answer": "makler",
+            "correct_answer": "makler papierów wartościowych",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 6.342
+          },
+          {
+            "prompt_id": "polqa-identity-028",
+            "raw_answer": "Cztery",
+            "correct_answer": "cztery",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 8.483
+          },
+          {
+            "prompt_id": "polqa-identity-029",
+            "raw_answer": "1918",
+            "correct_answer": "w 1918",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 5.927
+          },
+          {
+            "prompt_id": "polqa-identity-030",
+            "raw_answer": "Vincent van Gogh",
+            "correct_answer": "Vincent van Gogh",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 10.842
+          },
+          {
+            "prompt_id": "polqa-identity-031",
+            "raw_answer": "Nogat",
+            "correct_answer": "nad Nogatem",
+            "score": 0.4545454545454546,
+            "error": false,
+            "elapsed": 6.842
+          },
+          {
+            "prompt_id": "polqa-identity-032",
+            "raw_answer": "Szymon Cyrenejczyk",
+            "correct_answer": "Szymon Cyrenejczyk",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 4.833
+          },
+          {
+            "prompt_id": "polqa-identity-033",
+            "raw_answer": "tygrysy",
+            "correct_answer": "tygrysy",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 5.702
+          },
+          {
+            "prompt_id": "polqa-identity-034",
+            "raw_answer": "tak",
+            "correct_answer": "tak",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 7.903
+          },
+          {
+            "prompt_id": "polqa-identity-035",
+            "raw_answer": "Jan Sebastian",
+            "correct_answer": "Jan Sebastian",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.862
+          },
+          {
+            "prompt_id": "polqa-identity-036",
+            "raw_answer": "tarczycy",
+            "correct_answer": "tarczycy",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 6.585
+          },
+          {
+            "prompt_id": "polqa-identity-037",
+            "raw_answer": "Nogatem",
+            "correct_answer": "nad Nogatem",
+            "score": 0.6363636363636364,
+            "error": false,
+            "elapsed": 4.475
+          },
+          {
+            "prompt_id": "polqa-identity-038",
+            "raw_answer": "Krakowa",
+            "correct_answer": "Krakowa",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.678
+          },
+          {
+            "prompt_id": "polqa-identity-039",
+            "raw_answer": "szpilki",
+            "correct_answer": "szpilki",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 11.289
+          },
+          {
+            "prompt_id": "polqa-identity-040",
+            "raw_answer": "Katowice",
+            "correct_answer": "w Katowicach",
+            "score": 0.5833333333333333,
+            "error": false,
+            "elapsed": 5.724
+          },
+          {
+            "prompt_id": "polqa-identity-041",
+            "raw_answer": "Trójprzymierze",
+            "correct_answer": "Trójprzymierze",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 13.845
+          },
+          {
+            "prompt_id": "polqa-identity-042",
+            "raw_answer": "XX",
+            "correct_answer": "w XX",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 5.611
+          },
+          {
+            "prompt_id": "polqa-identity-043",
+            "raw_answer": "Księga Powtórzonego Prawa",
+            "correct_answer": "Księga Powtórzonego Prawa",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 15.134
+          },
+          {
+            "prompt_id": "polqa-identity-044",
+            "raw_answer": "architektura",
+            "correct_answer": "architektury",
+            "score": 0.9166666666666666,
+            "error": false,
+            "elapsed": 7.55
+          },
+          {
+            "prompt_id": "polqa-identity-045",
+            "raw_answer": "Nie",
+            "correct_answer": "nie",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 11.957
+          },
+          {
+            "prompt_id": "polqa-identity-046",
+            "raw_answer": "Sforzowie",
+            "correct_answer": "Sforzowie",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 8.841
+          },
+          {
+            "prompt_id": "polqa-identity-047",
+            "raw_answer": "łożyska",
+            "correct_answer": "łożyska",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 12.299
+          },
+          {
+            "prompt_id": "polqa-identity-048",
+            "raw_answer": "6 stycznia",
+            "correct_answer": "6 stycznia",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 7.198
+          },
+          {
+            "prompt_id": "polqa-identity-049",
+            "raw_answer": "Władysław",
+            "correct_answer": "Władysław",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 12.773
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

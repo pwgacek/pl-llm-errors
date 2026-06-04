@@ -1,0 +1,77 @@
+{
+  "timestamp": "2026-04-20T17:03:42.381060+00:00",
+  "model": "SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+  "base_url": "http://localhost:11434/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "elapsed_sec": 67.27,
+  "datasets": {
+    "identity": {
+      "llmzszl": {
+        "num_sampled": 2,
+        "error_count": 0,
+        "elapsed_sec": 61.07,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-identity-000",
+            "raw_answer": "# **Krok 1: Zrozumienie danych**\nRomb ma bok długości \\(4\\) i kąt rozwarty \\(150^\\circ\\).\n\n# **Krok 2: Obliczenie kąta prostego**\nPonieważ suma kątów w rombie wynosi \\(360^\\circ\\), a przeciwległe kąty są równe, możemy obliczyć kąt prosty:\n\\[\n180^\\circ - 150^\\circ = 30^\\circ\n\\]\nZatem drugi kąt prosty wynosi \\(30^\\circ\\).\n\n# **Krok 3: Podział rombu na trójkąty**\nRomb można podzielić na dwa trójkąty prostokątne, gdzie:\n- jeden bok to połowa przekątnej dłuższej (oznaczmy ją jako \\(d_1\\)),\n- drugi bok to połowa przekątnej krótszej (oznaczmy ją jako \\(d_2\\)).\n\n# **Krok 4: Obliczenie długości przekątnych**\nW trójkącie prostokątnym, gdzie jeden kąt wynosi \\(30^\\circ\\), a drugi \\(60^\\circ\\), stosunek boków wynosi \\(1 : \\sqrt{3} : 2\\).\n- Bok przeciwległy do kąta \\(30^\\circ\\) (czyli połowa dłuższej przekątnej) to:\n\\[\nd_1 = 4 \\times 2 = 8\n\\]\n- Bok przeciwległy do kąta \\(60^\\circ\\) (czyli połowa krótszej przekątnej) to:\n\\[\nd_2 = 4 \\times \\sqrt{3} = 4\\sqrt{3}\n\\]\n\n# **Krok 5: Obliczenie pola rombu**\nPole rombu można obliczyć ze wzoru:\n\\[\nP = \\frac{1}{2} \\times d_1 \\times d_2\n\\]\nPodstawiając wartości:\n\\[\nP = \\frac{1}{2} \\times 8 \\times 4\\sqrt{3} = 16\\sqrt{3}\n\\]\n\n# **Odpowiedź**\n<ODPOWIEDZIA>16√3</ODPOWIEDZI>",
+            "elapsed": 44.464,
+            "error": false,
+            "judgement_context": {
+              "question": "Dany jest romb o boku długości 4 i kącie rozwartym 150°. Ile wynosi pole tego rombu?",
+              "correct_answer": [
+                "8"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl-identity-001",
+            "raw_answer": "Rozwiązanie:\n1. **Obliczenie zniżki**:\n   - Klient ma 35 lat, więc otrzyma 35% zniżki na okulary.\n   - Zniżka w procentach to \\( 35\\% = 0,35 \\).\n\n2. **Obliczenie kwoty zniżki**:\n   - Cena okularów wynosi 240 zł.\n   - Kwota zniżki to \\( 0,35 \\times 240 = 84 \\) zł.\n\n3. **Obliczenie ceny po zniżce**:\n   - Cena po zniżce to cena oryginalna minus kwota zniżki.\n   - Cena po zniżce wynosi \\( 240 - 84 = 156 \\) zł.\n\n<ODPOWIEDZI>156</ODPOWIEDZI>",
+            "elapsed": 16.609,
+            "error": false,
+            "judgement_context": {
+              "question": "Promocja w zakładzie optycznym jest związana z wiekiem klienta i polega na tym, że klient otrzymuje tyle procent zniżki, ile ma lat. Cena okularów bez promocji wynosi 240 zł. Ile zapłaci za te okulary klient, który ma 35 lat?",
+              "correct_answer": [
+                "156zł"
+              ]
+            }
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 2,
+        "error_count": 0,
+        "elapsed_sec": 6.19,
+        "questions": [
+          {
+            "prompt_id": "polqa-identity-000",
+            "raw_answer": "**pręcik**",
+            "elapsed": 3.243,
+            "error": false,
+            "judgement_context": {
+              "question": "Jak nazywa się element kwiatu produkujący pyłek, składający się u roślin okrytonasiennych z główki i nitki?",
+              "context": "Pręcik (łac. \"stamen\") – męski organ płciowy w kwiecie wytwarzający pyłek, czyli odpowiednik męskiego gametofitu powstający z mikrospory. Pręciki są występującymi u okrytonasiennych mikrosporofilami. Składają się z nitki i główki tworzonej zazwyczaj przez dwa pylniki zawierające po dwa woreczki pyłkowe, czyli mikrosporangia. Pyłek po dojrzeniu wysypywany jest z pękających pylników i przenoszony przez wiatr, wodę lub zwierzęta, by po osadzeniu na znamionach słupków wrosnąć i dokonać zapłodnienia.",
+              "correct_answer": [
+                "pręcik"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-001",
+            "raw_answer": "liczba ułamkowa.",
+            "elapsed": 2.949,
+            "error": false,
+            "judgement_context": {
+              "question": "Co to za część mowy: półtora?",
+              "context": "liczebniki - oznaczające (określające) liczbę, część, kolejność rzeczy, przedmiotów, osób:\nliczebniki główne określają liczbę przedmiotów, osób, zdarzeń, np. jeden, dwa, trzy, sześć, siedem, osiem, dziesięć, trzydzieści.\nliczebniki zbiorowe określają zbiorowość ludzi, zwierząt, przedmiotów, nazw, np. dwoje, troje, pięcioro, siedmioro, ośmioro, dziewięcioro, trzydzieścioro.\nliczebniki porządkowe określają miejsce w szeregu, np. drugi, trzeci, szósty, dwudziesty, czterdziesty, setny, tysięczny.\nułamkowe, określają części ułamkowe czasu, przedmiotów, odległości, np. pół, półtora, ćwierć.",
+              "correct_answer": [
+                "liczebnik"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

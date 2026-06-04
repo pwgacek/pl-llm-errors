@@ -1,0 +1,330 @@
+{
+  "timestamp": "2026-03-31T13:24:07.434448+00:00",
+  "model": "SpeakLeash/bielik-11b-v3.0-instruct:Q6_K",
+  "base_url": "http://localhost:11434/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "datasets": {
+    "diacritic": {
+      "bbh": {
+        "num_sampled": 10,
+        "score_sum": 2.857143,
+        "score_avg": 0.285714,
+        "error_count": 0,
+        "elapsed_sec": 148.09,
+        "questions": [
+          {
+            "prompt_id": "bbh-diacritic-000",
+            "raw_answer": "{\"odpowiedź\": \"przepiórka, koliber, kruk, sowa, kardynał, jastrząb, sokół\"}",
+            "score": 0.2857142857142857,
+            "error": false,
+            "elapsed": 32.395
+          },
+          {
+            "prompt_id": "bbh-diacritic-001",
+            "raw_answer": "{ \"odpowiedź\": \"limuzyna, cieżarówka, kombi, autobus, kabriolet, ciągnik, minivan\" }",
+            "score": 0.2857142857142857,
+            "error": false,
+            "elapsed": 13.202
+          },
+          {
+            "prompt_id": "bbh-diacritic-002",
+            "raw_answer": "{\"odpowiedź\": \"Eve, Ada, Joe, Rob, Mel, Dan\"}",
+            "score": 0.42857142857142855,
+            "error": false,
+            "elapsed": 8.478
+          },
+          {
+            "prompt_id": "bbh-diacritic-003",
+            "raw_answer": "{\"odpowiedź\": \"zielona, fioletowa, brazowa, czerwona, zolta, biała, pomaranczowa\"}",
+            "score": 0.14285714285714285,
+            "error": false,
+            "elapsed": 15.76
+          },
+          {
+            "prompt_id": "bbh-diacritic-004",
+            "raw_answer": "{ \"odpowiedź\": \"koliber, rudzik, sowa, sojka, jastrząb, sokół, przepiórka\" }",
+            "score": 0.2857142857142857,
+            "error": false,
+            "elapsed": 13.05
+          },
+          {
+            "prompt_id": "bbh-diacritic-005",
+            "raw_answer": "{\"odpowiedź\": \"fioletowa, zielona, czarna, pomarańczowa, szara, brązowa, żółta\"}",
+            "score": 0.2857142857142857,
+            "error": false,
+            "elapsed": 14.413
+          },
+          {
+            "prompt_id": "bbh-diacritic-006",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, kardynał, sojka, koliber, wrona, sowa, przepiórka\"}",
+            "score": 0.14285714285714285,
+            "error": false,
+            "elapsed": 12.432
+          },
+          {
+            "prompt_id": "bbh-diacritic-007",
+            "raw_answer": "{ \"odpowiedź\": \"szara, fioletowa, zielona, niebieska, czerwona, biała, pomarańczowa\" }",
+            "score": 0.14285714285714285,
+            "error": false,
+            "elapsed": 15.505
+          },
+          {
+            "prompt_id": "bbh-diacritic-008",
+            "raw_answer": "{ \"odpowiedź\": \"Ada, Dan, Mya, Joe, Eli, Ana\" }",
+            "score": 0.2857142857142857,
+            "error": false,
+            "elapsed": 9.477
+          },
+          {
+            "prompt_id": "bbh-diacritic-009",
+            "raw_answer": "{ \"odpowiedź\": \"hatchback, minivan, sedan, cieżarówka, limuzyna, ciągnik, motocykl\" }",
+            "score": 0.5714285714285714,
+            "error": false,
+            "elapsed": 13.372
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 10,
+        "score_sum": 4.0,
+        "score_avg": 0.4,
+        "error_count": 0,
+        "elapsed_sec": 97.62,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-diacritic-000",
+            "raw_answer": "{ \"odpowiedź\": \"C\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 9.853
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-001",
+            "raw_answer": "{ \"odpowiedź\": \"D\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 10.03
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-002",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 9.544
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-003",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 5.864
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-004",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 6.205
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-005",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 16.284
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-006",
+            "raw_answer": "{ \"odpowiedź\": \"C\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 14.439
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-007",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 9.919
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-008",
+            "raw_answer": "{ \"odpowiedź\": \"D\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 6.99
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-009",
+            "raw_answer": "{ \"odpowiedź\": \"A\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 8.484
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 10,
+        "score_sum": 8.490461,
+        "score_avg": 0.849046,
+        "error_count": 0,
+        "elapsed_sec": 96.42,
+        "questions": [
+          {
+            "prompt_id": "polqa-diacritic-000",
+            "raw_answer": "{\"odpowiedź\": \"Sulejman Wspaniały\"}",
+            "score": 0.4444444444444444,
+            "error": false,
+            "elapsed": 11.316
+          },
+          {
+            "prompt_id": "polqa-diacritic-001",
+            "raw_answer": "{\"odpowiedź\": \"Narodowy Bank Polski (NBP)\"}",
+            "score": 0.7692307692307692,
+            "error": false,
+            "elapsed": 5.335
+          },
+          {
+            "prompt_id": "polqa-diacritic-002",
+            "raw_answer": "{\"odpowiedź\": \"wierszem\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 6.297
+          },
+          {
+            "prompt_id": "polqa-diacritic-003",
+            "raw_answer": "{\"odpowiedź\": \"tak\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 13.455
+          },
+          {
+            "prompt_id": "polqa-diacritic-004",
+            "raw_answer": "{\"odpowiedź\": \"wosku\"}",
+            "score": 0.7142857142857143,
+            "error": false,
+            "elapsed": 13.853
+          },
+          {
+            "prompt_id": "polqa-diacritic-005",
+            "raw_answer": "{\"odpowiedź\": \"Marsa\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 10.661
+          },
+          {
+            "prompt_id": "polqa-diacritic-006",
+            "raw_answer": "{\"odpowiedź\": \"50 Hz\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 14.054
+          },
+          {
+            "prompt_id": "polqa-diacritic-007",
+            "raw_answer": "{\"odpowiedź\": \"argentyńskiej\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 6.176
+          },
+          {
+            "prompt_id": "polqa-diacritic-008",
+            "raw_answer": "{\"odpowiedź\": \"Alfred Szklarski\"}",
+            "score": 0.5625,
+            "error": false,
+            "elapsed": 7.556
+          },
+          {
+            "prompt_id": "polqa-diacritic-009",
+            "raw_answer": "{\"odpowiedź\": \"Niemcy\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 7.719
+          }
+        ]
+      }
+    },
+    "identity": {
+      "bbh": {
+        "num_sampled": 10,
+        "score_sum": 2.428571,
+        "score_avg": 0.242857,
+        "error_count": 0,
+        "elapsed_sec": 144.75,
+        "questions": [
+          {
+            "prompt_id": "bbh-identity-000",
+            "raw_answer": "{ \"odpowiedź\": \"przepiórka, koliber, kruk, sowa, kardynał, jastrząb, sokół\" }",
+            "score": 0.2857142857142857,
+            "error": false,
+            "elapsed": 19.992
+          },
+          {
+            "prompt_id": "bbh-identity-001",
+            "raw_answer": "{ \"odpowiedź\": \"kabriolet, autobus, limuzyna, ciężarówka, kombi, minivan, ciągnik\" }",
+            "score": 0.14285714285714285,
+            "error": false,
+            "elapsed": 14.145
+          },
+          {
+            "prompt_id": "bbh-identity-002",
+            "raw_answer": "{ \"odpowiedź\": \"Eve, Ada, Joe, Rob, Mel, Dan\" }",
+            "score": 0.42857142857142855,
+            "error": false,
+            "elapsed": 9.832
+          },
+          {
+            "prompt_id": "bbh-identity-003",
+            "raw_answer": "{ \"odpowiedź\": \"zielona, fioletowa, brązowa, czerwona, żółta, biała, pomarańczowa\" }",
+            "score": 0.14285714285714285,
+            "error": false,
+            "elapsed": 18.063
+          },
+          {
+            "prompt_id": "bbh-identity-004",
+            "raw_answer": "{ \"odpowiedź\": \"rudzik, koliber, sójka, sowa, jastrząb, sokół, przepiórka\" }",
+            "score": 0.2857142857142857,
+            "error": false,
+            "elapsed": 13.527
+          },
+          {
+            "prompt_id": "bbh-identity-005",
+            "raw_answer": "{ \"odpowiedź\": \"fioletowa, zielona, czarna, pomarańczowa, szara, brązowa, żółta\" }",
+            "score": 0.2857142857142857,
+            "error": false,
+            "elapsed": 15.873
+          },
+          {
+            "prompt_id": "bbh-identity-006",
+            "raw_answer": "{ \"odpowiedź\": \"rudzik, kardynał, wrona, sójka, koliber, sowa, przepiórka\" }",
+            "score": 0.14285714285714285,
+            "error": false,
+            "elapsed": 13.178
+          },
+          {
+            "prompt_id": "bbh-identity-007",
+            "raw_answer": "{ \"odpowiedź\": \"fioletowa, zielona, szara, niebieska, czerwona, biała, pomarańczowa\" }",
+            "score": 0.14285714285714285,
+            "error": false,
+            "elapsed": 16.644
+          },
+          {
+            "prompt_id": "bbh-identity-008",
+            "raw_answer": "{ \"odpowiedź\": \"Ada, Dan, Mya, Joe, Eli, Ana\" }",
+            "score": 0.2857142857142857,
+            "error": false,
+            "elapsed": 9.902
+          },
+          {
+            "prompt_id": "bbh-identity-009",
+            "raw_answer": "{ \"odpowiedź\": \"hatchback, minivan, sedan, ciężarówka, limuzyna, motocykl, ciągnik\" }",
+            "score": 0.2857142857142857,
+            "error": false,
+            "elapsed": 13.59
+          }
+        ]
+      }
+    }
+  },
+  "status": "partial"
+}

@@ -1,0 +1,88 @@
+{
+  "timestamp": "2026-04-19T09:57:39.870855+00:00",
+  "model": "SpeakLeash/bielik-11b-v3.0-instruct:Q6_K",
+  "base_url": "http://localhost:11434/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "elapsed_sec": 74.9,
+  "datasets": {
+    "identity": {
+      "bbh": {
+        "num_sampled": 2,
+        "score_sum": 0.571429,
+        "score_avg": 0.285714,
+        "error_count": 0,
+        "elapsed_sec": 39.96,
+        "questions": [
+          {
+            "prompt_id": "bbh-identity-000",
+            "raw_answer": "{\"odpowiedź\": \"przepiórka, koliber, kruk, sowa, kardynał, jastrząb, sokół\"}",
+            "correct_answer": "sowa | kardynał | przepiórka | koliber | kruk | jastrząb | sokół",
+            "score": 0.2857142857142857,
+            "error": false,
+            "elapsed": 27.844
+          },
+          {
+            "prompt_id": "bbh-identity-001",
+            "raw_answer": "{\"odpowiedź\": \"kabriolet, kombi, limuzyna, autobus, ciężarówka, ciągnik, minivan\"}",
+            "correct_answer": "kombi | ciężarówka | limuzyna | ciągnik | autobus | kabriolet | minivan",
+            "score": 0.2857142857142857,
+            "error": false,
+            "elapsed": 12.112
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 2,
+        "score_sum": 0.376812,
+        "score_avg": 0.188406,
+        "error_count": 0,
+        "elapsed_sec": 20.32,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-identity-000",
+            "raw_answer": "{\"odpowiedź\": \"8√3\"}",
+            "correct_answer": "8",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 5.723
+          },
+          {
+            "prompt_id": "llmzszl-identity-001",
+            "raw_answer": "{\"odpowiedź\": \"Klient otrzyma 35% zniżki na okulary warte 240 zł. Zatem zapłaci 240 zł - (35% z 240 zł) = 240 zł - 84 zł = 156 zł.\"}",
+            "correct_answer": "156zł",
+            "score": 0.04347826086956519,
+            "error": false,
+            "elapsed": 14.596
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 2,
+        "score_sum": 1.213675,
+        "score_avg": 0.606838,
+        "error_count": 0,
+        "elapsed_sec": 14.62,
+        "questions": [
+          {
+            "prompt_id": "polqa-identity-000",
+            "raw_answer": "{\"odpowiedź\": \"Sulejman Wspaniały\"}",
+            "correct_answer": "Sulejman",
+            "score": 0.4444444444444444,
+            "error": false,
+            "elapsed": 9.871
+          },
+          {
+            "prompt_id": "polqa-identity-001",
+            "raw_answer": "{\"odpowiedź\": \"Narodowy Bank Polski (NBP)\"}",
+            "correct_answer": "Narodowy Bank Polski",
+            "score": 0.7692307692307692,
+            "error": false,
+            "elapsed": 4.745
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

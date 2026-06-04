@@ -1,0 +1,2854 @@
+{
+  "timestamp": "2026-03-29T16:31:34.715925+00:00",
+  "model": "gemma3:4b",
+  "base_url": "http://localhost:11434/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "datasets": {
+    "diacritic": {
+      "bbh_open": {
+        "num_sampled": 100,
+        "score_sum": 52.204945,
+        "score_avg": 0.522049,
+        "error_count": 0,
+        "elapsed_sec": 377.25,
+        "questions": [
+          {
+            "prompt_id": "bbh_open-diacritic-000",
+            "raw_answer": "{\"odpowiedź\": \"Krok 1: Zidentyfikuj kluczowe informacje. Mamy 7 ptaków: jastrzab, kruk, koliber, sokol, sowa, przepiórka i kardynal. Musimy ustalić ich kolejność od lewej do prawej. Krok 2: Zastosuj podane informacje. Przepiorka jest po lewej stronie kolibra, a kruk po prawej stronie kolibra. Kardynal jest drugi od lewej, sowa po lewej stronie kardynala, kruk jest trzeci od prawej, a sokol jest najbardziej po prawej. Krok 3: Ustal kolejność. Z kombinacji tych informacji możemy ustalić następującą kolejność: Koliber, Przepiorka, Kardynal, Kruk, Sowa, Sokol, Jastrzab.\"}",
+            "score": 0.11131059245960506,
+            "error": false,
+            "elapsed": 12.177
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-001",
+            "raw_answer": "{\"odpowiedź\": \"Ciezarowka, Limuzyna, Ciagnik, Autobus, Kabriolet, Minivan, Kombi\"}",
+            "score": 0.7230769230769231,
+            "error": false,
+            "elapsed": 3.069
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-002",
+            "raw_answer": "{\"odpowiedź\": \"1. Eve\\n2. Ada\\n3. Joe\\n4. Mel\\n5. Rob\\n6. Amy\\n7. Dan\"}",
+            "score": 0.875,
+            "error": false,
+            "elapsed": 3.156
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-003",
+            "raw_answer": "{\"odpowiedź\": \"Pomaranżowa, Czerwona, Zielona, Brązowa, Biała, Żółta, Fioletowa\"}",
+            "score": 0.5692307692307692,
+            "error": false,
+            "elapsed": 3.48
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-004",
+            "raw_answer": "{\"odpowiedź\": \"Oto kolejność ptaków od lewej do prawej:\\n1. Sowa\\n2. Koliber\\n3. Rudzik\\n4. Jastrzab\\n5. Sokół\\n6. Przepiorka\\n7. Sojka\"}",
+            "score": 0.37168141592920356,
+            "error": false,
+            "elapsed": 4.356
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-005",
+            "raw_answer": "{\"odpowiedź\": \"Fioletowa, Szara, Pomaranczowa, Brazowa, Zielona, Czarna, Zolta\"}",
+            "score": 0.5873015873015873,
+            "error": false,
+            "elapsed": 3.233
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-006",
+            "raw_answer": "{\"odpowiedź\": \"Kardynal, wrona, koliber, sojka, rudzik, sowa, przepiorka\"}",
+            "score": 0.4035087719298246,
+            "error": false,
+            "elapsed": 2.927
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-007",
+            "raw_answer": "{\"odpowiedź\": \"Czerwona, Fioletowa, Szara, Niebieska, Zielona, Biała, Pomaranczowa\"}",
+            "score": 0.3731343283582089,
+            "error": false,
+            "elapsed": 3.394
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-008",
+            "raw_answer": "{\"odpowiedź\": \"1. Joe\\n2. Ada\\n3. Dan\\n4. Mya\\n5. Ana\\n6. Eli\\n7. Rob\"}",
+            "score": 0.875,
+            "error": false,
+            "elapsed": 3.248
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-009",
+            "raw_answer": "{\"odpowiedź\": \"1. Minivan\\n2. Sedan\\n3. Limuzyna\\n4. Hatchback\\n5. Ciezarowka\\n6. Motocykl\\n7. Ciagnik\"}",
+            "score": 0.5679012345679013,
+            "error": false,
+            "elapsed": 4.007
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-010",
+            "raw_answer": "{\"odpowiedź\": \"1. Ana\\n2. Eli\\n3. Dan\\n4. Mya\\n5. Amy\\n6. Joe\\n7. Mel\"}",
+            "score": 0.75,
+            "error": false,
+            "elapsed": 3.207
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-011",
+            "raw_answer": "{\"odpowiedź\": \"Na podstawie podanych informacji możemy ustalić kolejność ptaków od lewej do prawej: \\n\\n1. Przepiorka\\n2. Koliber\\n3. Sowa\\n4. Rudzik\\n5. Kardynal\\n6. Wrona\\n7. Jastrzab\"\n}",
+            "score": 0.2962962962962963,
+            "error": false,
+            "elapsed": 4.892
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-012",
+            "raw_answer": "{\"odpowiedź\": \"1. Motocykl\\n2. Minivan\\n3. Sedan\\n4. Ciagnik\\n5. Hatchback\\n6. Ciezarowka\\n7. Limuzyna\"}",
+            "score": 0.5185185185185186,
+            "error": false,
+            "elapsed": 3.95
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-013",
+            "raw_answer": "{\"odpowiedź\": \"1. Eli\\n2. Mel\\n3. Ana\\n4. Rob\\n5. Mya\\n6. Joe\\n7. Eve\"}",
+            "score": 0.8125,
+            "error": false,
+            "elapsed": 3.277
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-014",
+            "raw_answer": "{\"odpowiedź\": \"Oto kolejność ptaków od lewej do prawej:\\n1. Sowa\\n2. Sokol\\n3. Kardynal\\n4. Przepiorka\\n5. Koliber\\n6. Jastrzeb\\n7. Wrona\"}",
+            "score": 0.34782608695652173,
+            "error": false,
+            "elapsed": 4.343
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-015",
+            "raw_answer": "{\"odpowiedź\": \"1. Kombi\\n2. Autobus\\n3. Sedan\\n4. Ciagnik\\n5. Minivan\\n6. Motocykl\\n7. Ciezarowka\"}",
+            "score": 0.4473684210526315,
+            "error": false,
+            "elapsed": 3.846
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-016",
+            "raw_answer": "{\"odpowiedź\": \"1. Joe\\n2. Ada\\n3. Mel\\n4. Eve\\n5. Rob\\n6. Eli\\n7. Ana\"}",
+            "score": 0.7708333333333334,
+            "error": false,
+            "elapsed": 3.12
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-017",
+            "raw_answer": "{\"odpowiedź\": \"1. Ciezarowka\\n2. Minivan\\n3. Autobus\\n4. Hatchback\\n5. Kabriolet\\n6. Limuzyna\\n7. Ciagnik\"}",
+            "score": 0.36904761904761907,
+            "error": false,
+            "elapsed": 4.041
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-018",
+            "raw_answer": "{\"odpowiedź\": \"1. Brzoskwinie\\n2. Lokwaty\\n3. Pomarancze\\n4. Sliwki\\n5. Jablka\\n6. Kiwi\\n7. Mango\"}",
+            "score": 0.5394736842105263,
+            "error": false,
+            "elapsed": 4.057
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-019",
+            "raw_answer": "{\"odpowiedź\": \"1. Mango\\n2. Kiwi\\n3. Gruszki\\n4. Kantalupy\\n5. Brzoskwinie\\n6. Pomarancze\\n7. Mango\"}",
+            "score": 0.5822784810126582,
+            "error": false,
+            "elapsed": 3.986
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-020",
+            "raw_answer": "{\"odpowiedź\": \"Kardynal, Kruk, Koliber, Sojka, Przepiorka, Wrona, Rudzik\"}",
+            "score": 0.5087719298245614,
+            "error": false,
+            "elapsed": 3.285
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-021",
+            "raw_answer": "{\"odpowiedź\": \"Biała, Pomaranczowa, Niebieska, Szara, Czarna, Czerwona, Fioletowa\"}",
+            "score": 0.5606060606060606,
+            "error": false,
+            "elapsed": 3.556
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-022",
+            "raw_answer": "{\"odpowiedź\": \"Oto lista owoców w kolejności od najtańszego do najdroższego, na podstawie podanych informacji:\\n\\n1.  Lokwaty (najtańszy, droższy niż arbuzy)\\n2.  Brzoskwinie (tańsze niż pomarancze)\\n3.  Arbuzy (tańsze niż lokwaty)\\n4.  Pomarancze (tańsze niż kantalupy)\\n5.  Kantalupy (droższe niż pomarancze)\\n6.  Gruszki (trzecie najtańsze owoce)\\n7.  Kiwi (drugie najdroższe owoce)\"}",
+            "score": 0.1712707182320442,
+            "error": false,
+            "elapsed": 8.817
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-023",
+            "raw_answer": "{\"odpowiedź\": \"Pomaranczowa, Czarna, Czerwona, Zielona, Żółta, Niebieska, Biała\"}",
+            "score": 0.640625,
+            "error": false,
+            "elapsed": 3.343
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-024",
+            "raw_answer": "{\"odpowiedź\": \"Czerwona, Biała, Złota, Zielona, Szara, Czarna, Żółta\"}",
+            "score": 0.5087719298245614,
+            "error": false,
+            "elapsed": 2.87
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-025",
+            "raw_answer": "{\"odpowiedź\": \"Sojka, sowa, sokol, jastrzab, koliber, wrona, sowa\"}",
+            "score": 0.48,
+            "error": false,
+            "elapsed": 2.803
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-026",
+            "raw_answer": "{\"odpowiedź\": \"Oto lista owoców w kolejności od najtańszego do najdroższego, na podstawie podanych informacji:\\n\\n1.  Lokwaty (drugi najtańszy)\\n2.  Mango (czwarty najdroższy)\\n3.  Sliwki (tańsze niż brzoskwinie, droższe niż mango)\\n4.  Arbuzy (droższe niż lokwaty)\\n5.  Broszkwinie (tańsze niż kantalupy)\\n6.  Kantalupy (nie ma bezpośredniego porównania cenowego, ale są droższe niż brzoskwinie)\\n7.  Mango (czwarty najdroższy)\"}",
+            "score": 0.15061728395061724,
+            "error": false,
+            "elapsed": 8.781
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-027",
+            "raw_answer": "{\"odpowiedź\": \"1. Rob\\n2. Amy\\n3. Ada\\n4. Ana\\n5. Eli\\n6. Joe\\n7. Dan\"}",
+            "score": 0.7708333333333334,
+            "error": false,
+            "elapsed": 3.146
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-028",
+            "raw_answer": "{\"odpowiedź\": \"1. Jablka\\n2. Lokwaty\\n3. Kiwi\\n4. Gruszki\\n5. Mango\\n6. Arbuzy\\n7. Pomarancze\"}",
+            "score": 0.5833333333333333,
+            "error": false,
+            "elapsed": 3.875
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-029",
+            "raw_answer": "{\"odpowiedź\": \"1. Sliwki\\n2. Kiwi\\n3. Gruszki\\n4. Kantalupy\\n5. Arbuzy\\n6. Brzoskwinie\\n7. Pomarancze\"}",
+            "score": 0.725,
+            "error": false,
+            "elapsed": 4.002
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-030",
+            "raw_answer": "{\"odpowiedź\": \"1. Autobus\\n2. Ciezarowka\\n3. Motocykl\\n4. Kabriolet\\n5. Limuzyna\\n6. Minivan\"}",
+            "score": 0.49397590361445787,
+            "error": false,
+            "elapsed": 3.824
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-031",
+            "raw_answer": "{\"odpowiedź\": \"Oto kolejność ptaków od lewej do prawej:\\n1. Kardynal\\n2. Rudzik\\n3. Jastrzab\\n4. Kruk\\n5. Sokół\\n6. Sojka\\n7. Wrona\"}",
+            "score": 0.4036697247706422,
+            "error": false,
+            "elapsed": 4.419
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-032",
+            "raw_answer": "{\"odpowiedź\": \"1. Minivan\\n2. Sedan\\n3. Autobus\\n4. Kombi\\n5. Kabriolet\\n6. Motocykl\\n7. Ciezarowka\"}",
+            "score": 0.3205128205128205,
+            "error": false,
+            "elapsed": 4.251
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-033",
+            "raw_answer": "{\"odpowiedź\": \"Oto kolejność książek od lewej do prawej:\\n1. Szara\\n2. Niebieska\\n3. Czerwona\\n4. Fioletowa\\n5. Złota\\n6. Pomarańczowa\\n7. Biała\"}",
+            "score": 0.319672131147541,
+            "error": false,
+            "elapsed": 4.873
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-034",
+            "raw_answer": "{\"odpowiedź\": \"Autobus, Ciezarowka, Motocykl, Kabriolet, Limuzyna, Minivan\"}",
+            "score": 0.47058823529411764,
+            "error": false,
+            "elapsed": 2.976
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-035",
+            "raw_answer": "{\"odpowiedź\": \"Biała, Niebieska, Czerwona, Szara, Pomaranczowa, Brazowa, Czarna\"}",
+            "score": 0.796875,
+            "error": false,
+            "elapsed": 3.245
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-036",
+            "raw_answer": "{\"odpowiedź\": \"1. Sliwki\\n2. Lokwaty\\n3. Jablka\\n4. Kantalupy\\n5. Arbuzy\\n6. Kiwi\\n7. Gruszki\"}",
+            "score": 0.6111111111111112,
+            "error": false,
+            "elapsed": 4.176
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-037",
+            "raw_answer": "{\"odpowiedź\": \"1. Limuzyna\\n2. Ciezarowka\\n3. Motocykl\\n4. Kombi\\n5. Hatchback\\n6. Minivan\\n7. Autobus\"}",
+            "score": 0.3827160493827161,
+            "error": false,
+            "elapsed": 3.966
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-038",
+            "raw_answer": "{\"odpowiedź\": \"Oto kolejność ptaków od lewej do prawej:\\n1. Przepiorka\\n2. Kruk\\n3. Koliber\\n4. Rudzik\\n5. Sojka\\n6. Sokół\\n7. Sowa\"}",
+            "score": 0.47706422018348627,
+            "error": false,
+            "elapsed": 4.409
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-039",
+            "raw_answer": "{\"odpowiedź\": \"1. Lokwaty\\n2. Brzoskwinie\\n3. Gruszki\\n4. Mango\\n5. Jablka\\n6. Sliwki\\n7. Kantalupy\"}",
+            "score": 0.6923076923076923,
+            "error": false,
+            "elapsed": 4.199
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-040",
+            "raw_answer": "{\"odpowiedź\": \"Kolejność owoców od najtańszego do najdroższego to: Kiwi, Pomarancze, Arbuzy, Sliwki, Mango, Jablka, Lokwaty.\"}",
+            "score": 0.3669724770642202,
+            "error": false,
+            "elapsed": 3.826
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-041",
+            "raw_answer": "{\"odpowiedź\": \"1. Dan\\n2. Eve\\n3. Amy\\n4. Ana\\n5. Ada\\n6. Mel\\n7. Joe\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 3.141
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-042",
+            "raw_answer": "{\"odpowiedź\": \"1. Minivan\\n2. Hatchback\\n3. Autobus\\n4. Ciagnik\\n5. Sedan\\n6. Motocykl\\n7. Kombi\"}",
+            "score": 0.6133333333333333,
+            "error": false,
+            "elapsed": 3.655
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-043",
+            "raw_answer": "{\"odpowiedź\": \"1. Autobus\\n2. Minivan\\n3. Limuzyna\\n4. Kombi\\n5. Motocykl\\n6. Ciezarowka\\n7. Hatchback\"}",
+            "score": 0.32098765432098764,
+            "error": false,
+            "elapsed": 3.759
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-044",
+            "raw_answer": "{\"odpowiedź\": \"1. Eli, 2. Mel, 3. Dan, 4. Rob, 5. Ada, 6. Mya, 7. Ana\"}",
+            "score": 0.7592592592592593,
+            "error": false,
+            "elapsed": 3.243
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-045",
+            "raw_answer": "{\"odpowiedź\": \"1. Joe\\n2. Amy\\n3. Ana\\n4. Eli\\n5. Mel\\n6. Ada\\n7. Mya\"}",
+            "score": 0.8541666666666666,
+            "error": false,
+            "elapsed": 3.199
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-046",
+            "raw_answer": "{\"odpowiedź\": \"Fioletowa, Szara, Pomaranczowa, Brazowa, Zielona, Czarna, Zolta\"}",
+            "score": 0.5873015873015873,
+            "error": false,
+            "elapsed": 3.385
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-047",
+            "raw_answer": "{\"odpowiedź\": \"1. Sliwki\\n2. Lokwaty\\n3. Pomarancze\\n4. Jablka\\n5. Brzoskwinie\\n6. Kiwi\\n7. Arbuzy\"}",
+            "score": 0.49350649350649356,
+            "error": false,
+            "elapsed": 4.216
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-048",
+            "raw_answer": "{\"odpowiedź\": \"1. Limuzyna\\n2. Ciezarowka\\n3. Motocykl\\n4. Kombi\\n5. Hatchback\\n6. Minivan\\n7. Autobus\"}",
+            "score": 0.3827160493827161,
+            "error": false,
+            "elapsed": 4.041
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-049",
+            "raw_answer": "{\"odpowiedź\": \"Ciezarowka, Limuzyna, Ciagnik, Autobus, Kabriolet, Minivan, Kombi\"}",
+            "score": 0.7230769230769231,
+            "error": false,
+            "elapsed": 3.181
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-050",
+            "raw_answer": "{\"odpowiedź\": \"1. Brzoskwinie\\n2. Lokwaty\\n3. Pomarancze\\n4. Sliwki\\n5. Jablka\\n6. Kiwi\\n7. Mango\"}",
+            "score": 0.5394736842105263,
+            "error": false,
+            "elapsed": 4.107
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-051",
+            "raw_answer": "{\"odpowiedź\": \"1. Joe, 2. Rob, 3. Dan, 4. Eve, 5. Ana, 6. Ada, 7. Amy\"}",
+            "score": 0.8703703703703703,
+            "error": false,
+            "elapsed": 3.195
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-052",
+            "raw_answer": "{\"odpowiedź\": \"Sojka, Kruk, Rudzik, Przepiorka, Sokol, Kardynal, Koliber\"}",
+            "score": 0.29824561403508776,
+            "error": false,
+            "elapsed": 2.822
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-053",
+            "raw_answer": "{\"odpowiedź\": \"Sojka, Kruk, Rudzik, Przepiorka, Sokol, Kardynal, Koliber\"}",
+            "score": 0.29824561403508776,
+            "error": false,
+            "elapsed": 1.407
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-054",
+            "raw_answer": "{\"odpowiedź\": \"Pomaranżowa, Czerwona, Zielona, Brązowa, Biała, Żółta, Fioletowa\"}",
+            "score": 0.5692307692307692,
+            "error": false,
+            "elapsed": 3.431
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-055",
+            "raw_answer": "{\"odpowiedź\": \"1. Rob\\n2. Mel\\n3. Mya\\n4. Dan\\n5. Eve\\n6. Joe\\n7. Ada\"}",
+            "score": 0.875,
+            "error": false,
+            "elapsed": 3.203
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-056",
+            "raw_answer": "{\"odpowiedź\": \"1. Ana\\n2. Eli\\n3. Dan\\n4. Mya\\n5. Amy\\n6. Joe\\n7. Mel\"}",
+            "score": 0.75,
+            "error": false,
+            "elapsed": 3.023
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-057",
+            "raw_answer": "{\"odpowiedź\": \"Oto kolejność książek od lewej do prawej:\\n1. Czarna\\n2. Pomarańczowa\\n3. Brazowa\\n4. Złota\\n5. Zielona\\n6. Biała\\n7. Niebieska\"}",
+            "score": 0.30833333333333335,
+            "error": false,
+            "elapsed": 4.637
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-058",
+            "raw_answer": "{\"odpowiedź\": \"1. Joe\\n2. Ada\\n3. Dan\\n4. Mya\\n5. Ana\\n6. Eli\\n7. Rob\"}",
+            "score": 0.875,
+            "error": false,
+            "elapsed": 3.228
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-059",
+            "raw_answer": "{\"odpowiedź\": \"Kolejność owoców od najtanszego do najdrogiego to: kiwi, gruszki, brzoskwinie, kantalupy, mango, arbuzy, pomarancze.\"}",
+            "score": 0.31896551724137934,
+            "error": false,
+            "elapsed": 4.209
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-060",
+            "raw_answer": "{\"odpowiedź\": \"Bialy, Fioletowy, Czarny, Pomaranczowy, Brazowa, Zolta, Niebieska\"}",
+            "score": 0.2906976744186046,
+            "error": false,
+            "elapsed": 3.252
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-061",
+            "raw_answer": "{\"odpowiedź\": \"1. Amy\\n2. Dan\\n3. Ada\\n4. Joe\\n5. Rob\\n6. Mya\\n7. Mel\"}",
+            "score": 0.6041666666666667,
+            "error": false,
+            "elapsed": 3.174
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-062",
+            "raw_answer": "{\"odpowiedź\": \"Kolejność owoców od najtanszego do najdrogiego to: Sliwki, Lokwaty, Jablka, Gruszki, Kiwi, Kantalupa, Arbuzy.\"}",
+            "score": 0.33944954128440363,
+            "error": false,
+            "elapsed": 4.196
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-063",
+            "raw_answer": "{\"odpowiedź\": \"Kruk, Kardynal, Sokol, Przepiorka, Sowa, Sojka, Rudzik\"}",
+            "score": 0.31481481481481477,
+            "error": false,
+            "elapsed": 2.813
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-064",
+            "raw_answer": "{\"odpowiedź\": \"Oto kolejność książek od lewej do prawej:\\n1. Szara\\n2. Niebieska\\n3. Czerwona\\n4. Fioletowa\\n5. Złota\\n6. Pomarańczowa\\n7. Biała\"}",
+            "score": 0.319672131147541,
+            "error": false,
+            "elapsed": 4.864
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-065",
+            "raw_answer": "{\"odpowiedź\": \"Jastrzab, Koliber, Kruk, Sowa, Wrona, Przepiorka, Sokol\"}",
+            "score": 0.5636363636363637,
+            "error": false,
+            "elapsed": 2.856
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-066",
+            "raw_answer": "{\"odpowiedź\": \"Czarna, szara, pomaranczowa, zolta, fioletowa, biala, zolta\"}",
+            "score": 0.5081967213114754,
+            "error": false,
+            "elapsed": 3.212
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-067",
+            "raw_answer": "{\"odpowiedź\": \"Kruk, Sokół, Sojka, Koliber, Rudzik, Sowa, Wrona\"}",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 2.697
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-068",
+            "raw_answer": "{\"odpowiedź\": \"Oto kolejność książek od lewej do prawej:\\n1. Czarna\\n2. Pomarańczowa\\n3. Brazowa\\n4. Złota\\n5. Zielona\\n6. Biała\\n7. Niebieska\"}",
+            "score": 0.30833333333333335,
+            "error": false,
+            "elapsed": 4.67
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-069",
+            "raw_answer": "{\"odpowiedź\": \"1. Minivan\\n2. Hatchback\\n3. Autobus\\n4. Ciagnik\\n5. Sedan\\n6. Motocykl\\n7. Kombi\"}",
+            "score": 0.6133333333333333,
+            "error": false,
+            "elapsed": 3.588
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-070",
+            "raw_answer": "{\"odpowiedź\": \"Kolejność owoców od najtańszego do najdroższego to: Kiwi, Pomarancze, Arbuzy, Sliwki, Mango, Jablka, Lokwaty.\"}",
+            "score": 0.3669724770642202,
+            "error": false,
+            "elapsed": 4.036
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-071",
+            "raw_answer": "{\"odpowiedź\": \"Czarna, Biała, Zielona, Pomaranczowa, Żółta, Brazowa, Fioletowa\"}",
+            "score": 0.4126984126984127,
+            "error": false,
+            "elapsed": 3.278
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-072",
+            "raw_answer": "{\"odpowiedź\": \"1. Joe\\n2. Ada\\n3. Dan\\n4. Mya\\n5. Ana\\n6. Eli\\n7. Rob\"}",
+            "score": 0.875,
+            "error": false,
+            "elapsed": 3.23
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-073",
+            "raw_answer": "{\"odpowiedź\": \"Kruk, Rudzik, Koliber, Sojka, Wrona, Kardynal, Przepiorka\"}",
+            "score": 0.6491228070175439,
+            "error": false,
+            "elapsed": 2.89
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-074",
+            "raw_answer": "{\"odpowiedź\": \"Oto owoce w kolejności od najtańszego do najdroższego, na podstawie podanych informacji:\\n\\n1.  Pomarańcze (drugie najtańsze)\\n2.  Jablka (tańsze niż gruszki)\\n3.  Mango (trzecie najtańsze)\\n4.  Kantalupy (droższe niż mango)\\n5.  Gruszki (tańsze niż jablka)\\n6.  Lokwaty (trzecie najdroższe)\\n7.  Arbuzy (drugie najdroższe)\"}",
+            "score": 0.1968253968253968,
+            "error": false,
+            "elapsed": 7.768
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-075",
+            "raw_answer": "{\"odpowiedź\": \"1. Limuzyna\\n2. Ciezarowka\\n3. Motocykl\\n4. Kombi\\n5. Hatchback\\n6. Minivan\\n7. Autobus\"}",
+            "score": 0.3827160493827161,
+            "error": false,
+            "elapsed": 3.879
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-076",
+            "raw_answer": "{\"odpowiedź\": \"1. Sliwki\\n2. Lokwaty\\n3. Pomarancze\\n4. Jablka\\n5. Brzoskwinie\\n6. Kiwi\\n7. Arbuzy\"}",
+            "score": 0.49350649350649356,
+            "error": false,
+            "elapsed": 4.063
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-077",
+            "raw_answer": "{\"odpowiedź\": \"Hatchback, Ciezarowka, Sedan, Ciagnik, Limuzyna, Motocykl\"}",
+            "score": 0.4242424242424242,
+            "error": false,
+            "elapsed": 2.872
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-078",
+            "raw_answer": "{\"odpowiedź\": \"Sojka, sowa, sokol, jastrzab, koliber, wrona, sowa\"}",
+            "score": 0.48,
+            "error": false,
+            "elapsed": 2.765
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-079",
+            "raw_answer": "{\"odpowiedź\": \"Kolejność ptaków od lewej do prawej to: Koliber, Jastrzab, Sokol, Kruk, Wrona, Kardynal, Rudzik.\"}",
+            "score": 0.29166666666666663,
+            "error": false,
+            "elapsed": 3.169
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-080",
+            "raw_answer": "{\"odpowiedź\": \"Sowa, Koliber, Sokol, Kardynal, Przepiorka, Wrona, Rudzik\"}",
+            "score": 0.4385964912280702,
+            "error": false,
+            "elapsed": 2.615
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-081",
+            "raw_answer": "{\"odpowiedź\": \"1. Motocykl\\n2. Minivan\\n3. Sedan\\n4. Ciagnik\\n5. Hatchback\\n6. Ciezarowka\\n7. Limuzyna\"}",
+            "score": 0.5185185185185186,
+            "error": false,
+            "elapsed": 3.857
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-082",
+            "raw_answer": "{\"odpowiedź\": \"1. Hatchback\\n2. Limuzyna\\n3. Minivan\\n4. Kombi\\n5. Ciagnik\\n6. Kabriolet\\n7. Autobus\"}",
+            "score": 0.5063291139240507,
+            "error": false,
+            "elapsed": 3.565
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-083",
+            "raw_answer": "{\"odpowiedź\": \"Czarna, Biała, Zielona, Pomaranczowa, Żółta, Brazowa, Fioletowa\"}",
+            "score": 0.4126984126984127,
+            "error": false,
+            "elapsed": 3.238
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-084",
+            "raw_answer": "{\"odpowiedź\": \"Czerwona, Biała, Złota, Zielona, Szara, Czarna, Żółta\"}",
+            "score": 0.5087719298245614,
+            "error": false,
+            "elapsed": 2.786
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-085",
+            "raw_answer": "{\"odpowiedź\": \"1. Joe\\n2. Rob\\n3. Amy\\n4. Eli\\n5. Eve\\n6. Ada\\n7. Ana\"}",
+            "score": 0.7708333333333334,
+            "error": false,
+            "elapsed": 3.231
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-086",
+            "raw_answer": "{\"odpowiedź\": \"1. Joe\\n2. Ada\\n3. Mel\\n4. Eve\\n5. Rob\\n6. Eli\\n7. Ana\"}",
+            "score": 0.7708333333333334,
+            "error": false,
+            "elapsed": 2.903
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-087",
+            "raw_answer": "{\"odpowiedź\": \"Kolejność pojazdów od najnowszego do najstarszego to: Kombi, Minivan, Sedan, Hatchback, Motocykl, Ciężarówka, Ciągnik.\"}",
+            "score": 0.423728813559322,
+            "error": false,
+            "elapsed": 3.861
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-088",
+            "raw_answer": "{\"odpowiedź\": \"1. Brzoskwinie\\n2. Pomarancze\\n3. Jablka\\n4. Kantalupy\\n5. Mango\\n6. Arbuzy\\n7. Gruszki\"}",
+            "score": 0.691358024691358,
+            "error": false,
+            "elapsed": 4.197
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-089",
+            "raw_answer": "{\"odpowiedź\": \"1. Ciezarowka\\n2. Minivan\\n3. Hatchback\\n4. Kombi\\n5. Ciagnik\\n6. Kabriolet\\n7. Autobus\"}",
+            "score": 0.4814814814814815,
+            "error": false,
+            "elapsed": 3.889
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-090",
+            "raw_answer": "{\"odpowiedź\": \"1. Limuzyna\\n2. Minivan\\n3. Ciagnik\\n4. Ciezarowka\\n5. Autobus\\n6. Kombi\\n7. Hatchback\"}",
+            "score": 0.375,
+            "error": false,
+            "elapsed": 3.72
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-091",
+            "raw_answer": "{\"odpowiedź\": \"Kruk, Sokół, Sojka, Koliber, Rudzik, Sowa, Wrona\"}",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 2.756
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-092",
+            "raw_answer": "{\"odpowiedź\": \"1. Joe\\n2. Rob\\n3. Amy\\n4. Eli\\n5. Eve\\n6. Ada\\n7. Ana\"}",
+            "score": 0.7708333333333334,
+            "error": false,
+            "elapsed": 3.277
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-093",
+            "raw_answer": "{\"odpowiedź\": \"1. Mango\\n2. Kiwi\\n3. Gruszki\\n4. Kantalupy\\n5. Brzoskwinie\\n6. Pomarancze\\n7. Mango\"}",
+            "score": 0.5822784810126582,
+            "error": false,
+            "elapsed": 3.91
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-094",
+            "raw_answer": "{\"odpowiedź\": \"1. Eve\\n2. Joe\\n3. Amy\\n4. Rob\\n5. Ada\\n6. Mel\\n7. Dan\"}",
+            "score": 0.75,
+            "error": false,
+            "elapsed": 3.115
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-095",
+            "raw_answer": "{\"odpowiedź\": \"Oto kolejność ptaków od lewej do prawej:\\n1. Kardynal\\n2. Rudzik\\n3. Jastrzab\\n4. Kruk\\n5. Sokół\\n6. Sojka\\n7. Wrona\"}",
+            "score": 0.4036697247706422,
+            "error": false,
+            "elapsed": 4.215
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-096",
+            "raw_answer": "{\"odpowiedź\": \"Oto kolejność ptaków od lewej do prawej:\\n1. Kardynal\\n2. Rudzik\\n3. Jastrzab\\n4. Kruk\\n5. Sokół\\n6. Sojka\\n7. Wrona\"}",
+            "score": 0.4036697247706422,
+            "error": false,
+            "elapsed": 2.921
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-097",
+            "raw_answer": "{\"odpowiedź\": \"Fioletowa, Szara, Pomaranczowa, Brazowa, Zielona, Czarna, Zolta\"}",
+            "score": 0.5873015873015873,
+            "error": false,
+            "elapsed": 3.172
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-098",
+            "raw_answer": "{\"odpowiedź\": \"Kruk, Sokol, Jastrzab, Koliber, Wrona, Sojka, Rudzik\"}",
+            "score": 0.40384615384615385,
+            "error": false,
+            "elapsed": 2.729
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-099",
+            "raw_answer": "{\"odpowiedź\": \"Ciagnik, Limuzyna, Sedan, Kombi, Autobus, Ciezarowka, Kabriolet\"}",
+            "score": 0.5396825396825398,
+            "error": false,
+            "elapsed": 2.961
+          }
+        ]
+      }
+    },
+    "identity": {
+      "bbh_open": {
+        "num_sampled": 100,
+        "score_sum": 48.627922,
+        "score_avg": 0.486279,
+        "error_count": 0,
+        "elapsed_sec": 391.15,
+        "questions": [
+          {
+            "prompt_id": "bbh_open-identity-000",
+            "raw_answer": "{\"odpowiedź\": \"Kolejność ptaków od lewej do prawej to: Koliber, Kruk, Kardynał, Sowa, Jastrząb, Koliber, Sokół.\"}",
+            "score": 0.38541666666666663,
+            "error": false,
+            "elapsed": 3.867
+          },
+          {
+            "prompt_id": "bbh_open-identity-001",
+            "raw_answer": "{\"odpowiedź\": \"1. Limuzyna\\n2. Ciężarówka\\n3. Autobus\\n4. Ciągnik\\n5. Kombi\\n6. Kabriolet\\n7. Minivan\"}",
+            "score": 0.7375,
+            "error": false,
+            "elapsed": 3.808
+          },
+          {
+            "prompt_id": "bbh_open-identity-002",
+            "raw_answer": "{\"odpowiedź\": \"1. Eve\\n2. Ada\\n3. Joe\\n4. Mel\\n5. Rob\\n6. Amy\\n7. Dan\"}",
+            "score": 0.875,
+            "error": false,
+            "elapsed": 3.057
+          },
+          {
+            "prompt_id": "bbh_open-identity-003",
+            "raw_answer": "{\"odpowiedź\": \"Książki w kolejności od lewej do prawej to: zielona, fioletowa, brązowa, pomarańczowa, żółta, czerwona, biała.\"}",
+            "score": 0.2727272727272727,
+            "error": false,
+            "elapsed": 3.859
+          },
+          {
+            "prompt_id": "bbh_open-identity-004",
+            "raw_answer": "{\"odpowiedź\": \"Oto ptaki w kolejności od lewej do prawej:\\n1. Sowa\\n2. Rudzik\\n3. Koliber\\n4. Sójka\\n5. Sokół\\n6. Jastrząb\\n7. Przepiórka\"}",
+            "score": 0.5130434782608695,
+            "error": false,
+            "elapsed": 4.416
+          },
+          {
+            "prompt_id": "bbh_open-identity-005",
+            "raw_answer": "{\"odpowiedź\": \"Fioletowa, Brązowa, Żółta, Pomarańczowa, Szara, Czarna, Zielona\"}",
+            "score": 0.4126984126984127,
+            "error": false,
+            "elapsed": 3.078
+          },
+          {
+            "prompt_id": "bbh_open-identity-006",
+            "raw_answer": "{\"odpowiedź\": \"Kardynał, wrona, koliber, sójka, rudzik, sowa, przepiórka\"}",
+            "score": 0.4035087719298246,
+            "error": false,
+            "elapsed": 2.88
+          },
+          {
+            "prompt_id": "bbh_open-identity-007",
+            "raw_answer": "{\"odpowiedź\": \"Czerwona, pomarańczowa, czerwona, niebieska, fioletowa, zielona, biała\"}",
+            "score": 0.7571428571428571,
+            "error": false,
+            "elapsed": 3.107
+          },
+          {
+            "prompt_id": "bbh_open-identity-008",
+            "raw_answer": "{\"odpowiedź\": \"Oto golfiści w kolejności od 1. miejsca do 7. miejsca:\\n1. Joe\\n2. Ada\\n3. Dan\\n4. Mya\\n5. Eli\\n6. Rob\\n7. Ana\"}",
+            "score": 0.4077669902912622,
+            "error": false,
+            "elapsed": 3.98
+          },
+          {
+            "prompt_id": "bbh_open-identity-009",
+            "raw_answer": "{\"odpowiedź\": \"Oto pojazdy w kolejności od najnowszego do najstarszego:\\n\\n1. Minivan\\n2. Sedan\\n3. Hatchback\\n4. Limuzyna\\n5. Ciężarówka\\n6. Motocykl\\n7. Ciągnik\"}",
+            "score": 0.4244604316546763,
+            "error": false,
+            "elapsed": 4.751
+          },
+          {
+            "prompt_id": "bbh_open-identity-010",
+            "raw_answer": "{\"odpowiedź\": \"1. Ana\\n2. Eli\\n3. Amy\\n4. Mya\\n5. Dan\\n6. Joe\\n7. Mel\"}",
+            "score": 0.75,
+            "error": false,
+            "elapsed": 3.192
+          },
+          {
+            "prompt_id": "bbh_open-identity-011",
+            "raw_answer": "{\"odpowiedź\": \"Oto ptaki w kolejności od lewej do prawej:\\n1. Koliber\\n2. Kardynał\\n3. Sowa\\n4. Rudzik\\n5. Przypiórka\\n6. Wrona\\n7. Jastrząb\"}",
+            "score": 0.47457627118644063,
+            "error": false,
+            "elapsed": 4.509
+          },
+          {
+            "prompt_id": "bbh_open-identity-012",
+            "raw_answer": "{\"odpowiedź\": \"Oto pojazdy w kolejności od najnowszego do najstarszego:\\n\\n1. Minivan\\n2. Hatchback\\n3. Ciągnik\\n4. Motocykl\\n5. Sedan\\n6. Ciężarówka\\n7. Limuzyna\"}",
+            "score": 0.3165467625899281,
+            "error": false,
+            "elapsed": 4.813
+          },
+          {
+            "prompt_id": "bbh_open-identity-013",
+            "raw_answer": "{\"odpowiedź\": \"1. Eli\\n2. Mel\\n3. Ana\\n4. Rob\\n5. Mya\\n6. Joe\\n7. Eve\"}",
+            "score": 0.8125,
+            "error": false,
+            "elapsed": 3.157
+          },
+          {
+            "prompt_id": "bbh_open-identity-014",
+            "raw_answer": "{\"odpowiedź\": \"Oto ptaki w kolejności od lewej do prawej:\\n1. Sowa\\n2. Wrona\\n3. Sokół\\n4. Kardynał\\n5. Koliber\\n6. Przepiórka\\n7. Jastrząb\"}",
+            "score": 0.28205128205128205,
+            "error": false,
+            "elapsed": 4.578
+          },
+          {
+            "prompt_id": "bbh_open-identity-015",
+            "raw_answer": "{\"odpowiedź\": \"1. Autobus\\n2. Minivan\\n3. Ciągnik\\n4. Sedan\\n5. Ciężarówka\\n6. Kombi\\n7. Motocykl\"}",
+            "score": 0.618421052631579,
+            "error": false,
+            "elapsed": 3.735
+          },
+          {
+            "prompt_id": "bbh_open-identity-016",
+            "raw_answer": "{\"odpowiedź\": \"1. Joe\\n2. Ada\\n3. Rob\\n4. Eve\\n5. Mel\\n6. Eli\\n7. Ana\"}",
+            "score": 0.8333333333333334,
+            "error": false,
+            "elapsed": 3.11
+          },
+          {
+            "prompt_id": "bbh_open-identity-017",
+            "raw_answer": "{\"odpowiedź\": \"1. Autobus\\n2. Hatchback\\n3. Ciężarówka\\n4. Minivan\\n5. Limuzyna\\n6. Ciężarówka\\n7. Kabriolet\"}",
+            "score": 0.5172413793103448,
+            "error": false,
+            "elapsed": 3.898
+          },
+          {
+            "prompt_id": "bbh_open-identity-018",
+            "raw_answer": "{\"odpowiedź\": \"Oto owoce w kolejności od najtańszego do najdroższego:\\n\\n1. Brzoskwinie (najtańsze)\\n2. Lokwaty (trzecie najtańsze)\\n3. Pomarańcze (tańsze niż mango)\\n4. Jabłka (drugie najtańsze)\\n5. Kiwi (droższe niż mango)\\n6. Mango (droższe niż pomarańcze, ale tańsze niż śliwki)\\n7. Śliwki (czwarte najdroższe)\"}",
+            "score": 0.19587628865979378,
+            "error": false,
+            "elapsed": 7.594
+          },
+          {
+            "prompt_id": "bbh_open-identity-019",
+            "raw_answer": "{\"odpowiedź\": \"1. Mango\\n2. Kiwi\\n3. Gruszki\\n4. Brzoskwinie\\n5. Kantalupy\\n6. Pomarańcze\\n7. Mango\"}",
+            "score": 0.4177215189873418,
+            "error": false,
+            "elapsed": 3.914
+          },
+          {
+            "prompt_id": "bbh_open-identity-020",
+            "raw_answer": "{\"odpowiedź\": \"Kardynał, Kruk, Koliber, Wrona, Przepiórka, Sójka, Rudzik\"}",
+            "score": 0.4736842105263158,
+            "error": false,
+            "elapsed": 2.923
+          },
+          {
+            "prompt_id": "bbh_open-identity-021",
+            "raw_answer": "{\"odpowiedź\": \"Biała, Pomarańczowa, Niebieska, Czerwona, Czarna, Szara, Pomarańczowa\"}",
+            "score": 0.3623188405797102,
+            "error": false,
+            "elapsed": 3.185
+          },
+          {
+            "prompt_id": "bbh_open-identity-022",
+            "raw_answer": "{\"odpowiedź\": \"Oto lista owoców w kolejności od najtańszego do najdroższego, na podstawie podanych informacji:\\n\\n1.  Lokwaty (najtańsze, tańsze niż brzoskwinie i arbuzy)\\n2.  Arbuzy (tańsze niż lokwaty)\\n3.  Broskwinie (tańsze niż pomarańcze i lokwaty)\\n4.  Pomarańcze (tańsze niż kantalupy)\\n5.  Kantalupy (tańsze niż kiwi)\\n6.  Gruszki (trzecie najtańsze)\\n7.  Kiwi (drugie najdroższe)\"}",
+            "score": 0.1753424657534246,
+            "error": false,
+            "elapsed": 8.97
+          },
+          {
+            "prompt_id": "bbh_open-identity-023",
+            "raw_answer": "{\"odpowiedź\": \"Pomarańczowa, Czarna, Niebieska, Żółta, Czerwona, Zielona, Biała\"}",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 3.045
+          },
+          {
+            "prompt_id": "bbh_open-identity-024",
+            "raw_answer": "{\"odpowiedź\": \"Czerwona, Czarna, Żółta, Biała, Szara, Zielona, Czerwona\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 2.74
+          },
+          {
+            "prompt_id": "bbh_open-identity-025",
+            "raw_answer": "{\"odpowiedź\": \"Sójka, Sowa, Sokół, Jastrząb, Koliber, Kruk, Wrona\"}",
+            "score": 0.52,
+            "error": false,
+            "elapsed": 2.834
+          },
+          {
+            "prompt_id": "bbh_open-identity-026",
+            "raw_answer": "{\"odpowiedź\": \"Oto lista owoców w kolejności od najtańszego do najdroższego, na podstawie podanych informacji:\\n\\n1. Lokwaty (drugi najtańszy)\\n2. Mango (czwarty najdroższy)\\n3. Śliwki (droższe niż mango, ale tańsze niż brzoskwinie)\\n4. Arbuzy (droższe niż lokwaty)\\n5. Brzoskwinie (tańsze niż kantalupy)\\n6. Kantalupy (nie ma bezpośredniego porównania, ale są droższe niż brzoskwinie)\\n7.  Mango (czwarty najdroższy - powtórzone dla jasności)\"}",
+            "score": 0.14761904761904765,
+            "error": false,
+            "elapsed": 8.823
+          },
+          {
+            "prompt_id": "bbh_open-identity-027",
+            "raw_answer": "{\"odpowiedź\": \"Oto golfiści w kolejności od 1. miejsca do 7. miejsca:\\n1. Rob\\n2. Ada\\n3. Amy\\n4. Ana\\n5. Eli\\n6. Dan\\n7. Joe\"}",
+            "score": 0.3689320388349514,
+            "error": false,
+            "elapsed": 3.898
+          },
+          {
+            "prompt_id": "bbh_open-identity-028",
+            "raw_answer": "{\"odpowiedź\": \"Jabłka, Kiwi, Gruszki, Arbuzy, Mango, Pomarańcze, Lokwaty\"}",
+            "score": 0.45614035087719296,
+            "error": false,
+            "elapsed": 3.013
+          },
+          {
+            "prompt_id": "bbh_open-identity-029",
+            "raw_answer": "{\"odpowiedź\": \"Śliwki, Kiwi, Gruszki, Kantalupy, Arbuzy, Brzoskwinie, Pomarańcze\"}",
+            "score": 0.7538461538461538,
+            "error": false,
+            "elapsed": 3.211
+          },
+          {
+            "prompt_id": "bbh_open-identity-030",
+            "raw_answer": "{\"odpowiedź\": \"Najnowszą jest autobus. Trzecim najnowszą jest ciężarówka. Czwartym najnowszą jest motocykl. Piątym najnowszą jest kabriolet. Szóstym najnowszą jest limuzyna. Siedmym najnowszą jest minivan.\"}",
+            "score": 0.26315789473684215,
+            "error": false,
+            "elapsed": 4.815
+          },
+          {
+            "prompt_id": "bbh_open-identity-031",
+            "raw_answer": "{\"odpowiedź\": \"Kruk, Rudzik, Kardynał, Sójka, Wrona, Sokół, Jastrząb\"}",
+            "score": 0.5094339622641509,
+            "error": false,
+            "elapsed": 2.921
+          },
+          {
+            "prompt_id": "bbh_open-identity-032",
+            "raw_answer": "{\"odpowiedź\": \"Oto pojazdy w kolejności od najnowszego do najstarszego:\\n\\n1. Minivan\\n2. Sedan\\n3. Kombi\\n4. Autobus\\n5. Kabriolet\\n6. Ciężarówka\\n7. Motocykl\"}",
+            "score": 0.2720588235294118,
+            "error": false,
+            "elapsed": 4.712
+          },
+          {
+            "prompt_id": "bbh_open-identity-033",
+            "raw_answer": "{\"odpowiedź\": \"Na podstawie podanych informacji, kolejność książek od lewej do prawej to: Szara, Fioletowa, Żółta, Czerwona, Niebieska, Pomarańczowa, Biała.\"}",
+            "score": 0.3971631205673759,
+            "error": false,
+            "elapsed": 4.121
+          },
+          {
+            "prompt_id": "bbh_open-identity-034",
+            "raw_answer": "{\"odpowiedź\": \"Autobus, ciężarówka, motocykl, limuzyna, kabriolet, ciągnik, minivan\"}",
+            "score": 0.5882352941176471,
+            "error": false,
+            "elapsed": 2.903
+          },
+          {
+            "prompt_id": "bbh_open-identity-035",
+            "raw_answer": "{\"odpowiedź\": \"Biała, niebieska, czerwona, szara, pomarańczowa, brązowa, czarna\"}",
+            "score": 0.78125,
+            "error": false,
+            "elapsed": 3.021
+          },
+          {
+            "prompt_id": "bbh_open-identity-036",
+            "raw_answer": "{\"odpowiedź\": \"Śliwki, lokwaty, jabłka, kiwi, kantalupy, arbuzy, gruszki\"}",
+            "score": 0.631578947368421,
+            "error": false,
+            "elapsed": 3.263
+          },
+          {
+            "prompt_id": "bbh_open-identity-037",
+            "raw_answer": "{\"odpowiedź\": \"1. Hatchback\\n2. Minivan\\n3. Autobus\\n4. Limuzyna\\n5. Ciężarówka\\n6. Kombi\\n7. Motocykl\"}",
+            "score": 0.45679012345679015,
+            "error": false,
+            "elapsed": 3.824
+          },
+          {
+            "prompt_id": "bbh_open-identity-038",
+            "raw_answer": "{\"odpowiedź\": \"Oto kolejność ptaków od lewej do prawej:\\n1. Kruk\\n2. Sójka\\n3. Rudzik\\n4. Koliber\\n5. Przepiórka\\n6. Sowa\\n7. Sójka\"}",
+            "score": 0.35779816513761464,
+            "error": false,
+            "elapsed": 4.3
+          },
+          {
+            "prompt_id": "bbh_open-identity-039",
+            "raw_answer": "{\"odpowiedź\": \"Oto owoce w kolejności od najtańszego do najdroższego:\\n\\n1. Lokwaty (najtańsze)\\n2. Brzoskwinie (droższe niż śliwki)\\n3. Gruszki (trzecie najdroższe)\\n4. Mango (czwarte najdroższe)\\n5. Jabłka (tańsze niż kantalupy, droższe niż brzoskwinie)\\n6. Śliwki (droższe niż brzoskwinie)\\n7. Kantalupy (najdroższe)\"}",
+            "score": 0.20945945945945943,
+            "error": false,
+            "elapsed": 7.592
+          },
+          {
+            "prompt_id": "bbh_open-identity-040",
+            "raw_answer": "{\"odpowiedź\": \"Oto lista owoców w kolejności od najtańszego do najdroższego, na podstawie podanych informacji:\\n\\n1.  Lokwaty (najtańszy, ponieważ jabłka są droższe niż lokwaty)\\n2.  Kiwi (tańszy niż pomarańcze)\\n3.  Pomarańcze (tańszy niż arbuzy, droższy niż kiwi)\\n4.  Arbuzy (tańszy niż śliwki, droższy niż pomarańcze)\\n5.  Śliwki (tańsze niż mango)\\n6.  Mango (trzeci najdroższy)\\n7.  Jabłka (najdroższy, ponieważ są droższe niż lokwaty)\"}",
+            "score": 0.16028708133971292,
+            "error": false,
+            "elapsed": 8.813
+          },
+          {
+            "prompt_id": "bbh_open-identity-041",
+            "raw_answer": "{\"odpowiedź\": \"Oto golfiści w kolejności od 1. miejsca do 7. miejsca:\\n1. Dan\\n2. Amy\\n3. Joe\\n4. Ana\\n5. Eve\\n6. Ada\\n7. Mel\"}",
+            "score": 0.41747572815533984,
+            "error": false,
+            "elapsed": 3.896
+          },
+          {
+            "prompt_id": "bbh_open-identity-042",
+            "raw_answer": "{\"odpowiedź\": \"1. Minivan\\n2. Hatchback\\n3. Autobus\\n4. Motocykl\\n5. Ciągnik\\n6. Sedan\\n7. Kombi\"}",
+            "score": 0.5466666666666666,
+            "error": false,
+            "elapsed": 3.664
+          },
+          {
+            "prompt_id": "bbh_open-identity-043",
+            "raw_answer": "{\"odpowiedź\": \"1. Autobus\\n2. Minivan\\n3. Limuzyna\\n4. Kombi\\n5. Motocykl\\n6. Hatchback\\n7. Ciężarówka\"}",
+            "score": 0.2962962962962963,
+            "error": false,
+            "elapsed": 3.637
+          },
+          {
+            "prompt_id": "bbh_open-identity-044",
+            "raw_answer": "{\"odpowiedź\": \"Oto golfiści w kolejności od 1. miejsca do 7. miejsca:\\n1. Eli\\n2. Rob\\n3. Dan\\n4. Mel\\n5. Ada\\n6. Mya\\n7. Ana\"}",
+            "score": 0.3495145631067961,
+            "error": false,
+            "elapsed": 3.96
+          },
+          {
+            "prompt_id": "bbh_open-identity-045",
+            "raw_answer": "{\"odpowiedź\": \"Oto kolejność golfistów od 1. miejsca do 7. miejsca:\\n1. Joe\\n2. Amy\\n3. Ada\\n4. Eli\\n5. Mel\\n6. Ana\\n7. Mya\"}",
+            "score": 0.39603960396039606,
+            "error": false,
+            "elapsed": 3.828
+          },
+          {
+            "prompt_id": "bbh_open-identity-046",
+            "raw_answer": "{\"odpowiedź\": \"Fioletowa, Brązowa, Żółta, Pomarańczowa, Szara, Czarna, Zielona\"}",
+            "score": 0.4126984126984127,
+            "error": false,
+            "elapsed": 3.118
+          },
+          {
+            "prompt_id": "bbh_open-identity-047",
+            "raw_answer": "{\"odpowiedź\": \"Oto owoce w kolejności od najtańszego do najdroższego:\\n\\n1. Śliwki\\n2. Lokwaty\\n3. Pomarańcze\\n4. Jabłka\\n5. Brzoskwinie\\n6. Kiwi\\n7. Arbuzy\"}",
+            "score": 0.368421052631579,
+            "error": false,
+            "elapsed": 5.058
+          },
+          {
+            "prompt_id": "bbh_open-identity-048",
+            "raw_answer": "{\"odpowiedź\": \"1. Hatchback\\n2. Minivan\\n3. Autobus\\n4. Limuzyna\\n5. Ciężarówka\\n6. Kombi\\n7. Motocykl\"}",
+            "score": 0.45679012345679015,
+            "error": false,
+            "elapsed": 3.856
+          },
+          {
+            "prompt_id": "bbh_open-identity-049",
+            "raw_answer": "{\"odpowiedź\": \"1. Limuzyna\\n2. Ciężarówka\\n3. Autobus\\n4. Ciągnik\\n5. Kombi\\n6. Kabriolet\\n7. Minivan\"}",
+            "score": 0.7375,
+            "error": false,
+            "elapsed": 3.833
+          },
+          {
+            "prompt_id": "bbh_open-identity-050",
+            "raw_answer": "{\"odpowiedź\": \"Oto owoce w kolejności od najtańszego do najdroższego:\\n\\n1. Brzoskwinie (najtańsze)\\n2. Lokwaty (trzecie najtańsze)\\n3. Pomarańcze (tańsze niż mango)\\n4. Jabłka (drugie najtańsze)\\n5. Kiwi (droższe niż mango)\\n6. Mango (droższe niż pomarańcze, ale tańsze niż śliwki)\\n7. Śliwki (czwarte najdroższe)\"}",
+            "score": 0.19587628865979378,
+            "error": false,
+            "elapsed": 7.483
+          },
+          {
+            "prompt_id": "bbh_open-identity-051",
+            "raw_answer": "{\"odpowiedź\": \"Oto kolejność golfistów od 1. miejsca do 7. miejsca:\\n1. Joe\\n2. Rob\\n3. Dan\\n4. Eve\\n5. Ada\\n6. Ana\\n7. Amy\"}",
+            "score": 0.4158415841584159,
+            "error": false,
+            "elapsed": 4.005
+          },
+          {
+            "prompt_id": "bbh_open-identity-052",
+            "raw_answer": "{\"odpowiedź\": \"Sójka, Kruk, Rudzik, Sokół, Kardynał, Przypiórka, Koliber\"}",
+            "score": 0.5964912280701755,
+            "error": false,
+            "elapsed": 2.911
+          },
+          {
+            "prompt_id": "bbh_open-identity-053",
+            "raw_answer": "{\"odpowiedź\": \"Sójka, Kruk, Rudzik, Sokół, Kardynał, Przypiórka, Koliber\"}",
+            "score": 0.5964912280701755,
+            "error": false,
+            "elapsed": 1.601
+          },
+          {
+            "prompt_id": "bbh_open-identity-054",
+            "raw_answer": "{\"odpowiedź\": \"Książki w kolejności od lewej do prawej to: zielona, fioletowa, brązowa, pomarańczowa, żółta, czerwona, biała.\"}",
+            "score": 0.2727272727272727,
+            "error": false,
+            "elapsed": 3.801
+          },
+          {
+            "prompt_id": "bbh_open-identity-055",
+            "raw_answer": "{\"odpowiedź\": \"1. Rob\\n2. Mel\\n3. Mya\\n4. Dan\\n5. Eve\\n6. Joe\\n7. Ada\"}",
+            "score": 0.875,
+            "error": false,
+            "elapsed": 3.183
+          },
+          {
+            "prompt_id": "bbh_open-identity-056",
+            "raw_answer": "{\"odpowiedź\": \"1. Ana\\n2. Eli\\n3. Amy\\n4. Mya\\n5. Dan\\n6. Joe\\n7. Mel\"}",
+            "score": 0.75,
+            "error": false,
+            "elapsed": 3.013
+          },
+          {
+            "prompt_id": "bbh_open-identity-057",
+            "raw_answer": "{\"odpowiedź\": \"Książki w kolejności od lewej do prawej to: Czarna, Pomarańczowa, Niebieska, Zielona, Biała, Brązowa, Żółta.\"}",
+            "score": 0.34259259259259256,
+            "error": false,
+            "elapsed": 3.756
+          },
+          {
+            "prompt_id": "bbh_open-identity-058",
+            "raw_answer": "{\"odpowiedź\": \"Oto golfiści w kolejności od 1. miejsca do 7. miejsca:\\n1. Joe\\n2. Ada\\n3. Dan\\n4. Mya\\n5. Eli\\n6. Rob\\n7. Ana\"}",
+            "score": 0.4077669902912622,
+            "error": false,
+            "elapsed": 4.078
+          },
+          {
+            "prompt_id": "bbh_open-identity-059",
+            "raw_answer": "{\"odpowiedź\": \"Na podstawie podanych informacji, owoce ułożone w kolejności od najtańszego do najdroższego to: kiwi, gruszki, brzoskwinie, mango, kantalupy, arbuzy, pomarańcze.\"}",
+            "score": 0.2795031055900621,
+            "error": false,
+            "elapsed": 4.533
+          },
+          {
+            "prompt_id": "bbh_open-identity-060",
+            "raw_answer": "{\"odpowiedź\": \"Brązowa, czarna, fioletowa, pomarańczowa, biała, żółta\"}",
+            "score": 0.6153846153846154,
+            "error": false,
+            "elapsed": 2.897
+          },
+          {
+            "prompt_id": "bbh_open-identity-061",
+            "raw_answer": "{\"odpowiedź\": \"1. Amy\\n2. Dan\\n3. Ada\\n4. Joe\\n5. Rob\\n6. Mya\\n7. Mel\"}",
+            "score": 0.6041666666666667,
+            "error": false,
+            "elapsed": 3.201
+          },
+          {
+            "prompt_id": "bbh_open-identity-062",
+            "raw_answer": "{\"odpowiedź\": \"Śliwki, lokwaty, jabłka, kantalupy, arbuzy, gruszki, kiwi\"}",
+            "score": 0.6842105263157895,
+            "error": false,
+            "elapsed": 3.254
+          },
+          {
+            "prompt_id": "bbh_open-identity-063",
+            "raw_answer": "{\"odpowiedź\": \"Kruk, Kardynał, Sokół, Sowa, Sójka, Przepiórka, Rudzik\"}",
+            "score": 0.2592592592592593,
+            "error": false,
+            "elapsed": 2.998
+          },
+          {
+            "prompt_id": "bbh_open-identity-064",
+            "raw_answer": "{\"odpowiedź\": \"Na podstawie podanych informacji, kolejność książek od lewej do prawej to: Szara, Fioletowa, Żółta, Czerwona, Niebieska, Pomarańczowa, Biała.\"}",
+            "score": 0.3971631205673759,
+            "error": false,
+            "elapsed": 4.09
+          },
+          {
+            "prompt_id": "bbh_open-identity-065",
+            "raw_answer": "{\"odpowiedź\": \"Jastrząb, koliber, kruk, sowa, wrona, przepiórka, sokół\"}",
+            "score": 0.6181818181818182,
+            "error": false,
+            "elapsed": 2.905
+          },
+          {
+            "prompt_id": "bbh_open-identity-066",
+            "raw_answer": "{\"odpowiedź\": \"Czarna, szara, pomarańczowa, żółta, biała, fioletowa, zielona\"}",
+            "score": 0.639344262295082,
+            "error": false,
+            "elapsed": 3.04
+          },
+          {
+            "prompt_id": "bbh_open-identity-067",
+            "raw_answer": "{\"odpowiedź\": \"Kruk, Sójka, Rudzik, Koliber, Sowa, Sokół, Wrona\"}",
+            "score": 0.8333333333333334,
+            "error": false,
+            "elapsed": 2.65
+          },
+          {
+            "prompt_id": "bbh_open-identity-068",
+            "raw_answer": "{\"odpowiedź\": \"Książki w kolejności od lewej do prawej to: Czarna, Pomarańczowa, Niebieska, Zielona, Biała, Brązowa, Żółta.\"}",
+            "score": 0.34259259259259256,
+            "error": false,
+            "elapsed": 3.73
+          },
+          {
+            "prompt_id": "bbh_open-identity-069",
+            "raw_answer": "{\"odpowiedź\": \"1. Minivan\\n2. Hatchback\\n3. Autobus\\n4. Motocykl\\n5. Ciągnik\\n6. Sedan\\n7. Kombi\"}",
+            "score": 0.5466666666666666,
+            "error": false,
+            "elapsed": 3.589
+          },
+          {
+            "prompt_id": "bbh_open-identity-070",
+            "raw_answer": "{\"odpowiedź\": \"Oto lista owoców w kolejności od najtańszego do najdroższego, na podstawie podanych informacji:\\n\\n1.  Lokwaty (najtańszy, ponieważ jabłka są droższe niż lokwaty)\\n2.  Kiwi (tańszy niż pomarańcze)\\n3.  Pomarańcze (tańszy niż arbuzy, droższy niż kiwi)\\n4.  Arbuzy (tańszy niż śliwki, droższy niż pomarańcze)\\n5.  Śliwki (tańsze niż mango)\\n6.  Mango (trzeci najdroższy)\\n7.  Jabłka (najdroższy, ponieważ są droższe niż lokwaty)\"}",
+            "score": 0.16028708133971292,
+            "error": false,
+            "elapsed": 8.854
+          },
+          {
+            "prompt_id": "bbh_open-identity-071",
+            "raw_answer": "{\"odpowiedź\": \"Czarna, Biała, Zielona, Pomarańczowa, Żółta, Brązowa, Fioletowa\"}",
+            "score": 0.4285714285714286,
+            "error": false,
+            "elapsed": 3.031
+          },
+          {
+            "prompt_id": "bbh_open-identity-072",
+            "raw_answer": "{\"odpowiedź\": \"Oto golfiści w kolejności od 1. miejsca do 7. miejsca:\\n1. Joe\\n2. Ada\\n3. Dan\\n4. Mya\\n5. Eli\\n6. Rob\\n7. Ana\"}",
+            "score": 0.4077669902912622,
+            "error": false,
+            "elapsed": 3.958
+          },
+          {
+            "prompt_id": "bbh_open-identity-073",
+            "raw_answer": "{\"odpowiedź\": \"Koliber, wrona, sójka, rudzik, kruk, przepiórka, kardynał\"}",
+            "score": 0.49122807017543857,
+            "error": false,
+            "elapsed": 2.895
+          },
+          {
+            "prompt_id": "bbh_open-identity-074",
+            "raw_answer": "{\"odpowiedź\": \"Oto owoce w kolejności od najtańszego do najdroższego:\\n\\n1. Pomarańcze (drugie najtańsze)\\n2. Mango (trzecie najtańsze)\\n3. Jabłka (tańsze niż gruszki)\\n4. Gruszki\\n5. Kantalupa (droższa niż mango)\\n6. Arbuzy (drugi najdroższy)\\n7. Lokwaty (trzeci najdroższy)\"}",
+            "score": 0.23412698412698407,
+            "error": false,
+            "elapsed": 6.784
+          },
+          {
+            "prompt_id": "bbh_open-identity-075",
+            "raw_answer": "{\"odpowiedź\": \"1. Hatchback\\n2. Minivan\\n3. Autobus\\n4. Limuzyna\\n5. Ciężarówka\\n6. Kombi\\n7. Motocykl\"}",
+            "score": 0.45679012345679015,
+            "error": false,
+            "elapsed": 3.7
+          },
+          {
+            "prompt_id": "bbh_open-identity-076",
+            "raw_answer": "{\"odpowiedź\": \"Oto owoce w kolejności od najtańszego do najdroższego:\\n\\n1. Śliwki\\n2. Lokwaty\\n3. Pomarańcze\\n4. Jabłka\\n5. Brzoskwinie\\n6. Kiwi\\n7. Arbuzy\"}",
+            "score": 0.368421052631579,
+            "error": false,
+            "elapsed": 4.902
+          },
+          {
+            "prompt_id": "bbh_open-identity-077",
+            "raw_answer": "{\"odpowiedź\": \"Hatchback, Ciężarówka, Motocykl, Limuzyna, Sedan, Ciągnik, Minivan\"}",
+            "score": 0.7878787878787878,
+            "error": false,
+            "elapsed": 2.984
+          },
+          {
+            "prompt_id": "bbh_open-identity-078",
+            "raw_answer": "{\"odpowiedź\": \"Sójka, Sowa, Sokół, Jastrząb, Koliber, Kruk, Wrona\"}",
+            "score": 0.52,
+            "error": false,
+            "elapsed": 2.719
+          },
+          {
+            "prompt_id": "bbh_open-identity-079",
+            "raw_answer": "{\"odpowiedź\": \"Kruk, Wrona, Koliber, Jastrząb, Sokół, Kardynał, Rudzik\"}",
+            "score": 0.4,
+            "error": false,
+            "elapsed": 2.635
+          },
+          {
+            "prompt_id": "bbh_open-identity-080",
+            "raw_answer": "{\"odpowiedź\": \"Sowa, Koliber, Sokół, Kardynał, Przepiórka, Wrona, Rudzik\"}",
+            "score": 0.4736842105263158,
+            "error": false,
+            "elapsed": 2.726
+          },
+          {
+            "prompt_id": "bbh_open-identity-081",
+            "raw_answer": "{\"odpowiedź\": \"Oto pojazdy w kolejności od najnowszego do najstarszego:\\n\\n1. Minivan\\n2. Hatchback\\n3. Ciągnik\\n4. Motocykl\\n5. Sedan\\n6. Ciężarówka\\n7. Limuzyna\"}",
+            "score": 0.3165467625899281,
+            "error": false,
+            "elapsed": 4.653
+          },
+          {
+            "prompt_id": "bbh_open-identity-082",
+            "raw_answer": "{\"odpowiedź\": \"1. Hatchback\\n2. Minivan\\n3. Limuzyna\\n4. Kombi\\n5. Ciągnik\\n6. Autobus\\n7. Kabriolet\"}",
+            "score": 0.5569620253164558,
+            "error": false,
+            "elapsed": 3.682
+          },
+          {
+            "prompt_id": "bbh_open-identity-083",
+            "raw_answer": "{\"odpowiedź\": \"Czarna, Biała, Zielona, Pomarańczowa, Żółta, Brązowa, Fioletowa\"}",
+            "score": 0.4285714285714286,
+            "error": false,
+            "elapsed": 3.071
+          },
+          {
+            "prompt_id": "bbh_open-identity-084",
+            "raw_answer": "{\"odpowiedź\": \"Czerwona, Czarna, Żółta, Biała, Szara, Zielona, Czerwona\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 2.75
+          },
+          {
+            "prompt_id": "bbh_open-identity-085",
+            "raw_answer": "{\"odpowiedź\": \"Oto golfiści w kolejności od 1. miejsca do 7. miejsca:\\n1. Joe\\n2. Rob\\n3. Amy\\n4. Eli\\n5. Ada\\n6. Eve\\n7. Ana\"}",
+            "score": 0.3398058252427184,
+            "error": false,
+            "elapsed": 4.109
+          },
+          {
+            "prompt_id": "bbh_open-identity-086",
+            "raw_answer": "{\"odpowiedź\": \"1. Joe\\n2. Ada\\n3. Rob\\n4. Eve\\n5. Mel\\n6. Eli\\n7. Ana\"}",
+            "score": 0.8333333333333334,
+            "error": false,
+            "elapsed": 2.938
+          },
+          {
+            "prompt_id": "bbh_open-identity-087",
+            "raw_answer": "{\"odpowiedź\": \"Kobieta, kombi, sedan, minivan, hatchback, ciężarówka, motocykl\"\n}",
+            "score": 0.5873015873015873,
+            "error": false,
+            "elapsed": 2.815
+          },
+          {
+            "prompt_id": "bbh_open-identity-088",
+            "raw_answer": "{\"odpowiedź\": \"Oto owoce w kolejności od najtańszego do najdroższego:\\n\\n1. Brzoskwinie (najtańsze)\\n2. Arbuzy (drugie najdroższe)\\n3. Jabłka (trzecie najtańsze)\\n4. Pomarańcze (droższe niż kantalupy)\\n5. Kantalupy (tańsze niż brzoskwinie, droższe niż pomarańcze)\\n6. Mango (czwarte najdroższe)\\n7. Gruszki (najdroższe)\"}",
+            "score": 0.22972972972972971,
+            "error": false,
+            "elapsed": 7.361
+          },
+          {
+            "prompt_id": "bbh_open-identity-089",
+            "raw_answer": "{\"odpowiedź\": \"1. Ciężarówka\\n2. Hatchback\\n3. Minivan\\n4. Kombi\\n5. Kabriolet\\n6. Ciągnik\\n7. Autobus\"}",
+            "score": 0.8271604938271605,
+            "error": false,
+            "elapsed": 3.786
+          },
+          {
+            "prompt_id": "bbh_open-identity-090",
+            "raw_answer": "{\"odpowiedź\": \"1. Limuzyna\\n2. Hatchback\\n3. Kombi\\n4. Minivan\\n5. Ciężarówka\\n6. Autobus\\n7. Ciągnik\"}",
+            "score": 0.575,
+            "error": false,
+            "elapsed": 3.575
+          },
+          {
+            "prompt_id": "bbh_open-identity-091",
+            "raw_answer": "{\"odpowiedź\": \"Kruk, Sójka, Rudzik, Koliber, Sowa, Sokół, Wrona\"}",
+            "score": 0.8333333333333334,
+            "error": false,
+            "elapsed": 2.626
+          },
+          {
+            "prompt_id": "bbh_open-identity-092",
+            "raw_answer": "{\"odpowiedź\": \"Oto golfiści w kolejności od 1. miejsca do 7. miejsca:\\n1. Joe\\n2. Rob\\n3. Amy\\n4. Eli\\n5. Ada\\n6. Eve\\n7. Ana\"}",
+            "score": 0.3398058252427184,
+            "error": false,
+            "elapsed": 4.106
+          },
+          {
+            "prompt_id": "bbh_open-identity-093",
+            "raw_answer": "{\"odpowiedź\": \"1. Mango\\n2. Kiwi\\n3. Gruszki\\n4. Brzoskwinie\\n5. Kantalupy\\n6. Pomarańcze\\n7. Mango\"}",
+            "score": 0.4177215189873418,
+            "error": false,
+            "elapsed": 3.958
+          },
+          {
+            "prompt_id": "bbh_open-identity-094",
+            "raw_answer": "{\"odpowiedź\": \"1. Eve\\n2. Ada\\n3. Joe\\n4. Mel\\n5. Rob\\n6. Amy\\n7. Dan\"}",
+            "score": 0.875,
+            "error": false,
+            "elapsed": 3.017
+          },
+          {
+            "prompt_id": "bbh_open-identity-095",
+            "raw_answer": "{\"odpowiedź\": \"Kruk, Rudzik, Kardynał, Sójka, Wrona, Sokół, Jastrząb\"}",
+            "score": 0.5094339622641509,
+            "error": false,
+            "elapsed": 2.783
+          },
+          {
+            "prompt_id": "bbh_open-identity-096",
+            "raw_answer": "{\"odpowiedź\": \"Kruk, Rudzik, Kardynał, Sójka, Wrona, Sokół, Jastrząb\"}",
+            "score": 0.5094339622641509,
+            "error": false,
+            "elapsed": 1.511
+          },
+          {
+            "prompt_id": "bbh_open-identity-097",
+            "raw_answer": "{\"odpowiedź\": \"Fioletowa, Brązowa, Żółta, Pomarańczowa, Szara, Czarna, Zielona\"}",
+            "score": 0.4126984126984127,
+            "error": false,
+            "elapsed": 3.05
+          },
+          {
+            "prompt_id": "bbh_open-identity-098",
+            "raw_answer": "{\"odpowiedź\": \"Kruk, Jastrząb, Sokół, Rudzik, Sójka, Wrona, Koliber\"}",
+            "score": 0.34246575342465757,
+            "error": false,
+            "elapsed": 2.748
+          },
+          {
+            "prompt_id": "bbh_open-identity-099",
+            "raw_answer": "{\"odpowiedź\": \"Najnowsze pojazdy to: 1. Ciągnik, 2. Sedan, 3. Kombi, 4. Autobus, 5. Kabriolet, 6. Limuzyna, 7. Ciężarówka\"}",
+            "score": 0.5849056603773585,
+            "error": false,
+            "elapsed": 4.06
+          }
+        ]
+      }
+    },
+    "punctuation_all": {
+      "bbh_open": {
+        "num_sampled": 100,
+        "score_sum": 49.594348,
+        "score_avg": 0.495943,
+        "error_count": 0,
+        "elapsed_sec": 330.14,
+        "questions": [
+          {
+            "prompt_id": "bbh_open-punctuation_all-000",
+            "raw_answer": "{\"odpowiedź\": \"Koliber, Kruk, Kardynał, Sowa, Sokół, Jastrząb, Kruk\"}",
+            "score": 0.3620689655172413,
+            "error": false,
+            "elapsed": 3.114
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-001",
+            "raw_answer": "{\"odpowiedź\": \"1. Limuzyna\\n2. Ciężarówka\\n3. Kombi\\n4. Autobus\\n5. Kabriolet\\n6. Minivan\\n7. Ciągnik\"}",
+            "score": 0.525,
+            "error": false,
+            "elapsed": 3.829
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-002",
+            "raw_answer": "{\"odpowiedź\": \"1. Eve, 2. Mel, 3. Dan, 4. Joe, 5. Ada, 6. Rob, 7. Joe\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 2.962
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-003",
+            "raw_answer": "{\"odpowiedź\": \"Pomarańczowa, Biała, Zielona, Żółta, Czerwona, Brązowa, Fioletowa\"}",
+            "score": 0.7230769230769231,
+            "error": false,
+            "elapsed": 3.206
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-004",
+            "raw_answer": "{\"odpowiedź\": \"Koliber, Sowa, Sójka, Sokół, Rudzik, Przypiórka, Jastrząb\"}",
+            "score": 0.26315789473684215,
+            "error": false,
+            "elapsed": 2.877
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-005",
+            "raw_answer": "{\"odpowiedź\": \"Brązowa, żółta, zielona, pomarańczowa, szara, czarna, fioletowa\"}",
+            "score": 0.38095238095238093,
+            "error": false,
+            "elapsed": 2.843
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-006",
+            "raw_answer": "{\"odpowiedź\": \"Kolejność ptaków od lewej do prawej to: Kardynał, Wrona, Koliber, Sójka, Przypiórka, Sowa, Rudzik.\"}",
+            "score": 0.2755102040816326,
+            "error": false,
+            "elapsed": 3.337
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-007",
+            "raw_answer": "{\"odpowiedź\": \"Książki w kolejności od lewej do prawej to: zielona, biała, czerwona, pomarańczowa, szara, fioletowa, niebieska.\"}",
+            "score": 0.3214285714285714,
+            "error": false,
+            "elapsed": 3.569
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-008",
+            "raw_answer": "{\"odpowiedź\": \"1. Joe, 2. Ada, 3. Dan, 4. Mya, 5. Eli, 6. Ana, 7. Ana\"}",
+            "score": 0.9444444444444444,
+            "error": false,
+            "elapsed": 2.935
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-009",
+            "raw_answer": "{\"odpowiedź\": \"1. Hatchback\\n2. Sedan\\n3. Minivan\\n4. Limuzyna\\n5. Ciężarówka\\n6. Motocykl\\n7. Ciągnik\"}",
+            "score": 0.4814814814814815,
+            "error": false,
+            "elapsed": 3.609
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-010",
+            "raw_answer": "{\"odpowiedź\": \"1. Ana, 2. Joe, 3. Eli, 4. Amy, 5. Mel, 6. Dan, 7. MyA\"}",
+            "score": 0.7592592592592593,
+            "error": false,
+            "elapsed": 3.048
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-011",
+            "raw_answer": "{\"odpowiedź\": \"Kolejność ptaków od lewej do prawej to: jastrząb, koliber, sowa, kardynał, rudzik, przepiórka, wrona.\"}",
+            "score": 0.27722772277227725,
+            "error": false,
+            "elapsed": 3.458
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-012",
+            "raw_answer": "{\"odpowiedź\": \"1. Minivan\\n2. Limuzyna\\n3. Sedan\\n4. Ciężarówka\\n5. Ciągnik\\n6. Hatchback\\n7. Motocykl\"}",
+            "score": 0.4320987654320988,
+            "error": false,
+            "elapsed": 3.814
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-013",
+            "raw_answer": "{\"odpowiedź\": \"1. Eli, 2. Joe, 3. Mel, 4. Ana, 5. Eve, 6. My, 7. Joe\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 2.976
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-014",
+            "raw_answer": "{\"odpowiedź\": \"Sowa, wrona, sokół, kardynał, koliber, przepiórka, jastrząb\"}",
+            "score": 0.288135593220339,
+            "error": false,
+            "elapsed": 2.844
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-015",
+            "raw_answer": "{\"odpowiedź\": \"1. Autobus\\n2. Minivan\\n3. Sedan\\n4. Ciągnik\\n5. Kombi\\n6. Ciężarówka\\n7. Motocykl\"}",
+            "score": 0.5394736842105263,
+            "error": false,
+            "elapsed": 3.56
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-016",
+            "raw_answer": "{\"odpowiedź\": \"1. Joe, 2. Ada, 3. Rob, 4. Eve, 5. Mel, 6. Ana, 7. Eli\"}",
+            "score": 0.8888888888888888,
+            "error": false,
+            "elapsed": 3.02
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-017",
+            "raw_answer": "{\"odpowiedź\": \"1. Autobus\\n2. Limuzyna\\n3. Ciężarówka\\n4. Ciągnik\\n5. Minivan\\n6. Hatchback\\n7. Kabriolet\"}",
+            "score": 0.7261904761904762,
+            "error": false,
+            "elapsed": 3.758
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-018",
+            "raw_answer": "{\"odpowiedź\": \"1. Brzoskwinie, 2. Jabłka, 3. Lokwaty, 4. Śliwki, 5. Kiwi, 6. Mango, 7. Pomarańcze\"}",
+            "score": 0.7560975609756098,
+            "error": false,
+            "elapsed": 3.877
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-019",
+            "raw_answer": "{\"odpowiedź\": \"Mango, kiwi, gruszki, brzoskwinie, pomarańcze, kantalupa, arbuzy\"}",
+            "score": 0.328125,
+            "error": false,
+            "elapsed": 3.014
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-020",
+            "raw_answer": "{\"odpowiedź\": \"Kruk, koliber, rudzik, wrona, przepiórka, sójka, kardynał\"}",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 2.872
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-021",
+            "raw_answer": "{\"odpowiedź\": \"Książki w kolejności od lewej do prawej to: fioletowa, czarna, szara, pomarańczowa, niebieska, czerwona, biała.\"}",
+            "score": 0.3423423423423423,
+            "error": false,
+            "elapsed": 3.68
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-022",
+            "raw_answer": "{\"odpowiedź\": \"1. Lokwaty\\n2. Gruszki\\n3. Pomarańcze\\n4. Brzoskwinie\\n5. Arbuzy\\n6. Kiwi\\n7. Kantalupy\"}",
+            "score": 0.6419753086419753,
+            "error": false,
+            "elapsed": 4.112
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-023",
+            "raw_answer": "{\"odpowiedź\": \"Pomarańczowa, Czarna, Biała, Niebieska, Czerwona, Żółta, Zielona\"}",
+            "score": 0.515625,
+            "error": false,
+            "elapsed": 2.896
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-024",
+            "raw_answer": "{\"odpowiedź\": \"Biała, Szara, Żółta, Fioletowa, Czerwona, Czarna, Zielona\"}",
+            "score": 0.5789473684210527,
+            "error": false,
+            "elapsed": 2.614
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-025",
+            "raw_answer": "{\"odpowiedź\": \"Sójka, Sokół, Koliber, Sowa, Jastrząb, Kruk, Wrona\"}",
+            "score": 0.48,
+            "error": false,
+            "elapsed": 2.63
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-026",
+            "raw_answer": "{\"odpowiedź\": \"Oto owoce w kolejności od najtańszego do najdroższego:\\n\\n1. Lokwaty\\n2. Śliwki\\n3. Mango\\n4. Arbuzy\\n5. Brzoskwinie\\n6. Kantalupa\\n7. Jabłka\"}",
+            "score": 0.3984962406015038,
+            "error": false,
+            "elapsed": 5.054
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-027",
+            "raw_answer": "{\"odpowiedź\": \"1. Eli\\n2. Rob\\n3. Ada\\n4. Ana\\n5. Amy\\n6. Dan\\n7. Joe\"}",
+            "score": 0.8125,
+            "error": false,
+            "elapsed": 2.946
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-028",
+            "raw_answer": "{\"odpowiedź\": \"Oto owoce w kolejności od najtańszego do najdroższego:\\n\\n1. Jabłka\\n2. Kiwi\\n3. Gruszki\\n4. Lokwaty\\n5. Arbuzy\\n6. Mango\\n7. Pomarańcze\"}",
+            "score": 0.3046875,
+            "error": false,
+            "elapsed": 4.641
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-029",
+            "raw_answer": "{\"odpowiedź\": \"Śliwki, kantalupy, pomarańcze, brzoskwinie, arbuzy, gruszki, kiwi\"}",
+            "score": 0.49230769230769234,
+            "error": false,
+            "elapsed": 2.994
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-030",
+            "raw_answer": "{\"odpowiedź\": \"Autobus, limuzyna, ciężarówka, motocykl, ciągnik, kabriolet, minivan\"}",
+            "score": 0.6323529411764706,
+            "error": false,
+            "elapsed": 2.783
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-031",
+            "raw_answer": "{\"odpowiedź\": \"Kolejność ptaków od lewej do prawej to: Sójka, Rudzik, Kardynał, Jastrząb, Sokół, Kruk, Wrona.\"}",
+            "score": 0.35106382978723405,
+            "error": false,
+            "elapsed": 3.302
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-032",
+            "raw_answer": "{\"odpowiedź\": \"Na podstawie podanych informacji, kolejność pojazdów od najnowszego do najstarszego to:\\n\\n1. Autobus\\n2. Sedan\\n3. Kombi\\n4. Minivan\\n5. Kabriolet\\n6. Motocykl\\n7. Ciężarówka\"}",
+            "score": 0.27544910179640714,
+            "error": false,
+            "elapsed": 4.527
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-033",
+            "raw_answer": "{\"odpowiedź\": \"Książki w kolejności od lewej do prawej to: fioletowa, żółta, pomarańczowa, czerwona, niebieska, szara, biała.\"}",
+            "score": 0.4636363636363636,
+            "error": false,
+            "elapsed": 3.564
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-034",
+            "raw_answer": "{\"odpowiedź\": \"Autobus, limuzyna, ciężarówka, kabriolet, ciągnik, motocykl, minivan\"}",
+            "score": 0.4558823529411765,
+            "error": false,
+            "elapsed": 2.706
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-035",
+            "raw_answer": "{\"odpowiedź\": \"Pomarańczowa, Czerwona, Niebieska, Szara, Czarna, Biała, Biała\"}",
+            "score": 0.359375,
+            "error": false,
+            "elapsed": 2.898
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-036",
+            "raw_answer": "{\"odpowiedź\": \"Śliwki, lokwaty, jabłka, arbuzy, kantalupy, gruszki\"}",
+            "score": 0.5614035087719298,
+            "error": false,
+            "elapsed": 2.884
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-037",
+            "raw_answer": "{\"odpowiedź\": \"1. Limuzyna\\n2. Ciężarówka\\n3. Minivan\\n4. Kombi\\n5. Motocykl\\n6. Autobus\\n7. Hatchback\"}",
+            "score": 0.45679012345679015,
+            "error": false,
+            "elapsed": 3.595
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-038",
+            "raw_answer": "{\"odpowiedź\": \"Przepiórka, kruk, koliber, sójka, rudzik, sowa, sójka\"}",
+            "score": 0.39622641509433965,
+            "error": false,
+            "elapsed": 2.749
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-039",
+            "raw_answer": "{\"odpowiedź\": \"1. Lokwaty\\n2. Śliwki\\n3. Gruszki\\n4. Brzoskwinie\\n5. Jabłka\\n6. Mango\\n7. Kantalupa\"}",
+            "score": 0.4358974358974359,
+            "error": false,
+            "elapsed": 3.931
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-040",
+            "raw_answer": "{\"odpowiedź\": \"Oto owoce w kolejności od najtańszego do najdroższego:\\n\\n1. Arbuzy\\n2. Śliwki\\n3. Kiwi\\n4. Pomarańcze\\n5. Mango\\n6. Jabłka\\n7. Lokwaty\"}",
+            "score": 0.3385826771653543,
+            "error": false,
+            "elapsed": 4.475
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-041",
+            "raw_answer": "{\"odpowiedź\": \"1. Dan\\n2. Amy\\n3. Eve\\n4. Ada\\n5. Joe\\n6. Mel\\n7. Amy\"}",
+            "score": 0.5625,
+            "error": false,
+            "elapsed": 2.891
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-042",
+            "raw_answer": "{\"odpowiedź\": \"1. Minivan\\n2. Hatchback\\n3. Sedan\\n4. Kombi\\n5. Ciągnik\\n6. Motocykl\\n7. Autobus\"}",
+            "score": 0.43999999999999995,
+            "error": false,
+            "elapsed": 3.427
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-043",
+            "raw_answer": "{\"odpowiedź\": \"1. Minivan\\n2. Limuzyna\\n3. Hatchback\\n4. Ciężarówka\\n5. Kombi\\n6. Motocykl\\n7. Autobus\"}",
+            "score": 0.40740740740740744,
+            "error": false,
+            "elapsed": 3.358
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-044",
+            "raw_answer": "{\"odpowiedź\": \"1. Eli, 2. Mel, 3. Ada, 4. Rob, 5. Myia, 6. Ana, 7. Ana\"}",
+            "score": 0.8,
+            "error": false,
+            "elapsed": 2.976
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-045",
+            "raw_answer": "{\"odpowiedź\": \"1. Ada, 2. Joe, 3. Amy, 4. Eli, 5. Mel, 6. Ana, 7. My\" }",
+            "score": 0.7222222222222222,
+            "error": false,
+            "elapsed": 2.899
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-046",
+            "raw_answer": "{\"odpowiedź\": \"Brązowa, żółta, zielona, pomarańczowa, szara, czarna, fioletowa\"}",
+            "score": 0.38095238095238093,
+            "error": false,
+            "elapsed": 2.878
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-047",
+            "raw_answer": "{\"odpowiedź\": \"Śliwki, Lokwaty, Arbuzy, Jabłka, Brzoskwinie, Kiwi, Pomarańcze\"}",
+            "score": 0.4516129032258065,
+            "error": false,
+            "elapsed": 3.021
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-048",
+            "raw_answer": "{\"odpowiedź\": \"1. Limuzyna\\n2. Ciężarówka\\n3. Minivan\\n4. Kombi\\n5. Motocykl\\n6. Autobus\\n7. Hatchback\"}",
+            "score": 0.45679012345679015,
+            "error": false,
+            "elapsed": 3.569
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-049",
+            "raw_answer": "{\"odpowiedź\": \"1. Limuzyna\\n2. Ciężarówka\\n3. Kombi\\n4. Autobus\\n5. Kabriolet\\n6. Minivan\\n7. Ciągnik\"}",
+            "score": 0.525,
+            "error": false,
+            "elapsed": 3.52
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-050",
+            "raw_answer": "{\"odpowiedź\": \"1. Brzoskwinie, 2. Jabłka, 3. Lokwaty, 4. Śliwki, 5. Kiwi, 6. Mango, 7. Pomarańcze\"}",
+            "score": 0.7560975609756098,
+            "error": false,
+            "elapsed": 3.79
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-051",
+            "raw_answer": "{\"odpowiedź\": \"1. Dan, 2. Eve, 3. Ana, 4. Joe, 5. Rob, 6. Ada, 7. Amy\"}",
+            "score": 0.6851851851851851,
+            "error": false,
+            "elapsed": 2.988
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-052",
+            "raw_answer": "{\"odpowiedź\": \"Sójka, Koliber, Rudzik, Kardynał, Sokół, Przypiórka, Kruk\"}",
+            "score": 0.4385964912280702,
+            "error": false,
+            "elapsed": 2.745
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-053",
+            "raw_answer": "{\"odpowiedź\": \"Sójka, Koliber, Rudzik, Kardynał, Sokół, Przypiórka, Kruk\"}",
+            "score": 0.4385964912280702,
+            "error": false,
+            "elapsed": 1.508
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-054",
+            "raw_answer": "{\"odpowiedź\": \"Pomarańczowa, Biała, Zielona, Żółta, Czerwona, Brązowa, Fioletowa\"}",
+            "score": 0.7230769230769231,
+            "error": false,
+            "elapsed": 3.128
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-055",
+            "raw_answer": "{\"odpowiedź\": \"1. Rob, 2. Dan, 3. My, 4. Eve, 5. Joe, 6. Ada, 7. Mel\"}",
+            "score": 0.7037037037037037,
+            "error": false,
+            "elapsed": 2.942
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-056",
+            "raw_answer": "{\"odpowiedź\": \"1. Ana, 2. Joe, 3. Eli, 4. Amy, 5. Mel, 6. Dan, 7. MyA\"}",
+            "score": 0.7592592592592593,
+            "error": false,
+            "elapsed": 2.771
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-057",
+            "raw_answer": "{\"odpowiedź\": \"Książki w kolejności od lewej do prawej to: niebieska, pomarańczowa, zielona, biała, brązowa, czarna, żółta.\"}",
+            "score": 0.37037037037037035,
+            "error": false,
+            "elapsed": 3.627
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-058",
+            "raw_answer": "{\"odpowiedź\": \"1. Joe, 2. Ada, 3. Dan, 4. Mya, 5. Eli, 6. Ana, 7. Ana\"}",
+            "score": 0.9444444444444444,
+            "error": false,
+            "elapsed": 3.049
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-059",
+            "raw_answer": "{\"odpowiedź\": \"Na podstawie podanych informacji, owoce w kolejności od najtańszego do najdroższego to:\\n\\n1. Gruszki\\n2. Brzoskwinie\\n3. Kantalupa\\n4. Kiwi\\n5. Mango\\n6. Pomarańcze\\n7. Arbuzy\"}",
+            "score": 0.26190476190476186,
+            "error": false,
+            "elapsed": 5.099
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-060",
+            "raw_answer": "{\"odpowiedź\": \"Książki w kolejności od lewej do prawej to: żółta, niebieska, fioletowa, pomarańczowa, biała, brązowa, czarna.\"}",
+            "score": 0.40909090909090906,
+            "error": false,
+            "elapsed": 3.542
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-061",
+            "raw_answer": "{\"odpowiedź\": \"1. Amy, 2. Joe, 3. Dan, 4. Ada, 5. Mel, 6. Rob, 7. My\"}",
+            "score": 0.7592592592592593,
+            "error": false,
+            "elapsed": 2.855
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-062",
+            "raw_answer": "{\"odpowiedź\": \"1. Śliwki\\n2. Lokwaty\\n3. Kiwi\\n4. Gruszki\\n5. Kantalupy\\n6. Jabłka\\n7. Arbuzy\"}",
+            "score": 0.5833333333333333,
+            "error": false,
+            "elapsed": 3.947
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-063",
+            "raw_answer": "{\"odpowiedź\": \"Kruk, Kardynał, Sokół, Sójka, Przypiórka, Rudzik, Sowa\"}",
+            "score": 0.28,
+            "error": false,
+            "elapsed": 2.755
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-064",
+            "raw_answer": "{\"odpowiedź\": \"Książki w kolejności od lewej do prawej to: fioletowa, żółta, pomarańczowa, czerwona, niebieska, szara, biała.\"}",
+            "score": 0.4636363636363636,
+            "error": false,
+            "elapsed": 3.668
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-065",
+            "raw_answer": "{\"odpowiedź\": \"Kolejność ptaków od lewej do prawej to: koliber, wrona, sowa, kruk, sokół, jastrząb, przepiórka.\"}",
+            "score": 0.32291666666666663,
+            "error": false,
+            "elapsed": 3.424
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-066",
+            "raw_answer": "{\"odpowiedź\": \"Książki w kolejności od lewej do prawej to: czarna, szara, fioletowa, żółta, pomarańczowa, żółta, biała.\"}",
+            "score": 0.3846153846153846,
+            "error": false,
+            "elapsed": 3.438
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-067",
+            "raw_answer": "{\"odpowiedź\": \"Sójka, Rudzik, Kruk, Sowa, Sójka, Koliber, Wrona\"}",
+            "score": 0.5208333333333333,
+            "error": false,
+            "elapsed": 2.567
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-068",
+            "raw_answer": "{\"odpowiedź\": \"Książki w kolejności od lewej do prawej to: niebieska, pomarańczowa, zielona, biała, brązowa, czarna, żółta.\"}",
+            "score": 0.37037037037037035,
+            "error": false,
+            "elapsed": 3.59
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-069",
+            "raw_answer": "{\"odpowiedź\": \"1. Minivan\\n2. Hatchback\\n3. Sedan\\n4. Kombi\\n5. Ciągnik\\n6. Motocykl\\n7. Autobus\"}",
+            "score": 0.43999999999999995,
+            "error": false,
+            "elapsed": 3.407
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-070",
+            "raw_answer": "{\"odpowiedź\": \"Oto owoce w kolejności od najtańszego do najdroższego:\\n\\n1. Arbuzy\\n2. Śliwki\\n3. Kiwi\\n4. Pomarańcze\\n5. Mango\\n6. Jabłka\\n7. Lokwaty\"}",
+            "score": 0.3385826771653543,
+            "error": false,
+            "elapsed": 4.634
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-071",
+            "raw_answer": "{\"odpowiedź\": \"Książki w kolejności od lewej do prawej to: fioletowa, żółta, zielona, biała, brązowa, pomarańczowa, czarna.\"}",
+            "score": 0.2962962962962963,
+            "error": false,
+            "elapsed": 3.631
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-072",
+            "raw_answer": "{\"odpowiedź\": \"1. Joe, 2. Ada, 3. Dan, 4. Mya, 5. Eli, 6. Ana, 7. Ana\"}",
+            "score": 0.9444444444444444,
+            "error": false,
+            "elapsed": 3.218
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-073",
+            "raw_answer": "{\"odpowiedź\": \"Koliber, sójka, wrona, kardynał, przepiórka, kruk, rudzik\"}",
+            "score": 0.4035087719298246,
+            "error": false,
+            "elapsed": 2.948
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-074",
+            "raw_answer": "{\"odpowiedź\": \"Na podstawie podanych informacji, owoce ułożone są w kolejności od najtańszego do najdroższego następująco: jabłka, pomarańcze, mango, gruszki, kantalupy, arbuzy, lokwaty.\"}",
+            "score": 0.23976608187134507,
+            "error": false,
+            "elapsed": 4.353
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-075",
+            "raw_answer": "{\"odpowiedź\": \"1. Limuzyna\\n2. Ciężarówka\\n3. Minivan\\n4. Kombi\\n5. Motocykl\\n6. Autobus\\n7. Hatchback\"}",
+            "score": 0.45679012345679015,
+            "error": false,
+            "elapsed": 3.719
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-076",
+            "raw_answer": "{\"odpowiedź\": \"Śliwki, Lokwaty, Arbuzy, Jabłka, Brzoskwinie, Kiwi, Pomarańcze\"}",
+            "score": 0.4516129032258065,
+            "error": false,
+            "elapsed": 3.079
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-077",
+            "raw_answer": "{\"odpowiedź\": \"1. Ciężarówka\\n2. Hatchback\\n3. Sedan\\n4. Minivan\\n5. Limuzyna\\n6. Motocykl\\n7. Ciągnik\"}",
+            "score": 0.5308641975308642,
+            "error": false,
+            "elapsed": 3.551
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-078",
+            "raw_answer": "{\"odpowiedź\": \"Sójka, Sokół, Koliber, Sowa, Jastrząb, Kruk, Wrona\"}",
+            "score": 0.48,
+            "error": false,
+            "elapsed": 2.651
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-079",
+            "raw_answer": "{\"odpowiedź\": \"Kruk, Wrona, Sokół, Kardynał, Jastrząb, Koliber, Rudzik\"}",
+            "score": 0.3026315789473685,
+            "error": false,
+            "elapsed": 2.583
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-080",
+            "raw_answer": "{\"odpowiedź\": \"1. Sowa\\n2. Rudzik\\n3. Kardynał\\n4. Przypiórka\\n5. Koliber\\n6. Sokół\\n7. Wrona\"}",
+            "score": 0.4305555555555556,
+            "error": false,
+            "elapsed": 3.481
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-081",
+            "raw_answer": "{\"odpowiedź\": \"1. Minivan\\n2. Limuzyna\\n3. Sedan\\n4. Ciężarówka\\n5. Ciągnik\\n6. Hatchback\\n7. Motocykl\"}",
+            "score": 0.4320987654320988,
+            "error": false,
+            "elapsed": 3.796
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-082",
+            "raw_answer": "{\"odpowiedź\": \"Na podstawie podanych informacji, kolejność pojazdów od najnowszego do najstarszego to:\\n\\n1. Hatchback\\n2. Minivan\\n3. Limuzyna\\n4. Kombi\\n5. Autobus\\n6. Kabriolet\\n7. Ciągnik\"}",
+            "score": 0.27380952380952384,
+            "error": false,
+            "elapsed": 4.582
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-083",
+            "raw_answer": "{\"odpowiedź\": \"Książki w kolejności od lewej do prawej to: fioletowa, żółta, zielona, biała, brązowa, pomarańczowa, czarna.\"}",
+            "score": 0.2962962962962963,
+            "error": false,
+            "elapsed": 3.669
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-084",
+            "raw_answer": "{\"odpowiedź\": \"Biała, Szara, Żółta, Fioletowa, Czerwona, Czarna, Zielona\"}",
+            "score": 0.5789473684210527,
+            "error": false,
+            "elapsed": 2.641
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-085",
+            "raw_answer": "{\"odpowiedź\": \"1. Rob, 2. Joe, 3. Ada, 4. Eve, 5. Ana, 6. Eli, 7. Amy\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 3.104
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-086",
+            "raw_answer": "{\"odpowiedź\": \"1. Joe, 2. Ada, 3. Rob, 4. Eve, 5. Mel, 6. Ana, 7. Eli\"}",
+            "score": 0.8888888888888888,
+            "error": false,
+            "elapsed": 2.846
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-087",
+            "raw_answer": "{\"odpowiedź\": \"Kolejność pojazdów od najnowszego do najstarszego to: kombi, hatchback, sedan, minivan, ciężarówka, motocykl, ciągnik.\"}",
+            "score": 0.38983050847457623,
+            "error": false,
+            "elapsed": 3.401
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-088",
+            "raw_answer": "{\"odpowiedź\": \"1. Jabłka\\n2. Gruszki\\n3. Pomarańcze\\n4. Brzoskwinie\\n5. Arbuzy\\n6. Mango\\n7. Kantalupy\"}",
+            "score": 0.2592592592592593,
+            "error": false,
+            "elapsed": 4.028
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-089",
+            "raw_answer": "{\"odpowiedź\": \"1. Ciężarówka\\n2. Minivan\\n3. Hatchback\\n4. Kombi\\n5. Kabriolet\\n6. Autobus\\n7. Ciągnik\"}",
+            "score": 0.6296296296296297,
+            "error": false,
+            "elapsed": 3.641
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-090",
+            "raw_answer": "{\"odpowiedź\": \"Limuzyna, minivan, kombi, ciężarówka, autobus, ciągnik, hatchback\"}",
+            "score": 0.3538461538461538,
+            "error": false,
+            "elapsed": 2.497
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-091",
+            "raw_answer": "{\"odpowiedź\": \"Sójka, Rudzik, Kruk, Sowa, Sójka, Koliber, Wrona\"}",
+            "score": 0.5208333333333333,
+            "error": false,
+            "elapsed": 2.564
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-092",
+            "raw_answer": "{\"odpowiedź\": \"1. Rob, 2. Joe, 3. Ada, 4. Eve, 5. Ana, 6. Eli, 7. Amy\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 3.169
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-093",
+            "raw_answer": "{\"odpowiedź\": \"Mango, kiwi, gruszki, brzoskwinie, pomarańcze, kantalupa, arbuzy\"}",
+            "score": 0.328125,
+            "error": false,
+            "elapsed": 3.129
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-094",
+            "raw_answer": "{\"odpowiedź\": \"1. Eve, 2. Ada, 3. Joe, 4. Mel, 5. Dan, 6. Joe, 7. Dan\"}",
+            "score": 0.8333333333333334,
+            "error": false,
+            "elapsed": 2.914
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-095",
+            "raw_answer": "{\"odpowiedź\": \"Kolejność ptaków od lewej do prawej to: Sójka, Rudzik, Kardynał, Jastrząb, Sokół, Kruk, Wrona.\"}",
+            "score": 0.35106382978723405,
+            "error": false,
+            "elapsed": 3.36
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-096",
+            "raw_answer": "{\"odpowiedź\": \"Kolejność ptaków od lewej do prawej to: Sójka, Rudzik, Kardynał, Jastrząb, Sokół, Kruk, Wrona.\"}",
+            "score": 0.35106382978723405,
+            "error": false,
+            "elapsed": 2.122
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-097",
+            "raw_answer": "{\"odpowiedź\": \"Brązowa, żółta, zielona, pomarańczowa, szara, czarna, fioletowa\"}",
+            "score": 0.38095238095238093,
+            "error": false,
+            "elapsed": 2.979
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-098",
+            "raw_answer": "{\"odpowiedź\": \"Sokół, Kruk, Jastrząb, Sójka, Rudzik, Wrona, Koliber\"}",
+            "score": 0.28846153846153844,
+            "error": false,
+            "elapsed": 2.779
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-099",
+            "raw_answer": "{\"odpowiedź\": \"Ciągnik, Limuzyna, Sedan, Kombi, Autobus, Kabriolet, Ciężarówka\"}",
+            "score": 0.6349206349206349,
+            "error": false,
+            "elapsed": 2.809
+          }
+        ]
+      }
+    },
+    "punctuation_inner": {
+      "bbh_open": {
+        "num_sampled": 100,
+        "score_sum": 49.973956,
+        "score_avg": 0.49974,
+        "error_count": 0,
+        "elapsed_sec": 363.27,
+        "questions": [
+          {
+            "prompt_id": "bbh_open-punctuation_inner-000",
+            "raw_answer": "{\"odpowiedź\": \"Kolejność ptaków od lewej do prawej to: Koliber, Kruk, Kardynał, Sowa, Jastrząb, Kruk, Sokół.\"}",
+            "score": 0.3978494623655914,
+            "error": false,
+            "elapsed": 4.004
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-001",
+            "raw_answer": "{\"odpowiedź\": \"Najnowszą jest limuzyna, następnie ciężarówka, potem autobus, następnie kombi, a najstarszym jest minivan.\"}",
+            "score": 0.33018867924528306,
+            "error": false,
+            "elapsed": 3.055
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-002",
+            "raw_answer": "{\"odpowiedź\": \"1. Eve, 2. Mel, 3. Rob, 4. Ada, 5. Joe, 6. Dan, 7. Amy\"}",
+            "score": 0.7222222222222222,
+            "error": false,
+            "elapsed": 3.122
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-003",
+            "raw_answer": "{\"odpowiedź\": \"Zielona, Brązowa, Czerwona, Żółta, Biała, Pomarańczowa, Fioletowa\"}",
+            "score": 0.4461538461538461,
+            "error": false,
+            "elapsed": 3.287
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-004",
+            "raw_answer": "{\"odpowiedź\": \"Na podstawie podanych informacji, kolejność ptaków od lewej do prawej to: Jastrząb, Sokół, Koliber, Rudzik, Sowa, Sójka, Przepiórka.\"}",
+            "score": 0.303030303030303,
+            "error": false,
+            "elapsed": 3.727
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-005",
+            "raw_answer": "{\"odpowiedź\": \"Fioletowa, Brązowa, Żółta, Pomarańczowa, Szara, Czarna, Zielona\"}",
+            "score": 0.4126984126984127,
+            "error": false,
+            "elapsed": 3.039
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-006",
+            "raw_answer": "{\"odpowiedź\": \"Kolejność ptaków od lewej do prawej to: Wrona, Kardynał, Przepiórka, Koliber, Sójka, Rudzik, Sowa.\"}",
+            "score": 0.36734693877551017,
+            "error": false,
+            "elapsed": 3.422
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-007",
+            "raw_answer": "{\"odpowiedź\": \"Książki w kolejności od lewej do prawej to: Szara, Niebieska, Zielona, Biała, Czerwona, Fioletowa, Pomarańczowa.\"}",
+            "score": 0.3303571428571429,
+            "error": false,
+            "elapsed": 3.688
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-008",
+            "raw_answer": "{\"odpowiedź\": \"1. Joe\\n2. Ada\\n3. Dan\\n4. Mya\\n5. Eli\\n6. Ana\\n7. Rob\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.055
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-009",
+            "raw_answer": "{\"odpowiedź\": \"1. Minivan\\n2. Sedan\\n3. Limuzyna\\n4. Hatchback\\n5. Ciężarówka\\n6. Motocykl\\n7. Ciągnik\"}",
+            "score": 0.6049382716049383,
+            "error": false,
+            "elapsed": 3.723
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-010",
+            "raw_answer": "{\"odpowiedź\": \"1. Ana\\n2. Amy\\n3. Eli\\n4. Mya\\n5. Dan\\n6. Joe\\n7. Mel\"}",
+            "score": 0.8125,
+            "error": false,
+            "elapsed": 3.006
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-011",
+            "raw_answer": "{\"odpowiedź\": \"Kolejność ptaków od lewej do prawej to: Koliber, Przypiórka, Wrona, Sowa, Kardynał, Jastrząb, Rudzik.\"}",
+            "score": 0.4158415841584159,
+            "error": false,
+            "elapsed": 3.46
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-012",
+            "raw_answer": "{\"odpowiedź\": \"1. Minivan\\n2. Limuzyna\\n3. Hatchback\\n4. Motocykl\\n5. Ciągnik\\n6. Ciężarówka\\n7. Sedan\"}",
+            "score": 0.4320987654320988,
+            "error": false,
+            "elapsed": 3.747
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-013",
+            "raw_answer": "{\"odpowiedź\": \"1. Eli\\n2. Mel\\n3. Ana\\n4. Joe\\n5. Rob\\n6. Mya\\n7. Eve\"}",
+            "score": 0.8333333333333334,
+            "error": false,
+            "elapsed": 3.054
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-014",
+            "raw_answer": "{\"odpowiedź\": \"Sowa, Wrona, Sokół, Kardynał, Przypiórka, Koliber, Jastrząb\"}",
+            "score": 0.3220338983050848,
+            "error": false,
+            "elapsed": 2.903
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-015",
+            "raw_answer": "{\"odpowiedź\": \"1. Autobus\\n2. Ciężarówka\\n3. Sedan\\n4. Kombi\\n5. Minivan\\n6. Motocykl\\n7. Ciągnik\"}",
+            "score": 0.618421052631579,
+            "error": false,
+            "elapsed": 3.562
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-016",
+            "raw_answer": "{\"odpowiedź\": \"1. Joe\\n2. Ada\\n3. Rob\\n4. Eve\\n5. Mel\\n6. Eli\\n7. Ana\"}",
+            "score": 0.8333333333333334,
+            "error": false,
+            "elapsed": 3.045
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-017",
+            "raw_answer": "{\"odpowiedź\": \"1. Autobus\\n2. Minivan\\n3. Hatchback\\n4. Ciągnik\\n5. Ciężarówka\\n6. Limuzyna\\n7. Kabriolet\"}",
+            "score": 0.5119047619047619,
+            "error": false,
+            "elapsed": 3.805
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-018",
+            "raw_answer": "{\"odpowiedź\": \"Brzoskwinie, Lokwaty, Pomarańcze, Jabłka, Kiwi, Mango, Śliwki\"}",
+            "score": 0.47540983606557374,
+            "error": false,
+            "elapsed": 3.057
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-019",
+            "raw_answer": "{\"odpowiedź\": \"Mango, Kiwi, Gruszki, Brzoskwinie, Kantalupy, Pomarańcze,  Mango\" }",
+            "score": 0.42352941176470593,
+            "error": false,
+            "elapsed": 3.072
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-020",
+            "raw_answer": "{\"odpowiedź\": \"Kardynał, Kruk, Koliber, Sójka, Wrona, Przepiórka, Rudzik\"}",
+            "score": 0.7192982456140351,
+            "error": false,
+            "elapsed": 2.834
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-021",
+            "raw_answer": "{\"odpowiedź\": \"Biała, Niebieska, Pomarańczowa, Szara, Czarna, Fioletowa, Czerwona\"}",
+            "score": 0.48484848484848486,
+            "error": false,
+            "elapsed": 3.079
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-022",
+            "raw_answer": "{\"odpowiedź\": \"Oto owoce w kolejności od najtańszego do najdroższego:\\n\\n1. Lokwaty (najtańsze)\\n2. Brzoskwinie (tańsze niż pomarańcze)\\n3. Pomarańcze (tańsze niż kantalupy)\\n4. Arbuzy (droższe niż lokwaty)\\n5. Gruszki (trzecie najtańsze)\\n6. Kiwi (drugie najdroższe)\\n7. Kantalupy (najdroższe)\"}",
+            "score": 0.23616236162361626,
+            "error": false,
+            "elapsed": 7.137
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-023",
+            "raw_answer": "{\"odpowiedź\": \"Pomarańczowa, Czarna, Niebieska, Żółta, Czerwona, Zielona, Biała\"}",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 2.959
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-024",
+            "raw_answer": "{\"odpowiedź\": \"Czerwona, Biała, Żółta, Zielona, Szara, Czarna, Fioletowa\"}",
+            "score": 0.5789473684210527,
+            "error": false,
+            "elapsed": 2.68
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-025",
+            "raw_answer": "{\"odpowiedź\": \"Sójka, Sowa, Sokół, Kruk, Jastrząb, Koliber, Wrona\"}",
+            "score": 0.42000000000000004,
+            "error": false,
+            "elapsed": 2.638
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-026",
+            "raw_answer": "{\"odpowiedź\": \"Oto lista owoców w kolejności od najtańszego do najdroższego, na podstawie podanych informacji:\\n\\n1. Lokwaty (drugi najtańszy)\\n2. Mango (czwarte najdroższe)\\n3. Śliwki (droższe niż mango, ale tańsze niż brzoskwinie)\\n4. Arbuzy (droższe niż lokwaty)\\n5. Brzoskwinie (tańsze niż kantalupy)\\n6. Kantalupy (tańsze niż brzoskwinie)\\n7. Jabłka (nie podano relacji cenowych, więc umieszczam na końcu)\"}",
+            "score": 0.16020671834625322,
+            "error": false,
+            "elapsed": 8.217
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-027",
+            "raw_answer": "{\"odpowiedź\": \"1. Rob\\n2. Amy\\n3. Ada\\n4. Ana\\n5. Eli\\n6. Dan\\n7. Joe\"}",
+            "score": 0.7083333333333333,
+            "error": false,
+            "elapsed": 2.979
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-028",
+            "raw_answer": "{\"odpowiedź\": \"Jabłka, Kiwi, Gruszki, Arbuzy, Mango, Pomarańcze, Lokwaty\"}",
+            "score": 0.45614035087719296,
+            "error": false,
+            "elapsed": 2.84
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-029",
+            "raw_answer": "{\"odpowiedź\": \"Śliwki, Gruszki, Kiwi, Kantalupy, Arbuzy, Brzoskwinie, Pomarańcze\"}",
+            "score": 0.5692307692307692,
+            "error": false,
+            "elapsed": 3.073
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-030",
+            "raw_answer": "{\"odpowiedź\": \"Najnowsze pojazdy to: autobus, ciężarówka, motocykl, limuzyna, minivan, kabriolet, ciągnik.\"}",
+            "score": 0.5494505494505495,
+            "error": false,
+            "elapsed": 3.26
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-031",
+            "raw_answer": "{\"odpowiedź\": \"Kruk, Rudzik, Kardynał, Jastrząb, Sokół, Sójka, Wrona\"}",
+            "score": 0.5660377358490566,
+            "error": false,
+            "elapsed": 2.719
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-032",
+            "raw_answer": "{\"odpowiedź\": \"1. Kabriolet\\n2. Sedan\\n3. Autobus\\n4. Kombi\\n5. Minivan\\n6. Kombi\\n7. Motocykl\"}",
+            "score": 0.3717948717948718,
+            "error": false,
+            "elapsed": 3.477
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-033",
+            "raw_answer": "{\"odpowiedź\": \"Szara, Niebieska, Czerwona, Pomarańczowa, Biała, Fioletowa, Żółta\"}",
+            "score": 0.2727272727272727,
+            "error": false,
+            "elapsed": 3.117
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-034",
+            "raw_answer": "{\"odpowiedź\": \"Najnowsze pojazdy to: autobus, ciężarówka, motocykl, limuzyna, minivan, kabriolet, ciągnik.\"}",
+            "score": 0.5494505494505495,
+            "error": false,
+            "elapsed": 3.176
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-035",
+            "raw_answer": "{\"odpowiedź\": \"Biała, niebieska, czerwona, szara, pomarańczowa, brązowa, czarna\"}",
+            "score": 0.78125,
+            "error": false,
+            "elapsed": 2.989
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-036",
+            "raw_answer": "{\"odpowiedź\": \"Śliwki, Lokwaty, Jabłka, Kiwi, Kantalupa, Arbuzy, Gruszki\"}",
+            "score": 0.6140350877192983,
+            "error": false,
+            "elapsed": 3.112
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-037",
+            "raw_answer": "{\"odpowiedź\": \"1. Minivan\\n2. Hatchback\\n3. Kombi\\n4. Autobus\\n5. Limuzyna\\n6. Ciężarówka\\n7. Motocykl\"}",
+            "score": 0.5432098765432098,
+            "error": false,
+            "elapsed": 3.64
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-038",
+            "raw_answer": "{\"odpowiedź\": \"Kruk, Rudzik, Przypiórka, Koliber, Sójka, Sowa, Sokół\"}",
+            "score": 0.49056603773584906,
+            "error": false,
+            "elapsed": 2.762
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-039",
+            "raw_answer": "{\"odpowiedź\": \"Kolejność owoców od najtańszego do najdroższego to: Lokwaty, Brzoskwinie, Śliwki, Jabłka, Gruszki, Mango, Kantalupy.\"}",
+            "score": 0.3706896551724138,
+            "error": false,
+            "elapsed": 4.018
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-040",
+            "raw_answer": "{\"odpowiedź\": \"Na podstawie podanych informacji możemy ustalić następującą kolejność owoców od najtańszego do najdroższego:\\n\\n1.  Lokwaty (najtańszy, ponieważ jabłka są droższe niż lokwaty)\\n2.  Pomarańcze (arbuzy są droższe niż pomarańcze, a kiwi są tańsze niż pomarańcze)\\n3.  Kiwi (tańsze niż pomarańcze)\\n4.  Śliwki (tańsze niż mango)\\n5.  Arbuzy (tańsze niż śliwki, ale droższe niż pomarańcze i kiwi)\\n6.  Mango (trzecie najdroższe, więc droższe niż śliwki)\\n7.  Jabłka (najdroższe, ponieważ są droższe niż lokwaty)\"}",
+            "score": 0.12851405622489964,
+            "error": false,
+            "elapsed": 9.621
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-041",
+            "raw_answer": "{\"odpowiedź\": \"Oto golfiści w kolejności od 1. miejsca do 7. miejsca:\\n1. Dan\\n2. Amy\\n3. Eve\\n4. Ana\\n5. Mel\\n6. Ada\\n7. Joe\"}",
+            "score": 0.3689320388349514,
+            "error": false,
+            "elapsed": 3.743
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-042",
+            "raw_answer": "{\"odpowiedź\": \"1. Minivan\\n2. Hatchback\\n3. Autobus\\n4. Motocykl\\n5. Ciągnik\\n6. Sedan\\n7. Kombi\"}",
+            "score": 0.5466666666666666,
+            "error": false,
+            "elapsed": 3.523
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-043",
+            "raw_answer": "{\"odpowiedź\": \"1. Autobus\\n2. Minivan\\n3. Limuzyna\\n4. Kombi\\n5. Hatchback\\n6. Motocykl\\n7. Ciężarówka\"}",
+            "score": 0.308641975308642,
+            "error": false,
+            "elapsed": 3.437
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-044",
+            "raw_answer": "{\"odpowiedź\": \"Oto golfiści w kolejności od 1. miejsca do 7. miejsca:\\n1. Eli\\n2. Mel\\n3. Dan\\n4. Rob\\n5. Mya\\n6. Ana\\n7. Ada\"}",
+            "score": 0.38834951456310685,
+            "error": false,
+            "elapsed": 3.888
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-045",
+            "raw_answer": "{\"odpowiedź\": \"Oto kolejność golfistów od 1. miejsca do 7. miejsca:\\n1. Joe\\n2. Amy\\n3. Eli\\n4. Ada\\n5. Mel\\n6. Ana\\n7. Mya\"}",
+            "score": 0.3465346534653465,
+            "error": false,
+            "elapsed": 3.764
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-046",
+            "raw_answer": "{\"odpowiedź\": \"Fioletowa, Brązowa, Żółta, Pomarańczowa, Szara, Czarna, Zielona\"}",
+            "score": 0.4126984126984127,
+            "error": false,
+            "elapsed": 2.968
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-047",
+            "raw_answer": "{\"odpowiedź\": \"Śliwki, Lokwaty, Jabłka, Pomarańcze, Brzoskwinie, Arbuzy, Kiwi\" }",
+            "score": 0.564516129032258,
+            "error": false,
+            "elapsed": 3.181
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-048",
+            "raw_answer": "{\"odpowiedź\": \"1. Minivan\\n2. Hatchback\\n3. Kombi\\n4. Autobus\\n5. Limuzyna\\n6. Ciężarówka\\n7. Motocykl\"}",
+            "score": 0.5432098765432098,
+            "error": false,
+            "elapsed": 3.672
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-049",
+            "raw_answer": "{\"odpowiedź\": \"Najnowszą jest limuzyna, następnie ciężarówka, potem autobus, następnie kombi, a najstarszym jest minivan.\"}",
+            "score": 0.33018867924528306,
+            "error": false,
+            "elapsed": 2.914
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-050",
+            "raw_answer": "{\"odpowiedź\": \"Brzoskwinie, Lokwaty, Pomarańcze, Jabłka, Kiwi, Mango, Śliwki\"}",
+            "score": 0.47540983606557374,
+            "error": false,
+            "elapsed": 3.024
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-051",
+            "raw_answer": "{\"odpowiedź\": \"Oto kolejność golfistów od 1. miejsca do 7. miejsca:\\n1. Rob\\n2. Joe\\n3. Dan\\n4. Eve\\n5. Ada\\n6. Ana\\n7. Amy\"}",
+            "score": 0.40594059405940597,
+            "error": false,
+            "elapsed": 3.794
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-052",
+            "raw_answer": "{\"odpowiedź\": \"Sójka, Rudzik, Kruk, Kardynał, Sokół, Przypiórka, Koliber\"}",
+            "score": 0.5964912280701755,
+            "error": false,
+            "elapsed": 2.831
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-053",
+            "raw_answer": "{\"odpowiedź\": \"Sójka, Rudzik, Kruk, Kardynał, Sokół, Przypiórka, Koliber\"}",
+            "score": 0.5964912280701755,
+            "error": false,
+            "elapsed": 1.521
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-054",
+            "raw_answer": "{\"odpowiedź\": \"Zielona, Brązowa, Czerwona, Żółta, Biała, Pomarańczowa, Fioletowa\"}",
+            "score": 0.4461538461538461,
+            "error": false,
+            "elapsed": 3.144
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-055",
+            "raw_answer": "{\"odpowiedź\": \"1. Rob\\n2. Joe\\n3. Mya\\n4. Mel\\n5. Dan\\n6. Ada\\n7. Eve\"}",
+            "score": 0.7708333333333334,
+            "error": false,
+            "elapsed": 3.061
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-056",
+            "raw_answer": "{\"odpowiedź\": \"1. Ana\\n2. Amy\\n3. Eli\\n4. Mya\\n5. Dan\\n6. Joe\\n7. Mel\"}",
+            "score": 0.8125,
+            "error": false,
+            "elapsed": 2.884
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-057",
+            "raw_answer": "{\"odpowiedź\": \"Niebieska, Zielona, Biała, Brązowa, Czarna, Pomarańczowa, Żółta\"}",
+            "score": 0.6190476190476191,
+            "error": false,
+            "elapsed": 3.03
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-058",
+            "raw_answer": "{\"odpowiedź\": \"1. Joe\\n2. Ada\\n3. Dan\\n4. Mya\\n5. Eli\\n6. Ana\\n7. Rob\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.09
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-059",
+            "raw_answer": "{\"odpowiedź\": \"Na podstawie podanych informacji, kolejność owoców od najtańszego do najdroższego to: Kiwi, Gruszki, Brzoskwinie, Mango, Kantalupa, Arbuzy, Pomarańcze.\"}",
+            "score": 0.29139072847682124,
+            "error": false,
+            "elapsed": 4.158
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-060",
+            "raw_answer": "{\"odpowiedź\": \"Brązowa, czarna, pomarańczowa, biała, niebieska, żółta, fioletowa\"}",
+            "score": 0.5076923076923077,
+            "error": false,
+            "elapsed": 2.936
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-061",
+            "raw_answer": "{\"odpowiedź\": \"1. Amy\\n2. Joe\\n3. Dan\\n4. Ada\\n5. Rob\\n6. Mya\\n7. Mel\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 3.084
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-062",
+            "raw_answer": "{\"odpowiedź\": \"Śliwki, lokwaty, jabłka, kiwi, kantalupa, arbuzy, gruszki\"}",
+            "score": 0.6140350877192983,
+            "error": false,
+            "elapsed": 3.124
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-063",
+            "raw_answer": "{\"odpowiedź\": \"Kruk, Kardynał, Sokół, Sowa, Przepiórka, Rudzik,  Sójka\"}",
+            "score": 0.29333333333333333,
+            "error": false,
+            "elapsed": 2.833
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-064",
+            "raw_answer": "{\"odpowiedź\": \"Szara, Niebieska, Czerwona, Pomarańczowa, Biała, Fioletowa, Żółta\"}",
+            "score": 0.2727272727272727,
+            "error": false,
+            "elapsed": 3.118
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-065",
+            "raw_answer": "{\"odpowiedź\": \"W kolejności od lewej do prawej: wrona, sowa, kruk, jastrząb, koliber, przepiórka, sokół.\"}",
+            "score": 0.4269662921348315,
+            "error": false,
+            "elapsed": 3.29
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-066",
+            "raw_answer": "{\"odpowiedź\": \"Czarna, szara, pomarańczowa, żółta, fioletowa, biała, zielona\"}",
+            "score": 0.639344262295082,
+            "error": false,
+            "elapsed": 2.852
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-067",
+            "raw_answer": "{\"odpowiedź\": \"Krok 1: Zidentyfikuj wszystkie ptaki: sójka, sokół, kruk, wrona, rudzik, sowa, koliber. Krok 2: Zastosuj podane informacje, aby ustalić kolejność. Wrona jest najbardziej po prawej, więc jest na końcu. Sowa jest trzecia od prawej. Koliber jest czwarty od lewej. Kruk jest drugi od lewej. Sójka znajduje się po lewej stronie rudzika. Rudzik znajduje się po lewej stronie sowy. Krok 3: Ułożenie ptaków w kolejności od lewej do prawej: Sójka, Kruk, Rudzik, Koliber, Sowa, Sokół, Wrona.\"}",
+            "score": 0.12058212058212059,
+            "error": false,
+            "elapsed": 8.216
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-068",
+            "raw_answer": "{\"odpowiedź\": \"Niebieska, Zielona, Biała, Brązowa, Czarna, Pomarańczowa, Żółta\"}",
+            "score": 0.6190476190476191,
+            "error": false,
+            "elapsed": 3.018
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-069",
+            "raw_answer": "{\"odpowiedź\": \"1. Minivan\\n2. Hatchback\\n3. Autobus\\n4. Motocykl\\n5. Ciągnik\\n6. Sedan\\n7. Kombi\"}",
+            "score": 0.5466666666666666,
+            "error": false,
+            "elapsed": 3.51
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-070",
+            "raw_answer": "{\"odpowiedź\": \"Na podstawie podanych informacji możemy ustalić następującą kolejność owoców od najtańszego do najdroższego:\\n\\n1.  Lokwaty (najtańszy, ponieważ jabłka są droższe niż lokwaty)\\n2.  Pomarańcze (arbuzy są droższe niż pomarańcze, a kiwi są tańsze niż pomarańcze)\\n3.  Kiwi (tańsze niż pomarańcze)\\n4.  Śliwki (tańsze niż mango)\\n5.  Arbuzy (tańsze niż śliwki, ale droższe niż pomarańcze i kiwi)\\n6.  Mango (trzecie najdroższe, więc droższe niż śliwki)\\n7.  Jabłka (najdroższe, ponieważ są droższe niż lokwaty)\"}",
+            "score": 0.12851405622489964,
+            "error": false,
+            "elapsed": 10.02
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-071",
+            "raw_answer": "{\"odpowiedź\": \"Czarna, Biała, Zielona, Pomarańczowa, Brązowa, Żółta, Fioletowa\"}",
+            "score": 0.4444444444444444,
+            "error": false,
+            "elapsed": 3.077
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-072",
+            "raw_answer": "{\"odpowiedź\": \"1. Joe\\n2. Ada\\n3. Dan\\n4. Mya\\n5. Eli\\n6. Ana\\n7. Rob\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.147
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-073",
+            "raw_answer": "{\"odpowiedź\": \"Kruk, Rudzik, Sójka, Koliber, Wrona, Przepiórka, Kardynał\"}",
+            "score": 0.7543859649122807,
+            "error": false,
+            "elapsed": 2.922
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-074",
+            "raw_answer": "{\"odpowiedź\": \"Oto owoce w kolejności od najtańszego do najdroższego:\\n\\n1. Pomarańcze (drugie najtańsze)\\n2. Jabłka (tańsze niż gruszki)\\n3. Mango (trzecie najtańsze)\\n4. Gruszki (droższe niż jabłka)\\n5. Kantalupy (droższe niż mango)\\n6. Arbuzy (drugie najdroższe)\\n7. Lokwaty (trzecie najdroższe)\"}",
+            "score": 0.2218181818181818,
+            "error": false,
+            "elapsed": 6.979
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-075",
+            "raw_answer": "{\"odpowiedź\": \"1. Minivan\\n2. Hatchback\\n3. Kombi\\n4. Autobus\\n5. Limuzyna\\n6. Ciężarówka\\n7. Motocykl\"}",
+            "score": 0.5432098765432098,
+            "error": false,
+            "elapsed": 3.716
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-076",
+            "raw_answer": "{\"odpowiedź\": \"Śliwki, Lokwaty, Jabłka, Pomarańcze, Brzoskwinie, Arbuzy, Kiwi\" }",
+            "score": 0.564516129032258,
+            "error": false,
+            "elapsed": 3.235
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-077",
+            "raw_answer": "{\"odpowiedź\": \"Najpierw ustalmy kolejność na podstawie podanych informacji:\\n\\n1. Ciężarówka jest trzecia najnowsza.\\n2. Hatchback jest drugi najnowszy.\\n3. Minivan jest starszy od ciągnika.\\n4. Hatchback jest starszy od sedana.\\n5. Ciągnik jest starszy od limuzyny.\\n6. Motocykl jest nowszy od limuzyny.\\n\\nZatem, od najnowszego do najstarszego, kolejność to:\\n\\n1. Ciężarówka\\n2. Hatchback\\n3. Motocykl\\n4. Limuzyna\\n5. Sedan\\n6. Ciągnik\\n7. Minivan\"}",
+            "score": 0.18615751789976132,
+            "error": false,
+            "elapsed": 8.607
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-078",
+            "raw_answer": "{\"odpowiedź\": \"Sójka, Sowa, Sokół, Kruk, Jastrząb, Koliber, Wrona\"}",
+            "score": 0.42000000000000004,
+            "error": false,
+            "elapsed": 2.696
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-079",
+            "raw_answer": "{\"odpowiedź\": \"Kolejność ptaków od lewej do prawej to: Koliber, Kruk, Jastrząb, Rudzik, Sokół, Wrona, Kardynał.\"}",
+            "score": 0.36458333333333337,
+            "error": false,
+            "elapsed": 3.266
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-080",
+            "raw_answer": "{\"odpowiedź\": \"Sowa, Kardynał, Sokół, Rudzik, Koliber, Przepiórka, Wrona\"}",
+            "score": 0.45614035087719296,
+            "error": false,
+            "elapsed": 2.72
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-081",
+            "raw_answer": "{\"odpowiedź\": \"1. Minivan\\n2. Limuzyna\\n3. Hatchback\\n4. Motocykl\\n5. Ciągnik\\n6. Ciężarówka\\n7. Sedan\"}",
+            "score": 0.4320987654320988,
+            "error": false,
+            "elapsed": 3.792
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-082",
+            "raw_answer": "{\"odpowiedź\": \"1. Hatchback\\n2. Minivan\\n3. Ciągnik\\n4. Kombi\\n5. Autobus\\n6. Kabriolet\\n7. Limuzyna\"}",
+            "score": 0.40506329113924056,
+            "error": false,
+            "elapsed": 3.598
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-083",
+            "raw_answer": "{\"odpowiedź\": \"Czarna, Biała, Zielona, Pomarańczowa, Brązowa, Żółta, Fioletowa\"}",
+            "score": 0.4444444444444444,
+            "error": false,
+            "elapsed": 3.031
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-084",
+            "raw_answer": "{\"odpowiedź\": \"Czerwona, Biała, Żółta, Zielona, Szara, Czarna, Fioletowa\"}",
+            "score": 0.5789473684210527,
+            "error": false,
+            "elapsed": 2.678
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-085",
+            "raw_answer": "{\"odpowiedź\": \"1. Joe\\n2. Rob\\n3. Eve\\n4. Eli\\n5. Ada\\n6. Ana\\n7. Amy\"}",
+            "score": 0.75,
+            "error": false,
+            "elapsed": 3.203
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-086",
+            "raw_answer": "{\"odpowiedź\": \"1. Joe\\n2. Ada\\n3. Rob\\n4. Eve\\n5. Mel\\n6. Eli\\n7. Ana\"}",
+            "score": 0.8333333333333334,
+            "error": false,
+            "elapsed": 2.889
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-087",
+            "raw_answer": "{\"odpowiedź\": \"Kombi, minivan, sedan, hatchback, ciężarówka, motocykl, ciągnik\"}",
+            "score": 0.7142857142857143,
+            "error": false,
+            "elapsed": 2.689
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-088",
+            "raw_answer": "{\"odpowiedź\": \"Oto owoce w kolejności od najtańszego do najdroższego:\\n\\n1. Brzoskwinie\\n2. Pomarańcze\\n3. Kantalupy\\n4. Jabłka\\n5. Mango\\n6. Arbuzy\\n7. Gruszki\"\n}",
+            "score": 0.3722627737226277,
+            "error": false,
+            "elapsed": 5.203
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-089",
+            "raw_answer": "{\"odpowiedź\": \"Najnowsze pojazdy to: Kombi, Minivan, Ciągnik, Ciężarówka, Hatchback, Kabriolet, Autobus.\"}",
+            "score": 0.2808988764044944,
+            "error": false,
+            "elapsed": 3.445
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-090",
+            "raw_answer": "{\"odpowiedź\": \"1. Limuzyna\\n2. Kombi\\n3. Autobus\\n4. Minivan\\n5. Ciągnik\\n6. Ciężarówka\\n7. Hatchback\"}",
+            "score": 0.4125,
+            "error": false,
+            "elapsed": 3.625
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-091",
+            "raw_answer": "{\"odpowiedź\": \"Krok 1: Zidentyfikuj wszystkie ptaki: sójka, sokół, kruk, wrona, rudzik, sowa, koliber. Krok 2: Zastosuj podane informacje, aby ustalić kolejność. Wrona jest najbardziej po prawej, więc jest na końcu. Sowa jest trzecia od prawej. Koliber jest czwarty od lewej. Kruk jest drugi od lewej. Sójka znajduje się po lewej stronie rudzika. Rudzik znajduje się po lewej stronie sowy. Krok 3: Ułożenie ptaków w kolejności od lewej do prawej: Sójka, Kruk, Rudzik, Koliber, Sowa, Sokół, Wrona.\"}",
+            "score": 0.12058212058212059,
+            "error": false,
+            "elapsed": 8.49
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-092",
+            "raw_answer": "{\"odpowiedź\": \"1. Joe\\n2. Rob\\n3. Eve\\n4. Eli\\n5. Ada\\n6. Ana\\n7. Amy\"}",
+            "score": 0.75,
+            "error": false,
+            "elapsed": 3.374
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-093",
+            "raw_answer": "{\"odpowiedź\": \"Mango, Kiwi, Gruszki, Brzoskwinie, Kantalupy, Pomarańcze,  Mango\" }",
+            "score": 0.42352941176470593,
+            "error": false,
+            "elapsed": 3.356
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-094",
+            "raw_answer": "{\"odpowiedź\": \"1. Eve\\n2. Mel\\n3. Joe\\n4. Rob\\n5. Ada\\n6. Dan\\n7. Amy\"}",
+            "score": 0.6875,
+            "error": false,
+            "elapsed": 2.989
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-095",
+            "raw_answer": "{\"odpowiedź\": \"Kruk, Rudzik, Kardynał, Jastrząb, Sokół, Sójka, Wrona\"}",
+            "score": 0.5660377358490566,
+            "error": false,
+            "elapsed": 2.894
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-096",
+            "raw_answer": "{\"odpowiedź\": \"Kruk, Rudzik, Kardynał, Jastrząb, Sokół, Sójka, Wrona\"}",
+            "score": 0.5660377358490566,
+            "error": false,
+            "elapsed": 1.503
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-097",
+            "raw_answer": "{\"odpowiedź\": \"Fioletowa, Brązowa, Żółta, Pomarańczowa, Szara, Czarna, Zielona\"}",
+            "score": 0.4126984126984127,
+            "error": false,
+            "elapsed": 3.02
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-098",
+            "raw_answer": "{\"odpowiedź\": \"Kruk, Sójka, Rudzik, Jastrząb, Koliber, Wrona, Sokół\"}",
+            "score": 0.3653846153846154,
+            "error": false,
+            "elapsed": 2.692
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-099",
+            "raw_answer": "{\"odpowiedź\": \"Najnowsze pojazdy to: 1. Ciągnik, 2. Sedan, 3. Kombi, 4. Autobus, 5. Kabriolet, 6. Limuzyna, 7. Ciężarówka.\"}",
+            "score": 0.5794392523364487,
+            "error": false,
+            "elapsed": 4.275
+          }
+        ]
+      }
+    }
+  },
+  "status": "partial"
+}

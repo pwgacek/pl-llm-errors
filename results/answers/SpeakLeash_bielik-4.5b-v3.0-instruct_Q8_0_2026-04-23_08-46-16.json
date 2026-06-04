@@ -1,0 +1,681 @@
+{
+  "timestamp": "2026-04-23T08:46:16.615881+00:00",
+  "model": "SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+  "base_url": "http://localhost:11434/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "elapsed_sec": 150.12,
+  "datasets": {
+    "identity": {
+      "polqa": {
+        "num_sampled": 50,
+        "error_count": 0,
+        "elapsed_sec": 150.12,
+        "questions": [
+          {
+            "prompt_id": "polqa-identity-000",
+            "raw_answer": "**pręcik**",
+            "elapsed": 9.409,
+            "error": false,
+            "judgement_context": {
+              "question": "Jak nazywa się element kwiatu produkujący pyłek, składający się u roślin okrytonasiennych z główki i nitki?",
+              "context": "Pręcik (łac. \"stamen\") – męski organ płciowy w kwiecie wytwarzający pyłek, czyli odpowiednik męskiego gametofitu powstający z mikrospory. Pręciki są występującymi u okrytonasiennych mikrosporofilami. Składają się z nitki i główki tworzonej zazwyczaj przez dwa pylniki zawierające po dwa woreczki pyłkowe, czyli mikrosporangia. Pyłek po dojrzeniu wysypywany jest z pękających pylników i przenoszony przez wiatr, wodę lub zwierzęta, by po osadzeniu na znamionach słupków wrosnąć i dokonać zapłodnienia.",
+              "correct_answer": [
+                "pręcik"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-001",
+            "raw_answer": "liczba.",
+            "elapsed": 2.383,
+            "error": false,
+            "judgement_context": {
+              "question": "Co to za część mowy: półtora?",
+              "context": "liczebniki - oznaczające (określające) liczbę, część, kolejność rzeczy, przedmiotów, osób:\nliczebniki główne określają liczbę przedmiotów, osób, zdarzeń, np. jeden, dwa, trzy, sześć, siedem, osiem, dziesięć, trzydzieści.\nliczebniki zbiorowe określają zbiorowość ludzi, zwierząt, przedmiotów, nazw, np. dwoje, troje, pięcioro, siedmioro, ośmioro, dziewięcioro, trzydzieścioro.\nliczebniki porządkowe określają miejsce w szeregu, np. drugi, trzeci, szósty, dwudziesty, czterdziesty, setny, tysięczny.\nułamkowe, określają części ułamkowe czasu, przedmiotów, odległości, np. pół, półtora, ćwierć.",
+              "correct_answer": [
+                "liczebnik"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-002",
+            "raw_answer": "Balkon.",
+            "elapsed": 2.39,
+            "error": false,
+            "judgement_context": {
+              "question": "Z której świątyni papież udziela błogosławieństwa Urbi et Orbi?",
+              "context": "Najświętszej Maryi Panny Po zakończeniu konklawe, błogosławieństwo miało miejsce tam, gdzie wybrano papieża; przed 1871 roku w Pałacu Kwirynalskim. Mimo iż tradycja nakazuje wygłaszać błogosławieństwo \"Urbi et Orbi\" z głównego balkonu Bazyliki św. Piotra, zdarzają się sytuacje wyjątkowe. Jan Paweł II przy okazji Świąt Bożego Narodzenia 2004 wygłaszał tekst \"Urbi et Orbi\" na placu św. Piotra. Podobnie uczynił Benedykt XVI po mszy św. w Uroczystość Zmartwychwstania Chrystusa, 23 marca 2008.",
+              "correct_answer": [
+                "z Bazyliki św. Piotra"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-003",
+            "raw_answer": "sopran",
+            "elapsed": 3.052,
+            "error": false,
+            "judgement_context": {
+              "question": "Teresa Żylis-Gara jest aktorką, śpiewaczką czy malarką?",
+              "context": "średniowiecznej, profesor KUL (zm. 2017) 23 stycznia – Teresa Żylis-Gara, polska śpiewaczka (sopran) (zm. 2021) 27 stycznia Bobby Blue Bland, amerykański piosenkarz bluesowy (zm. 2013) Usko Meriläinen, fiński kompozytor i dyrygent (zm. 2004) 28 stycznia Jasraj, indyjski wokalista muzyki hindustańskiej (zm. 2020) Luis de Pablo, hiszpański kompozytor (zm. 2021) 29 stycznia – Norio Ōga, japoński śpiewak operowy, przedsiębiorca, dyrektor generalny Sony Corporation (zm. 2011) 30 stycznia – Buddy",
+              "correct_answer": [
+                "śpiewaczką"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-004",
+            "raw_answer": "**tak**",
+            "elapsed": 2.13,
+            "error": false,
+            "judgement_context": {
+              "question": "Czy gong to instrument muzyczny?",
+              "context": "Gong – instrument muzyczny z grupy idiofonów płytowych uderzanych. Jest to wisząca lub ustawiona na specjalnym stojaku tarcza z brązu lub mosiądzu, o wypukłej, czasem falistej powierzchni i lekko zagiętych brzegach. Wprowadza się ją w drgania poprzez uderzenie pałką lub młoteczkiem o miękkiej główce, przy czym rodzaj wzbudzonego dźwięku zależy od miejsca uderzenia. Przybył do średniowiecznej Europy z Azji. W orkiestrach wprowadzony został pod koniec XVIII wieku. Istnieje wiele odmian gongów.",
+              "correct_answer": [
+                "tak"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-005",
+            "raw_answer": "Odpowiedź:",
+            "elapsed": 3.287,
+            "error": false,
+            "judgement_context": {
+              "question": "Jakim trzyliterowym skrótem określano w PRL stacje benzynowe?",
+              "context": "), od nazwy producenta ITT Cannon cepeen – stacja benzynowa, od skrótu nieistniejącej obecnie Centrali Produktów Naftowych cola – rodzaj słodkiego napoju gazowanego, od nazwy Coca-Cola dyktafon – urządzenie do nagrywania dźwięku, od amerykańskiego przedsiębiorstwa Dictaphone dżip – samochód terenowy, od amerykańskiej firmy Jeep elektroluks – regionalne potoczne określenie odkurzacza, od szwedzkiej firmy Electrolux eros – przestarzale prezerwatywa, od nazwy prezerwatyw dostępnych w PRL eternit –",
+              "correct_answer": [
+                "CPN"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-006",
+            "raw_answer": "**UNRRA**",
+            "elapsed": 2.704,
+            "error": false,
+            "judgement_context": {
+              "question": "Która międzynarodowa organizacja została utworzona w Stanach Zjednoczonych w 1943 roku pod hasłem niesienia pomocy ekonomicznej ludności krajów zniszczonych przez wojnę, a rozwiązana w 1947 roku?",
+              "context": "Organizacja Narodów Zjednoczonych uruchomiła szereg starań humanitarnych i pomocowych, finansowanych prawie w całości przez Stany Zjednoczone. Starania te odniosły znaczące efekty, ale brakowało im scentralizowanej organizacji i planowania, wskutek czego nie zdołały zaspokoić wielu spośród podstawowych potrzeb Europy. W 1943 została założona Administracja Narodów Zjednoczonych do Spraw Pomocy i Odbudowy (UNRRA), aby po II wojnie światowej zapewniać pomoc obszarom wyzwolonym spod okupacji sił Osi.",
+              "correct_answer": [
+                "United Nations Relief and Rehabilitation Administration",
+                "UNRRA"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-007",
+            "raw_answer": "<|output_id|>indyjskiego<|end_headers|>",
+            "elapsed": 3.981,
+            "error": false,
+            "judgement_context": {
+              "question": "Maharadża jest tytułem władcy indyjskiego, chińskiego czy tureckiego?",
+              "context": "Radża, radźa (hindi \"rājā,\" sanskryt राज \"rājan\" – „król”, ang. \"raja\" lub \"rajah\") – historyczny tytuł władcy państwa na subkontynencie indyjskim i w Azji Południowo-Wschodniej, odpowiednik księcia lub króla. Miał władzę sądowniczą i był zwierzchnikiem wojsk; żonie radży przysługiwał tytuł \"rani\". Ponadto posługiwano się tym tytułem w Imperium Brytyjskim zwracając się do niższych rangą dygniarzy i możnowładców, stawiając go przed nazwiskiem. Niższy rangą od maharadży.",
+              "correct_answer": [
+                "indyjskiego"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-008",
+            "raw_answer": "imperium mongolskie",
+            "elapsed": 2.795,
+            "error": false,
+            "judgement_context": {
+              "question": "Czy Czyngis Chan stworzył Imperium Mongolskie w średniowieczu, czy w starożytności?",
+              "context": "Organizacja i rozbudowa imperium. Wielki kurułtaj. W 1206 roku odbył się wielki kurułtaj – zjazd wszystkich podbitych ludów u źródeł Ononu. Zjazd ten formalnie uznał Temudżyna władcą wszystkich podbitych ludów z tytułem Kagana. Oznaczało to formalny początek nowego organizmu politycznego: imperium mongolskiego. Doszło tam również do organizacji dworu Czyngis-chana oraz reorganizacji armii: podział na 95 minganów (a zatem liczyła ona w tym momencie ok. 95 tys. żołnierzy) i wyznaczenie ich dowódców.",
+              "correct_answer": [
+                "w średniowieczu"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-009",
+            "raw_answer": "Odpowiedź: pchnięciu kulą.",
+            "elapsed": 2.73,
+            "error": false,
+            "judgement_context": {
+              "question": "W której dyscyplinie lekkoatletycznej Władysław Komar zdobył złoty medal olimpijski?",
+              "context": "na igrzyskach w Monachium Władysław Komar zdobył złoty medal w pchnięciu kulą. 10 września – reprezentacja Polski w piłce nożnej pod wodzą Kazimierza Górskiego zdobyła złoty medal na igrzyskach olimpijskich w Monachium. 11 września – zakończyły się XX Letnie Igrzyska Olimpijskie w Monachium. 17 września – w USA wyemitowano pierwszy odcinek serialu \"M*A*S*H\". 19 września – izraelski dyplomata Ami Sachori zginął w ambasadzie w Londynie w wyniku wybuchu bomby umieszczonej w liście.",
+              "correct_answer": [
+                "w pchnięciu kulą"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-010",
+            "raw_answer": "**Karta Narodów Zjednoczonych**",
+            "elapsed": 4.369,
+            "error": false,
+            "judgement_context": {
+              "question": "Jak nazywa się statut ONZ przyjęty w 1945 roku w San Francisco, formułujący cele, zadania, zasady funkcjonowania i działalności ONZ?",
+              "context": "Organizacja Narodów Zjednoczonych, ONZ (ang. United Nations, UN; fr. Organisation des Nations Unies; hiszp. Organización de las Naciones Unidas; ros. Организация Объединённых Наций, Organizacyja Objedinionnych Nacyj; arab. الأمم المتحدة, al-Umam al-Muttahida; chiń. 联合国, Liánhéguó) – uniwersalna (z wyjątkiem narodów niereprezentowanych) organizacja międzynarodowa, z siedzibą w Nowym Jorku, powstała 24 października 1945 roku[1][2] w wyniku wejścia w życie podpisanej 26 czerwca 1945 w San Francisco Karty Narodów Zjednoczonych. ONZ jest następczynią Ligi Narodów[3].",
+              "correct_answer": [
+                "Karta Narodów Zjednoczonych"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-011",
+            "raw_answer": "**Bormann**",
+            "elapsed": 2.8,
+            "error": false,
+            "judgement_context": {
+              "question": "Kto na mocy testamentu politycznego sporządzonego 29.04.1945 roku przez Adolfa Hitlera został jego następcą?",
+              "context": "Gdy wojska radzieckie kontynuowały walkę w centrum Berlina coraz bardziej zbliżając się do bunkra, po południu 30 kwietnia Adolf Hitler i Eva Braun popełnili samobójstwo. Eva Braun wzięła cyjanek, a Hitler zastrzelił się. Zgodnie z poleceniem Hitlera ich ciała wywieziono do ogrodu Kancelarii Rzeszy i spalono. Następnie zgodnie z ostatnim życzeniem Bormann został mianowany Ministrem Partii, tym samym oficjalnie potwierdzając swoją najwyższą pozycję w Partii. Wielki Admirał Karl Dönitz został mianowany nowym Prezydentem, a Joseph Goebbels został szefem rządu i kanclerzem.",
+              "correct_answer": [
+                "admirał Karl Dönitz",
+                "Dönitz"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-012",
+            "raw_answer": "1982",
+            "elapsed": 2.616,
+            "error": false,
+            "judgement_context": {
+              "question": "W którym roku reprezentacja Polski w piłce nożnej zdobyła 3 miejsce na mistrzostwach świata w Hiszpanii pod kierownictwem Antoniego Piechniczka?",
+              "context": "1982 – 3. miejsce na Mistrzostwach Świata. Po dymisji Kuleszy kierownictwo PZPN powierzyło funkcję selekcjonera Antoniemu Piechniczkowi, który kilka tygodni wcześniej podjął pracę w chorzowskim Ruchu. W 1981 zawodnicy kadry narodowej wznowili grę w eliminacjach hiszpańskiego mundialu. 2 maja w Chorzowie \"biało-czerwoni\" pokonali 1:0 zespół NRD. W emocjonującym spotkaniu rewanżowym 10 października w Lipsku ponownie Polacy okazali się lepsi wygrywając 3:2, przy czym już w 5. minucie prowadzili 2:0.",
+              "correct_answer": [
+                "w 1982"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-013",
+            "raw_answer": "oko",
+            "elapsed": 2.586,
+            "error": false,
+            "judgement_context": {
+              "question": "Wadą którego narządu jest astygmatyzm?",
+              "context": "koślawe (\"genu valgum\"); wady narządu wzroku: krótkowzroczność, nadwzroczność, zaćmę, oczopląs, astygmatyzm; wady skóry i jej przydatków: hipoplastyczne paznokcie, hiperpigmentację i hipopigmentację skóry, nadmierną wiotkość skóry (\"cutis laxa\"), wady skóry skalpu; wady układu moczowo-płciowego: wnętrostwo, spodziectwo, stulejkę, wodniak jądra, torbiele jajnika; wady narządu słuchu: perlaka, przewodzeniową utratę słuchu; inne: hipoglikemię noworodków, hipokalcemię noworodków, trombocytopenię",
+              "correct_answer": [
+                "wzroku",
+                "oka",
+                "oczu"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-014",
+            "raw_answer": "Zygmunt II August",
+            "elapsed": 2.613,
+            "error": false,
+            "judgement_context": {
+              "question": "Który król powołał w XVI w. Komisję Morską, czyli pierwszy Polski urząd do spraw żeglugi?",
+              "context": "Komisja Morska (od roku 1572 na jej czele stanął biskup Stanisław Karnkowski) rozliczała kapitanów okrętów kaperskich z ich działalności, pilnowała dyscyplin wśród załóg, wydawała im instrukcje odnośnie do dalszych działań. Ponadto do jej zadań należał nadzór nad dalszym powiększaniem polskiej floty. Do tych celów dysponowała ogromnym funduszem. Działalność Komisji Morskiej ustała wraz ze śmiercią Zygmunta II Augusta (1572); jej kontynuacją była utworzona w 1626 Komisja Okrętów Królewskich.",
+              "correct_answer": [
+                "Zygmunt II August"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-015",
+            "raw_answer": "cymbałach",
+            "elapsed": 2.501,
+            "error": false,
+            "judgement_context": {
+              "question": "Na czym grał Jankiel w „Panu Tadeuszu”?",
+              "context": "Warstwa muzyczna koncertu. Swój koncert Jankiel wykonywał na cymbałach – ludowym instrumencie strunowym, na którym dźwięk uzyskuje się przez uderzanie strun specjalnymi pałeczkami. Stary Żyd był wirtuozem tego instrumentu, co Mickiewicz nadmienił w pierwszym wersie opisu koncertu – „Było cymbalistów wielu, ale żaden z nich nie śmiał zagrać przy Jankielu”. Według opisu Mickiewicza koncert oparty był na melodyce poloneza, do którego taniec wykonywali później goście weselni.",
+              "correct_answer": [
+                "na cymbałach"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-016",
+            "raw_answer": "Mel B., Geri,",
+            "elapsed": 3.994,
+            "error": false,
+            "judgement_context": {
+              "question": "Wokalistkami którego brytyjskiego girlsbandu były Mel C. i Victoria Adams?",
+              "context": "Melanie C, Geri, Mel B., Victoria i Emma, które zostały wybrane spośród setek innych dziewcząt, rozpoczęły współpracę z Bobem i Chrisem Herbertami.\nW lipcu 1996 roku ich pierwszy singiel, „Wannabe”, zawojował listy przebojów w ciągu jednego tygodnia. Drugi singel „Say You'll be There”, wydany w październiku wskoczył na pierwsze miejsce brytyjskich list przebojów. Dodatkowo dziewczyny otrzymały nagrodę za teledysk do tego utworu. W listopadzie „Spice Girls” pojawiły się w Internecie, wydały nawet CD-Rom „Five Go Mad In Cyberspace”, a na Boże Narodzenie wypuściły singiel „2 Become 1”.",
+              "correct_answer": [
+                "Spice Girls"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-017",
+            "raw_answer": "<|chat_id|>1234567890",
+            "elapsed": 4.011,
+            "error": false,
+            "judgement_context": {
+              "question": "Jaka jest częstotliwość sieci zasilającej prądu przemiennego w Polsce?",
+              "context": "Sieć niskiego napięcia (nn) – sieć elektroenergetyczna, która dostarcza energię elektryczną do indywidualnych odbiorców. W Europie i większości krajów świata lokalna sieć elektroenergetyczna tzw. „niskiego napięcia“, tzn. doprowadzona bezpośrednio do odbiorców indywidualnych dostarcza prąd przemienny o częstotliwości 50 Hz, pod napięciem fazowym 230 V. Odbiorcy wymagający nieco większej mocy dostarczanej zasilani są z sieci trójfazowej o napięciu międzyfazowym 400 V.",
+              "correct_answer": [
+                "50 Hz",
+                "50 herców"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-018",
+            "raw_answer": "Stanisław Skarżyński.",
+            "elapsed": 3.031,
+            "error": false,
+            "judgement_context": {
+              "question": "Jak nazywał się polski pilot, który jako pierwszy w roku 1933 przeleciał południowy Atlantyk na trasie Afryka–Ameryka Południowa?",
+              "context": "Stanisław Skarżyński (1925) – pułkownik pilot Wojska Polskiego, kawaler Orderu Virtuti Militari, w 1931 roku dokonał lotu dookoła Afryki, był pierwszym Polakiem, który przeleciał Ocean Atlantycki, prezes Aeroklubu Polskiego (1938) Stanisław Rogalski (1925) – inżynier i konstruktor lotniczy, współzałożyciel spółki konstruktorskiej RWD Zygmunt Puławski (1927) – pilot, inżynier i konstruktor lotniczy, twórca serii polskich myśliwców i nowych rozwiązań w lotnictwie, m.in. podwozia nożycowego oraz",
+              "correct_answer": [
+                "Stanisław Skarżyński"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-019",
+            "raw_answer": "Benjamin.",
+            "elapsed": 2.846,
+            "error": false,
+            "judgement_context": {
+              "question": "Jak miał na imię ostatni patriarcha księgi rodzaju, ulubiony syn Jakuba i Racheli?",
+              "context": "Beniamin (he. בִּנְיָמִין) – postać biblijna z Księgi Rodzaju. Najmłodszy syn Jakuba (nazywanego też Izraelem) i Racheli, która umarła w czasie porodu, lecz zdążyła nadać synowi imię Benoni, co oznacza „syn mojej boleści\". Imię Beniamin („syn szczęścia\") nadał mu później Jakub, dla którego był najmłodszym, ulubionym synem (stąd późniejsze określenie \"beniaminek\"). Wraz ze swoim bratem, Józefem, cieszył się szczególnymi względami ojca. Zazdrośni bracia sprzedali Józefa do Egiptu.",
+              "correct_answer": [
+                "Józef"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-020",
+            "raw_answer": "Księga Powtórzonego Prawa.",
+            "elapsed": 4.102,
+            "error": false,
+            "judgement_context": {
+              "question": "Jaki polski tytuł nosi ostatnia księga Pięcioksięgu?",
+              "context": "W skład Tory wchodzą (kursywą transkrypcja nazwy hebrajskiej, w nawiasach chrześcijańskie nazwy polskie i łacińskie):\n\n1. בראשית – Bereszit (tłum. „Na początku\"; pl. Księga Rodzaju; łac. Genesis)\n2. שמות – Szemot (tłum. „Imiona\"; pl. Księga Wyjścia; łac. Exodus)\n3. ויקרא – Wajikra (tłum. „I zawołał\"; pl. Księga Kapłańska; łac. Leviticus)\n4. במדבר – Bemidbar (tłum. „Na pustyni\"; pl. Księga Liczb; łac. Numeri)\n5. דברים – Dwarim (tłum. „Słowa\"; pl. Księga Powtórzonego Prawa; łac. Deuteronomium)",
+              "correct_answer": [
+                "Księga Powtórzonego Prawa",
+                "Deuteronomium"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-021",
+            "raw_answer": "Szymon Cyrenejczyk.",
+            "elapsed": 2.703,
+            "error": false,
+            "judgement_context": {
+              "question": "Kto pomógł nieść krzyż Jezusowi w drodze na Golgotę?",
+              "context": "Lewa część obrazu ukazuje Jezusa w drodze krzyżowej na Golgotę. Szymon Cyrenejczyk został zmuszony do pomagania mu w dźwiganiu ciężkiego krzyża, Podczas gdy rzymscy żołnierze chłoszczą dźwigającego krzyż Jezusa, kilka niewiast z tyłu opłakuje go. Część środkowa zawiera różne epizody Ukrzyżowania. Ukazuje boleść Najświętszej Maryi Panny, pocieszanej przez św. Jana. Św. Jan spogląda na Ukrzyżowanego, który, według Ewangelii św. Jana oświadcza: \"oto syn twój\", \"oto matka twoja\".",
+              "correct_answer": [
+                "Szymon Cyrenejczyk",
+                "Szymon z Cyreny"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-022",
+            "raw_answer": "Maria Walewska nie była żoną Napoleona.",
+            "elapsed": 2.643,
+            "error": false,
+            "judgement_context": {
+              "question": "Czy Maria Walewska była żoną Napoleona?",
+              "context": "W styczniu 1807 Maria Walewska spotkała się z cesarzem Napoleonem, oficjalnie po raz pierwszy widząc go podczas balu w warszawskim Zamku Królewskim, choć inni twierdzą, iż odbyło się to w pałacu Michała Poniatowskiego w Jabłonnie. Wkrótce potem, w wyniku awansów, prezentów i liścików cesarza, została jego oficjalną metresą; sprowadził ją na trzy tygodnie m.in. do swej kwatery w pałacu w Finckenstein (dziś Kamieniec) w Prusach Wschodnich, gdzie stacjonował po wznowieniu działań wojennych.",
+              "correct_answer": [
+                "nie"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-023",
+            "raw_answer": "Ocean Indyjski.",
+            "elapsed": 5.699,
+            "error": false,
+            "judgement_context": {
+              "question": "Na którym oceanie leżą Seszele?",
+              "context": "Zachodnia część Oceanu Indyjskiego\n(z północy na południe)\n\nSokotra (Jemen) - archipelag 4 wysp i wysepek (w tym: 3 zamieszkane), pow. 3796 km², 42 842 mieszkańców (2004 r.), MĀI point: 1503 m n.p.m.; 12°31′N 53°55′E\nLakszadiwy (Indie) - archipelag 39 wysp i wysepek (w tym: 11 zamieszkanych), pow. 32 km², 64 473 mieszkańców (2011 r.), 10°34′N 72°38′E\nMalediwy (Malediwy) - archipelag 1300 wysepek (w tym: 202 zamieszkanych), pow. 298 km², linia brzegowa: 644 km, 396 334 mieszkańców (2009 r.), maksymalna wys.: 2 m n.p.m., 3°15′N 73°00′E\nSeszele (Seszele) - archipelag 116 wysp i wysepek (w tym: 33 zamieszkane), pow. 459 km²; linia brzegowa: 491 km; 92 000 mieszkańców (2012 r.), Morne Seychellois: 905 m n.p.m.; 4°30′S 55°34′E",
+              "correct_answer": [
+                "na Oceanie Indyjskim",
+                "na Indyjskim"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-024",
+            "raw_answer": "Zygmunt III Waza.",
+            "elapsed": 3.143,
+            "error": false,
+            "judgement_context": {
+              "question": "Kto był ojcem Jana Kazimierza?",
+              "context": "Zygmunt III Waza, szw. Sigismund (ur. 20 czerwca 1566 w Gripsholm, zm. 30 kwietnia 1632 w Warszawie) – król Polski i wielki książę litewski w latach 1587–1632 oraz król Szwecji (panował w latach 1592–1599, zachował tytuł do śmierci w 1632) z dynastii Wazów. W latach 1592–1599 głowa unii polsko-szwedzkiej. Syn króla szwedzkiego Jana III Wazy i królewny polskiej Katarzyny Jagiellonki, po kądzieli wnuk króla Zygmunta Starego i królowej Bony. Ojciec królów polskich Władysława IV i Jana Kazimierza.",
+              "correct_answer": [
+                "Zygmunt III Waza"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-025",
+            "raw_answer": "Książę Grimaldi.",
+            "elapsed": 2.473,
+            "error": false,
+            "judgement_context": {
+              "question": "Z której dynastii wywodzi się książę Monako Albert II?",
+              "context": "Książę. Książę jest samodzielnym władcą i głową państwa. Jak dotychczas, wszyscy książęta Monako pochodzili z dynastii Grimaldi. Od 2005 r. księciem jest Albert II. Monako jest - obok Liechtensteinu - jednym z dwu ostatnich krajów europejskich, w których monarcha wciąż odgrywa aktywną rolę w polityce i posiada poważne uprawnienia władcze. Książę reprezentuje państwo w kontaktach międzynarodowych. Każda zmiana konstytucji wymaga zatwierdzenia zarówno przez księcia, jak i Radę Narodową.",
+              "correct_answer": [
+                "z Grimaldich"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-026",
+            "raw_answer": "1796",
+            "elapsed": 2.625,
+            "error": false,
+            "judgement_context": {
+              "question": "W którym wieku Edward Jenner wynalazł szczepionkę przeciw ospie?",
+              "context": "W 1796 Edward Jenner dokonał pierwszego szczepienia przeciwko ospie. W 1800 Alessandro Volta zbudował baterię elektryczną. W XVIII w. wzrosło zainteresowanie geologią i paleontologią. Twórcą nowoczesnej geologii był James Hutton (1726–1797), który sformułował prawa stratygrafii geologicznej, a paleontologii Georges Cuvier – twórca anatomii porównawczej, wytrwały badacz skamieniałości. Przyrodnik Georges Buffon (1701–1788) opisał rozwój życia na Ziemi, wysuwając hipotezę o znacznym wieku Ziemi.",
+              "correct_answer": [
+                "w XVIII",
+                "18"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-027",
+            "raw_answer": "Austria-Węgry.",
+            "elapsed": 2.693,
+            "error": false,
+            "judgement_context": {
+              "question": "Które państwo dokonało aneksji Bośni i Hercegowiny w 1908 roku?",
+              "context": "Aneksja. W 1908 roku miała miejsce rewolucja młodoturecka w wyniku której Austro-Węgry wykorzystując chwilową słabość Imperium Osmańskiego zajęły w pełni terytorium łamiąc tym samym postanowienia traktatu berlińskiego. Manifest cesarski do ludności o włączeniu Bośni i Hercegowiny do Austro-Węgier został ogłoszony na przełomie 6 i 7 października 1908 roku. Aneksja tego terytorium wywołała skandal międzynarodowy a co za tym idzie kryzys bośniacki, który zakończył się dopiero w lutym 1909 roku.",
+              "correct_answer": [
+                "Austro-Węgry"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-028",
+            "raw_answer": "Zygmunt III Waza.",
+            "elapsed": 2.895,
+            "error": false,
+            "judgement_context": {
+              "question": "Który król przeniósł stolicę z Krakowa do Warszawy?",
+              "context": "1609: 24 maja – po pożarze Wawelu, Zygmunt III Waza opuścił wraz z rodziną Wawel i przeniósł się do Warszawy, która od tego momentu stopniowo przejmuje funkcje stolicy. Mieszczanin krakowski i kupiec Walerian Montelupi sprowadził z Włoch do Krakowa zakon Bonifratrów. 1611: Pożar Stradomia. Rozpoczęcie przebudowy kościoła św. Wojciecha, prace trwały do 1618 r. Po przebudowie kościół uzyskał kształt wczesnobarokowy. 1612, 27 września – zmarł Piotr Skarga, jezuita, kaznodzieja królewski.",
+              "correct_answer": [
+                "Zygmunt III Waza"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-029",
+            "raw_answer": "Adama Mickiewicza",
+            "elapsed": 3.169,
+            "error": false,
+            "judgement_context": {
+              "question": "Kto napisał satyrę pt. „Żona modna”?",
+              "context": "Ważniejsze dzieła; Satyry[20] tzw. część 1 (zawiera: Do króla; Świat zepsuty; Złość ukryta i jawna; Szczęśliwość filutów; Marnotrawstwo; Oszczędność; Pijaństwo; Przestroga młodemu; Żona modna; Życie dworskie; Pan niewart sługi; Gracz; Odwołanie) powst. 1778–1779; wyd. Warszawa 1779 (2 wydania); tzw. część 2 (zawiera: Pochwała milczenia; Pochwała wieku; Pochwała głupstwa; Wziętość; Człowiek i zwierz; Klatki; Mędrek; Małżeństwo; Podróż) powst. 1781–1784; przekłady: czeski, niemiecki 1788, rosyjski.",
+              "correct_answer": [
+                "Ignacy Krasicki",
+                "Krasicki"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-030",
+            "raw_answer": "matematycznej",
+            "elapsed": 2.044,
+            "error": false,
+            "judgement_context": {
+              "question": "Dyskalkulia to zaburzenie której umiejętności?",
+              "context": "Badania przeprowadzone w 2015 wykazały, że 11% dzieci z dyskalkulią, ma również ADHD. W klasyfikacji chorób i zaburzeń DSM-IV dzieci przejawiające trudności w uczeniu się matematyki są umieszczone w kategorii trudności w uczeniu się i określone jako osoby, które nie mogą osiągnąć adekwatnego do wieku poziomu biegłości w procesach matematycznych pomimo inteligencji w normie, sprzyjających warunków edukacyjnych, braku zaburzeń emocjonalnych i odpowiedniego poziomu motywacji do nauki.",
+              "correct_answer": [
+                "liczenia"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-031",
+            "raw_answer": "oceań",
+            "elapsed": 2.55,
+            "error": false,
+            "judgement_context": {
+              "question": "Na którym oceanie leżą Seszele?",
+              "context": "Położenie i powierzchnia. Republika Seszeli jest państwem wyspiarskim w zachodniej części Oceanu Indyjskiego, na północny wschód od Madagaskaru i ok. 1500 km od wschodnich wybrzeży Afryki. Obejmuje ponad 100 wysp Seszeli rozsianych na obszarze 1,3 miliona km². Długość linii brzegowej to 491 km.  Wyspy tworzą dwie grupy – położone na północy górzyste, zbudowane z granitu Wyspy Wewnętrzne oraz położone na południu liczne, płaskie wyspy koralowe – Wyspy Zewnętrzne. Powierzchnia kraju wynosi 455 km².",
+              "correct_answer": [
+                "na Oceanie Indyjskim",
+                "na Indyjskim"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-032",
+            "raw_answer": "Ona.",
+            "elapsed": 2.341,
+            "error": false,
+            "judgement_context": {
+              "question": "Jak miał na imię ojciec Ofelii, ukochanej Hamleta z tragedii Szekspira?",
+              "context": "Poloniusz – postać fikcyjna, bohater sztuki Williama Szekspira „Hamlet”, ojciec Laertesa i Ofelii, dworzanin Klaudiusza, króla Danii. W przeszłości był aktorem (twierdzi, że grał Cezara). Jest postacią budzącą kontrowersje – jest kochającym ojcem, a jednocześnie nie liczącym się z nikim szpiegiem, który donosi królowi o działaniach ukochanego własnej córki. By zdobyć potrzebne informacje nie waha się manipulować Ofelią. Zleca szpiegowanie swojego syna podczas jego podróży po Francji.",
+              "correct_answer": [
+                "Poloniusz"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-033",
+            "raw_answer": "**wyższych**",
+            "elapsed": 2.294,
+            "error": false,
+            "judgement_context": {
+              "question": "Czy tzw. getta ławkowe miały miejsce w szkołach średnich, czy na uczelniach wyższych?",
+              "context": "W grudniu 1937 roku sześćdziesięciu profesorów Uniwersytetu Poznańskiego, Warszawskiego i Wileńskiego opublikowało oświadczenie wyrażające sprzeciw wobec „wszelkich dążeń do ograniczenia praw ze względów wyznaniowych, narodowościowych, czy rasowych, zwłaszcza jeśli dotyczyć one mają studentów” jako protest przeciwko wprowadzeniu getta ławkowego. Z kolei inni czynnie uczestniczyli we wprowadzaniu gett ławkowych, m.in. odmawiając podpisywania indeksów studentom stojącym w czasie zajęć.",
+              "correct_answer": [
+                "na uczelniach wyższych"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-034",
+            "raw_answer": "\"myto\"",
+            "elapsed": 2.362,
+            "error": false,
+            "judgement_context": {
+              "question": "Jak nazywały się opłaty pobierane za przejazd drogą lądową lub wodną przez mosty lub miasta?",
+              "context": "Myto – opłata pobierana za przejazd drogą, autostradą, mostem, tunelem itp. Może być pobierana jako podatek centralny bądź lokalny lub też przez prywatnego właściciela obiektu. Początkowo, w średniowieczu, opłata ta pobierana była za przewożone towary (niezależnie od ilości i rodzaju) w specjalnie do tego celu ustawianych na szlakach handlowych komorach celnych. Na przełomie XIV-XV w. myto oddzielono od cła i wówczas myto przybrało postać opłaty za usługę, przeprawę, przejazd czy przewóz.",
+              "correct_answer": [
+                "myto"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-035",
+            "raw_answer": "**Hannibal**",
+            "elapsed": 2.99,
+            "error": false,
+            "judgement_context": {
+              "question": "Który z wielkich wodzów starożytności zasłynął tym, że w wojnie przeciwko Rzymowi użył bojowych słoni, które przeprowadził przez Alpy?",
+              "context": "Ostra zima w północnej Italii i późniejsza przeprawa przez bagna spowodowała, że spośród ponad trzydziestu idących z armią słoni bojowych ostał się tylko jeden[13], a sam Hannibal stracił jedno oko wskutek zakażenia[14].\n\n2 sierpnia 216 w walnej bitwie pod Kannami Kartagińczycy unicestwili dwukrotnie większą armię rzymską; zginęło około 50 tysięcy żołnierzy rzymskich, konsul Emiliusz Paulus i 80 senatorów, podczas gdy straty po stronie kartagińskiej wyniosły około 7000 poległych, z czego 4000 stanowili sojuszniczy Galowie[15].",
+              "correct_answer": [
+                "Hannibal"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-036",
+            "raw_answer": "Jim Henson.",
+            "elapsed": 2.465,
+            "error": false,
+            "judgement_context": {
+              "question": "Kto wymyślił i stworzył Muppety?",
+              "context": "Muppety (ang. \"The Muppets\") – lalki teatralne stworzone w 1955 przez amerykańskiego lalkarza, reżysera i scenarzystę Jima Hensona. Imitują one ludzi, zwierzęta oraz fantastyczne stwory. Media związane z franczyzą Muppetów cechuje specyficzne poczucie humoru, wyróżniające się abstrakcyjnością, absurdem i odwołaniami do popkultury. Akcja filmów i seriali najczęściej odnosi się do wystawianych przez Muppety rewii. Obecnie prawa autorskie do Muppetów posiada Walt Disney Company.",
+              "correct_answer": [
+                "Jim Henson"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-037",
+            "raw_answer": "**nie**",
+            "elapsed": 2.087,
+            "error": false,
+            "judgement_context": {
+              "question": "Czy planeta Merkury jest większa od Ziemi?",
+              "context": "Merkury – najmniejsza i najbliższa Słońca planeta Układu Słonecznego. Jako planeta dolna znajduje się dla ziemskiego obserwatora zawsze blisko Słońca, dlatego jest trudna do obserwacji. Mimo to należy do planet widocznych gołym okiem i była znana już w starożytności. Merkurego dojrzeć można jedynie tuż przed wschodem lub tuż po zachodzie Słońca. Ukształtowanie powierzchni Merkurego przypomina Księżyc: są na nim liczne kratery uderzeniowe i pozbawiony jest on atmosfery.",
+              "correct_answer": [
+                "nie"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-038",
+            "raw_answer": "Saksofon.",
+            "elapsed": 3.036,
+            "error": false,
+            "judgement_context": {
+              "question": "Z gry na którym instrumencie znany jest muzyk Zbigniew Namysłowski?",
+              "context": "producent nagrań, znany ze współpracy z Bobem Dylanem (zm. 2011) 9 września – Zbigniew Namysłowski, polski saksofonista jazzowy, kompozytor i aranżer (zm. 2022) 10 września Elżbieta Chojnacka, polska klawesynistka specjalizująca się w muzyce współczesnej (zm. 2017) Cynthia Lennon, Brytyjka, pierwsza żona Johna Lennona (zm. 2015) 13 września – Gene Page, amerykański dyrygent, kompozytor, aranżer i producent muzyczny (zm. 1998) 14 września – Tony Hooper, angielski gitarzysta i piosenkarz folkowy,",
+              "correct_answer": [
+                "na saksofonie"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-039",
+            "raw_answer": "Herkles.",
+            "elapsed": 2.731,
+            "error": false,
+            "judgement_context": {
+              "question": "Jak miał na imię heros, którego matką była Alkmena?",
+              "context": "Potomkowie Perseusza. Córce herosa nadano imię Gorgofone, na pamiątkę pokonania potwora. Wnukiem Perseusza był Amfitrion. Od Perseusza pochodziła też Alkmena, matka herosa Heraklesa. Syn Perseusza, Stenelos, spłodził ze swoją żoną Nikippe syna Eurysteusza . Zeus przyrzekł kiedyś tron w Argos mającemu się narodzić dziecku z rodu Perseidów. Jednakże jego żona Hera nakazała Ejlejtyi opóźnić poród syna Alkmeny, a przyśpieszyć narodziny Eurysteusza, który to zamiast niego został władcą.",
+              "correct_answer": [
+                "Herakles"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-040",
+            "raw_answer": "Baroku.",
+            "elapsed": 3.028,
+            "error": false,
+            "judgement_context": {
+              "question": "Giovanni Lorenzo Bernini był wybitnym artystą epoki renesansu czy baroku?",
+              "context": "Pierre Bayle – francuski uczony, prekursor oświecenia. Giovanni Lorenzo Bernini – najwybitniejszy rzeźbiarz i architekt baroku. Jakob Bernoulli – szwajcarski matematyk. Francesco Borromini – włoski architekt. Jacques-Bénigne Bossuet – francuski teolog i teoretyk absolutyzmu. Nicolas Boileau – francuski poeta. Robert Boyle – twórca chemii. Michał Boym – misjonarz w Chinach. John Bunyan – angielski teolog. Dietrich Buxtehude – duńsko-niemiecki muzyk. Pedro Calderón de la Barca – hiszpański dramaturg.",
+              "correct_answer": [
+                "baroku"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-041",
+            "raw_answer": "\"kapelan\"",
+            "elapsed": 2.333,
+            "error": false,
+            "judgement_context": {
+              "question": "Jak nazywa się duchowny pełniący obowiązki duszpasterskie w wojsku, więzieniu, szpitalu?",
+              "context": "Kapelan – duchowny w Kościele rzymskokatolickim, prawosławnym, greckokatolickim, anglikańskim i ewangelickim, spełniający funkcje liturgiczne przy kaplicy zakonnej, szpitalnej lub przydzielony przez władzę kościelną do obsługi duszpasterskiej pewnej grupy osób lub środowisk (np. kapelan wojskowy, więzienny, szpitalny, uczelniany). Kapelanem nazywany bywa także duchowny diecezjalny bądź zakonny pomagający biskupowi przy czynnościach biskupich i będący jego sekretarzem.",
+              "correct_answer": [
+                "kapelan"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-042",
+            "raw_answer": "Władysław.",
+            "elapsed": 2.842,
+            "error": false,
+            "judgement_context": {
+              "question": "Jak miał na imię Gomułka, pierwszy sekretarz PZPR?",
+              "context": "Polska. PKP / PKP Cargo. W 1956 Pierwszym Sekretarzem KC PZPR został Władysław Gomułka. Gomułka nie był w dobrych stosunkach z towarzyszami radzieckimi, stąd chciał pomóc Nicolae Ceaușescu. Ogółem w latach 1965–1978 dostarczono dla PKP 422 egzemplarze serii 060DA, którym nadano oznaczenie ST43. Rozpoczęły one pracę w ruchu towarowym w DOKP Poznań. W kolejnych latach były także kierowane do obsługi pociągów pasażerskich z własnym źródłem ciepła&lt;ref name=\"KMiD1-2/2011\"&gt;&lt;/ref&gt;.",
+              "correct_answer": [
+                "Władysław"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-043",
+            "raw_answer": "\"panewka\"",
+            "elapsed": 2.506,
+            "error": false,
+            "judgement_context": {
+              "question": "Jak nazywa się zagłębienie w górnej części lufy broni skałkowej, do której sypie się proch?",
+              "context": "Zapłon prochu w broni odprzodowej, aż do wynalezienia zapłonu chemicznego, następował w specjalnym wydrążeniu obok lufy, zwanym panewką. Ogień z palącego się na panewce prochu przechodził przez otwór zapałowy do głównego ładunku i powodował jego zapłon. Jeżeli otwór był niedrożny, strzał nie mógł paść, bo nie dochodziło do zapalenia prochu w lufie, spalał się tylko proch na panewce. Pamiątką tego jest frazeologizm „spalić na panewce”, oznaczający działanie nie przynoszące rezultatu.",
+              "correct_answer": [
+                "panewka"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-044",
+            "raw_answer": "drewnianego",
+            "elapsed": 2.346,
+            "error": false,
+            "judgement_context": {
+              "question": "Intarsja to sztuka polegająca na wykładaniu na powierzchniach drewnianych wzoru z którego materiału?",
+              "context": "Markieteria lub markietaż – technika zdobnicza stosowana w rzemiośle artystycznym (meblarstwie i przy wytwarzaniu drobnych przedmiotów). Polega na układaniu na powierzchni zdobionego sprzętu (z drewna) wzorów złożonych z kawałków innego koloru drewna (często forniru), metalu, kości słoniowej, szylkretu, marmuru. Nazwa markieteria pochodzi od francuskiego terminu \"marqueterrie\", który od XVII wieku w krajach zachodniej Europy jest synonimem włoskiej nazwy \"intarsja\".",
+              "correct_answer": [
+                "z drewna"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-045",
+            "raw_answer": "Ignacy Loyola.",
+            "elapsed": 2.751,
+            "error": false,
+            "judgement_context": {
+              "question": "Jak brzmi nazwisko św. Ignacego, założyciela potężnego, charakteryzującego się ściśle przestrzeganą regułą posłuszeństwa, zakonu jezuitów?",
+              "context": "Joanna jako jezuita. Towarzystwo Jezusowe jest jednym z nielicznych zakonów, które nie mają gałęzi żeńskiej. Wynika to z jego charyzmatu, do którego należy ścisłe przestrzeganie posłuszeństwa, dyscyplina i działalność misyjna, często w trudnych warunkach. Święty Ignacy Loyola od początku przeciwny był powstaniu żeńskiej gałęzi Towarzystwa – mimo tego w 1545 roku na polecenie papieża Pawła III przyjął śluby Izabeli Roser i dwóch jej towarzyszek, mające doprowadzić do powstania zakonu jezuitek.",
+              "correct_answer": [
+                "Loyola"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-046",
+            "raw_answer": "Republika.",
+            "elapsed": 2.779,
+            "error": false,
+            "judgement_context": {
+              "question": "Grecja jest republiką czy monarchią?",
+              "context": "Trzecia Republika Grecka (1973-1974) – historyczne państwo w dziejach Grecji, istniało w latach 1973-1974. W 1973 szef junty wojskowej, Regent Grecji Jeorjos Papadopulos ogłosił Grecję republiką, a przebywającego na emigracji od 6 lat króla Konstantyna oskarżył o „zdradę”. Detronizacja króla nastąpiła, zaś Papadopulos został prezydentem. Po kilku miesięcach od zniesienia monarchii zorganizowano referendum, które najprawdopodobniej sfałszowano. Według wyników aż 78% obywateli głosowało za republiką.",
+              "correct_answer": [
+                "republiką"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-047",
+            "raw_answer": "pozwolenie",
+            "elapsed": 2.369,
+            "error": false,
+            "judgement_context": {
+              "question": "Czy liofilizacja żywności to pozbawienie jej wody, czy tłuszczu?",
+              "context": "Suszenie ciał stałych wykonuje się poprzez odparowanie rozpuszczalnika – dostarczenie ciepła i przepływ gazu nad substancją suszoną lub obniżenie ciśnienia (suszenie próżniowe). Jeśli usuwany rozpuszczalnik znajduje się w fazie stałej i sublimuje, proces suszenia określa się jako liofilizacja[1]. Obniżenie prężności pary wodnej nad ciałem suszonym uzyskuje się także przez umieszczenie go w naczyniu (eksykatorze) razem ze środkiem o właściwościach higroskopijnych, tj. pochłaniającym wilgoć (np. bezwodny CaCl2 lub P2O5)[2].",
+              "correct_answer": [
+                "wody"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-048",
+            "raw_answer": "Hiszpania.",
+            "elapsed": 2.538,
+            "error": false,
+            "judgement_context": {
+              "question": "W którym państwie toczy się akcja powieści „Komu bije dzwon” Ernesta Hemingwaya?",
+              "context": "Geneza. Ernest Hemingway był dwukrotnie w Hiszpanii, podczas wojny domowej, jako korespondent. Bywał wśród żołnierzy brygad międzynarodowych. Poznał tam Karola Świerczewskiego, który został sportretowany w książce jako generał Golz. Bywał także w Madrycie w hotelu „Gaylord”, gdzie mieściła się kwatera sił sowieckich. Poznani ludzie byli inspiracją do napisania powieści. Tytuł książki został zaczerpnięty z fragmentu tekstu siedemnastowiecznego poety angielskiego Johna Donna „Medytacja XVII”:",
+              "correct_answer": [
+                "w Hiszpanii"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-049",
+            "raw_answer": "Ułan Bator.",
+            "elapsed": 3.35,
+            "error": false,
+            "judgement_context": {
+              "question": "Stolicą którego państwa jest Ułan Bator?",
+              "context": "Ułan Bator (mn. Улаанбаатар, \"Ulaanbaatar\", do 1924 Urga) – stolica i największe miasto Mongolii położone w środkowo-wschodniej części kraju, nad rzeką Tuul gol, w dolinie otoczonej czterema masywami górskimi: Bajandzürch, Czingeltej, Songinchajrchan i Bogdchan uul. Miasto leży na wysokości około 1350 m n.p.m. W 2010 roku liczyło 1,09 mln mieszkańców. Całe miasto wydzielone Ułan Bator (z dzielnicami Nalajch, Bagnuur oraz Bagchangaj) o powierzchni 4704,4 km² liczyło 1,145 mln mieszkańców.",
+              "correct_answer": [
+                "Mongolii"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

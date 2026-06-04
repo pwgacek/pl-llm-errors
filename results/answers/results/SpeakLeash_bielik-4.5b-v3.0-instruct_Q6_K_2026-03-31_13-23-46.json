@@ -1,0 +1,1923 @@
+{
+  "timestamp": "2026-03-31T13:23:46.165725+00:00",
+  "model": "SpeakLeash/bielik-4.5b-v3.0-instruct:Q6_K",
+  "base_url": "http://localhost:11434/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "elapsed_sec": 0.62,
+  "datasets": {
+    "diacritic": {
+      "bbh": {
+        "num_sampled": 10,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 10,
+        "elapsed_sec": 0.16,
+        "questions": [
+          {
+            "prompt_id": "bbh-diacritic-000",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-diacritic-001",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-diacritic-002",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-diacritic-003",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-diacritic-004",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-diacritic-005",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-diacritic-006",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-diacritic-007",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-diacritic-008",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-diacritic-009",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 10,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 10,
+        "elapsed_sec": 0.02,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-diacritic-000",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-001",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-002",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-003",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-004",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-005",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-006",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-007",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-008",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-diacritic-009",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 10,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 10,
+        "elapsed_sec": 0.02,
+        "questions": [
+          {
+            "prompt_id": "polqa-diacritic-000",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-diacritic-001",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-diacritic-002",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-diacritic-003",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-diacritic-004",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-diacritic-005",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-diacritic-006",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-diacritic-007",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-diacritic-008",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-diacritic-009",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          }
+        ]
+      }
+    },
+    "identity": {
+      "bbh": {
+        "num_sampled": 10,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 10,
+        "elapsed_sec": 0.02,
+        "questions": [
+          {
+            "prompt_id": "bbh-identity-000",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-identity-001",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-identity-002",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-identity-003",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-identity-004",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-identity-005",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-identity-006",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-identity-007",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-identity-008",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-identity-009",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 10,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 10,
+        "elapsed_sec": 0.02,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-identity-000",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-identity-001",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-identity-002",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-identity-003",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-identity-004",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-identity-005",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-identity-006",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-identity-007",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-identity-008",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-identity-009",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 10,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 10,
+        "elapsed_sec": 0.02,
+        "questions": [
+          {
+            "prompt_id": "polqa-identity-000",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-identity-001",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-identity-002",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-identity-003",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-identity-004",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-identity-005",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-identity-006",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-identity-007",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-identity-008",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-identity-009",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          }
+        ]
+      }
+    },
+    "punctuation_all": {
+      "bbh": {
+        "num_sampled": 10,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 10,
+        "elapsed_sec": 0.02,
+        "questions": [
+          {
+            "prompt_id": "bbh-punctuation_all-000",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-001",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-002",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-003",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-004",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-005",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-006",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-007",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-008",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-punctuation_all-009",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 10,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 10,
+        "elapsed_sec": 0.02,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-punctuation_all-000",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-punctuation_all-001",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-punctuation_all-002",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-punctuation_all-003",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-punctuation_all-004",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-punctuation_all-005",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-punctuation_all-006",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-punctuation_all-007",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-punctuation_all-008",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-punctuation_all-009",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 10,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 10,
+        "elapsed_sec": 0.02,
+        "questions": [
+          {
+            "prompt_id": "polqa-punctuation_all-000",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-001",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-002",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-003",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-004",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-005",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-006",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-007",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-008",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-009",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          }
+        ]
+      }
+    },
+    "punctuation_inner": {
+      "bbh": {
+        "num_sampled": 10,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 10,
+        "elapsed_sec": 0.02,
+        "questions": [
+          {
+            "prompt_id": "bbh-punctuation_inner-000",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-001",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-002",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-003",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-004",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-005",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-006",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-007",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-008",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-punctuation_inner-009",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 10,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 10,
+        "elapsed_sec": 0.02,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-punctuation_inner-000",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-punctuation_inner-001",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-punctuation_inner-002",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-punctuation_inner-003",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-punctuation_inner-004",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-punctuation_inner-005",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-punctuation_inner-006",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-punctuation_inner-007",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-punctuation_inner-008",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-punctuation_inner-009",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 10,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 10,
+        "elapsed_sec": 0.02,
+        "questions": [
+          {
+            "prompt_id": "polqa-punctuation_inner-000",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-001",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-002",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-003",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-004",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-005",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-006",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-007",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-008",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-009",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          }
+        ]
+      }
+    },
+    "spelling_10%": {
+      "bbh": {
+        "num_sampled": 10,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 10,
+        "elapsed_sec": 0.03,
+        "questions": [
+          {
+            "prompt_id": "bbh-spelling_10%-000",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-001",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-002",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-003",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-004",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-005",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-006",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-007",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-008",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-spelling_10%-009",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 10,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 10,
+        "elapsed_sec": 0.02,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-spelling_10%-000",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-spelling_10%-001",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-spelling_10%-002",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-spelling_10%-003",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-spelling_10%-004",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-spelling_10%-005",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-spelling_10%-006",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-spelling_10%-007",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-spelling_10%-008",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-spelling_10%-009",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 10,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 10,
+        "elapsed_sec": 0.02,
+        "questions": [
+          {
+            "prompt_id": "polqa-spelling_10%-000",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-001",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-002",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-003",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-004",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-005",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-006",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-007",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-008",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-009",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          }
+        ]
+      }
+    },
+    "spelling_40%": {
+      "bbh": {
+        "num_sampled": 10,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 10,
+        "elapsed_sec": 0.02,
+        "questions": [
+          {
+            "prompt_id": "bbh-spelling_40%-000",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-001",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-002",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-003",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-004",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-005",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-006",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-007",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-008",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-spelling_40%-009",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 10,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 10,
+        "elapsed_sec": 0.02,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-spelling_40%-000",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-spelling_40%-001",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-spelling_40%-002",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-spelling_40%-003",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-spelling_40%-004",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-spelling_40%-005",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-spelling_40%-006",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-spelling_40%-007",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-spelling_40%-008",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-spelling_40%-009",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 10,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 10,
+        "elapsed_sec": 0.02,
+        "questions": [
+          {
+            "prompt_id": "polqa-spelling_40%-000",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-001",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-002",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-003",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-004",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-005",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-006",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-007",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-008",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-009",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          }
+        ]
+      }
+    },
+    "typo_10%": {
+      "bbh": {
+        "num_sampled": 10,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 10,
+        "elapsed_sec": 0.02,
+        "questions": [
+          {
+            "prompt_id": "bbh-typo_10%-000",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-typo_10%-001",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-typo_10%-002",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-typo_10%-003",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-typo_10%-004",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-typo_10%-005",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-typo_10%-006",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-typo_10%-007",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-typo_10%-008",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-typo_10%-009",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 10,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 10,
+        "elapsed_sec": 0.02,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-typo_10%-000",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-typo_10%-001",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-typo_10%-002",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-typo_10%-003",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-typo_10%-004",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-typo_10%-005",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-typo_10%-006",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-typo_10%-007",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-typo_10%-008",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-typo_10%-009",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 10,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 10,
+        "elapsed_sec": 0.02,
+        "questions": [
+          {
+            "prompt_id": "polqa-typo_10%-000",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-typo_10%-001",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-typo_10%-002",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-typo_10%-003",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-typo_10%-004",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-typo_10%-005",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-typo_10%-006",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-typo_10%-007",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-typo_10%-008",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-typo_10%-009",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          }
+        ]
+      }
+    },
+    "typo_40%": {
+      "bbh": {
+        "num_sampled": 10,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 10,
+        "elapsed_sec": 0.01,
+        "questions": [
+          {
+            "prompt_id": "bbh-typo_40%-000",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-typo_40%-001",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-typo_40%-002",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-typo_40%-003",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-typo_40%-004",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-typo_40%-005",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-typo_40%-006",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-typo_40%-007",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-typo_40%-008",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "bbh-typo_40%-009",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 10,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 10,
+        "elapsed_sec": 0.02,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-typo_40%-000",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-001",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-002",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-003",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-004",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-005",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-006",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-007",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-008",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-009",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 10,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 10,
+        "elapsed_sec": 0.02,
+        "questions": [
+          {
+            "prompt_id": "polqa-typo_40%-000",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-typo_40%-001",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-typo_40%-002",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-typo_40%-003",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-typo_40%-004",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-typo_40%-005",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-typo_40%-006",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-typo_40%-007",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-typo_40%-008",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-typo_40%-009",
+            "raw_answer": "",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

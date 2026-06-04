@@ -1,0 +1,422 @@
+{
+  "timestamp": "2026-04-19T11:29:37.153514+00:00",
+  "model": "SpeakLeash/bielik-11b-v3.0-instruct:Q6_K",
+  "base_url": "http://localhost:11434/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "elapsed_sec": 958.25,
+  "datasets": {
+    "identity": {
+      "polqa": {
+        "num_sampled": 50,
+        "score_sum": 13.092279,
+        "score_avg": 0.261846,
+        "error_count": 2,
+        "elapsed_sec": 958.24,
+        "questions": [
+          {
+            "prompt_id": "polqa-identity-000",
+            "raw_answer": "{\n\"Sulejman Wspaniały\":\n\"}</think>  Sułtanem tureckim z XVI wieku, znanym jako \"",
+            "correct_answer": "Sulejman",
+            "score": 0.09999999999999998,
+            "error": false,
+            "elapsed": 18.765
+          },
+          {
+            "prompt_id": "polqa-identity-001",
+            "raw_answer": "{\n    \"nazwa\": \"Narodowy Bank Polski (NBP)\"\n}",
+            "correct_answer": "Narodowy Bank Polski",
+            "score": 0.4444444444444444,
+            "error": false,
+            "elapsed": 5.325
+          },
+          {
+            "prompt_id": "polqa-identity-002",
+            "raw_answer": "{ \"Odpowiedź\": \"wierszem\" }",
+            "correct_answer": "wierszem",
+            "score": 0.2962962962962963,
+            "error": false,
+            "elapsed": 6.031
+          },
+          {
+            "prompt_id": "polqa-identity-003",
+            "raw_answer": "{ \"ODPOWIEDŹ\": \"tak\" }",
+            "correct_answer": "tak",
+            "score": 0.13636363636363635,
+            "error": false,
+            "elapsed": 12.299
+          },
+          {
+            "prompt_id": "polqa-identity-004",
+            "raw_answer": "{\n\"wosku\": \"ceroplastyka to sztuka modelowania i rzeźbienia w wosku, wykorzystywana głównie w rzeźbie portretowej i wotywnej.\"}",
+            "correct_answer": "w wosku",
+            "score": 0.055118110236220486,
+            "error": false,
+            "elapsed": 18.372
+          },
+          {
+            "prompt_id": "polqa-identity-005",
+            "raw_answer": "{\n\"Marsa\":\n\n-1}",
+            "correct_answer": "Marsa",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 9.31
+          },
+          {
+            "prompt_id": "polqa-identity-006",
+            "raw_answer": "{\n\"50 Hz\":\n\"}\"\n}",
+            "correct_answer": "50 Hz",
+            "score": 0.3125,
+            "error": false,
+            "elapsed": 12.422
+          },
+          {
+            "prompt_id": "polqa-identity-007",
+            "raw_answer": "{\n\"Argentyńczyk\":\n\"}\"\n}",
+            "correct_answer": "argentyńskiej",
+            "score": 0.4782608695652174,
+            "error": false,
+            "elapsed": 5.631
+          },
+          {
+            "prompt_id": "polqa-identity-008",
+            "raw_answer": "{ \"Alfred Szklarski\": 1 }",
+            "correct_answer": "Szklarski",
+            "score": 0.36,
+            "error": false,
+            "elapsed": 6.469
+          },
+          {
+            "prompt_id": "polqa-identity-009",
+            "raw_answer": "{\n\"Niemcy\":",
+            "correct_answer": "Niemcy",
+            "score": 0.5454545454545454,
+            "error": false,
+            "elapsed": 10.363
+          },
+          {
+            "prompt_id": "polqa-identity-010",
+            "raw_answer": "{\n\"osa\":\n\"Vespa\"\n}",
+            "correct_answer": "osy",
+            "score": 0.11111111111111116,
+            "error": false,
+            "elapsed": 5.975
+          },
+          {
+            "prompt_id": "polqa-identity-011",
+            "raw_answer": "{\n\"Lehman Brothers\":\n\n[\n  {\n    \"kontext\": \"Bank ogłosił upadłość dnia 15 września 2008 roku, co spowodowało panikę na giełdach papierów wartościowych i wzrost przekonania o kryzysie kredytów hipotecznych wysokiego ryzyka.\",\n    \"pytanie\": \"Jak nazywał się wielki amerykański bank, którego upadłość we wrześniu 2008 r. spowodowała kryzys finansowy?\",\n    \"odpowiedź\": \"Lehman Brothers\"\n  }\n]\n}",
+            "correct_answer": "Lehman Brothers",
+            "score": 0.03816793893129766,
+            "error": false,
+            "elapsed": 29.793
+          },
+          {
+            "prompt_id": "polqa-identity-012",
+            "raw_answer": "{ \"Odpowiedź\": \"ZSRR\" }",
+            "correct_answer": "ZSRR",
+            "score": 0.17391304347826086,
+            "error": false,
+            "elapsed": 6.112
+          },
+          {
+            "prompt_id": "polqa-identity-013",
+            "raw_answer": "{\n\"Lama należy do rodziny wielbłądowatych.\": true}",
+            "correct_answer": "wielbłądowatych",
+            "score": 0.30000000000000004,
+            "error": false,
+            "elapsed": 11.979
+          },
+          {
+            "prompt_id": "polqa-identity-014",
+            "raw_answer": "{\n\"USS Nautilus (SSN-571)\": \"USS Nautilus (SSN-571) był pierwszym okrętem podwodnym o napędzie atomowym, zwodowanym w USA w 1954 roku.\"}",
+            "correct_answer": "Nautilus",
+            "score": 0.05882352941176472,
+            "error": false,
+            "elapsed": 16.895
+          },
+          {
+            "prompt_id": "polqa-identity-015",
+            "raw_answer": "{\n\"Societas Iesu, czyli Towarzystwo Jezusowe.\": true}",
+            "correct_answer": "jezuici",
+            "score": 0.37735849056603776,
+            "error": false,
+            "elapsed": 8.277
+          },
+          {
+            "prompt_id": "polqa-identity-016",
+            "raw_answer": "{\n\"myto\":\"myto\"}",
+            "correct_answer": "myto",
+            "score": 0.25,
+            "error": false,
+            "elapsed": 8.66
+          },
+          {
+            "prompt_id": "polqa-identity-017",
+            "raw_answer": "{\n\"Ignacy Loyola\":\"Ignacy Loyola\"}",
+            "correct_answer": "Loyola",
+            "score": 0.17647058823529416,
+            "error": false,
+            "elapsed": 7.896
+          },
+          {
+            "prompt_id": "polqa-identity-018",
+            "raw_answer": "{\n\"Nil\":\n\"} Kongo jest drugą pod względem długości rzeką Afryki (po Nilu). Oznacza to, że najdłuższą rzeką na kontynencie afrykańskim jest Nil. Informacja ta bezpośrednio odpowiada na zadane pytanie.  \"}",
+            "correct_answer": "Nil",
+            "score": 0.014778325123152691,
+            "error": false,
+            "elapsed": 14.658
+          },
+          {
+            "prompt_id": "polqa-identity-019",
+            "raw_answer": "{\n\"Discovery\":-3}",
+            "correct_answer": "Discovery",
+            "score": 0.5294117647058824,
+            "error": false,
+            "elapsed": 11.666
+          },
+          {
+            "prompt_id": "polqa-identity-020",
+            "raw_answer": "{ \"większe\": \"przednie\" }",
+            "correct_answer": "przednie",
+            "score": 0.31999999999999995,
+            "error": false,
+            "elapsed": 5.936
+          },
+          {
+            "prompt_id": "polqa-identity-021",
+            "raw_answer": "{\n\"Reżyserem cyklu filmowego 'Dekalog' jest Krzysztof Kieślowski.\": true}",
+            "correct_answer": "Krzysztof Kieślowski",
+            "score": 0.273972602739726,
+            "error": false,
+            "elapsed": 9.234
+          },
+          {
+            "prompt_id": "polqa-identity-022",
+            "raw_answer": "{\n\"sowy\":\n\"Sowy pełnią funkcję posłańców listów.\"}",
+            "correct_answer": "sowy",
+            "score": 0.07999999999999996,
+            "error": false,
+            "elapsed": 8.324
+          },
+          {
+            "prompt_id": "polqa-identity-023",
+            "raw_answer": "{\n    \"Christiaan Huygens\":\"Nie\", \"Rok\": \"1656\"}",
+            "correct_answer": "Christiaan Huygens",
+            "score": 0.375,
+            "error": false,
+            "elapsed": 6.629
+          },
+          {
+            "prompt_id": "polqa-identity-024",
+            "raw_answer": "{\n\"Hannibal\":-1}",
+            "correct_answer": "Hannibal",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 14.09
+          },
+          {
+            "prompt_id": "polqa-identity-025",
+            "raw_answer": "",
+            "correct_answer": "admirał",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-identity-026",
+            "raw_answer": "{\n\"Nowa Zelandia\":\n\"} Cieśnina Cooka oddziela Wyspę Północną od Wyspy Południowej Nowej Zelandii. Promy łączą obie wyspy, a połączenia te są obsługiwane przez lokalnego operatora Interislander we współpracy z KiwiRail.\"\n}",
+            "correct_answer": "od Nowej Zelandii",
+            "score": 0.07692307692307687,
+            "error": false,
+            "elapsed": 21.096
+          },
+          {
+            "prompt_id": "polqa-identity-027",
+            "raw_answer": "{\n\"Makler\":\"Makler\"}",
+            "correct_answer": "makler papierów wartościowych",
+            "score": 0.30000000000000004,
+            "error": false,
+            "elapsed": 7.726
+          },
+          {
+            "prompt_id": "polqa-identity-028",
+            "raw_answer": "{\n\"Cztery\": \"Niemcy, Włochy, Wielka Brytania i Francja.\"}",
+            "correct_answer": "cztery",
+            "score": 0.10526315789473684,
+            "error": false,
+            "elapsed": 12.242
+          },
+          {
+            "prompt_id": "polqa-identity-029",
+            "raw_answer": "{ \"Rok\": 1918 }",
+            "correct_answer": "w 1918",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 7.018
+          },
+          {
+            "prompt_id": "polqa-identity-030",
+            "raw_answer": "{\n\"Vincent van Gogh\":\n\"}>>  holenderski malarz, który namalował \"\n}",
+            "correct_answer": "Vincent van Gogh",
+            "score": 0.23880597014925375,
+            "error": false,
+            "elapsed": 14.134
+          },
+          {
+            "prompt_id": "polqa-identity-031",
+            "raw_answer": "{\n\"Malbork leży nad rzeką Nogat.\": true}",
+            "correct_answer": "nad Nogatem",
+            "score": 0.25,
+            "error": false,
+            "elapsed": 9.084
+          },
+          {
+            "prompt_id": "polqa-identity-032",
+            "raw_answer": "",
+            "correct_answer": "Szymon Cyrenejczyk",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "polqa-identity-033",
+            "raw_answer": "{\n\"azjatyckie tygrysy\":{\n  \"description\": \"Dynamicznie rozwijające się państwa Azji\",\n  \"context_reference\": \"Część socjologów do tej grupy zalicza również „azjatyckie tygrysy”\"\n}}",
+            "correct_answer": "tygrysy",
+            "score": 0.03888888888888886,
+            "error": false,
+            "elapsed": 15.359
+          },
+          {
+            "prompt_id": "polqa-identity-034",
+            "raw_answer": "{\n\"tak\":\n\n[{\"konkluzja\": \"Według niesprawdzonych relacji polskich leśników, po zakończeniu wojny w roku 1946 obserwowano tury na terenie Polski. Zwierzęta te migrowały zza wschodniej granicy i posiadały przychówek.\", \"potwierdzenie\": \"Kontekst potwierdza, że po wojnie widziano tury w Polsce.\"}]\n}",
+            "correct_answer": "tak",
+            "score": 0.010101010101010055,
+            "error": false,
+            "elapsed": 24.905
+          },
+          {
+            "prompt_id": "polqa-identity-035",
+            "raw_answer": "{\n\"Jan Sebastian\": \"Jan Sebastian\"\n}",
+            "correct_answer": "Jan Sebastian",
+            "score": 0.36111111111111116,
+            "error": false,
+            "elapsed": 4.312
+          },
+          {
+            "prompt_id": "polqa-identity-036",
+            "raw_answer": "{\n\"tarczycy\":\n\"}\"\n}",
+            "correct_answer": "tarczycy",
+            "score": 0.42105263157894735,
+            "error": false,
+            "elapsed": 8.025
+          },
+          {
+            "prompt_id": "polqa-identity-037",
+            "raw_answer": "{\n\"Malbork leży nad rzeką Nogat.\": true}",
+            "correct_answer": "nad Nogatem",
+            "score": 0.25,
+            "error": false,
+            "elapsed": 6.612
+          },
+          {
+            "prompt_id": "polqa-identity-038",
+            "raw_answer": "{ \"Miasto\": \"Kraków\" }",
+            "correct_answer": "Krakowa",
+            "score": 0.2272727272727273,
+            "error": false,
+            "elapsed": 4.854
+          },
+          {
+            "prompt_id": "polqa-identity-039",
+            "raw_answer": "{\n\"szpilki\": true}",
+            "correct_answer": "szpilki",
+            "score": 0.38888888888888884,
+            "error": false,
+            "elapsed": 12.504
+          },
+          {
+            "prompt_id": "polqa-identity-040",
+            "raw_answer": "{ \"Miasto\": \"Katowice\" }",
+            "correct_answer": "w Katowicach",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 7.032
+          },
+          {
+            "prompt_id": "polqa-identity-041",
+            "raw_answer": "{\n\"Trójprzymierze\":\n\n\n\n\n\"Dreibund\", \"Triplice alleanza\":\"Triple Alliance\"\n\n\n\n\n}",
+            "correct_answer": "Trójprzymierze",
+            "score": 0.17721518987341767,
+            "error": false,
+            "elapsed": 18.996
+          },
+          {
+            "prompt_id": "polqa-identity-042",
+            "raw_answer": "{\n\"XX\":\n\"}\"\n}",
+            "correct_answer": "w XX",
+            "score": 0.15384615384615385,
+            "error": false,
+            "elapsed": 7.003
+          },
+          {
+            "prompt_id": "polqa-identity-043",
+            "raw_answer": "{\n\"Księga Powtórzonego Prawa\":",
+            "correct_answer": "Księga Powtórzonego Prawa",
+            "score": 0.8333333333333334,
+            "error": false,
+            "elapsed": 20.524
+          },
+          {
+            "prompt_id": "polqa-identity-044",
+            "raw_answer": "{\n\"architektura\":\n\"}\"\n}",
+            "correct_answer": "architektury",
+            "score": 0.4782608695652174,
+            "error": false,
+            "elapsed": 9.824
+          },
+          {
+            "prompt_id": "polqa-identity-045",
+            "raw_answer": "{\n\"Nie\":",
+            "correct_answer": "nie",
+            "score": 0.375,
+            "error": false,
+            "elapsed": 17.121
+          },
+          {
+            "prompt_id": "polqa-identity-046",
+            "raw_answer": "{\n\"Sforza\":",
+            "correct_answer": "Sforzowie",
+            "score": 0.36363636363636365,
+            "error": false,
+            "elapsed": 13.948
+          },
+          {
+            "prompt_id": "polqa-identity-047",
+            "raw_answer": "{\n\"Łożyska\":{\n    \"definicja\": \"Elementy maszyn, które podtrzymują obracające się wały lub osie i zmniejszają tarcie.\",\n    \"funkcje\": [\n      \"Podtrzymywanie części ruchomych\",\n      \"Umożliwianie ruchu obrotowego\",\n      \"Zmniejszanie tarcia\"\n    ],\n    \"cechy_materiałowe\": [\n      \"Dobra odkształcalność\",\n      \"Odporność na zatarcie\",\n      \"Mały współczynnik tarcia suchego\",\n      \"Odporność na zużycie\",\n      \"Odporność na korozję\",\n      \"Wytrzymałość na nacisk w temperaturze pracy\",\n      \"Wytrzymałość zmęczeniowa\",\n      \"Dobre przewodnictwo cieplne\",\n      \"Stabilność geometryczna\",\n      \"Obrabialność\"\n    ]\n  }\n}",
+            "correct_answer": "łożyska",
+            "score": 0.011075949367088556,
+            "error": false,
+            "elapsed": 49.23
+          },
+          {
+            "prompt_id": "polqa-identity-048",
+            "raw_answer": "{\n\"6 stycznia\":\n\n\n\n\n\"6 stycznia: święto Trzech Króli (trettondedag jul, trettondedagen; dzień świąteczny, wolny od pracy)\"}",
+            "correct_answer": "6 stycznia",
+            "score": 0.08130081300813008,
+            "error": false,
+            "elapsed": 14.585
+          },
+          {
+            "prompt_id": "polqa-identity-049",
+            "raw_answer": "{\n\"Władysław\":",
+            "correct_answer": "Władysław",
+            "score": 0.6428571428571428,
+            "error": false,
+            "elapsed": 17.958
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

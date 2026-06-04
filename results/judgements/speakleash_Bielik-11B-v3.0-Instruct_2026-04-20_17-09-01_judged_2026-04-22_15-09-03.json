@@ -1,0 +1,143 @@
+{
+  "source": "/home/pawel/Desktop/pl-llm-errors/answers/speakleash_Bielik-11B-v3.0-Instruct_2026-04-20_17-09-01.json",
+  "judge_model": "openai/gpt-oss-120b",
+  "datasets": {
+    "identity": {
+      "llmzszl": {
+        "num_sampled": 2,
+        "error_count": 0,
+        "elapsed_sec": 14.48,
+        "judge_error_count": 0,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-identity-000",
+            "raw_answer": "Aby obliczyć pole rombu, mogę skorzystać z wzoru na pole rombu, który jest podobny do wzoru na pole trójkąta: \\( P = a \\cdot h \\), gdzie \\( a \\) to długość boku, a \\( h \\) to wysokość rombu.\n\nPonieważ znam długość boku \\( a = 4 \\) oraz kąt rozwarty \\( 150^\\circ \\), mogę znaleźć wysokość \\( h \\), korzystając z trygonometrii.\n\nW rombie, wysokość można wyrazić jako \\( h = a \\cdot \\sin(\\theta) \\), gdzie \\( \\theta \\) to kąt ostry przyległy do boku. Ponieważ kąt rozwarty wynosi \\( 150^\\circ \\), kąt ostry wynosi \\( 180^\\circ - 150^\\circ = 30^\\circ \\).\n\nZatem:\n\\[ h = 4 \\cdot \\sin(30^\\circ) \\]\n\nWiem, że \\( \\sin(30^\\circ) = \\frac{1}{2} \\), więc:\n\\[ h = 4 \\cdot \\frac{1}{2} = 2 \\]\n\nTeraz mogę obliczyć pole rombu:\n\\[ P = a \\cdot h = 4 \\cdot 2 = 8 \\]\n\nAlternatywnie, mogę skorzystać z wzoru na pole rombu w zależności od kąta: \\( P = a^2 \\cdot \\sin(\\alpha) \\), gdzie \\( \\alpha \\) to kąt rombu. W tym przypadku \\( \\alpha = 150^\\circ \\), więc:\n\\[ P = 4^2 \\cdot \\sin(150^\\circ) = 16 \\cdot \\sin(150^\\circ) \\]\n\nPonieważ \\( \\sin(150^\\circ) = \\sin(180^\\circ - 30^\\circ) = \\sin(30^\\circ) = \\frac{1}{2} \\), to:\n\\[ P = 16 \\cdot \\frac{1}{2} = 8 \\]\n\nOba sposoby dają ten sam wynik.\n\n<ODPOWIEDŹ>8</ODPOWIEDŹ>",
+            "elapsed": 10.156,
+            "error": false,
+            "judgement_context": {
+              "question": "Dany jest romb o boku długości 4 i kącie rozwartym 150°. Ile wynosi pole tego rombu?",
+              "correct_answer": [
+                "8"
+              ]
+            },
+            "judge_scores": {
+              "correctness": {
+                "score": 3,
+                "reason": "Result matches the key and answer is complete"
+              },
+              "reasoning": {
+                "score": 3,
+                "reason": "Explanation correctly applies formulas and calculations"
+              },
+              "conciseness": {
+                "score": 2,
+                "reason": "Includes redundant explanations and repeats methods, could be shorter"
+              },
+              "language": {
+                "score": 3,
+                "reason": "Polish language is correct, no grammatical or orthographic errors"
+              }
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "llmzszl-identity-001",
+            "raw_answer": "Aby obliczyć, ile zapłaci klient za okulary, muszę najpierw określić wysokość zniżki, a następnie odjąć ją od ceny podstawowej.\n\nKrok 1: Obliczenie wysokości zniżki.\nKlient ma 35 lat, więc otrzymuje 35% zniżki.\n\nKrok 2: Obliczenie kwoty zniżki.\nCena okularów bez promocji wynosi 240 zł.\nZniżka = 35% z 240 zł = 0,35 × 240 zł = 84 zł.\n\nKrok 3: Obliczenie ceny po zniżce.\nCena po zniżce = cena podstawowa - zniżka = 240 zł - 84 zł = 156 zł.\n\n<ODPOWIEDŹ>156</ODPOWIEDŹ>",
+            "elapsed": 4.319,
+            "error": false,
+            "judgement_context": {
+              "question": "Promocja w zakładzie optycznym jest związana z wiekiem klienta i polega na tym, że klient otrzymuje tyle procent zniżki, ile ma lat. Cena okularów bez promocji wynosi 240 zł. Ile zapłaci za te okulary klient, który ma 35 lat?",
+              "correct_answer": [
+                "156zł"
+              ]
+            },
+            "judge_scores": {
+              "correctness": {
+                "score": 3,
+                "reason": "Result matches the key (156 zł) and is complete."
+              },
+              "reasoning": {
+                "score": 3,
+                "reason": "Explanation correctly computes 35% of 240 zł and subtracts it to obtain 156 zł."
+              },
+              "conciseness": {
+                "score": 3,
+                "reason": "Provides only the necessary steps and calculation, no superfluous information."
+              },
+              "language": {
+                "score": 3,
+                "reason": "Polish text is grammatically correct, properly punctuated and clear."
+              }
+            },
+            "judge_error": false
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 2,
+        "error_count": 0,
+        "elapsed_sec": 0.43,
+        "judge_error_count": 0,
+        "questions": [
+          {
+            "prompt_id": "polqa-identity-000",
+            "raw_answer": "pręcik",
+            "elapsed": 0.217,
+            "error": false,
+            "judgement_context": {
+              "question": "Jak nazywa się element kwiatu produkujący pyłek, składający się u roślin okrytonasiennych z główki i nitki?",
+              "context": "Pręcik (łac. \"stamen\") – męski organ płciowy w kwiecie wytwarzający pyłek, czyli odpowiednik męskiego gametofitu powstający z mikrospory. Pręciki są występującymi u okrytonasiennych mikrosporofilami. Składają się z nitki i główki tworzonej zazwyczaj przez dwa pylniki zawierające po dwa woreczki pyłkowe, czyli mikrosporangia. Pyłek po dojrzeniu wysypywany jest z pękających pylników i przenoszony przez wiatr, wodę lub zwierzęta, by po osadzeniu na znamionach słupków wrosnąć i dokonać zapłodnienia.",
+              "correct_answer": [
+                "pręcik"
+              ]
+            },
+            "judge_scores": {
+              "correctness": {
+                "score": 3,
+                "reason": "Odpowiedź dokładnie odpowiada kluczowi – podano prawidłowy termin 'pręcik'."
+              },
+              "conciseness": {
+                "score": 2,
+                "reason": "Odpowiedź składa się z jednego słowa, jest maksymalnie zwięzła."
+              },
+              "language": {
+                "score": 3,
+                "reason": "Brak błędów ortograficznych, gramatycznych i interpunkcyjnych; forma odpowiednia."
+              }
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "polqa-identity-001",
+            "raw_answer": "liczebnik",
+            "elapsed": 0.215,
+            "error": false,
+            "judgement_context": {
+              "question": "Co to za część mowy: półtora?",
+              "context": "liczebniki - oznaczające (określające) liczbę, część, kolejność rzeczy, przedmiotów, osób:\nliczebniki główne określają liczbę przedmiotów, osób, zdarzeń, np. jeden, dwa, trzy, sześć, siedem, osiem, dziesięć, trzydzieści.\nliczebniki zbiorowe określają zbiorowość ludzi, zwierząt, przedmiotów, nazw, np. dwoje, troje, pięcioro, siedmioro, ośmioro, dziewięcioro, trzydzieścioro.\nliczebniki porządkowe określają miejsce w szeregu, np. drugi, trzeci, szósty, dwudziesty, czterdziesty, setny, tysięczny.\nułamkowe, określają części ułamkowe czasu, przedmiotów, odległości, np. pół, półtora, ćwierć.",
+              "correct_answer": [
+                "liczebnik"
+              ]
+            },
+            "judge_scores": {
+              "correctness": {
+                "score": 3,
+                "reason": "The answer exactly matches the expected term \"liczebnik\"."
+              },
+              "conciseness": {
+                "score": 2,
+                "reason": "The response is a single word, fully concise."
+              },
+              "language": {
+                "score": 3,
+                "reason": "Spelling and grammar are correct; the form is appropriate."
+              }
+            },
+            "judge_error": false
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

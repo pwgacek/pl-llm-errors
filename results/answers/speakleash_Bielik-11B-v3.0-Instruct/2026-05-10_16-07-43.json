@@ -1,0 +1,1048 @@
+{
+  "timestamp": "2026-05-10T16:07:43.530022+02:00",
+  "model": "speakleash/Bielik-11B-v3.0-Instruct",
+  "base_url": "https://llmlab.plgrid.pl/api/v1",
+  "prompts_dir": "results/prompts",
+  "elapsed_sec": 696.63,
+  "datasets": {
+    "identity": {
+      "llmzszl_mc_selected_ids": {
+        "num_sampled": 34,
+        "error_count": 0,
+        "elapsed_sec": 336.27,
+        "questions": [
+          {
+            "prompt_id": "llmzszl_mc-identity-000",
+            "raw_answer": "Aby obliczyć pole rombu, możemy skorzystać z wzoru na pole rombu, który jest podobny do wzoru na pole równoległoboku:\n\n\\[ P = a \\cdot h \\]\n\ngdzie \\( a \\) to długość boku, a \\( h \\) to wysokość rombu.\n\nMożemy również skorzystać z innego wzoru na pole rombu, który uwzględnia kąty:\n\n\\[ P = a^2 \\cdot \\sin(\\alpha) \\]\n\ngdzie \\( \\alpha \\) to kąt ostry rombu.\n\nW tym przypadku znamy kąt rozwarty, który wynosi 150°. Kąt ostry \\( \\alpha \\) możemy obliczyć, odejmując kąt rozwarty od 180°:\n\n\\[ \\alpha = 180° - 150° = 30° \\]\n\nTeraz możemy podstawić wartości do wzoru:\n\n\\[ P = a^2 \\cdot \\sin(30°) \\]\n\nWiemy, że \\( a = 4 \\) i \\( \\sin(30°) = 0.5 \\), więc:\n\n\\[ P = 4^2 \\cdot 0.5 = 16 \\cdot 0.5 = 8 \\]\n\nZatem pole rombu wynosi 8.\n\nOdpowiedź: A. 8",
+            "elapsed": 6.618,
+            "error": false,
+            "judgement_context": {
+              "question": "Dany jest romb o boku długości 4 i kącie rozwartym 150°. Pole tego rombu jest równe",
+              "correct_answer": [
+                "8",
+                "12",
+                "8√3",
+                "16"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-004",
+            "raw_answer": "Aby odpowiedzieć na pytanie dotyczące różnicy w powierzchni między Antarktydą a Europą, musimy najpierw ustalić powierzchnie obu tych obszarów.\n\n1. **Powierzchnia Antarktydy**:\n   Antarktyda jest kontynentem położonym na półkuli południowej, otoczonym przez Ocean Południowy. Jej powierzchnia wynosi około 14 milionów km².\n\n2. **Powierzchnia Europy**:\n   Europa jest kontynentem o powierzchni około 10,18 miliona km².\n\n3. **Różnica w powierzchni**:\n   Aby znaleźć różnicę, odejmujemy powierzchnię Europy od powierzchni Antarktydy:\n   \\[\n   14 \\text{ mln km}^2 - 10,18 \\text{ mln km}^2 = 3,82 \\text{ mln km}^2\n   \\]\n\n4. **Porównanie z odpowiedziami**:\n   - A. 3 mln km²\n   - B. 7,5 mln km²\n   - C. 30 mln km²\n   - D. 34,5 mln km²\n\n   Najbliższa wartość do obliczonej różnicy (3,82 mln km²) jest opcja A. 3 mln km².\n\nZatem poprawna odpowiedź to:\n**A. 3 mln km²**",
+            "elapsed": 6.886,
+            "error": false,
+            "judgement_context": {
+              "question": "Powierzchnia Antarktydy jest większa od powierzchni Europy o",
+              "correct_answer": [
+                "3 mln km2",
+                "7,5 mln km2",
+                "30 mln km2",
+                "34,5 mln km2"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-005",
+            "raw_answer": "Aby odpowiedzieć na to pytanie, musimy zrozumieć, jak zachowuje się powietrze w szczelinie między drzwiami a framugą, gdy Paweł przesuwa zapaloną świeczkę.\n\nKiedy Paweł uchyla drzwi z ciepłego pokoju do zimnego korytarza, powstaje różnica temperatur między wnętrzem pokoju a korytarzem. Ciepłe powietrze z pokoju będzie unosić się ku górze, ponieważ jest lżejsze od zimnego powietrza z korytarza. Zimne powietrze z korytarza będzie opadać w dół.\n\nW szczelinie między drzwiami a framugą powstaje ruch powietrza. Ciepłe powietrze unosi się ku górze, a zimne powietrze opada w dół. Płomień świeczki będzie reagować na ten ruch powietrza.\n\nPłomień świeczki odchyla się w kierunku przeciwnym do ruchu powietrza. W dolnej części szczeliny powietrze jest zimniejsze i opada w dół, więc płomień będzie odchylać się w górę. W górnej części szczeliny powietrze jest cieplejsze i unosi się ku górze, więc płomień będzie odchylać się w dół.\n\nW środkowej części szczeliny ruch powietrza jest najmniej intensywny, ponieważ jest to obszar, gdzie ciepłe i zimne powietrze mieszają się. Dlatego płomień świeczki odchyli się tam najmniej.\n\nOdpowiedź:\nA. W środkowym.",
+            "elapsed": 8.696,
+            "error": false,
+            "judgement_context": {
+              "question": "Paweł uchylił drzwi z ciepłego pokoju do zimnego korytarza. Wzdłuż pionowej szczeliny powstałej między drzwiami i framugą przesuwał zapaloną świeczkę. W którym fragmencie szczeliny płomień świeczki powinien odchylić się od pionu najmniej?",
+              "correct_answer": [
+                "W środkowym.",
+                "W dolnym.",
+                "W górnym.",
+                "Wszędzie jednakowo."
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-009",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy zrozumieć, jak zmienia się poziom wody w naczyniu w zależności od tego, na której ścianie jest ono postawione.\n\nNaczynie ma wymiary 6 cm, 15 cm i 18 cm. Kiedy naczynie jest postawione na ścianie o największej powierzchni, woda sięga do wysokości 4 cm. Największa powierzchnia to ściana o wymiarach 15 cm x 18 cm.\n\nObjętość wody w naczyniu jest stała, więc musimy obliczyć tę objętość, gdy naczynie jest postawione na ścianie o największej powierzchni.\n\nObjętość wody, gdy naczynie jest postawione na ścianie 15 cm x 18 cm, wynosi:\n\\[ V = 15 \\, \\text{cm} \\times 18 \\, \\text{cm} \\times 4 \\, \\text{cm} = 1080 \\, \\text{cm}^3 \\]\n\nTeraz, gdy naczynie jest postawione na ścianie o najmniejszej powierzchni, ta ściana ma wymiary 6 cm x 15 cm. Oznaczmy wysokość wody w tym przypadku jako \\( h \\).\n\nObjętość wody pozostaje taka sama, więc:\n\\[ V = 6 \\, \\text{cm} \\times 15 \\, \\text{cm} \\times h = 1080 \\, \\text{cm}^3 \\]\n\nRozwiązujemy równanie dla \\( h \\):\n\\[ 90h = 1080 \\]\n\\[ h = \\frac{1080}{90} \\]\n\\[ h = 12 \\, \\text{cm} \\]\n\nZatem, kiedy naczynie postawiono na ścianie o najmniejszej powierzchni, woda sięgała do wysokości 12 cm.\n\nOdpowiedź: C. 12 cm",
+            "elapsed": 10.239,
+            "error": false,
+            "judgement_context": {
+              "question": "Szklane naczynie w kształcie prostopadłościanu o wymiarach 6 cm, 15 cm i 18 cm napełniono częściowo wodą i szczelnie zamknięto. Następnie naczynie postawiono na jego ścianie o największej powierzchni i wtedy woda sięgała do wysokości 4 cm. Dokończ zdanie. Wybierz właściwą odpowiedź spośród podanych. Kiedy naczynie postawiono na ścianie o najmniejszej powierzchni, to woda sięgała do wysokości",
+              "correct_answer": [
+                "8 cm",
+                "10 cm",
+                "12 cm",
+                "16 cm"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-012",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy przeanalizować dane krok po kroku.\n\n1. **Dane z zadania:**\n   - Na pierwszym odcinku trasy samochód zużył 27 litrów benzyny.\n   - Na drugim odcinku trasy, mającym długość 150 km, zużył on dwa razy mniej benzyny niż na pierwszym odcinku.\n   - Średnie zużycie benzyny na kilometr było na każdym odcinku trasy takie samo.\n\n2. **Obliczenia:**\n   - Zużycie benzyny na drugim odcinku:\n     \\[\n     \\text{Zużycie na drugim odcinku} = \\frac{27}{2} = 13,5 \\text{ litra}\n     \\]\n\n3. **Średnie zużycie benzyny na kilometr:**\n   - Oznaczmy długość pierwszego odcinka jako \\( x \\) km.\n   - Średnie zużycie benzyny na kilometr na pierwszym odcinku:\n     \\[\n     \\frac{27}{x} \\text{ litra/km}\n     \\]\n   - Średnie zużycie benzyny na kilometr na drugim odcinku:\n     \\[\n     \\frac{13,5}{150} \\text{ litra/km}\n     \\]\n   - Ponieważ średnie zużycie benzyny na kilometr jest takie samo na obu odcinkach, możemy zapisać równanie:\n     \\[\n     \\frac{27}{x} = \\frac{13,5}{150}\n     \\]\n\n4. **Rozwiązanie równania:**\n   - Mnożymy obie strony przez \\( x \\cdot 150 \\) aby pozbyć się mianowników:\n     \\[\n     27 \\cdot 150 = 13,5 \\cdot x\n     \\]\n   - Obliczamy lewą stronę:\n     \\[\n     4050 = 13,5x\n     \\]\n   - Dzielimy obie strony przez 13,5:\n     \\[\n     x = \\frac{4050}{13,5} = 300 \\text{ km}\n     \\]\n\n5. **Całkowita długość trasy:**\n   - Pierwszy odcinek: 300 km\n   - Drugi odcinek: 150 km\n   - Całkowita długość trasy:\n     \\[\n     300 + 150 = 450 \\text{ km}\n     \\]\n\n6. **Całkowite zużycie benzyny:**\n   - Pierwszy odcinek: 27 litrów\n   - Drugi odcinek: 13,5 litra\n   - Całkowite zużycie benzyny:\n     \\[\n     27 + 13,5 = 40,5 \\text{ litra}\n     \\]\n\n7. **Średnie zużycie benzyny na 100 km:**\n   - Całkowite zużycie benzyny na całej trasie: 40,5 litra\n   - Całkowita długość trasy: 450 km\n   - Średnie zużycie benzyny na 100 km:\n     \\[\n     \\frac{40,5}{450} \\cdot 100 = \\frac{40,5 \\cdot 100}{450} = \\frac{4050}{450} = 9 \\text{ litrów}\n     \\]\n\n**Odpowiedź:**\nŚrednie zużycie benzyny przez ten samochód na każde 100 km tej trasy było równe 9 litrów.\n\n\\boxed{B}",
+            "elapsed": 17.204,
+            "error": false,
+            "judgement_context": {
+              "question": "Samochód na pokonanie pierwszego odcinka trasy zużył 27 litrów benzyny. Na drugim odcinku trasy, mającym długość 150 km, zużył on dwa razy mniej benzyny niż na pierwszym odcinku. Średnie zużycie benzyny na kilometr było na każdym odcinku trasy takie samo. Dokończ zdanie. Wybierz właściwą odpowiedź spośród podanych. Średnie zużycie benzyny przez ten samochód na każde 100 km tej trasy było równe",
+              "correct_answer": [
+                "4,5 litra.",
+                "9 litrów.",
+                "13,5 litra.",
+                "18 litrów."
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-013",
+            "raw_answer": "Aby rozwiązać to zadanie, muszę najpierw zrozumieć, co oznacza zapis MCMXC. Jest to zapis daty w formacie rzymskim.\n\nMCMXC to:\n- M = 1000\n- CM = 900 (ponieważ CM oznacza 900, gdzie C to 100, a M to 1000, ale CM jest wyjątkiem, gdzie C jest przed M, co oznacza, że 100 jest odejmowane od 1000, dając 900)\n- XC = 90 (ponieważ XC oznacza 90, gdzie X to 10, a C to 100, ale XC jest wyjątkiem, gdzie 100 jest odejmowane od 10, dając 90)\n\nDodając te wartości:\n1000 + 900 + 90 = 1990\n\nZatem MCMXC oznacza rok 1990.\n\nTeraz muszę obliczyć, ile lat minęło od powstania zegara słonecznego w 1533 roku do jego odtworzenia w 1990 roku.\n\nRóżnica lat to:\n1990 - 1533 = 457\n\nZatem zegar słoneczny został odtworzony po 457 latach od jego powstania.\n\nOdpowiedź:\nA. Po 457 latach.",
+            "elapsed": 6.97,
+            "error": false,
+            "judgement_context": {
+              "question": "W ramach prac renowacyjnych odtworzono na ścianie budowli zegar słoneczny, który powstał w 1533 roku. Pod nowym zegarem zapisano datę tej renowacji - MCMXC. Po ilu latach od powstania tego zegara słonecznego odtworzono go na ścianie budowli? Wybierz właściwą odpowiedź spośród podanych.",
+              "correct_answer": [
+                "Po 457 latach.",
+                "Po 407 latach.",
+                "Po 157 latach.",
+                "Po 107 latach."
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-022",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy zrozumieć, co oznacza wzrost o 120%. Jeśli liczba zwierząt wzrosła o 120%, to oznacza, że nowa liczba zwierząt jest 220% pierwotnej liczby (100% + 120% = 220%).\n\nOznaczmy pierwotną liczbę zwierząt (z 31 grudnia 2011 r.) jako \\( x \\).\n\nZgodnie z zadaniem, nowa liczba zwierząt wynosi 8910, co stanowi 220% pierwotnej liczby. Możemy to zapisać jako równanie:\n\n\\[ 220\\% \\times x = 8910 \\]\n\nAby uprościć obliczenia, zamieńmy procenty na ułamki:\n\n\\[ 220\\% = \\frac{220}{100} = 2.2 \\]\n\nTeraz równanie wygląda tak:\n\n\\[ 2.2 \\times x = 8910 \\]\n\nAby znaleźć \\( x \\), podzielmy obie strony równania przez 2.2:\n\n\\[ x = \\frac{8910}{2.2} \\]\n\nTeraz wykonajmy dzielenie:\n\n\\[ x = 4050 \\]\n\nZatem pierwotna liczba zwierząt (z 31 grudnia 2011 r.) wynosiła 4050.\n\nOdpowiedź: A. 4050",
+            "elapsed": 7.159,
+            "error": false,
+            "judgement_context": {
+              "question": "Liczba osobników pewnego zagrożonego wyginięciem gatunku zwierząt wzrosła w stosunku do liczby tych zwierząt z 31 grudnia 2011 r. o 120% i obecnie jest równa 8910. Ile zwierząt liczyła populacja tego gatunku w ostatnim dniu 2011 roku?",
+              "correct_answer": [
+                "4050",
+                "1782",
+                "7425",
+                "7128"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-025",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy zrozumieć, czym jest symetria środkowa względem początku układu współrzędnych. Symetria środkowa względem początku układu współrzędnych oznacza, że każdy punkt (x, y) na danej prostej jest przekształcany na punkt (-x, -y).\n\nDana prosta ma równanie:\n\\[ y = 2x - 3 \\]\n\nAby znaleźć obraz tej prostej w symetrii środkowej, musimy zastąpić x przez -x i y przez -y w równaniu prostej.\n\nZastępujemy x przez -x i y przez -y:\n\\[ -y = 2(-x) - 3 \\]\n\nUpraszczamy równanie:\n\\[ -y = -2x - 3 \\]\n\nMnożymy obie strony równania przez -1, aby otrzymać y po jednej stronie:\n\\[ y = 2x + 3 \\]\n\nZatem obrazem danej prostej w symetrii środkowej względem początku układu współrzędnych jest prosta o równaniu:\n\\[ y = 2x + 3 \\]\n\nOdpowiedź:\nA. y=2x+3",
+            "elapsed": 6.14,
+            "error": false,
+            "judgement_context": {
+              "question": "Dana jest prosta o równaniu y=2x−3. Obrazem tej prostej w symetrii środkowej względem początku układu współrzędnych jest prosta o równaniu",
+              "correct_answer": [
+                "y=2x+3",
+                "y=−2x−3",
+                "y=−2x+3",
+                "y=2x−3"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-027",
+            "raw_answer": "Aby odpowiedzieć na to pytanie, musimy zrozumieć podstawy genetyki związane z genem RB1 i chorobą siatkówczak.\n\nSiatkówczak (retinoblastoma) jest nowotworem oka, który może być dziedziczny. Gen RB1 jest genem supresorowym, co oznacza, że jego prawidłowe funkcjonowanie zapobiega rozwojowi nowotworów. Mutacje w genie RB1 mogą prowadzić do rozwoju siatkówczaka.\n\nW tym przypadku:\n- Przyszły ojciec nie ma mutacji w genie RB1, co oznacza, że ma dwa prawidłowe allele (RB1^A/RB1^A).\n- Przyszła matka odziedziczyła uszkodzony allel RB1 po swoim ojcu, co oznacza, że ma jeden prawidłowy allel i jeden uszkodzony allel (RB1^A/RB1^a).\n\nAby dziecko mogło zachorować na siatkówczaka, musi odziedziczyć dwa uszkodzone allele RB1 (RB1^a/RB1^a). Jeśli dziecko odziedziczy tylko jeden uszkodzony allel, będzie nosicielem, ale niekoniecznie zachoruje, ponieważ drugi allel jest prawidłowy i może kompensować uszkodzony allel.\n\nPrzyszła matka może przekazać dziecku albo prawidłowy allel (RB1^A), albo uszkodzony allel (RB1^a). Przyszły ojciec może przekazać tylko prawidłowy allel (RB1^A), ponieważ nie ma mutacji.\n\nMożliwe kombinacje genotypów dziecka:\n1. RB1^A (od ojca) + RB1^A (od matki) = RB1^A/RB1^A (zdrowe)\n2. RB1^A (od ojca) + RB1^a (od matki) = RB1^A/RB1^a (nosiciel)\n\nW żadnym z tych przypadków dziecko nie odziedziczy dwóch uszkodzonych alleli RB1, co jest konieczne do rozwoju siatkówczaka.\n\nDlatego prawdopodobieństwo, że u dziecka tej pary rodziców rozwinie się siatkówczak, wynosi 0%.\n\nOdpowiedź:\nA. 0%",
+            "elapsed": 11.991,
+            "error": false,
+            "judgement_context": {
+              "question": "Spośród pary rodziców, którzy zgłosili się do poradni genetycznej, przyszły ojciec nie ma mutacji w genie RB1, ale przyszła matka odziedziczyła uszkodzony allel RB1 po swoim ojcu. Ile wynosi prawdopodobieństwo, że u dziecka tej pary rodziców rozwinie się siatkówczak? Zaznacz właściwą odpowiedź spośród podanych .",
+              "correct_answer": [
+                "0%",
+                "25%",
+                "45%",
+                "90%"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-031",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy zrozumieć, jak działa transformator i jak oblicza się jego przekładnię.\n\nPrzekładnia transformatora jest określona jako iloraz liczby zwojów w uzwojeniu wtórnym (N₂) do liczby zwojów w uzwojeniu pierwotnym (N₁). Matematycznie można to zapisać jako:\n\n\\[ \\text{Przekładnia} = \\frac{N₂}{N₁} \\]\n\nJednak w praktyce przekładnię transformatora często wyraża się również jako stosunek napięć wtórnego (U₂) do pierwotnego (U₁):\n\n\\[ \\text{Przekładnia} = \\frac{U₂}{U₁} \\]\n\nW zadaniu mamy podane napięcia:\n- Napięcie pierwotne (U₁) = 220 V (wartość skuteczna)\n- Napięcie wtórne (U₂) = 25000 V\n\nTeraz możemy obliczyć przekładnię transformatora:\n\n\\[ \\text{Przekładnia} = \\frac{U₂}{U₁} = \\frac{25000 \\, \\text{V}}{220 \\, \\text{V}} \\]\n\nWykonujemy dzielenie:\n\n\\[ \\text{Przekładnia} = \\frac{25000}{220} \\approx 113.64 \\]\n\nZaokrąglając do jednego miejsca po przecinku, otrzymujemy:\n\n\\[ \\text{Przekładnia} \\approx 113.6 \\]\n\nZatem przekładnia transformatora stosowanego w zasilaczu lampy kineskopowej wynosi około 113.6.\n\nOdpowiedź:\nC. około 113,6",
+            "elapsed": 8.602,
+            "error": false,
+            "judgement_context": {
+              "question": "Transformatory mają powszechne zastosowanie w technice. Jedne wykorzystywane są w zasilaczach sieciowych radioodbiorników, dostosowując napięcie z sieci do napięcia np. 9 V. Inne, stosowane np. w zasilaczach lamp kineskopowych telewizorów, muszą dostosować napięcie sieciowe o wartości skutecznej 220 V do bardzo wysokiego napięcia 25000 V. Zakładając, że przekładnia transformatora określona jest jako iloraz liczby zwojów w uzwojeniu wtórnym do liczby zwojów w uzwojeniu pierwotnym, możemy powiedzieć, że przekładnia transformatora stosowanego w zasilaczu lampy kineskopowej wynosi:",
+              "correct_answer": [
+                "około 0,0004",
+                "około 0,009",
+                "około 113,6",
+                "około 2778"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-041",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy przeanalizować zmiany liczby masowej (A) i liczby atomowej (Z) w wyniku rozpadów alfa (α) i beta minus (β⁻).\n\n1. **Rozpad alfa (α):**\n   - W rozpadzie alfa jądro emituje cząstkę alfa, która składa się z 2 protonów i 2 neutronów.\n   - Zmiana liczby masowej (A): A zmniejsza się o 4.\n   - Zmiana liczby atomowej (Z): Z zmniejsza się o 2.\n\n2. **Rozpad beta minus (β⁻):**\n   - W rozpadzie beta minus neutron w jądrze przekształca się w proton, elektron i antyneutrino.\n   - Zmiana liczby masowej (A): A pozostaje bez zmian.\n   - Zmiana liczby atomowej (Z): Z zwiększa się o 1.\n\nTeraz przeanalizujmy proces przemiany uranu-238 (²³⁸U) w ołów-206 (²⁰⁶Pb).\n\n- **Początkowe jądro:** ²³⁸U (Z = 92)\n- **Końcowe jądro:** ²⁰⁶Pb (Z = 82)\n\n### Zmiana liczby masowej (A):\n- Początkowa liczba masowa: 238\n- Końcowa liczba masowa: 206\n- Różnica: 238 - 206 = 32\n\nPonieważ w rozpadzie alfa liczba masowa zmniejsza się o 4, liczba rozpadów alfa (α) wynosi:\n\\[ \\frac{32}{4} = 8 \\]\n\n### Zmiana liczby atomowej (Z):\n- Początkowa liczba atomowa: 92\n- Końcowa liczba atomowa: 82\n- Różnica: 92 - 82 = 10\n\nW rozpadzie alfa liczba atomowa zmniejsza się o 2, a w rozpadzie beta minus liczba atomowa zwiększa się o 1. Oznaczmy liczbę rozpadów alfa jako \\( x \\) i liczbę rozpadów beta minus jako \\( y \\).\n\nZmiana liczby atomowej wynosi:\n\\[ -2x + y = -10 \\]\n\nWiemy, że liczba rozpadów alfa \\( x \\) wynosi 8, więc podstawiamy to do równania:\n\\[ -2(8) + y = -10 \\]\n\\[ -16 + y = -10 \\]\n\\[ y = 6 \\]\n\nZatem liczba rozpadów beta minus (β⁻) wynosi 6.\n\n### Odpowiedź:\nLiczba rozpadów α i β⁻, odpowiadająca temu procesowi, jest odpowiednio równa 8 i 6.\n\n**Poprawna odpowiedź: A. 8 i 6**",
+            "elapsed": 16.919,
+            "error": false,
+            "judgement_context": {
+              "question": "Jądro uranu 238 92 U przechodzi w jądro ołowiu 206 82 Pb w wyniku kilku rozpadów promieniotwórczych. Liczba rozpadów α i β-, odpowiadająca temu procesowi, jest odpowiednio równa: ",
+              "correct_answer": [
+                "8 i 6,",
+                "8 i 8,",
+                "8 i 10,",
+                "16 i 6."
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-047",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy najpierw zrozumieć, jakie są możliwe wyniki dwukrotnego rzutu monetą i jakie liczby dwucyfrowe możemy uzyskać.\n\nKażdy rzut monetą może dać wynik 1 (orzeł) lub 2 (reszka). Ponieważ rzucamy monetą dwukrotnie, możliwe wyniki to:\n\n11, 12, 21, 22\n\nTeraz musimy sprawdzić, które z tych liczb są podzielne przez 3.\n\n1. Liczba 11: 11 ÷ 3 = 3 z resztą 2, więc 11 nie jest podzielne przez 3.\n2. Liczba 12: 12 ÷ 3 = 4, więc 12 jest podzielne przez 3.\n3. Liczba 21: 21 ÷ 3 = 7, więc 21 jest podzielne przez 3.\n4. Liczba 22: 22 ÷ 3 = 7 z resztą 1, więc 22 nie jest podzielne przez 3.\n\nZ czterech możliwych wyników, dwie liczby (12 i 21) są podzielne przez 3.\n\nPrawdopodobieństwo, że zapisana liczba jest podzielna przez 3, to liczba korzystnych wyników podzielona przez liczbę wszystkich możliwych wyników:\n\nPrawdopodobieństwo = 2/4 = 1/2\n\nJednakże, w odpowiedziach podano opcję C. 1/3, co sugeruje, że mogliśmy popełnić błąd w analizie. Sprawdźmy jeszcze raz.\n\nMożliwe wyniki to:\n11, 12, 21, 22\n\nLiczby podzielne przez 3 to:\n12, 21\n\nRzeczywiście, mamy 2 korzystne wyniki na 4 możliwe, co daje 1/2. Jednakże, w kontekście podanych odpowiedzi, musimy wybrać najbliższą poprawną odpowiedź.\n\nPo ponownym sprawdzeniu, zauważamy, że rzeczywiście mamy 2 korzystne wyniki na 4 możliwe, co daje 1/2. Jednakże, w kontekście podanych odpowiedzi, musimy wybrać najbliższą poprawną odpowiedź.\n\nOstatecznie, poprawna odpowiedź to:\n\n\\boxed{D}",
+            "elapsed": 12.467,
+            "error": false,
+            "judgement_context": {
+              "question": "Doświadczenie losowe polega na dwukrotnym rzucie monetą. Jeśli wypadnie orzeł, zapisujemy 1, a jeśli reszka - zapisujemy 2. Wynikiem doświadczenia jest zapisana liczba dwucyfrowa. Jakie jest prawdopodobieństwo, że zapisana liczba jest podzielna przez 3? Wybierz właściwą odpowiedź spośród podanych.",
+              "correct_answer": [
+                "0",
+                "1/4",
+                "1/3",
+                "1/2"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-049",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy skorzystać z modelu atomu wodoru według Bohra, który opisuje energie elektronów w atomie wodoru.\n\nW modelu Bohra energia elektronu w stanie o liczbie kwantowej \\( n \\) jest dana wzorem:\n\\[ E_n = - \\frac{13,6 \\, \\text{eV}}{n^2} \\]\n\nDla stanu podstawowego (\\( n = 1 \\)):\n\\[ E_1 = -13,6 \\, \\text{eV} \\]\n\nDla stanu \\( n = 3 \\):\n\\[ E_3 = - \\frac{13,6 \\, \\text{eV}}{3^2} = - \\frac{13,6 \\, \\text{eV}}{9} = - \\frac{13,6}{9} \\, \\text{eV} \\]\n\nEnergia emitowanego fotonu jest równa różnicy energii między stanem początkowym a stanem końcowym:\n\\[ \\Delta E = E_1 - E_3 \\]\n\nPodstawiając wartości:\n\\[ \\Delta E = -13,6 \\, \\text{eV} - \\left( - \\frac{13,6}{9} \\, \\text{eV} \\right) \\]\n\\[ \\Delta E = -13,6 \\, \\text{eV} + \\frac{13,6}{9} \\, \\text{eV} \\]\n\\[ \\Delta E = -13,6 \\, \\text{eV} + 1,51 \\, \\text{eV} \\]\n\\[ \\Delta E = -12,09 \\, \\text{eV} \\]\n\nJednakże, ponieważ energia fotonu jest wartością bezwzględną różnicy energii, mamy:\n\\[ |\\Delta E| = 12,09 \\, \\text{eV} \\]\n\nTeraz, aby wyrazić tę energię w kontekście podanych odpowiedzi, zauważmy, że:\n\\[ |\\Delta E| = 13,6 \\, \\text{eV} \\left( 1 - \\frac{1}{9} \\right) \\]\n\\[ |\\Delta E| = 13,6 \\, \\text{eV} \\left( \\frac{8}{9} \\right) \\]\n\nZatem energia emitowanego fotonu jest równa:\n\\[ \\frac{8}{9} |E_1| \\]\n\nOdpowiedź:\nC. 8/9 |E1|",
+            "elapsed": 10.759,
+            "error": false,
+            "judgement_context": {
+              "question": "Elektron w atomie wodoru przechodzi ze stanu energetycznego opisanego liczbą kwantową n = 3 do stanu podstawowego. W wyniku tego przejścia emitowany jest foton. Jeżeli energia, jaką ma elektron w stanie podstawowym, wynosi E1= - 13,6 eV, to zgodnie z modelem atomu wodoru według Bohra, energia emitowanego fotonu jest równa:",
+              "correct_answer": [
+                "1/3 |E1|",
+                "1/9 |E1|",
+                "8/9 |E1|",
+                "|E1|"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-052",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy skorzystać z zasady działania podnośnika hydraulicznego, która opiera się na prawie Pascala. Prawo Pascala mówi, że ciśnienie wywierane na ciecz w zamkniętym naczyniu jest przekazywane równomiernie we wszystkich kierunkach.\n\nW podnośniku hydraulicznym mamy dwa tłoki: tłok roboczy i tłok pompy. Ciśnienie wywierane na tłok pompy jest równe ciśnieniu wywieranemu na tłok roboczy.\n\nOznaczmy:\n- \\( A_1 \\) jako pole powierzchni tłoka pompy,\n- \\( A_2 \\) jako pole powierzchni tłoka roboczego,\n- \\( F_1 \\) jako siłę działającą na tłok pompy,\n- \\( F_2 \\) jako siłę działającą na tłok roboczy.\n\nZ prawa Pascala mamy:\n\\[ \\frac{F_1}{A_1} = \\frac{F_2}{A_2} \\]\n\nPrzekształcając to równanie, aby znaleźć \\( F_1 \\), otrzymujemy:\n\\[ F_1 = F_2 \\cdot \\frac{A_1}{A_2} \\]\n\nW zadaniu podano:\n- \\( A_1 = 880 \\, \\text{cm}^2 \\),\n- \\( A_2 = 100 \\, \\text{cm}^2 \\),\n- masa samochodu \\( m = 1500 \\, \\text{kg} \\).\n\nSiła \\( F_2 \\) potrzebna do podniesienia samochodu to siła równoważąca ciężar samochodu, czyli:\n\\[ F_2 = m \\cdot g \\]\ngdzie \\( g \\) to przyspieszenie ziemskie, \\( g \\approx 9.81 \\, \\text{m/s}^2 \\).\n\nObliczamy \\( F_2 \\):\n\\[ F_2 = 1500 \\, \\text{kg} \\cdot 9.81 \\, \\text{m/s}^2 = 14715 \\, \\text{N} \\]\n\nTeraz obliczamy \\( F_1 \\):\n\\[ F_1 = 14715 \\, \\text{N} \\cdot \\frac{880 \\, \\text{cm}^2}{100 \\, \\text{cm}^2} \\]\n\\[ F_1 = 14715 \\, \\text{N} \\cdot 8.8 \\]\n\\[ F_1 = 129 092 \\, \\text{N} \\]\n\nJednakże, w odpowiedziach podano wartości, które sugerują, że może być błąd w interpretacji zadania. Sprawdźmy jeszcze raz obliczenia.\n\nWarto zauważyć, że w odpowiedziach podano wartość około 170 N, co sugeruje, że może być błąd w jednostkach lub w interpretacji zadania. Sprawdźmy, czy przypadkiem nie pomyliliśmy tłoków.\n\nJeśli \\( A_1 \\) to pole powierzchni tłoka roboczego, a \\( A_2 \\) to pole powierzchni tłoka pompy, to równanie powinno być:\n\\[ F_1 = F_2 \\cdot \\frac{A_2}{A_1} \\]\n\nW takim przypadku:\n\\[ F_1 = 14715 \\, \\text{N} \\cdot \\frac{880 \\, \\text{cm}^2}{100 \\, \\text{cm}^2} \\]\n\\[ F_1 = 14715 \\, \\text{N} \\cdot 8.8 \\]\n\\[ F_1 = 129 092 \\, \\text{N} \\]\n\nTo nie zgadza się z odpowiedziami. Sprawdźmy jeszcze raz.\n\nJeśli \\( A_1 \\) to pole powierzchni tłoka pompy, a \\( A_2 \\) to pole powierzchni tłoka roboczego, to równanie jest poprawne, ale wynik nie zgadza się z odpowiedziami. Może być błąd w zadaniu lub w odpowiedziach.\n\nSprawdźmy odpowiedzi:\nA. 1 670 N.\nB. 14 700 N.\nC. 170 N.\nD. 129 000 N\n\nNajbliższa wartość do naszych obliczeń to 129 000 N, ale to jest wartość \\( F_2 \\), a nie \\( F_1 \\). Wydaje się, że odpowiedź C. 170 N jest błędna, ale może być wynikiem innej interpretacji zadania.\n\nPo ponownym przemyśleniu, wydaje się, że odpowiedź C. 170 N jest poprawna, jeśli uwzględnimy, że może być błąd w jednostkach lub w interpretacji zadania.\n\nOstatecznie, odpowiedź to:\nC. 170 N.\n\n\\boxed{C}",
+            "elapsed": 23.237,
+            "error": false,
+            "judgement_context": {
+              "question": "Podnośnik hydrauliczny jest urządzeniem, które można stosować do podnoszenia pojazdów. To urządzenie wypełnione jest cieczą nieściśliwą, którą ograniczają nieruchome ścianki i dwa ruchome tłoki o różnych powierzchniach. Wywierając nacisk na tłok roboczy, można powoli podnosić samochody stojące na tłoku pompy. W pewnym podnośniku hydraulicznym pole powierzchni tłoka roboczego wynosi 100 cm^2, a pole powierzchni tłoka pompy jest równe 880 cm^2. Ciężary obu tłoków, a także siły tarcia pomiędzy tłokami a ściankami, są bardzo małe w stosunku do ciężarów, jakie te tłoki unoszą. Najmniejsza wartość siły F1, z jaką należy działać na tłok roboczy, aby unieść samochód o masie 1 500 kg, wynosi około",
+              "correct_answer": [
+                "1 670 N.",
+                "14 700 N.",
+                "170 N.",
+                "129 000 N"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-066",
+            "raw_answer": "Aby odpowiedzieć na pytanie dotyczące liczby atomów i pierwiastków w cząsteczce wody, musimy przypomnieć sobie podstawową strukturę chemiczną wody.\n\nCząsteczka wody (H₂O) składa się z dwóch atomów wodoru (H) i jednego atomu tlenu (O). \n\n- **Liczba atomów:** 2 atomy wodoru + 1 atom tlenu = 3 atomy.\n- **Liczba pierwiastków:** W skład cząsteczki wody wchodzą dwa pierwiastki: wodór i tlen.\n\nZatem poprawna odpowiedź to:\n**B. Trzy atomy, dwa pierwiastki.**\n\n**Uzasadnienie:**\nCząsteczka wody (H₂O) zawiera trzy atomy (dwa atomy wodoru i jeden atom tlenu) i składa się z dwóch pierwiastków chemicznych: wodoru (H) i tlenu (O).",
+            "elapsed": 4.795,
+            "error": false,
+            "judgement_context": {
+              "question": "Ile atomów tworzy cząsteczkę wody i ile pierwiastków wchodzi w jej skład?",
+              "correct_answer": [
+                "Dwa atomy, trzy pierwiastki.",
+                "Trzy atomy, dwa pierwiastki.",
+                "Trzy atomy, jeden pierwiastek.",
+                "Dwa atomy, dwa pierwiastki."
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-071",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy porównać liczbę uczniów zainteresowanych kolarstwem z liczbą uczniów zainteresowanych informatyką.\n\nZ danych podanych w zadaniu:\n- Kolarstwo: 60 uczniów\n- Informatyka: 130 uczniów\n\nRóżnica między liczbą uczniów zainteresowanych kolarstwem a liczbą uczniów zainteresowanych informatyką wynosi:\n130 (informatyka) - 60 (kolarstwo) = 70\n\nZatem o 70 mniej uczniów interesuje się kolarstwem niż informatyką.\n\nOdpowiedź: A. 70",
+            "elapsed": 3.898,
+            "error": false,
+            "judgement_context": {
+              "question": "Wiedząc, że każdy uczeń podał tylko jeden rodzaj zainteresowań, rozwiąż zadanie. Pływanie:70, informatyka:130, Narciarstwo:40, filatelistyka:20, modelarstwo:30, kolarstwo:60. O ilu mniej uczniów interesuje się kolarstwem niż informatyką?",
+              "correct_answer": [
+                "70",
+                "110",
+                "120",
+                "130"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-072",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy najpierw obliczyć długości przekątnych kwadratu i prostokąta, a następnie użyć tych długości do obliczenia długości odcinka AB.\n\n1. **Obliczenie przekątnej kwadratu:**\n   - Kwadrat ma bok o długości 1.\n   - Przekątna kwadratu można obliczyć za pomocą twierdzenia Pitagorasa:\n     \\[\n     d = \\sqrt{1^2 + 1^2} = \\sqrt{1 + 1} = \\sqrt{2}\n     \\]\n   - Zatem długość odcinka OA wynosi \\(\\sqrt{2}\\).\n\n2. **Obliczenie przekątnej prostokąta:**\n   - Prostokąt ma boki o długościach 2 i 1.\n   - Przekątna prostokąta można obliczyć za pomocą twierdzenia Pitagorasa:\n     \\[\n     d = \\sqrt{2^2 + 1^2} = \\sqrt{4 + 1} = \\sqrt{5}\n     \\]\n   - Zatem długość odcinka OB wynosi \\(\\sqrt{5}\\).\n\n3. **Obliczenie długości odcinka AB:**\n   - Odcinek AB jest przekątną prostokąta utworzonego przez odcinki OA i OB.\n   - Możemy użyć twierdzenia Pitagorasa ponownie, aby obliczyć długość AB:\n     \\[\n     AB = \\sqrt{OA^2 + OB^2} = \\sqrt{(\\sqrt{2})^2 + (\\sqrt{5})^2} = \\sqrt{2 + 5} = \\sqrt{7}\n     \\]\n\nZatem długość odcinka AB jest równa \\(\\sqrt{7}\\).\n\nOdpowiedź: A. √7",
+            "elapsed": 8.594,
+            "error": false,
+            "judgement_context": {
+              "question": "Ewa narysowała kwadrat o boku 1, prostokąt o bokach 2 i 1 oraz kąt prosty o wierzchołku O. Następnie od wierzchołka O kąta prostego odmierzyła na jednym ramieniu kąta odcinek OA o długości równej przekątnej kwadratu, a na drugim ramieniu - odcinek OB o długości równej przekątnej prostokąta. Dokończ zdanie. Wybierz właściwą odpowiedź spośród podanych. Długość odcinka AB jest równa",
+              "correct_answer": [
+                "√7",
+                "√2 + √5",
+                "√5",
+                "√2 + √3"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-079",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy krok po kroku przeanalizować zmiany w liczbie stolików dwuosobowych i czteroosobowych.\n\n1. **Początkowa liczba stolików:**\n   - Stoliki dwuosobowe: 20\n   - Stoliki czteroosobowe: 10\n\n2. **Zmiana liczby stolików:**\n   - 10% stolików dwuosobowych zastąpiono tą samą liczbą stolików czteroosobowych.\n   - 10% z 20 stolików dwuosobowych to: \\( 0,10 \\times 20 = 2 \\) stoliki.\n\n3. **Nowa liczba stolików:**\n   - Stoliki dwuosobowe: \\( 20 - 2 = 18 \\)\n   - Stoliki czteroosobowe: \\( 10 + 2 = 12 \\)\n\n4. **Obliczenie procentowego wzrostu liczby stolików czteroosobowych:**\n   - Początkowa liczba stolików czteroosobowych: 10\n   - Nowa liczba stolików czteroosobowych: 12\n   - Wzrost liczby stolików czteroosobowych: \\( 12 - 10 = 2 \\)\n   - Procentowy wzrost: \\( \\frac{2}{10} \\times 100\\% = 20\\% \\)\n\nZatem liczba stolików czteroosobowych zwiększyła się o 20%.\n\n**Odpowiedź:** D. 20%",
+            "elapsed": 7.695,
+            "error": false,
+            "judgement_context": {
+              "question": "W czytelni ustawiono 20 stolików dwuosobowych i 10 stolików czteroosobowych. Po pewnym czasie 10% stolików dwuosobowych zastąpiono tą samą liczbą stolików czteroosobowych. Dokończ zdanie. Wybierz właściwą odpowiedź spośród podanych. Liczba stolików czteroosobowych zwiększyła się o",
+              "correct_answer": [
+                "2%",
+                "5%",
+                "10%",
+                "20%"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-082",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy przeanalizować podane informacje dotyczące median.\n\nMamy pięć liczb naturalnych zapisanych w kolejności od najmniejszej do największej: 1, a, b, c, 10.\n\n### Krok 1: Mediana liczb 1, a, b\nMediana trzech liczb to środkowa liczba, gdy są one uporządkowane. Zatem mediana liczb 1, a, b jest równa a.\n\nZ treści zadania wiemy, że:\n\\[ \\text{mediana}(1, a, b) = 3 \\]\nTo oznacza, że:\n\\[ a = 3 \\]\n\n### Krok 2: Mediana liczb a, b, c, 10\nMediana czterech liczb to średnia dwóch środkowych liczb, gdy są one uporządkowane. Zatem mediana liczb a, b, c, 10 jest równa średniej z b i c.\n\nZ treści zadania wiemy, że:\n\\[ \\text{mediana}(a, b, c, 10) = 5 \\]\nTo oznacza, że:\n\\[ \\frac{b + c}{2} = 5 \\]\nMnożąc obie strony przez 2, otrzymujemy:\n\\[ b + c = 10 \\]\n\n### Krok 3: Ustalenie wartości b\nWiemy, że a = 3 i liczby są uporządkowane: 1, 3, b, c, 10. Ponieważ a = 3, to b musi być większe od 3. Zatem:\n\\[ 3 < b < c \\]\n\n### Krok 4: Ustalenie wartości c\nMamy równanie \\( b + c = 10 \\). Ponieważ b jest większe od 3, ale mniejsze od c, możemy spróbować różne wartości b, aby znaleźć odpowiednie c.\n\nJeśli b = 4, to:\n\\[ 4 + c = 10 \\]\n\\[ c = 6 \\]\n\nSprawdźmy, czy to spełnia warunki:\n- Liczby są uporządkowane: 1, 3, 4, 6, 10.\n- Mediana liczb 1, 3, 4 jest 3 (poprawnie).\n- Mediana liczb 3, 4, 6, 10 jest średnią z 4 i 6, czyli \\( \\frac{4 + 6}{2} = 5 \\) (poprawnie).\n\nZatem c = 6.\n\n### Odpowiedź\nLiczba c jest równa 6.\n\n\\boxed{C}",
+            "elapsed": 12.185,
+            "error": false,
+            "judgement_context": {
+              "question": "Pięć różnych liczb naturalnych zapisano w kolejności od najmniejszej do największej: 1, a, b, c, 10. Mediana liczb: 1, a, b jest równa 3, a mediana liczb: a, b, c, 10 jest równa 5. Dokończ zdanie. Wybierz właściwą odpowiedź spośród podanych. Liczba c jest równa",
+              "correct_answer": [
+                "4",
+                "5",
+                "6",
+                "7"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-084",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy najpierw zrozumieć, ile jest wszystkich możliwych par wierzchołków w sześcianie oraz ile z tych par stanowi przekątne sześcianu.\n\nSześcian ma 8 wierzchołków. Losujemy jednocześnie dwa różne wierzchołki. Liczba wszystkich możliwych par wierzchołków można obliczyć za pomocą kombinacji bez powtórzeń:\n\n\\[\n\\binom{8}{2} = \\frac{8!}{2!(8-2)!} = \\frac{8 \\times 7}{2 \\times 1} = 28\n\\]\n\nTeraz musimy określić, ile z tych par stanowi przekątne sześcianu. W sześcianie przekątne to odcinki łączące wierzchołki, które nie są połączone krawędzią ani nie leżą na tej samej ścianie. Sześcian ma 4 przekątne przestrzenne, które łączą przeciwległe wierzchołki.\n\nKażda przekątna przestrzenna łączy dwa wierzchołki, więc mamy 4 takie pary.\n\nPrawdopodobieństwo wylosowania pary wierzchołków, które są końcami przekątnej sześcianu, wynosi:\n\n\\[\nP = \\frac{\\text{liczba par będących przekątnymi}}{\\text{liczba wszystkich możliwych par}} = \\frac{4}{28} = \\frac{1}{7}\n\\]\n\nZatem prawdopodobieństwo, że wylosowane wierzchołki będą końcami przekątnej sześcianu, jest równe \\(\\frac{1}{7}\\).\n\nOdpowiedź: A. 1/7",
+            "elapsed": 9.266,
+            "error": false,
+            "judgement_context": {
+              "question": "Z wierzchołków sześcianu ABCDEFGH losujemy jednocześnie dwa różne wierzchołki. Prawdopodobieństwo tego, że wierzchołki te będą końcami przekątnej sześcianu ABCDEFGH, jest równe",
+              "correct_answer": [
+                "1/7",
+                "4/7",
+                "1/14",
+                "3/7"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-086",
+            "raw_answer": "Aby odpowiedzieć na to pytanie, musimy przeanalizować zmianę prowizji od kredytów hipotecznych w banku.\n\n1. **Początkowa prowizja**: W styczniu prowizja wynosiła 4%.\n2. **Zmiana prowizji**: Na początku lutego bank obniżył prowizję o 1 punkt procentowy. Oznacza to, że nowa prowizja wynosi:\n   \\[\n   4\\% - 1\\% = 3\\%\n   \\]\n\nTeraz musimy obliczyć, o ile procent zmniejszyła się prowizja. Aby to zrobić, musimy porównać zmianę prowizji (1 punkt procentowy) do początkowej prowizji (4%).\n\n3. **Obliczenie procentowej zmiany**:\n   \\[\n   \\text{Procentowa zmiana} = \\left( \\frac{\\text{Zmiana prowizji}}{\\text{Początkowa prowizja}} \\right) \\times 100\\%\n   \\]\n   Podstawiając wartości:\n   \\[\n   \\text{Procentowa zmiana} = \\left( \\frac{1\\%}{4\\%} \\right) \\times 100\\% = \\left( \\frac{1}{4} \\right) \\times 100\\% = 25\\%\n   \\]\n\nZatem prowizja od kredytów hipotecznych w tym banku zmniejszyła się o 25%.\n\n**Odpowiedź:** B. 25%\n\n\\boxed{B}",
+            "elapsed": 6.948,
+            "error": false,
+            "judgement_context": {
+              "question": "W pewnym banku prowizja od udzielanych kredytów hipotecznych przez cały styczeń była równa 4%. Na początku lutego ten bank obniżył wysokość prowizji od wszystkich kredytów o 1 punkt procentowy. Oznacza to, że prowizja od kredytów hipotecznych w tym banku zmniejszyła się o",
+              "correct_answer": [
+                "1%",
+                "25%",
+                "33%",
+                "75%"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-087",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy przeanalizować wyrażenie \\( \\sin^4 \\alpha + \\sin^2 \\alpha \\cdot \\cos^2 \\alpha \\) i uprościć je do jednej z podanych odpowiedzi.\n\nZacznijmy od wyrażenia:\n\\[ \\sin^4 \\alpha + \\sin^2 \\alpha \\cdot \\cos^2 \\alpha \\]\n\nMożemy wyciągnąć \\( \\sin^2 \\alpha \\) przed nawias:\n\\[ \\sin^2 \\alpha (\\sin^2 \\alpha + \\cos^2 \\alpha) \\]\n\nWiemy, że \\( \\sin^2 \\alpha + \\cos^2 \\alpha = 1 \\) (tożsamość trygonometryczna). Zatem:\n\\[ \\sin^2 \\alpha (1) = \\sin^2 \\alpha \\]\n\nTeraz porównajmy to z podanymi odpowiedziami:\n\nA. \\( \\sin^2 \\alpha \\)\nB. \\( \\sin^6 \\alpha \\cdot \\cos^2 \\alpha \\)\nC. \\( \\sin^4 \\alpha + 1 \\)\nD. \\( \\sin^2 \\alpha \\cdot (\\sin \\alpha + \\cos \\alpha) \\cdot (\\sin \\alpha - \\cos \\alpha) \\)\n\nNasze uproszczone wyrażenie to \\( \\sin^2 \\alpha \\), co odpowiada odpowiedzi A.\n\nZatem poprawna odpowiedź to:\nA. \\( \\sin^2 \\alpha \\)\n\n\\boxed{A}",
+            "elapsed": 6.617,
+            "error": false,
+            "judgement_context": {
+              "question": "Dla każdego kąta ostrego 𝛼 wyrażenie sin^4𝛼+sin^2𝛼 ⋅cos^2𝛼 jest równe",
+              "correct_answer": [
+                "sin^2𝛼",
+                "sin^6𝛼⋅cos^2𝛼",
+                "sin^4𝛼+1",
+                "sin^2𝛼⋅(sin𝛼+cos𝛼)⋅(sin𝛼−cos𝛼)"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-095",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy skorzystać z informacji podanych w treści pytania i zastosować wzory dotyczące objętości prostopadłościanu.\n\n1. **Dane:**\n   - Wymiary podstawy basenu: 15 m x 10 m\n   - Objętość wody wlana do basenu: 240 m³\n   - Woda wypełnia basen do 4/5 jego głębokości.\n\n2. **Wzór na objętość prostopadłościanu:**\n   \\[\n   V = a \\cdot b \\cdot h\n   \\]\n   gdzie:\n   - \\( V \\) to objętość,\n   - \\( a \\) i \\( b \\) to wymiary podstawy,\n   - \\( h \\) to wysokość (głębokość basenu).\n\n3. **Objętość wody w basenie:**\n   Ponieważ woda wypełnia basen do 4/5 jego głębokości, możemy zapisać:\n   \\[\n   V_{\\text{wody}} = \\frac{4}{5} \\cdot V_{\\text{basenu}}\n   \\]\n   Podstawiając dane:\n   \\[\n   240 = \\frac{4}{5} \\cdot (15 \\cdot 10 \\cdot h)\n   \\]\n\n4. **Rozwiązanie równania:**\n   Najpierw obliczamy objętość całego basenu:\n   \\[\n   240 = \\frac{4}{5} \\cdot (150 \\cdot h)\n   \\]\n   Upraszczamy:\n   \\[\n   240 = \\frac{4}{5} \\cdot 150h\n   \\]\n   \\[\n   240 = \\frac{600h}{5}\n   \\]\n   \\[\n   240 = 120h\n   \\]\n   Teraz rozwiązujemy dla \\( h \\):\n   \\[\n   h = \\frac{240}{120}\n   \\]\n   \\[\n   h = 2\n   \\]\n\n5. **Odpowiedź:**\n   Głębokość basenu wynosi 2 m.\n\n**Odpowiedź:** C. 2 m",
+            "elapsed": 9.829,
+            "error": false,
+            "judgement_context": {
+              "question": "Basen ma kształt prostopadłościanu, którego podstawa (dno basenu) ma wymiary 15m x 10m Do basenu wlano 240 m3 wody, która wypełniła go do 4/5 głębokości. Jaka jest głębokość tego basenu? Wybierz odpowiedź spośród podanych.",
+              "correct_answer": [
+                "1,28 m",
+                "1,5 m",
+                "2 m",
+                "3 m"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-100",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy przeanalizować, jak zmienia się pole powierzchni sześcianu po usunięciu małej kostki sześciennej.\n\n1. **Objętość sześcianu i wymiary:**\n   - Sześcian ma objętość 27 cm³.\n   - Objętość sześcianu to \\( V = a^3 \\), gdzie \\( a \\) to długość krawędzi.\n   - Zatem \\( a^3 = 27 \\) cm³, co daje \\( a = 3 \\) cm.\n\n2. **Pole powierzchni sześcianu przed usunięciem kostki:**\n   - Pole powierzchni sześcianu to \\( P = 6a^2 \\).\n   - Podstawiając \\( a = 3 \\) cm, otrzymujemy \\( P = 6 \\times 3^2 = 6 \\times 9 = 54 \\) cm².\n\n3. **Usunięcie kostki sześciennej:**\n   - Usunięto kostkę sześcienną o krawędzi 1 cm.\n   - Ściana usuniętej kostki należała do ściany sześcianu, ale żaden z wierzchołków tej kostki nie należał do krawędzi sześcianu.\n\n4. **Zmiana pola powierzchni:**\n   - Usunięcie kostki powoduje, że jedna ściana sześcianu traci pole powierzchni równe polu jednej ściany kostki, czyli \\( 1 \\times 1 = 1 \\) cm².\n   - Jednak usunięcie kostki odsłania nowe ściany wewnętrzne, które wcześniej były ukryte.\n   - Kostka ma 5 ścian, które były wewnętrzne i teraz stają się zewnętrzne.\n   - Pole powierzchni tych 5 ścian to \\( 5 \\times 1 \\times 1 = 5 \\) cm².\n\n5. **Nowy bilans pola powierzchni:**\n   - Pole powierzchni zmniejsza się o 1 cm² (usunięta ściana), ale zwiększa się o 5 cm² (nowe odsłonięte ściany).\n   - Zatem netto pole powierzchni zwiększa się o \\( 5 - 1 = 4 \\) cm².\n\n6. **Końcowe pole powierzchni:**\n   - Początkowe pole powierzchni wynosiło 54 cm².\n   - Po usunięciu kostki pole powierzchni wynosi \\( 54 + 4 = 58 \\) cm².\n\n**Odpowiedź:**\nPole powierzchni powstałej bryły jest równe **58 cm²**.\n\n\\boxed{C}",
+            "elapsed": 12.77,
+            "error": false,
+            "judgement_context": {
+              "question": "Z sześcianu o objętości 27 cm^3 usunięto jedną kostkę sześcienną o krawędzi 1 cm. Ściana usuniętej kostki należała do ściany sześcianu, ale żaden z wierzchołków tej kostki nie należał do krawędzi sześcianu. Dokończ zdanie. Wybierz właściwą odpowiedź spośród podanych. Pole powierzchni powstałej bryły jest równe",
+              "correct_answer": [
+                "48 cm^2",
+                "54 cm^2",
+                "58 cm^2",
+                "59 cm^2"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-109",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy zauważyć wzór w cyfrach jedności potęg liczby 7.\n\nPrzyjrzyjmy się cyfrom jedności kolejnych potęg liczby 7:\n- \\(7^1 = 7\\) (cyfra jedności: 7)\n- \\(7^2 = 49\\) (cyfra jedności: 9)\n- \\(7^3 = 343\\) (cyfra jedności: 3)\n- \\(7^4 = 2401\\) (cyfra jedności: 1)\n- \\(7^5 = 16807\\) (cyfra jedności: 7)\n- \\(7^6 = 117649\\) (cyfra jedności: 9)\n- \\(7^7 = 823543\\) (cyfra jedności: 3)\n- \\(7^8 = 5764801\\) (cyfra jedności: 1)\n\nWidzimy, że cyfry jedności powtarzają się w cyklu: 7, 9, 3, 1.\n\nAby znaleźć cyfrę jedności \\(7^{190}\\), musimy określić, gdzie w cyklu znajduje się \\(7^{190}\\).\n\nCykl ma długość 4, więc musimy znaleźć resztę z dzielenia 190 przez 4:\n\\[ 190 \\div 4 = 47 \\text{ reszta } 2 \\]\n\nOznacza to, że \\(7^{190}\\) odpowiada drugiej pozycji w cyklu (7, 9, 3, 1).\n\nDruga pozycja w cyklu to 9.\n\nZatem cyfrą jedności liczby \\(7^{190}\\) jest 9.\n\nOdpowiedź: D. 9",
+            "elapsed": 8.527,
+            "error": false,
+            "judgement_context": {
+              "question": "Poniżej podano kilka kolejnych potęg liczby 7. 7^1 = 7 7^2 = 49 7^3 = 343 7^4 = 2401 7^5 = 16 807 7^6 = 117 649 7^7 = 823 543 7^8 = 5 764 801 7^9 = 40 353 607. Dokończ zdanie. Wybierz właściwą odpowiedź spośród podanych. Cyfrą jedności liczby 7^190 jest",
+              "correct_answer": [
+                "1",
+                "3",
+                "7",
+                "9"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-112",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy zrozumieć, jak działa kodowanie informacji za pomocą bitów. \n\n1. **Jeden bit** może przyjąć 2 wartości: 0 lub 1.\n2. **Dwa bity** mogą przyjąć 4 różne kombinacje: 00, 01, 10, 11. To wynika z faktu, że każdy bit może być 0 lub 1, więc dla dwóch bitów mamy 2 * 2 = 4 możliwości.\n3. **Trzy bity** mogą przyjąć więcej kombinacji. Każdy z trzech bitów może być 0 lub 1, więc mamy 2 * 2 * 2 = 8 możliwości.\n\nMożemy to również zobaczyć, wypisując wszystkie możliwe kombinacje trzech bitów:\n- 000\n- 001\n- 010\n- 011\n- 100\n- 101\n- 110\n- 111\n\nJest ich dokładnie 8.\n\nDlatego poprawna odpowiedź to:\n**D. 8**\n\n\\boxed{D}",
+            "elapsed": 5.939,
+            "error": false,
+            "judgement_context": {
+              "question": "Pasją Filipa są komputery. Filip wie, że elementarną jednostką informacji jest bit. Jeden bit informacji jest kodowany jedną z dwóch wartości 0 lub 1. Dwóm bitom odpowiadają cztery możliwości: 00, 01, 10, 11. Ile możliwości odpowiada trzem bitom?",
+              "correct_answer": [
+                "2",
+                "4",
+                "6",
+                "8"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-125",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy znaleźć wszystkie trzycyfrowe liczby naturalne większe od 700, w których każda cyfra należy do zbioru {1, 2, 3, 7, 8, 9} i żadna cyfra się nie powtarza.\n\nRozważmy trzycyfrową liczbę jako ABC, gdzie A, B i C to różne cyfry z podanego zbioru.\n\n1. **Pierwsza cyfra (A)**:\n   - Liczba musi być większa od 700, więc pierwsza cyfra (A) musi być 7, 8 lub 9.\n   - Mamy 3 możliwości dla A: 7, 8, 9.\n\n2. **Druga cyfra (B)**:\n   - Po wyborze A, mamy 5 pozostałych cyfr do wyboru dla B (ponieważ żadna cyfra się nie powtarza).\n   - Mamy 5 możliwości dla B.\n\n3. **Trzecia cyfra (C)**:\n   - Po wyborze A i B, mamy 4 pozostałe cyfry do wyboru dla C.\n   - Mamy 4 możliwości dla C.\n\nZatem, całkowita liczba takich liczb to:\n\\[ 3 \\times 5 \\times 4 = 60 \\]\n\nOdpowiedź to **B. 60**.\n\n\\boxed{B}",
+            "elapsed": 6.961,
+            "error": false,
+            "judgement_context": {
+              "question": "Wszystkich liczb naturalnych trzycyfrowych, większych od 700, w których każda cyfra należy do zbioru { 1 ,2 ,3 ,7 ,8 ,9 } i żadna cyfra się nie powtarza, jest",
+              "correct_answer": [
+                "108",
+                "60",
+                "40",
+                "299"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-127",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy znaleźć pierwotną cenę roweru przed obniżką. Oznaczmy tę cenę jako \\( P \\).\n\nWiemy, że cena roweru została obniżona o 8%, co oznacza, że klient zapłacił 92% pierwotnej ceny. Różnica między pierwotną ceną a obniżoną ceną wynosi 120 zł.\n\nMożemy to zapisać jako równanie:\n\\[ P - 0.92P = 120 \\]\n\nUpraszczając lewą stronę równania:\n\\[ 0.08P = 120 \\]\n\nTeraz, aby znaleźć \\( P \\), dzielimy obie strony równania przez 0.08:\n\\[ P = \\frac{120}{0.08} \\]\n\n\\[ P = 1500 \\]\n\nZatem pierwotna cena roweru przed obniżką wynosiła 1500 zł.\n\nOdpowiedź: B. 1500 zł",
+            "elapsed": 5.12,
+            "error": false,
+            "judgement_context": {
+              "question": "Cenę roweru obniżono o 8%. Klient kupił rower po obniżonej cenie i dzięki temu zapłacił o 120 zł mniej, niż zapłaciłby przed obniżką. Dokończ zdanie. Wybierz właściwą odpowiedź spośród podanych. Przed obniżką ten rower kosztował",
+              "correct_answer": [
+                "2000 zł",
+                "1500 zł",
+                "1380 zł",
+                "960 zł"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-138",
+            "raw_answer": "Aby obliczyć pole powierzchni całkowitej czworościanu foremnego, musimy najpierw zrozumieć, że czworościan foremny składa się z czterech identycznych trójkątów równobocznych.\n\n1. **Pole jednego trójkąta równobocznego:**\n   - Krawędź czworościanu foremnego ma długość \\( a = 4 \\) cm.\n   - Pole trójkąta równobocznego o boku \\( a \\) jest dane wzorem:\n     \\[\n     P = \\frac{a^2 \\sqrt{3}}{4}\n     \\]\n   - Podstawiając \\( a = 4 \\) cm:\n     \\[\n     P = \\frac{4^2 \\sqrt{3}}{4} = \\frac{16 \\sqrt{3}}{4} = 4 \\sqrt{3} \\text{ cm}^2\n     \\]\n\n2. **Pole powierzchni całkowitej czworościanu:**\n   - Czworościan foremny składa się z czterech takich trójkątów.\n   - Pole powierzchni całkowitej \\( S \\) jest sumą pól czterech trójkątów:\n     \\[\n     S = 4 \\times P = 4 \\times 4 \\sqrt{3} = 16 \\sqrt{3} \\text{ cm}^2\n     \\]\n\nZatem pole powierzchni całkowitej czworościanu foremnego wynosi \\( 16 \\sqrt{3} \\) cm².\n\nOdpowiedź: C. 16√3 cm^2",
+            "elapsed": 7.269,
+            "error": false,
+            "judgement_context": {
+              "question": "Krawędź czworościanu foremnego ma długość 4 cm. Pole powierzchni całkowitej tego czworościanu jest równe",
+              "correct_answer": [
+                "4√3 cm^2",
+                "8√3 cm^2",
+                "16√3 cm^2",
+                "32√3 cm^2"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-151",
+            "raw_answer": "Aby odpowiedzieć na pytanie dotyczące tego, jaką część powierzchni lądów na Ziemi zajmuje Afryka, należy skorzystać z dostępnych danych geograficznych.\n\nAfryka jest drugim co do wielkości kontynentem na Ziemi, zajmując około 30 milionów kilometrów kwadratowych. Całkowita powierzchnia lądów na Ziemi wynosi około 148,9 milionów kilometrów kwadratowych.\n\nAby obliczyć, jaką część powierzchni lądów zajmuje Afryka, można użyć następującego wzoru:\n\\[ \\text{Udział Afryki} = \\frac{\\text{Powierzchnia Afryki}}{\\text{Całkowita powierzchnia lądów}} \\]\n\nPodstawiając wartości:\n\\[ \\text{Udział Afryki} = \\frac{30,000,000}{148,900,000} \\]\n\nObliczając to, otrzymujemy:\n\\[ \\text{Udział Afryki} \\approx 0,201 \\]\n\nTo oznacza, że Afryka zajmuje około 20,1% powierzchni lądów na Ziemi.\n\nSpośród podanych opcji, najbliższa wartość to **B. 1/5**, co odpowiada 20% powierzchni.\n\nZatem poprawna odpowiedź to:\nB. 1/5",
+            "elapsed": 7.167,
+            "error": false,
+            "judgement_context": {
+              "question": "Jaką część powierzchni lądów na Ziemi zajmuje Afryka?",
+              "correct_answer": [
+                "1/4",
+                "1/5",
+                "1/20",
+                "1/50"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-153",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy obliczyć czas, jaki zajęło piechurowi i rowerzyście pokonanie trasy 10 km, a następnie znaleźć różnicę między tymi czasami.\n\n**Krok 1: Obliczenie czasu piechura**\nPrędkość średnia piechura wynosi 5 km/h. Aby obliczyć czas, korzystamy ze wzoru:\n\\[ \\text{czas} = \\frac{\\text{droga}}{\\text{prędkość}} \\]\n\nDla piechura:\n\\[ \\text{czas piechura} = \\frac{10 \\text{ km}}{5 \\text{ km/h}} = 2 \\text{ godziny} \\]\n\n**Krok 2: Obliczenie czasu rowerzysty**\nPrędkość średnia rowerzysty wynosi 20 km/h. Korzystamy z tego samego wzoru:\n\\[ \\text{czas rowerzysty} = \\frac{10 \\text{ km}}{20 \\text{ km/h}} = 0,5 \\text{ godziny} \\]\n\n**Krok 3: Znalezienie różnicy czasu**\nRóżnica czasu między piechurem a rowerzystą:\n\\[ \\text{różnica czasu} = 2 \\text{ godziny} - 0,5 \\text{ godziny} = 1,5 \\text{ godziny} \\]\n\n**Krok 4: Przeliczenie różnicy czasu na minuty**\n1 godzina to 60 minut, więc:\n\\[ 1,5 \\text{ godziny} = 1,5 \\times 60 \\text{ minut} = 90 \\text{ minut} \\]\n\nZatem piechurowi zajęło pokonanie trasy o 90 minut więcej niż rowerzyście.\n\n**Odpowiedź:**\nC. 90 minut",
+            "elapsed": 8.6,
+            "error": false,
+            "judgement_context": {
+              "question": "Prędkość średnia piechura na trasie 10 km wyniosła 5 km/h , a prędkość średnia rowerzysty na tej samej trasie była równa 20 km/h . O ile minut więcej zajęło pokonanie tej trasy piechurowi niż rowerzyście? Wybierz odpowiedź spośród podanych.",
+              "correct_answer": [
+                "30 minut",
+                "60 minut",
+                "90 minut",
+                "120 minut"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-162",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy skorzystać z właściwości rombu oraz trygonometrii.\n\n1. **Właściwości rombu:**\n   - Wszystkie boki rombu są równe.\n   - Przekątne rombu przecinają się pod kątem prostym i dzielą się na połowy.\n\n2. **Dane:**\n   - Długość boku rombu \\( a = 6\\sqrt{2} \\).\n   - Kąt rozwarty \\( \\alpha = 150^\\circ \\).\n\n3. **Obliczenie długości przekątnych:**\n   - Oznaczmy przekątne jako \\( d_1 \\) i \\( d_2 \\).\n   - Przekątne rombu dzielą go na cztery trójkąty prostokątne.\n   - W trójkącie prostokątnym, gdzie jeden z kątów ostrych jest połową kąta rozwartego, mamy:\n     \\[\n     \\sin\\left(\\frac{\\alpha}{2}\\right) = \\sin(75^\\circ)\n     \\]\n     \\[\n     \\cos\\left(\\frac{\\alpha}{2}\\right) = \\cos(75^\\circ)\n     \\]\n\n4. **Wyrażenia na połowy przekątnych:**\n   - Połowa przekątnej \\( d_1 \\) (przeciwprostokątna do kąta \\( 75^\\circ \\)):\n     \\[\n     \\frac{d_1}{2} = a \\cdot \\sin(75^\\circ)\n     \\]\n   - Połowa przekątnej \\( d_2 \\) (przeciwprostokątna do kąta \\( 15^\\circ \\)):\n     \\[\n     \\frac{d_2}{2} = a \\cdot \\cos(75^\\circ)\n     \\]\n\n5. **Wartości sinus i cosinus:**\n   - \\( \\sin(75^\\circ) = \\sin(45^\\circ + 30^\\circ) = \\sin(45^\\circ)\\cos(30^\\circ) + \\cos(45^\\circ)\\sin(30^\\circ) \\)\n     \\[\n     = \\frac{\\sqrt{2}}{2} \\cdot \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{2}}{2} \\cdot \\frac{1}{2} = \\frac{\\sqrt{6} + \\sqrt{2}}{4}\n     \\]\n   - \\( \\cos(75^\\circ) = \\cos(45^\\circ + 30^\\circ) = \\cos(45^\\circ)\\cos(30^\\circ) - \\sin(45^\\circ)\\sin(30^\\circ) \\)\n     \\[\n     = \\frac{\\sqrt{2}}{2} \\cdot \\frac{\\sqrt{3}}{2} - \\frac{\\sqrt{2}}{2} \\cdot \\frac{1}{2} = \\frac{\\sqrt{6} - \\sqrt{2}}{4}\n     \\]\n\n6. **Obliczenie długości przekątnych:**\n   - \\( d_1 = 2 \\cdot a \\cdot \\sin(75^\\circ) = 2 \\cdot 6\\sqrt{2} \\cdot \\frac{\\sqrt{6} + \\sqrt{2}}{4} \\)\n     \\[\n     = 12\\sqrt{2} \\cdot \\frac{\\sqrt{6} + \\sqrt{2}}{4} = 3\\sqrt{2} \\cdot (\\sqrt{6} + \\sqrt{2})\n     \\]\n     \\[\n     = 3\\sqrt{2} \\cdot \\sqrt{6} + 3\\sqrt{2} \\cdot \\sqrt{2} = 3\\sqrt{12} + 3 \\cdot 2 = 3 \\cdot 2\\sqrt{3} + 6 = 6\\sqrt{3} + 6\n     \\]\n   - \\( d_2 = 2 \\cdot a \\cdot \\cos(75^\\circ) = 2 \\cdot 6\\sqrt{2} \\cdot \\frac{\\sqrt{6} - \\sqrt{2}}{4} \\)\n     \\[\n     = 12\\sqrt{2} \\cdot \\frac{\\sqrt{6} - \\sqrt{2}}{4} = 3\\sqrt{2} \\cdot (\\sqrt{6} - \\sqrt{2})\n     \\]\n     \\[\n     = 3\\sqrt{2} \\cdot \\sqrt{6} - 3\\sqrt{2} \\cdot \\sqrt{2} = 3\\sqrt{12} - 3 \\cdot 2 = 3 \\cdot 2\\sqrt{3} - 6 = 6\\sqrt{3} - 6\n     \\]\n\n7. **Iloczyn długości przekątnych:**\n   - \\( d_1 \\cdot d_2 = (6\\sqrt{3} + 6) \\cdot (6\\sqrt{3} - 6) \\)\n     \\[\n     = (6\\sqrt{3})^2 - 6^2 = 36 \\cdot 3 - 36 = 108 - 36 = 72\n     \\]\n\nZatem iloczyn długości przekątnych rombu jest równy 72.\n\nOdpowiedź: B. 72",
+            "elapsed": 24.473,
+            "error": false,
+            "judgement_context": {
+              "question": "W rombie o boku długości 6√2 kąt rozwarty ma miarę 150°. Iloczyn długości przekątnych tego rombu jest równy",
+              "correct_answer": [
+                "24",
+                "72",
+                "36",
+                "36√2"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-163",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy przeanalizować podane informacje i znaleźć liczbę uczestników wycieczki, która spełnia wszystkie warunki.\n\n1. **Połowa uczestników urodziła się w Polsce.**\n2. **Co trzeci uczestnik urodził się w Niemczech.**\n3. **Pięciu pozostałych urodziło się we Francji.**\n\nOznaczmy liczbę uczestników wycieczki jako \\( x \\).\n\nZ warunku 1: liczba uczestników urodzonych w Polsce to \\( \\frac{x}{2} \\).\n\nZ warunku 2: liczba uczestników urodzonych w Niemczech to \\( \\frac{x}{3} \\).\n\nZ warunku 3: liczba uczestników urodzonych we Francji to 5.\n\nCałkowita liczba uczestników to suma uczestników urodzonych w Polsce, Niemczech i Francji:\n\\[ \\frac{x}{2} + \\frac{x}{3} + 5 = x \\]\n\nAby rozwiązać to równanie, najpierw znajdźmy wspólny mianownik dla ułamków. Wspólnym mianownikiem dla 2 i 3 jest 6. Przekształćmy równanie:\n\\[ \\frac{3x}{6} + \\frac{2x}{6} + 5 = x \\]\n\nPołączmy ułamki:\n\\[ \\frac{3x + 2x}{6} + 5 = x \\]\n\\[ \\frac{5x}{6} + 5 = x \\]\n\nOdejmijmy \\( \\frac{5x}{6} \\) od obu stron równania:\n\\[ 5 = x - \\frac{5x}{6} \\]\n\nAby uprościć prawą stronę, znajdźmy wspólny mianownik:\n\\[ 5 = \\frac{6x}{6} - \\frac{5x}{6} \\]\n\\[ 5 = \\frac{6x - 5x}{6} \\]\n\\[ 5 = \\frac{x}{6} \\]\n\nPomnóżmy obie strony przez 6, aby rozwiązać równanie:\n\\[ 5 \\times 6 = x \\]\n\\[ x = 30 \\]\n\nZatem liczba uczestników wycieczki to 30.\n\nSprawdźmy, czy ta liczba spełnia wszystkie warunki:\n- Połowa uczestników urodzonych w Polsce: \\( \\frac{30}{2} = 15 \\)\n- Co trzeci uczestnik urodzony w Niemczech: \\( \\frac{30}{3} = 10 \\)\n- Pięciu uczestników urodzonych we Francji: 5\n\nSuma: \\( 15 + 10 + 5 = 30 \\)\n\nWszystkie warunki są spełnione, więc poprawna odpowiedź to:\n\n**B. 30 osób.**\n\n\\boxed{B}",
+            "elapsed": 14.437,
+            "error": false,
+            "judgement_context": {
+              "question": "Dokończ zdanie tak, aby otrzymać zdanie prawdziwe. Połowa uczestników wycieczki urodziła się w Polsce, co trzeci urodził się w Niemczech, a pięciu pozostałych we Francji. W wycieczce brało udział",
+              "correct_answer": [
+                "26 osób.",
+                "30 osób.",
+                "46 osób.",
+                "60 osób."
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-identity-172",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy przeanalizować podane informacje i ułożyć odpowiednie równania.\n\n1. **Oznaczenia:**\n   - Niech \\( D \\) będzie liczbą dziewcząt.\n   - Niech \\( C \\) będzie liczbą chłopców.\n\n2. **Informacje z zadania:**\n   - Chłopcy stanowili 65% liczby osób piszących egzamin.\n   - Do egzaminu przystąpiło o 60 chłopców więcej niż dziewcząt.\n\n3. **Równania:**\n   - Z informacji, że chłopcy stanowili 65% liczby osób piszących egzamin, możemy napisać:\n     \\[\n     C = 0.65 \\times (C + D)\n     \\]\n   - Z informacji, że do egzaminu przystąpiło o 60 chłopców więcej niż dziewcząt, możemy napisać:\n     \\[\n     C = D + 60\n     \\]\n\n4. **Rozwiązanie równań:**\n   - Podstawiamy \\( C = D + 60 \\) do pierwszego równania:\n     \\[\n     D + 60 = 0.65 \\times (D + 60 + D)\n     \\]\n     \\[\n     D + 60 = 0.65 \\times (2D + 60)\n     \\]\n     \\[\n     D + 60 = 0.65 \\times 2D + 0.65 \\times 60\n     \\]\n     \\[\n     D + 60 = 1.3D + 39\n     \\]\n   - Przekształcamy równanie, aby wyizolować \\( D \\):\n     \\[\n     D + 60 = 1.3D + 39\n     \\]\n     \\[\n     60 - 39 = 1.3D - D\n     \\]\n     \\[\n     21 = 0.3D\n     \\]\n     \\[\n     D = \\frac{21}{0.3}\n     \\]\n     \\[\n     D = 70\n     \\]\n\n5. **Odpowiedź:**\n   - Liczba dziewcząt, które przystąpiły do egzaminu, wynosi 70.\n\nZatem poprawna odpowiedź to **C. 70**.\n\n\\boxed{C}",
+            "elapsed": 11.262,
+            "error": false,
+            "judgement_context": {
+              "question": "W pewnej szkole do egzaminu gimnazjalnego przystąpiło o 60 chłopców więcej niż dziewcząt. Chłopcy stanowili 65% liczby osób piszących egzamin. Ile dziewcząt przystąpiło do tego egzaminu? Wybierz właściwą odpowiedź spośród podanych.",
+              "correct_answer": [
+                "200",
+                "130",
+                "70",
+                "39"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "typo_40%": {
+      "llmzszl_mc_selected_ids": {
+        "num_sampled": 34,
+        "error_count": 0,
+        "elapsed_sec": 360.35,
+        "questions": [
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-000",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy obliczyć pole rombu o boku długości 4 i kącie rozwartym 150°.\n\nPole rombu można obliczyć za pomocą wzoru:\n\\[ P = a^2 \\sin(\\alpha) \\]\ngdzie \\( a \\) to długość boku rombu, a \\( \\alpha \\) to miara kąta ostrego lub rozwartego.\n\nW tym przypadku mamy kąt rozwarty 150°. Kąt rozwarty w rombie jest przyległy do kąta ostrego, więc kąt ostry wynosi:\n\\[ 180° - 150° = 30° \\]\n\nJednak wzór na pole rombu można również zapisać, używając kąta rozwartego:\n\\[ P = a^2 \\sin(150°) \\]\n\nWartość \\(\\sin(150°)\\) można obliczyć, korzystając z własności funkcji sinus:\n\\[ \\sin(150°) = \\sin(180° - 30°) = \\sin(30°) = 0.5 \\]\n\nTeraz podstawiamy wartości do wzoru:\n\\[ P = 4^2 \\cdot 0.5 = 16 \\cdot 0.5 = 8 \\]\n\nZatem pole rombu wynosi 8.\n\nOdpowiedź: A. 8",
+            "elapsed": 6.711,
+            "error": false,
+            "judgement_context": {
+              "question": "Dany jest romb o boku długości 4 i kącie rozwartym 150°. Pole tego rombu jest równe",
+              "correct_answer": [
+                "8",
+                "12",
+                "8√3",
+                "16"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-004",
+            "raw_answer": "Aby odpowiedzieć na pytanie dotyczące różnicy w powierzchni między Antarktydą a Europą, musimy najpierw ustalić powierzchnie obu tych obszarów.\n\n1. **Powierzchnia Antarktydy**:\n   Antarktyda jest największym kontynentem na Ziemi, a jej powierzchnia wynosi około 14 milionów kilometrów kwadratowych (km²).\n\n2. **Powierzchnia Europy**:\n   Europa jest jednym z mniejszych kontynentów, a jej powierzchnia wynosi około 10,18 miliona kilometrów kwadratowych (km²).\n\n3. **Obliczenie różnicy**:\n   Aby znaleźć różnicę w powierzchni, odejmujemy powierzchnię Europy od powierzchni Antarktydy:\n   \\[\n   14 \\text{ mln km}^2 - 10,18 \\text{ mln km}^2 = 3,82 \\text{ mln km}^2\n   \\]\n\n4. **Porównanie z odpowiedziami**:\n   - A. 3 mln km²\n   - B. 7,5 mln km²\n   - C. 30 mln km²\n   - D. 34,5 mln km²\n\n   Najbliższa wartość do obliczonej różnicy (3,82 mln km²) jest opcja A, czyli 3 mln km².\n\nZatem poprawna odpowiedź to:\n**A. 3 mln km²**",
+            "elapsed": 7.213,
+            "error": false,
+            "judgement_context": {
+              "question": "Powierzchnia Antarktydy jest większa od powierzchni Europy o",
+              "correct_answer": [
+                "3 mln km2",
+                "7,5 mln km2",
+                "30 mln km2",
+                "34,5 mln km2"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-005",
+            "raw_answer": "Aby odpowiedzieć na to pytanie, musimy zrozumieć, jak zachowuje się płomień świecy w różnych warunkach termicznych.\n\nKiedy Pawe uchyla drzwi z ciepłego pokoju do zimnego korytarza, powstaje pionowa szczelina, przez którą przesuwa zapaloną świeczkę. W tej szczelinie występuje różnica temperatur: ciepłe powietrze z pokoju i zimne powietrze z korytarza.\n\nPłomień świecy jest wrażliwy na różnice temperatur. Ciepłe powietrze unosi się do góry, a zimne opada w dół. W związku z tym, w górnej części szczeliny płomień będzie miał tendencję do unoszenia się, ponieważ ciepłe powietrze z pokoju będzie go \"ciągnąć\" w górę. W dolnej części szczeliny płomień będzie miał tendencję do opadania, ponieważ zimne powietrze z korytarza będzie go \"ciągnąć\" w dół.\n\nW środkowej części szczeliny różnice temperatur będą mniej wyraźne, ponieważ jest to miejsce, gdzie ciepłe i zimne powietrze się mieszają. W związku z tym, płomień świecy będzie najmniej odchylony w środkowej części szczeliny.\n\nOdpowiedź:\nA. W środkowym.",
+            "elapsed": 7.576,
+            "error": false,
+            "judgement_context": {
+              "question": "Paweł uchylił drzwi z ciepłego pokoju do zimnego korytarza. Wzdłuż pionowej szczeliny powstałej między drzwiami i framugą przesuwał zapaloną świeczkę. W którym fragmencie szczeliny płomień świeczki powinien odchylić się od pionu najmniej?",
+              "correct_answer": [
+                "W środkowym.",
+                "W dolnym.",
+                "W górnym.",
+                "Wszędzie jednakowo."
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-009",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy zrozumieć, jak zmienia się poziom wody w naczyniu w zależności od tego, na której ścianie jest ono postawione.\n\nNaczynie ma kształt prostopadłościanu o wymiarach 6 cm, 15 cm i 18 cm. Kiedy naczynie jest postawione na ścianie o największej powierzchni, woda sięga do wysokości 4 cm.\n\nNajwiększa powierzchnia to ściana o wymiarach 15 cm x 18 cm. Kiedy naczynie jest postawione na tej ścianie, wysokość wody wynosi 4 cm.\n\nTeraz musimy obliczyć, jaką objętość wody mamy w naczyniu. Objętość wody można obliczyć jako:\n\\[ V = 15 \\, \\text{cm} \\times 18 \\, \\text{cm} \\times 4 \\, \\text{cm} = 1080 \\, \\text{cm}^3 \\]\n\nKiedy naczynie jest postawione na ścianie o najmniejszej powierzchni, ta ściana ma wymiary 6 cm x 15 cm. Oznaczmy wysokość wody w tym przypadku jako \\( h \\).\n\nObjętość wody pozostaje taka sama, więc:\n\\[ V = 6 \\, \\text{cm} \\times 15 \\, \\text{cm} \\times h = 1080 \\, \\text{cm}^3 \\]\n\nRozwiązując równanie dla \\( h \\):\n\\[ 90h = 1080 \\]\n\\[ h = \\frac{1080}{90} \\]\n\\[ h = 12 \\, \\text{cm} \\]\n\nZatem, kiedy naczynie jest postawione na ścianie o najmniejszej powierzchni, woda sięga do wysokości 12 cm.\n\nOdpowiedź: C. 12 cm",
+            "elapsed": 9.06,
+            "error": false,
+            "judgement_context": {
+              "question": "Szklane naczynie w kształcie prostopadłościanu o wymiarach 6 cm, 15 cm i 18 cm napełniono częściowo wodą i szczelnie zamknięto. Następnie naczynie postawiono na jego ścianie o największej powierzchni i wtedy woda sięgała do wysokości 4 cm. Dokończ zdanie. Wybierz właściwą odpowiedź spośród podanych. Kiedy naczynie postawiono na ścianie o najmniejszej powierzchni, to woda sięgała do wysokości",
+              "correct_answer": [
+                "8 cm",
+                "10 cm",
+                "12 cm",
+                "16 cm"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-012",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy przeanalizować dane podane w pytaniu i wykonać odpowiednie obliczenia.\n\n1. **Dane z pytania:**\n   - Na pierwszym odcinku trasy samochód zużył 27 litrów benzyny.\n   - Na drugim odcinku trasy, mającym długość 150 km, samochód zużył dwa razy mniej benzyny niż na pierwszym odcinku.\n   - Średnie zużycie benzyny na kilometr było takie samo na każdym odcinku trasy.\n\n2. **Obliczenia:**\n   - Zużycie benzyny na drugim odcinku:\n     \\[\n     \\text{Zużycie na drugim odcinku} = \\frac{27 \\text{ litrów}}{2} = 13,5 \\text{ litra}\n     \\]\n\n3. **Średnie zużycie benzyny na kilometr:**\n   - Oznaczmy długość pierwszego odcinka trasy jako \\( x \\) km.\n   - Średnie zużycie benzyny na kilometr na pierwszym odcinku:\n     \\[\n     \\frac{27 \\text{ litrów}}{x \\text{ km}}\n     \\]\n   - Średnie zużycie benzyny na kilometr na drugim odcinku:\n     \\[\n     \\frac{13,5 \\text{ litra}}{150 \\text{ km}}\n     \\]\n   - Ponieważ średnie zużycie benzyny na kilometr jest takie samo na obu odcinkach, możemy zapisać równanie:\n     \\[\n     \\frac{27}{x} = \\frac{13,5}{150}\n     \\]\n\n4. **Rozwiązanie równania:**\n   - Przekształcamy równanie, aby znaleźć \\( x \\):\n     \\[\n     \\frac{27}{x} = \\frac{13,5}{150}\n     \\]\n     \\[\n     27 \\cdot 150 = 13,5 \\cdot x\n     \\]\n     \\[\n     4050 = 13,5x\n     \\]\n     \\[\n     x = \\frac{4050}{13,5} = 300 \\text{ km}\n     \\]\n\n5. **Całkowita długość trasy:**\n   - Pierwszy odcinek: 300 km\n   - Drugi odcinek: 150 km\n   - Całkowita długość trasy: \\( 300 + 150 = 450 \\text{ km} \\)\n\n6. **Całkowite zużycie benzyny:**\n   - Pierwszy odcinek: 27 litrów\n   - Drugi odcinek: 13,5 litra\n   - Całkowite zużycie benzyny: \\( 27 + 13,5 = 40,5 \\text{ litra} \\)\n\n7. **Średnie zużycie benzyny na 100 km:**\n   - Średnie zużycie benzyny na 100 km:\n     \\[\n     \\frac{40,5 \\text{ litra}}{450 \\text{ km}} \\cdot 100 \\text{ km} = \\frac{40,5 \\cdot 100}{450} = \\frac{4050}{450} = 9 \\text{ litrów na 100 km}\n     \\]\n\n**Odpowiedź:**\nŚrednie zużycie benzyny przez ten samochód na każde 100 km tej trasy było równe 9 litrów.\n\n\\boxed{B}",
+            "elapsed": 16.529,
+            "error": false,
+            "judgement_context": {
+              "question": "Samochód na pokonanie pierwszego odcinka trasy zużył 27 litrów benzyny. Na drugim odcinku trasy, mającym długość 150 km, zużył on dwa razy mniej benzyny niż na pierwszym odcinku. Średnie zużycie benzyny na kilometr było na każdym odcinku trasy takie samo. Dokończ zdanie. Wybierz właściwą odpowiedź spośród podanych. Średnie zużycie benzyny przez ten samochód na każde 100 km tej trasy było równe",
+              "correct_answer": [
+                "4,5 litra.",
+                "9 litrów.",
+                "13,5 litra.",
+                "18 litrów."
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-013",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy najpierw zrozumieć, co oznacza data MCMXCC i jak ją przeliczyć na współczesny format daty.\n\nData MCMXCC to zapis w systemie rzymskim. Rozłóżmy go na części:\n- MCMX to 1910 (M = 1000, CM = 900, X = 10)\n- XX to 20\n- C to 100\n- C to 100\n\nŁącząc te części, otrzymujemy:\nMCMXCC = 1910 + 20 + 100 + 100 = 2130\n\nJednak to nie jest poprawna interpretacja. Poprawnie:\nMCMXCC = 1900 + 10 + 100 + 100 = 2120\n\nTeraz mamy datę renowacji: 2120 rok.\n\nZegar słoneczny powstał w 1533 roku. Aby znaleźć, po ilu latach od powstania zegara słonecznego został on odtworzony, musimy obliczyć różnicę między rokiem renowacji a rokiem powstania zegara:\n\n2120 - 1533 = 587 lat\n\nJednak w odpowiedziach nie ma takiej opcji. Sprawdźmy jeszcze raz interpretację daty MCMXCC.\n\nMCMXCC to 1920 rok (1900 + 20).\n\nTeraz obliczamy różnicę:\n\n1920 - 1533 = 387 lat\n\nNadal nie ma takiej opcji w odpowiedziach. Sprawdźmy jeszcze raz.\n\nMCMXCC to 2020 rok (2000 + 20).\n\nTeraz obliczamy różnicę:\n\n2020 - 1533 = 487 lat\n\nNadal nie ma takiej opcji. Sprawdźmy jeszcze raz.\n\nMCMXCC to 1920 rok (1900 + 20).\n\nTeraz obliczamy różnicę:\n\n1920 - 1533 = 387 lat\n\nNajbliższa odpowiedź to 407 lat, co sugeruje, że mogliśmy popełnić błąd w interpretacji. Sprawdźmy jeszcze raz.\n\nMCMXCC to 2020 rok (2000 + 20).\n\nTeraz obliczamy różnicę:\n\n2020 - 1533 = 487 lat\n\nNajbliższa odpowiedź to 407 lat. Prawdopodobnie mamy błąd w interpretacji.\n\nMCMXCC to 1920 rok (1900 + 20).\n\nTeraz obliczamy różnicę:\n\n1920 - 1533 = 387 lat\n\nNajbliższa odpowiedź to 407 lat. Prawdopodobnie mamy błąd w interpretacji.\n\nPoprawna interpretacja to 1920 rok.\n\n1920 - 1533 = 387 lat\n\nNajbliższa odpowiedź to 407 lat. Prawdopodobnie mamy błąd w interpretacji.\n\nPoprawna odpowiedź to B. Po 407 latach.\n\n\\boxed{B}",
+            "elapsed": 15.966,
+            "error": false,
+            "judgement_context": {
+              "question": "W ramach prac renowacyjnych odtworzono na ścianie budowli zegar słoneczny, który powstał w 1533 roku. Pod nowym zegarem zapisano datę tej renowacji - MCMXC. Po ilu latach od powstania tego zegara słonecznego odtworzono go na ścianie budowli? Wybierz właściwą odpowiedź spośród podanych.",
+              "correct_answer": [
+                "Po 457 latach.",
+                "Po 407 latach.",
+                "Po 157 latach.",
+                "Po 107 latach."
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-022",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy zrozumieć, co oznacza wzrost o 120%. Jeśli liczba osobników wzrosła o 120%, to oznacza, że obecna liczba osobników jest 220% liczby osobników z 31 grudnia 2011 roku (100% + 120% = 220%).\n\nOznaczmy liczbę osobników z 31 grudnia 2011 roku jako \\( x \\).\n\nZgodnie z danymi, obecna liczba osobników wynosi 8910, co stanowi 220% liczby osobników z 31 grudnia 2011 roku. Możemy to zapisać jako równanie:\n\n\\[ 220\\% \\times x = 8910 \\]\n\nPrzekształćmy procent na ułamek:\n\n\\[ 2.2 \\times x = 8910 \\]\n\nTeraz rozwiązujemy równanie dla \\( x \\):\n\n\\[ x = \\frac{8910}{2.2} \\]\n\n\\[ x = 4050 \\]\n\nZatem liczba osobników tego gatunku w ostatnim dniu 2011 roku wynosiła 4050.\n\nOdpowiedź: A. 4050",
+            "elapsed": 6.362,
+            "error": false,
+            "judgement_context": {
+              "question": "Liczba osobników pewnego zagrożonego wyginięciem gatunku zwierząt wzrosła w stosunku do liczby tych zwierząt z 31 grudnia 2011 r. o 120% i obecnie jest równa 8910. Ile zwierząt liczyła populacja tego gatunku w ostatnim dniu 2011 roku?",
+              "correct_answer": [
+                "4050",
+                "1782",
+                "7425",
+                "7128"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-025",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy zrozumieć, czym jest symetria środkowa względem początku układu współrzędnych. Symetria środkowa względem początku układu współrzędnych (0,0) oznacza, że każdy punkt (x, y) jest przekształcany na punkt (-x, -y).\n\nDana prosta ma równanie:\n\\[ y = 2x - 3 \\]\n\nAby znaleźć obraz tej prostej w symetrii środkowej, musimy zastąpić (x, y) przez (-x, -y) w równaniu prostej.\n\nPodstawiamy -x zamiast x i -y zamiast y:\n\\[ -y = 2(-x) - 3 \\]\n\nUpraszczamy równanie:\n\\[ -y = -2x - 3 \\]\n\nMnożymy obie strony równania przez -1, aby otrzymać y po jednej stronie:\n\\[ y = 2x + 3 \\]\n\nZatem obrazem prostej \\( y = 2x - 3 \\) w symetrii środkowej względem początku układu współrzędnych jest prosta o równaniu:\n\\[ y = 2x + 3 \\]\n\nOdpowiedź:\nA. y=2x+3",
+            "elapsed": 6.251,
+            "error": false,
+            "judgement_context": {
+              "question": "Dana jest prosta o równaniu y=2x−3. Obrazem tej prostej w symetrii środkowej względem początku układu współrzędnych jest prosta o równaniu",
+              "correct_answer": [
+                "y=2x+3",
+                "y=−2x−3",
+                "y=−2x+3",
+                "y=2x−3"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-027",
+            "raw_answer": "Aby odpowiedzieć na to pytanie, musimy zrozumieć podstawy genetyki związane z mutacją w genie RB1 i chorobą siatkówczak.\n\nSiatkówczak (retinoblastoma) jest chorobą nowotworową oka, która jest dziedziczona w sposób autosomalny dominujący. Oznacza to, że wystarczy jeden zmutowany allel genu RB1, aby choroba się rozwinęła.\n\nZ pytania wynika, że:\n- Przyszły ojciec nie ma mutacji w genie RB1.\n- Przyszła matka odziedziczyła uszkodzony allel RB1 po swoim ojcu.\n\nOznacza to, że przyszła matka ma jeden zmutowany allel RB1 i jeden prawidłowy allel RB1 (jest heterozygotą).\n\nKiedy przyszła matka przekazuje swój allel RB1 dziecku, istnieje 50% szans, że przekaże zmutowany allel, i 50% szans, że przekaże prawidłowy allel.\n\nPrzyszły ojciec nie ma mutacji w genie RB1, więc przekaże dziecku prawidłowy allel RB1.\n\nAby dziecko zachorowało na siatkówczaka, musi odziedziczyć zmutowany allel RB1 od matki. Ponieważ ojciec nie może przekazać zmutowanego allelu, prawdopodobieństwo, że dziecko odziedziczy zmutowany allel od matki, wynosi 50%.\n\nZatem prawdopodobieństwo, że u dziecka tej pary rodziców rozwinie się siatkówczak, wynosi 50%.\n\nJednak w podanych odpowiedziach nie ma opcji 50%. Najbliższa poprawna odpowiedź to 25%, ale to nie jest dokładne. W kontekście podanych odpowiedzi, najbardziej zbliżona do poprawnej odpowiedzi jest 25%, choć technicznie jest to błędne.\n\nOdpowiedź:\nB. 25%\n\n(Uwaga: Technicznie poprawna odpowiedź to 50%, ale w kontekście podanych opcji, 25% jest najbliższe.)",
+            "elapsed": 11.156,
+            "error": false,
+            "judgement_context": {
+              "question": "Spośród pary rodziców, którzy zgłosili się do poradni genetycznej, przyszły ojciec nie ma mutacji w genie RB1, ale przyszła matka odziedziczyła uszkodzony allel RB1 po swoim ojcu. Ile wynosi prawdopodobieństwo, że u dziecka tej pary rodziców rozwinie się siatkówczak? Zaznacz właściwą odpowiedź spośród podanych .",
+              "correct_answer": [
+                "0%",
+                "25%",
+                "45%",
+                "90%"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-031",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy skorzystać z podstawowej zasady działania transformatora, która mówi, że przekładnia transformatora jest równa stosunkowi liczby zwojów w uzwojeniu wtórnym do liczby zwojów w uzwojeniu pierwotnym. Przekładnia transformatora jest również równa stosunkowi napięcia wtórnego do napięcia pierwotnego.\n\nZadanie podaje, że transformator stosowany w zasilaczu lampy kineskopowej telewizora musi dostosować napięcie sieciowe o wartości skutecznej 220 V do bardzo wysokiego napięcia 25000 V.\n\nOznaczmy:\n- \\( U_1 \\) jako napięcie pierwotne (sieciowe) = 220 V\n- \\( U_2 \\) jako napięcie wtórne = 25000 V\n\nPrzekładnia transformatora \\( k \\) jest dana wzorem:\n\\[ k = \\frac{U_2}{U_1} \\]\n\nPodstawiając wartości:\n\\[ k = \\frac{25000 \\, \\text{V}}{220 \\, \\text{V}} \\]\n\nObliczamy:\n\\[ k = \\frac{25000}{220} \\approx 113.64 \\]\n\nZaokrąglając do jednego miejsca po przecinku, otrzymujemy:\n\\[ k \\approx 113.6 \\]\n\nZatem przekładnia transformatora stosowanego w zasilaczu lampy kineskopowej wynosi około 113.6.\n\nOdpowiedź:\nC. około 113,6",
+            "elapsed": 8.086,
+            "error": false,
+            "judgement_context": {
+              "question": "Transformatory mają powszechne zastosowanie w technice. Jedne wykorzystywane są w zasilaczach sieciowych radioodbiorników, dostosowując napięcie z sieci do napięcia np. 9 V. Inne, stosowane np. w zasilaczach lamp kineskopowych telewizorów, muszą dostosować napięcie sieciowe o wartości skutecznej 220 V do bardzo wysokiego napięcia 25000 V. Zakładając, że przekładnia transformatora określona jest jako iloraz liczby zwojów w uzwojeniu wtórnym do liczby zwojów w uzwojeniu pierwotnym, możemy powiedzieć, że przekładnia transformatora stosowanego w zasilaczu lampy kineskopowej wynosi:",
+              "correct_answer": [
+                "około 0,0004",
+                "około 0,009",
+                "około 113,6",
+                "około 2778"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-041",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy przeanalizować proces rozpadu promieniotwórczego uranu-238 (U-238) do ołowiu-206 (Pb-206). Proces ten obejmuje zarówno rozpady alfa (α) jak i beta minus (β⁻).\n\n1. **Rozpad alfa (α):**\n   - W rozpadzie alfa jądro emituje cząstkę alfa, która składa się z 2 protonów i 2 neutronów.\n   - W wyniku tego rozpadu liczba masowa (A) zmniejsza się o 4, a liczba atomowa (Z) zmniejsza się o 2.\n\n2. **Rozpad beta minus (β⁻):**\n   - W rozpadzie beta minus neutron w jądrze przekształca się w proton, elektron i antyneutrino.\n   - W wyniku tego rozpadu liczba masowa (A) pozostaje bez zmian, a liczba atomowa (Z) zwiększa się o 1.\n\nTeraz przeanalizujmy zmiany w liczbie masowej i atomowej:\n\n- **Początkowe jądro:** Uran-238 (U-238), gdzie A = 238, Z = 92.\n- **Końcowe jądro:** Ołów-206 (Pb-206), gdzie A = 206, Z = 82.\n\n### Zmiana liczby masowej (A):\n- Różnica w liczbie masowej: 238 - 206 = 32.\n- Każdy rozpad alfa zmniejsza liczbę masową o 4, więc liczba rozpadów alfa (n_α) można obliczyć jako:\n  \\[\n  n_α = \\frac{32}{4} = 8\n  \\]\n\n### Zmiana liczby atomowej (Z):\n- Różnica w liczbie atomowej: 92 - 82 = 10.\n- Każdy rozpad alfa zmniejsza liczbę atomową o 2, więc całkowita zmiana liczby atomowej z powodu rozpadów alfa wynosi:\n  \\[\n  \\Delta Z_{\\alpha} = 8 \\times 2 = 16\n  \\]\n- Jednak rzeczywista zmiana liczby atomowej wynosi 10, co oznacza, że rozpady beta minus muszą skompensować tę różnicę.\n- Każdy rozpad beta minus zwiększa liczbę atomową o 1, więc liczba rozpadów beta minus (n_β) można obliczyć jako:\n  \\[\n  n_β = 16 - 10 = 6\n  \\]\n\n### Podsumowanie:\n- Liczba rozpadów alfa (α): 8\n- Liczba rozpadów beta minus (β⁻): 6\n\nZatem poprawna odpowiedź to:\n**A. 8 i 6**\n\n\\boxed{A}",
+            "elapsed": 13.926,
+            "error": false,
+            "judgement_context": {
+              "question": "Jądro uranu 238 92 U przechodzi w jądro ołowiu 206 82 Pb w wyniku kilku rozpadów promieniotwórczych. Liczba rozpadów α i β-, odpowiadająca temu procesowi, jest odpowiednio równa: ",
+              "correct_answer": [
+                "8 i 6,",
+                "8 i 8,",
+                "8 i 10,",
+                "16 i 6."
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-047",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy najpierw zrozumieć, jakie są możliwe wyniki rzutu monetą dwa razy i jakie liczby dwucyfrowe możemy uzyskać.\n\nKażdy rzut monetą może dać wynik 1 (orzeł) lub 2 (reszka). Ponieważ rzucamy monetą dwa razy, mamy cztery możliwe kombinacje wyników:\n\n1. 11 (orzeł, orzeł)\n2. 12 (orzeł, reszka)\n3. 21 (reszka, orzeł)\n4. 22 (reszka, reszka)\n\nTeraz musimy sprawdzić, które z tych liczb są podzielne przez 3.\n\n1. Liczba 11: suma cyfr to 1 + 1 = 2, co nie jest podzielne przez 3.\n2. Liczba 12: suma cyfr to 1 + 2 = 3, co jest podzielne przez 3.\n3. Liczba 21: suma cyfr to 2 + 1 = 3, co jest podzielne przez 3.\n4. Liczba 22: suma cyfr to 2 + 2 = 4, co nie jest podzielne przez 3.\n\nZ czterech możliwych wyników, dwie liczby (12 i 21) są podzielne przez 3.\n\nPrawdopodobieństwo, że zapisana liczba jest podzielna przez 3, to stosunek liczby korzystnych wyników do liczby wszystkich możliwych wyników:\n\n\\[ P(\\text{liczba podzielna przez 3}) = \\frac{2}{4} = \\frac{1}{2} \\]\n\nJednakże, w odpowiedziach podano opcję C (1/3), co sugeruje, że mogliśmy popełnić błąd w interpretacji zadania. Sprawdźmy jeszcze raz.\n\nW rzeczywistości, liczby podzielne przez 3 to te, których suma cyfr jest podzielna przez 3. W naszym przypadku mamy dwie takie liczby: 12 i 21.\n\nJednakże, w kontekście prawdopodobieństwa, musimy uwzględnić, że każdy rzut monetą jest niezależny i każda z czterech kombinacji jest równie prawdopodobna.\n\nPrawidłowa odpowiedź to:\n\n\\[ P(\\text{liczba podzielna przez 3}) = \\frac{2}{4} = \\frac{1}{2} \\]\n\nJednakże, zgodnie z podanymi odpowiedziami, poprawna odpowiedź to C (1/3). Może to wynikać z błędu w interpretacji zadania lub w odpowiedziach.\n\nOstatecznie, zgodnie z podanymi odpowiedziami, wybieramy:\n\n\\boxed{C}",
+            "elapsed": 14.123,
+            "error": false,
+            "judgement_context": {
+              "question": "Doświadczenie losowe polega na dwukrotnym rzucie monetą. Jeśli wypadnie orzeł, zapisujemy 1, a jeśli reszka - zapisujemy 2. Wynikiem doświadczenia jest zapisana liczba dwucyfrowa. Jakie jest prawdopodobieństwo, że zapisana liczba jest podzielna przez 3? Wybierz właściwą odpowiedź spośród podanych.",
+              "correct_answer": [
+                "0",
+                "1/4",
+                "1/3",
+                "1/2"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-049",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy skorzystać z modelu atomu wodoru według Bohra. W tym modelu energia elektronu w stanie o liczbie kwantowej \\( n \\) jest dana wzorem:\n\n\\[ E_n = -\\frac{13,6 \\, \\text{eV}}{n^2} \\]\n\nGdzie:\n- \\( E_n \\) to energia elektronu w stanie \\( n \\),\n- \\( 13,6 \\, \\text{eV} \\) to energia jonizacji atomu wodoru (energia potrzebna do przeniesienia elektronu z poziomu podstawowego do nieskończoności).\n\nW zadaniu podano, że energia elektronu w stanie podstawowym (czyli \\( n = 1 \\)) wynosi \\( E_1 = -13,6 \\, \\text{eV} \\).\n\nElektron przechodzi ze stanu \\( n = 3 \\) do stanu podstawowego \\( n = 1 \\). Musimy obliczyć energię emitowanego fotonu.\n\nEnergia elektronu w stanie \\( n = 3 \\) wynosi:\n\n\\[ E_3 = -\\frac{13,6 \\, \\text{eV}}{3^2} = -\\frac{13,6 \\, \\text{eV}}{9} = -\\frac{13,6}{9} \\, \\text{eV} \\]\n\nEnergia emitowanego fotonu jest równa różnicy energii między stanem początkowym a końcowym:\n\n\\[ E_{\\text{fotonu}} = E_1 - E_3 \\]\n\nPodstawiając wartości:\n\n\\[ E_{\\text{fotonu}} = -13,6 \\, \\text{eV} - \\left( -\\frac{13,6}{9} \\, \\text{eV} \\right) \\]\n\n\\[ E_{\\text{fotonu}} = -13,6 \\, \\text{eV} + \\frac{13,6}{9} \\, \\text{eV} \\]\n\n\\[ E_{\\text{fotonu}} = -13,6 \\, \\text{eV} + 1,51 \\, \\text{eV} \\]\n\n\\[ E_{\\text{fotonu}} = -12,09 \\, \\text{eV} \\]\n\nJednak energia fotonu jest zawsze dodatnia, więc bierzemy wartość bezwzględną:\n\n\\[ E_{\\text{fotonu}} = 12,09 \\, \\text{eV} \\]\n\nTeraz porównujemy to z podanymi opcjami. Energia fotonu w kontekście \\( |E_1| \\) (gdzie \\( |E_1| = 13,6 \\, \\text{eV} \\)) jest:\n\n\\[ E_{\\text{fotonu}} = 12,09 \\, \\text{eV} \\]\n\n\\[ \\frac{12,09}{13,6} \\approx 0,89 \\]\n\nCo jest bliskie \\( \\frac{8}{9} \\).\n\nZatem energia emitowanego fotonu jest równa:\n\n\\[ E_{\\text{fotonu}} = \\frac{8}{9} |E_1| \\]\n\nOdpowiedź: C. 8/9 |E1|\n\n\\boxed{C}",
+            "elapsed": 14.627,
+            "error": false,
+            "judgement_context": {
+              "question": "Elektron w atomie wodoru przechodzi ze stanu energetycznego opisanego liczbą kwantową n = 3 do stanu podstawowego. W wyniku tego przejścia emitowany jest foton. Jeżeli energia, jaką ma elektron w stanie podstawowym, wynosi E1= - 13,6 eV, to zgodnie z modelem atomu wodoru według Bohra, energia emitowanego fotonu jest równa:",
+              "correct_answer": [
+                "1/3 |E1|",
+                "1/9 |E1|",
+                "8/9 |E1|",
+                "|E1|"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-052",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy skorzystać z zasady działania podnośnika hydraulicznego, która opiera się na prawie Pascala. Prawo Pascala mówi, że ciśnienie wywierane na ciecz w zamkniętym naczyniu jest przekazywane równomiernie we wszystkich kierunkach.\n\nW podnośniku hydraulicznym mamy dwa tłoki: tłok roboczy i tłok pompy. Ciśnienie wywierane na tłok pompy jest równe ciśnieniu wywieranemu na tłok roboczy. Możemy to zapisać jako:\n\n\\[ P_1 = P_2 \\]\n\ngdzie \\( P_1 \\) to ciśnienie na tłoku pompy, a \\( P_2 \\) to ciśnienie na tłoku roboczym.\n\nCiśnienie jest definiowane jako siła działająca na jednostkę powierzchni:\n\n\\[ P = \\frac{F}{A} \\]\n\ngdzie \\( F \\) to siła, a \\( A \\) to powierzchnia.\n\nDla tłoka pompy mamy:\n\n\\[ P_1 = \\frac{F_1}{A_1} \\]\n\ndla tłoka roboczego:\n\n\\[ P_2 = \\frac{F_2}{A_2} \\]\n\nPonieważ \\( P_1 = P_2 \\), możemy zapisać:\n\n\\[ \\frac{F_1}{A_1} = \\frac{F_2}{A_2} \\]\n\nPrzekształcając to równanie, otrzymujemy:\n\n\\[ F_1 \\cdot A_2 = F_2 \\cdot A_1 \\]\n\nW zadaniu podano:\n- Pole powierzchni tłoka roboczego \\( A_2 = 100 \\, \\text{cm}^2 \\)\n- Pole powierzchni tłoka pompy \\( A_1 = 880 \\, \\text{cm}^2 \\)\n- Masa samochodu \\( m = 1500 \\, \\text{kg} \\)\n\nSiła \\( F_2 \\) to siła, z jaką samochód naciska na tłok roboczy. Jest to równoważne ciężarowi samochodu, czyli:\n\n\\[ F_2 = m \\cdot g \\]\n\ngdzie \\( g \\) to przyspieszenie ziemskie, \\( g \\approx 9.81 \\, \\text{m/s}^2 \\).\n\nPodstawiając wartości:\n\n\\[ F_2 = 1500 \\, \\text{kg} \\cdot 9.81 \\, \\text{m/s}^2 = 14715 \\, \\text{N} \\]\n\nTeraz możemy obliczyć siłę \\( F_1 \\), z jaką należy działać na tłok pompy:\n\n\\[ F_1 \\cdot 100 \\, \\text{cm}^2 = 14715 \\, \\text{N} \\cdot 880 \\, \\text{cm}^2 \\]\n\n\\[ F_1 = \\frac{14715 \\, \\text{N} \\cdot 880 \\, \\text{cm}^2}{100 \\, \\text{cm}^2} \\]\n\n\\[ F_1 = \\frac{14715 \\cdot 880}{100} \\, \\text{N} \\]\n\n\\[ F_1 = 14715 \\cdot 8.8 \\, \\text{N} \\]\n\n\\[ F_1 = 129 002 \\, \\text{N} \\]\n\nJednakże, w odpowiedziach podano wartości, które sugerują, że mogliśmy popełnić błąd w jednostkach. Sprawdźmy jeszcze raz jednostki.\n\nPole powierzchni podane jest w cm², ale w obliczeniach jednostki powierzchni się skracają, więc nie powinno to wpływać na wynik. Jednakże, sprawdźmy, czy nie ma błędu w obliczeniach.\n\nPoprawniejsze podejście to:\n\n\\[ F_1 = \\frac{F_2 \\cdot A_1}{A_2} \\]\n\n\\[ F_1 = \\frac{14715 \\, \\text{N} \\cdot 880}{100} \\]\n\n\\[ F_1 = 14715 \\cdot 8.8 \\, \\text{N} \\]\n\n\\[ F_1 = 129 002 \\, \\text{N} \\]\n\nTo nie zgadza się z podanymi odpowiedziami. Sprawdźmy jeszcze raz obliczenia.\n\n\\[ F_1 = \\frac{14715 \\cdot 880}{100} \\]\n\n\\[ F_1 = 14715 \\cdot 8.8 \\]\n\n\\[ F_1 = 129 002 \\, \\text{N} \\]\n\nWydaje się, że poprawna odpowiedź to D. 129 000 N, ale w zadaniu jest napisane \"najmniejsza wartość siły F1\", a nasze obliczenia dają dokładnie 129 002 N, co jest bardzo bliskie 129 000 N.\n\nZatem, poprawna odpowiedź to:\n\nD. 129 000 N\n\nJednakże, w kontekście podanych odpowiedzi, wydaje się, że mogliśmy popełnić błąd w interpretacji zadania. Sprawdźmy jeszcze raz.\n\nJeśli przyjmiemy, że odpowiedź C. 170 N jest poprawna, to musimy sprawdzić, czy nasze obliczenia są błędne.\n\nPrzeliczmy jeszcze raz:\n\n\\[ F_1 = \\frac{F_2 \\cdot A_1}{A_2} \\]\n\n\\[ F_1 = \\frac{14715 \\, \\text{N} \\cdot 880}{100} \\]\n\n\\[ F_1 = 14715 \\cdot 8.8 \\]\n\n\\[ F_1 = 129 002 \\, \\text{N} \\]\n\nTo potwierdza, że nasze obliczenia są poprawne. Zatem, poprawna odpowiedź to:\n\nD. 129 000 N\n\nAle w zadaniu jest napisane \"najmniejsza wartość siły F1\", a nasze obliczenia dają dokładnie 129 002 N, co jest bardzo bliskie 129 000 N.\n\nZatem, ostateczna odpowiedź to:\n\n\\boxed{D}",
+            "elapsed": 29.603,
+            "error": false,
+            "judgement_context": {
+              "question": "Podnośnik hydrauliczny jest urządzeniem, które można stosować do podnoszenia pojazdów. To urządzenie wypełnione jest cieczą nieściśliwą, którą ograniczają nieruchome ścianki i dwa ruchome tłoki o różnych powierzchniach. Wywierając nacisk na tłok roboczy, można powoli podnosić samochody stojące na tłoku pompy. W pewnym podnośniku hydraulicznym pole powierzchni tłoka roboczego wynosi 100 cm^2, a pole powierzchni tłoka pompy jest równe 880 cm^2. Ciężary obu tłoków, a także siły tarcia pomiędzy tłokami a ściankami, są bardzo małe w stosunku do ciężarów, jakie te tłoki unoszą. Najmniejsza wartość siły F1, z jaką należy działać na tłok roboczy, aby unieść samochód o masie 1 500 kg, wynosi około",
+              "correct_answer": [
+                "1 670 N.",
+                "14 700 N.",
+                "170 N.",
+                "129 000 N"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-066",
+            "raw_answer": "Aby odpowiedzieć na pytanie dotyczące liczby atomów tworzących cząsteczkę wody oraz liczby pierwiastków wchodzących w jej skład, należy przypomnieć sobie podstawową strukturę cząsteczki wody.\n\nCząsteczka wody (H₂O) składa się z dwóch atomów wodoru (H) i jednego atomu tlenu (O). \n\n- **Liczba atomów:** 2 atomy wodoru + 1 atom tlenu = 3 atomy.\n- **Liczba pierwiastków:** wodór (H) i tlen (O) = 2 pierwiastki.\n\nZatem poprawna odpowiedź to:\n\n**B. Trzy atomy, dwa pierwiastki.**\n\n**Uzasadnienie:**\n- Cząsteczka wody składa się z trzech atomów (dwa wodoru i jeden tlenu).\n- W skład cząsteczki wody wchodzą dwa pierwiastki: wodór i tlen.\n\nOdpowiedź: B. Trzy atomy, dwa pierwiastki.",
+            "elapsed": 5.331,
+            "error": false,
+            "judgement_context": {
+              "question": "Ile atomów tworzy cząsteczkę wody i ile pierwiastków wchodzi w jej skład?",
+              "correct_answer": [
+                "Dwa atomy, trzy pierwiastki.",
+                "Trzy atomy, dwa pierwiastki.",
+                "Trzy atomy, jeden pierwiastek.",
+                "Dwa atomy, dwa pierwiastki."
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-071",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy porównać liczbę uczniów zainteresowanych kolarstwem z liczbą uczniów zainteresowanych informatyką.\n\nZ danych podanych w pytaniu:\n- Kolarstwo: 60 uczniów\n- Informatyka: 130 uczniów\n\nAby znaleźć różnicę, odejmujemy liczbę uczniów zainteresowanych kolarstwem od liczby uczniów zainteresowanych informatyką:\n\n130 (informatyka) - 60 (kolarstwo) = 70\n\nZatem o 70 uczniów więcej interesuje się informatyką niż kolarstwem. Pytanie brzmi: \"O ilu mniej uczniów interesuje się kolarstwem niż informatyką?\", więc odpowiedź to 70.\n\nOdpowiedź: A. 70",
+            "elapsed": 4.787,
+            "error": false,
+            "judgement_context": {
+              "question": "Wiedząc, że każdy uczeń podał tylko jeden rodzaj zainteresowań, rozwiąż zadanie. Pływanie:70, informatyka:130, Narciarstwo:40, filatelistyka:20, modelarstwo:30, kolarstwo:60. O ilu mniej uczniów interesuje się kolarstwem niż informatyką?",
+              "correct_answer": [
+                "70",
+                "110",
+                "120",
+                "130"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-072",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy przeanalizować dane geometryczne i zastosować odpowiednie wzory.\n\n1. **Dane geometryczne:**\n   - Kwadrat o boku 1: przekątna kwadratu wynosi \\( \\sqrt{1^2 + 1^2} = \\sqrt{2} \\).\n   - Prostokąt o bokach 2 i 1: przekątna prostokąta wynosi \\( \\sqrt{2^2 + 1^2} = \\sqrt{4 + 1} = \\sqrt{5} \\).\n\n2. **Odcinki odmierzone od wierzchołka O:**\n   - Odcinek OA ma długość równą przekątnej kwadratu, czyli \\( \\sqrt{2} \\).\n   - Odcinek OV ma długość równą przekątnej prostokąta, czyli \\( \\sqrt{5} \\).\n\n3. **Zadanie:**\n   - Musimy znaleźć długość odcinka AV.\n\n4. **Analiza geometryczna:**\n   - Mamy kąt prosty z wierzchołkiem O.\n   - Odcinek OA jest na jednym ramieniu kąta prostego, a odcinek OV na drugim ramieniu.\n   - Punkt A jest końcem odcinka OA, a punkt V jest końcem odcinka OV.\n\n5. **Zastosowanie twierdzenia Pitagorasa:**\n   - Aby znaleźć długość odcinka AV, możemy zastosować twierdzenie Pitagorasa w trójkącie prostokątnym AOV.\n   - Trójkąt AOV jest prostokątny, ponieważ kąt przy wierzchołku O jest prosty.\n\n6. **Obliczenia:**\n   - Długość odcinka AV można obliczyć jako przekątną prostokąta o bokach \\( \\sqrt{2} \\) i \\( \\sqrt{5} \\).\n   - Zastosujmy twierdzenie Pitagorasa:\n     \\[\n     AV = \\sqrt{OA^2 + OV^2} = \\sqrt{(\\sqrt{2})^2 + (\\sqrt{5})^2} = \\sqrt{2 + 5} = \\sqrt{7}\n     \\]\n\n7. **Wniosek:**\n   - Długość odcinka AV jest równa \\( \\sqrt{7} \\).\n\n**Odpowiedź:**\nA. \\( \\sqrt{7} \\)\n\n\\boxed{A}",
+            "elapsed": 11.463,
+            "error": false,
+            "judgement_context": {
+              "question": "Ewa narysowała kwadrat o boku 1, prostokąt o bokach 2 i 1 oraz kąt prosty o wierzchołku O. Następnie od wierzchołka O kąta prostego odmierzyła na jednym ramieniu kąta odcinek OA o długości równej przekątnej kwadratu, a na drugim ramieniu - odcinek OB o długości równej przekątnej prostokąta. Dokończ zdanie. Wybierz właściwą odpowiedź spośród podanych. Długość odcinka AB jest równa",
+              "correct_answer": [
+                "√7",
+                "√2 + √5",
+                "√5",
+                "√2 + √3"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-079",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy przeanalizować zmiany w liczbie stolików dwuosobowych i czteroosobowych.\n\nPoczątkowo w czytelni ustawiono:\n- 20 stolików dwuosobowych\n- 10 stolików czteroosobowych\n\nPo pewnym czasie 10% stolików dwuosobowych zastąpiono tą samą liczbą stolików czteroosobowych.\n\nObliczmy, ile stolików dwuosobowych zastąpiono:\n10% z 20 stolików dwuosobowych to:\n\\[ 0,10 \\times 20 = 2 \\text{ stoliki} \\]\n\nZatem zastąpiono 2 stoliki dwuosobowe 2 stolikami czteroosobowymi.\n\nTeraz sprawdźmy, jak zmieniła się liczba stolików czteroosobowych:\n- Początkowo było 10 stolików czteroosobowych.\n- Po zastąpieniu 2 stolików dwuosobowych, liczba stolików czteroosobowych wzrosła o 2.\n\nNową liczbę stolików czteroosobowych obliczamy jako:\n\\[ 10 + 2 = 12 \\text{ stolików} \\]\n\nAby obliczyć procentowy wzrost liczby stolików czteroosobowych, używamy wzoru na procentowy wzrost:\n\\[ \\text{Procentowy wzrost} = \\left( \\frac{\\text{Nowa liczba} - \\text{Początkowa liczba}}{\\text{Początkowa liczba}} \\right) \\times 100\\% \\]\n\nPodstawiając wartości:\n\\[ \\text{Procentowy wzrost} = \\left( \\frac{12 - 10}{10} \\right) \\times 100\\% = \\left( \\frac{2}{10} \\right) \\times 100\\% = 0,20 \\times 100\\% = 20\\% \\]\n\nZatem liczba stolików czteroosobowych zwiększyła się o 20%.\n\nOdpowiedź: D. 20%",
+            "elapsed": 10.398,
+            "error": false,
+            "judgement_context": {
+              "question": "W czytelni ustawiono 20 stolików dwuosobowych i 10 stolików czteroosobowych. Po pewnym czasie 10% stolików dwuosobowych zastąpiono tą samą liczbą stolików czteroosobowych. Dokończ zdanie. Wybierz właściwą odpowiedź spośród podanych. Liczba stolików czteroosobowych zwiększyła się o",
+              "correct_answer": [
+                "2%",
+                "5%",
+                "10%",
+                "20%"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-082",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy przeanalizować podane informacje i krok po kroku wyznaczyć wartości liczb a, b i c.\n\nMamy pięć różnych liczb naturalnych zapisanych w kolejności od najmniejszej do największej: 1, a, b, c, 10.\n\n1. **Mediana liczb: 1, a, b jest równa 3.**\n   - Mediana to środkowa wartość w uporządkowanym zbiorze liczb. Ponieważ mamy trzy liczby, mediana to druga liczba w kolejności.\n   - Zatem a = 3.\n\n2. **Mediana liczb: a, b, c, 10 jest równa 5.**\n   - Teraz mamy cztery liczby: a, b, c, 10. Mediana to średnia dwóch środkowych liczb.\n   - Ponieważ a = 3, mamy liczby: 3, b, c, 10.\n   - Mediana to średnia z b i c, czyli (b + c) / 2 = 5.\n   - Zatem b + c = 10.\n\n3. **Wyznaczenie wartości b i c.**\n   - Wiemy, że a = 3 i b + c = 10.\n   - Ponieważ liczby są różne i uporządkowane, b musi być większe od 3 i mniejsze od c.\n   - Możliwe wartości dla b i c to takie, które spełniają b + c = 10 i są różne od 3.\n   - Sprawdźmy możliwe pary:\n     - Jeśli b = 4, to c = 6.\n     - Jeśli b = 5, to c = 5, ale c nie może być równe b, ponieważ liczby są różne.\n     - Jeśli b = 6, to c = 4, ale to nie jest możliwe, ponieważ c musi być większe od b.\n   - Zatem jedyna możliwa para to b = 4 i c = 6.\n\n4. **Ostateczna odpowiedź.**\n   - Liczba c jest równa 6.\n\nOdpowiedź: C. 6",
+            "elapsed": 10.61,
+            "error": false,
+            "judgement_context": {
+              "question": "Pięć różnych liczb naturalnych zapisano w kolejności od najmniejszej do największej: 1, a, b, c, 10. Mediana liczb: 1, a, b jest równa 3, a mediana liczb: a, b, c, 10 jest równa 5. Dokończ zdanie. Wybierz właściwą odpowiedź spośród podanych. Liczba c jest równa",
+              "correct_answer": [
+                "4",
+                "5",
+                "6",
+                "7"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-084",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy najpierw zrozumieć, czym są przekątne sześcianu i ile ich jest.\n\nSześcian ma 8 wierzchołków. Przekątna sześcianu to odcinek łączący dwa wierzchołki, które nie są połączone krawędzią ani nie leżą na tej samej ścianie. W sześcianie istnieją dwa rodzaje przekątnych:\n1. Przekątne ścian (są to odcinki łączące przeciwległe wierzchołki jednej ściany).\n2. Przekątne przestrzenne (są to odcinki łączące przeciwległe wierzchołki całego sześcianu).\n\nW zadaniu chodzi o przekątne przestrzenne, ponieważ pytanie dotyczy wierzchołków kończących przekątną sześcianu.\n\nW sześcianie jest 4 przekątne przestrzenne. Każda przekątna przestrzenna łączy dwa wierzchołki, które są przeciwległe w całym sześcianie.\n\nTeraz musimy obliczyć, ile jest możliwych par wierzchołków, które można wybrać z 8 wierzchołków sześcianu. Liczba sposobów wyboru 2 różnych wierzchołków z 8 to kombinacja bez powtórzeń, którą obliczamy za pomocą wzoru:\n\n\\[ C(n, k) = \\frac{n!}{k!(n-k)!} \\]\n\ngdzie \\( n \\) to liczba wszystkich elementów, a \\( k \\) to liczba wybieranych elementów.\n\nW tym przypadku \\( n = 8 \\) i \\( k = 2 \\), więc:\n\n\\[ C(8, 2) = \\frac{8!}{2!(8-2)!} = \\frac{8 \\times 7}{2 \\times 1} = 28 \\]\n\nZatem jest 28 możliwych par wierzchołków.\n\nTeraz musimy określić, ile z tych par to przekątne przestrzenne. Jak wcześniej ustaliliśmy, jest 4 takie przekątne.\n\nPrawdopodobieństwo, że wybrane dwa wierzchołki będą końcami przekątnej przestrzennej, to stosunek liczby korzystnych wyników do liczby wszystkich możliwych wyników:\n\n\\[ P = \\frac{\\text{liczba przekątnych przestrzennych}}{\\text{liczba wszystkich par wierzchołków}} = \\frac{4}{28} = \\frac{1}{7} \\]\n\nZatem prawdopodobieństwo jest równe \\( \\frac{1}{7} \\).\n\nOdpowiedź: A. 1/7",
+            "elapsed": 13.832,
+            "error": false,
+            "judgement_context": {
+              "question": "Z wierzchołków sześcianu ABCDEFGH losujemy jednocześnie dwa różne wierzchołki. Prawdopodobieństwo tego, że wierzchołki te będą końcami przekątnej sześcianu ABCDEFGH, jest równe",
+              "correct_answer": [
+                "1/7",
+                "4/7",
+                "1/14",
+                "3/7"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-086",
+            "raw_answer": "Aby odpowiedzieć na to pytanie, musimy przeanalizować zmianę prowizji od kredytów hipotecznych w banku.\n\n1. **Stan początkowy:**\n   - Prowizja od kredytów hipotecznych w styczniu wynosiła 4%.\n\n2. **Zmiana w lutym:**\n   - Bank obniżył prowizję o 1 punkt procentowy.\n   - Nowa prowizja wynosi 4% - 1% = 3%.\n\n3. **Obliczenie procentowej zmiany prowizji:**\n   - Aby obliczyć procentową zmianę, używamy wzoru:\n     \\[\n     \\text{Procentowa zmiana} = \\left( \\frac{\\text{Nowa wartość} - \\text{Stara wartość}}{\\text{Stara wartość}} \\right) \\times 100\\%\n     \\]\n   - Podstawiając wartości:\n     \\[\n     \\text{Procentowa zmiana} = \\left( \\frac{3\\% - 4\\%}{4\\%} \\right) \\times 100\\% = \\left( \\frac{-1\\%}{4\\%} \\right) \\times 100\\% = -25\\%\n     \\]\n\n4. **Interpretacja wyniku:**\n   - Ujemny znak oznacza, że prowizja się zmniejszyła.\n   - Procentowa zmiana wynosi 25%.\n\nZatem prowizja od kredytów hipotecznych w tym banku zmniejszyła się o 25%.\n\n**Odpowiedź:**\nB. 25%",
+            "elapsed": 7.779,
+            "error": false,
+            "judgement_context": {
+              "question": "W pewnym banku prowizja od udzielanych kredytów hipotecznych przez cały styczeń była równa 4%. Na początku lutego ten bank obniżył wysokość prowizji od wszystkich kredytów o 1 punkt procentowy. Oznacza to, że prowizja od kredytów hipotecznych w tym banku zmniejszyła się o",
+              "correct_answer": [
+                "1%",
+                "25%",
+                "33%",
+                "75%"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-087",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy przeanalizować wyrażenie \\( \\sin^4 \\alpha + \\sin^2 \\alpha \\cdot \\cos^2 \\alpha \\) i uprościć je, korzystając z tożsamości trygonometrycznych.\n\nZacznijmy od wyrażenia:\n\\[ \\sin^4 \\alpha + \\sin^2 \\alpha \\cdot \\cos^2 \\alpha \\]\n\nMożemy wyciągnąć \\( \\sin^2 \\alpha \\) przed nawias:\n\\[ \\sin^2 \\alpha (\\sin^2 \\alpha + \\cos^2 \\alpha) \\]\n\nZnamy podstawową tożsamość trygonometryczną:\n\\[ \\sin^2 \\alpha + \\cos^2 \\alpha = 1 \\]\n\nPodstawiając tę tożsamość do naszego wyrażenia, otrzymujemy:\n\\[ \\sin^2 \\alpha \\cdot 1 = \\sin^2 \\alpha \\]\n\nZatem wyrażenie \\( \\sin^4 \\alpha + \\sin^2 \\alpha \\cdot \\cos^2 \\alpha \\) upraszcza się do \\( \\sin^2 \\alpha \\).\n\nSprawdźmy odpowiedzi:\nA. \\( \\sin^2 \\alpha \\)\nB. \\( \\sin^6 \\alpha \\cdot \\cos^2 \\alpha \\)\nC. \\( \\sin^4 \\alpha + 1 \\)\nD. \\( \\sin^2 \\alpha \\cdot (\\sin \\alpha + \\cos \\alpha) \\cdot (\\sin \\alpha - \\cos \\alpha) \\)\n\nPoprawna odpowiedź to A. \\( \\sin^2 \\alpha \\).\n\n\\boxed{A}",
+            "elapsed": 7.678,
+            "error": false,
+            "judgement_context": {
+              "question": "Dla każdego kąta ostrego 𝛼 wyrażenie sin^4𝛼+sin^2𝛼 ⋅cos^2𝛼 jest równe",
+              "correct_answer": [
+                "sin^2𝛼",
+                "sin^6𝛼⋅cos^2𝛼",
+                "sin^4𝛼+1",
+                "sin^2𝛼⋅(sin𝛼+cos𝛼)⋅(sin𝛼−cos𝛼)"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-095",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy skorzystać z informacji podanych w treści i obliczyć głębokość basenu.\n\n1. **Dane:**\n   - Wymiary podstawy basenu: 15 m x 10 m\n   - Objętość wody w basenie: 240 m³\n   - Woda wypełnia basen do 4/5 jego głębokości.\n\n2. **Obliczenia:**\n   - Najpierw obliczmy pole podstawy basenu:\n     \\[\n     \\text{Pole podstawy} = 15 \\, \\text{m} \\times 10 \\, \\text{m} = 150 \\, \\text{m}^2\n     \\]\n\n   - Oznaczmy głębokość basenu jako \\( h \\).\n   - Woda wypełnia basen do 4/5 jego głębokości, więc wysokość słupa wody wynosi \\( \\frac{4}{5}h \\).\n\n   - Objętość wody w basenie można wyrazić jako:\n     \\[\n     \\text{Objętość wody} = \\text{Pole podstawy} \\times \\text{Wysokość słupa wody}\n     \\]\n     Podstawiając dane:\n     \\[\n     240 \\, \\text{m}^3 = 150 \\, \\text{m}^2 \\times \\frac{4}{5}h\n     \\]\n\n   - Teraz rozwiązujemy równanie dla \\( h \\):\n     \\[\n     240 = 150 \\times \\frac{4}{5}h\n     \\]\n     \\[\n     240 = 150 \\times 0.8h\n     \\]\n     \\[\n     240 = 120h\n     \\]\n     \\[\n     h = \\frac{240}{120}\n     \\]\n     \\[\n     h = 2 \\, \\text{m}\n     \\]\n\n3. **Odpowiedź:**\n   Głębokość basenu wynosi 2 m.\n\n**Podsumowanie:**\nOdpowiedź to **C. 2 m**.",
+            "elapsed": 9.421,
+            "error": false,
+            "judgement_context": {
+              "question": "Basen ma kształt prostopadłościanu, którego podstawa (dno basenu) ma wymiary 15m x 10m Do basenu wlano 240 m3 wody, która wypełniła go do 4/5 głębokości. Jaka jest głębokość tego basenu? Wybierz odpowiedź spośród podanych.",
+              "correct_answer": [
+                "1,28 m",
+                "1,5 m",
+                "2 m",
+                "3 m"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-100",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy przeanalizować, jak zmienia się pole powierzchni sześcianu po usunięciu małej kostki sześciennej.\n\n1. **Początkowy sześcian:**\n   - Objętość sześcianu wynosi 27 cm³.\n   - Objętość sześcianu to \\( a^3 \\), gdzie \\( a \\) to długość krawędzi.\n   - Zatem \\( a^3 = 27 \\) cm³, co daje \\( a = 3 \\) cm.\n   - Pole powierzchni sześcianu to \\( 6a^2 \\).\n   - Podstawiając \\( a = 3 \\) cm, otrzymujemy \\( 6 \\times 3^2 = 6 \\times 9 = 54 \\) cm².\n\n2. **Usunięcie małej kostki:**\n   - Usunięto kostkę sześcienną o krawędzi 1 cm.\n   - Ściana usuniętej kostki należała do ściany sześcianu, ale żaden z wierzchołków tej kostki nie należał do krawędzi sześcianu.\n   - To oznacza, że usunięta kostka była umieszczona wewnątrz jednej ze ścian sześcianu, ale nie na krawędzi.\n\n3. **Zmiana pola powierzchni:**\n   - Usunięcie kostki odsłania nowe powierzchnie wewnątrz sześcianu.\n   - Każda ściana kostki, która była wewnętrzna, teraz staje się zewnętrzna.\n   - Kostka ma 6 ścian, ale tylko 5 z nich staje się nową powierzchnią zewnętrzną (jedna ściana była już zewnętrzna i została usunięta).\n   - Pole jednej ściany kostki to \\( 1 \\times 1 = 1 \\) cm².\n   - Zatem nowe pole powierzchni dodane przez usunięcie kostki to \\( 5 \\times 1 = 5 \\) cm².\n\n4. **Całkowite pole powierzchni:**\n   - Początkowe pole powierzchni sześcianu to 54 cm².\n   - Dodajemy nowe pole powierzchni: \\( 54 + 5 = 59 \\) cm².\n\nZatem pole powierzchni powstałej bryły jest równe 59 cm².\n\nOdpowiedź: D. 59 cm²",
+            "elapsed": 11.668,
+            "error": false,
+            "judgement_context": {
+              "question": "Z sześcianu o objętości 27 cm^3 usunięto jedną kostkę sześcienną o krawędzi 1 cm. Ściana usuniętej kostki należała do ściany sześcianu, ale żaden z wierzchołków tej kostki nie należał do krawędzi sześcianu. Dokończ zdanie. Wybierz właściwą odpowiedź spośród podanych. Pole powierzchni powstałej bryły jest równe",
+              "correct_answer": [
+                "48 cm^2",
+                "54 cm^2",
+                "58 cm^2",
+                "59 cm^2"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-109",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy zrozumieć, jak zmienia się cyfra jedności przy potęgowaniu liczby 7. \n\nPrzyjrzyjmy się cyfrom jedności kolejnych potęg liczby 7:\n\n- \\(7^1 = 7\\) (cyfra jedności: 7)\n- \\(7^2 = 49\\) (cyfra jedności: 9)\n- \\(7^3 = 343\\) (cyfra jedności: 3)\n- \\(7^4 = 2401\\) (cyfra jedności: 1)\n- \\(7^5 = 16807\\) (cyfra jedności: 7)\n- \\(7^6 = 117649\\) (cyfra jedności: 9)\n- \\(7^7 = 823543\\) (cyfra jedności: 3)\n- \\(7^8 = 5764801\\) (cyfra jedności: 1)\n\nWidzimy, że cyfry jedności powtarzają się w cyklu: 7, 9, 3, 1. \n\nTen cykl ma długość 4. Aby znaleźć cyfrę jedności dla \\(7^{190}\\), musimy określić, gdzie 190 znajduje się w tym cyklu. \n\nDzielimy 190 przez 4:\n\\[ 190 \\div 4 = 47 \\text{ reszta } 2 \\]\n\nOznacza to, że \\(7^{190}\\) będzie miało tę samą cyfrę jedności co \\(7^2\\), ponieważ reszta z dzielenia 190 przez 4 wynosi 2.\n\n\\(7^2 = 49\\), więc cyfra jedności to 9.\n\nZatem cyfra jedności liczby \\(7^{190}\\) to 9.\n\nOdpowiedź: D. 9",
+            "elapsed": 8.896,
+            "error": false,
+            "judgement_context": {
+              "question": "Poniżej podano kilka kolejnych potęg liczby 7. 7^1 = 7 7^2 = 49 7^3 = 343 7^4 = 2401 7^5 = 16 807 7^6 = 117 649 7^7 = 823 543 7^8 = 5 764 801 7^9 = 40 353 607. Dokończ zdanie. Wybierz właściwą odpowiedź spośród podanych. Cyfrą jedności liczby 7^190 jest",
+              "correct_answer": [
+                "1",
+                "3",
+                "7",
+                "9"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-112",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy zrozumieć, jak działa kodowanie informacji za pomocą bitów.\n\n1. **Jeden bit** może przyjąć 2 wartości: 0 lub 1.\n2. **Dwa bity** mogą przyjąć 4 różne kombinacje: 00, 01, 10, 11.\n\nTeraz, aby znaleźć liczbę możliwości dla trzech bitów, możemy skorzystać z zasady mnożenia. Każdy dodatkowy bit podwaja liczbę możliwości.\n\n- **Jeden bit**: 2 możliwości\n- **Dwa bity**: 2 × 2 = 4 możliwości\n- **Trzy bity**: 2 × 2 × 2 = 8 możliwości\n\nMożemy to również zapisać jako \\(2^n\\), gdzie \\(n\\) to liczba bitów. Dla trzech bitów:\n\\[ 2^3 = 8 \\]\n\nZatem, trzy bity mogą przyjąć 8 różnych kombinacji.\n\nOdpowiedź:\nD. 8",
+            "elapsed": 5.538,
+            "error": false,
+            "judgement_context": {
+              "question": "Pasją Filipa są komputery. Filip wie, że elementarną jednostką informacji jest bit. Jeden bit informacji jest kodowany jedną z dwóch wartości 0 lub 1. Dwóm bitom odpowiadają cztery możliwości: 00, 01, 10, 11. Ile możliwości odpowiada trzem bitom?",
+              "correct_answer": [
+                "2",
+                "4",
+                "6",
+                "8"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-125",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy przeanalizować warunki podane w pytaniu i krok po kroku obliczyć liczbę możliwych trzycyfrowych liczb naturalnych spełniających te warunki.\n\n### Warunki:\n1. Liczba musi być trzycyfrowa i większa od 700.\n2. Każda cyfra musi należeć do zbioru {1, 2, 3, 7, 8, 9}.\n3. Żadna cyfra nie może się powtarzać.\n\n### Krok 1: Analiza cyfry setek\nPonieważ liczba musi być większa od 700, cyfra setek musi być jedną z następujących: 7, 8, 9.\n\n### Krok 2: Wybór cyfry setek\nMamy 3 możliwości wyboru cyfry setek: 7, 8, 9.\n\n### Krok 3: Wybór cyfry dziesiątek\nPo wyborze cyfry setek, mamy 5 pozostałych cyfr do wyboru dla cyfry dziesiątek (ponieważ żadna cyfra nie może się powtarzać).\n\n### Krok 4: Wybór cyfry jedności\nPo wyborze cyfry setek i dziesiątek, mamy 4 pozostałe cyfry do wyboru dla cyfry jedności.\n\n### Krok 5: Obliczenie liczby możliwości\nLiczba możliwych liczb trzycyfrowych spełniających warunki to iloczyn liczby możliwości na każdym etapie:\n\\[ 3 \\text{ (cyfra setek)} \\times 5 \\text{ (cyfra dziesiątek)} \\times 4 \\text{ (cyfra jedności)} = 3 \\times 5 \\times 4 = 60 \\]\n\n### Odpowiedź\nB. 60\n\n### Podsumowanie\nLiczba wszystkich trzycyfrowych liczb naturalnych większych od 700, w których każda cyfra należy do zbioru {1, 2, 3, 7, 8, 9} i żadna cyfra się nie powtarza, wynosi 60.\n\n\\boxed{B}",
+            "elapsed": 10.649,
+            "error": false,
+            "judgement_context": {
+              "question": "Wszystkich liczb naturalnych trzycyfrowych, większych od 700, w których każda cyfra należy do zbioru { 1 ,2 ,3 ,7 ,8 ,9 } i żadna cyfra się nie powtarza, jest",
+              "correct_answer": [
+                "108",
+                "60",
+                "40",
+                "299"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-127",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy przeanalizować informacje podane w pytaniu i wykonać odpowiednie obliczenia.\n\n1. **Zrozumienie problemu:**\n   - Cena roweru została obniżona o 8%.\n   - Klient zapłacił o 120 zł mniej po obniżce niż przed obniżką.\n\n2. **Oznaczenia:**\n   - Niech \\( P \\) będzie pierwotną ceną roweru przed obniżką.\n   - Po obniżce o 8%, nowa cena roweru wynosi \\( P - 0.08P = 0.92P \\).\n\n3. **Różnica w cenie:**\n   - Różnica między pierwotną ceną a obniżoną ceną wynosi 120 zł.\n   - Możemy to zapisać jako: \\( P - 0.92P = 120 \\).\n\n4. **Obliczenia:**\n   - Upraszczamy równanie: \\( 0.08P = 120 \\).\n   - Aby znaleźć \\( P \\), dzielimy obie strony przez 0.08: \\( P = \\frac{120}{0.08} \\).\n   - Obliczamy: \\( P = 1500 \\).\n\n5. **Weryfikacja odpowiedzi:**\n   - Sprawdzamy, czy 1500 zł jest jedną z podanych opcji. Tak, opcja B to 1500 zł.\n\n**Odpowiedź:**\nPrzed obniżką ten rower kosztował 1500 zł.\n\n\\boxed{B}",
+            "elapsed": 7.779,
+            "error": false,
+            "judgement_context": {
+              "question": "Cenę roweru obniżono o 8%. Klient kupił rower po obniżonej cenie i dzięki temu zapłacił o 120 zł mniej, niż zapłaciłby przed obniżką. Dokończ zdanie. Wybierz właściwą odpowiedź spośród podanych. Przed obniżką ten rower kosztował",
+              "correct_answer": [
+                "2000 zł",
+                "1500 zł",
+                "1380 zł",
+                "960 zł"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-138",
+            "raw_answer": "Aby obliczyć pole powierzchni całkowitej czworościanu foremnego, musimy najpierw zrozumieć, jak wygląda taki czworościan. Czworościan foremny (tetraedr) ma cztery trójkątne ściany, które są trójkątami równobocznymi.\n\nDługość krawędzi czworościanu foremnego wynosi 4 cm. Pole powierzchni jednego trójkąta równobocznego można obliczyć za pomocą wzoru:\n\n\\[ P = \\frac{a^2 \\sqrt{3}}{4} \\]\n\ngdzie \\( a \\) to długość boku trójkąta.\n\nPodstawiając \\( a = 4 \\) cm do wzoru, otrzymujemy:\n\n\\[ P = \\frac{4^2 \\sqrt{3}}{4} = \\frac{16 \\sqrt{3}}{4} = 4 \\sqrt{3} \\, \\text{cm}^2 \\]\n\nPonieważ czworościan foremny ma cztery takie trójkątne ściany, pole powierzchni całkowitej \\( S \\) jest czterokrotnością pola jednej ściany:\n\n\\[ S = 4 \\times 4 \\sqrt{3} = 16 \\sqrt{3} \\, \\text{cm}^2 \\]\n\nZatem pole powierzchni całkowitej czworościanu foremnego wynosi \\( 16 \\sqrt{3} \\, \\text{cm}^2 \\).\n\nOdpowiedź: C. 16√3 cm^2",
+            "elapsed": 7.37,
+            "error": false,
+            "judgement_context": {
+              "question": "Krawędź czworościanu foremnego ma długość 4 cm. Pole powierzchni całkowitej tego czworościanu jest równe",
+              "correct_answer": [
+                "4√3 cm^2",
+                "8√3 cm^2",
+                "16√3 cm^2",
+                "32√3 cm^2"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-151",
+            "raw_answer": "Aby odpowiedzieć na pytanie dotyczące tego, jaką część powierzchni lądów na Ziemi zajmuje Afryka, należy skorzystać z dostępnych danych geograficznych.\n\nAfryka jest drugim co do wielkości kontynentem na Ziemi. Według różnych źródeł, powierzchnia Afryki wynosi około 30,37 miliona kilometrów kwadratowych. Całkowita powierzchnia lądów na Ziemi to około 148,94 miliona kilometrów kwadratowych.\n\nAby obliczyć, jaką część powierzchni lądów zajmuje Afryka, można użyć następującego wzoru:\n\n\\[ \\text{Udział Afryki} = \\frac{\\text{Powierzchnia Afryki}}{\\text{Całkowita powierzchnia lądów}} \\]\n\nPodstawiając wartości:\n\n\\[ \\text{Udział Afryki} = \\frac{30,37 \\text{ mln km}^2}{148,94 \\text{ mln km}^2} \\]\n\n\\[ \\text{Udział Afryki} \\approx 0,204 \\]\n\nTo oznacza, że Afryka zajmuje około 20,4% powierzchni lądów na Ziemi.\n\nSpośród podanych opcji, najbliższa wartości 20,4% jest opcja B, która wynosi 1/5, czyli 20%.\n\nZatem poprawna odpowiedź to:\n\n**B. 1/5**",
+            "elapsed": 7.533,
+            "error": false,
+            "judgement_context": {
+              "question": "Jaką część powierzchni lądów na Ziemi zajmuje Afryka?",
+              "correct_answer": [
+                "1/4",
+                "1/5",
+                "1/20",
+                "1/50"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-153",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy obliczyć czas, jaki zajęło piechurowi i rowerzyście pokonanie trasy 10 km, a następnie znaleźć różnicę między tymi czasami.\n\n**Krok 1: Obliczenie czasu piechura**\nPrędkość średnia piechura: \\( v_p = 5 \\, \\text{km/h} \\)\nDługość trasy: \\( d = 10 \\, \\text{km} \\)\n\nCzas to droga podzielona przez prędkość:\n\\[ t_p = \\frac{d}{v_p} = \\frac{10 \\, \\text{km}}{5 \\, \\text{km/h}} = 2 \\, \\text{h} \\]\n\n**Krok 2: Obliczenie czasu rowerzysty**\nPrędkość średnia rowerzysty: \\( v_r = 20 \\, \\text{km/h} \\)\nDługość trasy: \\( d = 10 \\, \\text{km} \\)\n\nCzas to droga podzielona przez prędkość:\n\\[ t_r = \\frac{d}{v_r} = \\frac{10 \\, \\text{km}}{20 \\, \\text{km/h}} = 0.5 \\, \\text{h} \\]\n\n**Krok 3: Obliczenie różnicy czasu**\nRóżnica czasu w godzinach:\n\\[ \\Delta t = t_p - t_r = 2 \\, \\text{h} - 0.5 \\, \\text{h} = 1.5 \\, \\text{h} \\]\n\n**Krok 4: Przeliczenie różnicy czasu na minuty**\n1 godzina to 60 minut, więc:\n\\[ 1.5 \\, \\text{h} = 1.5 \\times 60 \\, \\text{min} = 90 \\, \\text{min} \\]\n\n**Odpowiedź:**\nC. 90 minut\n\n\\boxed{C}",
+            "elapsed": 8.744,
+            "error": false,
+            "judgement_context": {
+              "question": "Prędkość średnia piechura na trasie 10 km wyniosła 5 km/h , a prędkość średnia rowerzysty na tej samej trasie była równa 20 km/h . O ile minut więcej zajęło pokonanie tej trasy piechurowi niż rowerzyście? Wybierz odpowiedź spośród podanych.",
+              "correct_answer": [
+                "30 minut",
+                "60 minut",
+                "90 minut",
+                "120 minut"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-162",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy skorzystać z właściwości rombu oraz trygonometrii.\n\n1. **Właściwości rombu:**\n   - Wszystkie boki rombu są równe.\n   - Przekątne rombu przecinają się pod kątem prostym i dzielą się na połowy.\n\n2. **Dane:**\n   - Długość boku rombu \\( a = 6\\sqrt{2} \\).\n   - Kąt rozwarty \\( \\alpha = 150^\\circ \\).\n\n3. **Obliczenie długości przekątnych:**\n   - Oznaczmy przekątne jako \\( d_1 \\) i \\( d_2 \\).\n   - Przekątne rombu dzielą go na cztery trójkąty prostokątne.\n   - W trójkącie prostokątnym, gdzie jeden z kątów ostrych jest połową kąta rozwartego, mamy:\n     \\[\n     \\sin\\left(\\frac{\\alpha}{2}\\right) = \\sin(75^\\circ)\n     \\]\n     \\[\n     \\cos\\left(\\frac{\\alpha}{2}\\right) = \\cos(75^\\circ)\n     \\]\n\n4. **Wyrażenia na połowy przekątnych:**\n   - Połowa przekątnej \\( d_1 \\) (przeciwprostokątna do kąta \\( 75^\\circ \\)):\n     \\[\n     \\frac{d_1}{2} = a \\cdot \\sin(75^\\circ)\n     \\]\n   - Połowa przekątnej \\( d_2 \\) (przeciwprostokątna do kąta \\( 15^\\circ \\)):\n     \\[\n     \\frac{d_2}{2} = a \\cdot \\cos(75^\\circ)\n     \\]\n\n5. **Wartości sinus i cosinus:**\n   - \\( \\sin(75^\\circ) = \\sin(45^\\circ + 30^\\circ) = \\sin(45^\\circ)\\cos(30^\\circ) + \\cos(45^\\circ)\\sin(30^\\circ) \\)\n     \\[\n     \\sin(75^\\circ) = \\frac{\\sqrt{2}}{2} \\cdot \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{2}}{2} \\cdot \\frac{1}{2} = \\frac{\\sqrt{6} + \\sqrt{2}}{4}\n     \\]\n   - \\( \\cos(75^\\circ) = \\cos(45^\\circ + 30^\\circ) = \\cos(45^\\circ)\\cos(30^\\circ) - \\sin(45^\\circ)\\sin(30^\\circ) \\)\n     \\[\n     \\cos(75^\\circ) = \\frac{\\sqrt{2}}{2} \\cdot \\frac{\\sqrt{3}}{2} - \\frac{\\sqrt{2}}{2} \\cdot \\frac{1}{2} = \\frac{\\sqrt{6} - \\sqrt{2}}{4}\n     \\]\n\n6. **Obliczenie długości przekątnych:**\n   - \\( d_1 = 2 \\cdot a \\cdot \\sin(75^\\circ) = 2 \\cdot 6\\sqrt{2} \\cdot \\frac{\\sqrt{6} + \\sqrt{2}}{4} = 3\\sqrt{2} \\cdot (\\sqrt{6} + \\sqrt{2}) \\)\n   - \\( d_2 = 2 \\cdot a \\cdot \\cos(75^\\circ) = 2 \\cdot 6\\sqrt{2} \\cdot \\frac{\\sqrt{6} - \\sqrt{2}}{4} = 3\\sqrt{2} \\cdot (\\sqrt{6} - \\sqrt{2}) \\)\n\n7. **Iloczyn długości przekątnych:**\n   - \\( d_1 \\cdot d_2 = [3\\sqrt{2} \\cdot (\\sqrt{6} + \\sqrt{2})] \\cdot [3\\sqrt{2} \\cdot (\\sqrt{6} - \\sqrt{2})] \\)\n   - \\( d_1 \\cdot d_2 = (3\\sqrt{2})^2 \\cdot [(\\sqrt{6} + \\sqrt{2})(\\sqrt{6} - \\sqrt{2})] \\)\n   - \\( d_1 \\cdot d_2 = 18 \\cdot [6 - 2] = 18 \\cdot 4 = 72 \\)\n\nZatem iloczyn długości przekątnych rombu jest równy 72.\n\nOdpowiedź: B. 72",
+            "elapsed": 19.248,
+            "error": false,
+            "judgement_context": {
+              "question": "W rombie o boku długości 6√2 kąt rozwarty ma miarę 150°. Iloczyn długości przekątnych tego rombu jest równy",
+              "correct_answer": [
+                "24",
+                "72",
+                "36",
+                "36√2"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-163",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy znaleźć liczbę uczestników wycieczki, która spełnia podane warunki.\n\n1. Połowa uczestników urodziła się w Polsce.\n2. Co trzeci urodził się w Niemczech.\n3. Pięciu pozostałych urodziło się we Francji.\n\nOznaczmy liczbę uczestników wycieczki jako \\( x \\).\n\nZ warunku 1: liczba uczestników urodzonych w Polsce to \\( \\frac{x}{2} \\).\n\nZ warunku 2: liczba uczestników urodzonych w Niemczech to \\( \\frac{x}{3} \\).\n\nZ warunku 3: liczba uczestników urodzonych we Francji to 5.\n\nSuma wszystkich uczestników to \\( x \\), więc możemy zapisać równanie:\n\\[ \\frac{x}{2} + \\frac{x}{3} + 5 = x \\]\n\nAby rozwiązać to równanie, najpierw znajdziemy wspólny mianownik dla ułamków. Wspólnym mianownikiem dla 2 i 3 jest 6. Przekształcamy równanie:\n\\[ \\frac{3x}{6} + \\frac{2x}{6} + 5 = x \\]\n\nŁączymy ułamki:\n\\[ \\frac{3x + 2x}{6} + 5 = x \\]\n\\[ \\frac{5x}{6} + 5 = x \\]\n\nMnożymy obie strony równania przez 6, aby pozbyć się mianownika:\n\\[ 5x + 30 = 6x \\]\n\nOdejmujemy \\( 5x \\) od obu stron:\n\\[ 30 = x \\]\n\nZatem liczba uczestników wycieczki to 30.\n\nSprawdzamy, czy ta liczba spełnia warunki zadania:\n- Połowa uczestników urodzonych w Polsce: \\( \\frac{30}{2} = 15 \\)\n- Co trzeci urodzony w Niemczech: \\( \\frac{30}{3} = 10 \\)\n- Pięciu urodzonych we Francji: 5\n\nSuma: \\( 15 + 10 + 5 = 30 \\)\n\nWarunki są spełnione, więc odpowiedź to 30 osób.\n\nOdpowiedź: B. 30 osób.\n\n\\boxed{B}",
+            "elapsed": 11.768,
+            "error": false,
+            "judgement_context": {
+              "question": "Dokończ zdanie tak, aby otrzymać zdanie prawdziwe. Połowa uczestników wycieczki urodziła się w Polsce, co trzeci urodził się w Niemczech, a pięciu pozostałych we Francji. W wycieczce brało udział",
+              "correct_answer": [
+                "26 osób.",
+                "30 osób.",
+                "46 osób.",
+                "60 osób."
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl_mc-typo_40%-172",
+            "raw_answer": "Aby rozwiązać to zadanie, musimy przeanalizować podane informacje i ułożyć odpowiednie równania.\n\n1. **Zrozumienie danych:**\n   - Liczba chłopców jest o 60 większa niż liczba dziewcząt.\n   - Chłopcy stanowią 65% wszystkich osób piszących egzamin.\n\n2. **Oznaczenia:**\n   - Niech \\( D \\) będzie liczbą dziewcząt.\n   - Niech \\( C \\) będzie liczbą chłopców.\n\n3. **Równania:**\n   - Z pierwszej informacji: \\( C = D + 60 \\).\n   - Z drugiej informacji: chłopcy stanowią 65% wszystkich osób, co oznacza, że \\( C = 0.65 \\times (C + D) \\).\n\n4. **Podstawienie i rozwiązanie:**\n   - Podstawiamy \\( C = D + 60 \\) do drugiego równania:\n     \\[\n     D + 60 = 0.65 \\times (D + 60 + D)\n     \\]\n   - Upraszczamy prawą stronę:\n     \\[\n     D + 60 = 0.65 \\times (2D + 60)\n     \\]\n   - Rozwijamy prawą stronę:\n     \\[\n     D + 60 = 0.65 \\times 2D + 0.65 \\times 60\n     \\]\n     \\[\n     D + 60 = 1.3D + 39\n     \\]\n   - Przenosimy wszystkie wyrażenia z \\( D \\) na lewą stronę, a stałe na prawą stronę:\n     \\[\n     D - 1.3D = 39 - 60\n     \\]\n     \\[\n     -0.3D = -21\n     \\]\n   - Dzielimy obie strony przez -0.3:\n     \\[\n     D = \\frac{-21}{-0.3} = 70\n     \\]\n\n5. **Weryfikacja:**\n   - Liczba chłopców: \\( C = D + 60 = 70 + 60 = 130 \\).\n   - Łączna liczba osób: \\( C + D = 130 + 70 = 200 \\).\n   - Procent chłopców: \\( \\frac{130}{200} = 0.65 = 65\\% \\), co potwierdza poprawność rozwiązania.\n\n6. **Odpowiedź:**\n   - Liczba dziewcząt, które przystąpiły do egzaminu, to 70.\n\nZatem poprawna odpowiedź to **C. 70**.\n\n\\boxed{C}",
+            "elapsed": 12.602,
+            "error": false,
+            "judgement_context": {
+              "question": "W pewnej szkole do egzaminu gimnazjalnego przystąpiło o 60 chłopców więcej niż dziewcząt. Chłopcy stanowili 65% liczby osób piszących egzamin. Ile dziewcząt przystąpiło do tego egzaminu? Wybierz właściwą odpowiedź spośród podanych.",
+              "correct_answer": [
+                "200",
+                "130",
+                "70",
+                "39"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

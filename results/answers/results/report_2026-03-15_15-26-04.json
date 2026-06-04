@@ -1,0 +1,82 @@
+{
+  "timestamp": "2026-03-15T15:26:04.710435+00:00",
+  "model": "gemma3:4b",
+  "base_url": "http://localhost:11434/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "datasets": {
+    "diacritic": {
+      "cds": {
+        "num_sampled": 10,
+        "correct": 0,
+        "incorrect": 0,
+        "error": 10,
+        "accuracy": 0.0,
+        "elapsed_sec": 16.44,
+        "questions": [
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako WYNIKANIE, SPRZECZNOŚĆ lub NEUTRALNOŚĆ.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RALACJA\"}.\n\n<ZDANIE_A>Mezczyzna z dzieckiem w nosidelku i mezczyzna z dzieckiem na grzbiecie stoja w poblizu stromych skal .</ZDANIE_A>\n<ZDANIE_B>Mezczyzna z dzieckiem w nosidelku i mezczyzna z turbanem na glowie stoja w poblizu stromych skal .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRALNOŚĆ\"}",
+            "result": "ERROR",
+            "elapsed": 2.418
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako WYNIKANIE, SPRZECZNOŚĆ lub NEUTRALNOŚĆ.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RALACJA\"}.\n\n<ZDANIE_A>Chlopiec w spodenkach kapielowych i dmuchanych rekawkach zjezdza do basenu ze zjezdzalni .</ZDANIE_A>\n<ZDANIE_B>Czlowiek z duzym plecakiem wchodzi po gorskim zboczu .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRALNOŚĆ\"}",
+            "result": "ERROR",
+            "elapsed": 1.506
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako WYNIKANIE, SPRZECZNOŚĆ lub NEUTRALNOŚĆ.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RALACJA\"}.\n\n<ZDANIE_A>Kobieta siedzi na krawezniku obok kosza na smieci i trzyma przy uchu telefon komorkowy .</ZDANIE_A>\n<ZDANIE_B>Brazowy pies biegnie po trawie , niosac w zebach zabawke .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRALNOŚĆ\"}",
+            "result": "ERROR",
+            "elapsed": 1.464
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako WYNIKANIE, SPRZECZNOŚĆ lub NEUTRALNOŚĆ.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RALACJA\"}.\n\n<ZDANIE_A>Taniec na parkiecie innej dziewczynki ubranej w stroj baletnicy jest obserwowany przez dwie dziewczynki .</ZDANIE_A>\n<ZDANIE_B>Dziewczynka w stroju baletowym , obserwowana przez dwie inne dziewczynki , podskakuje nad podloga .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"SPRZECZNOŚĆ\"}",
+            "result": "ERROR",
+            "elapsed": 1.709
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako WYNIKANIE, SPRZECZNOŚĆ lub NEUTRALNOŚĆ.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RALACJA\"}.\n\n<ZDANIE_A>Jasnowlosa dziewczynka wspina sie po sciance wspinaczkowej .</ZDANIE_A>\n<ZDANIE_B>Czlowiek z dlugimi wlosami wisi na linie obok klifu nad woda .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRALNOŚĆ\"}",
+            "result": "ERROR",
+            "elapsed": 1.44
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako WYNIKANIE, SPRZECZNOŚĆ lub NEUTRALNOŚĆ.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RALACJA\"}.\n\n<ZDANIE_A>Trzej mezczyzni w zielonych bluzkach stoja obok siebie w roznych pozach , trzymajac sie za rece , a za nimi stoi czwarty mezczyzna .</ZDANIE_A>\n<ZDANIE_B>Ciemnoskory mezczyzna , ktory jest podparty o uda dwoch innych mezczyzn , trzyma ich jednoczesnie za rece .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRALNOŚĆ\"}",
+            "result": "ERROR",
+            "elapsed": 1.776
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako WYNIKANIE, SPRZECZNOŚĆ lub NEUTRALNOŚĆ.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RALACJA\"}.\n\n<ZDANIE_A>Turysta z duzym plecakiem i kijkami wskazuje w kierunku gor , ktore sa osniezone .</ZDANIE_A>\n<ZDANIE_B>Czlowiek z duzym plecakiem wchodzi po gorskim zboczu .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRALNOŚĆ\"}",
+            "result": "ERROR",
+            "elapsed": 1.499
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako WYNIKANIE, SPRZECZNOŚĆ lub NEUTRALNOŚĆ.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RALACJA\"}.\n\n<ZDANIE_A>Czlowiek wspina sie po skale asekurowany przez druga osobe z dolu .</ZDANIE_A>\n<ZDANIE_B>Czlowiek asekurowany przez druga osobe z dolu nie wspina sie po skale .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"SPRZECZNOŚĆ\"}",
+            "result": "ERROR",
+            "elapsed": 1.534
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako WYNIKANIE, SPRZECZNOŚĆ lub NEUTRALNOŚĆ.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RALACJA\"}.\n\n<ZDANIE_A>Kilka kolorowo ubranych osob tanczy z uniesionymi rekami .</ZDANIE_A>\n<ZDANIE_B>Kilka kolorowo ubranych osob tanczy z rekami , ktore sa uniesione .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"WYNIKANIE\"}",
+            "result": "ERROR",
+            "elapsed": 1.445
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako WYNIKANIE, SPRZECZNOŚĆ lub NEUTRALNOŚĆ.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RALACJA\"}.\n\n<ZDANIE_A>Trzy dziewczyny i jeden chlopiec spedzaja czas na trampolinie w zimowy dzien .</ZDANIE_A>\n<ZDANIE_B>Trzy skosnookie dziewczyny i jeden chlopiec spedzaja czas na trampolinie w zimowy dzien .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"SPRZECZNOŚĆ\"}",
+            "result": "ERROR",
+            "elapsed": 1.649
+          }
+        ]
+      }
+    }
+  },
+  "status": "partial"
+}

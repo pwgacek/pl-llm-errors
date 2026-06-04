@@ -1,0 +1,1731 @@
+{
+  "timestamp": "2026-04-11T12:47:28.520243+00:00",
+  "model": "SpeakLeash/bielik-11b-v3.0-instruct:Q6_K",
+  "base_url": "http://localhost:11434/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "elapsed_sec": 2277.8,
+  "datasets": {
+    "identity": {
+      "llmzszl": {
+        "num_sampled": 60,
+        "score_sum": 17.740578,
+        "score_avg": 0.295676,
+        "error_count": 0,
+        "elapsed_sec": 529.4,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-identity-000",
+            "raw_answer": "{ \"odpowiedź\": \"Energia wyemitowanego fotonu wynosi 12,09 eV.\" }",
+            "score": 0.1777777777777778,
+            "error": false,
+            "elapsed": 24.991
+          },
+          {
+            "prompt_id": "llmzszl-identity-001",
+            "raw_answer": "{ \"odpowiedź\": \"2 minuty i 50 sekund\" }",
+            "score": 0.4,
+            "error": false,
+            "elapsed": 8.35
+          },
+          {
+            "prompt_id": "llmzszl-identity-002",
+            "raw_answer": "{ \"odpowiedź\": \"Cena jednego kilograma droższej herbaty\" }",
+            "score": 0.41025641025641024,
+            "error": false,
+            "elapsed": 11.229
+          },
+          {
+            "prompt_id": "llmzszl-identity-003",
+            "raw_answer": "{ \"odpowiedź\": \"Energia kinetyczna ciała wyniesie 180 J.\" }",
+            "score": 0.09999999999999998,
+            "error": false,
+            "elapsed": 8.948
+          },
+          {
+            "prompt_id": "llmzszl-identity-004",
+            "raw_answer": "{ \"odpowiedź\": \"70\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 6.825
+          },
+          {
+            "prompt_id": "llmzszl-identity-005",
+            "raw_answer": "{ \"odpowiedź\": \"2p + p/2 + p/k\" }",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 7.17
+          },
+          {
+            "prompt_id": "llmzszl-identity-006",
+            "raw_answer": "{ \"odpowiedź\": \"467 lat\" }",
+            "score": 0.46153846153846156,
+            "error": false,
+            "elapsed": 6.346
+          },
+          {
+            "prompt_id": "llmzszl-identity-007",
+            "raw_answer": "{ \"odpowiedź\": \"36\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 6.471
+          },
+          {
+            "prompt_id": "llmzszl-identity-008",
+            "raw_answer": "{ \"odpowiedź\": \"500 zł\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 6.473
+          },
+          {
+            "prompt_id": "llmzszl-identity-009",
+            "raw_answer": "{ \"odpowiedź\": \"36%\" }",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 8.549
+          },
+          {
+            "prompt_id": "llmzszl-identity-010",
+            "raw_answer": "{ \"odpowiedź\": \"Prowizja zmniejszyła się o 25%.\" }",
+            "score": 0.09677419354838712,
+            "error": false,
+            "elapsed": 8.118
+          },
+          {
+            "prompt_id": "llmzszl-identity-011",
+            "raw_answer": "{ \"odpowiedź\": \"Przekątna graniastosłupa ma długość 15√6.\" }",
+            "score": 0.024390243902439046,
+            "error": false,
+            "elapsed": 9.267
+          },
+          {
+            "prompt_id": "llmzszl-identity-012",
+            "raw_answer": "{ \"odpowiedź\": \"0.475\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 9.579
+          },
+          {
+            "prompt_id": "llmzszl-identity-013",
+            "raw_answer": "{ \"odpowiedź\": \"Długość odcinka AB wynosi √5.\" }",
+            "score": 0.03448275862068961,
+            "error": false,
+            "elapsed": 9.384
+          },
+          {
+            "prompt_id": "llmzszl-identity-014",
+            "raw_answer": "{ \"odpowiedź\": \"Przybliżona prędkość motorówki względem brzegu wynosi 15 m/s.\" }",
+            "score": 0.06557377049180324,
+            "error": false,
+            "elapsed": 11.512
+          },
+          {
+            "prompt_id": "llmzszl-identity-015",
+            "raw_answer": "{\"odpowiedź\": \"3\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.168
+          },
+          {
+            "prompt_id": "llmzszl-identity-016",
+            "raw_answer": "{ \"odpowiedź\": \"9 litrów\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 8.259
+          },
+          {
+            "prompt_id": "llmzszl-identity-017",
+            "raw_answer": "{ \"odpowiedź\": \"P(A∩B) = 1/20\" }",
+            "score": 0.23076923076923073,
+            "error": false,
+            "elapsed": 7.765
+          },
+          {
+            "prompt_id": "llmzszl-identity-018",
+            "raw_answer": "{ \"odpowiedź\": \"0.7\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 6.907
+          },
+          {
+            "prompt_id": "llmzszl-identity-019",
+            "raw_answer": "{ \"odpowiedź\": \"8\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 5.978
+          },
+          {
+            "prompt_id": "llmzszl-identity-020",
+            "raw_answer": "{ \"odpowiedź\": \"5%\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 6.294
+          },
+          {
+            "prompt_id": "llmzszl-identity-021",
+            "raw_answer": "{\n  \"odpowiedź\": \"Mirek i Artur\"\n}",
+            "score": 0.15384615384615385,
+            "error": false,
+            "elapsed": 10.465
+          },
+          {
+            "prompt_id": "llmzszl-identity-022",
+            "raw_answer": "{ \"odpowiedź\": \"Prędkość orbitalna Księżyca jest około 9 razy mniejsza niż prędkość orbitalna sztucznego satelity Ziemi.\" }",
+            "score": 0.13461538461538458,
+            "error": false,
+            "elapsed": 11.937
+          },
+          {
+            "prompt_id": "llmzszl-identity-023",
+            "raw_answer": "{ \"odpowiedź\": \"Stosunek temperatury gazu w stanie końcowym do temperatury w stanie początkowym wynosi 12.\" }",
+            "score": 0.022222222222222254,
+            "error": false,
+            "elapsed": 11.556
+          },
+          {
+            "prompt_id": "llmzszl-identity-024",
+            "raw_answer": "{ \"odpowiedź\": \"243 cm^2\" }",
+            "score": 0.625,
+            "error": false,
+            "elapsed": 7.214
+          },
+          {
+            "prompt_id": "llmzszl-identity-025",
+            "raw_answer": "{ \"odpowiedź\": \"300 J\" }",
+            "score": 0.36363636363636365,
+            "error": false,
+            "elapsed": 7.071
+          },
+          {
+            "prompt_id": "llmzszl-identity-026",
+            "raw_answer": "{ \"odpowiedź\": \"7\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 5.564
+          },
+          {
+            "prompt_id": "llmzszl-identity-027",
+            "raw_answer": "{ \"odpowiedź\": \"2 m/s²\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.376
+          },
+          {
+            "prompt_id": "llmzszl-identity-028",
+            "raw_answer": "{ \"odpowiedź\": \"Małe koło wykona o 1250 obrotów więcej niż duże.\" }",
+            "score": 0.04166666666666663,
+            "error": false,
+            "elapsed": 8.389
+          },
+          {
+            "prompt_id": "llmzszl-identity-029",
+            "raw_answer": "{ \"odpowiedź\": \"Liczba stolików czteroosobowych wzrosła o 100%.\" }",
+            "score": 0.08510638297872342,
+            "error": false,
+            "elapsed": 9.035
+          },
+          {
+            "prompt_id": "llmzszl-identity-030",
+            "raw_answer": "{ \"odpowiedź\": \"4500\" }",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 6.906
+          },
+          {
+            "prompt_id": "llmzszl-identity-031",
+            "raw_answer": "{ \"odpowiedź\": \"40\" }",
+            "score": 0.09999999999999998,
+            "error": false,
+            "elapsed": 5.657
+          },
+          {
+            "prompt_id": "llmzszl-identity-032",
+            "raw_answer": "{ \"odpowiedź\": \"50%\" }",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 6.807
+          },
+          {
+            "prompt_id": "llmzszl-identity-033",
+            "raw_answer": "{ \"odpowiedź\": \"5\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.959
+          },
+          {
+            "prompt_id": "llmzszl-identity-034",
+            "raw_answer": "{ \"odpowiedź\": \"13 km\" }",
+            "score": 0.19999999999999996,
+            "error": false,
+            "elapsed": 5.478
+          },
+          {
+            "prompt_id": "llmzszl-identity-035",
+            "raw_answer": "{ \"odpowiedź\": \"h_p = h / 2\" }",
+            "score": 0.7272727272727273,
+            "error": false,
+            "elapsed": 7.864
+          },
+          {
+            "prompt_id": "llmzszl-identity-036",
+            "raw_answer": "{ \"odpowiedź\": \"27 razy\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 6.595
+          },
+          {
+            "prompt_id": "llmzszl-identity-037",
+            "raw_answer": "{ \"odpowiedź\": \"Prawdopodobieństwo zdarzenia A wynosi 1/3.\" }",
+            "score": 0.0714285714285714,
+            "error": false,
+            "elapsed": 8.301
+          },
+          {
+            "prompt_id": "llmzszl-identity-038",
+            "raw_answer": "{ \"odpowiedź\": \"324\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 7.835
+          },
+          {
+            "prompt_id": "llmzszl-identity-039",
+            "raw_answer": "{ \"odpowiedź\": \"Węglowodany i tłuszcze\" }",
+            "score": 0.045454545454545414,
+            "error": false,
+            "elapsed": 6.298
+          },
+          {
+            "prompt_id": "llmzszl-identity-040",
+            "raw_answer": "{ \"odpowiedź\": \"Jacek wyjechał o 13:40.\" }",
+            "score": 0.13043478260869568,
+            "error": false,
+            "elapsed": 9.609
+          },
+          {
+            "prompt_id": "llmzszl-identity-041",
+            "raw_answer": "{ \"odpowiedź\": \"0.75\" }",
+            "score": 0.25,
+            "error": false,
+            "elapsed": 6.274
+          },
+          {
+            "prompt_id": "llmzszl-identity-042",
+            "raw_answer": "{ \"odpowiedź\": \"Znaczek australijski kosztował 15 zł.\" }",
+            "score": 0.10810810810810811,
+            "error": false,
+            "elapsed": 7.803
+          },
+          {
+            "prompt_id": "llmzszl-identity-043",
+            "raw_answer": "{ \"odpowiedź\": \"10 cm\" }",
+            "score": 0.8,
+            "error": false,
+            "elapsed": 8.318
+          },
+          {
+            "prompt_id": "llmzszl-identity-044",
+            "raw_answer": "{ \"odpowiedź\": \"5 m/s\" }",
+            "score": 0.8,
+            "error": false,
+            "elapsed": 7.079
+          },
+          {
+            "prompt_id": "llmzszl-identity-045",
+            "raw_answer": "{ \"odpowiedź\": \"F1 = (m * g) / A2 = (1500 kg * 9.81 m/s²) / 0.88 m² ≈ 16437 N\" }",
+            "score": 0.06557377049180324,
+            "error": false,
+            "elapsed": 21.005
+          },
+          {
+            "prompt_id": "llmzszl-identity-046",
+            "raw_answer": "{ \"odpowiedź\": \"0.951\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.095
+          },
+          {
+            "prompt_id": "llmzszl-identity-047",
+            "raw_answer": "{ \"odpowiedź\": \"Przekładnia transformatora wynosi 25000 V / 220 V = 113.64, co można zaokrąglić do około 114.\" }",
+            "score": 0.08602150537634412,
+            "error": false,
+            "elapsed": 17.733
+          },
+          {
+            "prompt_id": "llmzszl-identity-048",
+            "raw_answer": "{ \"odpowiedź\": \"25 m\" }",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 8.091
+          },
+          {
+            "prompt_id": "llmzszl-identity-049",
+            "raw_answer": "{ \"odpowiedź\": \"Średnia szybkość kolejki wynosiła 7,2 km/h.\" }",
+            "score": 0.09302325581395354,
+            "error": false,
+            "elapsed": 9.202
+          },
+          {
+            "prompt_id": "llmzszl-identity-050",
+            "raw_answer": "{ \"odpowiedź\": \"15\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 6.661
+          },
+          {
+            "prompt_id": "llmzszl-identity-051",
+            "raw_answer": "{ \"odpowiedź\": \"Prawdopodobieństwo wylosowania kuli białej wynosi 1/3.\" }",
+            "score": 0.01851851851851849,
+            "error": false,
+            "elapsed": 13.47
+          },
+          {
+            "prompt_id": "llmzszl-identity-052",
+            "raw_answer": "{ \"odpowiedź\": \"Przyspieszenie dośrodkowe wzrośnie czterokrotnie.\" }",
+            "score": 0.44897959183673475,
+            "error": false,
+            "elapsed": 8.379
+          },
+          {
+            "prompt_id": "llmzszl-identity-053",
+            "raw_answer": "{ \"odpowiedź\": \"Natężenie pola grawitacyjnego wynosi 50 N/kg.\" }",
+            "score": 0.15555555555555556,
+            "error": false,
+            "elapsed": 8.425
+          },
+          {
+            "prompt_id": "llmzszl-identity-054",
+            "raw_answer": "{\"odpowiedź\": \"Klient otrzyma 35% zniżki na okulary warte 240 zł. Zniżka wynosi 84 zł (240 zł * 35%), więc klient zapłaci 156 zł.\"}",
+            "score": 0.04385964912280704,
+            "error": false,
+            "elapsed": 13.833
+          },
+          {
+            "prompt_id": "llmzszl-identity-055",
+            "raw_answer": "{ \"odpowiedź\": \"W dolnym fragmencie szczeliny, gdzie zimne powietrze napływa i wypiera ciepłe.\" }",
+            "score": 0.08974358974358976,
+            "error": false,
+            "elapsed": 10.518
+          },
+          {
+            "prompt_id": "llmzszl-identity-056",
+            "raw_answer": "{ \"odpowiedź\": \"1/4\" }",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 6.77
+          },
+          {
+            "prompt_id": "llmzszl-identity-057",
+            "raw_answer": "{ \"odpowiedź\": \"Uran-216\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 6.68
+          },
+          {
+            "prompt_id": "llmzszl-identity-058",
+            "raw_answer": "{ \"odpowiedź\": \"250\" }",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 6.611
+          },
+          {
+            "prompt_id": "llmzszl-identity-059",
+            "raw_answer": "{ \"odpowiedź\": \"polaryzacja\" }",
+            "score": 0.5789473684210527,
+            "error": false,
+            "elapsed": 7.952
+          }
+        ]
+      },
+      "llmzszl_mcq": {
+        "num_sampled": 60,
+        "score_sum": 23.0,
+        "score_avg": 0.383333,
+        "error_count": 3,
+        "elapsed_sec": 572.38,
+        "questions": [
+          {
+            "prompt_id": "llmzszl_mcq-identity-000",
+            "raw_answer": "{ \"odpowiedź\": \"D\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 11.412
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-001",
+            "raw_answer": "{ \"odpowiedź\": \"D\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 9.539
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-002",
+            "raw_answer": "{ \"odpowiedź\": \"A\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 13.948
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-003",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 9.032
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-004",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.265
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-005",
+            "raw_answer": "{ \"odpowiedź\": \"D\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 8.672
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-006",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 9.166
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-007",
+            "raw_answer": "{ \"odpowiedź\": \"C\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.679
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-008",
+            "raw_answer": "{ \"odpowiedź\": \"A\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 8.367
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-009",
+            "raw_answer": "{\n  \"odpowiedź\": \"B\"\n}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 10.69
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-010",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.14
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-011",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 8.422
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-012",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 11.749
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-013",
+            "raw_answer": "{\"odpowiedź\": \"C. √5\"}",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 11.192
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-014",
+            "raw_answer": "{ \"odpowiedź\": \"C\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 10.355
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-015",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 10.177
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-016",
+            "raw_answer": "{\"odpowiedź\": \"C. 13,5 litra.\"}",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 12.484
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-017",
+            "raw_answer": "{ \"odpowiedź\": \"A\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.875
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-018",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 8.715
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-019",
+            "raw_answer": "{ \"odpowiedź\": \"D\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 7.742
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-020",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.777
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-021",
+            "raw_answer": "{\n  \"odpowiedź\": \"C\"\n}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 12.206
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-022",
+            "raw_answer": "{ \"odpowiedź\": \"A\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 9.769
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-023",
+            "raw_answer": "{ \"odpowiedź\": \"A\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 10.434
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-024",
+            "raw_answer": "{\n  \"odpowiedź\": \"D\"\n}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 10.548
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-025",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 8.626
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-026",
+            "raw_answer": "{ \"odpowiedź\": \"C\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 8.371
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-027",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 9.302
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-028",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 7.461
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-029",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 9.034
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-030",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.795
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-031",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 7.931
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-032",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 9.741
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-033",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 11.138
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-034",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 7.036
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-035",
+            "raw_answer": "{ \"odpowiedź\": \"C\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 8.975
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-036",
+            "raw_answer": "{ \"odpowiedź\": \"A\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 7.904
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-037",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 7.625
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-038",
+            "raw_answer": "{ \"odpowiedź\": \"C\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 9.643
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-039",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 6.446
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-040",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 10.116
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-041",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.318
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-042",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 8.01
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-043",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 10.813
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-044",
+            "raw_answer": "{ \"odpowiedź\": \"C\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.875
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-045",
+            "raw_answer": "{ \"odpowiedź\": \"C\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 17.296
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-046",
+            "raw_answer": "{ \"odpowiedź\": \"A\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 9.268
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-047",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 14.309
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-048",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 9.68
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-049",
+            "raw_answer": "{\n  \"odpowiedź\": \"B\"\n}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 9.144
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-050",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 8.338
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-051",
+            "raw_answer": "{\n  \"odpowiedź\": \"D\"\n}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 12.706
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-052",
+            "raw_answer": "{ \"odpowiedź\": \"D\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 8.026
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-053",
+            "raw_answer": "{ \"odpowiedź\": \"A\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 8.777
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-054",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 8.103
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-055",
+            "raw_answer": "{ \"odpowiedź\": \"C. W górnym.\" }",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 9.151
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-056",
+            "raw_answer": "{ \"odpowiedź\": \"C\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 9.079
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-057",
+            "raw_answer": "{ \"odpowiedź\": \"A\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.765
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-058",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.103
+          },
+          {
+            "prompt_id": "llmzszl_mcq-identity-059",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 10.111
+          }
+        ]
+      }
+    },
+    "typo_40%": {
+      "llmzszl": {
+        "num_sampled": 60,
+        "score_sum": 11.991312,
+        "score_avg": 0.199855,
+        "error_count": 0,
+        "elapsed_sec": 596.96,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-typo_40%-000",
+            "raw_answer": "{ \"odpowiedź\": \"Energia fotonu wynosi 12,09 eV.\" }",
+            "score": 0.25806451612903225,
+            "error": false,
+            "elapsed": 10.579
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-001",
+            "raw_answer": "{ \"odpowiedź\": \"2 minuty i 15 sekund\" }",
+            "score": 0.4,
+            "error": false,
+            "elapsed": 8.883
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-002",
+            "raw_answer": "{ \"odpowiedź\": \"Cena kilograma droższej herbaty\" }",
+            "score": 0.4193548387096774,
+            "error": false,
+            "elapsed": 11.365
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-003",
+            "raw_answer": "{ \"odpowiedź\": \"0 J\" }",
+            "score": 0.6,
+            "error": false,
+            "elapsed": 6.942
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-004",
+            "raw_answer": "{ \"odpowiedź\": \"170\" }",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 6.838
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-005",
+            "raw_answer": "{ \"odpowiedź\": \"Liczba ludności tego państwa wynosi 4p + kp, gdzie p to liczba osób niepełnoletnich, a k to współczynnik określający liczbę pozostałych dorosłych w stosunku do osób niepełnoletnich.\" }",
+            "score": 0.03314917127071826,
+            "error": false,
+            "elapsed": 16.097
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-006",
+            "raw_answer": "{ \"odpowiedź\": \"467 lat\" }",
+            "score": 0.46153846153846156,
+            "error": false,
+            "elapsed": 6.648
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-007",
+            "raw_answer": "{ \"odpowiedź\": \"Klient ma 36 lat.\" }",
+            "score": 0.11764705882352944,
+            "error": false,
+            "elapsed": 7.422
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-008",
+            "raw_answer": "{ \"odpowiedź\": \"586,12 zł\" }",
+            "score": 0.4444444444444444,
+            "error": false,
+            "elapsed": 6.911
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-009",
+            "raw_answer": "{ \"odpowiedź\": \"34%\" }",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 8.694
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-010",
+            "raw_answer": "{ \"odpowiedź\": \"Prowizja od kredytów hipotecznych w tym banku zmniejszyła się o 25%.\" }",
+            "score": 0.044117647058823484,
+            "error": false,
+            "elapsed": 10.244
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-011",
+            "raw_answer": "{ \"odpowiedź\": \"Przekątna graniastosłupa wynosi 15\\u200b\\u200b√6.\" }",
+            "score": 0.02564102564102566,
+            "error": false,
+            "elapsed": 10.65
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-012",
+            "raw_answer": "{ \"odpowiedź\": \"0.5\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 9.355
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-013",
+            "raw_answer": "{ \"odpowiedź\": \"√5\" }",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 8.135
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-014",
+            "raw_answer": "{ \"odpowiedź\": \"Prędkość motorówki względem brzegu wynosi około 10 m/s, ponieważ prędkość wody nie wpływa na jej ruch prostopadły do brzegu.\" }",
+            "score": 0.032258064516129004,
+            "error": false,
+            "elapsed": 15.113
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-015",
+            "raw_answer": "{ \"odpowiedź\": \"3\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.713
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-016",
+            "raw_answer": "{ \"odpowiedź\": \"Średnie zużycie benzyny przez samochód wynosi 4,5 litra na każde 100 km trasy.\" }",
+            "score": 0.0641025641025641,
+            "error": false,
+            "elapsed": 12.068
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-017",
+            "raw_answer": "{ \"odpowiedź\": \"P(A∩B) = 1/20\" }",
+            "score": 0.23076923076923073,
+            "error": false,
+            "elapsed": 7.801
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-018",
+            "raw_answer": "{\"odpowiedź\": \"0.7\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 6.855
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-019",
+            "raw_answer": "{ \"odpowiedź\": \"8\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 6.276
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-020",
+            "raw_answer": "{ \"odpowiedź\": \"5/40\" }",
+            "score": 0.25,
+            "error": false,
+            "elapsed": 6.739
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-021",
+            "raw_answer": "{ \"odpowiedź\": \"Muek i Artur\" }",
+            "score": 0.16666666666666663,
+            "error": false,
+            "elapsed": 10.517
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-022",
+            "raw_answer": "{ \"odpowiedź\": \"Prędkość orbitalna Księżyca jest około 9 razy mniejsza niż prędkość orbitalna sztucznego satelity, ponieważ promień orbity Księżyca jest 9 razy większy.\" }",
+            "score": 0.09210526315789469,
+            "error": false,
+            "elapsed": 14.938
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-023",
+            "raw_answer": "{ \"odpowiedź\": \"Stosunek temperatury gazu w stanie końcowym do temperatury w stanie początkowym wynosi 12.\" }",
+            "score": 0.022222222222222254,
+            "error": false,
+            "elapsed": 12.052
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-024",
+            "raw_answer": "{ \"odpowiedź\": \"24 cm²\" }",
+            "score": 0.4285714285714286,
+            "error": false,
+            "elapsed": 7.075
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-025",
+            "raw_answer": "{ \"odpowiedź\": \"Energia kinetyczna ciała na wysokości 4 m wynosi 200 J.\" }",
+            "score": 0.1454545454545455,
+            "error": false,
+            "elapsed": 10.371
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-026",
+            "raw_answer": "{ \"odpowiedź\": \"7\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 5.861
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-027",
+            "raw_answer": "{ \"odpowiedź\": \"2 m/s²\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.502
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-028",
+            "raw_answer": "{ \"odpowiedź\": \"Duże koło wykona o 250 obrotów więcej niż małe na półkilometrowym odcinku drogi.\" }",
+            "score": 0.025000000000000022,
+            "error": false,
+            "elapsed": 10.011
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-029",
+            "raw_answer": "{ \"odpowiedź\": \"Liczba stolików czteroosobowych wzrosła o 100%.\" }",
+            "score": 0.08510638297872342,
+            "error": false,
+            "elapsed": 8.949
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-030",
+            "raw_answer": "{ \"odpowiedź\": \"450\" }",
+            "score": 0.75,
+            "error": false,
+            "elapsed": 6.862
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-031",
+            "raw_answer": "{\"odpowiedź\": \"Piechur potrzebował o 75 minut więcej niż rowerzysta.\"}",
+            "score": 0.15094339622641506,
+            "error": false,
+            "elapsed": 8.657
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-032",
+            "raw_answer": "{ \"odpowiedź\": \"25%\" }",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 6.998
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-033",
+            "raw_answer": "{ \"odpowiedź\": \"Muszą używać nart przez 2 godziny.\" }",
+            "score": 0.23529411764705888,
+            "error": false,
+            "elapsed": 11.218
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-034",
+            "raw_answer": "{\"odpowiedź\": \"13 km\"}",
+            "score": 0.19999999999999996,
+            "error": false,
+            "elapsed": 5.502
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-035",
+            "raw_answer": "{ \"odpowiedź\": \"Wysokość h_p na planecie o większym przyspieszeniu grawitacyjnym jest cztery razy mniejsza niż na Ziemi, czyli h_p = h / 4.\" }",
+            "score": 0.05691056910569103,
+            "error": false,
+            "elapsed": 14.355
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-036",
+            "raw_answer": "{ \"odpowiedź\": \"Objętość żółtka w jaju strusia jest około 27 razy większa niż w jaju kurzym, ponieważ objętość skaluje się z sześcianem długości (3^3 = 27).\" }",
+            "score": 0.050000000000000044,
+            "error": false,
+            "elapsed": 14.884
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-037",
+            "raw_answer": "{ \"odpowiedź\": \"Prawdopodobieństwo zdarzenia A wynosi 1/3.\" }",
+            "score": 0.0714285714285714,
+            "error": false,
+            "elapsed": 8.02
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-038",
+            "raw_answer": "{ \"odpowiedź\": \"324\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 7.998
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-039",
+            "raw_answer": "{ \"odpowiedź\": \"Węglowodany\" }",
+            "score": 0.09090909090909094,
+            "error": false,
+            "elapsed": 5.698
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-040",
+            "raw_answer": "{ \"odpowiedź\": \"Jacek wyjechał o 13:20.\" }",
+            "score": 0.13043478260869568,
+            "error": false,
+            "elapsed": 10.034
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-041",
+            "raw_answer": "{ \"odpowiedź\": \"0.75\" }",
+            "score": 0.25,
+            "error": false,
+            "elapsed": 6.162
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-042",
+            "raw_answer": "{ \"odpowiedź\": \"Znaczek australijski kosztował 15 zł.\" }",
+            "score": 0.10810810810810811,
+            "error": false,
+            "elapsed": 8.101
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-043",
+            "raw_answer": "{ \"odpowiedź\": \"WYRAŻENIE\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.917
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-044",
+            "raw_answer": "{ \"odpowiedź\": \"5 m/s\" }",
+            "score": 0.8,
+            "error": false,
+            "elapsed": 7.196
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-045",
+            "raw_answer": "{ \"odpowiedź\": \"F1 = (m * g) / (A2 / A1) = (1500 kg * 9.81 m/s²) / (880 cm² / 100 cm²) = 14715 N / 8.8 = 1663.98 N ≈ 1664 N\" }",
+            "score": 0.03738317757009346,
+            "error": false,
+            "elapsed": 26.086
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-046",
+            "raw_answer": "{ \"odpowiedź\": \"0.194\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.532
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-047",
+            "raw_answer": "{ \"odpowiedź\": \"Przekładnia transformatora stosowanego w zasilaczu lampy kineskopowej wynosi 114,29 (25000 V / 220 V).\" }",
+            "score": 0.07843137254901966,
+            "error": false,
+            "elapsed": 17.586
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-048",
+            "raw_answer": "{ \"odpowiedź\": \"Drugi kolarz znajdował się 40 metrów od mety.\" }",
+            "score": 0.06666666666666665,
+            "error": false,
+            "elapsed": 10.332
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-049",
+            "raw_answer": "{ \"odpowiedź\": \"Średnia prędkość kolejki wynosiła 120 m/min, co odpowiada 7,2 km/h.\" }",
+            "score": 0.05970149253731338,
+            "error": false,
+            "elapsed": 11.009
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-050",
+            "raw_answer": "{ \"odpowiedź\": \"Aby obliczyć procent uczniów zainteresowanych pływaniem, należy podzielić liczbę uczniów interesujących się pływaniem przez całkowitą liczbę uczniów i pomnożyć przez 100. Całkowita liczba uczniów to suma wszystkich zainteresowań: 70 + 130 + 40 + 20 + 30 + 60 = 350. Procent uczniów interesujących się pływaniem wynosi (70 / 350) * 100 = 20%.\" }",
+            "score": 0.008797653958944274,
+            "error": false,
+            "elapsed": 28.327
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-051",
+            "raw_answer": "{ \"odpowiedź\": \"Prawdopodobieństwo wylosowania kuli białej wynosi 0,23.\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 13.594
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-052",
+            "raw_answer": "{ \"odpowiedź\": \"Przyspieszenie dośrodkowe wzrośnie czterokrotnie.\" }",
+            "score": 0.44897959183673475,
+            "error": false,
+            "elapsed": 8.419
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-053",
+            "raw_answer": "{ \"odpowiedź\": \"Natężenie pola grawitacyjnego wynosi 50 N/kg.\" }",
+            "score": 0.15555555555555556,
+            "error": false,
+            "elapsed": 8.301
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-054",
+            "raw_answer": "{\"odpowiedź\": \"Klient o wieku 35 lat otrzyma 35% zniżki na okulary. Cena bez promocji wynosi 240 zł, więc po zniżce klient zapłaci: 240 zł - (35% z 240 zł) = 240 zł - 84 zł = 156 zł.\"}",
+            "score": 0.029940119760479056,
+            "error": false,
+            "elapsed": 17.798
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-055",
+            "raw_answer": "{ \"odpowiedź\": \"W górnej części szczeliny\" }",
+            "score": 0.12,
+            "error": false,
+            "elapsed": 7.443
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-056",
+            "raw_answer": "{ \"odpowiedź\": \"0.5\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 6.825
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-057",
+            "raw_answer": "{ \"odpowiedź\": \"Uran-236\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 6.797
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-058",
+            "raw_answer": "{\"odpowiedź\": \"WYRAŻENIE\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 6.578
+          },
+          {
+            "prompt_id": "llmzszl-typo_40%-059",
+            "raw_answer": "{ \"odpowiedź\": \"polaryzacja\" }",
+            "score": 0.5789473684210527,
+            "error": false,
+            "elapsed": 8.111
+          }
+        ]
+      },
+      "llmzszl_mcq": {
+        "num_sampled": 60,
+        "score_sum": 23.0,
+        "score_avg": 0.383333,
+        "error_count": 0,
+        "elapsed_sec": 579.03,
+        "questions": [
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-000",
+            "raw_answer": "{ \"odpowiedź\": \"D\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 11.678
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-001",
+            "raw_answer": "{\n  \"odpowiedź\": \"D\"\n}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 10.244
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-002",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 14.024
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-003",
+            "raw_answer": "{ \"odpowiedź\": \"C\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 9.067
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-004",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.573
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-005",
+            "raw_answer": "{ \"odpowiedź\": \"C\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.647
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-006",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 9.046
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-007",
+            "raw_answer": "{ \"odpowiedź\": \"C\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.676
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-008",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 8.132
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-009",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 10.231
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-010",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.281
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-011",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 8.482
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-012",
+            "raw_answer": "{\n  \"odpowiedź\": \"B\"\n}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 12.516
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-013",
+            "raw_answer": "{\n  \"odpowiedź\": \"C\"\n}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 12.251
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-014",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 10.197
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-015",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 10.448
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-016",
+            "raw_answer": "{\n  \"odpowiedź\": \"A\"\n}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 12.127
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-017",
+            "raw_answer": "{ \"odpowiedź\": \"A\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 9.07
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-018",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 8.961
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-019",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 7.715
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-020",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.698
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-021",
+            "raw_answer": "{\n  \"odpowiedź\": \"C\"\n}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 12.503
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-022",
+            "raw_answer": "{ \"odpowiedź\": \"A\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 9.902
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-023",
+            "raw_answer": "{ \"odpowiedź\": \"A\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 10.332
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-024",
+            "raw_answer": "{\n  \"odpowiedź\": \"C\"\n}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 10.633
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-025",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 8.784
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-026",
+            "raw_answer": "{\n  \"odpowiedź\": \"C\"\n}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 9.006
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-027",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 9.191
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-028",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 7.266
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-029",
+            "raw_answer": "{ \"odpowiedź\": \"C\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 9.052
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-030",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.563
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-031",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.014
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-032",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 9.665
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-033",
+            "raw_answer": "{ \"odpowiedź\": \"C\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 11.159
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-034",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 6.978
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-035",
+            "raw_answer": "{ \"odpowiedź\": \"C\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 9.059
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-036",
+            "raw_answer": "{ \"odpowiedź\": \"A\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 7.78
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-037",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 7.776
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-038",
+            "raw_answer": "{ \"odpowiedź\": \"C\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 9.512
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-039",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 6.495
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-040",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 10.203
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-041",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.256
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-042",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 7.87
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-043",
+            "raw_answer": "{\n  \"odpowiedź\": \"B\"\n}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 11.572
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-044",
+            "raw_answer": "{ \"odpowiedź\": \"D\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.794
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-045",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 17.644
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-046",
+            "raw_answer": "{ \"odpowiedź\": \"A\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 9.357
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-047",
+            "raw_answer": "{ \"odpowiedź\": \"D\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 15.109
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-048",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 9.812
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-049",
+            "raw_answer": "{\n  \"odpowiedź\": \"C\"\n}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 9.011
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-050",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.221
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-051",
+            "raw_answer": "{\n  \"odpowiedź\": \"D\"\n}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 13.029
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-052",
+            "raw_answer": "{ \"odpowiedź\": \"D\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 8.135
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-053",
+            "raw_answer": "{ \"odpowiedź\": \"A\" }",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 9.176
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-054",
+            "raw_answer": "{\n  \"odpowiedź\": \"C\"\n}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 9.054
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-055",
+            "raw_answer": "{ \"odpowiedź\": \"C\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.653
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-056",
+            "raw_answer": "{ \"odpowiedź\": \"C\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 9.226
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-057",
+            "raw_answer": "{ \"odpowiedź\": \"A\" }",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.969
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-058",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 8.068
+          },
+          {
+            "prompt_id": "llmzszl_mcq-typo_40%-059",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 10.135
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

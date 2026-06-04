@@ -1,0 +1,147 @@
+{
+  "timestamp": "2026-05-01T16:41:02.842202+02:00",
+  "model": "Qwen/QwQ-32B",
+  "base_url": "https://llmlab.plgrid.pl/api/v1",
+  "prompts_dir": "results/prompts",
+  "elapsed_sec": 0.55,
+  "datasets": {
+    "identity": {
+      "bbh": {
+        "num_sampled": 2,
+        "error_count": 2,
+        "elapsed_sec": 0.37,
+        "questions": [
+          {
+            "prompt_id": "bbh-identity-000",
+            "raw_answer": "",
+            "elapsed": 0.0,
+            "error": true,
+            "judgement_context": {
+              "question": "Następne akapity opisują zestaw siedmiu obiektów ułożonych w ustalonej kolejności. Stwierdzenia są logicznie spójne w każdym akapicie. Na gałęzi siedzi siedem ptaków: jastrząb, kruk, koliber, sokół, sowa, przepiórka i kardynał. Przepiórka znajduje się po lewej stronie kolibra. Kruk znajduje się po prawej stronie kolibra. Kardynał jest drugi od lewej. Sowa znajduje się po lewej stronie kardynała. Kruk jest trzeci od prawej. Sokół jest najbardziej po prawej.\nWymień ptaki w kolejności od lewej do prawej.",
+              "correct_answer": [
+                [
+                  "sowa"
+                ],
+                [
+                  "kardynał"
+                ],
+                [
+                  "przepiórka"
+                ],
+                [
+                  "koliber"
+                ],
+                [
+                  "kruk"
+                ],
+                [
+                  "jastrząb"
+                ],
+                [
+                  "sokół"
+                ]
+              ]
+            }
+          },
+          {
+            "prompt_id": "bbh-identity-001",
+            "raw_answer": "",
+            "elapsed": 0.0,
+            "error": true,
+            "judgement_context": {
+              "question": "Następne akapity opisują zestaw siedmiu obiektów ułożonych w ustalonej kolejności. Stwierdzenia są logicznie spójne w każdym akapicie. Na wystawie zabytkowych samochodów znajduje się siedem pojazdów: limuzyna, kabriolet, kombi, minivan, autobus, ciągnik i ciężarówka. Minivan jest najstarszym pojazdem. Ciężarówka jest starsza od kombi. Ciężarówka jest nowsza od limuzyny. Autobus jest nowszy od kabrioletu. Autobus jest starszy od ciągnika. Limuzyna jest nowsza od ciągnika.\nWymień pojazdy w kolejności od najnowszego do najstarszego.",
+              "correct_answer": [
+                [
+                  "kombi"
+                ],
+                [
+                  "ciężarówka"
+                ],
+                [
+                  "limuzyna"
+                ],
+                [
+                  "ciągnik"
+                ],
+                [
+                  "autobus"
+                ],
+                [
+                  "kabriolet"
+                ],
+                [
+                  "minivan"
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 2,
+        "error_count": 2,
+        "elapsed_sec": 0.09,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-identity-000",
+            "raw_answer": "",
+            "elapsed": 0.0,
+            "error": true,
+            "judgement_context": {
+              "question": "Dany jest romb o boku długości 4 i kącie rozwartym 150°. Ile wynosi pole tego rombu?",
+              "correct_answer": [
+                "8"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl-identity-001",
+            "raw_answer": "",
+            "elapsed": 0.0,
+            "error": true,
+            "judgement_context": {
+              "question": "Promocja w zakładzie optycznym jest związana z wiekiem klienta i polega na tym, że klient otrzymuje tyle procent zniżki, ile ma lat. Cena okularów bez promocji wynosi 240 zł. Ile zapłaci za te okulary klient, który ma 35 lat?",
+              "correct_answer": [
+                "156zł"
+              ]
+            }
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 2,
+        "error_count": 2,
+        "elapsed_sec": 0.09,
+        "questions": [
+          {
+            "prompt_id": "polqa-identity-000",
+            "raw_answer": "",
+            "elapsed": 0.0,
+            "error": true,
+            "judgement_context": {
+              "question": "Jak nazywa się element kwiatu produkujący pyłek, składający się u roślin okrytonasiennych z główki i nitki?",
+              "context": "Pręcik (łac. \"stamen\") – męski organ płciowy w kwiecie wytwarzający pyłek, czyli odpowiednik męskiego gametofitu powstający z mikrospory. Pręciki są występującymi u okrytonasiennych mikrosporofilami. Składają się z nitki i główki tworzonej zazwyczaj przez dwa pylniki zawierające po dwa woreczki pyłkowe, czyli mikrosporangia. Pyłek po dojrzeniu wysypywany jest z pękających pylników i przenoszony przez wiatr, wodę lub zwierzęta, by po osadzeniu na znamionach słupków wrosnąć i dokonać zapłodnienia.",
+              "correct_answer": [
+                "pręcik"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-001",
+            "raw_answer": "",
+            "elapsed": 0.0,
+            "error": true,
+            "judgement_context": {
+              "question": "Co to za część mowy: półtora?",
+              "context": "liczebniki - oznaczające (określające) liczbę, część, kolejność rzeczy, przedmiotów, osób:\nliczebniki główne określają liczbę przedmiotów, osób, zdarzeń, np. jeden, dwa, trzy, sześć, siedem, osiem, dziesięć, trzydzieści.\nliczebniki zbiorowe określają zbiorowość ludzi, zwierząt, przedmiotów, nazw, np. dwoje, troje, pięcioro, siedmioro, ośmioro, dziewięcioro, trzydzieścioro.\nliczebniki porządkowe określają miejsce w szeregu, np. drugi, trzeci, szósty, dwudziesty, czterdziesty, setny, tysięczny.\nułamkowe, określają części ułamkowe czasu, przedmiotów, odległości, np. pół, półtora, ćwierć.",
+              "correct_answer": [
+                "liczebnik"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

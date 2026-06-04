@@ -1,0 +1,822 @@
+{
+  "timestamp": "2026-04-17T15:53:42.358917+00:00",
+  "model": "speakleash/Bielik-11B-v3.0-Instruct",
+  "base_url": "https://llmlab.plgrid.pl/api/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "elapsed_sec": 40.48,
+  "datasets": {
+    "identity": {
+      "llmzszl": {
+        "num_sampled": 100,
+        "score_sum": 40.364158,
+        "score_avg": 0.403642,
+        "error_count": 0,
+        "elapsed_sec": 40.48,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-identity-000",
+            "raw_answer": "{\"odpowiedź\": \"8√3\"}",
+            "correct_answer": "8",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 0.521
+          },
+          {
+            "prompt_id": "llmzszl-identity-001",
+            "raw_answer": "{\"odpowiedź\": \"156 zł\"}",
+            "correct_answer": "156zł",
+            "score": 0.8333333333333334,
+            "error": false,
+            "elapsed": 0.351
+          },
+          {
+            "prompt_id": "llmzszl-identity-002",
+            "raw_answer": "{\"odpowiedź\": \"2p + p + p/k = 2p + p + p/k = 3p + p/k = p(3 + 1/k)\"}",
+            "correct_answer": "1,5p + p/k",
+            "score": 0.13725490196078427,
+            "error": false,
+            "elapsed": 0.858
+          },
+          {
+            "prompt_id": "llmzszl-identity-003",
+            "raw_answer": "{\"odpowiedź\": \"faza S (syntetyczna)\"}",
+            "correct_answer": "w fazie S",
+            "score": 0.15000000000000002,
+            "error": false,
+            "elapsed": 0.427
+          },
+          {
+            "prompt_id": "llmzszl-identity-004",
+            "raw_answer": "{\"odpowiedź\": \"Antarktyda jest około 30 razy większa od Europy.\"}",
+            "correct_answer": "o 3 mln km^2",
+            "score": 0.125,
+            "error": false,
+            "elapsed": 0.665
+          },
+          {
+            "prompt_id": "llmzszl-identity-005",
+            "raw_answer": "{\"odpowiedź\": \"Płomień świeczki powinien odchylić się od pionu najmniej w dolnym fragmencie szczeliny, ponieważ tam różnica temperatur między ciepłym powietrzem w pokoju a zimnym powietrzem w korytarzu jest najmniejsza.\"}",
+            "correct_answer": "W środkowym",
+            "score": 0.0490196078431373,
+            "error": false,
+            "elapsed": 1.784
+          },
+          {
+            "prompt_id": "llmzszl-identity-006",
+            "raw_answer": "{\"odpowiedź\": \"20\"}",
+            "correct_answer": "20",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.303
+          },
+          {
+            "prompt_id": "llmzszl-identity-007",
+            "raw_answer": "{\"odpowiedź\": \"5\"}",
+            "correct_answer": "9",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.289
+          },
+          {
+            "prompt_id": "llmzszl-identity-008",
+            "raw_answer": "{\"odpowiedź\": \"16π√3\"}",
+            "correct_answer": "8π",
+            "score": 0.19999999999999996,
+            "error": false,
+            "elapsed": 0.366
+          },
+          {
+            "prompt_id": "llmzszl-identity-009",
+            "raw_answer": "{\"odpowiedź\": \"10 cm\"}",
+            "correct_answer": "12 cm",
+            "score": 0.8,
+            "error": false,
+            "elapsed": 0.313
+          },
+          {
+            "prompt_id": "llmzszl-identity-010",
+            "raw_answer": "{\"odpowiedź\": \"192\"}",
+            "correct_answer": "8^2(√3/2+3)",
+            "score": 0.09090909090909094,
+            "error": false,
+            "elapsed": 0.312
+          },
+          {
+            "prompt_id": "llmzszl-identity-011",
+            "raw_answer": "{\"odpowiedź\": \"16 Ω\"}",
+            "correct_answer": "4 Ω",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 0.394
+          },
+          {
+            "prompt_id": "llmzszl-identity-012",
+            "raw_answer": "{\"odpowiedź\": \"9 litrów\"}",
+            "correct_answer": "9 litrów",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.349
+          },
+          {
+            "prompt_id": "llmzszl-identity-013",
+            "raw_answer": "{\"odpowiedź\": \"466\"}",
+            "correct_answer": "Po 457 latach",
+            "score": 0.07692307692307687,
+            "error": false,
+            "elapsed": 0.328
+          },
+          {
+            "prompt_id": "llmzszl-identity-014",
+            "raw_answer": "{\"odpowiedź\": \"24 litry\"}",
+            "correct_answer": "64 litry",
+            "score": 0.875,
+            "error": false,
+            "elapsed": 0.316
+          },
+          {
+            "prompt_id": "llmzszl-identity-015",
+            "raw_answer": "{\"odpowiedź\": \"organicznego\"}",
+            "correct_answer": "organicznego",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.312
+          },
+          {
+            "prompt_id": "llmzszl-identity-016",
+            "raw_answer": "{\"odpowiedź\": \"W 72 g wody znajduje się 2 g wodoru i 70 g tlenu.\"}",
+            "correct_answer": "wodoru - 8 g, tlenu - 64 g",
+            "score": 0.26530612244897955,
+            "error": false,
+            "elapsed": 0.732
+          },
+          {
+            "prompt_id": "llmzszl-identity-017",
+            "raw_answer": "{\"odpowiedź\": \"1\"}",
+            "correct_answer": "tg α",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.265
+          },
+          {
+            "prompt_id": "llmzszl-identity-018",
+            "raw_answer": "{\"odpowiedź\": \"Współrzędne wierzchołka paraboli to (3, -12).\"}",
+            "correct_answer": "(3,-12)",
+            "score": 0.15555555555555556,
+            "error": false,
+            "elapsed": 0.615
+          },
+          {
+            "prompt_id": "llmzszl-identity-019",
+            "raw_answer": "{\"odpowiedź\": \"1/20\"}",
+            "correct_answer": "3/20",
+            "score": 0.75,
+            "error": false,
+            "elapsed": 0.324
+          },
+          {
+            "prompt_id": "llmzszl-identity-020",
+            "raw_answer": "{\"odpowiedź\": \"18√3\"}",
+            "correct_answer": "36√3",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 0.411
+          },
+          {
+            "prompt_id": "llmzszl-identity-021",
+            "raw_answer": "{\"odpowiedź\": \"10 zł\"}",
+            "correct_answer": "10 zł",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.329
+          },
+          {
+            "prompt_id": "llmzszl-identity-022",
+            "raw_answer": "{\"odpowiedź\": \"4500\"}",
+            "correct_answer": "4050",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 0.387
+          },
+          {
+            "prompt_id": "llmzszl-identity-023",
+            "raw_answer": "{\"odpowiedź\": \"Energia fotonu nie zależy od współczynnika załamania środowiska, więc pozostaje taka sama, czyli E.\"}",
+            "correct_answer": "E/n",
+            "score": 0.02020202020202022,
+            "error": false,
+            "elapsed": 0.999
+          },
+          {
+            "prompt_id": "llmzszl-identity-024",
+            "raw_answer": "{\"odpowiedź\": \"sadzą\"}",
+            "correct_answer": "sadzą",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.356
+          },
+          {
+            "prompt_id": "llmzszl-identity-025",
+            "raw_answer": "{\"odpowiedź\": \"y=-2x+3\"}",
+            "correct_answer": "y=2x+3",
+            "score": 0.8571428571428572,
+            "error": false,
+            "elapsed": 0.35
+          },
+          {
+            "prompt_id": "llmzszl-identity-026",
+            "raw_answer": "{\"odpowiedź\": \"28.85\"}",
+            "correct_answer": "9π√3",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.336
+          },
+          {
+            "prompt_id": "llmzszl-identity-027",
+            "raw_answer": "{\"odpowiedź\": \"50%\"}",
+            "correct_answer": "45%",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 0.417
+          },
+          {
+            "prompt_id": "llmzszl-identity-028",
+            "raw_answer": "{\"odpowiedź\": \"5.5\"}",
+            "correct_answer": "3,25",
+            "score": 0.25,
+            "error": false,
+            "elapsed": 0.319
+          },
+          {
+            "prompt_id": "llmzszl-identity-029",
+            "raw_answer": "{\"odpowiedź\": \"1\"}",
+            "correct_answer": "Jedna liczba",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.266
+          },
+          {
+            "prompt_id": "llmzszl-identity-030",
+            "raw_answer": "{\"odpowiedź\": \"10\"}",
+            "correct_answer": "12",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 0.296
+          },
+          {
+            "prompt_id": "llmzszl-identity-031",
+            "raw_answer": "{\"odpowiedź\": \"114.29\"}",
+            "correct_answer": "około 113,6",
+            "score": 0.09090909090909094,
+            "error": false,
+            "elapsed": 0.447
+          },
+          {
+            "prompt_id": "llmzszl-identity-032",
+            "raw_answer": "{\"odpowiedź\": \"40°\"}",
+            "correct_answer": "20°",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 0.317
+          },
+          {
+            "prompt_id": "llmzszl-identity-033",
+            "raw_answer": "{\"odpowiedź\": \"40\"}",
+            "correct_answer": "48",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 0.288
+          },
+          {
+            "prompt_id": "llmzszl-identity-034",
+            "raw_answer": "{\"odpowiedź\": \"0\"}",
+            "correct_answer": "-168",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.271
+          },
+          {
+            "prompt_id": "llmzszl-identity-035",
+            "raw_answer": "{\"odpowiedź\": \"Sprawność silnika cieplnego wynosi 66.7%.\"}",
+            "correct_answer": "50%",
+            "score": 0.024390243902439046,
+            "error": false,
+            "elapsed": 0.66
+          },
+          {
+            "prompt_id": "llmzszl-identity-036",
+            "raw_answer": "{\"odpowiedź\": \"5\"}",
+            "correct_answer": "√10",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.306
+          },
+          {
+            "prompt_id": "llmzszl-identity-037",
+            "raw_answer": "{\"odpowiedź\": \"1/3\"}",
+            "correct_answer": "1/3",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.411
+          },
+          {
+            "prompt_id": "llmzszl-identity-038",
+            "raw_answer": "{\"odpowiedź\": \"0.8\"}",
+            "correct_answer": "31/32",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.311
+          },
+          {
+            "prompt_id": "llmzszl-identity-039",
+            "raw_answer": "{\"odpowiedź\": \"a i c są podzielne przez 3.\"}",
+            "correct_answer": "b i c",
+            "score": 0.14814814814814814,
+            "error": false,
+            "elapsed": 0.466
+          },
+          {
+            "prompt_id": "llmzszl-identity-040",
+            "raw_answer": "{\"odpowiedź\": \"3/4\"}",
+            "correct_answer": "75%",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.346
+          },
+          {
+            "prompt_id": "llmzszl-identity-041",
+            "raw_answer": "{\"odpowiedź\": \"7 rozpadów α i 10 rozpadów β-\"}",
+            "correct_answer": "8 i 6",
+            "score": 0.10344827586206895,
+            "error": false,
+            "elapsed": 0.531
+          },
+          {
+            "prompt_id": "llmzszl-identity-042",
+            "raw_answer": "{\"odpowiedź\": \"2 m\"}",
+            "correct_answer": "2 m",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.393
+          },
+          {
+            "prompt_id": "llmzszl-identity-043",
+            "raw_answer": "{\"odpowiedź\": \"12\"}",
+            "correct_answer": "9",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.294
+          },
+          {
+            "prompt_id": "llmzszl-identity-044",
+            "raw_answer": "{\"odpowiedź\": \"243\"}",
+            "correct_answer": "2⋅3^4",
+            "score": 0.4,
+            "error": false,
+            "elapsed": 0.351
+          },
+          {
+            "prompt_id": "llmzszl-identity-045",
+            "raw_answer": "{\"odpowiedź\": \"324\"}",
+            "correct_answer": "270",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.3
+          },
+          {
+            "prompt_id": "llmzszl-identity-046",
+            "raw_answer": "{\"odpowiedź\": \"Temperatura gazu w stanie końcowym jest 3 razy większa niż temperatura w stanie początkowym.\"}",
+            "correct_answer": "1/12",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.803
+          },
+          {
+            "prompt_id": "llmzszl-identity-047",
+            "raw_answer": "{\"odpowiedź\": \"1/4\"}",
+            "correct_answer": "1/2",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 0.316
+          },
+          {
+            "prompt_id": "llmzszl-identity-048",
+            "raw_answer": "{\"odpowiedź\": \"polaryzacja\"}",
+            "correct_answer": "polaryzacji światła",
+            "score": 0.5789473684210527,
+            "error": false,
+            "elapsed": 0.333
+          },
+          {
+            "prompt_id": "llmzszl-identity-049",
+            "raw_answer": "{\"odpowiedź\": \"12,09 eV\"}",
+            "correct_answer": "12,09 eV",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.38
+          },
+          {
+            "prompt_id": "llmzszl-identity-050",
+            "raw_answer": "{\"odpowiedź\": \"180 J\"}",
+            "correct_answer": "150 J",
+            "score": 0.8,
+            "error": false,
+            "elapsed": 0.33
+          },
+          {
+            "prompt_id": "llmzszl-identity-051",
+            "raw_answer": "{\"odpowiedź\": \"x = 1\"}",
+            "correct_answer": "-1",
+            "score": 0.19999999999999996,
+            "error": false,
+            "elapsed": 0.315
+          },
+          {
+            "prompt_id": "llmzszl-identity-052",
+            "raw_answer": "{\"odpowiedź\": \"15000 N\"}",
+            "correct_answer": "1670 N",
+            "score": 0.5714285714285714,
+            "error": false,
+            "elapsed": 0.393
+          },
+          {
+            "prompt_id": "llmzszl-identity-053",
+            "raw_answer": "{\"odpowiedź\": \"8\"}",
+            "correct_answer": "12",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.267
+          },
+          {
+            "prompt_id": "llmzszl-identity-054",
+            "raw_answer": "{\"odpowiedź\": \"27\"}",
+            "correct_answer": "27 razy",
+            "score": 0.2857142857142857,
+            "error": false,
+            "elapsed": 0.294
+          },
+          {
+            "prompt_id": "llmzszl-identity-055",
+            "raw_answer": "{\"odpowiedź\": \"Długość fali de Broglie'a zmniejszy się 2 razy.\"}",
+            "correct_answer": "zmaleje 2 razy",
+            "score": 0.23404255319148937,
+            "error": false,
+            "elapsed": 0.628
+          },
+          {
+            "prompt_id": "llmzszl-identity-056",
+            "raw_answer": "{\"odpowiedź\": \"36\"}",
+            "correct_answer": "36",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.298
+          },
+          {
+            "prompt_id": "llmzszl-identity-057",
+            "raw_answer": "{\"odpowiedź\": \"20 m\"}",
+            "correct_answer": "10 m",
+            "score": 0.75,
+            "error": false,
+            "elapsed": 0.317
+          },
+          {
+            "prompt_id": "llmzszl-identity-058",
+            "raw_answer": "{\"odpowiedź\": \"250\"}",
+            "correct_answer": "625",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 0.311
+          },
+          {
+            "prompt_id": "llmzszl-identity-059",
+            "raw_answer": "{\"odpowiedź\": \"25 cm\"}",
+            "correct_answer": "50 cm",
+            "score": 0.4,
+            "error": false,
+            "elapsed": 0.348
+          },
+          {
+            "prompt_id": "llmzszl-identity-060",
+            "raw_answer": "{\"odpowiedź\": \"50 N/kg\"}",
+            "correct_answer": "50 N/kg",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.406
+          },
+          {
+            "prompt_id": "llmzszl-identity-061",
+            "raw_answer": "{\"odpowiedź\": \"50%\"}",
+            "correct_answer": "25%",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 0.307
+          },
+          {
+            "prompt_id": "llmzszl-identity-062",
+            "raw_answer": "{\"odpowiedź\": \"500\"}",
+            "correct_answer": "500 zł",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 0.373
+          },
+          {
+            "prompt_id": "llmzszl-identity-063",
+            "raw_answer": "{\"odpowiedź\": \"3,5 m/s\"}",
+            "correct_answer": "21 km/h",
+            "score": 0.2857142857142857,
+            "error": false,
+            "elapsed": 0.36
+          },
+          {
+            "prompt_id": "llmzszl-identity-064",
+            "raw_answer": "{\"odpowiedź\": \"10\"}",
+            "correct_answer": "20%",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 0.362
+          },
+          {
+            "prompt_id": "llmzszl-identity-065",
+            "raw_answer": "{\"odpowiedź\": \"67.02\"}",
+            "correct_answer": "48π",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.346
+          },
+          {
+            "prompt_id": "llmzszl-identity-066",
+            "raw_answer": "{\"odpowiedź\": \"Cząsteczka wody składa się z 2 atomów wodoru i 1 atomu tlenu, co daje łącznie 3 atomy. W jej skład wchodzą 2 pierwiastki: wodór i tlen.\"}",
+            "correct_answer": "Trzy atomy, dwa pierwiastki",
+            "score": 0.18518518518518523,
+            "error": false,
+            "elapsed": 1.396
+          },
+          {
+            "prompt_id": "llmzszl-identity-067",
+            "raw_answer": "{\"odpowiedź\": \"48 godzin\"}",
+            "correct_answer": "12 godzin",
+            "score": 0.7777777777777778,
+            "error": false,
+            "elapsed": 0.323
+          },
+          {
+            "prompt_id": "llmzszl-identity-068",
+            "raw_answer": "{\"odpowiedź\": \"sił elektrostatycznych\"}",
+            "correct_answer": "elektrycznych",
+            "score": 0.5909090909090908,
+            "error": false,
+            "elapsed": 0.494
+          },
+          {
+            "prompt_id": "llmzszl-identity-069",
+            "raw_answer": "{\"odpowiedź\": \"230\"}",
+            "correct_answer": "350",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 0.315
+          },
+          {
+            "prompt_id": "llmzszl-identity-070",
+            "raw_answer": "{\"odpowiedź\": \"0.7\"}",
+            "correct_answer": "35/50",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.401
+          },
+          {
+            "prompt_id": "llmzszl-identity-071",
+            "raw_answer": "{\"odpowiedź\": \"70\"}",
+            "correct_answer": "70",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.296
+          },
+          {
+            "prompt_id": "llmzszl-identity-072",
+            "raw_answer": "{\"odpowiedź\": \"√5\"}",
+            "correct_answer": "√7",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 0.421
+          },
+          {
+            "prompt_id": "llmzszl-identity-073",
+            "raw_answer": "{\"odpowiedź\": \"27\"}",
+            "correct_answer": "28",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 0.295
+          },
+          {
+            "prompt_id": "llmzszl-identity-074",
+            "raw_answer": "{\"odpowiedź\": \"0.25 g\"}",
+            "correct_answer": "około 30 mg",
+            "score": 0.18181818181818177,
+            "error": false,
+            "elapsed": 0.418
+          },
+          {
+            "prompt_id": "llmzszl-identity-075",
+            "raw_answer": "{\"odpowiedź\": \"42 minuty\"}",
+            "correct_answer": "7 godzin 20 minut",
+            "score": 0.3529411764705882,
+            "error": false,
+            "elapsed": 0.327
+          },
+          {
+            "prompt_id": "llmzszl-identity-076",
+            "raw_answer": "{\"odpowiedź\": \"Mirek i Artur przedstawili poprawną wypowiedź.\"}",
+            "correct_answer": "tylko Mirek",
+            "score": 0.10869565217391308,
+            "error": false,
+            "elapsed": 0.565
+          },
+          {
+            "prompt_id": "llmzszl-identity-077",
+            "raw_answer": "{\"odpowiedź\": \"140 cm³\"}",
+            "correct_answer": "280 cm^3",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 0.333
+          },
+          {
+            "prompt_id": "llmzszl-identity-078",
+            "raw_answer": "{\"odpowiedź\": \"Piłka wzniesie się na wysokość H/4.\"}",
+            "correct_answer": "H/4",
+            "score": 0.08571428571428574,
+            "error": false,
+            "elapsed": 0.537
+          },
+          {
+            "prompt_id": "llmzszl-identity-079",
+            "raw_answer": "{\"odpowiedź\": \"100%\"}",
+            "correct_answer": "o 20%",
+            "score": 0.4,
+            "error": false,
+            "elapsed": 0.331
+          },
+          {
+            "prompt_id": "llmzszl-identity-080",
+            "raw_answer": "{\"odpowiedź\": \"3 m/s\"}",
+            "correct_answer": "3 m/s",
+            "score": 0.8,
+            "error": false,
+            "elapsed": 0.396
+          },
+          {
+            "prompt_id": "llmzszl-identity-081",
+            "raw_answer": "{\"odpowiedź\": \"5\"}",
+            "correct_answer": "8",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.273
+          },
+          {
+            "prompt_id": "llmzszl-identity-082",
+            "raw_answer": "{\"odpowiedź\": \"7\"}",
+            "correct_answer": "6",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.266
+          },
+          {
+            "prompt_id": "llmzszl-identity-083",
+            "raw_answer": "{\"odpowiedź\": \"urbanizacja\"}",
+            "correct_answer": "urbanizacja",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.353
+          },
+          {
+            "prompt_id": "llmzszl-identity-084",
+            "raw_answer": "{\"odpowiedź\": \"1/3\"}",
+            "correct_answer": "4/7",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 0.322
+          },
+          {
+            "prompt_id": "llmzszl-identity-085",
+            "raw_answer": "{\"odpowiedź\": \"0\"}",
+            "correct_answer": "−6",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.275
+          },
+          {
+            "prompt_id": "llmzszl-identity-086",
+            "raw_answer": "{\"odpowiedź\": \"25%\"}",
+            "correct_answer": "25%",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.317
+          },
+          {
+            "prompt_id": "llmzszl-identity-087",
+            "raw_answer": "{\"odpowiedź\": \"1\"}",
+            "correct_answer": "sin^2𝛼",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.277
+          },
+          {
+            "prompt_id": "llmzszl-identity-088",
+            "raw_answer": "{\"odpowiedź\": \"200 J\"}",
+            "correct_answer": "równą 400 J",
+            "score": 0.2727272727272727,
+            "error": false,
+            "elapsed": 0.384
+          },
+          {
+            "prompt_id": "llmzszl-identity-089",
+            "raw_answer": "{\"odpowiedź\": \"100 pm\"}",
+            "correct_answer": "200 pm",
+            "score": 0.8333333333333334,
+            "error": false,
+            "elapsed": 0.368
+          },
+          {
+            "prompt_id": "llmzszl-identity-090",
+            "raw_answer": "{\"odpowiedź\": \"30√3\"}",
+            "correct_answer": "30√3",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.328
+          },
+          {
+            "prompt_id": "llmzszl-identity-091",
+            "raw_answer": "{\"odpowiedź\": \"0.5\"}",
+            "correct_answer": "5/14",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.3
+          },
+          {
+            "prompt_id": "llmzszl-identity-092",
+            "raw_answer": "{\"odpowiedź\": \"12 cm\"}",
+            "correct_answer": "12 cm",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.318
+          },
+          {
+            "prompt_id": "llmzszl-identity-093",
+            "raw_answer": "{\"odpowiedź\": \"2\"}",
+            "correct_answer": "4√5/5",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.276
+          },
+          {
+            "prompt_id": "llmzszl-identity-094",
+            "raw_answer": "{\"odpowiedź\": \"30\"}",
+            "correct_answer": "45",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.283
+          },
+          {
+            "prompt_id": "llmzszl-identity-095",
+            "raw_answer": "{\"odpowiedź\": \"10 m\"}",
+            "correct_answer": "2 m",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 0.544
+          },
+          {
+            "prompt_id": "llmzszl-identity-096",
+            "raw_answer": "{\"odpowiedź\": \"2\"}",
+            "correct_answer": "14",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.287
+          },
+          {
+            "prompt_id": "llmzszl-identity-097",
+            "raw_answer": "{\"odpowiedź\": \"14:15\"}",
+            "correct_answer": "14:03",
+            "score": 0.6,
+            "error": false,
+            "elapsed": 0.425
+          },
+          {
+            "prompt_id": "llmzszl-identity-098",
+            "raw_answer": "{\"odpowiedź\": \"-8\"}",
+            "correct_answer": "-8",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 0.278
+          },
+          {
+            "prompt_id": "llmzszl-identity-099",
+            "raw_answer": "{\"odpowiedź\": \"5\"}",
+            "correct_answer": "7",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 0.269
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

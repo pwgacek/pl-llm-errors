@@ -1,0 +1,721 @@
+{
+  "timestamp": "2026-03-29T16:58:28.920483+00:00",
+  "model": "SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+  "base_url": "http://localhost:11434/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "datasets": {
+    "diacritic": {
+      "bbh_open": {
+        "num_sampled": 100,
+        "score_sum": 24.223591,
+        "score_avg": 0.242236,
+        "error_count": 0,
+        "elapsed_sec": 585.81,
+        "questions": [
+          {
+            "prompt_id": "bbh_open-diacritic-000",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.07594936708860756,
+            "error": false,
+            "elapsed": 11.648
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-001",
+            "raw_answer": "{\"odpowiedź\": \"ODPOWIEDZI: autobus, limuzyna, kombi, ciezarowka, minivan, ciagnik, kabriolet\"}",
+            "score": 0.3116883116883117,
+            "error": false,
+            "elapsed": 4.714
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-002",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\": \\\\\\\"Eve, Rob, Joe, Ada, Dan, Mel, Amy\\\\\\\"}\"}",
+            "score": 0.40740740740740744,
+            "error": false,
+            "elapsed": 4.823
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-003",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.06976744186046513,
+            "error": false,
+            "elapsed": 4.909
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-004",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.07246376811594202,
+            "error": false,
+            "elapsed": 4.983
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-005",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.07017543859649122,
+            "error": false,
+            "elapsed": 4.767
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-006",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.07246376811594202,
+            "error": false,
+            "elapsed": 4.556
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-007",
+            "raw_answer": "{\"odpowiedź\": \"[\\\\\\\"szara\\\\\\\", \\\\\\\"czerwona\\\\\\\", \\\\\\\"pomarańczowa\\\\\\\", \\\\\\\"fioletowa\\\\\\\", \\\\\\\"zielona\\\\\\\", \\\\\\\"czerwona\\\\\\\", \\\\\\\"niebieska\\\\\\\", \\\\\\\"biała\\\\\\\"]\"}",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 9.001
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-008",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\": [\\\\\\\"Joe\\\\\\\", \\\\\\\"Ada\\\\\\\", \\\\\\\"Dan\\\\\\\", \\\\\\\"Eli\\\\\\\", \\\\\\\"Mya\\\\\\\", \\\\\\\"Rob\\\\\\\", \\\\\\\"Ana\\\\\\\"]}\"}",
+            "score": 0.30000000000000004,
+            "error": false,
+            "elapsed": 8.522
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-009",
+            "raw_answer": "{\"odpowiedź\": \"ODPOWIEDZIA: [\\\\\\\"sedan\\\\\\\", \\\\\\\"minivan\\\\\\\", \\\\\\\"hatchback\\\\\\\", \\\\\\\"limuzyna\\\\\\\", \\\\\\\"ciezarowka\\\\\\\", \\\\\\\"motocykl\\\\\\\", \\\\\\\"ciagnik\\\\\\\"]\"}",
+            "score": 0.3486238532110092,
+            "error": false,
+            "elapsed": 8.669
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-010",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"ODPOWIEDŹ\\\\\\\": [\\\\\\\"Ana\\\\\\\", \\\\\\\"Dan\\\\\\\", \\\\\\\"Mya\\\\\\\", \\\\\\\"Eli\\\\\\\", \\\\\\\"Joe\\\\\\\", \\\\\\\"Mel\\\\\\\", \\\\\\\"Amy\\\\\\\"]}\"}",
+            "score": 0.2875,
+            "error": false,
+            "elapsed": 8.53
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-011",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.10606060606060608,
+            "error": false,
+            "elapsed": 4.424
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-012",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\": [\\\\\\\"motocykl\\\\\\\", \\\\\\\"hatchback\\\\\\\", \\\\\\\"ciagnik\\\\\\\", \\\\\\\"minivan\\\\\\\", \\\\\\\"limuzyna\\\\\\\", \\\\\\\"sedan\\\\\\\", \\\\\\\"ciezarowka\\\\\\\"]}\"}",
+            "score": 0.23893805309734517,
+            "error": false,
+            "elapsed": 11.366
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-013",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"ODPOWIEDŹ\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.050000000000000044,
+            "error": false,
+            "elapsed": 4.979
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-014",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.06779661016949157,
+            "error": false,
+            "elapsed": 4.491
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-015",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\": [\\\\\\\"autobus\\\\\\\", \\\\\\\"kombi\\\\\\\", \\\\\\\"sedan\\\\\\\", \\\\\\\"motocykl\\\\\\\", \\\\\\\"minivan\\\\\\\", \\\\\\\"ciagnik\\\\\\\", \\\\\\\"ciezarowka\\\\\\\"]}\"}",
+            "score": 0.2962962962962963,
+            "error": false,
+            "elapsed": 9.119
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-016",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\": [\\\\\\\"Joe\\\\\\\", \\\\\\\"Ada\\\\\\\", \\\\\\\"Rob\\\\\\\", \\\\\\\"Eve\\\\\\\", \\\\\\\"Mel\\\\\\\", \\\\\\\"Eli\\\\\\\", \\\\\\\"Ana\\\\\\\"]}\"}",
+            "score": 0.32499999999999996,
+            "error": false,
+            "elapsed": 8.344
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-017",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\": [\\\\\\\"autobus\\\\\\\", \\\\\\\"hatchback\\\\\\\", \\\\\\\"limuzyna\\\\\\\", \\\\\\\"ciężarowka\\\\\\\", \\\\\\\"minivan\\\\\\\", \\\\\\\"ciągnik\\\\\\\", \\\\\\\"kabriolet\\\\\\\"]}\"}",
+            "score": 0.35344827586206895,
+            "error": false,
+            "elapsed": 9.042
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-018",
+            "raw_answer": "{\"odpowiedź\": \"Kiwi, Mango, Pomarańcze, Jabłka, Śliwki, Brzoskwinie, Kiwi\"}",
+            "score": 0.34426229508196726,
+            "error": false,
+            "elapsed": 4.347
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-019",
+            "raw_answer": "{\"odpowiedź\": \"Mango, brzoskwinie, kiwi, gruszki, arbuzy, kantalupy, pomarańcze\"}",
+            "score": 0.5625,
+            "error": false,
+            "elapsed": 4.179
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-020",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.052631578947368474,
+            "error": false,
+            "elapsed": 4.472
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-021",
+            "raw_answer": "{\"odpowiedź\": \"Czerwona, biała, szara, niebieska, czarna, pomarańczowa, fioletowa.\"}",
+            "score": 0.4925373134328358,
+            "error": false,
+            "elapsed": 4.04
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-022",
+            "raw_answer": "{\"odpowiedź\": \"Kiwi, brzoskwinie, pomarańcze, kantalupy, gruszki, lokwaty, arbuzy\"}",
+            "score": 0.2727272727272727,
+            "error": false,
+            "elapsed": 4.295
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-023",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\": \\\\\\\"pomarańcza, czarna, niebieska, zielona, czerwona, żółta, biała\\\\\\\"}\"}",
+            "score": 0.4337349397590361,
+            "error": false,
+            "elapsed": 5.171
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-024",
+            "raw_answer": "{\"odpowiedź\": \"Biała, zielona, czarna, fioletowa, czerwona, żółta, szara.\"}",
+            "score": 0.31034482758620685,
+            "error": false,
+            "elapsed": 3.356
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-025",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\": [\\\\\\\"sojka\\\\\\\", \\\\\\\"jastrzab\\\\\\\", \\\\\\\"koliber\\\\\\\", \\\\\\\"sokol\\\\\\\", \\\\\\\"kruk\\\\\\\", \\\\\\\"sova\\\\\\\", \\\\\\\"wronia\\\\\\\"]}\"}",
+            "score": 0.2857142857142857,
+            "error": false,
+            "elapsed": 8.489
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-026",
+            "raw_answer": "{\"odpowiedź\": \"Owoce w kolejności od najtańszego do najdroższego to: lokwaty, sliwki, mango, brzoskwinie, kantalupy, jabłka, arbuzy.\"}",
+            "score": 0.3589743589743589,
+            "error": false,
+            "elapsed": 5.588
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-027",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"ODPOWIEDZ: [ \\\\\\\"Eli\\\\\\\", \\\\\\\"Ana\\\\\\\", \\\\\\\"Rob\\\\\\\", \\\\\\\"Ada\\\\\\\", \\\\\\\"Dan\\\\\\\", \\\\\\\"Joe\\\\\\\", \\\\\\\"Amy\\\\\\\"]}\"}",
+            "score": 0.26582278481012656,
+            "error": false,
+            "elapsed": 8.371
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-028",
+            "raw_answer": "{\"odpowiedź\": \"Jabłka, Kiwi, Gruszki, Mango, Arbuzy, Pomarańcze, Lemoniady\"}",
+            "score": 0.5084745762711864,
+            "error": false,
+            "elapsed": 4.279
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-029",
+            "raw_answer": "{\"odpowiedź\": \"Kiwi, śliwki, gruszki, brzoskwinie, arbuzy, kantalupy, pomarańcze.\"}",
+            "score": 0.5606060606060606,
+            "error": false,
+            "elapsed": 4.232
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-030",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.048387096774193505,
+            "error": false,
+            "elapsed": 4.616
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-031",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.05882352941176472,
+            "error": false,
+            "elapsed": 4.387
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-032",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\": [\\\\\\\"minivan\\\\\\\", \\\\\\\"kombi\\\\\\\", \\\\\\\"autobus\\\\\\\", \\\\\\\"sedan\\\\\\\", \\\\\\\"kabriolet\\\\\\\", \\\\\\\"motocykl\\\\\\\", \\\\\\\"ciezarowka\\\\\\\"]}\"}",
+            "score": 0.2727272727272727,
+            "error": false,
+            "elapsed": 9.357
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-033",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.07692307692307687,
+            "error": false,
+            "elapsed": 4.805
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-034",
+            "raw_answer": "{\"odpowiedź\": \"ODPOWIEDZ: [\\\\\\\"motocykl\\\\\\\", \\\\\\\"autobus\\\\\\\", \\\\\\\"ciezarowka\\\\\\\", \\\\\\\"limuzyna\\\\\\\", \\\\\\\"ciagnik\\\\\\\", \\\\\\\"kabriolet\\\\\\\", \\\\\\\"minivan\\\\\\\"]\"}",
+            "score": 0.33944954128440363,
+            "error": false,
+            "elapsed": 8.59
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-035",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"książki\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.09433962264150941,
+            "error": false,
+            "elapsed": 5.126
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-036",
+            "raw_answer": "{\"odpowiedź\": \"Owoce w kolejności od najtańszego do najdroższego to: sliwki, lokwaty, jabłka, gruszki, kiwi, kantalupy, arbuzy.\"}",
+            "score": 0.3660714285714286,
+            "error": false,
+            "elapsed": 5.593
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-037",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.050000000000000044,
+            "error": false,
+            "elapsed": 4.567
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-038",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.05882352941176472,
+            "error": false,
+            "elapsed": 4.681
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-039",
+            "raw_answer": "{\"odpowiedź\": \"Lokówka, śliwki, jabłka, brzoskwinie, gruszki, kantalupy, mango\"}",
+            "score": 0.3214285714285714,
+            "error": false,
+            "elapsed": 4.245
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-040",
+            "raw_answer": "{\"odpowiedź\": \"Owoce w kolejności od najtańszego do najdroższego to: arbuzy, kiwi, pomarańcze, jabłka, mango, śliwki, limonki.\"}",
+            "score": 0.2792792792792793,
+            "error": false,
+            "elapsed": 5.035
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-041",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\": \\\\\\\"Dan, Ana, Joe, Eve, Ada, Amy, Mel\\\\\\\"}\"}",
+            "score": 0.4629629629629629,
+            "error": false,
+            "elapsed": 4.764
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-042",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.03703703703703709,
+            "error": false,
+            "elapsed": 4.275
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-043",
+            "raw_answer": "{\"odpowiedź\": \"ODPOWIEDZIA: [\\\\\\\"autobus\\\\\\\", \\\\\\\"limuzyna\\\\\\\", \\\\\\\"kombi\\\\\\\", \\\\\\\"motocykl\\\\\\\", \\\\\\\"minivan\\\\\\\", \\\\\\\"hatchback\\\\\\\", \\\\\\\"ciezarowka\\\\\\\"]\"}",
+            "score": 0.25688073394495414,
+            "error": false,
+            "elapsed": 8.364
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-044",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"ODPOWIEDŹ\\\\\\\": [\\\\\\\"Eli\\\\\\\", \\\\\\\"Mel\\\\\\\", \\\\\\\"Rob\\\\\\\", \\\\\\\"Dan\\\\\\\", \\\\\\\"Ada\\\\\\\", \\\\\\\"Ana\\\\\\\", \\\\\\\"Mya\\\\\\\"]}\"}",
+            "score": 0.3125,
+            "error": false,
+            "elapsed": 8.477
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-045",
+            "raw_answer": "{\"odpowiedź\": \"Aby rozwiązać to zadanie, przeanalizujmy podane informacje krok po kroku:\\n1. **Ada zajęła miejsce wyższe niż Mel** - oznacza to, że Ada jest przed Melem w kolejności miejsc.\\n2. **Ada zajęła trzecie miejsce od końca** - oznacza, że jest na 5. miejscu (ponieważ są 7 osób).\\n3. **Amy zajęła miejsce wyższe niż Ana** - Amy jest przed Aną.\\n4. **Mya zajęła przedostatnie miejsce** - Mya jest na 6. miejscu.\\n5. **Joe zajął miejsce wyższe niż Amy** - Joe jest przed Amy.\\n6. **Eli zajął miejsce niższe niż Ana** - Eli jest za Aną.\"}",
+            "score": 0.08061420345489445,
+            "error": false,
+            "elapsed": 14.21
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-046",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.07017543859649122,
+            "error": false,
+            "elapsed": 4.769
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-047",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedzi\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.051948051948051965,
+            "error": false,
+            "elapsed": 5.156
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-048",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.050000000000000044,
+            "error": false,
+            "elapsed": 4.71
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-049",
+            "raw_answer": "{\"odpowiedź\": \"ODPOWIEDZI: autobus, limuzyna, kombi, ciezarowka, minivan, ciagnik, kabriolet\"}",
+            "score": 0.3116883116883117,
+            "error": false,
+            "elapsed": 4.538
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-050",
+            "raw_answer": "{\"odpowiedź\": \"Kiwi, Mango, Pomarańcze, Jabłka, Śliwki, Brzoskwinie, Kiwi\"}",
+            "score": 0.34426229508196726,
+            "error": false,
+            "elapsed": 4.235
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-051",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\": [\\\\\\\"Ana\\\\\\\", \\\\\\\"Eve\\\\\\\", \\\\\\\"Dan\\\\\\\", \\\\\\\"Rob\\\\\\\", \\\\\\\"Joe\\\\\\\", \\\\\\\"Ada\\\\\\\", \\\\\\\"Amy\\\\\\\"]}\"}",
+            "score": 0.25,
+            "error": false,
+            "elapsed": 8.485
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-052",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.05555555555555558,
+            "error": false,
+            "elapsed": 4.328
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-053",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.05555555555555558,
+            "error": false,
+            "elapsed": 2.929
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-054",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.06976744186046513,
+            "error": false,
+            "elapsed": 4.956
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-055",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\": [\\\\\\\"Rob\\\\\\\", \\\\\\\"Joe\\\\\\\", \\\\\\\"Mya\\\\\\\", \\\\\\\"Eve\\\\\\\", \\\\\\\"Dan\\\\\\\", \\\\\\\"Ada\\\\\\\", \\\\\\\"Mel\\\\\\\"]}\"}",
+            "score": 0.30000000000000004,
+            "error": false,
+            "elapsed": 8.279
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-056",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"ODPOWIEDŹ\\\\\\\": [\\\\\\\"Ana\\\\\\\", \\\\\\\"Dan\\\\\\\", \\\\\\\"Mya\\\\\\\", \\\\\\\"Eli\\\\\\\", \\\\\\\"Joe\\\\\\\", \\\\\\\"Mel\\\\\\\", \\\\\\\"Amy\\\\\\\"]}\"}",
+            "score": 0.2875,
+            "error": false,
+            "elapsed": 8.452
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-057",
+            "raw_answer": "{\"odpowiedź\": \"Biała, zielona, niebieska, czarna, pomarańczowa, brązowa, żółta\"}",
+            "score": 0.7777777777777778,
+            "error": false,
+            "elapsed": 3.76
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-058",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\": [\\\\\\\"Joe\\\\\\\", \\\\\\\"Ada\\\\\\\", \\\\\\\"Dan\\\\\\\", \\\\\\\"Eli\\\\\\\", \\\\\\\"Mya\\\\\\\", \\\\\\\"Rob\\\\\\\", \\\\\\\"Ana\\\\\\\"]}\"}",
+            "score": 0.30000000000000004,
+            "error": false,
+            "elapsed": 8.36
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-059",
+            "raw_answer": "{\"odpowiedź\": \"Owoce w kolejności od najtańszego do najdroższego to: kantalupy, gruszki, brzoskwinie, mango, arbuzy, kiwi, pomarańcze.\"}",
+            "score": 0.3529411764705882,
+            "error": false,
+            "elapsed": 5.511
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-060",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.07792207792207795,
+            "error": false,
+            "elapsed": 4.534
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-061",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\": [\\\\\\\"Dan\\\\\\\", \\\\\\\"Ada\\\\\\\", \\\\\\\"Amy\\\\\\\", \\\\\\\"Joe\\\\\\\", \\\\\\\"Melanie\\\\\\\", \\\\\\\"Rob\\\\\\\", \\\\\\\"Mya\\\\\\\"]}\"}",
+            "score": 0.22619047619047616,
+            "error": false,
+            "elapsed": 8.572
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-062",
+            "raw_answer": "{\"odpowiedź\": \"Owoce w kolejności od najtańszego do najdroższego to: śliwki, lokwaty, jabłka, gruszki, kiwi, kantalupy, arbuzy.\"}",
+            "score": 0.3660714285714286,
+            "error": false,
+            "elapsed": 5.337
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-063",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.08333333333333337,
+            "error": false,
+            "elapsed": 4.881
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-064",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.07692307692307687,
+            "error": false,
+            "elapsed": 4.733
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-065",
+            "raw_answer": "{\"odpowiedź\": \"Jastrząb, kruk, wrona, sokół, sopa, przepiórka, koliber.\"}",
+            "score": 0.4107142857142857,
+            "error": false,
+            "elapsed": 3.895
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-066",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.06557377049180324,
+            "error": false,
+            "elapsed": 4.602
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-067",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.033333333333333326,
+            "error": false,
+            "elapsed": 4.338
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-068",
+            "raw_answer": "{\"odpowiedź\": \"Biała, zielona, niebieska, czarna, pomarańczowa, brązowa, żółta\"}",
+            "score": 0.7777777777777778,
+            "error": false,
+            "elapsed": 3.849
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-069",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.03703703703703709,
+            "error": false,
+            "elapsed": 4.339
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-070",
+            "raw_answer": "{\"odpowiedź\": \"Owoce w kolejności od najtańszego do najdroższego to: arbuzy, kiwi, pomarańcze, jabłka, mango, śliwki, limonki.\"}",
+            "score": 0.2792792792792793,
+            "error": false,
+            "elapsed": 5.183
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-071",
+            "raw_answer": "{\"odpowiedź\": \"Zielona, Pomarańczowa, Fioletowa, Czarna, Biała, Zielona, Żółta\"}",
+            "score": 0.4285714285714286,
+            "error": false,
+            "elapsed": 4.072
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-072",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\": [\\\\\\\"Joe\\\\\\\", \\\\\\\"Ada\\\\\\\", \\\\\\\"Dan\\\\\\\", \\\\\\\"Eli\\\\\\\", \\\\\\\"Mya\\\\\\\", \\\\\\\"Rob\\\\\\\", \\\\\\\"Ana\\\\\\\"]}\"}",
+            "score": 0.30000000000000004,
+            "error": false,
+            "elapsed": 8.39
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-073",
+            "raw_answer": "{\"odpowiedź\": \"Rudzik, kruk, sojka, koliber, kardynał, wrona, przepióreczka.\"}",
+            "score": 0.5245901639344263,
+            "error": false,
+            "elapsed": 3.822
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-074",
+            "raw_answer": "{\"odpowiedź\": \"Owoce w kolejności od najtańszego do najdroższego to: jabłka, gruszki, kantalupy, pomarańcze, mango, arbuzy, lokwaty.\"}",
+            "score": 0.3076923076923077,
+            "error": false,
+            "elapsed": 5.218
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-075",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.050000000000000044,
+            "error": false,
+            "elapsed": 4.501
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-076",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedzi\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.051948051948051965,
+            "error": false,
+            "elapsed": 4.926
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-077",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.04597701149425293,
+            "error": false,
+            "elapsed": 5.098
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-078",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\": [\\\\\\\"sojka\\\\\\\", \\\\\\\"jastrzab\\\\\\\", \\\\\\\"koliber\\\\\\\", \\\\\\\"sokol\\\\\\\", \\\\\\\"kruk\\\\\\\", \\\\\\\"sova\\\\\\\", \\\\\\\"wronia\\\\\\\"]}\"}",
+            "score": 0.2857142857142857,
+            "error": false,
+            "elapsed": 8.61
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-079",
+            "raw_answer": "{\"odpowiedź\": \"Jastrząb, kruk, wrona, kardynał, sokół, koliber, rudzik.\"}",
+            "score": 0.3392857142857143,
+            "error": false,
+            "elapsed": 3.569
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-080",
+            "raw_answer": "{\"odpowiedź\": \"Rudzik, soow, koliber, sokol, wrona, kardynal, przepiorka.\"}",
+            "score": 0.3448275862068966,
+            "error": false,
+            "elapsed": 3.679
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-081",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\": [\\\\\\\"motocykl\\\\\\\", \\\\\\\"hatchback\\\\\\\", \\\\\\\"ciagnik\\\\\\\", \\\\\\\"minivan\\\\\\\", \\\\\\\"limuzyna\\\\\\\", \\\\\\\"sedan\\\\\\\", \\\\\\\"ciezarowka\\\\\\\"]}\"}",
+            "score": 0.23893805309734517,
+            "error": false,
+            "elapsed": 9.083
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-082",
+            "raw_answer": "{\"odpowiedź\": \"ODPOWIEDZIA: [\\\\\\\"minivan\\\\\\\", \\\\\\\"limuzyna\\\\\\\", \\\\\\\"kabriolet\\\\\\\", \\\\\\\"autobus\\\\\\\", \\\\\\\"hatchback\\\\\\\", \\\\\\\"kombi\\\\\\\", \\\\\\\"ciagnik\\\\\\\"]\"}",
+            "score": 0.20560747663551404,
+            "error": false,
+            "elapsed": 8.326
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-083",
+            "raw_answer": "{\"odpowiedź\": \"Zielona, Pomarańczowa, Fioletowa, Czarna, Biała, Zielona, Żółta\"}",
+            "score": 0.4285714285714286,
+            "error": false,
+            "elapsed": 4.079
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-084",
+            "raw_answer": "{\"odpowiedź\": \"Biała, zielona, czarna, fioletowa, czerwona, żółta, szara.\"}",
+            "score": 0.31034482758620685,
+            "error": false,
+            "elapsed": 3.335
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-085",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\": [\\\\\\\"Eli\\\\\\\", \\\\\\\"Joe\\\\\\\", \\\\\\\"Amy\\\\\\\", \\\\\\\"Rob\\\\\\\", \\\\\\\"Ada\\\\\\\", \\\\\\\"Vacancy\\\\\\\", \\\\\\\"Ana\\\\\\\"]}\"}",
+            "score": 0.23809523809523814,
+            "error": false,
+            "elapsed": 8.593
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-086",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\": [\\\\\\\"Joe\\\\\\\", \\\\\\\"Ada\\\\\\\", \\\\\\\"Rob\\\\\\\", \\\\\\\"Eve\\\\\\\", \\\\\\\"Mel\\\\\\\", \\\\\\\"Eli\\\\\\\", \\\\\\\"Ana\\\\\\\"]}\"}",
+            "score": 0.32499999999999996,
+            "error": false,
+            "elapsed": 8.331
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-087",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.0641025641025641,
+            "error": false,
+            "elapsed": 5.0
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-088",
+            "raw_answer": "{\"odpowiedź\": \"Owoce w kolejności od najtańszego do najdroższego to: arbuzy, gruszki, jabłka, mango, brzoskwinie, pomarańcze, kantalupy.\"}",
+            "score": 0.2892561983471075,
+            "error": false,
+            "elapsed": 5.368
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-089",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.050000000000000044,
+            "error": false,
+            "elapsed": 4.277
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-090",
+            "raw_answer": "{\"odpowiedź\": \"ODPOWIEDZI:\\n1. Hatchback\\n2. Kombi\\n3. Limuzyna\\n4. Minivan\\n5. Autobus\\n6. Minivan (ponownie) - nie, to jest błąd w zadaniu\\n7. Ciezarowka\"}",
+            "score": 0.37593984962406013,
+            "error": false,
+            "elapsed": 7.011
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-091",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.033333333333333326,
+            "error": false,
+            "elapsed": 4.321
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-092",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\": [\\\\\\\"Eli\\\\\\\", \\\\\\\"Joe\\\\\\\", \\\\\\\"Amy\\\\\\\", \\\\\\\"Rob\\\\\\\", \\\\\\\"Ada\\\\\\\", \\\\\\\"Vacancy\\\\\\\", \\\\\\\"Ana\\\\\\\"]}\"}",
+            "score": 0.23809523809523814,
+            "error": false,
+            "elapsed": 8.596
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-093",
+            "raw_answer": "{\"odpowiedź\": \"Mango, brzoskwinie, kiwi, gruszki, arbuzy, kantalupy, pomarańcze\"}",
+            "score": 0.5625,
+            "error": false,
+            "elapsed": 4.405
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-094",
+            "raw_answer": "{\"odpowiedź\": \"ODPOWIEDZI:\\n1. Eve\\n2. Rob\\n3. Joe\\n4. Dan\\n5. Mel\\n6. Ada\\n7. Amy\"}",
+            "score": 0.55,
+            "error": false,
+            "elapsed": 5.168
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-095",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.05882352941176472,
+            "error": false,
+            "elapsed": 4.197
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-096",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.05882352941176472,
+            "error": false,
+            "elapsed": 3.049
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-097",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.07017543859649122,
+            "error": false,
+            "elapsed": 4.73
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-098",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\": [\\\\\\\"rudzik\\\\\\\", \\\\\\\"jastrzab\\\\\\\", \\\\\\\"koliber\\\\\\\", \\\\\\\"wrona\\\\\\\", \\\\\\\"sokol\\\\\\\", \\\\\\\"sojka\\\\\\\", \\\\\\\"kruk\\\\\\\"]}\"}",
+            "score": 0.31313131313131315,
+            "error": false,
+            "elapsed": 8.873
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-099",
+            "raw_answer": "{\"odpowiedź\": \"{\\\\\\\"odpowiedź\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+            "score": 0.0714285714285714,
+            "error": false,
+            "elapsed": 4.934
+          }
+        ]
+      }
+    }
+  },
+  "status": "partial"
+}

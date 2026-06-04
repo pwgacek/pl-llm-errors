@@ -1,0 +1,102 @@
+{
+  "timestamp": "2026-04-19T16:17:34.542069+00:00",
+  "model": "speakleash/Bielik-11B-v3.0-Instruct",
+  "base_url": "https://llmlab.plgrid.pl/api/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "elapsed_sec": 90.42,
+  "datasets": {
+    "identity": {
+      "llmzszl": {
+        "num_sampled": 10,
+        "score_sum": 0.056245,
+        "score_avg": 0.005625,
+        "error_count": 0,
+        "elapsed_sec": 90.42,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-identity-000",
+            "raw_answer": "Aby obliczyć pole rombu, mogę skorzystać z wzoru na pole rombu, który jest podobny do wzoru na pole trójkąta: \\( P = a \\cdot h \\), gdzie \\( a \\) to długość boku, a \\( h \\) to wysokość rombu.\n\nPonieważ znam długość boku \\( a = 4 \\) oraz kąt rozwarty \\( 150^\\circ \\), mogę znaleźć wysokość \\( h \\), korzystając z trygonometrii.\n\nW rombie, wysokość można wyrazić jako \\( h = a \\cdot \\sin(\\theta) \\), gdzie \\( \\theta \\) to kąt ostry przyległy do boku. Ponieważ kąt rozwarty wynosi \\( 150^\\circ \\), kąt ostry wynosi \\( 180^\\circ - 150^\\circ = 30^\\circ \\).\n\nZatem:\n\\[ h = 4 \\cdot \\sin(30^\\circ) \\]\n\nWiem, że \\( \\sin(30^\\circ) = \\frac{1}{2} \\), więc:\n\\[ h = 4 \\cdot \\frac{1}{2} = 2 \\]\n\nTeraz mogę obliczyć pole rombu:\n\\[ P = a \\cdot h = 4 \\cdot 2 = 8 \\]\n\nAlternatywnie, mogę skorzystać z wzoru na pole rombu w zależności od kąta: \\( P = a^2 \\cdot \\sin(\\alpha) \\), gdzie \\( \\alpha \\) to kąt rombu. W tym przypadku \\( \\alpha = 150^\\circ \\), więc:\n\\[ P = 4^2 \\cdot \\sin(150^\\circ) = 16 \\cdot \\sin(150^\\circ) \\]\n\nPonieważ \\( \\sin(150^\\circ) = \\sin(180^\\circ - 30^\\circ) = \\sin(30^\\circ) = \\frac{1}{2} \\), to:\n\\[ P = 16 \\cdot \\frac{1}{2} = 8 \\]\n\nOba sposoby dają ten sam wynik.\n\n<ODPOWIEDŹ>8</ODPOWIEDŹ>",
+            "correct_answer": "8",
+            "score": 0.0008396305625524292,
+            "error": false,
+            "elapsed": 10.119
+          },
+          {
+            "prompt_id": "llmzszl-identity-001",
+            "raw_answer": "Aby obliczyć, ile zapłaci klient za okulary, muszę najpierw określić wysokość zniżki, a następnie odjąć ją od ceny podstawowej.\n\nKrok 1: Obliczenie wysokości zniżki.\nKlient ma 35 lat, więc otrzymuje 35% zniżki.\n\nKrok 2: Obliczenie kwoty zniżki.\nCena okularów bez promocji wynosi 240 zł.\nZniżka = 35% z 240 zł = 0,35 × 240 zł = 84 zł.\n\nKrok 3: Obliczenie ceny po zniżce.\nCena po zniżce = cena podstawowa - zniżka = 240 zł - 84 zł = 156 zł.\n\n<ODPOWIEDŹ>156</ODPOWIEDŹ>",
+            "correct_answer": "156zł",
+            "score": 0.010729613733905574,
+            "error": false,
+            "elapsed": 4.352
+          },
+          {
+            "prompt_id": "llmzszl-identity-002",
+            "raw_answer": "Aby znaleźć wyrażenie opisujące liczbę ludności tego państwa, muszę przeanalizować podane informacje i wyrazić je w postaci matematycznej.\n\n1. **Liczba osób niepełnoletnich**: Jest równa \\( p \\).\n\n2. **Liczba osób pełnoletnich w wieku poniżej 60 lat**: Jest o połowę mniej niż liczba osób niepełnoletnich. Oznacza to, że jest równa \\( \\frac{p}{2} \\).\n\n3. **Liczba pozostałych dorosłych (czyli osób w wieku 60 lat i więcej)**: Jest \\( k \\) razy mniej niż liczba osób niepełnoletnich. Oznacza to, że jest równa \\( \\frac{p}{k} \\).\n\nTeraz, aby znaleźć całkowitą liczbę ludności, muszę zsumować wszystkie te grupy:\n\n\\[\n\\text{Ludność} = p + \\frac{p}{2} + \\frac{p}{k}\n\\]\n\nAby uprościć to wyrażenie, mogę wyciągnąć \\( p \\) przed nawias:\n\n\\[\n\\text{Ludność} = p \\left( 1 + \\frac{1}{2} + \\frac{1}{k} \\right)\n\\]\n\nTeraz muszę uprościć wyrażenie w nawiasie. Aby to zrobić, znajdę wspólny mianownik dla ułamków. Wspólnym mianownikiem dla 1, \\(\\frac{1}{2}\\) i \\(\\frac{1}{k}\\) jest \\(2k\\).\n\n\\[\n1 = \\frac{2k}{2k}, \\quad \\frac{1}{2} = \\frac{k}{2k}, \\quad \\frac{1}{k} = \\frac{2}{2k}\n\\]\n\nDodaję te ułamki:\n\n\\[\n\\frac{2k}{2k} + \\frac{k}{2k} + \\frac{2}{2k} = \\frac{2k + k + 2}{2k} = \\frac{3k + 2}{2k}\n\\]\n\nZatem wyrażenie na ludność to:\n\n\\[\n\\text{Ludność} = p \\left( \\frac{3k + 2}{2k} \\right) = \\frac{p(3k + 2)}{2k}\n\\]\n\nTo jest ostateczne wyrażenie opisujące liczbę ludności tego państwa.\n\n<ODPOWIEDŹ>\n\\boxed{\\dfrac{p(3k + 2)}{2k}}\n</ODPOWIEDŹ>",
+            "correct_answer": "1,5p + p/k",
+            "score": 0.005637773079633535,
+            "error": false,
+            "elapsed": 12.187
+          },
+          {
+            "prompt_id": "llmzszl-identity-003",
+            "raw_answer": "Aby odpowiedzieć na pytanie, w której fazie cyklu komórkowego zachodzi replikacja DNA, należy przeanalizować poszczególne etapy cyklu komórkowego.\n\nCykl komórkowy składa się z dwóch głównych faz: interfazy i fazy mitotycznej (M). Interfaza dzieli się na trzy etapy: G1, S i G2.\n\n1. **Faza G1 (Gap 1)**: Komórka rośnie i syntetyzuje białka oraz organelle. Nie zachodzi tu replikacja DNA.\n2. **Faza S (Synthesis)**: W tej fazie dochodzi do replikacji DNA, czyli podwojenia materiału genetycznego. Jest to kluczowy etap przygotowujący komórkę do podziału.\n3. **Faza G2 (Gap 2)**: Komórka kontynuuje wzrost i przygotowuje się do mitozy. DNA jest już zreplikowane, ale komórka jeszcze nie dzieli się.\n4. **Faza M (Mitosis)**: Komórka dzieli się na dwie komórki potomne. Replikacja DNA już się zakończyła.\n\nZ powyższej analizy wynika, że replikacja DNA zachodzi w fazie S cyklu komórkowego.\n\n<ODPOWIEDŹ>Faza S</ODPOWIEDŹ>",
+            "correct_answer": "w fazie S",
+            "score": 0.00983606557377048,
+            "error": false,
+            "elapsed": 6.457
+          },
+          {
+            "prompt_id": "llmzszl-identity-004",
+            "raw_answer": "Aby odpowiedzieć na pytanie, muszę porównać powierzchnię Antarktydy i Europy.\n\n1. **Powierzchnia Antarktydy**:\n   - Antarktyda to kontynent na półkuli południowej, pokryty lądolodem.\n   - Jego powierzchnia wynosi około **14 000 000 km²** (wliczając lodowce szelfowe).\n\n2. **Powierzchnia Europy**:\n   - Europa to kontynent w północnej części globu.\n   - Jego powierzchnia wynosi około **10 180 000 km²**.\n\n3. **Obliczenie różnicy**:\n   - Różnica w powierzchni = Powierzchnia Antarktydy - Powierzchnia Europy\n   - Różnica = 14 000 000 km² - 10 180 000 km² = 3 820 000 km²\n\n4. **Uzasadnienie**:\n   - Wartości powierzchni są przybliżone, ale powszechnie akceptowane w geografii.\n   - Różnica jest wyrażona w kilometrach kwadratowych.\n\n<ODPOWIEDŹ>3 820 000 km²</ODPOWIEDŹ>",
+            "correct_answer": "o 3 mln km^2",
+            "score": 0.014341590612777066,
+            "error": false,
+            "elapsed": 6.075
+          },
+          {
+            "prompt_id": "llmzszl-identity-005",
+            "raw_answer": "Aby odpowiedzieć na to pytanie, musimy zrozumieć, jak zachowuje się powietrze w szczelinie między drzwiami a framugą, gdy Paweł uchyla drzwi z ciepłego pokoju do zimnego korytarza.\n\n1. **Różnica temperatur i ruch powietrza**:\n   - Ciepłe powietrze z pokoju jest lżejsze i unosi się do góry.\n   - Zimne powietrze z korytarza jest cięższe i opada w dół.\n   - W szczelinie powstaje ruch powietrza: ciepłe powietrze unosi się, a zimne opada.\n\n2. **Kierunek przepływu powietrza**:\n   - W dolnej części szczeliny zimne powietrze z korytarza wchodzi do pokoju.\n   - W górnej części szczeliny ciepłe powietrze z pokoju wychodzi na korytarz.\n   - To tworzy poziomy przepływ powietrza wzdłuż szczeliny.\n\n3. **Wpływ na płomień świeczki**:\n   - Płomień świeczki jest wrażliwy na ruch powietrza.\n   - Jeśli powietrze przepływa wokół płomienia, może go odchylić.\n\n4. **Analiza odchylenia płomienia**:\n   - W dolnej części szczeliny zimne powietrze płynie w górę, co może odchylić płomień w dół.\n   - W górnej części szczeliny ciepłe powietrze płynie w dół, co może odchylić płomień w górę.\n   - W środkowej części szczeliny ruch powietrza jest najbardziej zrównoważony, ponieważ zarówno ciepłe, jak i zimne powietrze przepływają w przeciwnych kierunkach.\n\n5. **Wniosek**:\n   - Płomień świeczki będzie odchylał się najmniej w środkowej części szczeliny, ponieważ tam wpływ przepływu powietrza jest najmniejszy.\n\n<ODPOWIEDŹ>W środkowej części szczeliny.</ODPOWIEDŹ>",
+            "correct_answer": "W środkowym",
+            "score": 0.007591442374051072,
+            "error": false,
+            "elapsed": 11.313
+          },
+          {
+            "prompt_id": "llmzszl-identity-006",
+            "raw_answer": "Aby rozwiązać to zadanie, wprowadzę zmienne i ułożę równania na podstawie podanych informacji.\n\n1. Oznaczmy liczbę dziewcząt jako \\(d\\).\n2. Ponieważ chłopców jest o 8 więcej niż dziewcząt, liczbę chłopców oznaczę jako \\(d + 8\\).\n3. Całkowita liczba uczniów wynosi 32, więc suma dziewcząt i chłopców jest równa 32:\n   \\[\n   d + (d + 8) = 32\n   \\]\n4. Rozwiązuję równanie:\n   \\[\n   d + d + 8 = 32\n   \\]\n   \\[\n   2d + 8 = 32\n   \\]\n   Odejmuję 8 od obu stron:\n   \\[\n   2d = 24\n   \\]\n   Dzielę obie strony przez 2:\n   \\[\n   d = 12\n   \\]\n5. Teraz, gdy znam liczbę dziewcząt, mogę obliczyć liczbę chłopców:\n   \\[\n   d + 8 = 12 + 8 = 20\n   \\]\n\nZatem w grupie jest 20 chłopców.\n\n<ODPOWIEDŹ>20</ODPOWIEDŹ>",
+            "correct_answer": "20",
+            "score": 0.0028818443804035088,
+            "error": false,
+            "elapsed": 6.241
+          },
+          {
+            "prompt_id": "llmzszl-identity-007",
+            "raw_answer": "Aby rozwiązać to zadanie, muszę przeanalizować liczbę wierzchołków w ostrosłupie i graniastosłupie, mając na uwadze, że mają one takie same podstawy.\n\n1. **Oznaczenie podstawy**: Załóżmy, że podstawa obu brył jest wielokątem o \\( n \\) wierzchołkach.\n\n2. **Liczba wierzchołków w ostrosłupie**:\n   - Ostrosłup ma \\( n \\) wierzchołków podstawy.\n   - Dodatkowo, ostrosłup ma jeden wierzchołek szczytowy (apex).\n   - Zatem, ostrosłup ma \\( n + 1 \\) wierzchołków.\n\n3. **Liczba wierzchołków w graniastosłupie**:\n   - Graniastosłup również ma \\( n \\) wierzchołków w podstawie dolnej.\n   - Graniastosłup ma taką samą podstawę na górze, więc ma kolejne \\( n \\) wierzchołków w podstawie górnej.\n   - Zatem, graniastosłup ma \\( 2n \\) wierzchołków.\n\n4. **Łączna liczba wierzchołków**:\n   - Łączna liczba wierzchołków obu brył wynosi 25.\n   - Możemy zapisać równanie: \\( (n + 1) + 2n = 25 \\).\n\n5. **Rozwiązanie równania**:\n   \\[\n   n + 1 + 2n = 25\n   \\]\n   \\[\n   3n + 1 = 25\n   \\]\n   \\[\n   3n = 24\n   \\]\n   \\[\n   n = 8\n   \\]\n\n6. **Liczba wierzchołków ostrosłupa**:\n   - Ostrosłup ma \\( n + 1 = 8 + 1 = 9 \\) wierzchołków.\n\n**Odpowiedź**: Ostrosłup ma 9 wierzchołków.\n\n<ODPOWIEDŹ>9</ODPOWIEDŹ>",
+            "correct_answer": "9",
+            "score": 0.000849617672047609,
+            "error": false,
+            "elapsed": 9.523
+          },
+          {
+            "prompt_id": "llmzszl-identity-008",
+            "raw_answer": "Aby obliczyć prawdopodobieństwo wylosowania kuli białej, muszę rozważyć dwa przypadki: gdy wypadnie jedno oczko (losowanie z pierwszej urny) i gdy wypadnie inna liczba oczek (losowanie z drugiej urny).\n\nKrok 1: Obliczenie prawdopodobieństwa wylosowania kuli białej z pierwszej urny.\n- W pierwszej urnie jest 3 kule białe i 7 kul czarnych, więc razem 10 kul.\n- Prawdopodobieństwo wylosowania kuli białej z pierwszej urny wynosi: \\( \\frac{3}{10} \\).\n\nKrok 2: Obliczenie prawdopodobieństwa wylosowania kuli białej z drugiej urny.\n- W drugiej urnie jest 1 kula biała i 9 kul czarnych, więc razem 10 kul.\n- Prawdopodobieństwo wylosowania kuli białej z drugiej urny wynosi: \\( \\frac{1}{10} \\).\n\nKrok 3: Obliczenie prawdopodobieństwa losowania z pierwszej urny i z drugiej urny.\n- Kostka jest symetryczna, więc prawdopodobieństwo wyrzucenia jednego oczka wynosi \\( \\frac{1}{6} \\).\n- Prawdopodobieństwo wyrzucenia innej liczby oczek (2, 3, 4, 5, 6) wynosi \\( 1 - \\frac{1}{6} = \\frac{5}{6} \\).\n\nKrok 4: Obliczenie całkowitego prawdopodobieństwa wylosowania kuli białej.\n- Prawdopodobieństwo wylosowania kuli białej to suma prawdopodobieństw obu przypadków:\n  \\[\n  P(\\text{biała}) = P(\\text{jedno oczko}) \\cdot P(\\text{biała z pierwszej urny}) + P(\\text{inne oczka}) \\cdot P(\\text{biała z drugiej urny})\n  \\]\n  \\[\n  P(\\text{biała}) = \\frac{1}{6} \\cdot \\frac{3}{10} + \\frac{5}{6} \\cdot \\frac{1}{10}\n  \\]\n\nKrok 5: Wykonanie obliczeń.\n  \\[\n  P(\\text{biała}) = \\frac{1}{6} \\cdot \\frac{3}{10} + \\frac{5}{6} \\cdot \\frac{1}{10} = \\frac{3}{60} + \\frac{5}{60} = \\frac{8}{60} = \\frac{2}{15}\n  \\]\n\nOstateczna odpowiedź:\n<ODPOWIEDŹ>\n\\boxed{\\dfrac{2}{15}}\n</ODPOWIEDŹ>",
+            "correct_answer": "2/15",
+            "score": 0.0018237082066869803,
+            "error": false,
+            "elapsed": 13.461
+          },
+          {
+            "prompt_id": "llmzszl-identity-009",
+            "raw_answer": "Aby obliczyć objętość stożka, potrzebuję znać jego wysokość i promień podstawy. Znam kąt rozwarcia stożka (120°) i długość tworzącej (4).\n\nKrok 1: Zrozumienie geometrii stożka.\n- Kąt rozwarcia stożka to kąt między tworzącą a osią stożka.\n- Tworząca to odcinek łączący wierzchołek stożka z dowolnym punktem na obwodzie podstawy.\n- Oś stożka to prosta przechodząca przez wierzchołek i środek podstawy.\n\nKrok 2: Wyznaczenie wysokości stożka.\n- Kąt rozwarcia α = 120°.\n- Tworząca l = 4.\n- Wysokość h stożka można wyrazić za pomocą funkcji trygonometrycznych.\n- W trójkącie prostokątnym utworzonym przez tworzącą, wysokość i promień podstawy, mamy:\n  sin(α/2) = h / l\n  sin(60°) = h / 4 (bo α/2 = 60°)\n- sin(60°) = √3/2\n- √3/2 = h / 4\n- h = 4 * √3/2 = 2√3\n\nKrok 3: Wyznaczenie promienia podstawy.\n- W tym samym trójkącie:\n  cos(α/2) = r / l\n  cos(60°) = r / 4\n- cos(60°) = 1/2\n- 1/2 = r / 4\n- r = 4 * 1/2 = 2\n\nKrok 4: Obliczenie objętości stożka.\n- Wzór na objętość stożka: V = (1/3)πr²h\n- Podstawiamy wartości:\n  V = (1/3)π * 2² * 2√3\n  V = (1/3)π * 4 * 2√3\n  V = (1/3)π * 8√3\n  V = (8√3/3)π\n\nOstateczna odpowiedź:\n<ODPOWIEDŹ>\n\\boxed{\\dfrac{8\\sqrt{3}}{3}\\pi}\n</ODPOWIEDŹ>",
+            "correct_answer": "8π",
+            "score": 0.001713796058269046,
+            "error": false,
+            "elapsed": 10.661
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

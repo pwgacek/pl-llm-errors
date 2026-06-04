@@ -1,0 +1,422 @@
+{
+  "timestamp": "2026-04-19T13:45:35.903647+00:00",
+  "model": "SpeakLeash/bielik-11b-v3.0-instruct:Q6_K",
+  "base_url": "http://localhost:11434/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "elapsed_sec": 617.85,
+  "datasets": {
+    "identity": {
+      "polqa": {
+        "num_sampled": 50,
+        "score_sum": 43.077185,
+        "score_avg": 0.861544,
+        "error_count": 0,
+        "elapsed_sec": 617.85,
+        "questions": [
+          {
+            "prompt_id": "polqa-identity-000",
+            "raw_answer": "Pręcik",
+            "correct_answer": "pręcik",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 22.731
+          },
+          {
+            "prompt_id": "polqa-identity-001",
+            "raw_answer": "liczebnik",
+            "correct_answer": "liczebnik",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 14.066
+          },
+          {
+            "prompt_id": "polqa-identity-002",
+            "raw_answer": "Bazyliki św. Piotra",
+            "correct_answer": "z Bazyliki św. Piotra",
+            "score": 0.9047619047619048,
+            "error": false,
+            "elapsed": 13.321
+          },
+          {
+            "prompt_id": "polqa-identity-003",
+            "raw_answer": "śpiewaczka",
+            "correct_answer": "śpiewaczką",
+            "score": 0.9,
+            "error": false,
+            "elapsed": 12.714
+          },
+          {
+            "prompt_id": "polqa-identity-004",
+            "raw_answer": "tak",
+            "correct_answer": "tak",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 10.356
+          },
+          {
+            "prompt_id": "polqa-identity-005",
+            "raw_answer": "cep",
+            "correct_answer": "CPN",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 10.294
+          },
+          {
+            "prompt_id": "polqa-identity-006",
+            "raw_answer": "UNRRA",
+            "correct_answer": "United Nations Relief and Rehabilitation Administration",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 12.739
+          },
+          {
+            "prompt_id": "polqa-identity-007",
+            "raw_answer": "indyjskiego",
+            "correct_answer": "indyjskiego",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 11.591
+          },
+          {
+            "prompt_id": "polqa-identity-008",
+            "raw_answer": "średniowiecze",
+            "correct_answer": "w średniowieczu",
+            "score": 0.8,
+            "error": false,
+            "elapsed": 12.099
+          },
+          {
+            "prompt_id": "polqa-identity-009",
+            "raw_answer": "pchnięciu kulą",
+            "correct_answer": "w pchnięciu kulą",
+            "score": 0.875,
+            "error": false,
+            "elapsed": 11.832
+          },
+          {
+            "prompt_id": "polqa-identity-010",
+            "raw_answer": "Karta Narodów Zjednoczonych",
+            "correct_answer": "Karta Narodów Zjednoczonych",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 14.764
+          },
+          {
+            "prompt_id": "polqa-identity-011",
+            "raw_answer": "Dönitz",
+            "correct_answer": "admirał Karl Dönitz",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 12.296
+          },
+          {
+            "prompt_id": "polqa-identity-012",
+            "raw_answer": "1982",
+            "correct_answer": "w 1982",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 12.593
+          },
+          {
+            "prompt_id": "polqa-identity-013",
+            "raw_answer": "wzroku",
+            "correct_answer": "wzroku",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 11.815
+          },
+          {
+            "prompt_id": "polqa-identity-014",
+            "raw_answer": "Zygmunt II August",
+            "correct_answer": "Zygmunt II August",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 12.307
+          },
+          {
+            "prompt_id": "polqa-identity-015",
+            "raw_answer": "Cymbały",
+            "correct_answer": "na cymbałach",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 10.176
+          },
+          {
+            "prompt_id": "polqa-identity-016",
+            "raw_answer": "Spice Girls",
+            "correct_answer": "Spice Girls",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 11.996
+          },
+          {
+            "prompt_id": "polqa-identity-017",
+            "raw_answer": "50 Hz",
+            "correct_answer": "50 Hz",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 11.166
+          },
+          {
+            "prompt_id": "polqa-identity-018",
+            "raw_answer": "Stanisław Skarżyński",
+            "correct_answer": "Stanisław Skarżyński",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 12.836
+          },
+          {
+            "prompt_id": "polqa-identity-019",
+            "raw_answer": "Beniamin",
+            "correct_answer": "Józef",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 11.958
+          },
+          {
+            "prompt_id": "polqa-identity-020",
+            "raw_answer": "Księga Powtórzonego Prawa",
+            "correct_answer": "Księga Powtórzonego Prawa",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 14.824
+          },
+          {
+            "prompt_id": "polqa-identity-021",
+            "raw_answer": "Szymon Cyrenejczyk",
+            "correct_answer": "Szymon Cyrenejczyk",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 11.597
+          },
+          {
+            "prompt_id": "polqa-identity-022",
+            "raw_answer": "nie",
+            "correct_answer": "nie",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 10.144
+          },
+          {
+            "prompt_id": "polqa-identity-023",
+            "raw_answer": "Ocean Indyjski",
+            "correct_answer": "na Oceanie Indyjskim",
+            "score": 0.7,
+            "error": false,
+            "elapsed": 20.764
+          },
+          {
+            "prompt_id": "polqa-identity-024",
+            "raw_answer": "Zygmunt III Waza",
+            "correct_answer": "Zygmunt III Waza",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 12.923
+          },
+          {
+            "prompt_id": "polqa-identity-025",
+            "raw_answer": "Grimaldi",
+            "correct_answer": "z Grimaldich",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 11.311
+          },
+          {
+            "prompt_id": "polqa-identity-026",
+            "raw_answer": "XVIII",
+            "correct_answer": "w XVIII",
+            "score": 0.7142857142857143,
+            "error": false,
+            "elapsed": 11.255
+          },
+          {
+            "prompt_id": "polqa-identity-027",
+            "raw_answer": "Austro-Węgry",
+            "correct_answer": "Austro-Węgry",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 12.042
+          },
+          {
+            "prompt_id": "polqa-identity-028",
+            "raw_answer": "Zygmunt III Waza",
+            "correct_answer": "Zygmunt III Waza",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 12.565
+          },
+          {
+            "prompt_id": "polqa-identity-029",
+            "raw_answer": "Ignacy Krasicki",
+            "correct_answer": "Ignacy Krasicki",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 13.304
+          },
+          {
+            "prompt_id": "polqa-identity-030",
+            "raw_answer": "matematycznych",
+            "correct_answer": "liczenia",
+            "score": 0.1428571428571429,
+            "error": false,
+            "elapsed": 10.571
+          },
+          {
+            "prompt_id": "polqa-identity-031",
+            "raw_answer": "Ocean Indyjski",
+            "correct_answer": "na Oceanie Indyjskim",
+            "score": 0.7,
+            "error": false,
+            "elapsed": 11.97
+          },
+          {
+            "prompt_id": "polqa-identity-032",
+            "raw_answer": "Poloniusz",
+            "correct_answer": "Poloniusz",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 11.07
+          },
+          {
+            "prompt_id": "polqa-identity-033",
+            "raw_answer": "uczelniach wyższych",
+            "correct_answer": "na uczelniach wyższych",
+            "score": 0.8636363636363636,
+            "error": false,
+            "elapsed": 12.263
+          },
+          {
+            "prompt_id": "polqa-identity-034",
+            "raw_answer": "myto",
+            "correct_answer": "myto",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 11.364
+          },
+          {
+            "prompt_id": "polqa-identity-035",
+            "raw_answer": "Hannibal",
+            "correct_answer": "Hannibal",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 14.124
+          },
+          {
+            "prompt_id": "polqa-identity-036",
+            "raw_answer": "Jim Henson",
+            "correct_answer": "Jim Henson",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 10.261
+          },
+          {
+            "prompt_id": "polqa-identity-037",
+            "raw_answer": "Nie",
+            "correct_answer": "nie",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 10.34
+          },
+          {
+            "prompt_id": "polqa-identity-038",
+            "raw_answer": "saksofon",
+            "correct_answer": "na saksofonie",
+            "score": 0.6153846153846154,
+            "error": false,
+            "elapsed": 12.196
+          },
+          {
+            "prompt_id": "polqa-identity-039",
+            "raw_answer": "Herakles",
+            "correct_answer": "Herakles",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 11.357
+          },
+          {
+            "prompt_id": "polqa-identity-040",
+            "raw_answer": "baroku",
+            "correct_answer": "baroku",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 10.089
+          },
+          {
+            "prompt_id": "polqa-identity-041",
+            "raw_answer": "kapelan",
+            "correct_answer": "kapelan",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 11.403
+          },
+          {
+            "prompt_id": "polqa-identity-042",
+            "raw_answer": "Władysław",
+            "correct_answer": "Władysław",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 12.531
+          },
+          {
+            "prompt_id": "polqa-identity-043",
+            "raw_answer": "panewka",
+            "correct_answer": "panewka",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 11.61
+          },
+          {
+            "prompt_id": "polqa-identity-044",
+            "raw_answer": "drewna, metalu, kości słoniowej, szylkretu, marmuru",
+            "correct_answer": "z drewna",
+            "score": 0.07843137254901966,
+            "error": false,
+            "elapsed": 13.646
+          },
+          {
+            "prompt_id": "polqa-identity-045",
+            "raw_answer": "Loyola",
+            "correct_answer": "Loyola",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 12.704
+          },
+          {
+            "prompt_id": "polqa-identity-046",
+            "raw_answer": "Republika",
+            "correct_answer": "republiką",
+            "score": 0.8888888888888888,
+            "error": false,
+            "elapsed": 11.306
+          },
+          {
+            "prompt_id": "polqa-identity-047",
+            "raw_answer": "wody",
+            "correct_answer": "wody",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 11.665
+          },
+          {
+            "prompt_id": "polqa-identity-048",
+            "raw_answer": "Hiszpania",
+            "correct_answer": "w Hiszpanii",
+            "score": 0.7272727272727273,
+            "error": false,
+            "elapsed": 10.881
+          },
+          {
+            "prompt_id": "polqa-identity-049",
+            "raw_answer": "Mongolii",
+            "correct_answer": "Mongolii",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 12.11
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

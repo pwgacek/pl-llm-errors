@@ -1,0 +1,147 @@
+{
+  "timestamp": "2026-05-01T16:49:38.214686+02:00",
+  "model": "Qwen/Qwen3.6-35B-A3B",
+  "base_url": "https://llmlab.plgrid.pl/api/v1",
+  "prompts_dir": "results/prompts",
+  "elapsed_sec": 16.12,
+  "datasets": {
+    "identity": {
+      "bbh": {
+        "num_sampled": 2,
+        "error_count": 0,
+        "elapsed_sec": 9.47,
+        "questions": [
+          {
+            "prompt_id": "bbh-identity-000",
+            "raw_answer": "Oto krok po kroku rozwiązanie zadania:\n\n1.  **Analiza pozycji:** Mamy 7 miejsc ułożonych w rzędzie od lewej (1) do prawej (7).\n    Miejsca: 1, 2, 3, 4, 5, 6, 7.\n\n2.  **Wykorzystanie informacji o kardynale:**\n    \"Kardynał jest drugi od lewej.\"\n    -> Pozycja 2: Kardynał.\n\n3.  **Wykorzystanie informacji o sowie:**\n    \"Sowa znajduje się po lewej stronie kardynała.\"\n    Ponieważ kardynał jest na pozycji 2, jedynym miejscem po jego lewej stronie jest pozycja 1.\n    -> Pozycja 1: Sowa.\n\n4.  **Wykorzystanie informacji o kuku:**\n    \"Kruk jest trzeci od prawej.\"\n    W rzędzie 7-elementowym, trzecie miejsce od prawej to: 7 - 3 + 1 = 5.\n    -> Pozycja 5: Kruk.\n\n5.  **Wykorzystanie informacji o sokołowie:**\n    \"Sokół jest najbardziej po prawej.\"\n    -> Pozycja 7: Sokół.\n\n6.  **Analiza relacji między kolibrem a przepiórką i krukiem:**\n    Mamy jeszcze wolne miejsca: 3, 4, 6.\n    Pozostałe ptaki do rozmieszczenia: jastrząb, koliber, przepiórka.\n    \n    Informacje:\n    - \"Przepiórka znajduje się po lewej stronie kolibra.\"\n    - \"Kruk znajduje się po prawej stronie kolibra.\"\n    \n    To oznacza, że koliber musi mieć kruk po swojej prawej stronie.\n    Kruk jest na pozycji 5.\n    Zatem koliber musi być na pozycji 4 (bezpośrednio po lewej stronie kruka).\n    -> Pozycja 4: Koliber.\n\n7.  **Umieszczenie przepiórki:**\n    \"Przepiórka znajduje się po lewej stronie kolibra.\"\n    Koliber jest na pozycji 4. Miejsce po lewej stronie to pozycja 3.\n    -> Pozycja 3: Przepiórka.\n\n8.  **Umieszczenie ostatniego ptaka:**\n    Pozostało jedno wolne miejsce: pozycja 6.\n    Pozostał jeden ptak: jastrząb.\n    -> Pozycja 6: Jastrząb.\n\n9.  **Sprawdzenie spójności:**\n    1. Sowa\n    2. Kardynał\n    3. Przepiórka (po lewej od kolibra - OK)\n    4. Koliber\n    5. Kruk (po prawej od kolibra - OK, trzeci od prawej - OK)\n    6. Jastrząb\n    7. Sokół (najbardziej po prawej - OK)\n    Sowa (1) jest po lewej od Kardynała (2) - OK.\n    Kardynał (2) jest drugi od lewej - OK.\n\n    Kolejność od lewej do prawej: Sowa, Kardynał, Przepiórka, Koliber, Kruk, Jastrząb, Sokół.\n\n<ODPOWIEDŹ>Sowa, Kardynał, Przepiórka, Koliber, Kruk, Jastrząb, Sokół</ODPOWIEDŹ>",
+            "elapsed": 4.867,
+            "error": false,
+            "judgement_context": {
+              "question": "Następne akapity opisują zestaw siedmiu obiektów ułożonych w ustalonej kolejności. Stwierdzenia są logicznie spójne w każdym akapicie. Na gałęzi siedzi siedem ptaków: jastrząb, kruk, koliber, sokół, sowa, przepiórka i kardynał. Przepiórka znajduje się po lewej stronie kolibra. Kruk znajduje się po prawej stronie kolibra. Kardynał jest drugi od lewej. Sowa znajduje się po lewej stronie kardynała. Kruk jest trzeci od prawej. Sokół jest najbardziej po prawej.\nWymień ptaki w kolejności od lewej do prawej.",
+              "correct_answer": [
+                [
+                  "sowa"
+                ],
+                [
+                  "kardynał"
+                ],
+                [
+                  "przepiórka"
+                ],
+                [
+                  "koliber"
+                ],
+                [
+                  "kruk"
+                ],
+                [
+                  "jastrząb"
+                ],
+                [
+                  "sokół"
+                ]
+              ]
+            }
+          },
+          {
+            "prompt_id": "bbh-identity-001",
+            "raw_answer": "Aby rozwiązać to zadanie, przeanalizujmy podane informacje i ustalmy relacje między wiekiem poszczególnych pojazdów. Mamy do czynienia z siedmioma obiektami: limuzyna, kabriolet, kombi, minivan, autobus, ciągnik i ciężarówka.\n\n**Krok 1: Zidentyfikowanie najstarszego pojazdu**\nZ treści zadania wiemy bezpośrednio, że:\n*   Minivan jest najstarszym pojazdem.\nOznacza to, że Minivan zajmuje ostatnie miejsce w kolejności od najnowszego do najstarszego.\n\n**Krok 2: Analiza relacji między pozostałymi pojazdami**\nPrzekształćmy stwierdzenia na porównania \"nowszy od\" (czyli \"młodszy niż\" w sensie daty produkcji, ale w kontekście \"nowy/stary\" pojazdów zazwyczaj \"nowy\" oznacza nowocześniejszy/młodszy, a \"stary\" starszy. W zadaniu pytają o kolejność od *najnowszego* do *najstarszego*. Zatem \"nowszy\" = wyżej na liście, \"starszy\" = niżej na liście).\n\n1.  \"Ciężarówka jest starsza od kombi\" -> Kombi jest nowsze od Ciężarówki.\n    *   Kombi > Ciężarówka\n2.  \"Ciężarówka jest nowsza od limuzyny\" -> Ciężarówka jest nowsza od Limuzyny.\n    *   Ciężarówka > Limuzyna\n3.  \"Autobus jest nowszy od kabrioletu\" -> Autobus jest nowszy od Kabrioletu.\n    *   Autobus > Kabriolet\n4.  \"Autobus jest starszy od ciągnika\" -> Ciągnik jest nowszy od Autobusu.\n    *   Ciągnik > Autobus\n5.  \"Limuzyna jest nowsza od ciągnika\" -> Limuzyna jest nowsza od Ciągnika.\n    *   Limuzyna > Ciągnik\n\n**Krok 3: Łączenie łańcuchów zależności**\n\nZ relacji 1, 2 i 5 możemy zbudować jeden łańcuch:\n*   Z (1): Kombi > Ciężarówka\n*   Z (2): Ciężarówka > Limuzyna\n*   Z (5): Limuzyna > Ciągnik\n\nŁącząc to, otrzymujemy:\n**Kombi > Ciężarówka > Limuzyna > Ciągnik**\n\nZ relacji 3 i 4 mamy drugi fragment:\n*   Z (4): Ciągnik > Autobus\n*   Z (3): Autobus > Kabriolet\n\nŁącząc to z poprzednim łańcuchem (gdzie Ciągnik jest na końcu):\n**Kombi > Ciężarówka > Limuzyna > Ciągnik > Autobus > Kabriolet**\n\n**Krok 4: Uwzględnienie Minivana**\nWiemy, że Minivan jest najstarszy. W naszym łańcuchu \"większy\" oznacza \"nowszy\". Zatem najstarszy pojazd powinien być na końcu listy.\nSprawdźmy, czy Kabriolet jest nowszy od Minivana? Tak, ponieważ Minivan jest *najstarszym* pojazdem ze wszystkich siedmiu. Zatem Minivan musi znaleźć się za Kabrioletem.\n\nPełna kolejność od najnowszego do najstarszego:\n1.  Kombi (najnowszy)\n2.  Ciężarówka\n3.  Limuzyna\n4.  Ciągnik\n5.  Autobus\n6.  Kabriolet\n7.  Minivan (najstarszy)\n\n**Weryfikacja logiczna:**\n*   Minivan najstarszy? Tak, jest na końcu.\n*   Ciężarówka starsza od kombi? Tak (Kombi > Ciężarówka).\n*   Ciężarówka nowsza od limuzyny? Tak (Ciężarówka > Limuzyna).\n*   Autobus nowszy od kabrioletu? Tak (Autobus > Kabriolet).\n*   Autobus starszy od ciągnika? Tak (Ciągnik > Autobus).\n*   Limuzyna nowsza od ciągnika? Tak (Limuzyna > Ciągnik).\n\nWszystkie warunki są spełnione.\n\n<ODPOWIEDŹ>Kombi, Ciężarówka, Limuzyna, Ciągnik, Autobus, Kabriolet, Minivan</ODPOWIEDŹ>",
+            "elapsed": 4.604,
+            "error": false,
+            "judgement_context": {
+              "question": "Następne akapity opisują zestaw siedmiu obiektów ułożonych w ustalonej kolejności. Stwierdzenia są logicznie spójne w każdym akapicie. Na wystawie zabytkowych samochodów znajduje się siedem pojazdów: limuzyna, kabriolet, kombi, minivan, autobus, ciągnik i ciężarówka. Minivan jest najstarszym pojazdem. Ciężarówka jest starsza od kombi. Ciężarówka jest nowsza od limuzyny. Autobus jest nowszy od kabrioletu. Autobus jest starszy od ciągnika. Limuzyna jest nowsza od ciągnika.\nWymień pojazdy w kolejności od najnowszego do najstarszego.",
+              "correct_answer": [
+                [
+                  "kombi"
+                ],
+                [
+                  "ciężarówka"
+                ],
+                [
+                  "limuzyna"
+                ],
+                [
+                  "ciągnik"
+                ],
+                [
+                  "autobus"
+                ],
+                [
+                  "kabriolet"
+                ],
+                [
+                  "minivan"
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 2,
+        "error_count": 0,
+        "elapsed_sec": 6.35,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-identity-000",
+            "raw_answer": "Aby obliczyć pole rombu, możemy skorzystać ze wzoru wynikającego z definicji pola trójkąta lub bezpośrednio z własności rombu jako równoległoboku.\n\n**Krok 1: Wyznaczenie miary kąta ostrego**\nRomb jest równoległobokiem, więc suma miar kątów przyległych wynosi $180^\\circ$.\nDany jest kąt rozwarty $\\alpha = 150^\\circ$.\nMiara kąta ostrego $\\beta$ wynosi:\n$$ \\beta = 180^\\circ - 150^\\circ = 30^\\circ $$\n\n**Krok 2: Wybór odpowiedniego wzoru na pole**\nPole rombu (jak i dowolnego równoległoboku) można obliczyć ze wzoru:\n$$ P = a^2 \\cdot \\sin(\\theta) $$\ngdzie:\n- $a$ to długość boku rombu,\n- $\\theta$ to miara dowolnego kąta wewnętrznego rombu (ostrego lub rozwartego), ponieważ $\\sin(150^\\circ) = \\sin(30^\\circ)$.\n\nW naszym przypadku:\n- $a = 4$\n- $\\theta = 30^\\circ$ (lub $150^\\circ$)\n\n**Krok 3: Obliczenie wartości sinusa**\nWiemy, że:\n$$ \\sin(30^\\circ) = \\frac{1}{2} $$\n(Alternatywnie: $\\sin(150^\\circ) = \\sin(180^\\circ - 30^\\circ) = \\sin(30^\\circ) = \\frac{1}{2}$)\n\n**Krok 4: Podstawienie do wzoru i obliczenie pola**\n$$ P = 4^2 \\cdot \\sin(30^\\circ) $$\n$$ P = 16 \\cdot \\frac{1}{2} $$\n$$ P = 8 $$\n\n**Alternatywna metoda (przez przekątne):**\n1. Przekątne rombu dzielą się na połowy i są prostopadłe. Dzielą również kąty rombu na połowy.\n2. Kąt rozwarty $150^\\circ$ zostaje podzielony na dwa kąty po $75^\\circ$. Kąt ostry $30^\\circ$ zostaje podzielony na dwa kąty po $15^\\circ$. To podejście jest bardziej skomplikowane obliczeniowo.\n3. Lepsze podejście przez przekątne: Rozważmy trójkąt prostokątny utworzony przez połowy przekątnych i bok rombu.\n   Niech przekątne to $d_1$ i $d_2$.\n   $d_1 = 2 \\cdot a \\cdot \\sin(\\beta/2)$ i $d_2 = 2 \\cdot a \\cdot \\cos(\\beta/2)$? Nie, łatwiej użyć wzoru $P = \\frac{1}{2} d_1 d_2$.\n   W trójkącie prostokątnym o przeciwprostokątnej $a=4$ i kącie $15^\\circ$ (połowa kąta ostrego):\n   Przyprostokątna $x = 4 \\cdot \\sin(15^\\circ)$\n   Przyprostokątna $y = 4 \\cdot \\cos(15^\\circ)$\n   $d_1 = 2x = 8\\sin(15^\\circ)$\n   $d_2 = 2y = 8\\cos(15^\\circ)$\n   $P = \\frac{1}{2} \\cdot 8\\sin(15^\\circ) \\cdot 8\\cos(15^\\circ) = 32 \\sin(15^\\circ)\\cos(15^\\circ)$\n   Korzystając ze wzoru $\\sin(2\\alpha) = 2\\sin\\alpha\\cos\\alpha$, mamy $\\sin(15^\\circ)\\cos(15^\\circ) = \\frac{1}{2}\\sin(30^\\circ)$.\n   $P = 32 \\cdot \\frac{1}{2} \\cdot \\frac{1}{2} = 8$.\n   Wynik jest ten sam.\n\nMetoda z sinusem kąta między bokami jest najszybsza i najprostsza.\n\n<ODPOWIEDŹ>8</ODPOWIEDŹ>",
+            "elapsed": 4.599,
+            "error": false,
+            "judgement_context": {
+              "question": "Dany jest romb o boku długości 4 i kącie rozwartym 150°. Ile wynosi pole tego rombu?",
+              "correct_answer": [
+                "8"
+              ]
+            }
+          },
+          {
+            "prompt_id": "llmzszl-identity-001",
+            "raw_answer": "Aby obliczyć kwotę, jaką zapłaci klient, wykonamy następujące kroki:\n\n1.  **Określenie wysokości zniżki:**\n    Zgodnie z zasadami promocji, klient otrzymuje zniżkę w wysokości równej jego wieku w procentach. Klient ma 35 lat, więc zniżka wynosi 35%.\n\n2.  **Obliczenie kwoty zniżki:**\n    Cena okularów bez promocji wynosi 240 zł. Obliczamy 35% z tej kwoty:\n    $$ 35\\% \\text{ z } 240 \\text{ zł} = 0,35 \\times 240 \\text{ zł} $$\n    \n    Wykonujemy mnożenie:\n    $$ 0,35 \\times 240 = 84 \\text{ zł} $$\n    Kwota zniżki wynosi 84 zł.\n\n3.  **Obliczenie ceny do zapłaty:**\n    Od ceny początkowej odejmujemy kwotę zniżki:\n    $$ 240 \\text{ zł} - 84 \\text{ zł} = 156 \\text{ zł} $$\n\nAlternatywnie można to obliczyć, mnożąc cenę początkową przez procent, który klient płaci (100% - 35% = 65%):\n$$ 0,65 \\times 240 \\text{ zł} = 156 \\text{ zł} $$\n\n<ODPOWIEDŹ>156 zł</ODPOWIEDŹ>",
+            "elapsed": 1.748,
+            "error": false,
+            "judgement_context": {
+              "question": "Promocja w zakładzie optycznym jest związana z wiekiem klienta i polega na tym, że klient otrzymuje tyle procent zniżki, ile ma lat. Cena okularów bez promocji wynosi 240 zł. Ile zapłaci za te okulary klient, który ma 35 lat?",
+              "correct_answer": [
+                "156zł"
+              ]
+            }
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 2,
+        "error_count": 0,
+        "elapsed_sec": 0.3,
+        "questions": [
+          {
+            "prompt_id": "polqa-identity-000",
+            "raw_answer": "Pręcik",
+            "elapsed": 0.142,
+            "error": false,
+            "judgement_context": {
+              "question": "Jak nazywa się element kwiatu produkujący pyłek, składający się u roślin okrytonasiennych z główki i nitki?",
+              "context": "Pręcik (łac. \"stamen\") – męski organ płciowy w kwiecie wytwarzający pyłek, czyli odpowiednik męskiego gametofitu powstający z mikrospory. Pręciki są występującymi u okrytonasiennych mikrosporofilami. Składają się z nitki i główki tworzonej zazwyczaj przez dwa pylniki zawierające po dwa woreczki pyłkowe, czyli mikrosporangia. Pyłek po dojrzeniu wysypywany jest z pękających pylników i przenoszony przez wiatr, wodę lub zwierzęta, by po osadzeniu na znamionach słupków wrosnąć i dokonać zapłodnienia.",
+              "correct_answer": [
+                "pręcik"
+              ]
+            }
+          },
+          {
+            "prompt_id": "polqa-identity-001",
+            "raw_answer": "liczebnik ułamkowy",
+            "elapsed": 0.159,
+            "error": false,
+            "judgement_context": {
+              "question": "Co to za część mowy: półtora?",
+              "context": "liczebniki - oznaczające (określające) liczbę, część, kolejność rzeczy, przedmiotów, osób:\nliczebniki główne określają liczbę przedmiotów, osób, zdarzeń, np. jeden, dwa, trzy, sześć, siedem, osiem, dziesięć, trzydzieści.\nliczebniki zbiorowe określają zbiorowość ludzi, zwierząt, przedmiotów, nazw, np. dwoje, troje, pięcioro, siedmioro, ośmioro, dziewięcioro, trzydzieścioro.\nliczebniki porządkowe określają miejsce w szeregu, np. drugi, trzeci, szósty, dwudziesty, czterdziesty, setny, tysięczny.\nułamkowe, określają części ułamkowe czasu, przedmiotów, odległości, np. pół, półtora, ćwierć.",
+              "correct_answer": [
+                "liczebnik"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

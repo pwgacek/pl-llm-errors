@@ -1,0 +1,400 @@
+{
+  "timestamp": "2026-03-15T14:26:32.175623+00:00",
+  "model": "llama-3.1-8b-instant",
+  "base_url": "https://api.groq.com/openai/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "datasets": {
+    "diacritic": {
+      "cds": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 0,
+        "error": 2,
+        "accuracy": 0.0,
+        "elapsed_sec": 0.29,
+        "questions": [
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>Mezczyzna z dzieckiem w nosidelku i mezczyzna z dzieckiem na grzbiecie stoja w poblizu stromych skal .</ZDANIE_A>\n<ZDANIE_B>Mezczyzna z dzieckiem w nosidelku i mezczyzna z turbanem na glowie stoja w poblizu stromych skal .</ZDANIE_B>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          },
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>Chlopiec w spodenkach kapielowych i dmuchanych rekawkach zjezdza do basenu ze zjezdzalni .</ZDANIE_A>\n<ZDANIE_B>Czlowiek z duzym plecakiem wchodzi po gorskim zboczu .</ZDANIE_B>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "ldek": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 0,
+        "error": 2,
+        "accuracy": 0.0,
+        "elapsed_sec": 0.16,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Do lekarza zglasza sie 70-letni pacjent uzytkujacy od 12 miesiecy protezy calkowite. Jako powod zgloszenia podaje pieczenie w jamie ustnej i dyskomfort w uzytkowaniu protez, ktory pojawil sie w okresie ostatniego miesiaca. W wywiadzie podaje astme atopowa leczona farmakologicznie. Badaniem klinicznym stwierdzasz zly stan higieny i zaczerwienienie blony sluzowej podloza sluzowkowo-kostnego. Najbardziej prawdopodobna przyczyna dolegliwosci moze byc:</PYTANIE>\n<ODPOWIEDZI>A. reakcja alergiczna na metakrylan metylu.\nB. reakcja alergiczna na barwniki zawarte w tworzywie akrylowym.\nC. toksyczne dzialanie monomeru resztkowego.\nD. zakazenie grzybicze.\nE. zadna z powyzszych odpowiedzi nie jest poprawna.</ODPOWIEDZI>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Wskaz nieprawdziwe stwierdzenie dotyczace tymczasowego wypelnienia ubytku w trakcie leczenia kanalowego:</PYTANIE>\n<ODPOWIEDZI>A. dziala przeciwbakteryjnie.\nB. powinno miec grubosc 4 mm.\nC. chroni przed przedostawaniem sie bakterii i plynow z jamy ustnej.\nD. zapobiega wyciekaniu lekow z kanalu do jamy ustnej.\nE. posiada odpowiednia wytrzymalosc mechaniczna.</ODPOWIEDZI>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 0,
+        "error": 2,
+        "accuracy": 0.0,
+        "elapsed_sec": 0.16,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Miara kata wpisanego w okrag jest o 20° mniejsza od miary kata srodkowego opartego na tym samym luku. Wynika stad, ze miara kata wpisanego jest rowna</PYTANIE>\n<ODPOWIEDZI>A. 5°\nB. 10°\nC. 20°\nD. 30°</ODPOWIEDZI>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Po przejsciu monochromatycznej fali swietlnej z powietrza (np = 1) do szkla o wspolczynniku zalamania ns</PYTANIE>\n<ODPOWIEDZI>A. czestotliwosc fali zmaleje ns razy.\nB. predkosc fali sie nie zmieni.\nC. dlugosc fali zmaleje ns razy.\nD. okres fali zmaleje ns razy.</ODPOWIEDZI>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 0,
+        "error": 2,
+        "accuracy": 0.0,
+        "elapsed_sec": 0.16,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Wojna persko-turecka toczona byla w latach 1532–1555 miedzy Imperium Osmanskim rzadzonym przez Sulejmana Wspanialego a Persja pod rzadami Tahmaspa I.</KONTEKST>\n<PYTANIE>Jak nazywal sie sultan turecki z XVI wieku o przydomku Wspanialy?</PYTANIE>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>NBP jest bankiem centralnym Rzeczypospolitej Polskiej.</KONTEKST>\n<PYTANIE>Jak brzmi nazwa Banku Centralnego w Polsce?</PYTANIE>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          }
+        ]
+      }
+    },
+    "identity": {
+      "cds": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 0,
+        "error": 2,
+        "accuracy": 0.0,
+        "elapsed_sec": 0.16,
+        "questions": [
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>Mężczyzna z dzieckiem w nosidełku i mężczyzna z dzieckiem na grzbiecie stoją w pobliżu stromych skał .</ZDANIE_A>\n<ZDANIE_B>Mężczyzna z dzieckiem w nosidełku i mężczyzna z turbanem na głowie stoją w pobliżu stromych skał .</ZDANIE_B>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          },
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>Chłopiec w spodenkach kąpielowych i dmuchanych rękawkach zjeżdża do basenu ze zjeżdżalni .</ZDANIE_A>\n<ZDANIE_B>Człowiek z dużym plecakiem wchodzi po górskim zboczu .</ZDANIE_B>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "ldek": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 0,
+        "error": 2,
+        "accuracy": 0.0,
+        "elapsed_sec": 0.15,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Do lekarza zgłasza się 70-letni pacjent użytkujący od 12 miesięcy protezy całkowite. Jako powód zgłoszenia podaje pieczenie w jamie ustnej i dyskomfort w użytkowaniu protez, który pojawił się w okresie ostatniego miesiąca. W wywiadzie podaje astmę atopową leczoną farmakologicznie. Badaniem klinicznym stwierdzasz zły stan higieny i zaczerwienienie błony śluzowej podłoża śluzówkowo-kostnego. Najbardziej prawdopodobną przyczyną dolegliwości może być:</PYTANIE>\n<ODPOWIEDZI>A. reakcja alergiczna na metakrylan metylu.\nB. reakcja alergiczna na barwniki zawarte w tworzywie akrylowym.\nC. toksyczne działanie monomeru resztkowego.\nD. zakażenie grzybicze.\nE. żadna z powyższych odpowiedzi nie jest poprawna.</ODPOWIEDZI>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Wskaż nieprawdziwe stwierdzenie dotyczące tymczasowego wypełnienia ubytku w trakcie leczenia kanałowego:</PYTANIE>\n<ODPOWIEDZI>A. działa przeciwbakteryjnie.\nB. powinno mieć grubość 4 mm.\nC. chroni przed przedostawaniem się bakterii i płynów z jamy ustnej.\nD. zapobiega wyciekaniu leków z kanału do jamy ustnej.\nE. posiada odpowiednią wytrzymałość mechaniczną.</ODPOWIEDZI>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 0,
+        "error": 2,
+        "accuracy": 0.0,
+        "elapsed_sec": 0.17,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Miara kąta wpisanego w okrąg jest o 20° mniejsza od miary kąta środkowego opartego na tym samym łuku. Wynika stąd, że miara kąta wpisanego jest równa</PYTANIE>\n<ODPOWIEDZI>A. 5°\nB. 10°\nC. 20°\nD. 30°</ODPOWIEDZI>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Po przejściu monochromatycznej fali świetlnej z powietrza (np = 1) do szkła o współczynniku załamania ns</PYTANIE>\n<ODPOWIEDZI>A. częstotliwość fali zmaleje ns razy.\nB. prędkość fali się nie zmieni.\nC. długość fali zmaleje ns razy.\nD. okres fali zmaleje ns razy.</ODPOWIEDZI>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 0,
+        "error": 2,
+        "accuracy": 0.0,
+        "elapsed_sec": 0.16,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Wojna persko-turecka toczona była w latach 1532–1555 między Imperium Osmańskim rządzonym przez Sulejmana Wspaniałego a Persją pod rządami Tahmaspa I.</KONTEKST>\n<PYTANIE>Jak nazywał się sułtan turecki z XVI wieku o przydomku Wspaniały?</PYTANIE>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>NBP jest bankiem centralnym Rzeczypospolitej Polskiej.</KONTEKST>\n<PYTANIE>Jak brzmi nazwa Banku Centralnego w Polsce?</PYTANIE>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          }
+        ]
+      }
+    },
+    "punctuation_all": {
+      "cds": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 0,
+        "error": 2,
+        "accuracy": 0.0,
+        "elapsed_sec": 0.16,
+        "questions": [
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>mężczyzna z dzieckiem w nosidełku i mężczyzna z dzieckiem na grzbiecie stoją w pobliżu stromych skał </ZDANIE_A>\n<ZDANIE_B>mężczyzna z dzieckiem w nosidełku i mężczyzna z turbanem na głowie stoją w pobliżu stromych skał </ZDANIE_B>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          },
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>chłopiec w spodenkach kąpielowych i dmuchanych rękawkach zjeżdża do basenu ze zjeżdżalni </ZDANIE_A>\n<ZDANIE_B>człowiek z dużym plecakiem wchodzi po górskim zboczu </ZDANIE_B>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "ldek": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 0,
+        "error": 2,
+        "accuracy": 0.0,
+        "elapsed_sec": 0.15,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>do lekarza zgłasza się 70letni pacjent użytkujący od 12 miesięcy protezy całkowite Jako powód zgłoszenia podaje pieczenie w jamie ustnej i dyskomfort w użytkowaniu protez który pojawił się w okresie ostatniego miesiąca W wywiadzie podaje astmę atopową leczoną farmakologicznie Badaniem klinicznym stwierdzasz zły stan higieny i zaczerwienienie błony śluzowej podłoża śluzówkowokostnego Najbardziej prawdopodobną przyczyną dolegliwości może być</PYTANIE>\n<ODPOWIEDZI>A. reakcja alergiczna na metakrylan metylu\nB. reakcja alergiczna na barwniki zawarte w tworzywie akrylowym\nC. toksyczne działanie monomeru resztkowego\nD. zakażenie grzybicze\nE. żadna z powyższych odpowiedzi nie jest poprawna</ODPOWIEDZI>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>wskaż nieprawdziwe stwierdzenie dotyczące tymczasowego wypełnienia ubytku w trakcie leczenia kanałowego</PYTANIE>\n<ODPOWIEDZI>A. działa przeciwbakteryjnie\nB. powinno mieć grubość 4 mm\nC. chroni przed przedostawaniem się bakterii i płynów z jamy ustnej\nD. zapobiega wyciekaniu leków z kanału do jamy ustnej\nE. posiada odpowiednią wytrzymałość mechaniczną</ODPOWIEDZI>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 0,
+        "error": 2,
+        "accuracy": 0.0,
+        "elapsed_sec": 0.17,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>miara kąta wpisanego w okrąg jest o 20 mniejsza od miary kąta środkowego opartego na tym samym łuku Wynika stąd że miara kąta wpisanego jest równa</PYTANIE>\n<ODPOWIEDZI>A. 5\nB. 10\nC. 20\nD. 30</ODPOWIEDZI>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>po przejściu monochromatycznej fali świetlnej z powietrza np  1 do szkła o współczynniku załamania ns</PYTANIE>\n<ODPOWIEDZI>A. częstotliwość fali zmaleje ns razy\nB. prędkość fali się nie zmieni\nC. długość fali zmaleje ns razy\nD. okres fali zmaleje ns razy</ODPOWIEDZI>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 0,
+        "error": 2,
+        "accuracy": 0.0,
+        "elapsed_sec": 0.16,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>wojna perskoturecka toczona była w latach 15321555 między Imperium Osmańskim rządzonym przez Sulejmana Wspaniałego a Persją pod rządami Tahmaspa I</KONTEKST>\n<PYTANIE>jak nazywał się sułtan turecki z XVI wieku o przydomku Wspaniały</PYTANIE>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>nBP jest bankiem centralnym Rzeczypospolitej Polskiej</KONTEKST>\n<PYTANIE>jak brzmi nazwa Banku Centralnego w Polsce</PYTANIE>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          }
+        ]
+      }
+    },
+    "punctuation_inner": {
+      "cds": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 0,
+        "error": 2,
+        "accuracy": 0.0,
+        "elapsed_sec": 0.15,
+        "questions": [
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>Mężczyzna z dzieckiem w nosidełku i mężczyzna z dzieckiem na grzbiecie stoją w pobliżu stromych skał .</ZDANIE_A>\n<ZDANIE_B>Mężczyzna z dzieckiem w nosidełku i mężczyzna z turbanem na głowie stoją w pobliżu stromych skał .</ZDANIE_B>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          },
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>Chłopiec w spodenkach kąpielowych i dmuchanych rękawkach zjeżdża do basenu ze zjeżdżalni .</ZDANIE_A>\n<ZDANIE_B>Człowiek z dużym plecakiem wchodzi po górskim zboczu .</ZDANIE_B>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "ldek": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 0,
+        "error": 2,
+        "accuracy": 0.0,
+        "elapsed_sec": 0.16,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Do lekarza zgłasza się 70letni pacjent użytkujący od 12 miesięcy protezy całkowite. Jako powód zgłoszenia podaje pieczenie w jamie ustnej i dyskomfort w użytkowaniu protez który pojawił się w okresie ostatniego miesiąca. W wywiadzie podaje astmę atopową leczoną farmakologicznie. Badaniem klinicznym stwierdzasz zły stan higieny i zaczerwienienie błony śluzowej podłoża śluzówkowokostnego. Najbardziej prawdopodobną przyczyną dolegliwości może być</PYTANIE>\n<ODPOWIEDZI>A. reakcja alergiczna na metakrylan metylu.\nB. reakcja alergiczna na barwniki zawarte w tworzywie akrylowym.\nC. toksyczne działanie monomeru resztkowego.\nD. zakażenie grzybicze.\nE. żadna z powyższych odpowiedzi nie jest poprawna.</ODPOWIEDZI>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Wskaż nieprawdziwe stwierdzenie dotyczące tymczasowego wypełnienia ubytku w trakcie leczenia kanałowego</PYTANIE>\n<ODPOWIEDZI>A. działa przeciwbakteryjnie.\nB. powinno mieć grubość 4 mm.\nC. chroni przed przedostawaniem się bakterii i płynów z jamy ustnej.\nD. zapobiega wyciekaniu leków z kanału do jamy ustnej.\nE. posiada odpowiednią wytrzymałość mechaniczną.</ODPOWIEDZI>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 0,
+        "error": 2,
+        "accuracy": 0.0,
+        "elapsed_sec": 0.16,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Miara kąta wpisanego w okrąg jest o 20° mniejsza od miary kąta środkowego opartego na tym samym łuku. Wynika stąd że miara kąta wpisanego jest równa</PYTANIE>\n<ODPOWIEDZI>A. 5°\nB. 10°\nC. 20°\nD. 30°</ODPOWIEDZI>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Po przejściu monochromatycznej fali świetlnej z powietrza np = 1 do szkła o współczynniku załamania ns</PYTANIE>\n<ODPOWIEDZI>A. częstotliwość fali zmaleje ns razy.\nB. prędkość fali się nie zmieni.\nC. długość fali zmaleje ns razy.\nD. okres fali zmaleje ns razy.</ODPOWIEDZI>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 0,
+        "error": 2,
+        "accuracy": 0.0,
+        "elapsed_sec": 0.16,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Wojna perskoturecka toczona była w latach 15321555 między Imperium Osmańskim rządzonym przez Sulejmana Wspaniałego a Persją pod rządami Tahmaspa I.</KONTEKST>\n<PYTANIE>Jak nazywał się sułtan turecki z XVI wieku o przydomku Wspaniały?</PYTANIE>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>NBP jest bankiem centralnym Rzeczypospolitej Polskiej.</KONTEKST>\n<PYTANIE>Jak brzmi nazwa Banku Centralnego w Polsce?</PYTANIE>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          }
+        ]
+      }
+    },
+    "spelling_10%": {
+      "cds": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 0,
+        "error": 2,
+        "accuracy": 0.0,
+        "elapsed_sec": 0.16,
+        "questions": [
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>Mężczyzna z dzieckiem w nosidełku i męrzczyzna z dzieckiem na grzbiecie stojo w pobliżu stromych skał .</ZDANIE_A>\n<ZDANIE_B>Mężczyzna z dzieckiem w nosidełku i męrzczyzna z turbanem na głowie stoją w poblirzu stromych skał .</ZDANIE_B>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          },
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>Chłopiec w spodenkach kąpielowyh i dmuchanych rękawkach zjeżdża do basenu ze zjeżdżalni .</ZDANIE_A>\n<ZDANIE_B>Człowiek z dużym plecakiem wchodzi po gurskim zboczu .</ZDANIE_B>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "ldek": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 0,
+        "error": 2,
+        "accuracy": 0.0,
+        "elapsed_sec": 0.16,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Do lekaża zgłasza się 70-letni pacjent użytkujący od 12 miesięcy protezy całkowite. Jako powód zgłoszenia podaje pieczenie w jamie ustnej i dyskomfort w użytkowaniu protes, który pojawił się w okresie ostatniego miesionca. W wywiadźe podaje astmę atopowo leczoną farmakologicznie. Badaniem klinicznym stwierdzasz zły stan chigieny i zaczerwienienie błony śluzowej podłoża śluzówkowo-kostnego. Najbardziej prawdopodobną przyczyną dolegliwości może być:</PYTANIE>\n<ODPOWIEDZI>A. reakcja alergiczna na metakrylan metylu.\nB. reakcja alergiczna na barwniki zawarte w twożywie akrylowym.\nC. toksyczne działanie monomeru resztkowego.\nD. zakażenie grzybicze.\nE. żadna z powyrzszych odpowiedzi nie jest poprawna.</ODPOWIEDZI>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Wskaż nieprawdziwe stwierdzenie dotyczonce tymczasowego wypełnienia ubytku w trakcie leczenia kanałowego:</PYTANIE>\n<ODPOWIEDZI>A. działa przeciwbakteryjnie.\nB. powinno mieć gruboźć 4 mm.\nC. chroni przed przedostawańem się bakterii i płynów z jamy ustnej.\nD. zapobiega wyćekaniu leków z kanału do jamy ustnej.\nE. posiada odpowiednią wytrzymałość mechaniczną.</ODPOWIEDZI>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 0,
+        "error": 2,
+        "accuracy": 0.0,
+        "elapsed_sec": 0.17,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Miara konta wpisanego w okrąg jest o 20° mniejsza od miary kąta środkowego opartego na tym samym łuku. Wynika z tąd, że miara kąta wpisanego jesd równa</PYTANIE>\n<ODPOWIEDZI>A. 5°\nB. 10°\nC. 20°\nD. 30°</ODPOWIEDZI>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Po przejściu monochromatycznej fali świetlnej z powietża (np = 1) do szkła o współczynniku załamańa ns</PYTANIE>\n<ODPOWIEDZI>A. czenstotliwość fali zmaleje ns razy.\nB. prędkość fali się ńe zmieni.\nC. długoźć fali zmaleje ns razy.\nD. okres fali zmaleje ns razy.</ODPOWIEDZI>\n",
+            "result": "ERROR",
+            "elapsed": 0.0
+          }
+        ]
+      }
+    }
+  },
+  "status": "partial"
+}

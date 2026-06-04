@@ -1,6 +1,6 @@
 venv_llm/
-/datasets/
-/results/
+# /datasets/
+# /results/
 /prompts/
 /answers/
 /judgements/

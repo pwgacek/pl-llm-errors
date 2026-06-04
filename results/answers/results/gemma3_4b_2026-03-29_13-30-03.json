@@ -1,0 +1,5699 @@
+{
+  "timestamp": "2026-03-29T13:30:03.950023+00:00",
+  "model": "gemma3:4b",
+  "base_url": "http://localhost:11434/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "elapsed_sec": 1622.88,
+  "datasets": {
+    "diacritic": {
+      "polqa": {
+        "num_sampled": 100,
+        "score_sum": 67.132998,
+        "score_avg": 0.67133,
+        "error_count": 0,
+        "elapsed_sec": 205.21,
+        "questions": [
+          {
+            "prompt_id": "polqa-diacritic-000",
+            "raw_answer": "{\"odpowiedź\": \"Sulejman Wspanialy\"}",
+            "score": 0.4444444444444444,
+            "error": false,
+            "elapsed": 2.404
+          },
+          {
+            "prompt_id": "polqa-diacritic-001",
+            "raw_answer": "{\"odpowiedź\": \"NBP\"}",
+            "score": 0.15000000000000002,
+            "error": false,
+            "elapsed": 1.125
+          },
+          {
+            "prompt_id": "polqa-diacritic-002",
+            "raw_answer": "{\"odpowiedź\": \"Wierszem\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.531
+          },
+          {
+            "prompt_id": "polqa-diacritic-003",
+            "raw_answer": "{\"odpowiedź\": \"Tak, Aleje Ujazdowskie należą do Traktu Krolewskiego.\"}",
+            "score": 0.05660377358490565,
+            "error": false,
+            "elapsed": 3.233
+          },
+          {
+            "prompt_id": "polqa-diacritic-004",
+            "raw_answer": "{\"odpowiedź\": \"w wosku\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.81
+          },
+          {
+            "prompt_id": "polqa-diacritic-005",
+            "raw_answer": "{\"odpowiedź\": \"Boga wojny Marsa\"}",
+            "score": 0.3125,
+            "error": false,
+            "elapsed": 2.301
+          },
+          {
+            "prompt_id": "polqa-diacritic-006",
+            "raw_answer": "{\"odpowiedź\": \"50 Hz\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.682
+          },
+          {
+            "prompt_id": "polqa-diacritic-007",
+            "raw_answer": "{\"odpowiedź\": \"Argentynski\"}",
+            "score": 0.7692307692307692,
+            "error": false,
+            "elapsed": 1.411
+          },
+          {
+            "prompt_id": "polqa-diacritic-008",
+            "raw_answer": "{\"odpowiedź\": \"Alfred Szklarski\"}",
+            "score": 0.5625,
+            "error": false,
+            "elapsed": 1.774
+          },
+          {
+            "prompt_id": "polqa-diacritic-009",
+            "raw_answer": "{\"odpowiedź\": \"Niemcy\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.642
+          },
+          {
+            "prompt_id": "polqa-diacritic-010",
+            "raw_answer": "{\"odpowiedź\": \"Vespa simillima\"}",
+            "score": 0.06666666666666665,
+            "error": false,
+            "elapsed": 1.565
+          },
+          {
+            "prompt_id": "polqa-diacritic-011",
+            "raw_answer": "{\"odpowiedź\": \"Bank\"}",
+            "score": 0.1333333333333333,
+            "error": false,
+            "elapsed": 1.759
+          },
+          {
+            "prompt_id": "polqa-diacritic-012",
+            "raw_answer": "{\"odpowiedź\": \"Był Prezydentem ZSRR.\"}",
+            "score": 0.19047619047619047,
+            "error": false,
+            "elapsed": 1.781
+          },
+          {
+            "prompt_id": "polqa-diacritic-013",
+            "raw_answer": "{\"odpowiedź\": \"Wielbladowatych\"}",
+            "score": 0.8666666666666667,
+            "error": false,
+            "elapsed": 2.558
+          },
+          {
+            "prompt_id": "polqa-diacritic-014",
+            "raw_answer": "{\"odpowiedź\": \"USS Nautilus\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 2.076
+          },
+          {
+            "prompt_id": "polqa-diacritic-015",
+            "raw_answer": "{\"odpowiedź\": \"Towarzystwo Jezusowe\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.796
+          },
+          {
+            "prompt_id": "polqa-diacritic-016",
+            "raw_answer": "{\"odpowiedź\": \"Myto\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.11
+          },
+          {
+            "prompt_id": "polqa-diacritic-017",
+            "raw_answer": "{\"odpowiedź\": \"Ignacy Loyola\"}",
+            "score": 0.46153846153846156,
+            "error": false,
+            "elapsed": 1.8
+          },
+          {
+            "prompt_id": "polqa-diacritic-018",
+            "raw_answer": "{\"odpowiedź\": \"Nil\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.186
+          },
+          {
+            "prompt_id": "polqa-diacritic-019",
+            "raw_answer": "{\"odpowiedź\": \"Discovery\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.554
+          },
+          {
+            "prompt_id": "polqa-diacritic-020",
+            "raw_answer": "{\"odpowiedź\": \"Przednie kolo było większe.\"}",
+            "score": 0.2962962962962963,
+            "error": false,
+            "elapsed": 1.715
+          },
+          {
+            "prompt_id": "polqa-diacritic-021",
+            "raw_answer": "{\"odpowiedź\": \"Andrzej Wajda\"}",
+            "score": 0.09999999999999998,
+            "error": false,
+            "elapsed": 1.678
+          },
+          {
+            "prompt_id": "polqa-diacritic-022",
+            "raw_answer": "{\"odpowiedź\": \"Sowy\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.606
+          },
+          {
+            "prompt_id": "polqa-diacritic-023",
+            "raw_answer": "{\"odpowiedź\": \"Christiaan Huygens\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.452
+          },
+          {
+            "prompt_id": "polqa-diacritic-024",
+            "raw_answer": "{\"odpowiedź\": \"Hannibal\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.054
+          },
+          {
+            "prompt_id": "polqa-diacritic-025",
+            "raw_answer": "{\"odpowiedź\": \"Admiral\"}",
+            "score": 0.8571428571428572,
+            "error": false,
+            "elapsed": 1.257
+          },
+          {
+            "prompt_id": "polqa-diacritic-026",
+            "raw_answer": "{\"odpowiedź\": \"Wyspie Polnocna i Wyspe Poludniowa\"}",
+            "score": 0.20588235294117652,
+            "error": false,
+            "elapsed": 2.611
+          },
+          {
+            "prompt_id": "polqa-diacritic-027",
+            "raw_answer": "{\"odpowiedź\": \"Makler i broker\"}",
+            "score": 0.4,
+            "error": false,
+            "elapsed": 1.811
+          },
+          {
+            "prompt_id": "polqa-diacritic-028",
+            "raw_answer": "{\"odpowiedź\": \"Cztery państwa\"}",
+            "score": 0.4285714285714286,
+            "error": false,
+            "elapsed": 2.399
+          },
+          {
+            "prompt_id": "polqa-diacritic-029",
+            "raw_answer": "{\"odpowiedź\": \"1918 roku\"}",
+            "score": 0.2222222222222222,
+            "error": false,
+            "elapsed": 1.825
+          },
+          {
+            "prompt_id": "polqa-diacritic-030",
+            "raw_answer": "{\"odpowiedź\": \"Vincent van Gogh\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.632
+          },
+          {
+            "prompt_id": "polqa-diacritic-031",
+            "raw_answer": "{\"odpowiedź\": \"nad rzeką Nogat\"}",
+            "score": 0.4666666666666667,
+            "error": false,
+            "elapsed": 2.035
+          },
+          {
+            "prompt_id": "polqa-diacritic-032",
+            "raw_answer": "{\"odpowiedź\": \"Szymon Cyrenejczyk\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.594
+          },
+          {
+            "prompt_id": "polqa-diacritic-033",
+            "raw_answer": "{\"odpowiedź\": \"azjatyckie tygrysy\"}",
+            "score": 0.38888888888888884,
+            "error": false,
+            "elapsed": 1.793
+          },
+          {
+            "prompt_id": "polqa-diacritic-034",
+            "raw_answer": "{\"odpowiedź\": \"Tak, tury żyły w Polsce.\"}",
+            "score": 0.125,
+            "error": false,
+            "elapsed": 2.27
+          },
+          {
+            "prompt_id": "polqa-diacritic-035",
+            "raw_answer": "{\"odpowiedź\": \"Jan Sebastian Bach\"}",
+            "score": 0.7222222222222222,
+            "error": false,
+            "elapsed": 1.206
+          },
+          {
+            "prompt_id": "polqa-diacritic-036",
+            "raw_answer": "{\"odpowiedź\": \"Tarczycy\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.825
+          },
+          {
+            "prompt_id": "polqa-diacritic-037",
+            "raw_answer": "{\"odpowiedź\": \"Nad Nogatem\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.548
+          },
+          {
+            "prompt_id": "polqa-diacritic-038",
+            "raw_answer": "{\"odpowiedź\": \"Krakowa\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.366
+          },
+          {
+            "prompt_id": "polqa-diacritic-039",
+            "raw_answer": "{\"odpowiedź\": \"Szpilki\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.596
+          },
+          {
+            "prompt_id": "polqa-diacritic-040",
+            "raw_answer": "{\"odpowiedź\": \"Katowicach\"}",
+            "score": 0.8333333333333334,
+            "error": false,
+            "elapsed": 1.717
+          },
+          {
+            "prompt_id": "polqa-diacritic-041",
+            "raw_answer": "{\"odpowiedź\": \"Trojprzymierze\"}",
+            "score": 0.9285714285714286,
+            "error": false,
+            "elapsed": 3.45
+          },
+          {
+            "prompt_id": "polqa-diacritic-042",
+            "raw_answer": "{\"odpowiedź\": \"XX wieku\"}",
+            "score": 0.125,
+            "error": false,
+            "elapsed": 1.753
+          },
+          {
+            "prompt_id": "polqa-diacritic-043",
+            "raw_answer": "{\"odpowiedź\": \"Księga Powtórzonego Prawa\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.543
+          },
+          {
+            "prompt_id": "polqa-diacritic-044",
+            "raw_answer": "{\"odpowiedź\": \"Architekturze\"}",
+            "score": 0.8461538461538461,
+            "error": false,
+            "elapsed": 2.153
+          },
+          {
+            "prompt_id": "polqa-diacritic-045",
+            "raw_answer": "{\"odpowiedź\": \"Nie\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.828
+          },
+          {
+            "prompt_id": "polqa-diacritic-046",
+            "raw_answer": "{\"odpowiedź\": \"Sforza\"}",
+            "score": 0.5555555555555556,
+            "error": false,
+            "elapsed": 2.37
+          },
+          {
+            "prompt_id": "polqa-diacritic-047",
+            "raw_answer": "{\"odpowiedź\": \"Lozysko\"}",
+            "score": 0.5714285714285714,
+            "error": false,
+            "elapsed": 2.905
+          },
+          {
+            "prompt_id": "polqa-diacritic-048",
+            "raw_answer": "{\"odpowiedź\": \"6 stycznia\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.826
+          },
+          {
+            "prompt_id": "polqa-diacritic-049",
+            "raw_answer": "{\"odpowiedź\": \"Wieslaw\"}",
+            "score": 0.4444444444444444,
+            "error": false,
+            "elapsed": 3.105
+          },
+          {
+            "prompt_id": "polqa-diacritic-050",
+            "raw_answer": "{\"odpowiedź\": \"Jozef Pilsudski\"}",
+            "score": 0.8666666666666667,
+            "error": false,
+            "elapsed": 2.801
+          },
+          {
+            "prompt_id": "polqa-diacritic-051",
+            "raw_answer": "{\"odpowiedź\": \"Deblinie\"}",
+            "score": 0.7,
+            "error": false,
+            "elapsed": 1.192
+          },
+          {
+            "prompt_id": "polqa-diacritic-052",
+            "raw_answer": "{\"odpowiedź\": \"Sonda\"}",
+            "score": 0.7142857142857143,
+            "error": false,
+            "elapsed": 2.148
+          },
+          {
+            "prompt_id": "polqa-diacritic-053",
+            "raw_answer": "{\"odpowiedź\": \"Grzegorz I Wielki\"}",
+            "score": 0.5882352941176471,
+            "error": false,
+            "elapsed": 2.603
+          },
+          {
+            "prompt_id": "polqa-diacritic-054",
+            "raw_answer": "{\"odpowiedź\": \"Nie podano\"}",
+            "score": 0.09999999999999998,
+            "error": false,
+            "elapsed": 1.172
+          },
+          {
+            "prompt_id": "polqa-diacritic-055",
+            "raw_answer": "{\"odpowiedź\": \"Flota brytyjska\"}",
+            "score": 0.2666666666666667,
+            "error": false,
+            "elapsed": 1.464
+          },
+          {
+            "prompt_id": "polqa-diacritic-056",
+            "raw_answer": "{\"odpowiedź\": \"Warszawy\"}",
+            "score": 0.25,
+            "error": false,
+            "elapsed": 2.08
+          },
+          {
+            "prompt_id": "polqa-diacritic-057",
+            "raw_answer": "{\"odpowiedź\": \"Charles Lindbergh\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.591
+          },
+          {
+            "prompt_id": "polqa-diacritic-058",
+            "raw_answer": "{\"odpowiedź\": \"Michael H. Hart\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.26
+          },
+          {
+            "prompt_id": "polqa-diacritic-059",
+            "raw_answer": "{\"odpowiedź\": \"Jan Heweliusz\"}",
+            "score": 0.23076923076923073,
+            "error": false,
+            "elapsed": 1.27
+          },
+          {
+            "prompt_id": "polqa-diacritic-060",
+            "raw_answer": "{\"odpowiedź\": \"Nadir\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.526
+          },
+          {
+            "prompt_id": "polqa-diacritic-061",
+            "raw_answer": "{\"odpowiedź\": \"Khmerowie zamieszkiwali Laos, Mjanmę, Tajlandię, Wietnam i Malezję.\"}",
+            "score": 0.08955223880597019,
+            "error": false,
+            "elapsed": 3.049
+          },
+          {
+            "prompt_id": "polqa-diacritic-062",
+            "raw_answer": "{\"odpowiedź\": \"Język programowania Pascal\"}",
+            "score": 0.23076923076923073,
+            "error": false,
+            "elapsed": 2.67
+          },
+          {
+            "prompt_id": "polqa-diacritic-063",
+            "raw_answer": "{\"odpowiedź\": \"Mikolaj I\"}",
+            "score": 0.1428571428571429,
+            "error": false,
+            "elapsed": 2.335
+          },
+          {
+            "prompt_id": "polqa-diacritic-064",
+            "raw_answer": "{\"odpowiedź\": \"Wierzbie\"}",
+            "score": 0.7272727272727273,
+            "error": false,
+            "elapsed": 1.417
+          },
+          {
+            "prompt_id": "polqa-diacritic-065",
+            "raw_answer": "{\"odpowiedź\": \"Poziomy ciśnienia atmosferycznego\"}",
+            "score": 0.2727272727272727,
+            "error": false,
+            "elapsed": 2.673
+          },
+          {
+            "prompt_id": "polqa-diacritic-066",
+            "raw_answer": "{\"odpowiedź\": \"W XVII wieku\"}",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 1.588
+          },
+          {
+            "prompt_id": "polqa-diacritic-067",
+            "raw_answer": "{\"odpowiedź\": \"Beaumarchais\"}",
+            "score": 0.631578947368421,
+            "error": false,
+            "elapsed": 2.686
+          },
+          {
+            "prompt_id": "polqa-diacritic-068",
+            "raw_answer": "{\"odpowiedź\": \"Steven Spielberg\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.746
+          },
+          {
+            "prompt_id": "polqa-diacritic-069",
+            "raw_answer": "{\"odpowiedź\": \"S styczna\"}",
+            "score": 0.7777777777777778,
+            "error": false,
+            "elapsed": 1.554
+          },
+          {
+            "prompt_id": "polqa-diacritic-070",
+            "raw_answer": "{\"odpowiedź\": \"Negro spirituals\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.753
+          },
+          {
+            "prompt_id": "polqa-diacritic-071",
+            "raw_answer": "{\"odpowiedź\": \"Elle Haddewarim\"}",
+            "score": 0.1333333333333333,
+            "error": false,
+            "elapsed": 2.493
+          },
+          {
+            "prompt_id": "polqa-diacritic-072",
+            "raw_answer": "{\"odpowiedź\": \"Nogat\"}",
+            "score": 0.4545454545454546,
+            "error": false,
+            "elapsed": 1.846
+          },
+          {
+            "prompt_id": "polqa-diacritic-073",
+            "raw_answer": "{\"odpowiedź\": \"Barcelona\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 1.964
+          },
+          {
+            "prompt_id": "polqa-diacritic-074",
+            "raw_answer": "{\"odpowiedź\": \"1912\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 1.527
+          },
+          {
+            "prompt_id": "polqa-diacritic-075",
+            "raw_answer": "{\"odpowiedź\": \"Republiki Polskiej\"}",
+            "score": 0.11111111111111116,
+            "error": false,
+            "elapsed": 2.848
+          },
+          {
+            "prompt_id": "polqa-diacritic-076",
+            "raw_answer": "{\"odpowiedź\": \"Hiszpania\"}",
+            "score": 0.7272727272727273,
+            "error": false,
+            "elapsed": 2.291
+          },
+          {
+            "prompt_id": "polqa-diacritic-077",
+            "raw_answer": "{\"odpowiedź\": \"Aleksandria\"}",
+            "score": 0.7692307692307692,
+            "error": false,
+            "elapsed": 1.791
+          },
+          {
+            "prompt_id": "polqa-diacritic-078",
+            "raw_answer": "{\"odpowiedź\": \"CPN\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.562
+          },
+          {
+            "prompt_id": "polqa-diacritic-079",
+            "raw_answer": "{\"odpowiedź\": \"Austro-Węgry\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.884
+          },
+          {
+            "prompt_id": "polqa-diacritic-080",
+            "raw_answer": "{\"odpowiedź\": \"Zbrodnie przeciwko ludzkości\"}",
+            "score": 0.1071428571428571,
+            "error": false,
+            "elapsed": 2.342
+          },
+          {
+            "prompt_id": "polqa-diacritic-081",
+            "raw_answer": "{\"odpowiedź\": \"Aprilu\"}",
+            "score": 0.19999999999999996,
+            "error": false,
+            "elapsed": 1.643
+          },
+          {
+            "prompt_id": "polqa-diacritic-082",
+            "raw_answer": "{\"odpowiedź\": \"Hawaje\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.838
+          },
+          {
+            "prompt_id": "polqa-diacritic-083",
+            "raw_answer": "{\"odpowiedź\": \"Karta Narodów Zjednoczonych\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.205
+          },
+          {
+            "prompt_id": "polqa-diacritic-084",
+            "raw_answer": "{\"odpowiedź\": \"Paleozoyk\"}",
+            "score": 0.8888888888888888,
+            "error": false,
+            "elapsed": 1.593
+          },
+          {
+            "prompt_id": "polqa-diacritic-085",
+            "raw_answer": "{\"odpowiedź\": \"1983\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 2.009
+          },
+          {
+            "prompt_id": "polqa-diacritic-086",
+            "raw_answer": "{\"odpowiedź\": \"Feldmarszałek Wilhelm Keitel\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.739
+          },
+          {
+            "prompt_id": "polqa-diacritic-087",
+            "raw_answer": "{\"odpowiedź\": \"Kutia\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.889
+          },
+          {
+            "prompt_id": "polqa-diacritic-088",
+            "raw_answer": "{\"odpowiedź\": \"Jan Heweliusz\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.326
+          },
+          {
+            "prompt_id": "polqa-diacritic-089",
+            "raw_answer": "{\"odpowiedź\": \"Św. Krzysztof\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.425
+          },
+          {
+            "prompt_id": "polqa-diacritic-090",
+            "raw_answer": "{\"odpowiedź\": \"Anita Lipnicka\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.513
+          },
+          {
+            "prompt_id": "polqa-diacritic-091",
+            "raw_answer": "{\"odpowiedź\": \"Skandynawskich\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.752
+          },
+          {
+            "prompt_id": "polqa-diacritic-092",
+            "raw_answer": "{\"odpowiedź\": \"35 lat\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.469
+          },
+          {
+            "prompt_id": "polqa-diacritic-093",
+            "raw_answer": "{\"odpowiedź\": \"Dynamika\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.597
+          },
+          {
+            "prompt_id": "polqa-diacritic-094",
+            "raw_answer": "{\"odpowiedź\": \"Tatrzany\"}",
+            "score": 0.625,
+            "error": false,
+            "elapsed": 1.733
+          },
+          {
+            "prompt_id": "polqa-diacritic-095",
+            "raw_answer": "{\"odpowiedź\": \"Pchnięciu kula\"}",
+            "score": 0.8125,
+            "error": false,
+            "elapsed": 2.927
+          },
+          {
+            "prompt_id": "polqa-diacritic-096",
+            "raw_answer": "{\"odpowiedź\": \"Teatro alla Scala\"}",
+            "score": 0.47058823529411764,
+            "error": false,
+            "elapsed": 1.536
+          },
+          {
+            "prompt_id": "polqa-diacritic-097",
+            "raw_answer": "{\"odpowiedź\": \"Mustafa Kemal, nazywany Atatürkiem\"}",
+            "score": 0.6176470588235294,
+            "error": false,
+            "elapsed": 2.987
+          },
+          {
+            "prompt_id": "polqa-diacritic-098",
+            "raw_answer": "{\"odpowiedź\": \"Serene i Venus\"}",
+            "score": 0.9285714285714286,
+            "error": false,
+            "elapsed": 2.549
+          },
+          {
+            "prompt_id": "polqa-diacritic-099",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.308
+          }
+        ]
+      }
+    },
+    "identity": {
+      "polqa": {
+        "num_sampled": 100,
+        "score_sum": 71.612891,
+        "score_avg": 0.716129,
+        "error_count": 0,
+        "elapsed_sec": 199.76,
+        "questions": [
+          {
+            "prompt_id": "polqa-identity-000",
+            "raw_answer": "{\"odpowiedź\": \"Sulejman Wspaniały\"}",
+            "score": 0.4444444444444444,
+            "error": false,
+            "elapsed": 1.866
+          },
+          {
+            "prompt_id": "polqa-identity-001",
+            "raw_answer": "{\"odpowiedź\": \"NBP\"}",
+            "score": 0.15000000000000002,
+            "error": false,
+            "elapsed": 1.101
+          },
+          {
+            "prompt_id": "polqa-identity-002",
+            "raw_answer": "{\"odpowiedź\": \"Wierszem\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.516
+          },
+          {
+            "prompt_id": "polqa-identity-003",
+            "raw_answer": "{\"odpowiedź\": \"Tak, Aleje Ujazdowskie należą do Traktu Królewskiego.\"}",
+            "score": 0.05660377358490565,
+            "error": false,
+            "elapsed": 3.224
+          },
+          {
+            "prompt_id": "polqa-identity-004",
+            "raw_answer": "{\"odpowiedź\": \"Wosku\"}",
+            "score": 0.7142857142857143,
+            "error": false,
+            "elapsed": 2.646
+          },
+          {
+            "prompt_id": "polqa-identity-005",
+            "raw_answer": "{\"odpowiedź\": \"Marsa\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.077
+          },
+          {
+            "prompt_id": "polqa-identity-006",
+            "raw_answer": "{\"odpowiedź\": \"50 Hz\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.526
+          },
+          {
+            "prompt_id": "polqa-identity-007",
+            "raw_answer": "{\"odpowiedź\": \"Argentyński\"}",
+            "score": 0.8461538461538461,
+            "error": false,
+            "elapsed": 1.393
+          },
+          {
+            "prompt_id": "polqa-identity-008",
+            "raw_answer": "{\"odpowiedź\": \"Alfred Szklarski\"}",
+            "score": 0.5625,
+            "error": false,
+            "elapsed": 1.683
+          },
+          {
+            "prompt_id": "polqa-identity-009",
+            "raw_answer": "{\"odpowiedź\": \"Niemcy\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.564
+          },
+          {
+            "prompt_id": "polqa-identity-010",
+            "raw_answer": "{\"odpowiedź\": \"Vespa simillima\"}",
+            "score": 0.06666666666666665,
+            "error": false,
+            "elapsed": 1.531
+          },
+          {
+            "prompt_id": "polqa-identity-011",
+            "raw_answer": "{\"odpowiedź\": \"Bank ogłosił upadłość\"}",
+            "score": 0.04761904761904767,
+            "error": false,
+            "elapsed": 1.938
+          },
+          {
+            "prompt_id": "polqa-identity-012",
+            "raw_answer": "{\"odpowiedź\": \"ZSRR\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.506
+          },
+          {
+            "prompt_id": "polqa-identity-013",
+            "raw_answer": "{\"odpowiedź\": \"Wielbłądowatych\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.531
+          },
+          {
+            "prompt_id": "polqa-identity-014",
+            "raw_answer": "{\"odpowiedź\": \"USS Nautilus (SSN-571)\"}",
+            "score": 0.36363636363636365,
+            "error": false,
+            "elapsed": 2.43
+          },
+          {
+            "prompt_id": "polqa-identity-015",
+            "raw_answer": "{\"odpowiedź\": \"Towarzystwo Jezusowe\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.787
+          },
+          {
+            "prompt_id": "polqa-identity-016",
+            "raw_answer": "{\"odpowiedź\": \"Myto\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.101
+          },
+          {
+            "prompt_id": "polqa-identity-017",
+            "raw_answer": "{\"odpowiedź\": \"Ignacy Loyola\"}",
+            "score": 0.46153846153846156,
+            "error": false,
+            "elapsed": 1.832
+          },
+          {
+            "prompt_id": "polqa-identity-018",
+            "raw_answer": "{\"odpowiedź\": \"Nil\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.149
+          },
+          {
+            "prompt_id": "polqa-identity-019",
+            "raw_answer": "{\"odpowiedź\": \"Discovery\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.415
+          },
+          {
+            "prompt_id": "polqa-identity-020",
+            "raw_answer": "{\"odpowiedź\": \"Przednie koło\"}",
+            "score": 0.6153846153846154,
+            "error": false,
+            "elapsed": 1.587
+          },
+          {
+            "prompt_id": "polqa-identity-021",
+            "raw_answer": "{\"odpowiedź\": \"Kieslowski\"}",
+            "score": 0.44999999999999996,
+            "error": false,
+            "elapsed": 1.573
+          },
+          {
+            "prompt_id": "polqa-identity-022",
+            "raw_answer": "{\"odpowiedź\": \"Sowy\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.56
+          },
+          {
+            "prompt_id": "polqa-identity-023",
+            "raw_answer": "{\"odpowiedź\": \"Christiaan Huygens\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.373
+          },
+          {
+            "prompt_id": "polqa-identity-024",
+            "raw_answer": "{\"odpowiedź\": \"Hannibal\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.964
+          },
+          {
+            "prompt_id": "polqa-identity-025",
+            "raw_answer": "{\"odpowiedź\": \"admirał\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.305
+          },
+          {
+            "prompt_id": "polqa-identity-026",
+            "raw_answer": "{\"odpowiedź\": \"Nowej Zelandii\"}",
+            "score": 0.8235294117647058,
+            "error": false,
+            "elapsed": 2.288
+          },
+          {
+            "prompt_id": "polqa-identity-027",
+            "raw_answer": "{\"odpowiedź\": \"Makler lub broker\"}",
+            "score": 0.3529411764705882,
+            "error": false,
+            "elapsed": 1.676
+          },
+          {
+            "prompt_id": "polqa-identity-028",
+            "raw_answer": "{\"odpowiedź\": \"Cztery państwa\"}",
+            "score": 0.4285714285714286,
+            "error": false,
+            "elapsed": 2.248
+          },
+          {
+            "prompt_id": "polqa-identity-029",
+            "raw_answer": "{\"odpowiedź\": \"1918 roku\"}",
+            "score": 0.2222222222222222,
+            "error": false,
+            "elapsed": 1.715
+          },
+          {
+            "prompt_id": "polqa-identity-030",
+            "raw_answer": "{\"odpowiedź\": \"Vincent van Gogh\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.535
+          },
+          {
+            "prompt_id": "polqa-identity-031",
+            "raw_answer": "{\"odpowiedź\": \"Rzeką Nogat\"}",
+            "score": 0.36363636363636365,
+            "error": false,
+            "elapsed": 2.015
+          },
+          {
+            "prompt_id": "polqa-identity-032",
+            "raw_answer": "{\"odpowiedź\": \"Szymon Cyrenejczyk\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.547
+          },
+          {
+            "prompt_id": "polqa-identity-033",
+            "raw_answer": "{\"odpowiedź\": \"azjatyckie tygrysy\"}",
+            "score": 0.38888888888888884,
+            "error": false,
+            "elapsed": 1.715
+          },
+          {
+            "prompt_id": "polqa-identity-034",
+            "raw_answer": "{\"odpowiedź\": \"Tak, tury żyły w Polsce.\"}",
+            "score": 0.125,
+            "error": false,
+            "elapsed": 2.209
+          },
+          {
+            "prompt_id": "polqa-identity-035",
+            "raw_answer": "{\"odpowiedź\": \"Jan Sebastian Bach\"}",
+            "score": 0.7222222222222222,
+            "error": false,
+            "elapsed": 1.171
+          },
+          {
+            "prompt_id": "polqa-identity-036",
+            "raw_answer": "{\"odpowiedź\": \"Tarczycy\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.686
+          },
+          {
+            "prompt_id": "polqa-identity-037",
+            "raw_answer": "{\"odpowiedź\": \"Nad Nogatem\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.438
+          },
+          {
+            "prompt_id": "polqa-identity-038",
+            "raw_answer": "{\"odpowiedź\": \"Krakowa\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.268
+          },
+          {
+            "prompt_id": "polqa-identity-039",
+            "raw_answer": "{\"odpowiedź\": \"Szpilki\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.581
+          },
+          {
+            "prompt_id": "polqa-identity-040",
+            "raw_answer": "{\"odpowiedź\": \"Katowicach\"}",
+            "score": 0.8333333333333334,
+            "error": false,
+            "elapsed": 1.73
+          },
+          {
+            "prompt_id": "polqa-identity-041",
+            "raw_answer": "{\"odpowiedź\": \"Trójprzymierze\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.412
+          },
+          {
+            "prompt_id": "polqa-identity-042",
+            "raw_answer": "{\"odpowiedź\": \"Witold Gombrowicz urodził się w 1904 roku.\"}",
+            "score": 0.04761904761904767,
+            "error": false,
+            "elapsed": 2.284
+          },
+          {
+            "prompt_id": "polqa-identity-043",
+            "raw_answer": "{\"odpowiedź\": \"Księga Powtórzonego Prawa\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.5
+          },
+          {
+            "prompt_id": "polqa-identity-044",
+            "raw_answer": "{\"odpowiedź\": \"Architekturze\"}",
+            "score": 0.8461538461538461,
+            "error": false,
+            "elapsed": 2.102
+          },
+          {
+            "prompt_id": "polqa-identity-045",
+            "raw_answer": "{\"odpowiedź\": \"Nie\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.567
+          },
+          {
+            "prompt_id": "polqa-identity-046",
+            "raw_answer": "{\"odpowiedź\": \"Sforza\"}",
+            "score": 0.5555555555555556,
+            "error": false,
+            "elapsed": 2.236
+          },
+          {
+            "prompt_id": "polqa-identity-047",
+            "raw_answer": "{\"odpowiedź\": \"Łożyska\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.662
+          },
+          {
+            "prompt_id": "polqa-identity-048",
+            "raw_answer": "{\"odpowiedź\": \"6 stycznia\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.808
+          },
+          {
+            "prompt_id": "polqa-identity-049",
+            "raw_answer": "{\"odpowiedź\": \"Wiesław\"}",
+            "score": 0.5555555555555556,
+            "error": false,
+            "elapsed": 3.092
+          },
+          {
+            "prompt_id": "polqa-identity-050",
+            "raw_answer": "{\"odpowiedź\": \"Józef Piłsudski\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.845
+          },
+          {
+            "prompt_id": "polqa-identity-051",
+            "raw_answer": "{\"odpowiedź\": \"Dęblinie\"}",
+            "score": 0.8,
+            "error": false,
+            "elapsed": 1.264
+          },
+          {
+            "prompt_id": "polqa-identity-052",
+            "raw_answer": "{\"odpowiedź\": \"Sonda\"}",
+            "score": 0.7142857142857143,
+            "error": false,
+            "elapsed": 2.174
+          },
+          {
+            "prompt_id": "polqa-identity-053",
+            "raw_answer": "{\"odpowiedź\": \"Grzegorz I Wielki\"}",
+            "score": 0.5882352941176471,
+            "error": false,
+            "elapsed": 2.602
+          },
+          {
+            "prompt_id": "polqa-identity-054",
+            "raw_answer": "{\"odpowiedź\": \"Nie podano\"}",
+            "score": 0.09999999999999998,
+            "error": false,
+            "elapsed": 1.156
+          },
+          {
+            "prompt_id": "polqa-identity-055",
+            "raw_answer": "{\"odpowiedź\": \"Flota brytyjska\"}",
+            "score": 0.2666666666666667,
+            "error": false,
+            "elapsed": 1.441
+          },
+          {
+            "prompt_id": "polqa-identity-056",
+            "raw_answer": "{\"odpowiedź\": \"Warszawy\"}",
+            "score": 0.25,
+            "error": false,
+            "elapsed": 2.035
+          },
+          {
+            "prompt_id": "polqa-identity-057",
+            "raw_answer": "{\"odpowiedź\": \"Charles Lindbergh\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.514
+          },
+          {
+            "prompt_id": "polqa-identity-058",
+            "raw_answer": "{\"odpowiedź\": \"Michael H. Hart\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.16
+          },
+          {
+            "prompt_id": "polqa-identity-059",
+            "raw_answer": "{\"odpowiedź\": \"Jan\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.138
+          },
+          {
+            "prompt_id": "polqa-identity-060",
+            "raw_answer": "{\"odpowiedź\": \"Nadir\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.489
+          },
+          {
+            "prompt_id": "polqa-identity-061",
+            "raw_answer": "{\"odpowiedź\": \"Laos, Mjanmę, Tajlandię, Wietnam i Malezję\"}",
+            "score": 0.09523809523809523,
+            "error": false,
+            "elapsed": 2.691
+          },
+          {
+            "prompt_id": "polqa-identity-062",
+            "raw_answer": "{\"odpowiedź\": \"Język programowania Pascal\"}",
+            "score": 0.23076923076923073,
+            "error": false,
+            "elapsed": 2.63
+          },
+          {
+            "prompt_id": "polqa-identity-063",
+            "raw_answer": "{\"odpowiedź\": \"Mikołaj I\"}",
+            "score": 0.1428571428571429,
+            "error": false,
+            "elapsed": 2.339
+          },
+          {
+            "prompt_id": "polqa-identity-064",
+            "raw_answer": "{\"odpowiedź\": \"Wierzbie\"}",
+            "score": 0.7272727272727273,
+            "error": false,
+            "elapsed": 1.43
+          },
+          {
+            "prompt_id": "polqa-identity-065",
+            "raw_answer": "{\"odpowiedź\": \"Poziomy sondowania\"}",
+            "score": 0.2222222222222222,
+            "error": false,
+            "elapsed": 2.511
+          },
+          {
+            "prompt_id": "polqa-identity-066",
+            "raw_answer": "{\"odpowiedź\": \"W XVII wieku\"}",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 1.516
+          },
+          {
+            "prompt_id": "polqa-identity-067",
+            "raw_answer": "{\"odpowiedź\": \"Beaumarchais\"}",
+            "score": 0.631578947368421,
+            "error": false,
+            "elapsed": 2.7
+          },
+          {
+            "prompt_id": "polqa-identity-068",
+            "raw_answer": "{\"odpowiedź\": \"Steven Spielberg\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.772
+          },
+          {
+            "prompt_id": "polqa-identity-069",
+            "raw_answer": "{\"odpowiedź\": \"S styczna\"}",
+            "score": 0.7777777777777778,
+            "error": false,
+            "elapsed": 1.585
+          },
+          {
+            "prompt_id": "polqa-identity-070",
+            "raw_answer": "{\"odpowiedź\": \"Negro spirituals\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.733
+          },
+          {
+            "prompt_id": "polqa-identity-071",
+            "raw_answer": "{\"odpowiedź\": \"Elle Haddewarim\"}",
+            "score": 0.1333333333333333,
+            "error": false,
+            "elapsed": 2.563
+          },
+          {
+            "prompt_id": "polqa-identity-072",
+            "raw_answer": "{\"odpowiedź\": \"Rzeka Nogot\"}",
+            "score": 0.2727272727272727,
+            "error": false,
+            "elapsed": 1.927
+          },
+          {
+            "prompt_id": "polqa-identity-073",
+            "raw_answer": "{\"odpowiedź\": \"Barcelona\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 1.852
+          },
+          {
+            "prompt_id": "polqa-identity-074",
+            "raw_answer": "{\"odpowiedź\": \"1912\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 1.549
+          },
+          {
+            "prompt_id": "polqa-identity-075",
+            "raw_answer": "{\"odpowiedź\": \"Polski\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.633
+          },
+          {
+            "prompt_id": "polqa-identity-076",
+            "raw_answer": "{\"odpowiedź\": \"Hiszpania\"}",
+            "score": 0.7272727272727273,
+            "error": false,
+            "elapsed": 2.182
+          },
+          {
+            "prompt_id": "polqa-identity-077",
+            "raw_answer": "{\"odpowiedź\": \"Aleksandria\"}",
+            "score": 0.7692307692307692,
+            "error": false,
+            "elapsed": 1.717
+          },
+          {
+            "prompt_id": "polqa-identity-078",
+            "raw_answer": "{\"odpowiedź\": \"CPN\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.544
+          },
+          {
+            "prompt_id": "polqa-identity-079",
+            "raw_answer": "{\"odpowiedź\": \"Austro-Węgry\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.904
+          },
+          {
+            "prompt_id": "polqa-identity-080",
+            "raw_answer": "{\"odpowiedź\": \"Ludobójstwo\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.065
+          },
+          {
+            "prompt_id": "polqa-identity-081",
+            "raw_answer": "{\"odpowiedź\": \"W kwietniu\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.599
+          },
+          {
+            "prompt_id": "polqa-identity-082",
+            "raw_answer": "{\"odpowiedź\": \"Hawaje\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.881
+          },
+          {
+            "prompt_id": "polqa-identity-083",
+            "raw_answer": "{\"odpowiedź\": \"Karta Narodów Zjednoczonych\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.139
+          },
+          {
+            "prompt_id": "polqa-identity-084",
+            "raw_answer": "{\"odpowiedź\": \"Paleozoyk\"}",
+            "score": 0.8888888888888888,
+            "error": false,
+            "elapsed": 1.645
+          },
+          {
+            "prompt_id": "polqa-identity-085",
+            "raw_answer": "{\"odpowiedź\": \"1983\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 1.974
+          },
+          {
+            "prompt_id": "polqa-identity-086",
+            "raw_answer": "{\"odpowiedź\": \"Feldmarszałek Wilhelm Keitel\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.707
+          },
+          {
+            "prompt_id": "polqa-identity-087",
+            "raw_answer": "{\"odpowiedź\": \"Kutia\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.904
+          },
+          {
+            "prompt_id": "polqa-identity-088",
+            "raw_answer": "{\"odpowiedź\": \"Jan Heweliusz\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.325
+          },
+          {
+            "prompt_id": "polqa-identity-089",
+            "raw_answer": "{\"odpowiedź\": \"Św. Krzysztof\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.359
+          },
+          {
+            "prompt_id": "polqa-identity-090",
+            "raw_answer": "{\"odpowiedź\": \"Informacja nie jest podana\"}",
+            "score": 0.23076923076923073,
+            "error": false,
+            "elapsed": 1.587
+          },
+          {
+            "prompt_id": "polqa-identity-091",
+            "raw_answer": "{\"odpowiedź\": \"Nordyckich\"}",
+            "score": 0.4285714285714286,
+            "error": false,
+            "elapsed": 2.693
+          },
+          {
+            "prompt_id": "polqa-identity-092",
+            "raw_answer": "{\"odpowiedź\": \"35 lat\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.451
+          },
+          {
+            "prompt_id": "polqa-identity-093",
+            "raw_answer": "{\"odpowiedź\": \"dynamikę\"}",
+            "score": 0.875,
+            "error": false,
+            "elapsed": 2.547
+          },
+          {
+            "prompt_id": "polqa-identity-094",
+            "raw_answer": "{\"odpowiedź\": \"W Tatrach\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.672
+          },
+          {
+            "prompt_id": "polqa-identity-095",
+            "raw_answer": "{\"odpowiedź\": \"Pchnięcie kulą\"}",
+            "score": 0.8125,
+            "error": false,
+            "elapsed": 2.823
+          },
+          {
+            "prompt_id": "polqa-identity-096",
+            "raw_answer": "{\"odpowiedź\": \"Teatro alla Scala\"}",
+            "score": 0.47058823529411764,
+            "error": false,
+            "elapsed": 1.509
+          },
+          {
+            "prompt_id": "polqa-identity-097",
+            "raw_answer": "{\"odpowiedź\": \"Mustafa Kemal (Atatürk)\"}",
+            "score": 0.9130434782608696,
+            "error": false,
+            "elapsed": 2.839
+          },
+          {
+            "prompt_id": "polqa-identity-098",
+            "raw_answer": "{\"odpowiedź\": \"Serena i Venus\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.454
+          },
+          {
+            "prompt_id": "polqa-identity-099",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.297
+          }
+        ]
+      }
+    },
+    "punctuation_all": {
+      "polqa": {
+        "num_sampled": 100,
+        "score_sum": 66.760423,
+        "score_avg": 0.667604,
+        "error_count": 0,
+        "elapsed_sec": 190.88,
+        "questions": [
+          {
+            "prompt_id": "polqa-punctuation_all-000",
+            "raw_answer": "{\"odpowiedź\": \"Sulejman Wspaniały\"}",
+            "score": 0.4444444444444444,
+            "error": false,
+            "elapsed": 1.843
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-001",
+            "raw_answer": "{\"odpowiedź\": \"nbp\"}",
+            "score": 0.15000000000000002,
+            "error": false,
+            "elapsed": 1.079
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-002",
+            "raw_answer": "{\"odpowiedź\": \"Wierszem\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.502
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-003",
+            "raw_answer": "{\"odpowiedź\": \"Tak, aleje ujazdowskie należą do traktu królewskiego.\"}",
+            "score": 0.05660377358490565,
+            "error": false,
+            "elapsed": 3.017
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-004",
+            "raw_answer": "{\"odpowiedź\": \"wosku\"}",
+            "score": 0.7142857142857143,
+            "error": false,
+            "elapsed": 2.36
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-005",
+            "raw_answer": "{\"odpowiedź\": \"Marsa\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.028
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-006",
+            "raw_answer": "{\"odpowiedź\": \"50 Hz\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.402
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-007",
+            "raw_answer": "{\"odpowiedź\": \"argentyński\"}",
+            "score": 0.8461538461538461,
+            "error": false,
+            "elapsed": 1.371
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-008",
+            "raw_answer": "{\"odpowiedź\": \"Alfreda Szklarskiego\"}",
+            "score": 0.44999999999999996,
+            "error": false,
+            "elapsed": 1.778
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-009",
+            "raw_answer": "{\"odpowiedź\": \"Niemcy\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.554
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-010",
+            "raw_answer": "{\"odpowiedź\": \"vespa simillima\"}",
+            "score": 0.06666666666666665,
+            "error": false,
+            "elapsed": 1.484
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-011",
+            "raw_answer": "{\"odpowiedź\": \"Bank\"}",
+            "score": 0.1333333333333333,
+            "error": false,
+            "elapsed": 1.643
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-012",
+            "raw_answer": "{\"odpowiedź\": \"ZSrr\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.477
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-013",
+            "raw_answer": "{\"odpowiedź\": \"wielbłądowatych\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.35
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-014",
+            "raw_answer": "{\"odpowiedź\": \"USS Nautilus\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 2.077
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-015",
+            "raw_answer": "{\"odpowiedź\": \"Towarzystwo Jezusowe\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.729
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-016",
+            "raw_answer": "{\"odpowiedź\": \"Myto\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.001
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-017",
+            "raw_answer": "{\"odpowiedź\": \"Ignacego Loyolę\"}",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 1.83
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-018",
+            "raw_answer": "{\"odpowiedź\": \"Nil\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.133
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-019",
+            "raw_answer": "{\"odpowiedź\": \"Challenger\"}",
+            "score": 0.09999999999999998,
+            "error": false,
+            "elapsed": 2.406
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-020",
+            "raw_answer": "{\"odpowiedź\": \"większe przednie koło\"}",
+            "score": 0.38095238095238093,
+            "error": false,
+            "elapsed": 1.558
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-021",
+            "raw_answer": "{\"odpowiedź\": \"Kieslowski\"}",
+            "score": 0.44999999999999996,
+            "error": false,
+            "elapsed": 1.505
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-022",
+            "raw_answer": "{\"odpowiedź\": \"sowy\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.544
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-023",
+            "raw_answer": "{\"odpowiedź\": \"Christiaan Huygens\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.352
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-024",
+            "raw_answer": "{\"odpowiedź\": \"Hannibal\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.673
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-025",
+            "raw_answer": "{\"odpowiedź\": \"admirał\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.297
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-026",
+            "raw_answer": "{\"odpowiedź\": \"Nowej Zelandii\"}",
+            "score": 0.8235294117647058,
+            "error": false,
+            "elapsed": 2.129
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-027",
+            "raw_answer": "{\"odpowiedź\": \"Makler lub broker\"}",
+            "score": 0.3529411764705882,
+            "error": false,
+            "elapsed": 1.656
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-028",
+            "raw_answer": "{\"odpowiedź\": \"Cztery państwa\"}",
+            "score": 0.4285714285714286,
+            "error": false,
+            "elapsed": 2.141
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-029",
+            "raw_answer": "{\"odpowiedź\": \"1918 roku\"}",
+            "score": 0.2222222222222222,
+            "error": false,
+            "elapsed": 1.767
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-030",
+            "raw_answer": "{\"odpowiedź\": \"Vincent van Gogh\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.317
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-031",
+            "raw_answer": "{\"odpowiedź\": \"Rzeką Nogat\"}",
+            "score": 0.36363636363636365,
+            "error": false,
+            "elapsed": 1.864
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-032",
+            "raw_answer": "{\"odpowiedź\": \" Szymon Cyrenejczyk\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.483
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-033",
+            "raw_answer": "{\"odpowiedź\": \"azjatyckie tygrysy\"}",
+            "score": 0.38888888888888884,
+            "error": false,
+            "elapsed": 1.7
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-034",
+            "raw_answer": "{\"odpowiedź\": \"Tak, tury żyły w Polsce\"}",
+            "score": 0.13043478260869568,
+            "error": false,
+            "elapsed": 2.165
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-035",
+            "raw_answer": "{\"odpowiedź\": \"Jan Sebastian Bach\"}",
+            "score": 0.7222222222222222,
+            "error": false,
+            "elapsed": 1.197
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-036",
+            "raw_answer": "{\"odpowiedź\": \"gruczolu tarczycy\"}",
+            "score": 0.47058823529411764,
+            "error": false,
+            "elapsed": 1.807
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-037",
+            "raw_answer": "{\"odpowiedź\": \"nad Nogatem\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.371
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-038",
+            "raw_answer": "{\"odpowiedź\": \"Krakowa\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.233
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-039",
+            "raw_answer": "{\"odpowiedź\": \"szpilek\"}",
+            "score": 0.7142857142857143,
+            "error": false,
+            "elapsed": 2.464
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-040",
+            "raw_answer": "{\"odpowiedź\": \"Katowicach\"}",
+            "score": 0.8333333333333334,
+            "error": false,
+            "elapsed": 1.675
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-041",
+            "raw_answer": "{\"odpowiedź\": \"Trójprzymierze\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.146
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-042",
+            "raw_answer": "{\"odpowiedź\": \"Witold Gombrowicz urodził się w wieku 65 lat\"}",
+            "score": 0.045454545454545414,
+            "error": false,
+            "elapsed": 2.133
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-043",
+            "raw_answer": "{\"odpowiedź\": \"Dewárim\"}",
+            "score": 0.3846153846153846,
+            "error": false,
+            "elapsed": 2.693
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-044",
+            "raw_answer": "{\"odpowiedź\": \"architektura\"}",
+            "score": 0.9166666666666666,
+            "error": false,
+            "elapsed": 1.909
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-045",
+            "raw_answer": "{\"odpowiedź\": \"Nie\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.438
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-046",
+            "raw_answer": "{\"odpowiedź\": \"Sforza\"}",
+            "score": 0.5555555555555556,
+            "error": false,
+            "elapsed": 2.067
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-047",
+            "raw_answer": "{\"odpowiedź\": \"łożyska\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.394
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-048",
+            "raw_answer": "{\"odpowiedź\": \"6 stycznia\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.62
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-049",
+            "raw_answer": "{\"odpowiedź\": \"Władysław Gomułka\"}",
+            "score": 0.5294117647058824,
+            "error": false,
+            "elapsed": 2.897
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-050",
+            "raw_answer": "{\"odpowiedź\": \"Józef Piłsudski\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.777
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-051",
+            "raw_answer": "{\"odpowiedź\": \"Dęblin\"}",
+            "score": 0.6,
+            "error": false,
+            "elapsed": 1.249
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-052",
+            "raw_answer": "{\"odpowiedź\": \"Sonda\"}",
+            "score": 0.7142857142857143,
+            "error": false,
+            "elapsed": 2.006
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-053",
+            "raw_answer": "{\"odpowiedź\": \"Grzegorz Wielki\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 2.393
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-054",
+            "raw_answer": "{\"odpowiedź\": \"Nie\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.079
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-055",
+            "raw_answer": "{\"odpowiedź\": \"Flota brytyjska\"}",
+            "score": 0.2666666666666667,
+            "error": false,
+            "elapsed": 1.443
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-056",
+            "raw_answer": "{\"odpowiedź\": \"Warszawy\"}",
+            "score": 0.25,
+            "error": false,
+            "elapsed": 2.057
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-057",
+            "raw_answer": "{\"odpowiedź\": \"Charles Lindbergh\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.416
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-058",
+            "raw_answer": "{\"odpowiedź\": \"Michael H. Hart\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.969
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-059",
+            "raw_answer": "{\"odpowiedź\": \"Jan Heweliusz\"}",
+            "score": 0.23076923076923073,
+            "error": false,
+            "elapsed": 1.268
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-060",
+            "raw_answer": "{\"odpowiedź\": \"nadir\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.43
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-061",
+            "raw_answer": "{\"odpowiedź\": \"Laos, Mjanmar, Tajlandia, Wietnam i Malezja\"}",
+            "score": 0.06976744186046513,
+            "error": false,
+            "elapsed": 2.643
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-062",
+            "raw_answer": "{\"odpowiedź\": \"Pascal\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.38
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-063",
+            "raw_answer": "{\"odpowiedź\": \"Mikołaj I\"}",
+            "score": 0.1428571428571429,
+            "error": false,
+            "elapsed": 2.261
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-064",
+            "raw_answer": "{\"odpowiedź\": \"Gruszki na wierzbie\"}",
+            "score": 0.5789473684210527,
+            "error": false,
+            "elapsed": 1.547
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-065",
+            "raw_answer": "{\"odpowiedź\": \"Poziomy ciśnienia atmosferycznego\"}",
+            "score": 0.2727272727272727,
+            "error": false,
+            "elapsed": 2.486
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-066",
+            "raw_answer": "{\"odpowiedź\": \"XVII wiek\"}",
+            "score": 0.2222222222222222,
+            "error": false,
+            "elapsed": 1.505
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-067",
+            "raw_answer": "{\"odpowiedź\": \"Beaumarchais\"}",
+            "score": 0.631578947368421,
+            "error": false,
+            "elapsed": 2.454
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-068",
+            "raw_answer": "{\"odpowiedź\": \"Steven Spielberg\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.683
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-069",
+            "raw_answer": "{\"odpowiedź\": \"s styczna do okręgu\"}",
+            "score": 0.368421052631579,
+            "error": false,
+            "elapsed": 1.651
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-070",
+            "raw_answer": "{\"odpowiedź\": \"Negro spirituals\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.687
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-071",
+            "raw_answer": "{\"odpowiedź\": \"Elle haddewarim\"}",
+            "score": 0.1333333333333333,
+            "error": false,
+            "elapsed": 2.192
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-072",
+            "raw_answer": "{\"odpowiedź\": \"rzeka Nogat\"}",
+            "score": 0.36363636363636365,
+            "error": false,
+            "elapsed": 1.826
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-073",
+            "raw_answer": "{\"odpowiedź\": \"Barcelona\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 1.789
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-074",
+            "raw_answer": "{\"odpowiedź\": \"1912\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 1.478
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-075",
+            "raw_answer": "{\"odpowiedź\": \"Polskie\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.517
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-076",
+            "raw_answer": "{\"odpowiedź\": \"Hiszpania\"}",
+            "score": 0.7272727272727273,
+            "error": false,
+            "elapsed": 2.117
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-077",
+            "raw_answer": "{\"odpowiedź\": \"Alexandria\"}",
+            "score": 0.6153846153846154,
+            "error": false,
+            "elapsed": 1.618
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-078",
+            "raw_answer": "{\"odpowiedź\": \"cpn\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.532
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-079",
+            "raw_answer": "{\"odpowiedź\": \"Austria Węgry\"}",
+            "score": 0.7692307692307692,
+            "error": false,
+            "elapsed": 1.874
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-080",
+            "raw_answer": "{\"odpowiedź\": \"Ludobójstwo\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.996
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-081",
+            "raw_answer": "{\"odpowiedź\": \"Aprilu\"}",
+            "score": 0.19999999999999996,
+            "error": false,
+            "elapsed": 1.578
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-082",
+            "raw_answer": "{\"odpowiedź\": \"Hawaj\"}",
+            "score": 0.8333333333333334,
+            "error": false,
+            "elapsed": 1.819
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-083",
+            "raw_answer": "{\"odpowiedź\": \"Karta Narodów Zjednoczonych\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.024
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-084",
+            "raw_answer": "{\"odpowiedź\": \"Paleozoyk\"}",
+            "score": 0.8888888888888888,
+            "error": false,
+            "elapsed": 1.466
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-085",
+            "raw_answer": "{\"odpowiedź\": \"1983\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 1.885
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-086",
+            "raw_answer": "{\"odpowiedź\": \"feldmarszałek wilhelm keitel\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.705
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-087",
+            "raw_answer": "{\"odpowiedź\": \"kutia\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.792
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-088",
+            "raw_answer": "{\"odpowiedź\": \"Jan Heweliusz\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.301
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-089",
+            "raw_answer": "{\"odpowiedź\": \"Św. Krzysztof\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.344
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-090",
+            "raw_answer": "{\"odpowiedź\": \"Anita Lipnicka\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.46
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-091",
+            "raw_answer": "{\"odpowiedź\": \"azowie to ród bogów nordyckich\"}",
+            "score": 0.19999999999999996,
+            "error": false,
+            "elapsed": 2.829
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-092",
+            "raw_answer": "{\"odpowiedź\": \"35 lat\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.516
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-093",
+            "raw_answer": "{\"odpowiedź\": \"kinetyka\"}",
+            "score": 0.375,
+            "error": false,
+            "elapsed": 2.469
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-094",
+            "raw_answer": "{\"odpowiedź\": \"w Tatrach\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.569
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-095",
+            "raw_answer": "{\"odpowiedź\": \"pchnięciu kulą\"}",
+            "score": 0.875,
+            "error": false,
+            "elapsed": 2.815
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-096",
+            "raw_answer": "{\"odpowiedź\": \"Teatro alla Scala\"}",
+            "score": 0.47058823529411764,
+            "error": false,
+            "elapsed": 1.499
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-097",
+            "raw_answer": "{\"odpowiedź\": \"Mustafa Kemal\"}",
+            "score": 0.6190476190476191,
+            "error": false,
+            "elapsed": 2.57
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-098",
+            "raw_answer": "{\"odpowiedź\": \"serena i venus\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.375
+          },
+          {
+            "prompt_id": "polqa-punctuation_all-099",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.262
+          }
+        ]
+      }
+    },
+    "punctuation_inner": {
+      "polqa": {
+        "num_sampled": 100,
+        "score_sum": 69.700921,
+        "score_avg": 0.697009,
+        "error_count": 0,
+        "elapsed_sec": 193.35,
+        "questions": [
+          {
+            "prompt_id": "polqa-punctuation_inner-000",
+            "raw_answer": "{\"odpowiedź\": \"Sulejman Wspaniały\"}",
+            "score": 0.4444444444444444,
+            "error": false,
+            "elapsed": 1.814
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-001",
+            "raw_answer": "{\"odpowiedź\": \"NBP\"}",
+            "score": 0.15000000000000002,
+            "error": false,
+            "elapsed": 1.122
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-002",
+            "raw_answer": "{\"odpowiedź\": \"Wierszem\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.463
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-003",
+            "raw_answer": "{\"odpowiedź\": \"Tak, Aleje Ujazdowskie należą do Traktu Królewskiego.\"}",
+            "score": 0.05660377358490565,
+            "error": false,
+            "elapsed": 3.209
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-004",
+            "raw_answer": "{\"odpowiedź\": \"W wosku\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.537
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-005",
+            "raw_answer": "{\"odpowiedź\": \"Marsa\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.024
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-006",
+            "raw_answer": "{\"odpowiedź\": \"50 Hz\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.457
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-007",
+            "raw_answer": "{\"odpowiedź\": \"Argentynski\"}",
+            "score": 0.7692307692307692,
+            "error": false,
+            "elapsed": 1.354
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-008",
+            "raw_answer": "{\"odpowiedź\": \"Alfred Szklarski\"}",
+            "score": 0.5625,
+            "error": false,
+            "elapsed": 1.622
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-009",
+            "raw_answer": "{\"odpowiedź\": \"Niemcy\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.547
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-010",
+            "raw_answer": "{\"odpowiedź\": \"Vespa simillima\"}",
+            "score": 0.06666666666666665,
+            "error": false,
+            "elapsed": 1.517
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-011",
+            "raw_answer": "{\"odpowiedź\": \"Bank\"}",
+            "score": 0.1333333333333333,
+            "error": false,
+            "elapsed": 1.654
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-012",
+            "raw_answer": "{\"odpowiedź\": \"ZSRR\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.505
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-013",
+            "raw_answer": "{\"odpowiedź\": \"Wielbłądowatych\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.418
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-014",
+            "raw_answer": "{\"odpowiedź\": \"USS Nautilus\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 2.08
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-015",
+            "raw_answer": "{\"odpowiedź\": \"Towarzystwo Jezusowe\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.719
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-016",
+            "raw_answer": "{\"odpowiedź\": \"Myto\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.036
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-017",
+            "raw_answer": "{\"odpowiedź\": \"Ignacy Loyola\"}",
+            "score": 0.46153846153846156,
+            "error": false,
+            "elapsed": 1.758
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-018",
+            "raw_answer": "{\"odpowiedź\": \"Nil\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.161
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-019",
+            "raw_answer": "{\"odpowiedź\": \"Endeavour\"}",
+            "score": 0.11111111111111116,
+            "error": false,
+            "elapsed": 2.449
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-020",
+            "raw_answer": "{\"odpowiedź\": \"Przednie koło\"}",
+            "score": 0.6153846153846154,
+            "error": false,
+            "elapsed": 1.515
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-021",
+            "raw_answer": "{\"odpowiedź\": \"Kieślowski\"}",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 1.526
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-022",
+            "raw_answer": "{\"odpowiedź\": \"Sowy\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.498
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-023",
+            "raw_answer": "{\"odpowiedź\": \"Christiaan Huygens\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.369
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-024",
+            "raw_answer": "{\"odpowiedź\": \"Hannibal\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.871
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-025",
+            "raw_answer": "{\"odpowiedź\": \"admirał\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.299
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-026",
+            "raw_answer": "{\"odpowiedź\": \"Nowej Zelandii\"}",
+            "score": 0.8235294117647058,
+            "error": false,
+            "elapsed": 2.206
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-027",
+            "raw_answer": "{\"odpowiedź\": \"Makler lub broker\"}",
+            "score": 0.3529411764705882,
+            "error": false,
+            "elapsed": 1.67
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-028",
+            "raw_answer": "{\"odpowiedź\": \"Cztery państwa\"}",
+            "score": 0.4285714285714286,
+            "error": false,
+            "elapsed": 2.201
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-029",
+            "raw_answer": "{\"odpowiedź\": \"1918 roku\"}",
+            "score": 0.2222222222222222,
+            "error": false,
+            "elapsed": 1.72
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-030",
+            "raw_answer": "{\"odpowiedź\": \"Vincent van Gogh\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.411
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-031",
+            "raw_answer": "{\"odpowiedź\": \"Rzeka Nogat\"}",
+            "score": 0.36363636363636365,
+            "error": false,
+            "elapsed": 1.898
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-032",
+            "raw_answer": "{\"odpowiedź\": \"Szymon Cyrenejczyk\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.543
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-033",
+            "raw_answer": "{\"odpowiedź\": \"azjatyckie tygrysy\"}",
+            "score": 0.38888888888888884,
+            "error": false,
+            "elapsed": 1.73
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-034",
+            "raw_answer": "{\"odpowiedź\": \"Tak, tury żyły w Polsce.\"}",
+            "score": 0.125,
+            "error": false,
+            "elapsed": 2.196
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-035",
+            "raw_answer": "{\"odpowiedź\": \"Jan Sebastian Bach\"}",
+            "score": 0.7222222222222222,
+            "error": false,
+            "elapsed": 1.184
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-036",
+            "raw_answer": "{\"odpowiedź\": \"Tarczycy\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.709
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-037",
+            "raw_answer": "{\"odpowiedź\": \"Nad Nogatem\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.339
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-038",
+            "raw_answer": "{\"odpowiedź\": \"Krakowa\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.255
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-039",
+            "raw_answer": "{\"odpowiedź\": \"Szpilki\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.474
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-040",
+            "raw_answer": "{\"odpowiedź\": \"Katowicach\"}",
+            "score": 0.8333333333333334,
+            "error": false,
+            "elapsed": 1.71
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-041",
+            "raw_answer": "{\"odpowiedź\": \"Trójprzymierze\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.177
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-042",
+            "raw_answer": "{\"odpowiedź\": \"W wieku 100 lat\"}",
+            "score": 0.1333333333333333,
+            "error": false,
+            "elapsed": 1.857
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-043",
+            "raw_answer": "{\"odpowiedź\": \"Księga Powtórzonego Prawa\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.214
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-044",
+            "raw_answer": "{\"odpowiedź\": \"Architekturze\"}",
+            "score": 0.8461538461538461,
+            "error": false,
+            "elapsed": 1.99
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-045",
+            "raw_answer": "{\"odpowiedź\": \"Nie\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.421
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-046",
+            "raw_answer": "{\"odpowiedź\": \"Sforza\"}",
+            "score": 0.5555555555555556,
+            "error": false,
+            "elapsed": 2.144
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-047",
+            "raw_answer": "{\"odpowiedź\": \"Łożyska\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.488
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-048",
+            "raw_answer": "{\"odpowiedź\": \"6 stycznia\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.686
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-049",
+            "raw_answer": "{\"odpowiedź\": \"Wiesław\"}",
+            "score": 0.5555555555555556,
+            "error": false,
+            "elapsed": 2.844
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-050",
+            "raw_answer": "{\"odpowiedź\": \"Józef Piłsudski\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.773
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-051",
+            "raw_answer": "{\"odpowiedź\": \"Dęblinie\"}",
+            "score": 0.8,
+            "error": false,
+            "elapsed": 1.32
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-052",
+            "raw_answer": "{\"odpowiedź\": \"Sonda\"}",
+            "score": 0.7142857142857143,
+            "error": false,
+            "elapsed": 1.975
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-053",
+            "raw_answer": "{\"odpowiedź\": \"Grzegorz I Wielki\"}",
+            "score": 0.5882352941176471,
+            "error": false,
+            "elapsed": 2.503
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-054",
+            "raw_answer": "{\"odpowiedź\": \"Nie wiem\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.091
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-055",
+            "raw_answer": "{\"odpowiedź\": \"Flota brytyjska\"}",
+            "score": 0.2666666666666667,
+            "error": false,
+            "elapsed": 1.452
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-056",
+            "raw_answer": "{\"odpowiedź\": \"Pragi\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.996
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-057",
+            "raw_answer": "{\"odpowiedź\": \"Charles Lindbergh\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.415
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-058",
+            "raw_answer": "{\"odpowiedź\": \"Michael H. Hart\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.018
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-059",
+            "raw_answer": "{\"odpowiedź\": \"Jan Heweliusz\"}",
+            "score": 0.23076923076923073,
+            "error": false,
+            "elapsed": 1.261
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-060",
+            "raw_answer": "{\"odpowiedź\": \"Nadir arab\"}",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 1.467
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-061",
+            "raw_answer": "{\"odpowiedź\": \"Laos, Mjanmę, Tajlandię, Wietnam i Malezję\"}",
+            "score": 0.09523809523809523,
+            "error": false,
+            "elapsed": 2.641
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-062",
+            "raw_answer": "{\"odpowiedź\": \"język programowania Pascal\"}",
+            "score": 0.23076923076923073,
+            "error": false,
+            "elapsed": 2.639
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-063",
+            "raw_answer": "{\"odpowiedź\": \"Mikołaj I\"}",
+            "score": 0.1428571428571429,
+            "error": false,
+            "elapsed": 2.281
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-064",
+            "raw_answer": "{\"odpowiedź\": \"Wierzbie\"}",
+            "score": 0.7272727272727273,
+            "error": false,
+            "elapsed": 1.455
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-065",
+            "raw_answer": "{\"odpowiedź\": \"Poziomy ciśnienia atmosferycznego\"}",
+            "score": 0.2727272727272727,
+            "error": false,
+            "elapsed": 2.579
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-066",
+            "raw_answer": "{\"odpowiedź\": \"W XVII wieku\"}",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 1.528
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-067",
+            "raw_answer": "{\"odpowiedź\": \"Beaumarchais\"}",
+            "score": 0.631578947368421,
+            "error": false,
+            "elapsed": 2.473
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-068",
+            "raw_answer": "{\"odpowiedź\": \"Steven Spielberg\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.648
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-069",
+            "raw_answer": "{\"odpowiedź\": \"S styczna do okręgu\"}",
+            "score": 0.368421052631579,
+            "error": false,
+            "elapsed": 1.663
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-070",
+            "raw_answer": "{\"odpowiedź\": \"Negro spirituals\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.712
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-071",
+            "raw_answer": "{\"odpowiedź\": \"Elle Haddewarim\"}",
+            "score": 0.1333333333333333,
+            "error": false,
+            "elapsed": 2.396
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-072",
+            "raw_answer": "{\"odpowiedź\": \"Nogat\"}",
+            "score": 0.4545454545454546,
+            "error": false,
+            "elapsed": 1.799
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-073",
+            "raw_answer": "{\"odpowiedź\": \"Barcelona\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 1.803
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-074",
+            "raw_answer": "{\"odpowiedź\": \"1912\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 1.502
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-075",
+            "raw_answer": "{\"odpowiedź\": \"Polski\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 2.622
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-076",
+            "raw_answer": "{\"odpowiedź\": \"Hiszpania\"}",
+            "score": 0.7272727272727273,
+            "error": false,
+            "elapsed": 2.115
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-077",
+            "raw_answer": "{\"odpowiedź\": \"Aleksandria\"}",
+            "score": 0.7692307692307692,
+            "error": false,
+            "elapsed": 1.685
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-078",
+            "raw_answer": "{\"odpowiedź\": \"CPN\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.525
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-079",
+            "raw_answer": "{\"odpowiedź\": \"Austro-Węgry\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.906
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-080",
+            "raw_answer": "{\"odpowiedź\": \"Ludobójstwo\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.997
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-081",
+            "raw_answer": "{\"odpowiedź\": \"W kwietniu\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.583
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-082",
+            "raw_answer": "{\"odpowiedź\": \"Hawaje\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.796
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-083",
+            "raw_answer": "{\"odpowiedź\": \"Karta Narodów Zjednoczonych\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.094
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-084",
+            "raw_answer": "{\"odpowiedź\": \"Paleozoyk\"}",
+            "score": 0.8888888888888888,
+            "error": false,
+            "elapsed": 1.47
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-085",
+            "raw_answer": "{\"odpowiedź\": \"1983\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 1.9
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-086",
+            "raw_answer": "{\"odpowiedź\": \"Feldmarszałek Wilhelm Keitel\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.705
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-087",
+            "raw_answer": "{\"odpowiedź\": \"Kutia\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.826
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-088",
+            "raw_answer": "{\"odpowiedź\": \"Jan Heweliusz\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.282
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-089",
+            "raw_answer": "{\"odpowiedź\": \"Św. Krzysztof\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.345
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-090",
+            "raw_answer": "{\"odpowiedź\": \"Informacja nie jest podana\"}",
+            "score": 0.23076923076923073,
+            "error": false,
+            "elapsed": 1.549
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-091",
+            "raw_answer": "{\"odpowiedź\": \"Azowie to ród bogów nordyckich\"}",
+            "score": 0.19999999999999996,
+            "error": false,
+            "elapsed": 2.862
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-092",
+            "raw_answer": "{\"odpowiedź\": \"35 lat\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.437
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-093",
+            "raw_answer": "{\"odpowiedź\": \"Kinetyka\"}",
+            "score": 0.375,
+            "error": false,
+            "elapsed": 2.478
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-094",
+            "raw_answer": "{\"odpowiedź\": \"W Tatrach\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.593
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-095",
+            "raw_answer": "{\"odpowiedź\": \"Pchnięciu kulą\"}",
+            "score": 0.875,
+            "error": false,
+            "elapsed": 2.847
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-096",
+            "raw_answer": "{\"odpowiedź\": \"Teatro alla Scala\"}",
+            "score": 0.47058823529411764,
+            "error": false,
+            "elapsed": 1.499
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-097",
+            "raw_answer": "{\"odpowiedź\": \"Mustafa Kemal\"}",
+            "score": 0.6190476190476191,
+            "error": false,
+            "elapsed": 2.575
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-098",
+            "raw_answer": "{\"odpowiedź\": \"Serena i Venus\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.392
+          },
+          {
+            "prompt_id": "polqa-punctuation_inner-099",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.261
+          }
+        ]
+      }
+    },
+    "spelling_10%": {
+      "polqa": {
+        "num_sampled": 100,
+        "score_sum": 70.244449,
+        "score_avg": 0.702444,
+        "error_count": 0,
+        "elapsed_sec": 203.41,
+        "questions": [
+          {
+            "prompt_id": "polqa-spelling_10%-000",
+            "raw_answer": "{\"odpowiedź\": \"Sulejman Wspaniały\"}",
+            "score": 0.4444444444444444,
+            "error": false,
+            "elapsed": 1.841
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-001",
+            "raw_answer": "{\"odpowiedź\": \"NBP\"}",
+            "score": 0.15000000000000002,
+            "error": false,
+            "elapsed": 1.131
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-002",
+            "raw_answer": "{\"odpowiedź\": \"Wierszem\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.561
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-003",
+            "raw_answer": "{\"odpowiedź\": \"Tak, Trakt Królewski prowadzi do Alei Ójazdowskich.\"}",
+            "score": 0.05882352941176472,
+            "error": false,
+            "elapsed": 3.246
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-004",
+            "raw_answer": "{\"odpowiedź\": \"wosku\"}",
+            "score": 0.7142857142857143,
+            "error": false,
+            "elapsed": 2.714
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-005",
+            "raw_answer": "{\"odpowiedź\": \"Marsa\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.079
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-006",
+            "raw_answer": "{\"odpowiedź\": \"50 Hz\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.557
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-007",
+            "raw_answer": "{\"odpowiedź\": \"Ernesto „Che” Góevara był argentyński\"}",
+            "score": 0.2702702702702703,
+            "error": false,
+            "elapsed": 1.79
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-008",
+            "raw_answer": "{\"odpowiedź\": \"Alfred Szklarski\"}",
+            "score": 0.5625,
+            "error": false,
+            "elapsed": 1.696
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-009",
+            "raw_answer": "{\"odpowiedź\": \"Niemcy\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.635
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-010",
+            "raw_answer": "{\"odpowiedź\": \"Vespa simillima\"}",
+            "score": 0.06666666666666665,
+            "error": false,
+            "elapsed": 1.536
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-011",
+            "raw_answer": "{\"odpowiedź\": \"Bank ogłosił upadłość\"}",
+            "score": 0.04761904761904767,
+            "error": false,
+            "elapsed": 1.987
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-012",
+            "raw_answer": "{\"odpowiedź\": \"ZSRR\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.555
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-013",
+            "raw_answer": "{\"odpowiedź\": \"Wielbłądowatych\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.59
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-014",
+            "raw_answer": "{\"odpowiedź\": \"USS Nautilus\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 2.108
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-015",
+            "raw_answer": "{\"odpowiedź\": \"Towarzystwo Jezusowe\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.846
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-016",
+            "raw_answer": "{\"odpowiedź\": \"Myto\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.151
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-017",
+            "raw_answer": "{\"odpowiedź\": \"Ignacy Loyola\"}",
+            "score": 0.46153846153846156,
+            "error": false,
+            "elapsed": 1.819
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-018",
+            "raw_answer": "{\"odpowiedź\": \"Nil\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.219
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-019",
+            "raw_answer": "{\"odpowiedź\": \"Discovery\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.479
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-020",
+            "raw_answer": "{\"odpowiedź\": \"Przednie koło\"}",
+            "score": 0.6153846153846154,
+            "error": false,
+            "elapsed": 1.635
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-021",
+            "raw_answer": "{\"odpowiedź\": \"Wojciech Kijowski\"}",
+            "score": 0.4,
+            "error": false,
+            "elapsed": 1.737
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-022",
+            "raw_answer": "{\"odpowiedź\": \"Sowy\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.539
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-023",
+            "raw_answer": "{\"odpowiedź\": \"Hristiaan Huygens\"}",
+            "score": 0.9444444444444444,
+            "error": false,
+            "elapsed": 1.409
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-024",
+            "raw_answer": "{\"odpowiedź\": \"Hannibal\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.011
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-025",
+            "raw_answer": "{\"odpowiedź\": \"admirał\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.33
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-026",
+            "raw_answer": "{\"odpowiedź\": \"Nowej Zelandii\"}",
+            "score": 0.8235294117647058,
+            "error": false,
+            "elapsed": 2.307
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-027",
+            "raw_answer": "{\"odpowiedź\": \"Maklerzy i brokerzy\"}",
+            "score": 0.3793103448275862,
+            "error": false,
+            "elapsed": 1.826
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-028",
+            "raw_answer": "{\"odpowiedź\": \"Cztery państwa\"}",
+            "score": 0.4285714285714286,
+            "error": false,
+            "elapsed": 2.326
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-029",
+            "raw_answer": "{\"odpowiedź\": \"1918\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 1.731
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-030",
+            "raw_answer": "{\"odpowiedź\": \"Vincent van Gogh\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.549
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-031",
+            "raw_answer": "{\"odpowiedź\": \"Nogat\"}",
+            "score": 0.4545454545454546,
+            "error": false,
+            "elapsed": 1.881
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-032",
+            "raw_answer": "{\"odpowiedź\": \"Szymon Cyrenejczyk\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.565
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-033",
+            "raw_answer": "{\"odpowiedź\": \"azjatyckie tygrysy\"}",
+            "score": 0.38888888888888884,
+            "error": false,
+            "elapsed": 1.736
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-034",
+            "raw_answer": "{\"odpowiedź\": \"Tak, tury zasiedliły obszary w Polsce.\"}",
+            "score": 0.07894736842105265,
+            "error": false,
+            "elapsed": 2.44
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-035",
+            "raw_answer": "{\"odpowiedź\": \"Jan Sebastian Bach\"}",
+            "score": 0.7222222222222222,
+            "error": false,
+            "elapsed": 1.223
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-036",
+            "raw_answer": "{\"odpowiedź\": \"Tarczycy\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.761
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-037",
+            "raw_answer": "{\"odpowiedź\": \"Nad Nogatem\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.435
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-038",
+            "raw_answer": "{\"odpowiedź\": \"Krakowa\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.287
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-039",
+            "raw_answer": "{\"odpowiedź\": \"Szpilki\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.652
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-040",
+            "raw_answer": "{\"odpowiedź\": \"Katowicach\"}",
+            "score": 0.8333333333333334,
+            "error": false,
+            "elapsed": 1.683
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-041",
+            "raw_answer": "{\"odpowiedź\": \"Trójprzymierze\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.469
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-042",
+            "raw_answer": "{\"odpowiedź\": \"Witold Gombrowicz urodził się w 1904 roku.\"}",
+            "score": 0.04761904761904767,
+            "error": false,
+            "elapsed": 2.329
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-043",
+            "raw_answer": "{\"odpowiedź\": \"Księga Powtórzonego Prawa\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.515
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-044",
+            "raw_answer": "{\"odpowiedź\": \"Architekturze\"}",
+            "score": 0.8461538461538461,
+            "error": false,
+            "elapsed": 2.118
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-045",
+            "raw_answer": "{\"odpowiedź\": \"Nie\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.633
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-046",
+            "raw_answer": "{\"odpowiedź\": \"Sfoża\"}",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 2.22
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-047",
+            "raw_answer": "{\"odpowiedź\": \"Łożyska\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.738
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-048",
+            "raw_answer": "{\"odpowiedź\": \"6 stycznia\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.818
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-049",
+            "raw_answer": "{\"odpowiedź\": \"Wiesław\"}",
+            "score": 0.5555555555555556,
+            "error": false,
+            "elapsed": 3.079
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-050",
+            "raw_answer": "{\"odpowiedź\": \"Józef Piłsódski\"}",
+            "score": 0.9333333333333333,
+            "error": false,
+            "elapsed": 2.906
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-051",
+            "raw_answer": "{\"odpowiedź\": \"Dęblin\"}",
+            "score": 0.6,
+            "error": false,
+            "elapsed": 1.288
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-052",
+            "raw_answer": "{\"odpowiedź\": \"Sonda\"}",
+            "score": 0.7142857142857143,
+            "error": false,
+            "elapsed": 2.157
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-053",
+            "raw_answer": "{\"odpowiedź\": \"Gregor I Wielki\"}",
+            "score": 0.4666666666666667,
+            "error": false,
+            "elapsed": 2.63
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-054",
+            "raw_answer": "{\"odpowiedź\": \"Tak\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.058
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-055",
+            "raw_answer": "{\"odpowiedź\": \"Flota brytyjska\"}",
+            "score": 0.2666666666666667,
+            "error": false,
+            "elapsed": 1.488
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-056",
+            "raw_answer": "{\"odpowiedź\": \"Warszawy\"}",
+            "score": 0.25,
+            "error": false,
+            "elapsed": 2.065
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-057",
+            "raw_answer": "{\"odpowiedź\": \"Charles Lindbergh\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.554
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-058",
+            "raw_answer": "{\"odpowiedź\": \"Michael H. Hart\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.192
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-059",
+            "raw_answer": "{\"odpowiedź\": \"Jan\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.144
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-060",
+            "raw_answer": "{\"odpowiedź\": \"Nadir\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.439
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-061",
+            "raw_answer": "{\"odpowiedź\": \"Khmerowie zamieszkiwali Laos, Mjanmę, Tajlandię, Wietnam i Malezję.\"}",
+            "score": 0.08955223880597019,
+            "error": false,
+            "elapsed": 3.09
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-062",
+            "raw_answer": "{\"odpowiedź\": \"Pascal\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.434
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-063",
+            "raw_answer": "{\"odpowiedź\": \"Mikołaj I\"}",
+            "score": 0.1428571428571429,
+            "error": false,
+            "elapsed": 2.398
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-064",
+            "raw_answer": "{\"odpowiedź\": \"Wierzbie\"}",
+            "score": 0.7272727272727273,
+            "error": false,
+            "elapsed": 1.445
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-065",
+            "raw_answer": "{\"odpowiedź\": \"Poziomy sondowania\"}",
+            "score": 0.2222222222222222,
+            "error": false,
+            "elapsed": 2.543
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-066",
+            "raw_answer": "{\"odpowiedź\": \"W XVII wieku\"}",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 1.574
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-067",
+            "raw_answer": "{\"odpowiedź\": \"Beaumarchais\"}",
+            "score": 0.631578947368421,
+            "error": false,
+            "elapsed": 2.694
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-068",
+            "raw_answer": "{\"odpowiedź\": \"Joe Johnston\"}",
+            "score": 0.125,
+            "error": false,
+            "elapsed": 2.877
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-069",
+            "raw_answer": "{\"odpowiedź\": \"S styczna\"}",
+            "score": 0.7777777777777778,
+            "error": false,
+            "elapsed": 1.535
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-070",
+            "raw_answer": "{\"odpowiedź\": \"Negro spirituals\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.76
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-071",
+            "raw_answer": "{\"odpowiedź\": \"Elle Chaddewarim\"}",
+            "score": 0.125,
+            "error": false,
+            "elapsed": 2.597
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-072",
+            "raw_answer": "{\"odpowiedź\": \"Rzeką Nogat\"}",
+            "score": 0.36363636363636365,
+            "error": false,
+            "elapsed": 1.979
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-073",
+            "raw_answer": "{\"odpowiedź\": \"Barcelona\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 1.991
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-074",
+            "raw_answer": "{\"odpowiedź\": \"1912 roku\"}",
+            "score": 0.2222222222222222,
+            "error": false,
+            "elapsed": 1.601
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-075",
+            "raw_answer": "{\"odpowiedź\": \"Personel ambasady RP w Damaszku\"}",
+            "score": 0.12903225806451613,
+            "error": false,
+            "elapsed": 2.974
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-076",
+            "raw_answer": "{\"odpowiedź\": \"Hiszpania\"}",
+            "score": 0.7272727272727273,
+            "error": false,
+            "elapsed": 2.246
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-077",
+            "raw_answer": "{\"odpowiedź\": \"Aleksandria\"}",
+            "score": 0.7692307692307692,
+            "error": false,
+            "elapsed": 1.748
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-078",
+            "raw_answer": "{\"odpowiedź\": \"CPN\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.567
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-079",
+            "raw_answer": "{\"odpowiedź\": \"Austro-Węgry\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.974
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-080",
+            "raw_answer": "{\"odpowiedź\": \"Lódobójstwo\"}",
+            "score": 0.9090909090909091,
+            "error": false,
+            "elapsed": 2.172
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-081",
+            "raw_answer": "{\"odpowiedź\": \"April\"}",
+            "score": 0.09999999999999998,
+            "error": false,
+            "elapsed": 1.577
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-082",
+            "raw_answer": "{\"odpowiedź\": \"Hawaj\"}",
+            "score": 0.8333333333333334,
+            "error": false,
+            "elapsed": 1.868
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-083",
+            "raw_answer": "{\"odpowiedź\": \"Karta Narodów Zjednoczonych\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.182
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-084",
+            "raw_answer": "{\"odpowiedź\": \"Paleozoyk\"}",
+            "score": 0.8888888888888888,
+            "error": false,
+            "elapsed": 1.59
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-085",
+            "raw_answer": "{\"odpowiedź\": \"1983\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 2.059
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-086",
+            "raw_answer": "{\"odpowiedź\": \"Feldmarszałek Wilhelm Keitel\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.726
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-087",
+            "raw_answer": "{\"odpowiedź\": \"Kutia\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.923
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-088",
+            "raw_answer": "{\"odpowiedź\": \"Jan Heweliusz\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.357
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-089",
+            "raw_answer": "{\"odpowiedź\": \"Św. Krzysztof\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.401
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-090",
+            "raw_answer": "{\"odpowiedź\": \"Anita Lipnicka\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.504
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-091",
+            "raw_answer": "{\"odpowiedź\": \"Nordyckich\"}",
+            "score": 0.4285714285714286,
+            "error": false,
+            "elapsed": 2.764
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-092",
+            "raw_answer": "{\"odpowiedź\": \"35 lat\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.493
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-093",
+            "raw_answer": "{\"odpowiedź\": \"Kinetyka\"}",
+            "score": 0.375,
+            "error": false,
+            "elapsed": 2.628
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-094",
+            "raw_answer": "{\"odpowiedź\": \"Tatrzach\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 1.677
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-095",
+            "raw_answer": "{\"odpowiedź\": \"Pchnięciu kulą\"}",
+            "score": 0.875,
+            "error": false,
+            "elapsed": 2.868
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-096",
+            "raw_answer": "{\"odpowiedź\": \"Teatro alla Scala\"}",
+            "score": 0.47058823529411764,
+            "error": false,
+            "elapsed": 1.575
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-097",
+            "raw_answer": "{\"odpowiedź\": \"Mustafa Kemal\"}",
+            "score": 0.6190476190476191,
+            "error": false,
+            "elapsed": 2.716
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-098",
+            "raw_answer": "{\"odpowiedź\": \"Serena i Venus\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.494
+          },
+          {
+            "prompt_id": "polqa-spelling_10%-099",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.336
+          }
+        ]
+      }
+    },
+    "spelling_40%": {
+      "polqa": {
+        "num_sampled": 100,
+        "score_sum": 62.911565,
+        "score_avg": 0.629116,
+        "error_count": 0,
+        "elapsed_sec": 212.79,
+        "questions": [
+          {
+            "prompt_id": "polqa-spelling_40%-000",
+            "raw_answer": "{\"odpowiedź\": \"Sulejman Wspaniały\"}",
+            "score": 0.4444444444444444,
+            "error": false,
+            "elapsed": 1.964
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-001",
+            "raw_answer": "{\"odpowiedź\": \"NBP\"}",
+            "score": 0.15000000000000002,
+            "error": false,
+            "elapsed": 1.155
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-002",
+            "raw_answer": "{\"odpowiedź\": \"Wierszem\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.503
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-003",
+            "raw_answer": "{\"odpowiedź\": \"Tak, Aleje Ójazdowskie należą do Traktu Krulewskiego.\"}",
+            "score": 0.05660377358490565,
+            "error": false,
+            "elapsed": 3.357
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-004",
+            "raw_answer": "{\"odpowiedź\": \"w wosku\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.819
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-005",
+            "raw_answer": "{\"odpowiedź\": \"Boga wojny Marsa\"}",
+            "score": 0.3125,
+            "error": false,
+            "elapsed": 2.329
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-006",
+            "raw_answer": "{\"odpowiedź\": \"50 Hz\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.865
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-007",
+            "raw_answer": "{\"odpowiedź\": \"Ernesto „Che” Góevara był argentyńskim rewolucjonistą.\"}",
+            "score": 0.2592592592592593,
+            "error": false,
+            "elapsed": 2.039
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-008",
+            "raw_answer": "{\"odpowiedź\": \"Alfred Szklarski\"}",
+            "score": 0.5625,
+            "error": false,
+            "elapsed": 1.778
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-009",
+            "raw_answer": "{\"odpowiedź\": \"Niemcy\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.702
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-010",
+            "raw_answer": "{\"odpowiedź\": \"Vespa simillima\"}",
+            "score": 0.06666666666666665,
+            "error": false,
+            "elapsed": 1.588
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-011",
+            "raw_answer": "{\"odpowiedź\": \"Bank of America\"}",
+            "score": 0.1333333333333333,
+            "error": false,
+            "elapsed": 1.842
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-012",
+            "raw_answer": "{\"odpowiedź\": \"Był Prezydentem ZSRR.\"}",
+            "score": 0.19047619047619047,
+            "error": false,
+            "elapsed": 1.776
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-013",
+            "raw_answer": "{\"odpowiedź\": \"Wielbłądowatyh\"}",
+            "score": 0.9333333333333333,
+            "error": false,
+            "elapsed": 2.723
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-014",
+            "raw_answer": "{\"odpowiedź\": \"USS Nautilus\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 2.114
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-015",
+            "raw_answer": "{\"odpowiedź\": \"Towarzystwo Jezusowe\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.872
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-016",
+            "raw_answer": "{\"odpowiedź\": \"Myto\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.191
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-017",
+            "raw_answer": "{\"odpowiedź\": \"Ignacy Loyola\"}",
+            "score": 0.46153846153846156,
+            "error": false,
+            "elapsed": 1.879
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-018",
+            "raw_answer": "{\"odpowiedź\": \"Rzeka Afryka\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.363
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-019",
+            "raw_answer": "{\"odpowiedź\": \"Discovery\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.647
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-020",
+            "raw_answer": "{\"odpowiedź\": \"Przednie koło było większe.\"}",
+            "score": 0.2962962962962963,
+            "error": false,
+            "elapsed": 1.83
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-021",
+            "raw_answer": "{\"odpowiedź\": \"Kieslowski\"}",
+            "score": 0.44999999999999996,
+            "error": false,
+            "elapsed": 1.648
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-022",
+            "raw_answer": "{\"odpowiedź\": \"Sowy\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.584
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-023",
+            "raw_answer": "{\"odpowiedź\": \"Hristiaan Huygens\"}",
+            "score": 0.9444444444444444,
+            "error": false,
+            "elapsed": 1.503
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-024",
+            "raw_answer": "{\"odpowiedź\": \"Hannibal\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.292
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-025",
+            "raw_answer": "{\"odpowiedź\": \"Admirał\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.349
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-026",
+            "raw_answer": "{\"odpowiedź\": \"Nowej Zelandii\"}",
+            "score": 0.8235294117647058,
+            "error": false,
+            "elapsed": 2.468
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-027",
+            "raw_answer": "{\"odpowiedź\": \"Maklerzy i brokerzy\"}",
+            "score": 0.3793103448275862,
+            "error": false,
+            "elapsed": 1.948
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-028",
+            "raw_answer": "{\"odpowiedź\": \"Cztery państwa\"}",
+            "score": 0.4285714285714286,
+            "error": false,
+            "elapsed": 2.36
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-029",
+            "raw_answer": "{\"odpowiedź\": \"1918 roku\"}",
+            "score": 0.2222222222222222,
+            "error": false,
+            "elapsed": 1.856
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-030",
+            "raw_answer": "{\"odpowiedź\": \"Vincent van Gogh\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.737
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-031",
+            "raw_answer": "{\"odpowiedź\": \"Rzekie Nogat\"}",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 2.076
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-032",
+            "raw_answer": "{\"odpowiedź\": \"Szymon Cyrenejczyk\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.583
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-033",
+            "raw_answer": "{\"odpowiedź\": \"azjatyckie tygrysy\"}",
+            "score": 0.38888888888888884,
+            "error": false,
+            "elapsed": 1.837
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-034",
+            "raw_answer": "{\"odpowiedź\": \"Tak, tóry rzyły w Polsce.\"}",
+            "score": 0.12,
+            "error": false,
+            "elapsed": 2.403
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-035",
+            "raw_answer": "{\"odpowiedź\": \"Jan Sebastian Bah\"}",
+            "score": 0.7647058823529411,
+            "error": false,
+            "elapsed": 1.227
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-036",
+            "raw_answer": "{\"odpowiedź\": \"Tarczycy\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.834
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-037",
+            "raw_answer": "{\"odpowiedź\": \"Nad Nogatem\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.549
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-038",
+            "raw_answer": "{\"odpowiedź\": \"Krakowa\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.303
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-039",
+            "raw_answer": "{\"odpowiedź\": \"Szpilki\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.741
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-040",
+            "raw_answer": "{\"odpowiedź\": \"Katowicach\"}",
+            "score": 0.8333333333333334,
+            "error": false,
+            "elapsed": 1.705
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-041",
+            "raw_answer": "{\"odpowiedź\": \"Trójprzymierze\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.602
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-042",
+            "raw_answer": "{\"odpowiedź\": \"XX wieku\"}",
+            "score": 0.125,
+            "error": false,
+            "elapsed": 1.794
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-043",
+            "raw_answer": "{\"odpowiedź\": \"Księga Powtuzonego Prawa\"}",
+            "score": 0.92,
+            "error": false,
+            "elapsed": 3.595
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-044",
+            "raw_answer": "{\"odpowiedź\": \"Architektura\"}",
+            "score": 0.9166666666666666,
+            "error": false,
+            "elapsed": 2.203
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-045",
+            "raw_answer": "{\"odpowiedź\": \"Nie\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.853
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-046",
+            "raw_answer": "{\"odpowiedź\": \"Sfoża\"}",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 2.312
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-047",
+            "raw_answer": "{\"odpowiedź\": \"Łożyska\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.887
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-048",
+            "raw_answer": "{\"odpowiedź\": \"6 stycznia\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.857
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-049",
+            "raw_answer": "{\"odpowiedź\": \"Wiesław\"}",
+            "score": 0.5555555555555556,
+            "error": false,
+            "elapsed": 3.175
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-050",
+            "raw_answer": "{\"odpowiedź\": \"Juzef Piłsudski\"}",
+            "score": 0.9333333333333333,
+            "error": false,
+            "elapsed": 2.874
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-051",
+            "raw_answer": "{\"odpowiedź\": \"Demblin\"}",
+            "score": 0.4,
+            "error": false,
+            "elapsed": 1.254
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-052",
+            "raw_answer": "{\"odpowiedź\": \"Sonda\"}",
+            "score": 0.7142857142857143,
+            "error": false,
+            "elapsed": 2.31
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-053",
+            "raw_answer": "{\"odpowiedź\": \"Papież Gregor Wielki\"}",
+            "score": 0.30000000000000004,
+            "error": false,
+            "elapsed": 2.761
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-054",
+            "raw_answer": "{\"odpowiedź\": \"Tak\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.079
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-055",
+            "raw_answer": "{\"odpowiedź\": \"Flota brytyjska\"}",
+            "score": 0.2666666666666667,
+            "error": false,
+            "elapsed": 1.493
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-056",
+            "raw_answer": "{\"odpowiedź\": \"Obrona Pragi\"}",
+            "score": 0.41666666666666663,
+            "error": false,
+            "elapsed": 2.227
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-057",
+            "raw_answer": "{\"odpowiedź\": \"Harles Lindbergh\"}",
+            "score": 0.9411764705882353,
+            "error": false,
+            "elapsed": 2.724
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-058",
+            "raw_answer": "{\"odpowiedź\": \"Mihael H. Hart\"}",
+            "score": 0.9333333333333333,
+            "error": false,
+            "elapsed": 2.427
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-059",
+            "raw_answer": "{\"odpowiedź\": \"Jan Cheweliósz\"}",
+            "score": 0.2142857142857143,
+            "error": false,
+            "elapsed": 1.283
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-060",
+            "raw_answer": "{\"odpowiedź\": \"Nadir\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.565
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-061",
+            "raw_answer": "{\"odpowiedź\": \"Państwo Kchmeruw\"}",
+            "score": 0.125,
+            "error": false,
+            "elapsed": 2.363
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-062",
+            "raw_answer": "{\"odpowiedź\": \"Język programowania Pascal\"}",
+            "score": 0.23076923076923073,
+            "error": false,
+            "elapsed": 2.756
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-063",
+            "raw_answer": "{\"odpowiedź\": \"Mikołaj I\"}",
+            "score": 0.1428571428571429,
+            "error": false,
+            "elapsed": 2.522
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-064",
+            "raw_answer": "{\"odpowiedź\": \"Wieżbie\"}",
+            "score": 0.5454545454545454,
+            "error": false,
+            "elapsed": 1.43
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-065",
+            "raw_answer": "{\"odpowiedź\": \"Poziomy milibarów\"}",
+            "score": 0.11764705882352944,
+            "error": false,
+            "elapsed": 2.693
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-066",
+            "raw_answer": "{\"odpowiedź\": \"W XVII wieku\"}",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 1.682
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-067",
+            "raw_answer": "{\"odpowiedź\": \"Beaumarchais\"}",
+            "score": 0.631578947368421,
+            "error": false,
+            "elapsed": 2.87
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-068",
+            "raw_answer": "{\"odpowiedź\": \"Steven Spielberg\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.946
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-069",
+            "raw_answer": "{\"odpowiedź\": \"s styczna do okręgu\"}",
+            "score": 0.368421052631579,
+            "error": false,
+            "elapsed": 1.807
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-070",
+            "raw_answer": "{\"odpowiedź\": \"Negro spiritóals\"}",
+            "score": 0.9375,
+            "error": false,
+            "elapsed": 1.869
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-071",
+            "raw_answer": "{\"odpowiedź\": \"Elle Chaddewarim\"}",
+            "score": 0.125,
+            "error": false,
+            "elapsed": 2.576
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-072",
+            "raw_answer": "{\"odpowiedź\": \"Nogat\"}",
+            "score": 0.4545454545454546,
+            "error": false,
+            "elapsed": 1.973
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-073",
+            "raw_answer": "{\"odpowiedź\": \"Barcelona\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 2.158
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-074",
+            "raw_answer": "{\"odpowiedź\": \"1912\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 1.578
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-075",
+            "raw_answer": "{\"odpowiedź\": \"Władz Libanu\"}",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 3.021
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-076",
+            "raw_answer": "{\"odpowiedź\": \"Hiszpania\"}",
+            "score": 0.7272727272727273,
+            "error": false,
+            "elapsed": 2.388
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-077",
+            "raw_answer": "{\"odpowiedź\": \"Aleksandria\"}",
+            "score": 0.7692307692307692,
+            "error": false,
+            "elapsed": 1.937
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-078",
+            "raw_answer": "{\"odpowiedź\": \"Biało-niebieskie barwy CPN\"}",
+            "score": 0.11538461538461542,
+            "error": false,
+            "elapsed": 1.999
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-079",
+            "raw_answer": "{\"odpowiedź\": \"Austeriasko-Węgry\"}",
+            "score": 0.7058823529411764,
+            "error": false,
+            "elapsed": 2.146
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-080",
+            "raw_answer": "{\"odpowiedź\": \"Zbrodnia lódobujstwa\"}",
+            "score": 0.4,
+            "error": false,
+            "elapsed": 2.435
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-081",
+            "raw_answer": "{\"odpowiedź\": \"Aprilis\"}",
+            "score": 0.19999999999999996,
+            "error": false,
+            "elapsed": 1.718
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-082",
+            "raw_answer": "{\"odpowiedź\": \"Hawaje\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.881
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-083",
+            "raw_answer": "{\"odpowiedź\": \"Zgromadzenie Ogulne Organizaci Narodów Zjednoczonyh\"}",
+            "score": 0.4509803921568627,
+            "error": false,
+            "elapsed": 2.613
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-084",
+            "raw_answer": "{\"odpowiedź\": \"Paleozoyk\"}",
+            "score": 0.8888888888888888,
+            "error": false,
+            "elapsed": 1.608
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-085",
+            "raw_answer": "{\"odpowiedź\": \"1983\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 2.149
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-086",
+            "raw_answer": "{\"odpowiedź\": \"Feldmarszałek Wilhelm Keitel\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.736
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-087",
+            "raw_answer": "{\"odpowiedź\": \"Kutia\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.022
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-088",
+            "raw_answer": "{\"odpowiedź\": \"Jan Cheweliósz\"}",
+            "score": 0.8571428571428572,
+            "error": false,
+            "elapsed": 1.337
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-089",
+            "raw_answer": "{\"odpowiedź\": \"Św. Krzysztof\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.398
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-090",
+            "raw_answer": "{\"odpowiedź\": \"Nie podano\"}",
+            "score": 0.2857142857142857,
+            "error": false,
+            "elapsed": 1.542
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-091",
+            "raw_answer": "{\"odpowiedź\": \"Bogów nordyckich\"}",
+            "score": 0.3125,
+            "error": false,
+            "elapsed": 2.91
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-092",
+            "raw_answer": "{\"odpowiedź\": \"35 lat\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.576
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-093",
+            "raw_answer": "{\"odpowiedź\": \"Dynamikę\"}",
+            "score": 0.875,
+            "error": false,
+            "elapsed": 2.781
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-094",
+            "raw_answer": "{\"odpowiedź\": \"województwo małopolskie\"}",
+            "score": 0.13043478260869568,
+            "error": false,
+            "elapsed": 1.921
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-095",
+            "raw_answer": "{\"odpowiedź\": \"Pięcioboju kulowym\"}",
+            "score": 0.2777777777777778,
+            "error": false,
+            "elapsed": 3.014
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-096",
+            "raw_answer": "{\"odpowiedź\": \"Teatro alla Scala\"}",
+            "score": 0.47058823529411764,
+            "error": false,
+            "elapsed": 1.611
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-097",
+            "raw_answer": "{\"odpowiedź\": \"Móstafa Kemal, zwany Atatürkiem\"}",
+            "score": 0.6451612903225806,
+            "error": false,
+            "elapsed": 3.189
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-098",
+            "raw_answer": "{\"odpowiedź\": \"Serene i Venus\"}",
+            "score": 0.9285714285714286,
+            "error": false,
+            "elapsed": 2.648
+          },
+          {
+            "prompt_id": "polqa-spelling_40%-099",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.341
+          }
+        ]
+      }
+    },
+    "typo_10%": {
+      "polqa": {
+        "num_sampled": 100,
+        "score_sum": 68.598141,
+        "score_avg": 0.685981,
+        "error_count": 0,
+        "elapsed_sec": 203.91,
+        "questions": [
+          {
+            "prompt_id": "polqa-typo_10%-000",
+            "raw_answer": "{\"odpowiedź\": \"Sulejman Wspaniały\"}",
+            "score": 0.4444444444444444,
+            "error": false,
+            "elapsed": 1.852
+          },
+          {
+            "prompt_id": "polqa-typo_10%-001",
+            "raw_answer": "{\"odpowiedź\": \"NBP\"}",
+            "score": 0.15000000000000002,
+            "error": false,
+            "elapsed": 1.122
+          },
+          {
+            "prompt_id": "polqa-typo_10%-002",
+            "raw_answer": "{\"odpowiedź\": \"Wierszem\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.497
+          },
+          {
+            "prompt_id": "polqa-typo_10%-003",
+            "raw_answer": "{\"odpowiedź\": \"Tak, Aleje Ujazdowskie należą do Traktu Królewskiego.\"}",
+            "score": 0.05660377358490565,
+            "error": false,
+            "elapsed": 3.211
+          },
+          {
+            "prompt_id": "polqa-typo_10%-004",
+            "raw_answer": "{\"odpowiedź\": \"Wosk\"}",
+            "score": 0.5714285714285714,
+            "error": false,
+            "elapsed": 2.636
+          },
+          {
+            "prompt_id": "polqa-typo_10%-005",
+            "raw_answer": "{\"odpowiedź\": \"Boga wojny Marsa\"}",
+            "score": 0.3125,
+            "error": false,
+            "elapsed": 2.269
+          },
+          {
+            "prompt_id": "polqa-typo_10%-006",
+            "raw_answer": "{\"odpowiedź\": \"50 Hz\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.62
+          },
+          {
+            "prompt_id": "polqa-typo_10%-007",
+            "raw_answer": "{\"odpowiedź\": \"Rewolucjonista\"}",
+            "score": 0.1578947368421053,
+            "error": false,
+            "elapsed": 1.476
+          },
+          {
+            "prompt_id": "polqa-typo_10%-008",
+            "raw_answer": "{\"odpowiedź\": \"Alfred Szklarski\"}",
+            "score": 0.5625,
+            "error": false,
+            "elapsed": 1.686
+          },
+          {
+            "prompt_id": "polqa-typo_10%-009",
+            "raw_answer": "{\"odpowiedź\": \"Niemcy\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.609
+          },
+          {
+            "prompt_id": "polqa-typo_10%-010",
+            "raw_answer": "{\"odpowiedź\": \"Vespa simillima\"}",
+            "score": 0.06666666666666665,
+            "error": false,
+            "elapsed": 1.542
+          },
+          {
+            "prompt_id": "polqa-typo_10%-011",
+            "raw_answer": "{\"odpowiedź\": \"Bank of America\"}",
+            "score": 0.1333333333333333,
+            "error": false,
+            "elapsed": 1.758
+          },
+          {
+            "prompt_id": "polqa-typo_10%-012",
+            "raw_answer": "{\"odpowiedź\": \"ZSRR\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.515
+          },
+          {
+            "prompt_id": "polqa-typo_10%-013",
+            "raw_answer": "{\"odpowiedź\": \"Wielbłądowatych\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.54
+          },
+          {
+            "prompt_id": "polqa-typo_10%-014",
+            "raw_answer": "{\"odpowiedź\": \"USS Nautilus (SSN-571)\"}",
+            "score": 0.36363636363636365,
+            "error": false,
+            "elapsed": 2.486
+          },
+          {
+            "prompt_id": "polqa-typo_10%-015",
+            "raw_answer": "{\"odpowiedź\": \"Towarzyszy Jezusowego\"}",
+            "score": 0.7619047619047619,
+            "error": false,
+            "elapsed": 1.751
+          },
+          {
+            "prompt_id": "polqa-typo_10%-016",
+            "raw_answer": "{\"odpowiedź\": \"Myto\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.165
+          },
+          {
+            "prompt_id": "polqa-typo_10%-017",
+            "raw_answer": "{\"odpowiedź\": \"Ignacy Loyola\"}",
+            "score": 0.46153846153846156,
+            "error": false,
+            "elapsed": 1.874
+          },
+          {
+            "prompt_id": "polqa-typo_10%-018",
+            "raw_answer": "{\"odpowiedź\": \"Nil\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.147
+          },
+          {
+            "prompt_id": "polqa-typo_10%-019",
+            "raw_answer": "{\"odpowiedź\": \"Discovery\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.525
+          },
+          {
+            "prompt_id": "polqa-typo_10%-020",
+            "raw_answer": "{\"odpowiedź\": \"Przednie koło było większe.\"}",
+            "score": 0.2962962962962963,
+            "error": false,
+            "elapsed": 1.791
+          },
+          {
+            "prompt_id": "polqa-typo_10%-021",
+            "raw_answer": "{\"odpowiedź\": \"Kieslowski\"}",
+            "score": 0.44999999999999996,
+            "error": false,
+            "elapsed": 1.569
+          },
+          {
+            "prompt_id": "polqa-typo_10%-022",
+            "raw_answer": "{\"odpowiedź\": \"Sowy\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.599
+          },
+          {
+            "prompt_id": "polqa-typo_10%-023",
+            "raw_answer": "{\"odpowiedź\": \"Chrsitiaan Huygens\"}",
+            "score": 0.8888888888888888,
+            "error": false,
+            "elapsed": 1.515
+          },
+          {
+            "prompt_id": "polqa-typo_10%-024",
+            "raw_answer": "{\"odpowiedź\": \"Hannibal\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.043
+          },
+          {
+            "prompt_id": "polqa-typo_10%-025",
+            "raw_answer": "{\"odpowiedź\": \"admirał\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.32
+          },
+          {
+            "prompt_id": "polqa-typo_10%-026",
+            "raw_answer": "{\"odpowiedź\": \"Nowej Zelandii\"}",
+            "score": 0.8235294117647058,
+            "error": false,
+            "elapsed": 2.302
+          },
+          {
+            "prompt_id": "polqa-typo_10%-027",
+            "raw_answer": "{\"odpowiedź\": \"Makler lub broker\"}",
+            "score": 0.3529411764705882,
+            "error": false,
+            "elapsed": 1.713
+          },
+          {
+            "prompt_id": "polqa-typo_10%-028",
+            "raw_answer": "{\"odpowiedź\": \"Cztery państwa\"}",
+            "score": 0.4285714285714286,
+            "error": false,
+            "elapsed": 2.341
+          },
+          {
+            "prompt_id": "polqa-typo_10%-029",
+            "raw_answer": "{\"odpowiedź\": \"1918 roku\"}",
+            "score": 0.2222222222222222,
+            "error": false,
+            "elapsed": 1.792
+          },
+          {
+            "prompt_id": "polqa-typo_10%-030",
+            "raw_answer": "{\"odpowiedź\": \"Vincent van Gogh\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.562
+          },
+          {
+            "prompt_id": "polqa-typo_10%-031",
+            "raw_answer": "{\"odpowiedź\": \"nad rzeką Nogat\"}",
+            "score": 0.4666666666666667,
+            "error": false,
+            "elapsed": 2.018
+          },
+          {
+            "prompt_id": "polqa-typo_10%-032",
+            "raw_answer": "{\"odpowiedź\": \"Szymon Cyrenejczyk\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.555
+          },
+          {
+            "prompt_id": "polqa-typo_10%-033",
+            "raw_answer": "{\"odpowiedź\": \"azjatyckie tgryys\"}",
+            "score": 0.2941176470588235,
+            "error": false,
+            "elapsed": 1.744
+          },
+          {
+            "prompt_id": "polqa-typo_10%-034",
+            "raw_answer": "{\"odpowiedź\": \"Tak, żuły tury w Polsce.\"}",
+            "score": 0.125,
+            "error": false,
+            "elapsed": 2.315
+          },
+          {
+            "prompt_id": "polqa-typo_10%-035",
+            "raw_answer": "{\"odpowiedź\": \"Jan Sebastian Bach\"}",
+            "score": 0.7222222222222222,
+            "error": false,
+            "elapsed": 1.168
+          },
+          {
+            "prompt_id": "polqa-typo_10%-036",
+            "raw_answer": "{\"odpowiedź\": \"Tarczycy\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.7
+          },
+          {
+            "prompt_id": "polqa-typo_10%-037",
+            "raw_answer": "{\"odpowiedź\": \"Nad Nogatem\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.415
+          },
+          {
+            "prompt_id": "polqa-typo_10%-038",
+            "raw_answer": "{\"odpowiedź\": \"Prądnik i Podgórze\"}",
+            "score": 0.16666666666666663,
+            "error": false,
+            "elapsed": 1.497
+          },
+          {
+            "prompt_id": "polqa-typo_10%-039",
+            "raw_answer": "{\"odpowiedź\": \"Szpilki\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.605
+          },
+          {
+            "prompt_id": "polqa-typo_10%-040",
+            "raw_answer": "{\"odpowiedź\": \"Katowicach\"}",
+            "score": 0.8333333333333334,
+            "error": false,
+            "elapsed": 1.759
+          },
+          {
+            "prompt_id": "polqa-typo_10%-041",
+            "raw_answer": "{\"odpowiedź\": \"Trójprzymierze\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.412
+          },
+          {
+            "prompt_id": "polqa-typo_10%-042",
+            "raw_answer": "{\"odpowiedź\": \"W wieku 99 lat\"}",
+            "score": 0.1428571428571429,
+            "error": false,
+            "elapsed": 1.876
+          },
+          {
+            "prompt_id": "polqa-typo_10%-043",
+            "raw_answer": "{\"odpowiedź\": \"Księga Poqtórzonego Prawa\"}",
+            "score": 0.96,
+            "error": false,
+            "elapsed": 3.579
+          },
+          {
+            "prompt_id": "polqa-typo_10%-044",
+            "raw_answer": "{\"odpowiedź\": \"Architekturze\"}",
+            "score": 0.8461538461538461,
+            "error": false,
+            "elapsed": 2.156
+          },
+          {
+            "prompt_id": "polqa-typo_10%-045",
+            "raw_answer": "{\"odpowiedź\": \"Nie\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.65
+          },
+          {
+            "prompt_id": "polqa-typo_10%-046",
+            "raw_answer": "{\"odpowiedź\": \"Sforza\"}",
+            "score": 0.5555555555555556,
+            "error": false,
+            "elapsed": 2.214
+          },
+          {
+            "prompt_id": "polqa-typo_10%-047",
+            "raw_answer": "{\"odpowiedź\": \"Łożyska\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.754
+          },
+          {
+            "prompt_id": "polqa-typo_10%-048",
+            "raw_answer": "{\"odpowiedź\": \"6 stycznia\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.856
+          },
+          {
+            "prompt_id": "polqa-typo_10%-049",
+            "raw_answer": "{\"odpowiedź\": \"Wiesław\"}",
+            "score": 0.5555555555555556,
+            "error": false,
+            "elapsed": 3.113
+          },
+          {
+            "prompt_id": "polqa-typo_10%-050",
+            "raw_answer": "{\"odpowiedź\": \"Józef Piłsudski\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.957
+          },
+          {
+            "prompt_id": "polqa-typo_10%-051",
+            "raw_answer": "{\"odpowiedź\": \"Dęblinie\"}",
+            "score": 0.8,
+            "error": false,
+            "elapsed": 1.329
+          },
+          {
+            "prompt_id": "polqa-typo_10%-052",
+            "raw_answer": "{\"odpowiedź\": \"Sonda\"}",
+            "score": 0.7142857142857143,
+            "error": false,
+            "elapsed": 2.198
+          },
+          {
+            "prompt_id": "polqa-typo_10%-053",
+            "raw_answer": "{\"odpowiedź\": \"Grzegorz I Wielki\"}",
+            "score": 0.5882352941176471,
+            "error": false,
+            "elapsed": 2.597
+          },
+          {
+            "prompt_id": "polqa-typo_10%-054",
+            "raw_answer": "{\"odpowiedź\": \"Tak\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.071
+          },
+          {
+            "prompt_id": "polqa-typo_10%-055",
+            "raw_answer": "{\"odpowiedź\": \"Flota brytyjska\"}",
+            "score": 0.2666666666666667,
+            "error": false,
+            "elapsed": 1.515
+          },
+          {
+            "prompt_id": "polqa-typo_10%-056",
+            "raw_answer": "{\"odpowiedź\": \"Ostrołękę i Warszawę\"}",
+            "score": 0.09999999999999998,
+            "error": false,
+            "elapsed": 2.288
+          },
+          {
+            "prompt_id": "polqa-typo_10%-057",
+            "raw_answer": "{\"odpowiedź\": \"Charles Lindbergh\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.654
+          },
+          {
+            "prompt_id": "polqa-typo_10%-058",
+            "raw_answer": "{\"odpowiedź\": \"Michael H. Hart\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.223
+          },
+          {
+            "prompt_id": "polqa-typo_10%-059",
+            "raw_answer": "{\"odpowiedź\": \"Jan Heweliusz\"}",
+            "score": 0.23076923076923073,
+            "error": false,
+            "elapsed": 1.301
+          },
+          {
+            "prompt_id": "polqa-typo_10%-060",
+            "raw_answer": "{\"odpowiedź\": \"Nadir\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.465
+          },
+          {
+            "prompt_id": "polqa-typo_10%-061",
+            "raw_answer": "{\"odpowiedź\": \"Laos, Mjanmę, Tajlandię, Wietnam i Malezję\"}",
+            "score": 0.09523809523809523,
+            "error": false,
+            "elapsed": 2.747
+          },
+          {
+            "prompt_id": "polqa-typo_10%-062",
+            "raw_answer": "{\"odpowiedź\": \"Pascal\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.503
+          },
+          {
+            "prompt_id": "polqa-typo_10%-063",
+            "raw_answer": "{\"odpowiedź\": \"Mikołaj I\"}",
+            "score": 0.1428571428571429,
+            "error": false,
+            "elapsed": 2.378
+          },
+          {
+            "prompt_id": "polqa-typo_10%-064",
+            "raw_answer": "{\"odpowiedź\": \"Tak\"}",
+            "score": 0.09090909090909094,
+            "error": false,
+            "elapsed": 1.418
+          },
+          {
+            "prompt_id": "polqa-typo_10%-065",
+            "raw_answer": "{\"odpowiedź\": \"Ciśnienie atmosferyczne\"}",
+            "score": 0.3913043478260869,
+            "error": false,
+            "elapsed": 2.554
+          },
+          {
+            "prompt_id": "polqa-typo_10%-066",
+            "raw_answer": "{\"odpowiedź\": \"W XVII wieku\"}",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 1.545
+          },
+          {
+            "prompt_id": "polqa-typo_10%-067",
+            "raw_answer": "{\"odpowiedź\": \"Beaumarchais\"}",
+            "score": 0.631578947368421,
+            "error": false,
+            "elapsed": 2.69
+          },
+          {
+            "prompt_id": "polqa-typo_10%-068",
+            "raw_answer": "{\"odpowiedź\": \"Steven Spielberg\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.791
+          },
+          {
+            "prompt_id": "polqa-typo_10%-069",
+            "raw_answer": "{\"odpowiedź\": \"S styczna\"}",
+            "score": 0.7777777777777778,
+            "error": false,
+            "elapsed": 1.56
+          },
+          {
+            "prompt_id": "polqa-typo_10%-070",
+            "raw_answer": "{\"odpowiedź\": \"Negro spirituals\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.773
+          },
+          {
+            "prompt_id": "polqa-typo_10%-071",
+            "raw_answer": "{\"odpowiedź\": \"Księga Powtórzonego Prawa\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.773
+          },
+          {
+            "prompt_id": "polqa-typo_10%-072",
+            "raw_answer": "{\"odpowiedź\": \"Nogat\"}",
+            "score": 0.4545454545454546,
+            "error": false,
+            "elapsed": 1.929
+          },
+          {
+            "prompt_id": "polqa-typo_10%-073",
+            "raw_answer": "{\"odpowiedź\": \"Barcelona\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 1.915
+          },
+          {
+            "prompt_id": "polqa-typo_10%-074",
+            "raw_answer": "{\"odpowiedź\": \"1912\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 1.528
+          },
+          {
+            "prompt_id": "polqa-typo_10%-075",
+            "raw_answer": "{\"odpowiedź\": \"Republika Południowej Afryki\"}",
+            "score": 0.1428571428571429,
+            "error": false,
+            "elapsed": 2.986
+          },
+          {
+            "prompt_id": "polqa-typo_10%-076",
+            "raw_answer": "{\"odpowiedź\": \"Hispania\"}",
+            "score": 0.6363636363636364,
+            "error": false,
+            "elapsed": 2.205
+          },
+          {
+            "prompt_id": "polqa-typo_10%-077",
+            "raw_answer": "{\"odpowiedź\": \"Aleksandria\"}",
+            "score": 0.7692307692307692,
+            "error": false,
+            "elapsed": 1.742
+          },
+          {
+            "prompt_id": "polqa-typo_10%-078",
+            "raw_answer": "{\"odpowiedź\": \"CPN\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.539
+          },
+          {
+            "prompt_id": "polqa-typo_10%-079",
+            "raw_answer": "{\"odpowiedź\": \"Austro-Węgry\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.933
+          },
+          {
+            "prompt_id": "polqa-typo_10%-080",
+            "raw_answer": "{\"odpowiedź\": \"Zbrodnię ludobójstwa\"}",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 2.292
+          },
+          {
+            "prompt_id": "polqa-typo_10%-081",
+            "raw_answer": "{\"odpowiedź\": \"Aprilu\"}",
+            "score": 0.19999999999999996,
+            "error": false,
+            "elapsed": 1.611
+          },
+          {
+            "prompt_id": "polqa-typo_10%-082",
+            "raw_answer": "{\"odpowiedź\": \"Hawaje\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.801
+          },
+          {
+            "prompt_id": "polqa-typo_10%-083",
+            "raw_answer": "{\"odpowiedź\": \"Karta Narodów Zjednoczonych\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.228
+          },
+          {
+            "prompt_id": "polqa-typo_10%-084",
+            "raw_answer": "{\"odpowiedź\": \"Paleozoyk\"}",
+            "score": 0.8888888888888888,
+            "error": false,
+            "elapsed": 1.619
+          },
+          {
+            "prompt_id": "polqa-typo_10%-085",
+            "raw_answer": "{\"odpowiedź\": \"1983\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 2.04
+          },
+          {
+            "prompt_id": "polqa-typo_10%-086",
+            "raw_answer": "{\"odpowiedź\": \"Feldmarszałek Wilhelm Keitel\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.719
+          },
+          {
+            "prompt_id": "polqa-typo_10%-087",
+            "raw_answer": "{\"odpowiedź\": \"Kutia\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.906
+          },
+          {
+            "prompt_id": "polqa-typo_10%-088",
+            "raw_answer": "{\"odpowiedź\": \"Jan Heweliusz\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.354
+          },
+          {
+            "prompt_id": "polqa-typo_10%-089",
+            "raw_answer": "{\"odpowiedź\": \"Św. Krzysztof\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.382
+          },
+          {
+            "prompt_id": "polqa-typo_10%-090",
+            "raw_answer": "{\"odpowiedź\": \"Anita Lipnicja\"}",
+            "score": 0.9285714285714286,
+            "error": false,
+            "elapsed": 1.489
+          },
+          {
+            "prompt_id": "polqa-typo_10%-091",
+            "raw_answer": "{\"odpowiedź\": \"Nordyckich\"}",
+            "score": 0.4285714285714286,
+            "error": false,
+            "elapsed": 2.729
+          },
+          {
+            "prompt_id": "polqa-typo_10%-092",
+            "raw_answer": "{\"odpowiedź\": \"35 lat\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.552
+          },
+          {
+            "prompt_id": "polqa-typo_10%-093",
+            "raw_answer": "{\"odpowiedź\": \"Kinetyka\"}",
+            "score": 0.375,
+            "error": false,
+            "elapsed": 2.65
+          },
+          {
+            "prompt_id": "polqa-typo_10%-094",
+            "raw_answer": "{\"odpowiedź\": \"W Tatrach\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.645
+          },
+          {
+            "prompt_id": "polqa-typo_10%-095",
+            "raw_answer": "{\"odpowiedź\": \"Pchnięcie kulą\"}",
+            "score": 0.8125,
+            "error": false,
+            "elapsed": 2.856
+          },
+          {
+            "prompt_id": "polqa-typo_10%-096",
+            "raw_answer": "{\"odpowiedź\": \"Teatro alla Scala\"}",
+            "score": 0.47058823529411764,
+            "error": false,
+            "elapsed": 1.593
+          },
+          {
+            "prompt_id": "polqa-typo_10%-097",
+            "raw_answer": "{\"odpowiedź\": \"Mustafa Kemalk, nazywany później Atatürkiem\"}",
+            "score": 0.4883720930232558,
+            "error": false,
+            "elapsed": 3.195
+          },
+          {
+            "prompt_id": "polqa-typo_10%-098",
+            "raw_answer": "{\"odpowiedź\": \"Serena i Venus\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.551
+          },
+          {
+            "prompt_id": "polqa-typo_10%-099",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.352
+          }
+        ]
+      }
+    },
+    "typo_40%": {
+      "polqa": {
+        "num_sampled": 100,
+        "score_sum": 59.299973,
+        "score_avg": 0.593,
+        "error_count": 0,
+        "elapsed_sec": 213.51,
+        "questions": [
+          {
+            "prompt_id": "polqa-typo_40%-000",
+            "raw_answer": "{\"odpowiedź\": \"Sulejman Wspaniały\"}",
+            "score": 0.4444444444444444,
+            "error": false,
+            "elapsed": 1.921
+          },
+          {
+            "prompt_id": "polqa-typo_40%-001",
+            "raw_answer": "{\"odpowiedź\": \"NBP\"}",
+            "score": 0.15000000000000002,
+            "error": false,
+            "elapsed": 1.16
+          },
+          {
+            "prompt_id": "polqa-typo_40%-002",
+            "raw_answer": "{\"odpowiedź\": \"Tak, jest to wiersz.\"}",
+            "score": 0.25,
+            "error": false,
+            "elapsed": 1.76
+          },
+          {
+            "prompt_id": "polqa-typo_40%-003",
+            "raw_answer": "{\"odpowiedź\": \"Tak, Alwy Ujazdowske należą do Traktu Królewskiego.\"}",
+            "score": 0.05882352941176472,
+            "error": false,
+            "elapsed": 3.344
+          },
+          {
+            "prompt_id": "polqa-typo_40%-004",
+            "raw_answer": "{\"odpowiedź\": \"woksie\"}",
+            "score": 0.2857142857142857,
+            "error": false,
+            "elapsed": 2.694
+          },
+          {
+            "prompt_id": "polqa-typo_40%-005",
+            "raw_answer": "{\"odpowiedź\": \"Marsa\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.184
+          },
+          {
+            "prompt_id": "polqa-typo_40%-006",
+            "raw_answer": "{\"odpowiedź\": \"50 Hz\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.725
+          },
+          {
+            "prompt_id": "polqa-typo_40%-007",
+            "raw_answer": "{\"odpowiedź\": \"Ernesto „Vhe” Guevara był żołnierzem argentyńskiej rewolucji.\"}",
+            "score": 0.21311475409836067,
+            "error": false,
+            "elapsed": 2.133
+          },
+          {
+            "prompt_id": "polqa-typo_40%-008",
+            "raw_answer": "{\"odpowiedź\": \"Alfred Szklarski\"}",
+            "score": 0.5625,
+            "error": false,
+            "elapsed": 1.717
+          },
+          {
+            "prompt_id": "polqa-typo_40%-009",
+            "raw_answer": "{\"odpowiedź\": \"Niemcy\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.742
+          },
+          {
+            "prompt_id": "polqa-typo_40%-010",
+            "raw_answer": "{\"odpowiedź\": \"Vespa simillina\"}",
+            "score": 0.06666666666666665,
+            "error": false,
+            "elapsed": 1.597
+          },
+          {
+            "prompt_id": "polqa-typo_40%-011",
+            "raw_answer": "{\"odpowiedź\": \"Bank of America\"}",
+            "score": 0.1333333333333333,
+            "error": false,
+            "elapsed": 1.83
+          },
+          {
+            "prompt_id": "polqa-typo_40%-012",
+            "raw_answer": "{\"odpowiedź\": \"Był Prezydentem ZSRR\"}",
+            "score": 0.19999999999999996,
+            "error": false,
+            "elapsed": 1.797
+          },
+          {
+            "prompt_id": "polqa-typo_40%-013",
+            "raw_answer": "{\"odpowiedź\": \"Wielbłądoatych\"}",
+            "score": 0.9333333333333333,
+            "error": false,
+            "elapsed": 2.602
+          },
+          {
+            "prompt_id": "polqa-typo_40%-014",
+            "raw_answer": "{\"odpowiedź\": \"USS Nautilus (SSN-571)\"}",
+            "score": 0.36363636363636365,
+            "error": false,
+            "elapsed": 2.56
+          },
+          {
+            "prompt_id": "polqa-typo_40%-015",
+            "raw_answer": "{\"odpowiedź\": \"Towarzysytwa Jezusowego\"}",
+            "score": 0.8260869565217391,
+            "error": false,
+            "elapsed": 1.825
+          },
+          {
+            "prompt_id": "polqa-typo_40%-016",
+            "raw_answer": "{\"odpowiedź\": \"Myto\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.258
+          },
+          {
+            "prompt_id": "polqa-typo_40%-017",
+            "raw_answer": "{\"odpowiedź\": \"Ignacego Loyolę\"}",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 1.967
+          },
+          {
+            "prompt_id": "polqa-typo_40%-018",
+            "raw_answer": "{\"odpowiedź\": \"Nil\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.172
+          },
+          {
+            "prompt_id": "polqa-typo_40%-019",
+            "raw_answer": "{\"odpowiedź\": \"Columbia, Challenger, Discovery, Atlantis, Endeavour\"}",
+            "score": 0.17307692307692313,
+            "error": false,
+            "elapsed": 3.034
+          },
+          {
+            "prompt_id": "polqa-typo_40%-020",
+            "raw_answer": "{\"odpowiedź\": \"Przednie koło było większe.\"}",
+            "score": 0.2962962962962963,
+            "error": false,
+            "elapsed": 1.808
+          },
+          {
+            "prompt_id": "polqa-typo_40%-021",
+            "raw_answer": "{\"odpowiedź\": \"Kieślowski\"}",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 1.699
+          },
+          {
+            "prompt_id": "polqa-typo_40%-022",
+            "raw_answer": "{\"odpowiedź\": \"Bphatrowie\"}",
+            "score": 0.19999999999999996,
+            "error": false,
+            "elapsed": 1.732
+          },
+          {
+            "prompt_id": "polqa-typo_40%-023",
+            "raw_answer": "{\"odpowiedź\": \"Christiaan Huygens\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.455
+          },
+          {
+            "prompt_id": "polqa-typo_40%-024",
+            "raw_answer": "{\"odpowiedź\": \"Hannibal\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.164
+          },
+          {
+            "prompt_id": "polqa-typo_40%-025",
+            "raw_answer": "{\"odpowiedź\": \"Admirał\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.345
+          },
+          {
+            "prompt_id": "polqa-typo_40%-026",
+            "raw_answer": "{\"odpowiedź\": \"Nowej Zelandii\"}",
+            "score": 0.8235294117647058,
+            "error": false,
+            "elapsed": 2.326
+          },
+          {
+            "prompt_id": "polqa-typo_40%-027",
+            "raw_answer": "{\"odpowiedź\": \"Makler i broker\"}",
+            "score": 0.4,
+            "error": false,
+            "elapsed": 1.835
+          },
+          {
+            "prompt_id": "polqa-typo_40%-028",
+            "raw_answer": "{\"odpowiedź\": \"Cztery państwa\"}",
+            "score": 0.4285714285714286,
+            "error": false,
+            "elapsed": 2.452
+          },
+          {
+            "prompt_id": "polqa-typo_40%-029",
+            "raw_answer": "{\"odpowiedź\": \"1918\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 1.768
+          },
+          {
+            "prompt_id": "polqa-typo_40%-030",
+            "raw_answer": "{\"odpowiedź\": \"Vincent van Gogh\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.679
+          },
+          {
+            "prompt_id": "polqa-typo_40%-031",
+            "raw_answer": "{\"odpowiedź\": \"Rzeka Noat\"}",
+            "score": 0.2727272727272727,
+            "error": false,
+            "elapsed": 2.003
+          },
+          {
+            "prompt_id": "polqa-typo_40%-032",
+            "raw_answer": "{\"odpowiedź\": \"Szymon Cyrenejczyk\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.589
+          },
+          {
+            "prompt_id": "polqa-typo_40%-033",
+            "raw_answer": "{\"odpowiedź\": \"Państwa nowo uprzemysłowione\"}",
+            "score": 0.1428571428571429,
+            "error": false,
+            "elapsed": 1.94
+          },
+          {
+            "prompt_id": "polqa-typo_40%-034",
+            "raw_answer": "{\"odpowiedź\": \"Tury żuły w Polsce.\"}",
+            "score": 0.052631578947368474,
+            "error": false,
+            "elapsed": 2.316
+          },
+          {
+            "prompt_id": "polqa-typo_40%-035",
+            "raw_answer": "{\"odpowiedź\": \"Sebastian Bach\"}",
+            "score": 0.3571428571428571,
+            "error": false,
+            "elapsed": 1.122
+          },
+          {
+            "prompt_id": "polqa-typo_40%-036",
+            "raw_answer": "{\"odpowiedź\": \"Gruczol przysadki\"}",
+            "score": 0.17647058823529416,
+            "error": false,
+            "elapsed": 1.798
+          },
+          {
+            "prompt_id": "polqa-typo_40%-037",
+            "raw_answer": "{\"odpowiedź\": \"Nad Nogfatem\"}",
+            "score": 0.9166666666666666,
+            "error": false,
+            "elapsed": 1.552
+          },
+          {
+            "prompt_id": "polqa-typo_40%-038",
+            "raw_answer": "{\"odpowiedź\": \"Kraków\"}",
+            "score": 0.7142857142857143,
+            "error": false,
+            "elapsed": 1.344
+          },
+          {
+            "prompt_id": "polqa-typo_40%-039",
+            "raw_answer": "{\"odpowiedź\": \"Szpilki\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.705
+          },
+          {
+            "prompt_id": "polqa-typo_40%-040",
+            "raw_answer": "{\"odpowiedź\": \"Katowicach\"}",
+            "score": 0.8333333333333334,
+            "error": false,
+            "elapsed": 1.768
+          },
+          {
+            "prompt_id": "polqa-typo_40%-041",
+            "raw_answer": "{\"odpowiedź\": \"Trójprzymierze\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.553
+          },
+          {
+            "prompt_id": "polqa-typo_40%-042",
+            "raw_answer": "{\"odpowiedź\": \"XX wiek\"}",
+            "score": 0.1428571428571429,
+            "error": false,
+            "elapsed": 1.837
+          },
+          {
+            "prompt_id": "polqa-typo_40%-043",
+            "raw_answer": "{\"odpowiedź\": \"Księga Potępionego Prawa\"}",
+            "score": 0.84,
+            "error": false,
+            "elapsed": 3.503
+          },
+          {
+            "prompt_id": "polqa-typo_40%-044",
+            "raw_answer": "{\"odpowiedź\": \"Architektura\"}",
+            "score": 0.9166666666666666,
+            "error": false,
+            "elapsed": 2.193
+          },
+          {
+            "prompt_id": "polqa-typo_40%-045",
+            "raw_answer": "{\"odpowiedź\": \"Nie, Karpaty nie leżą w całości w Polsce.\"}",
+            "score": 0.07317073170731703,
+            "error": false,
+            "elapsed": 3.426
+          },
+          {
+            "prompt_id": "polqa-typo_40%-046",
+            "raw_answer": "{\"odpowiedź\": \"Sforza\"}",
+            "score": 0.5555555555555556,
+            "error": false,
+            "elapsed": 2.356
+          },
+          {
+            "prompt_id": "polqa-typo_40%-047",
+            "raw_answer": "{\"odpowiedź\": \"Łożyska\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.959
+          },
+          {
+            "prompt_id": "polqa-typo_40%-048",
+            "raw_answer": "{\"odpowiedź\": \"6 stycznia\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.954
+          },
+          {
+            "prompt_id": "polqa-typo_40%-049",
+            "raw_answer": "{\"odpowiedź\": \"Przewodniczący Władysław Gomukka\"}",
+            "score": 0.28125,
+            "error": false,
+            "elapsed": 3.507
+          },
+          {
+            "prompt_id": "polqa-typo_40%-050",
+            "raw_answer": "{\"odpowiedź\": \"Józef Pułaski\"}",
+            "score": 0.7333333333333334,
+            "error": false,
+            "elapsed": 3.011
+          },
+          {
+            "prompt_id": "polqa-typo_40%-051",
+            "raw_answer": "{\"odpowiedź\": \"W 2011 roku\"}",
+            "score": 0.18181818181818177,
+            "error": false,
+            "elapsed": 1.433
+          },
+          {
+            "prompt_id": "polqa-typo_40%-052",
+            "raw_answer": "{\"odpowiedź\": \"Sonda\"}",
+            "score": 0.7142857142857143,
+            "error": false,
+            "elapsed": 2.238
+          },
+          {
+            "prompt_id": "polqa-typo_40%-053",
+            "raw_answer": "{\"odpowiedź\": \"Grzegorz I Wielki\"}",
+            "score": 0.5882352941176471,
+            "error": false,
+            "elapsed": 2.659
+          },
+          {
+            "prompt_id": "polqa-typo_40%-054",
+            "raw_answer": "{\"odpowiedź\": \"Izraelski\"}",
+            "score": 0.2222222222222222,
+            "error": false,
+            "elapsed": 1.19
+          },
+          {
+            "prompt_id": "polqa-typo_40%-055",
+            "raw_answer": "{\"odpowiedź\": \"Flota brytyjska\"}",
+            "score": 0.2666666666666667,
+            "error": false,
+            "elapsed": 1.456
+          },
+          {
+            "prompt_id": "polqa-typo_40%-056",
+            "raw_answer": "{\"odpowiedź\": \"Warszawy\"}",
+            "score": 0.25,
+            "error": false,
+            "elapsed": 2.148
+          },
+          {
+            "prompt_id": "polqa-typo_40%-057",
+            "raw_answer": "{\"odpowiedź\": \"Charles Lindbergh\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.644
+          },
+          {
+            "prompt_id": "polqa-typo_40%-058",
+            "raw_answer": "{\"odpowiedź\": \"Michael H Hart\"}",
+            "score": 0.9333333333333333,
+            "error": false,
+            "elapsed": 2.312
+          },
+          {
+            "prompt_id": "polqa-typo_40%-059",
+            "raw_answer": "{\"odpowiedź\": \"Jan Heweliusz\"}",
+            "score": 0.23076923076923073,
+            "error": false,
+            "elapsed": 1.296
+          },
+          {
+            "prompt_id": "polqa-typo_40%-060",
+            "raw_answer": "{\"odpowiedź\": \"Nadri\"}",
+            "score": 0.6,
+            "error": false,
+            "elapsed": 1.515
+          },
+          {
+            "prompt_id": "polqa-typo_40%-061",
+            "raw_answer": "{\"odpowiedź\": \"Laos, Mjanmę, Tajlandię, Wietnam i Malezję\"}",
+            "score": 0.09523809523809523,
+            "error": false,
+            "elapsed": 2.798
+          },
+          {
+            "prompt_id": "polqa-typo_40%-062",
+            "raw_answer": "{\"odpowiedź\": \"Język Pascal\"}",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 2.72
+          },
+          {
+            "prompt_id": "polqa-typo_40%-063",
+            "raw_answer": "{\"odpowiedź\": \"Mikołaj I\"}",
+            "score": 0.1428571428571429,
+            "error": false,
+            "elapsed": 2.504
+          },
+          {
+            "prompt_id": "polqa-typo_40%-064",
+            "raw_answer": "{\"odpowiedź\": \"Nie, to Gruszki n wierzbie.\"}",
+            "score": 0.37037037037037035,
+            "error": false,
+            "elapsed": 1.807
+          },
+          {
+            "prompt_id": "polqa-typo_40%-065",
+            "raw_answer": "{\"odpowiedź\": \"Są to poziomy sondowania\"}",
+            "score": 0.16666666666666663,
+            "error": false,
+            "elapsed": 2.82
+          },
+          {
+            "prompt_id": "polqa-typo_40%-066",
+            "raw_answer": "{\"odpowiedź\": \"1683 roku\"}",
+            "score": 0.11111111111111116,
+            "error": false,
+            "elapsed": 1.653
+          },
+          {
+            "prompt_id": "polqa-typo_40%-067",
+            "raw_answer": "{\"odpowiedź\": \"Beaumarchaus\"}",
+            "score": 0.5789473684210527,
+            "error": false,
+            "elapsed": 2.804
+          },
+          {
+            "prompt_id": "polqa-typo_40%-068",
+            "raw_answer": "{\"odpowiedź\": \"Steven Spielberg\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.994
+          },
+          {
+            "prompt_id": "polqa-typo_40%-069",
+            "raw_answer": "{\"odpowiedź\": \"Prosta mająca jeden punkt wspólny z okręgiem\"}",
+            "score": 0.09090909090909094,
+            "error": false,
+            "elapsed": 2.026
+          },
+          {
+            "prompt_id": "polqa-typo_40%-070",
+            "raw_answer": "{\"odpowiedź\": \"nrgro spirituals\"}",
+            "score": 0.9375,
+            "error": false,
+            "elapsed": 1.876
+          },
+          {
+            "prompt_id": "polqa-typo_40%-071",
+            "raw_answer": "{\"odpowiedź\": \"Ellr Haddewarim\"}",
+            "score": 0.12,
+            "error": false,
+            "elapsed": 2.627
+          },
+          {
+            "prompt_id": "polqa-typo_40%-072",
+            "raw_answer": "{\"odpowiedź\": \"rzęk\"}",
+            "score": 0.0,
+            "error": false,
+            "elapsed": 1.961
+          },
+          {
+            "prompt_id": "polqa-typo_40%-073",
+            "raw_answer": "{\"odpowiedź\": \"Barcelona\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 2.037
+          },
+          {
+            "prompt_id": "polqa-typo_40%-074",
+            "raw_answer": "{\"odpowiedź\": \"1912 rok\"}",
+            "score": 0.25,
+            "error": false,
+            "elapsed": 1.662
+          },
+          {
+            "prompt_id": "polqa-typo_40%-075",
+            "raw_answer": "{\"odpowiedź\": \"Personel ambasady w Bejrucie\"}",
+            "score": 0.1428571428571429,
+            "error": false,
+            "elapsed": 3.022
+          },
+          {
+            "prompt_id": "polqa-typo_40%-076",
+            "raw_answer": "{\"odpowiedź\": \"Hiszpania\"}",
+            "score": 0.7272727272727273,
+            "error": false,
+            "elapsed": 2.316
+          },
+          {
+            "prompt_id": "polqa-typo_40%-077",
+            "raw_answer": "{\"odpowiedź\": \"Aleksandria\"}",
+            "score": 0.7692307692307692,
+            "error": false,
+            "elapsed": 1.771
+          },
+          {
+            "prompt_id": "polqa-typo_40%-078",
+            "raw_answer": "{\"odpowiedź\": \"CP\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 1.565
+          },
+          {
+            "prompt_id": "polqa-typo_40%-079",
+            "raw_answer": "{\"odpowiedź\": \"Austro-Węgry\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.938
+          },
+          {
+            "prompt_id": "polqa-typo_40%-080",
+            "raw_answer": "{\"odpowiedź\": \"Ludobójstwo\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.207
+          },
+          {
+            "prompt_id": "polqa-typo_40%-081",
+            "raw_answer": "{\"odpowiedź\": \"Prims aorilis\"}",
+            "score": 0.07692307692307687,
+            "error": false,
+            "elapsed": 1.805
+          },
+          {
+            "prompt_id": "polqa-typo_40%-082",
+            "raw_answer": "{\"odpowiedź\": \"Hawaje\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.846
+          },
+          {
+            "prompt_id": "polqa-typo_40%-083",
+            "raw_answer": "{\"odpowiedź\": \"Karta Narodów Zjednoczonych\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.336
+          },
+          {
+            "prompt_id": "polqa-typo_40%-084",
+            "raw_answer": "{\"odpowiedź\": \"Paleoozik\"}",
+            "score": 0.7777777777777778,
+            "error": false,
+            "elapsed": 1.623
+          },
+          {
+            "prompt_id": "polqa-typo_40%-085",
+            "raw_answer": "{\"odpowiedź\": \"1983\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 2.077
+          },
+          {
+            "prompt_id": "polqa-typo_40%-086",
+            "raw_answer": "{\"odpowiedź\": \"Feldmarszałek Wilhelm Keitel\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.75
+          },
+          {
+            "prompt_id": "polqa-typo_40%-087",
+            "raw_answer": "{\"odpowiedź\": \"Kutia\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.997
+          },
+          {
+            "prompt_id": "polqa-typo_40%-088",
+            "raw_answer": "{\"odpowiedź\": \"Jan Heweliusz\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.344
+          },
+          {
+            "prompt_id": "polqa-typo_40%-089",
+            "raw_answer": "{\"odpowiedź\": \"Św. Krzysztof\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.428
+          },
+          {
+            "prompt_id": "polqa-typo_40%-090",
+            "raw_answer": "{\"odpowiedź\": \"Anita Lipnicja\"}",
+            "score": 0.9285714285714286,
+            "error": false,
+            "elapsed": 1.592
+          },
+          {
+            "prompt_id": "polqa-typo_40%-091",
+            "raw_answer": "{\"odpowiedź\": \"Ród bigów skandynawskich\"}",
+            "score": 0.5833333333333333,
+            "error": false,
+            "elapsed": 2.972
+          },
+          {
+            "prompt_id": "polqa-typo_40%-092",
+            "raw_answer": "{\"odpowiedź\": \"35 lat\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.594
+          },
+          {
+            "prompt_id": "polqa-typo_40%-093",
+            "raw_answer": "{\"odpowiedź\": \"Kinetyka\"}",
+            "score": 0.375,
+            "error": false,
+            "elapsed": 2.818
+          },
+          {
+            "prompt_id": "polqa-typo_40%-094",
+            "raw_answer": "{\"odpowiedź\": \"W Tatrach\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.757
+          },
+          {
+            "prompt_id": "polqa-typo_40%-095",
+            "raw_answer": "{\"odpowiedź\": \"Pchnięciu kulą\"}",
+            "score": 0.875,
+            "error": false,
+            "elapsed": 2.946
+          },
+          {
+            "prompt_id": "polqa-typo_40%-096",
+            "raw_answer": "{\"odpowiedź\": \"Teatr alla Scala\"}",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 1.62
+          },
+          {
+            "prompt_id": "polqa-typo_40%-097",
+            "raw_answer": "{\"odpowiedź\": \"Mustafa Kemal (Atatürke)\"}",
+            "score": 0.875,
+            "error": false,
+            "elapsed": 3.248
+          },
+          {
+            "prompt_id": "polqa-typo_40%-098",
+            "raw_answer": "{\"odpowiedź\": \"Serena i Venus\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 2.674
+          },
+          {
+            "prompt_id": "polqa-typo_40%-099",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 1.337
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

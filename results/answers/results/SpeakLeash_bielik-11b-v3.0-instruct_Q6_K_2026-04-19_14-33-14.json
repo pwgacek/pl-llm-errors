@@ -1,0 +1,102 @@
+{
+  "timestamp": "2026-04-19T14:33:14.774605+00:00",
+  "model": "SpeakLeash/bielik-11b-v3.0-instruct:Q6_K",
+  "base_url": "https://llmlab.plgrid.pl/api/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "elapsed_sec": 0.78,
+  "datasets": {
+    "identity": {
+      "llmzszl": {
+        "num_sampled": 10,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 10,
+        "elapsed_sec": 0.78,
+        "questions": [
+          {
+            "prompt_id": "llmzszl-identity-000",
+            "raw_answer": "",
+            "correct_answer": "8",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-identity-001",
+            "raw_answer": "",
+            "correct_answer": "156zł",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-identity-002",
+            "raw_answer": "",
+            "correct_answer": "1,5p + p/k",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-identity-003",
+            "raw_answer": "",
+            "correct_answer": "w fazie S",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-identity-004",
+            "raw_answer": "",
+            "correct_answer": "o 3 mln km^2",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-identity-005",
+            "raw_answer": "",
+            "correct_answer": "W środkowym",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-identity-006",
+            "raw_answer": "",
+            "correct_answer": "20",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-identity-007",
+            "raw_answer": "",
+            "correct_answer": "9",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-identity-008",
+            "raw_answer": "",
+            "correct_answer": "2/15",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          },
+          {
+            "prompt_id": "llmzszl-identity-009",
+            "raw_answer": "",
+            "correct_answer": "8π",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

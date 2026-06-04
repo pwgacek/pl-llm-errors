@@ -1,0 +1,152 @@
+{
+  "timestamp": "2026-03-15T15:22:07.960547+00:00",
+  "model": "gemma3:4b",
+  "base_url": "http://localhost:11434/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "datasets": {
+    "diacritic": {
+      "cds": {
+        "num_sampled": 10,
+        "correct": 0,
+        "incorrect": 10,
+        "error": 0,
+        "accuracy": 0.0,
+        "elapsed_sec": 16.12,
+        "questions": [
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako WYNIKANIE, SPRZECZNOŚĆ lub NEUTRALNOŚĆ.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RALACJA\"}.\n\n<ZDANIE_A>Mezczyzna z dzieckiem w nosidelku i mezczyzna z dzieckiem na grzbiecie stoja w poblizu stromych skal .</ZDANIE_A>\n<ZDANIE_B>Mezczyzna z dzieckiem w nosidelku i mezczyzna z turbanem na glowie stoja w poblizu stromych skal .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRALNOŚĆ\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.789
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako WYNIKANIE, SPRZECZNOŚĆ lub NEUTRALNOŚĆ.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RALACJA\"}.\n\n<ZDANIE_A>Chlopiec w spodenkach kapielowych i dmuchanych rekawkach zjezdza do basenu ze zjezdzalni .</ZDANIE_A>\n<ZDANIE_B>Czlowiek z duzym plecakiem wchodzi po gorskim zboczu .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRALNOŚĆ\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.504
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako WYNIKANIE, SPRZECZNOŚĆ lub NEUTRALNOŚĆ.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RALACJA\"}.\n\n<ZDANIE_A>Kobieta siedzi na krawezniku obok kosza na smieci i trzyma przy uchu telefon komorkowy .</ZDANIE_A>\n<ZDANIE_B>Brazowy pies biegnie po trawie , niosac w zebach zabawke .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRALNOŚĆ\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.496
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako WYNIKANIE, SPRZECZNOŚĆ lub NEUTRALNOŚĆ.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RALACJA\"}.\n\n<ZDANIE_A>Taniec na parkiecie innej dziewczynki ubranej w stroj baletnicy jest obserwowany przez dwie dziewczynki .</ZDANIE_A>\n<ZDANIE_B>Dziewczynka w stroju baletowym , obserwowana przez dwie inne dziewczynki , podskakuje nad podloga .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"SPRZECZNOŚĆ\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.807
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako WYNIKANIE, SPRZECZNOŚĆ lub NEUTRALNOŚĆ.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RALACJA\"}.\n\n<ZDANIE_A>Jasnowlosa dziewczynka wspina sie po sciance wspinaczkowej .</ZDANIE_A>\n<ZDANIE_B>Czlowiek z dlugimi wlosami wisi na linie obok klifu nad woda .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRALNOŚĆ\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.473
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako WYNIKANIE, SPRZECZNOŚĆ lub NEUTRALNOŚĆ.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RALACJA\"}.\n\n<ZDANIE_A>Trzej mezczyzni w zielonych bluzkach stoja obok siebie w roznych pozach , trzymajac sie za rece , a za nimi stoi czwarty mezczyzna .</ZDANIE_A>\n<ZDANIE_B>Ciemnoskory mezczyzna , ktory jest podparty o uda dwoch innych mezczyzn , trzyma ich jednoczesnie za rece .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRALNOŚĆ\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.864
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako WYNIKANIE, SPRZECZNOŚĆ lub NEUTRALNOŚĆ.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RALACJA\"}.\n\n<ZDANIE_A>Turysta z duzym plecakiem i kijkami wskazuje w kierunku gor , ktore sa osniezone .</ZDANIE_A>\n<ZDANIE_B>Czlowiek z duzym plecakiem wchodzi po gorskim zboczu .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRALNOŚĆ\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.503
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako WYNIKANIE, SPRZECZNOŚĆ lub NEUTRALNOŚĆ.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RALACJA\"}.\n\n<ZDANIE_A>Czlowiek wspina sie po skale asekurowany przez druga osobe z dolu .</ZDANIE_A>\n<ZDANIE_B>Czlowiek asekurowany przez druga osobe z dolu nie wspina sie po skale .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"SPRZECZNOŚĆ\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.521
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako WYNIKANIE, SPRZECZNOŚĆ lub NEUTRALNOŚĆ.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RALACJA\"}.\n\n<ZDANIE_A>Kilka kolorowo ubranych osob tanczy z uniesionymi rekami .</ZDANIE_A>\n<ZDANIE_B>Kilka kolorowo ubranych osob tanczy z rekami , ktore sa uniesione .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"WYNIKANIE\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.498
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako WYNIKANIE, SPRZECZNOŚĆ lub NEUTRALNOŚĆ.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RALACJA\"}.\n\n<ZDANIE_A>Trzy dziewczyny i jeden chlopiec spedzaja czas na trampolinie w zimowy dzien .</ZDANIE_A>\n<ZDANIE_B>Trzy skosnookie dziewczyny i jeden chlopiec spedzaja czas na trampolinie w zimowy dzien .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"SPRZECZNOŚĆ\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.661
+          }
+        ]
+      },
+      "ldek": {
+        "num_sampled": 10,
+        "correct": 2,
+        "incorrect": 8,
+        "error": 0,
+        "accuracy": 0.2,
+        "elapsed_sec": 21.99,
+        "questions": [
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Do lekarza zglasza sie 70-letni pacjent uzytkujacy od 12 miesiecy protezy calkowite. Jako powod zgloszenia podaje pieczenie w jamie ustnej i dyskomfort w uzytkowaniu protez, ktory pojawil sie w okresie ostatniego miesiaca. W wywiadzie podaje astme atopowa leczona farmakologicznie. Badaniem klinicznym stwierdzasz zly stan higieny i zaczerwienienie blony sluzowej podloza sluzowkowo-kostnego. Najbardziej prawdopodobna przyczyna dolegliwosci moze byc:</PYTANIE>\n<ODPOWIEDZI>A. reakcja alergiczna na metakrylan metylu.\nB. reakcja alergiczna na barwniki zawarte w tworzywie akrylowym.\nC. toksyczne dzialanie monomeru resztkowego.\nD. zakazenie grzybicze.\nE. zadna z powyzszych odpowiedzi nie jest poprawna.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.569
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Wskaz nieprawdziwe stwierdzenie dotyczace tymczasowego wypelnienia ubytku w trakcie leczenia kanalowego:</PYTANIE>\n<ODPOWIEDZI>A. dziala przeciwbakteryjnie.\nB. powinno miec grubosc 4 mm.\nC. chroni przed przedostawaniem sie bakterii i plynow z jamy ustnej.\nD. zapobiega wyciekaniu lekow z kanalu do jamy ustnej.\nE. posiada odpowiednia wytrzymalosc mechaniczna.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.929
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Choroba Volkmana to:</PYTANIE>\n<ODPOWIEDZI>A. postac gruczolowego zapalenia warg – surowicze zapalenie warg.\nB. postac gruczolowego zapalenia warg – powierzchowne ropne zapalenie warg.\nC. postac gruczolowego zapalenia warg – glebokie ropne zapalenie warg.\nD. postac ziarniniakowego zapalenia warg.\nE. postac slonecznego zapalenia warg.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.026
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Co to jest tzw. „prochnica resztkowa”?</PYTANIE>\n<ODPOWIEDZI>A. prochnica o gwaltownym przebiegu, powodujaca szybka destrukcje uzebienia.\nB. prochnica rozwijajaca sie pod makroskopowo zdrowym szkliwem.\nC. jedna z postaci prochnicy korzenia.\nD. prochnica, ktora ulegla zatrzymaniu.\nE. tkanka prochnicowa pozostawiona w ubytku przed zalozeniem wypelnienia.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.014
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Wskaz prawdziwe informacje dotyczace blonki nabytej (pellicle):1) jest to bezkomorkowa, bialkowa oslonka;2) jest to nieorganiczna oslonka wytracajaca sie z mineralow sliny;3) poczatkowym jej kolonizatorem jest S. sanguinis;4) powstaje po 24-48 godzinach po mechanicznym oczyszczeniu zebow.Prawidlowa odpowiedz to:</PYTANIE>\n<ODPOWIEDZI>A. 1,3.\nB. 1,4.\nC. 2,3.\nD. 2,4.\nE. 3,4.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.361
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Zgodnie z Konstytucja obywatelom Rzeczypospolitej Polskiej przysluguje rowny dostep do:</PYTANIE>\n<ODPOWIEDZI>A. ochrony zdrowia.\nB. leczenia eksperymentalnego.\nC. swiadczen opieki zdrowotnej finansowanej ze srodkow publicznych.\nD. kultury fizycznej.\nE. bezplatnego leczenia. L-DEP</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "CORRECT",
+            "elapsed": 1.689
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Wybierz prawidlowe stwierdzenie odnoszace sie do urazow zebow:</PYTANIE>\n<ODPOWIEDZI>A. w wyniku urazu zebow stalych najczesciej dochodzi do zwichniecia zebow, a w uzebieniu mlecznym najczesciej zdarzaja sie zlamania koron.\nB. w wyniku urazu zebow stalych najczesciej dochodzi do zlamania korony, a w uzebieniu mlecznym najczesciej zdarzaja sie zwichniecia zebow.\nC. zarowno w uzebieniu mlecznym jak i stalym najczesciej dochodzi do zwichniecia zebow.\nD. zarowno w uzebieniu mlecznym jak i stalym najczesciej dochodzi do zlamania korony.\nE. zarowno w uzebieniu mlecznym jak i stalym najczesciej dochodzi do zlamania w obrebie korzeni zebow.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.949
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Ktory z ponizszych czynnikow nie jest uwazany za przyczyne patologicznego starcia zebow?</PYTANIE>\n<ODPOWIEDZI>A. parafunkcje.\nB. bruksizm.\nC. nawyki zywieniowe: spozywanie pokarmow kwasnych i gruboziarnistych.\nD. palenie papierosow.\nE. wzmozone napiecie psychoemocjonalne. L-DEP</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.822
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Ktory z wymienionych srodkow do plukania kanalow korzeniowych nalezy stosowac naprzemiennie z roztworem EDTA, aby calkowicie usunac warstwe mazista?</PYTANIE>\n<ODPOWIEDZI>A. sol fizjologiczna.\nB. wode utleniona.\nC. kwas cytrynowy.\nD. podchloryn sodu.\nE. chlorheksydyne.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "CORRECT",
+            "elapsed": 1.776
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>W klimacie umiarkowanym maksymalnym, dopuszczalnym ze wzgledu na profilaktyke fluorozy zebow, poziomem fluoru w wodzie pitnej jest:</PYTANIE>\n<ODPOWIEDZI>A. 0,3 mg F/L.\nB. 0,5 mg F/L. C. 1 mg F/l.\nC. 2 mg F/l.\nD. 3,5 mg F/l.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.854
+          }
+        ]
+      }
+    }
+  },
+  "status": "partial"
+}

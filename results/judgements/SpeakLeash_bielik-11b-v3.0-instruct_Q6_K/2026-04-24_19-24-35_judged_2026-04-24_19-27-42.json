@@ -1,0 +1,195 @@
+{
+  "source": "/home/pawel/Desktop/pl-llm-errors/answers/SpeakLeash_bielik-11b-v3.0-instruct_Q6_K/2026-04-24_19-24-35.json",
+  "judge_model": "openai/gpt-oss-120b",
+  "datasets": {
+    "diacritic": {
+      "polqa": {
+        "num_sampled": 3,
+        "error_count": 0,
+        "elapsed_sec": 37.41,
+        "judge_error_count": 0,
+        "questions": [
+          {
+            "prompt_id": "polqa-diacritic-000",
+            "raw_answer": "Precik",
+            "elapsed": 11.479,
+            "error": false,
+            "judgement_context": {
+              "question": "Jak nazywa się element kwiatu produkujący pyłek, składający się u roślin okrytonasiennych z główki i nitki?",
+              "context": "Pręcik (łac. \"stamen\") – męski organ płciowy w kwiecie wytwarzający pyłek, czyli odpowiednik męskiego gametofitu powstający z mikrospory. Pręciki są występującymi u okrytonasiennych mikrosporofilami. Składają się z nitki i główki tworzonej zazwyczaj przez dwa pylniki zawierające po dwa woreczki pyłkowe, czyli mikrosporangia. Pyłek po dojrzeniu wysypywany jest z pękających pylników i przenoszony przez wiatr, wodę lub zwierzęta, by po osadzeniu na znamionach słupków wrosnąć i dokonać zapłodnienia.",
+              "correct_answer": [
+                "pręcik"
+              ]
+            },
+            "judge_scores": {
+              "correctness": {
+                "score": 1,
+                "reason": "Model gave \"Precik\" which is misspelled and does not match the correct term \"pręcik\"."
+              },
+              "conciseness": {
+                "score": 2,
+                "reason": "Answer is a single word, thus very brief."
+              },
+              "language": {
+                "score": 1,
+                "reason": "Spelling error (\"Precik\" instead of \"pręcik\") makes the response linguistically incorrect."
+              }
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "polqa-diacritic-001",
+            "raw_answer": "liczebnik",
+            "elapsed": 13.587,
+            "error": false,
+            "judgement_context": {
+              "question": "Co to za część mowy: półtora?",
+              "context": "liczebniki - oznaczające (określające) liczbę, część, kolejność rzeczy, przedmiotów, osób:\nliczebniki główne określają liczbę przedmiotów, osób, zdarzeń, np. jeden, dwa, trzy, sześć, siedem, osiem, dziesięć, trzydzieści.\nliczebniki zbiorowe określają zbiorowość ludzi, zwierząt, przedmiotów, nazw, np. dwoje, troje, pięcioro, siedmioro, ośmioro, dziewięcioro, trzydzieścioro.\nliczebniki porządkowe określają miejsce w szeregu, np. drugi, trzeci, szósty, dwudziesty, czterdziesty, setny, tysięczny.\nułamkowe, określają części ułamkowe czasu, przedmiotów, odległości, np. pół, półtora, ćwierć.",
+              "correct_answer": [
+                "liczebnik"
+              ]
+            },
+            "judge_scores": {
+              "correctness": {
+                "score": 3,
+                "reason": "Odpowiedź dokładnie odpowiada kluczowi – podano prawidłową część mowy 'liczebnik'."
+              },
+              "conciseness": {
+                "score": 2,
+                "reason": "Odpowiedź jest jednowyrazowa, więc bardzo zwięzła."
+              },
+              "language": {
+                "score": 3,
+                "reason": "Brak błędów językowych, poprawna ortografia i forma."
+              }
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "polqa-diacritic-002",
+            "raw_answer": "Bazyliki św. Piotra",
+            "elapsed": 12.348,
+            "error": false,
+            "judgement_context": {
+              "question": "Z której świątyni papież udziela błogosławieństwa Urbi et Orbi?",
+              "context": "Najświętszej Maryi Panny Po zakończeniu konklawe, błogosławieństwo miało miejsce tam, gdzie wybrano papieża; przed 1871 roku w Pałacu Kwirynalskim. Mimo iż tradycja nakazuje wygłaszać błogosławieństwo \"Urbi et Orbi\" z głównego balkonu Bazyliki św. Piotra, zdarzają się sytuacje wyjątkowe. Jan Paweł II przy okazji Świąt Bożego Narodzenia 2004 wygłaszał tekst \"Urbi et Orbi\" na placu św. Piotra. Podobnie uczynił Benedykt XVI po mszy św. w Uroczystość Zmartwychwstania Chrystusa, 23 marca 2008.",
+              "correct_answer": [
+                "z Bazyliki św. Piotra"
+              ]
+            },
+            "judge_scores": {
+              "correctness": {
+                "score": 3,
+                "reason": "The answer exactly matches the expected answer \"z Bazyliki św. Piotra\"."
+              },
+              "conciseness": {
+                "score": 2,
+                "reason": "The response is a brief phrase without unnecessary words."
+              },
+              "language": {
+                "score": 3,
+                "reason": "The phrase is grammatically correct, properly capitalized and punctuated."
+              }
+            },
+            "judge_error": false
+          }
+        ]
+      }
+    },
+    "identity": {
+      "polqa": {
+        "num_sampled": 3,
+        "error_count": 0,
+        "elapsed_sec": 39.38,
+        "judge_error_count": 0,
+        "questions": [
+          {
+            "prompt_id": "polqa-identity-000",
+            "raw_answer": "Pręcik",
+            "elapsed": 12.125,
+            "error": false,
+            "judgement_context": {
+              "question": "Jak nazywa się element kwiatu produkujący pyłek, składający się u roślin okrytonasiennych z główki i nitki?",
+              "context": "Pręcik (łac. \"stamen\") – męski organ płciowy w kwiecie wytwarzający pyłek, czyli odpowiednik męskiego gametofitu powstający z mikrospory. Pręciki są występującymi u okrytonasiennych mikrosporofilami. Składają się z nitki i główki tworzonej zazwyczaj przez dwa pylniki zawierające po dwa woreczki pyłkowe, czyli mikrosporangia. Pyłek po dojrzeniu wysypywany jest z pękających pylników i przenoszony przez wiatr, wodę lub zwierzęta, by po osadzeniu na znamionach słupków wrosnąć i dokonać zapłodnienia.",
+              "correct_answer": [
+                "pręcik"
+              ]
+            },
+            "judge_scores": {
+              "correctness": {
+                "score": 3,
+                "reason": "The answer \"Pręcik\" matches the expected term, correctly identifying the flower part that produces pollen."
+              },
+              "conciseness": {
+                "score": 2,
+                "reason": "The response is a single word, making it brief and to the point."
+              },
+              "language": {
+                "score": 3,
+                "reason": "The word is correctly spelled and capitalized, with no grammatical or orthographic errors."
+              }
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "polqa-identity-001",
+            "raw_answer": "liczebnik",
+            "elapsed": 14.017,
+            "error": false,
+            "judgement_context": {
+              "question": "Co to za część mowy: półtora?",
+              "context": "liczebniki - oznaczające (określające) liczbę, część, kolejność rzeczy, przedmiotów, osób:\nliczebniki główne określają liczbę przedmiotów, osób, zdarzeń, np. jeden, dwa, trzy, sześć, siedem, osiem, dziesięć, trzydzieści.\nliczebniki zbiorowe określają zbiorowość ludzi, zwierząt, przedmiotów, nazw, np. dwoje, troje, pięcioro, siedmioro, ośmioro, dziewięcioro, trzydzieścioro.\nliczebniki porządkowe określają miejsce w szeregu, np. drugi, trzeci, szósty, dwudziesty, czterdziesty, setny, tysięczny.\nułamkowe, określają części ułamkowe czasu, przedmiotów, odległości, np. pół, półtora, ćwierć.",
+              "correct_answer": [
+                "liczebnik"
+              ]
+            },
+            "judge_scores": {
+              "correctness": {
+                "score": 3,
+                "reason": "Odpowiedź jest zgodna z kluczem i w pełni odpowiada na pytanie."
+              },
+              "conciseness": {
+                "score": 2,
+                "reason": "Odpowiedź jest jednowyrazowa, więc jest bardzo zwięzła."
+              },
+              "language": {
+                "score": 3,
+                "reason": "Brak błędów językowych, poprawna forma."
+              }
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "polqa-identity-002",
+            "raw_answer": "Bazylika św. Piotra",
+            "elapsed": 13.239,
+            "error": false,
+            "judgement_context": {
+              "question": "Z której świątyni papież udziela błogosławieństwa Urbi et Orbi?",
+              "context": "Najświętszej Maryi Panny Po zakończeniu konklawe, błogosławieństwo miało miejsce tam, gdzie wybrano papieża; przed 1871 roku w Pałacu Kwirynalskim. Mimo iż tradycja nakazuje wygłaszać błogosławieństwo \"Urbi et Orbi\" z głównego balkonu Bazyliki św. Piotra, zdarzają się sytuacje wyjątkowe. Jan Paweł II przy okazji Świąt Bożego Narodzenia 2004 wygłaszał tekst \"Urbi et Orbi\" na placu św. Piotra. Podobnie uczynił Benedykt XVI po mszy św. w Uroczystość Zmartwychwstania Chrystusa, 23 marca 2008.",
+              "correct_answer": [
+                "z Bazyliki św. Piotra"
+              ]
+            },
+            "judge_scores": {
+              "correctness": {
+                "score": 3,
+                "reason": "The answer exactly matches the expected answer, specifying the Basilica of St. Peter as the location of the Urbi et Orbi blessing."
+              },
+              "conciseness": {
+                "score": 2,
+                "reason": "The response is brief, consisting of only the essential phrase without unnecessary elaboration."
+              },
+              "language": {
+                "score": 3,
+                "reason": "The answer is grammatically correct, properly capitalized, and contains no spelling or punctuation errors."
+              }
+            },
+            "judge_error": false
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

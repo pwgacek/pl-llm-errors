@@ -1,0 +1,1131 @@
+{
+  "timestamp": "2026-03-15T12:22:07.216439+00:00",
+  "model": "gemma3:4b",
+  "base_url": "http://localhost:11434/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "elapsed_sec": 252.8,
+  "datasets": {
+    "diacritic": {
+      "belebele-pol": {
+        "num_sampled": 2,
+        "correct": 1,
+        "incorrect": 1,
+        "error": 0,
+        "accuracy": 0.5,
+        "elapsed_sec": 9.95,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu, a następnie wybierz poprawną odpowiedź spośród 4 możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<KONTEKST>Pekin w Chinach bedzie gospodarzem zimowych Igrzysk Olimpijskich w 2022 roku i dzieki temu stanie sie pierwszym miastem, w ktorym odbyly sie zarowno igrzyska letnie, jak i zimowe. W Pekinie odbeda sie ceremonie otwarcia i zamkniecia, a takze imprezy na krytym lodowisku. Pozostale imprezy narciarskie beda przeprowadzone na obszarze narciarskim w Taizicheng w Zhangijakou, mniej wiecej 220 km (140 mil) od Pekinu.</KONTEKST>\n<PYTANIE>Ktore z ponizszych wydarzen nie odbedzie sie wedlug opisu w Pekinie w 2022 roku?</PYTANIE>\n<ODPOWIEDZI>A. Ceremonie otwarcia\nB. Imprezy w osrodku narciarskim Taizicheng\nC. Ceremonie zamkniecia\nD. Imprezy na krytym lodowisku</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "CORRECT",
+            "elapsed": 5.83
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu, a następnie wybierz poprawną odpowiedź spośród 4 możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<KONTEKST>W przypadku wirtualnych zespolow obowiazuja takie same standardy doskonalosci, ale istnieja drobne roznice. Czlonkowie zespolu wirtualnego czesto funkcjonuja jako punkt kontaktu dla bezposrednio z nimi powiazanej grupy fizycznej. Maja czesto wieksza swobode niz zwyczajni czlonkowie zespolu, bo ich zespoly moga organizowac spotkania zgodnie z roznymi strefami czasowymi, czego lokalne kierownictwo moze nie rozumiec. Obecnosc prawdziwej „niewidzialnej druzyny” (Larson i LaFasto, 1989, s.109) to wyjatkowy element wirtualnej druzyny. „Niewidoczna grupa” to zespol zarzadzajacy, ktoremu podlegaja wszyscy czlonkowie. Niewidzialna grupa wytycza standardy kazdemu czlonkowi.</KONTEKST>\n<PYTANIE>W jaki sposob zgodnie z fragmentem konwencjonalne i wirtualne zespoly sa do siebie podobne?</PYTANIE>\n<ODPOWIEDZI>A. Oczekuje sie, ze obie druzyny beda wystepowac na tym samym poziomie\nB. Oba zespoly maja rozny poziom swobody podczas codziennych zajec\nC. Oba zespoly podlegaja niewidzialnemu zespolowi zarzadzajacemu\nD. Oba zespoly pracuja w tej samej strefie czasowej</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 4.121
+          }
+        ]
+      },
+      "cds": {
+        "num_sampled": 2,
+        "correct": 2,
+        "incorrect": 0,
+        "error": 0,
+        "accuracy": 1.0,
+        "elapsed_sec": 4.08,
+        "questions": [
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>Mezczyzna z dzieckiem w nosidelku i mezczyzna z dzieckiem na grzbiecie stoja w poblizu stromych skal .</ZDANIE_A>\n<ZDANIE_B>Mezczyzna z dzieckiem w nosidelku i mezczyzna z turbanem na glowie stoja w poblizu stromych skal .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 2.627
+          },
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>Chlopiec w spodenkach kapielowych i dmuchanych rekawkach zjezdza do basenu ze zjezdzalni .</ZDANIE_A>\n<ZDANIE_B>Czlowiek z duzym plecakiem wchodzi po gorskim zboczu .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 1.456
+          }
+        ]
+      },
+      "ldek": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 2,
+        "error": 0,
+        "accuracy": 0.0,
+        "elapsed_sec": 5.76,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Do lekarza zglasza sie 70-letni pacjent uzytkujacy od 12 miesiecy protezy calkowite. Jako powod zgloszenia podaje pieczenie w jamie ustnej i dyskomfort w uzytkowaniu protez, ktory pojawil sie w okresie ostatniego miesiaca. W wywiadzie podaje astme atopowa leczona farmakologicznie. Badaniem klinicznym stwierdzasz zly stan higieny i zaczerwienienie blony sluzowej podloza sluzowkowo-kostnego. Najbardziej prawdopodobna przyczyna dolegliwosci moze byc:</PYTANIE>\n<ODPOWIEDZI>A. reakcja alergiczna na metakrylan metylu.\nB. reakcja alergiczna na barwniki zawarte w tworzywie akrylowym.\nC. toksyczne dzialanie monomeru resztkowego.\nD. zakazenie grzybicze.\nE. zadna z powyzszych odpowiedzi nie jest poprawna.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.622
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Wskaz nieprawdziwe stwierdzenie dotyczace tymczasowego wypelnienia ubytku w trakcie leczenia kanalowego:</PYTANIE>\n<ODPOWIEDZI>A. dziala przeciwbakteryjnie.\nB. powinno miec grubosc 4 mm.\nC. chroni przed przedostawaniem sie bakterii i plynow z jamy ustnej.\nD. zapobiega wyciekaniu lekow z kanalu do jamy ustnej.\nE. posiada odpowiednia wytrzymalosc mechaniczna.</ODPOWIEDZI>\n",
+            "raw_answer": "{\n\"odpowiedź\": \"D\"\n}",
+            "result": "INCORRECT",
+            "elapsed": 2.136
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 2,
+        "correct": 1,
+        "incorrect": 1,
+        "error": 0,
+        "accuracy": 0.5,
+        "elapsed_sec": 4.12,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Miara kata wpisanego w okrag jest o 20° mniejsza od miary kata srodkowego opartego na tym samym luku. Wynika stad, ze miara kata wpisanego jest rowna</PYTANIE>\n<ODPOWIEDZI>A. 5°\nB. 10°\nC. 20°\nD. 30°</ODPOWIEDZI>\n",
+            "raw_answer": "{\n\"odpowiedź\": \"A\"\n}",
+            "result": "INCORRECT",
+            "elapsed": 2.147
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Po przejsciu monochromatycznej fali swietlnej z powietrza (np = 1) do szkla o wspolczynniku zalamania ns</PYTANIE>\n<ODPOWIEDZI>A. czestotliwosc fali zmaleje ns razy.\nB. predkosc fali sie nie zmieni.\nC. dlugosc fali zmaleje ns razy.\nD. okres fali zmaleje ns razy.</ODPOWIEDZI>\n",
+            "raw_answer": "{\n\"odpowiedź\": \"C\"\n}",
+            "result": "CORRECT",
+            "elapsed": 1.971
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 2,
+        "correct": 1,
+        "incorrect": 1,
+        "error": 0,
+        "accuracy": 0.5,
+        "elapsed_sec": 3.33,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Wojna persko-turecka toczona byla w latach 1532–1555 miedzy Imperium Osmanskim rzadzonym przez Sulejmana Wspanialego a Persja pod rzadami Tahmaspa I.</KONTEKST>\n<PYTANIE>Jak nazywal sie sultan turecki z XVI wieku o przydomku Wspanialy?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Sulejman Wspanialy\"}",
+            "result": "CORRECT",
+            "elapsed": 2.196
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>NBP jest bankiem centralnym Rzeczypospolitej Polskiej.</KONTEKST>\n<PYTANIE>Jak brzmi nazwa Banku Centralnego w Polsce?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"NBP\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.132
+          }
+        ]
+      }
+    },
+    "identity": {
+      "belebele-pol": {
+        "num_sampled": 2,
+        "correct": 2,
+        "incorrect": 0,
+        "error": 0,
+        "accuracy": 1.0,
+        "elapsed_sec": 7.36,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu, a następnie wybierz poprawną odpowiedź spośród 4 możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<KONTEKST>Pekin w Chinach będzie gospodarzem zimowych Igrzysk Olimpijskich w 2022 roku i dzięki temu stanie się pierwszym miastem, w którym odbyły się zarówno igrzyska letnie, jak i zimowe. W Pekinie odbędą się ceremonie otwarcia i zamknięcia, a także imprezy na krytym lodowisku. Pozostałe imprezy narciarskie będą przeprowadzone na obszarze narciarskim w Taizicheng w Zhangijakou, mniej więcej 220 km (140 mil) od Pekinu.</KONTEKST>\n<PYTANIE>Które z poniższych wydarzeń nie odbędzie się według opisu w Pekinie w 2022 roku?</PYTANIE>\n<ODPOWIEDZI>A. Ceremonie otwarcia\nB. Imprezy w ośrodku narciarskim Taizicheng\nC. Ceremonie zamknięcia\nD. Imprezy na krytym lodowisku</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "CORRECT",
+            "elapsed": 3.433
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu, a następnie wybierz poprawną odpowiedź spośród 4 możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<KONTEKST>W przypadku wirtualnych zespołów obowiązują takie same standardy doskonałości, ale istnieją drobne różnice. Członkowie zespołu wirtualnego często funkcjonują jako punkt kontaktu dla bezpośrednio z nimi powiązanej grupy fizycznej. Mają często większą swobodę niż zwyczajni członkowie zespołu, bo ich zespoły mogą organizować spotkania zgodnie z różnymi strefami czasowymi, czego lokalne kierownictwo może nie rozumieć. Obecność prawdziwej „niewidzialnej drużyny” (Larson i LaFasto, 1989, s.109) to wyjątkowy element wirtualnej drużyny. „Niewidoczna grupa” to zespół zarządzający, któremu podlegają wszyscy członkowie. Niewidzialna grupa wytycza standardy każdemu członkowi.</KONTEKST>\n<PYTANIE>W jaki sposób zgodnie z fragmentem konwencjonalne i wirtualne zespoły są do siebie podobne?</PYTANIE>\n<ODPOWIEDZI>A. Oczekuje się, że obie drużyny będą występować na tym samym poziomie\nB. Oba zespoły mają różny poziom swobody podczas codziennych zajęć\nC. Oba zespoły podlegają niewidzialnemu zespołowi zarządzającemu\nD. Oba zespoły pracują w tej samej strefie czasowej</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "CORRECT",
+            "elapsed": 3.929
+          }
+        ]
+      },
+      "cds": {
+        "num_sampled": 2,
+        "correct": 2,
+        "incorrect": 0,
+        "error": 0,
+        "accuracy": 1.0,
+        "elapsed_sec": 4.1,
+        "questions": [
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>Mężczyzna z dzieckiem w nosidełku i mężczyzna z dzieckiem na grzbiecie stoją w pobliżu stromych skał .</ZDANIE_A>\n<ZDANIE_B>Mężczyzna z dzieckiem w nosidełku i mężczyzna z turbanem na głowie stoją w pobliżu stromych skał .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 2.66
+          },
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>Chłopiec w spodenkach kąpielowych i dmuchanych rękawkach zjeżdża do basenu ze zjeżdżalni .</ZDANIE_A>\n<ZDANIE_B>Człowiek z dużym plecakiem wchodzi po górskim zboczu .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 1.443
+          }
+        ]
+      },
+      "ldek": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 2,
+        "error": 0,
+        "accuracy": 0.0,
+        "elapsed_sec": 5.72,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Do lekarza zgłasza się 70-letni pacjent użytkujący od 12 miesięcy protezy całkowite. Jako powód zgłoszenia podaje pieczenie w jamie ustnej i dyskomfort w użytkowaniu protez, który pojawił się w okresie ostatniego miesiąca. W wywiadzie podaje astmę atopową leczoną farmakologicznie. Badaniem klinicznym stwierdzasz zły stan higieny i zaczerwienienie błony śluzowej podłoża śluzówkowo-kostnego. Najbardziej prawdopodobną przyczyną dolegliwości może być:</PYTANIE>\n<ODPOWIEDZI>A. reakcja alergiczna na metakrylan metylu.\nB. reakcja alergiczna na barwniki zawarte w tworzywie akrylowym.\nC. toksyczne działanie monomeru resztkowego.\nD. zakażenie grzybicze.\nE. żadna z powyższych odpowiedzi nie jest poprawna.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.572
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Wskaż nieprawdziwe stwierdzenie dotyczące tymczasowego wypełnienia ubytku w trakcie leczenia kanałowego:</PYTANIE>\n<ODPOWIEDZI>A. działa przeciwbakteryjnie.\nB. powinno mieć grubość 4 mm.\nC. chroni przed przedostawaniem się bakterii i płynów z jamy ustnej.\nD. zapobiega wyciekaniu leków z kanału do jamy ustnej.\nE. posiada odpowiednią wytrzymałość mechaniczną.</ODPOWIEDZI>\n",
+            "raw_answer": "{\n\"odpowiedź\": \"D\"\n}",
+            "result": "INCORRECT",
+            "elapsed": 2.148
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 2,
+        "correct": 1,
+        "incorrect": 1,
+        "error": 0,
+        "accuracy": 0.5,
+        "elapsed_sec": 4.08,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Miara kąta wpisanego w okrąg jest o 20° mniejsza od miary kąta środkowego opartego na tym samym łuku. Wynika stąd, że miara kąta wpisanego jest równa</PYTANIE>\n<ODPOWIEDZI>A. 5°\nB. 10°\nC. 20°\nD. 30°</ODPOWIEDZI>\n",
+            "raw_answer": "{ \"odpowiedź\": \"B\" }",
+            "result": "INCORRECT",
+            "elapsed": 2.08
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Po przejściu monochromatycznej fali świetlnej z powietrza (np = 1) do szkła o współczynniku załamania ns</PYTANIE>\n<ODPOWIEDZI>A. częstotliwość fali zmaleje ns razy.\nB. prędkość fali się nie zmieni.\nC. długość fali zmaleje ns razy.\nD. okres fali zmaleje ns razy.</ODPOWIEDZI>\n",
+            "raw_answer": "{\n\"odpowiedź\": \"C\"\n}",
+            "result": "CORRECT",
+            "elapsed": 1.997
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 2,
+        "correct": 1,
+        "incorrect": 1,
+        "error": 0,
+        "accuracy": 0.5,
+        "elapsed_sec": 3.33,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Wojna persko-turecka toczona była w latach 1532–1555 między Imperium Osmańskim rządzonym przez Sulejmana Wspaniałego a Persją pod rządami Tahmaspa I.</KONTEKST>\n<PYTANIE>Jak nazywał się sułtan turecki z XVI wieku o przydomku Wspaniały?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Sulejman Wspaniały\"}",
+            "result": "CORRECT",
+            "elapsed": 2.172
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>NBP jest bankiem centralnym Rzeczypospolitej Polskiej.</KONTEKST>\n<PYTANIE>Jak brzmi nazwa Banku Centralnego w Polsce?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"NBP\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.161
+          }
+        ]
+      }
+    },
+    "punctuation_all": {
+      "belebele-pol": {
+        "num_sampled": 2,
+        "correct": 2,
+        "incorrect": 0,
+        "error": 0,
+        "accuracy": 1.0,
+        "elapsed_sec": 7.05,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu, a następnie wybierz poprawną odpowiedź spośród 4 możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<KONTEKST>pekin w Chinach będzie gospodarzem zimowych Igrzysk Olimpijskich w 2022 roku i dzięki temu stanie się pierwszym miastem w którym odbyły się zarówno igrzyska letnie jak i zimowe W Pekinie odbędą się ceremonie otwarcia i zamknięcia a także imprezy na krytym lodowisku Pozostałe imprezy narciarskie będą przeprowadzone na obszarze narciarskim w Taizicheng w Zhangijakou mniej więcej 220 km 140 mil od Pekinu</KONTEKST>\n<PYTANIE>które z poniższych wydarzeń nie odbędzie się według opisu w Pekinie w 2022 roku</PYTANIE>\n<ODPOWIEDZI>A. ceremonie otwarcia\nB. imprezy w ośrodku narciarskim Taizicheng\nC. ceremonie zamknięcia\nD. imprezy na krytym lodowisku</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "CORRECT",
+            "elapsed": 3.341
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu, a następnie wybierz poprawną odpowiedź spośród 4 możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<KONTEKST>w przypadku wirtualnych zespołów obowiązują takie same standardy doskonałości ale istnieją drobne różnice Członkowie zespołu wirtualnego często funkcjonują jako punkt kontaktu dla bezpośrednio z nimi powiązanej grupy fizycznej Mają często większą swobodę niż zwyczajni członkowie zespołu bo ich zespoły mogą organizować spotkania zgodnie z różnymi strefami czasowymi czego lokalne kierownictwo może nie rozumieć Obecność prawdziwej niewidzialnej drużyny Larson i LaFasto 1989 s109 to wyjątkowy element wirtualnej drużyny Niewidoczna grupa to zespół zarządzający któremu podlegają wszyscy członkowie Niewidzialna grupa wytycza standardy każdemu członkowi</KONTEKST>\n<PYTANIE>w jaki sposób zgodnie z fragmentem konwencjonalne i wirtualne zespoły są do siebie podobne</PYTANIE>\n<ODPOWIEDZI>A. oczekuje się że obie drużyny będą występować na tym samym poziomie\nB. oba zespoły mają różny poziom swobody podczas codziennych zajęć\nC. oba zespoły podlegają niewidzialnemu zespołowi zarządzającemu\nD. oba zespoły pracują w tej samej strefie czasowej</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "CORRECT",
+            "elapsed": 3.705
+          }
+        ]
+      },
+      "cds": {
+        "num_sampled": 2,
+        "correct": 2,
+        "incorrect": 0,
+        "error": 0,
+        "accuracy": 1.0,
+        "elapsed_sec": 4.09,
+        "questions": [
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>mężczyzna z dzieckiem w nosidełku i mężczyzna z dzieckiem na grzbiecie stoją w pobliżu stromych skał </ZDANIE_A>\n<ZDANIE_B>mężczyzna z dzieckiem w nosidełku i mężczyzna z turbanem na głowie stoją w pobliżu stromych skał </ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 2.622
+          },
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>chłopiec w spodenkach kąpielowych i dmuchanych rękawkach zjeżdża do basenu ze zjeżdżalni </ZDANIE_A>\n<ZDANIE_B>człowiek z dużym plecakiem wchodzi po górskim zboczu </ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 1.463
+          }
+        ]
+      },
+      "ldek": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 2,
+        "error": 0,
+        "accuracy": 0.0,
+        "elapsed_sec": 5.68,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>do lekarza zgłasza się 70letni pacjent użytkujący od 12 miesięcy protezy całkowite Jako powód zgłoszenia podaje pieczenie w jamie ustnej i dyskomfort w użytkowaniu protez który pojawił się w okresie ostatniego miesiąca W wywiadzie podaje astmę atopową leczoną farmakologicznie Badaniem klinicznym stwierdzasz zły stan higieny i zaczerwienienie błony śluzowej podłoża śluzówkowokostnego Najbardziej prawdopodobną przyczyną dolegliwości może być</PYTANIE>\n<ODPOWIEDZI>A. reakcja alergiczna na metakrylan metylu\nB. reakcja alergiczna na barwniki zawarte w tworzywie akrylowym\nC. toksyczne działanie monomeru resztkowego\nD. zakażenie grzybicze\nE. żadna z powyższych odpowiedzi nie jest poprawna</ODPOWIEDZI>\n",
+            "raw_answer": "{\n\"odpowiedź\": \"C\"\n}",
+            "result": "INCORRECT",
+            "elapsed": 3.603
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>wskaż nieprawdziwe stwierdzenie dotyczące tymczasowego wypełnienia ubytku w trakcie leczenia kanałowego</PYTANIE>\n<ODPOWIEDZI>A. działa przeciwbakteryjnie\nB. powinno mieć grubość 4 mm\nC. chroni przed przedostawaniem się bakterii i płynów z jamy ustnej\nD. zapobiega wyciekaniu leków z kanału do jamy ustnej\nE. posiada odpowiednią wytrzymałość mechaniczną</ODPOWIEDZI>\n",
+            "raw_answer": "{\n\"odpowiedź\": \"D\"\n}",
+            "result": "INCORRECT",
+            "elapsed": 2.073
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 2,
+        "correct": 2,
+        "incorrect": 0,
+        "error": 0,
+        "accuracy": 1.0,
+        "elapsed_sec": 3.93,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>miara kąta wpisanego w okrąg jest o 20 mniejsza od miary kąta środkowego opartego na tym samym łuku Wynika stąd że miara kąta wpisanego jest równa</PYTANIE>\n<ODPOWIEDZI>A. 5\nB. 10\nC. 20\nD. 30</ODPOWIEDZI>\n",
+            "raw_answer": "{\n\"odpowiedź\": \"C\"\n}",
+            "result": "CORRECT",
+            "elapsed": 2.057
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>po przejściu monochromatycznej fali świetlnej z powietrza np  1 do szkła o współczynniku załamania ns</PYTANIE>\n<ODPOWIEDZI>A. częstotliwość fali zmaleje ns razy\nB. prędkość fali się nie zmieni\nC. długość fali zmaleje ns razy\nD. okres fali zmaleje ns razy</ODPOWIEDZI>\n",
+            "raw_answer": "{\n\"odpowiedź\": \"C\"\n}",
+            "result": "CORRECT",
+            "elapsed": 1.872
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 2,
+        "correct": 1,
+        "incorrect": 1,
+        "error": 0,
+        "accuracy": 0.5,
+        "elapsed_sec": 3.23,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>wojna perskoturecka toczona była w latach 15321555 między Imperium Osmańskim rządzonym przez Sulejmana Wspaniałego a Persją pod rządami Tahmaspa I</KONTEKST>\n<PYTANIE>jak nazywał się sułtan turecki z XVI wieku o przydomku Wspaniały</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Sulejman Wspaniały\"}",
+            "result": "CORRECT",
+            "elapsed": 2.115
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>nBP jest bankiem centralnym Rzeczypospolitej Polskiej</KONTEKST>\n<PYTANIE>jak brzmi nazwa Banku Centralnego w Polsce</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"nBP\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.11
+          }
+        ]
+      }
+    },
+    "punctuation_inner": {
+      "belebele-pol": {
+        "num_sampled": 2,
+        "correct": 2,
+        "incorrect": 0,
+        "error": 0,
+        "accuracy": 1.0,
+        "elapsed_sec": 7.1,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu, a następnie wybierz poprawną odpowiedź spośród 4 możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<KONTEKST>Pekin w Chinach będzie gospodarzem zimowych Igrzysk Olimpijskich w 2022 roku i dzięki temu stanie się pierwszym miastem w którym odbyły się zarówno igrzyska letnie jak i zimowe. W Pekinie odbędą się ceremonie otwarcia i zamknięcia a także imprezy na krytym lodowisku. Pozostałe imprezy narciarskie będą przeprowadzone na obszarze narciarskim w Taizicheng w Zhangijakou mniej więcej 220 km 140 mil od Pekinu.</KONTEKST>\n<PYTANIE>Które z poniższych wydarzeń nie odbędzie się według opisu w Pekinie w 2022 roku?</PYTANIE>\n<ODPOWIEDZI>A. Ceremonie otwarcia\nB. Imprezy w ośrodku narciarskim Taizicheng\nC. Ceremonie zamknięcia\nD. Imprezy na krytym lodowisku</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "CORRECT",
+            "elapsed": 3.377
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu, a następnie wybierz poprawną odpowiedź spośród 4 możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<KONTEKST>W przypadku wirtualnych zespołów obowiązują takie same standardy doskonałości ale istnieją drobne różnice. Członkowie zespołu wirtualnego często funkcjonują jako punkt kontaktu dla bezpośrednio z nimi powiązanej grupy fizycznej. Mają często większą swobodę niż zwyczajni członkowie zespołu bo ich zespoły mogą organizować spotkania zgodnie z różnymi strefami czasowymi czego lokalne kierownictwo może nie rozumieć. Obecność prawdziwej niewidzialnej drużyny” Larson i LaFasto 1989 s.109 to wyjątkowy element wirtualnej drużyny. Niewidoczna grupa” to zespół zarządzający któremu podlegają wszyscy członkowie. Niewidzialna grupa wytycza standardy każdemu członkowi.</KONTEKST>\n<PYTANIE>W jaki sposób zgodnie z fragmentem konwencjonalne i wirtualne zespoły są do siebie podobne?</PYTANIE>\n<ODPOWIEDZI>A. Oczekuje się że obie drużyny będą występować na tym samym poziomie\nB. Oba zespoły mają różny poziom swobody podczas codziennych zajęć\nC. Oba zespoły podlegają niewidzialnemu zespołowi zarządzającemu\nD. Oba zespoły pracują w tej samej strefie czasowej</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "CORRECT",
+            "elapsed": 3.725
+          }
+        ]
+      },
+      "cds": {
+        "num_sampled": 2,
+        "correct": 2,
+        "incorrect": 0,
+        "error": 0,
+        "accuracy": 1.0,
+        "elapsed_sec": 4.1,
+        "questions": [
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>Mężczyzna z dzieckiem w nosidełku i mężczyzna z dzieckiem na grzbiecie stoją w pobliżu stromych skał .</ZDANIE_A>\n<ZDANIE_B>Mężczyzna z dzieckiem w nosidełku i mężczyzna z turbanem na głowie stoją w pobliżu stromych skał .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 2.611
+          },
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>Chłopiec w spodenkach kąpielowych i dmuchanych rękawkach zjeżdża do basenu ze zjeżdżalni .</ZDANIE_A>\n<ZDANIE_B>Człowiek z dużym plecakiem wchodzi po górskim zboczu .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 1.487
+          }
+        ]
+      },
+      "ldek": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 2,
+        "error": 0,
+        "accuracy": 0.0,
+        "elapsed_sec": 5.62,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Do lekarza zgłasza się 70letni pacjent użytkujący od 12 miesięcy protezy całkowite. Jako powód zgłoszenia podaje pieczenie w jamie ustnej i dyskomfort w użytkowaniu protez który pojawił się w okresie ostatniego miesiąca. W wywiadzie podaje astmę atopową leczoną farmakologicznie. Badaniem klinicznym stwierdzasz zły stan higieny i zaczerwienienie błony śluzowej podłoża śluzówkowokostnego. Najbardziej prawdopodobną przyczyną dolegliwości może być</PYTANIE>\n<ODPOWIEDZI>A. reakcja alergiczna na metakrylan metylu.\nB. reakcja alergiczna na barwniki zawarte w tworzywie akrylowym.\nC. toksyczne działanie monomeru resztkowego.\nD. zakażenie grzybicze.\nE. żadna z powyższych odpowiedzi nie jest poprawna.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.517
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Wskaż nieprawdziwe stwierdzenie dotyczące tymczasowego wypełnienia ubytku w trakcie leczenia kanałowego</PYTANIE>\n<ODPOWIEDZI>A. działa przeciwbakteryjnie.\nB. powinno mieć grubość 4 mm.\nC. chroni przed przedostawaniem się bakterii i płynów z jamy ustnej.\nD. zapobiega wyciekaniu leków z kanału do jamy ustnej.\nE. posiada odpowiednią wytrzymałość mechaniczną.</ODPOWIEDZI>\n",
+            "raw_answer": "{\n\"odpowiedź\": \"D\"\n}",
+            "result": "INCORRECT",
+            "elapsed": 2.1
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 2,
+        "correct": 1,
+        "incorrect": 1,
+        "error": 0,
+        "accuracy": 0.5,
+        "elapsed_sec": 3.88,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Miara kąta wpisanego w okrąg jest o 20° mniejsza od miary kąta środkowego opartego na tym samym łuku. Wynika stąd że miara kąta wpisanego jest równa</PYTANIE>\n<ODPOWIEDZI>A. 5°\nB. 10°\nC. 20°\nD. 30°</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.956
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Po przejściu monochromatycznej fali świetlnej z powietrza np = 1 do szkła o współczynniku załamania ns</PYTANIE>\n<ODPOWIEDZI>A. częstotliwość fali zmaleje ns razy.\nB. prędkość fali się nie zmieni.\nC. długość fali zmaleje ns razy.\nD. okres fali zmaleje ns razy.</ODPOWIEDZI>\n",
+            "raw_answer": "{\n  \"odpowiedź\": \"C\"\n}",
+            "result": "CORRECT",
+            "elapsed": 1.922
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 2,
+        "correct": 1,
+        "incorrect": 1,
+        "error": 0,
+        "accuracy": 0.5,
+        "elapsed_sec": 3.26,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Wojna perskoturecka toczona była w latach 15321555 między Imperium Osmańskim rządzonym przez Sulejmana Wspaniałego a Persją pod rządami Tahmaspa I.</KONTEKST>\n<PYTANIE>Jak nazywał się sułtan turecki z XVI wieku o przydomku Wspaniały?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Sulejman Wspaniały\"}",
+            "result": "CORRECT",
+            "elapsed": 2.154
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>NBP jest bankiem centralnym Rzeczypospolitej Polskiej.</KONTEKST>\n<PYTANIE>Jak brzmi nazwa Banku Centralnego w Polsce?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"NBP\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.102
+          }
+        ]
+      }
+    },
+    "spelling_10%": {
+      "belebele-pol": {
+        "num_sampled": 2,
+        "correct": 2,
+        "incorrect": 0,
+        "error": 0,
+        "accuracy": 1.0,
+        "elapsed_sec": 7.42,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu, a następnie wybierz poprawną odpowiedź spośród 4 możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<KONTEKST>Pekin w Chinach będzie gospodarzem zimowych Igrzysk Olimpijskich w 2022 roku i dzięki temu stanie się pierwszym miastem, w którym odbyły się zarówno igrzyska letńe, jak i zimowe. W Pekinie odbendo się ceremonie otwarcia i zamknięcia, a także imprezy na krytym lodowisku. Pozostałe imprezy narciarskie bendą przeprowadzone na obszarze narciarskim w Taizicheng w Zchangijakou, mniej wiencej 220 km (140 mil) od Pekinu.</KONTEKST>\n<PYTANIE>Które z poniższych wydarzeń nie odbendzie się według opisu w Pekinie w 2022 roku?</PYTANIE>\n<ODPOWIEDZI>A. Ceremonie otwarcia\nB. Imprezy w ośrodku narciarskim Taiziheng\nC. Ceremonie zamknięcia\nD. Imprezy na krytym lodowisku</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "CORRECT",
+            "elapsed": 3.434
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu, a następnie wybierz poprawną odpowiedź spośród 4 możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<KONTEKST>W przypadku wirtualnych zespołów obowiązują takie same standardy doskonałości, ale istnieją drobne różnice. Członkowie zespołu wirtualnego często funkcjonują jako punkt kontaktu dla bezpośrednio z nimi powionzanej grupy fizycznej. Majo często większą swobode niż zwyczajni członkowie zespołu, bo ich zespoły mogo organizować spotkania zgodnie z rórznymi strefami czasowymi, czego lokalne kierownictwo morze nie rozumieć. Obecność prawdziwej „niewidzialnej drużyny” (Larson i LaFasto, 1989, s.109) to wyjątkowy element wirtualnej drurzyny. „Niewidoczna grupa” to zespół zarzondzający, któremu podlegają wszyscy członkowie. Niewidzialna grupa wytycza standardy każdemu członkowi.</KONTEKST>\n<PYTANIE>W jaki sposób zgodńe z fragmentem konwencjonalne i wirtualne zespoły są do siebie podobne?</PYTANIE>\n<ODPOWIEDZI>A. Oczekuje się, że obie drużyny będo występować na tym samym poziomie\nB. Oba zespoły majo różny poziom swobody podczas codziennych zajęć\nC. Oba zespoły podlegajo niewidzialnemu zespołowi zarządzającemu\nD. Oba zespoły pracujo w tej samej strefie czasowej</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "CORRECT",
+            "elapsed": 3.984
+          }
+        ]
+      },
+      "cds": {
+        "num_sampled": 2,
+        "correct": 2,
+        "incorrect": 0,
+        "error": 0,
+        "accuracy": 1.0,
+        "elapsed_sec": 4.14,
+        "questions": [
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>Mężczyzna z dzieckiem w nosidełku i mężczyzna z dźeckiem na grzbiecie stojo w pobliżu stromych skał .</ZDANIE_A>\n<ZDANIE_B>Mężczyzna z dźeckiem w nosidełku i mężczyzna z turbanem na głowie stoją w pobliżu stromyh skał .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 2.7
+          },
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>Chłopiec w spodenkach kąpielowych i dmuchanych rękawkach zjeżdrza do basenu ze zjeżdżalni .</ZDANIE_A>\n<ZDANIE_B>Człowiek z durzym plecakiem wchodzi po górskim zboczu .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 1.436
+          }
+        ]
+      },
+      "ldek": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 2,
+        "error": 0,
+        "accuracy": 0.0,
+        "elapsed_sec": 5.74,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Do lekarza zgłasza się 70-letni pacjent urzytkujoncy od 12 miesięcy protezy całkowite. Jako powód zgłoszenia podaje pieczenie w jamie ustnej i dyskomfort w użytkowaniu protez, który pojawił się w okreśe ostatniego miesiąca. W wywiadzie podaje astmę atopową leczono farmakologicznie. Badańem klinicznym stwierdzasz zły stan higieny i zaczerwienieńe błony śluzowej podłoża śluzówkowo-kostnego. Najbardziej prawdopodobną przyczyną dolegliwości może być:</PYTANIE>\n<ODPOWIEDZI>A. reakcja alergiczna na metakrylan metylu.\nB. reakcja alergiczna na barwniki zawarte w twożywie akrylowym.\nC. toksyczne działanie monomeru resztkowego.\nD. zakażenie grzybicze.\nE. żadna z powyższyh odpowiedzi nie jest poprawna.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.617
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Wskaż nieprawdziwe stwierdzeńe dotyczące tymczasowego wypełnienia ubytku w trakcie leczenia kanałowego:</PYTANIE>\n<ODPOWIEDZI>A. działa przeciwbakteryjnie.\nB. powinno mieć gruboźć 4 mm.\nC. hroni przed przedostawaniem się bakterii i płynów z jamy ustnej.\nD. zapobiega wyciekańu leków z kanału do jamy ustnej.\nE. posiada odpowiednią wytrzymałość mechaniczną.</ODPOWIEDZI>\n",
+            "raw_answer": "{\n\"odpowiedź\": \"B\"\n}",
+            "result": "INCORRECT",
+            "elapsed": 2.121
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 2,
+        "correct": 1,
+        "incorrect": 1,
+        "error": 0,
+        "accuracy": 0.5,
+        "elapsed_sec": 4.13,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Miara kąta wpisanego w okrąg jest o 20° mniejsza od miary kąta środkowego opartego na tym samym łuku. Wynika stąd, że miara konta wpisanego jesd ruwna</PYTANIE>\n<ODPOWIEDZI>A. 5°\nB. 10°\nC. 20°\nD. 30°</ODPOWIEDZI>\n",
+            "raw_answer": "{\n\"odpowiedź\": \"B\"\n}",
+            "result": "INCORRECT",
+            "elapsed": 2.177
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Po pżejściu monochromatycznej fali świetlnej z powietża (np = 1) do szkła o współczynniku załamania ns</PYTANIE>\n<ODPOWIEDZI>A. częstotliwoźć fali zmaleje ns razy.\nB. prędkość fali się ńe zmieni.\nC. długoźć fali zmaleje ns razy.\nD. okres fali zmaleje ns razy.</ODPOWIEDZI>\n",
+            "raw_answer": "{\n\"odpowiedź\": \"C\"\n}",
+            "result": "CORRECT",
+            "elapsed": 1.949
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 2,
+        "correct": 1,
+        "incorrect": 1,
+        "error": 0,
+        "accuracy": 0.5,
+        "elapsed_sec": 3.82,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Wojna persko-turecka toczona była w latach 1532–1555 między Imperium Osmańskim rządzonym przes Sulejmana Wspaniałego a Persjo pod rządami Tahmaspa I.</KONTEKST>\n<PYTANIE>Jak nazywał się sułtan turecki z XVI wieku o pżydomku Wspaniały?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Sulejman Wspaniały\"}",
+            "result": "CORRECT",
+            "elapsed": 2.179
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>NBP jest bankiem centralnym żeczypospolitej Polskiej.</KONTEKST>\n<PYTANIE>Jag brzmi nazwa Banku Centralnego w Polsce?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Tak, brzmi nazwa Banku Centralnego w Polsce NBP.\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.643
+          }
+        ]
+      }
+    },
+    "spelling_30%": {
+      "belebele-pol": {
+        "num_sampled": 2,
+        "correct": 2,
+        "incorrect": 0,
+        "error": 0,
+        "accuracy": 1.0,
+        "elapsed_sec": 7.84,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu, a następnie wybierz poprawną odpowiedź spośród 4 możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<KONTEKST>Pekin w Chinah bendźe gospodarzem zimowych Igrzysg Olimpijskih w 2022 roku i dźęki temu stańe śe pierwszym miastem, w którym odbyły śe zarówno igrzyska letńe, jak i zimowe. W Pekinie odbendą się ceremonie otwarća i zamknięcia, a także imprezy na krytym lodowisku. Pozostałe imprezy narciarskie będo przeprowadzone na obszarze narciarskim w Taizihenk w Zchangijakou, mniej wiencej 220 km (140 mil) od Pekinu.</KONTEKST>\n<PYTANIE>Które z ponirzszych wydażeń ńe odbędzie śę według opisu w Pekinie w 2022 roku?</PYTANIE>\n<ODPOWIEDZI>A. Ceremońe otwarcia\nB. Imprezy w ośrodku narciarskim Taizihenk\nC. Ceremońe zamknięcia\nD. Imprezy na krytym lodowisku</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "CORRECT",
+            "elapsed": 3.594
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu, a następnie wybierz poprawną odpowiedź spośród 4 możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<KONTEKST>W przypadku wirtualnych zespołuf obowiązują takie same standardy doskonałości, ale istniejo drobne różnice. Członkowie zespołu wirtualnego czensto funkcjonują jako punkd kontaktu dla bezpośredńo z nimi powionzanej grupy fizycznej. Mają czensto większą swobodę nirz zwyczajni członkowie zespołu, bo ich zespoły mogo organizować spotkańa zgodńe z rurznymi strefami czasowymi, czego lokalne kierownictwo może nie rozumieć. Obecnoźć prawdziwej „niewidzialnej drurzyny” (Larson i LaFasto, 1989, s.109) to wyjątkowy element wirtualnej drurzyny. „ńewidoczna grupa” to zespół zażondzajoncy, kturemu podlegajo wszyscy członkowie. Niewidźalna grupa wytycza standardy karzdemu członkowi.</KONTEKST>\n<PYTANIE>W jaki sposup zgodńe z fragmentem konwencjonalne i wirtualne zespoły są do śebie podobne?</PYTANIE>\n<ODPOWIEDZI>A. Oczekuje śe, że obie drużyny bendą występować na tym samym poziomie\nB. Oba zespoły mają różny poźom swobody podczas codziennyh zajenć\nC. Oba zespoły podlegają niewidzialnemu zespołowi zażądzajoncemu\nD. Oba zespoły pracujo w tej samej strefie czasowej</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "CORRECT",
+            "elapsed": 4.246
+          }
+        ]
+      },
+      "cds": {
+        "num_sampled": 2,
+        "correct": 2,
+        "incorrect": 0,
+        "error": 0,
+        "accuracy": 1.0,
+        "elapsed_sec": 4.24,
+        "questions": [
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>Męrzczyzna z dzieckiem w nosidełku i męrzczyzna z dzieckiem na gżbieće stoją w pobliżu stromyh skał .</ZDANIE_A>\n<ZDANIE_B>Męrzczyzna z dźeckiem w nosidełku i męrzczyzna z turbanem na głowie stoją w poblirzu stromyh skał .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 2.726
+          },
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>hłopiec w spodenkach kąpielowych i dmuchanych rękawkah zjeżdrza do basenu ze zjeżdrzalni .</ZDANIE_A>\n<ZDANIE_B>Człowieg z dużym plecakiem whodzi po gurskim zboczu .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 1.515
+          }
+        ]
+      },
+      "ldek": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 2,
+        "error": 0,
+        "accuracy": 0.0,
+        "elapsed_sec": 5.95,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Do lekarza zgłasza się 70-letni pacjend użytkujący od 12 mieśęcy protezy całkowite. Jako powód zgłoszeńa podaje pieczenie w jamie ustnej i dyskomford w urzytkowaniu protes, ktury pojawił się w okreśe ostatniego miesiąca. W wywiadźe podaje astmę atopowo leczoną farmakologicznie. Badaniem klinicznym stwierdzass zły stan higieny i zaczerwieńenie błony śluzowej podłorza śluzuwkowo-kostnego. Najbardziej prawdopodobną pżyczyno dolegliwości morze być:</PYTANIE>\n<ODPOWIEDZI>A. reakcja alergiczna na metakrylan metylu.\nB. reakcja alergiczna na barwniki zawarte w twożywie akrylowym.\nC. toksyczne dźałanie monomeru resztkowego.\nD. zakarzenie grzybicze.\nE. żadna z powyrzszych odpowiedzi ńe jest poprawna.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.755
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Wskarz nieprawdziwe stwierdzeńe dotyczące tymczasowego wypełnienia ubytku w trakće leczenia kanałowego:</PYTANIE>\n<ODPOWIEDZI>A. działa pżeciwbakteryjnie.\nB. powinno mieć gruboźć 4 mm.\nC. chroni przed przedostawańem sie bakteri i płynów z jamy ustnej.\nD. zapobiega wyciekańu lekuw z kanału do jamy ustnej.\nE. posiada odpowiednią wytżymałość mechaniczną.</ODPOWIEDZI>\n",
+            "raw_answer": "{\n\"odpowiedź\": \"B\"\n}",
+            "result": "INCORRECT",
+            "elapsed": 2.189
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 2,
+        "correct": 1,
+        "incorrect": 1,
+        "error": 0,
+        "accuracy": 0.5,
+        "elapsed_sec": 4.04,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Miara kąta wpisanego w okronk jesd o 20° mńejsza od miary konta środkowego opartego na tym samym łuku. Wynika stąd, że miara konta wpisanego jesd ruwna</PYTANIE>\n<ODPOWIEDZI>A. 5°\nB. 10°\nC. 20°\nD. 30°</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.023
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Po pżejśću monohromatycznej fali świetlnej z powietża (np = 1) do szkła o wspułczynniku załamania ns</PYTANIE>\n<ODPOWIEDZI>A. czenstotliwoźć fali zmaleje ns razy.\nB. prendkoźć fali się nie zmieni.\nC. długoźć fali zmaleje ns razy.\nD. okres fali zmaleje ns razy.</ODPOWIEDZI>\n",
+            "raw_answer": "{\n\"odpowiedź\": \"C\"\n}",
+            "result": "CORRECT",
+            "elapsed": 2.019
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 2,
+        "correct": 1,
+        "incorrect": 1,
+        "error": 0,
+        "accuracy": 0.5,
+        "elapsed_sec": 3.4,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Wojna persko-turecka toczona była w latach 1532–1555 między Imperium Osmańskim żondzonym przez Sulejmana Wspańałego a Persjo pot rządami Tachmaspa I.</KONTEKST>\n<PYTANIE>Jag nazywał się sułtan turecki z XVI wieku o pżydomku Wspańały?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Sulejman Wspaniały\"}",
+            "result": "CORRECT",
+            "elapsed": 2.218
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>NBP jesd bankiem centralnym żeczypospolitej Polskiej.</KONTEKST>\n<PYTANIE>Jag bżmi nazwa Banku Centralnego w Polsce?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Bank NBP\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.181
+          }
+        ]
+      }
+    },
+    "spelling_50%": {
+      "belebele-pol": {
+        "num_sampled": 2,
+        "correct": 1,
+        "incorrect": 1,
+        "error": 0,
+        "accuracy": 0.5,
+        "elapsed_sec": 8.39,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu, a następnie wybierz poprawną odpowiedź spośród 4 możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<KONTEKST>Pekin w hinach będźe gospodażem zimowyh Igżysk Olimpijskich w 2022 roku i dźenki temu stańe się pierwszym miastem, w kturym odbyły śę zaruwno igżyska letńe, jak i zimowe. W Pekińe odbędo śe ceremońe otwarća i zamkńenća, a takrze imprezy na krytym lodowisku. Pozostałe imprezy narćarskie bendo pżeprowadzone na obszarze narćarskim w Taizicheng w Zchangijakou, mńej wiencej 220 km (140 mil) od Pekinu.</KONTEKST>\n<PYTANIE>Kture z ponirzszych wydażeń ńe odbędźe śe według opisu w Pekinie w 2022 roku?</PYTANIE>\n<ODPOWIEDZI>A. Ceremońe otwarcia\nB. Imprezy w ośrodku narćarskim Taizihenk\nC. Ceremonie zamkńęcia\nD. Imprezy na krytym lodowisku</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "CORRECT",
+            "elapsed": 3.832
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu, a następnie wybierz poprawną odpowiedź spośród 4 możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<KONTEKST>W pżypadku wirtualnych zespołuf obowionzują takie same standardy doskonałości, ale istńejo drobne rużnice. Członkowie zespołu wirtualnego czensto funkcjonujo jako punkd kontaktu dla bezpośredńo z nimi powionzanej grupy fizycznej. Majo czensto wienkszo swobode nirz zwyczajni członkowie zespołu, bo ih zespoły mogo organizować spotkańa zgodńe z rurznymi strefami czasowymi, czego lokalne kierownictwo morze ńe rozumieć. Obecnoźć prawdziwej „ńewidźalnej drurzyny” (Larson i LaFasto, 1989, s.109) to wyjątkowy elemend wirtualnej drużyny. „ńewidoczna grupa” to zespuł zażondzajoncy, kturemu podlegajo wszyscy członkowie. ńewidźalna grupa wytycza standardy karzdemu członkowi.</KONTEKST>\n<PYTANIE>W jaki sposup zgodńe z fragmentem konwencjonalne i wirtualne zespoły są do śebie podobne?</PYTANIE>\n<ODPOWIEDZI>A. Oczekuje sie, że obie drurzyny bendo wystempować na tym samym poźomie\nB. Oba zespoły majo rórzny poźom swobody podczas codźennych zajenć\nC. Oba zespoły podlegajo ńewidzialnemu zespołowi zarzondzającemu\nD. Oba zespoły pracujo w tej samej strefie czasowej</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 4.558
+          }
+        ]
+      },
+      "cds": {
+        "num_sampled": 2,
+        "correct": 2,
+        "incorrect": 0,
+        "error": 0,
+        "accuracy": 1.0,
+        "elapsed_sec": 4.26,
+        "questions": [
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>Męrzczyzna z dźeckiem w nosidełku i męrzczyzna z dźeckiem na gżbieće stojo w poblirzu stromyh skał .</ZDANIE_A>\n<ZDANIE_B>Męrzczyzna z dźeckiem w nosidełku i męrzczyzna z turbanem na głowie stojo w poblirzu stromyh skał .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 2.735
+          },
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>hłopiec w spodenkach kompielowych i dmuhanyh renkawkach zjerzdrza do basenu ze zjeżdżalni .</ZDANIE_A>\n<ZDANIE_B>Człowieg z durzym plecakiem whodzi po gurskim zboczu .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 1.521
+          }
+        ]
+      },
+      "ldek": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 2,
+        "error": 0,
+        "accuracy": 0.0,
+        "elapsed_sec": 6.12,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Do lekaża zgłasza śę 70-letni pacjend urzytkujoncy od 12 miesiency protezy całkowite. Jako powut zgłoszeńa podaje pieczeńe w jamie ustnej i dyskomford w użytkowaniu protes, ktury pojawił śę w okresie ostatńego mieśonca. W wywiadźe podaje astmę atopowo leczoną farmakologiczńe. Badańem klinicznym stwierdzass zły stan higieny i zaczerwienieńe błony śluzowej podłorza śluzuwkowo-kostnego. Najbardźej prawdopodobną pżyczyno dolegliwości morze być:</PYTANIE>\n<ODPOWIEDZI>A. reakcja alergiczna na metakrylan metylu.\nB. reakcja alergiczna na barwniki zawarte w twożywie akrylowym.\nC. toksyczne dźałańe monomeru resztkowego.\nD. zakarzenie grzybicze.\nE. żadna z powyrzszyh odpowiedzi ńe jesd poprawna.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.856
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Wskarz ńeprawdziwe stwierdzeńe dotyczonce tymczasowego wypełnienia ubytku w trakće leczeńa kanałowego:</PYTANIE>\n<ODPOWIEDZI>A. dźała przeciwbakteryjnie.\nB. powinno mieć gruboźć 4 mm.\nC. hroni pżet pżedostawańem się bakterii i płynów z jamy ustnej.\nD. zapobiega wyćekańu lekuf z kanału do jamy ustnej.\nE. posiada odpowiedńą wytrzymałoźć mechaniczną.</ODPOWIEDZI>\n",
+            "raw_answer": "{\n\"odpowiedź\": \"B\"\n}",
+            "result": "INCORRECT",
+            "elapsed": 2.265
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 2,
+        "correct": 1,
+        "incorrect": 1,
+        "error": 0,
+        "accuracy": 0.5,
+        "elapsed_sec": 4.24,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Miara konta wpisanego w okronk jesd o 20° mńejsza od miary konta środkowego opartego na tym samym łuku. Wynika stont, że miara konta wpisanego jesd ruwna</PYTANIE>\n<ODPOWIEDZI>A. 5°\nB. 10°\nC. 20°\nD. 30°</ODPOWIEDZI>\n",
+            "raw_answer": "{\n\"odpowiedź\": \"B\"\n}",
+            "result": "INCORRECT",
+            "elapsed": 2.196
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Po pżejśću monohromatycznej fali świetlnej z powietża (np = 1) do szkła o wspułczynniku załamańa ns</PYTANIE>\n<ODPOWIEDZI>A. czenstotliwoźć fali zmaleje ns razy.\nB. prendkoźć fali śę nie zmieni.\nC. długoźć fali zmaleje ns razy.\nD. okres fali zmaleje ns razy.</ODPOWIEDZI>\n",
+            "raw_answer": "{\n\"odpowiedź\": \"C\"\n}",
+            "result": "CORRECT",
+            "elapsed": 2.042
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 2,
+        "correct": 1,
+        "incorrect": 1,
+        "error": 0,
+        "accuracy": 0.5,
+        "elapsed_sec": 3.46,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Wojna persko-turecka toczona była w latah 1532–1555 miendzy Imperium Osmańskim żondzonym pżez Sulejmana Wspańałego a Persjo pot żądami Tachmaspa I.</KONTEKST>\n<PYTANIE>Jag nazywał śe sułtan turecki z XVI wieku o pżydomku Wspańały?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Sulejman Wspaniały\"}",
+            "result": "CORRECT",
+            "elapsed": 2.256
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>NBP jesd bankiem centralnym żeczypospolitej Polskiej.</KONTEKST>\n<PYTANIE>Jag bżmi nazwa Banku Centralnego w Polsce?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Bank NBP\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.205
+          }
+        ]
+      }
+    },
+    "typo_10%": {
+      "belebele-pol": {
+        "num_sampled": 2,
+        "correct": 2,
+        "incorrect": 0,
+        "error": 0,
+        "accuracy": 1.0,
+        "elapsed_sec": 7.44,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu, a następnie wybierz poprawną odpowiedź spośród 4 możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<KONTEKST>Pekin w Chinach będzie gospodarzem zimowych Igrzysk Olimpijskich w 2022 roku i dziękiu temu stanie się pierwszym miastem, w kyórym odyły się zarówno igrzyska letnie, jak i zimowe. W Pekinie odbędą się ceremonie otwarciq i zamknięcia, a także imprezy na krytym lodowisku. Pozostałe imprez narciarskie będą przeprowadzone na obszarze narciarskim w Taizicheng w Zhangijakou, mniejk więcej 220 km (140 mil) od Pekinu.</KONTEKST>\n<PYTANIE>Które z poniższych wydarzeń nie odbędzie się według opisu w Pekinie w 2022 rku?</PYTANIE>\n<ODPOWIEDZI>A. Ceremonie otwarcia\nB. Imprezy w ośrodku nsrciarskim Taizicheng\nC. Ceremonie zamknięcia\nD. Imprezy na krytym lodowisku</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "CORRECT",
+            "elapsed": 3.46
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu, a następnie wybierz poprawną odpowiedź spośród 4 możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<KONTEKST>W przypadku wirtualnych zespołów obowiązują takie same standardy doskonłaości, ale istnieją drobne różnice. Członkowie zespołu wirtualnego często funkcjonują jako punkt kontaktu dla bezpośrednio z nimi powąizanej grupy fizycznej. Mają często większą swobodę niż zwyczajni członkowie zespołu, bo ich zespoky mogą organizować spotkania zgodnie z rónżymi strrefami czasowymi, czego lokalne kierownictwo może nie rozumieć. Obecność prawdziwej „niewidzialnej drużyny” (Larson i LaFasto, 1989, s.109) ti wyjątkowy element wirtualnej drużyny. „Niewiodczna grupa” to zespół zarządzający, któremu podlegają wszyscy członkowie. Niewidzialna grupa wytycza standardy każdemy członkowi.</KONTEKST>\n<PYTANIE>W jaki sposób zgodnie z fragmentem konwencjonalne i wirtualne zwspoły są do siebie podobne?</PYTANIE>\n<ODPOWIEDZI>A. Oczekuje soę, że obie drużyny będą występować na tym samym poziomie\nB. Oba zesoły mają różny poziom swobody podczas codziennych zajęć\nC. Oba zespoły podlegjaą niewidzialnemu zespołowi zarządzającemu\nD. Oba zespoły pracują w tej samje strefie czasowej</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "CORRECT",
+            "elapsed": 3.981
+          }
+        ]
+      },
+      "cds": {
+        "num_sampled": 2,
+        "correct": 2,
+        "incorrect": 0,
+        "error": 0,
+        "accuracy": 1.0,
+        "elapsed_sec": 4.07,
+        "questions": [
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>Mężczyzna z dzieckiem w nosidełku i mężczyzna z dzieckiem n grzbiecie stoją w pobliżu stromych skła .</ZDANIE_A>\n<ZDANIE_B>Mężczyzna z dzieckuem w nosidełu i mężczyzna z turbanem na głowie stoją w pobliżu stromych skał .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 2.635
+          },
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>Chłopiec w spodenkach kąpielowych i dmuhcanych rękawkach zjeżdża do basenu ze zjeżdżalni .</ZDANIE_A>\n<ZDANIE_B>Człoiwek z dużym plecakiem wchodzi po górskim zboczu .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 1.438
+          }
+        ]
+      },
+      "ldek": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 2,
+        "error": 0,
+        "accuracy": 0.0,
+        "elapsed_sec": 5.67,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Do lekarza zgłasza soę 70-letni pacjet użytkujący od 12 miesięcy protezy całkowite Jako powód zgłoszenia pdaje pieczenei w jamie ustnej i dyskomfort w użytkowaniu protez, który pojawił się w okresie ostatniego miesiąca. W wywiadzie podaje astmę atopową leczoną farmakologicznie. Badaniem klinicznym stwierdzasz zły stan higieny i zaczerwienienie błony śluzowej podłoża śluzówkowo-kostnego. Najbardziej prawdopodbną przyczyną dolegliwości może być:</PYTANIE>\n<ODPOWIEDZI>A. reakcja alergicna na metakrylan metylu.\nB. reakja alergiczna na barwniki zawarte w tworzywie akrylowym.\nC. toksyczne działanie monomeru resztkowego.\nD. zakażenie grzybicze.\nE. żadna z powyższych odpowiedzi nie jest poprana.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.533
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Wskaż nieprawdziwe stwierdzenie dotyczące tymczasowego wypenienia ubytku w trakcie leczenia kanałowego:</PYTANIE>\n<ODPOWIEDZI>A. działa przeciwbakteryjnie.\nB. poiwnno mieć grubość 4 mm.\nC. chreoni przed przedostawaniem się bakterii i płynów z jamy ustnej.\nD. zapobiega wycieakniu leków z kanału do jamy ustnej.\nE. posiada odpowiednią wytrzymałość mechaniczną.</ODPOWIEDZI>\n",
+            "raw_answer": "{\n\"odpowiedź\": \"B\"\n}",
+            "result": "INCORRECT",
+            "elapsed": 2.14
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 2,
+        "correct": 1,
+        "incorrect": 1,
+        "error": 0,
+        "accuracy": 0.5,
+        "elapsed_sec": 4.15,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Miara kątas wpisanego w okrąg jest o 20° mniesjza od miary kąta środkowego oparteog na tym samym łuku. Wynika stąd, że miara kąta wpisanego jest równa</PYTANIE>\n<ODPOWIEDZI>A. 5°\nB. 10°\nC. 20°\nD. 30°</ODPOWIEDZI>\n",
+            "raw_answer": "{\n\"odpowiedź\": \"B\"\n}",
+            "result": "INCORRECT",
+            "elapsed": 2.114
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Po przejściu monochromatucznej fali świetlnej z powietrza (np = 1) do szkła o współczynniku złamania ns</PYTANIE>\n<ODPOWIEDZI>A. częstotliwość fali zmakeje ns razy.\nB. prędkśoć fali się nie zmieni.\nC. długość fal zmaleje ns razy.\nD. okres fali zmaleje ns ray.</ODPOWIEDZI>\n",
+            "raw_answer": "{\n  \"odpowiedź\": \"C\"\n}",
+            "result": "CORRECT",
+            "elapsed": 2.032
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 2,
+        "correct": 1,
+        "incorrect": 1,
+        "error": 0,
+        "accuracy": 0.5,
+        "elapsed_sec": 3.31,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Wojna persko-turecka toczona była w latach 1532–1555 między Imperium Osmańskim rządzonym przez Sulejmana Wspaniałego a Pesją pod rządamo Tahmaspa I.</KONTEKST>\n<PYTANIE>Jak nazywał się sułtan turecki z XI wieku o przydomku Wspaniały?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Sulejman Wspaniały\"}",
+            "result": "CORRECT",
+            "elapsed": 2.169
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>NBP jest bankiem centralnym Rzeczyppspolitej Polskiej.</KONTEKST>\n<PYTANIE>Jak brzmi nazwa Banku Centralnego w Polscw?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"NBP\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.137
+          }
+        ]
+      }
+    },
+    "typo_30%": {
+      "belebele-pol": {
+        "num_sampled": 2,
+        "correct": 2,
+        "incorrect": 0,
+        "error": 0,
+        "accuracy": 1.0,
+        "elapsed_sec": 7.72,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu, a następnie wybierz poprawną odpowiedź spośród 4 możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<KONTEKST>Pekin w Chinach będzie gosppdarzem zimowych Igrzyak Olkimpijskich w 2022 roku i dzięki temu stanie sę pierwszym miastem, w kórym odby się zarówno igrzyska letnie, jak i zimowe. W Pekinie odbęrdą się ceremonie otwarcia i zamknięci, a także imprezy na krytym lodowisku. Pozostaóe imprezy narcoarskie będą ptzeprowadzone na obszarze narciarksim w Taizichegn w Zhangijzkoy, mniej więcje 220 kmn (140 mil) od Peknu.</KONTEKST>\n<PYTANIE>Którew z poniższych wydarzeń nie odbędzie sięw wedg opisu w Pekinie w 2022 roku?</PYTANIE>\n<ODPOWIEDZI>A. Cetemonie otwarcia\nB. Imprezy w ośrodfku narciarskim Taizichenmg\nC. Ceremonie zamknięcai\nD. Imprezy na krytym ldowisku</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "CORRECT",
+            "elapsed": 3.557
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu, a następnie wybierz poprawną odpowiedź spośród 4 możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<KONTEKST>W przypadku wirtualbych zespołów oboqiązują takei same standardy doskonałości, ale istnieją drolbne różnice. Członkowie zespołu wirtqlneog często funkcjonują jako punkt kontaktu dla bezpośrednio z nimi powiązanej gruy fizycznej. Mają często większą swobodę niż zwyczajnu członkowie zespołu, bo ich zespoły moą organizować spotkania zgondie z rónżymi strefami czasowymi, czego loklane kierownictwo może nie rozumieć. Obecność prawdziwej „niewidzialnek drużyny” (Laeson i LaFasto, 1989, s.109) to wyjątkowy element wirtualnej drużyny. „Niewidocnza grpa” ti zespół zarządzająyc, którmeu podlegaąj wszysyc członkowie. Niewidzialna grupq wytycza standardy każdemj członkwoi.</KONTEKST>\n<PYTANIE>W jaki sposób zgodnie z fragmnentem konwenvjonmalne i wirtualne zespoły są do siebie podpbne?</PYTANIE>\n<ODPOWIEDZI>A. Oczekueh się, że obie drużyny będą występować na ty samym poziomie\nB. Obq zespoły mają rónży poziom swobody podczas codziennych zajć\nC. Oba zespoły podlegają niewidialnemu zespołowi zarządzająemu\nD. Oba zespoły pracują w tej same strefioe czasowej</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "CORRECT",
+            "elapsed": 4.165
+          }
+        ]
+      },
+      "cds": {
+        "num_sampled": 2,
+        "correct": 2,
+        "incorrect": 0,
+        "error": 0,
+        "accuracy": 1.0,
+        "elapsed_sec": 4.18,
+        "questions": [
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>Mężczyzna z dzieckiem w noisdełki i mężczyznz z dzieckiem n grzbiecie stoją w pobliżu stromych skł .</ZDANIE_A>\n<ZDANIE_B>Mężczyzna z dzieckiem w nosidełku i mężczyzna z turbnznem na głowei stoją w pobliżi stromych skałk .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 2.695
+          },
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>Chłpiex w spodenkach kąpielkowych i dmuchanych rękawkach zjeżdźa do basenu ze zjeżdżalni .</ZDANIE_A>\n<ZDANIE_B>Człowiek z dużtm plecakiem wchodzi po girskim zboczuy .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 1.486
+          }
+        ]
+      },
+      "ldek": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 2,
+        "error": 0,
+        "accuracy": 0.0,
+        "elapsed_sec": 5.8,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Do leakrza zgłasza sięw 70-letni pacjent użytkująyc od 12 mesięcy protezy całkowite. Jako powód zgłoszenia podaje pieczenie w jamoe ustnejk i dyskomfort w użtykowaniu prtoewz, który pojawił się w okreioe ostatniego miesiąca. W wyiadzie podaje astmę atopową leczoną farmakologicznie. Badaniem klinicznym stwierdzasz zły stan higeny i zaczerwienienie błomy śluzowej podłoża śluzówkowo-kostnego. Najbardxiej prawdopodobvną przyczyną dolegliwści może być:</PYTANIE>\n<ODPOWIEDZI>A. reakcja alergivzna na metakrylan metyu.\nB. reakcja alergiczna na barwnii zawarte w tworzywie akrylowyn.\nC. tosyczne działanie monomeru resztkowego.\nD. zakażenie grzbicze.\nE. żadna z powyższcyh odpowiedzi ni jest poprawna.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.634
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Wskaż nieprawedziwe stwierdzenir dotyczące tymczasowego wypełnienia ubytku w tracie leczenia kanałowego:</PYTANIE>\n<ODPOWIEDZI>A. działa przeciwbakreryjnie.\nB. powinno mieć gruboś 4 mm\nC. chroni przed przedsotawanime się bakterii i płynów z jamy ustnje.\nD. zapobiega wycieknaiu leków z kanału di jamy ustnej.\nE. posiada odpowiednią wytrzymałość mechanizną.</ODPOWIEDZI>\n",
+            "raw_answer": "{\n\"odpowiedź\": \"B\"\n}",
+            "result": "INCORRECT",
+            "elapsed": 2.168
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 2,
+        "correct": 1,
+        "incorrect": 1,
+        "error": 0,
+        "accuracy": 0.5,
+        "elapsed_sec": 4.2,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Mira kąta wpisanegp w okrąg jest o 20° mniejszas od miary kąta środkoweego opartego na ty samym łuku. Wynika stąd, ż miara kąta wpisaneo jest róqna</PYTANIE>\n<ODPOWIEDZI>A. 5°\nB. 10°\nC. 20°\nD. 30°</ODPOWIEDZI>\n",
+            "raw_answer": "{\n  \"odpowiedź\": \"B\"\n}",
+            "result": "INCORRECT",
+            "elapsed": 2.186
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Po przejściu monovhromatycznej fali śeietlnej z powietrza (n = 1) d szkał o współczynniku załamania ns</PYTANIE>\n<ODPOWIEDZI>A. częstotliwość falio zmaleje ns raz.\nB. prędkoś faki się nie zmieni.\nC. długość fali zmsleje ns raxy.\nD. okres fali zmalejew n razy.</ODPOWIEDZI>\n",
+            "raw_answer": "{\n\"odpowiedź\": \"C\"\n}",
+            "result": "CORRECT",
+            "elapsed": 2.01
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 2,
+        "correct": 1,
+        "incorrect": 1,
+        "error": 0,
+        "accuracy": 0.5,
+        "elapsed_sec": 3.36,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Wojnaz persko-turecka toczona była w latach 1532–1555 między Imperium Osmańskin rządzonym przez Sulejmana Wspaniłaego a Prrsją pod rzdami Tahmaspa I</KONTEKST>\n<PYTANIE>Jaj nazywał się sułtan turecki z XI wikeu o przydomku Wspaniały?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Sulejman Wspaniały\"}",
+            "result": "CORRECT",
+            "elapsed": 2.205
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>NBP jest bankime centralnym Rzeczypospolitej Polskiwj.</KONTEKST>\n<PYTANIE>Jak brzmi nazwa Banku Cenmtraknego w Polsce?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"NBP\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.15
+          }
+        ]
+      }
+    },
+    "typo_50%": {
+      "belebele-pol": {
+        "num_sampled": 2,
+        "correct": 0,
+        "incorrect": 2,
+        "error": 0,
+        "accuracy": 0.0,
+        "elapsed_sec": 8.04,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu, a następnie wybierz poprawną odpowiedź spośród 4 możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<KONTEKST>Prkin w Chinach będzei gospodarxem zimowych Igfrzysdk Olimpijskich w 2022 roku i dięki temu stane się poerwszym miastem, w ktróym odbyły sior zarówni igrzyska letnie, jak i zinowe. W Pekibie odbrdą sid ceremonie otwaecia i zamknięcia, a tażke impreyz n krttm lodowisku. Pozostałe imprezy narxiarskie będą przeprowadzone n obszare narciarskim w Taizicheng w Zgagnijakou, mnej więcwj 220 km (140 mil) o Prkinu.</KONTEKST>\n<PYTANIE>Któr z poniżazych wydarzeń ni odbęfzie siw wedłuh opisu w Pekinie w 2022 rokuy?</PYTANIE>\n<ODPOWIEDZI>A. Ceremoniue otwarcia\nB. Imprezy w ośrsku narciarskim Taizichjeng\nC. Ceremonie zamknioęcia\nD. Imprezxy na kryttm lodowisku</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.773
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu, a następnie wybierz poprawną odpowiedź spośród 4 możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<KONTEKST>W przypadku wirtuaknych zespołwó obowiązują tak same sranardy doskonłaości, ale idtnieją drbne różnice. Członowie zespołu wirtulanego często funkcjonją jak punk kontaktu dla bezpośrednio z nimi poweiązanej grup fizycznej Mają często większą swobopdę niż zwyczajni człokowie zespołu, b ich zspły mogą orgnizować spotkania zgodnie z różnymi strefami czasowymi, cargo lokaln kierownicto może nie rozumieć. Obecność prawdziwej „niewidzialenj drużyny” (Larson i LaFasto, 1989, s.109) to wyjątkowy elkement wirtuaslnej drużyuny. „Niewidoczxna grup” t zespół zarządzjący, którrmu podlegają wszyscy członkowi. Nieqidzialna grups wytycza standardy każdemu członkowi.</KONTEKST>\n<PYTANIE>W jaqki spowób zgodnie z fragmentem konwencjonalne i wittualne zespoo są do siebei podobne?</PYTANIE>\n<ODPOWIEDZI>A. Oczkuje się, że obie drużyny będą występwoaqć n tymn samym piziomie\nB. Os zespoły mają różny poizom swoboyd podczs codziennych zajęć\nC. Oba zesoły podoegają niewidzialnemu zespołowi zarządzającemu\nD. Oba zwspoły pracują w tj sameh strefue czasowej</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 4.264
+          }
+        ]
+      },
+      "cds": {
+        "num_sampled": 2,
+        "correct": 1,
+        "incorrect": 1,
+        "error": 0,
+        "accuracy": 0.5,
+        "elapsed_sec": 4.31,
+        "questions": [
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>Mężczyzna z dzieckirm w nosidłku i mrżczyza z dzeckeum na grzbiecier stoją w pobliżu stromnych skał .</ZDANIE_A>\n<ZDANIE_B>Mężczyzna z dzieckeim w nosdiełku i mężczyana z turbaenm na głowi stoją w pobliu stromychg skał .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"CONTRADICTION\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.779
+          },
+          {
+            "prompt": "Przeanalizuj krok po kroku relację między dwoma zdaniami i określ, czy drugie zdanie jest konsekwencją pierwszego (ENTAILMENT), sprzeciwia się mu (CONTRADICTION), czy też nie ma jasnej relacji (NEUTRAL).\nOdpowiedz w formacie: {\"odpowiedź\": \"RELATION\"} gdzie RELATION to ENTAILMENT, CONTRADICTION lub NEUTRAL.\n\n<ZDANIE_A>Cyłopiecv w spidenkach kąpielpwych i dmuchanych rękawkach zjeżsża do basemu zed zjeżdżalni .</ZDANIE_A>\n<ZDANIE_B>Człowiek z dużm plecakein wchodzi po gprskom zboczu .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 1.535
+          }
+        ]
+      },
+      "ldek": {
+        "num_sampled": 2,
+        "correct": 2,
+        "incorrect": 0,
+        "error": 0,
+        "accuracy": 1.0,
+        "elapsed_sec": 6.04,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Dk leajrza zgałsza sę 70-letni pacjet użytkujący od 12 miesięcy protezy całkowite. Jako powód zgłoszenia podaje pieczenei w jasmie ustnwj i dyskomfort w użyktowaniu protez, któey pojawoł sę w okreise ostatnieho miesiąca. W wywaidzie podaej astmę atopową leczoną farmakologiczne. Badsniem klinicznym stwierdzasz zły stan higieny i zaczerwienmienei błomy śluzowej podłżoa śluzówkowo-kostnego. Najbardziej pradopodobną przycząn dolegliwości może być:</PYTANIE>\n<ODPOWIEDZI>A. reakcja alergicnza n metaktylan metylu.\nB. reakcj alergiczna na barwniki zzwarte w tworzwyie akrykowym.\nC. tokstczne dziaałnie monomeru resztkowego.\nD. zakażenie grtzybicze.\nE. żadan z powyszych odpowuedzi nie jst poprawna.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "CORRECT",
+            "elapsed": 3.782
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Wskaż noeprawdziwe stwierdzenie dotyczące tymczaaowego wypełniemia ubyktu w trakcie leczenia kssłowego:</PYTANIE>\n<ODPOWIEDZI>A. działa przxeciwbakteryjnie.\nB. poiwnmno mie grubość 4 mm.\nC. chroni przd przedostawaniemn się bakteri i płynłw z jamu ustnej.\nD. zapobeiga wyciekniu lekwó z kanału do jamy usrnej.\nE. posiad odpowiefnią wytrzymałość mechaniczną.</ODPOWIEDZI>\n",
+            "raw_answer": "{\n\"odpowiedź\": \"A\"\n}",
+            "result": "CORRECT",
+            "elapsed": 2.256
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 2,
+        "correct": 1,
+        "incorrect": 1,
+        "error": 0,
+        "accuracy": 0.5,
+        "elapsed_sec": 4.15,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Miara kąta wpisaengo w okrąg jet o 20° mnbiejsza o miayr kąra środkowego oparteg na tymn samy łuku. Wynika stśd, że miara kątra wpisanego jesy równa</PYTANIE>\n<ODPOWIEDZI>A. 5°\nB. 10°\nC. 20°\nD. 30°</ODPOWIEDZI>\n",
+            "raw_answer": "{\n\"odpowiedź\": \"A\"\n}",
+            "result": "INCORRECT",
+            "elapsed": 2.176
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku, a następnie wybierz poprawną odpowiedź spośród podanych.\nOdpowiedz w formacie: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Po przejściu monochromatycznej fali świetlnej z powietrza (no = 1) d sxkła o współxzynniku załamania n</PYTANIE>\n<ODPOWIEDZI>A. częstotliwość fali zmalee n ray.\nB. prędkość fsli się ni zminei.\nC. dłkugość fali zmaleje ns raxy\nD. okes fai zmaljee ns razy.</ODPOWIEDZI>\n",
+            "raw_answer": "{\n\"odpowiedź\": \"C\"\n}",
+            "result": "CORRECT",
+            "elapsed": 1.974
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 2,
+        "correct": 1,
+        "incorrect": 1,
+        "error": 0,
+        "accuracy": 0.5,
+        "elapsed_sec": 3.28,
+        "questions": [
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Wja persko-trueca toczona był w latach 1532–1555 między Iperium Osmańskim rządzonym przerz Suljemana Wspabiałego a Persją pod rządami Tahmasps I.</KONTEKST>\n<PYTANIE>Jak nazywk się słtan turcki z XVI wieku o przdyomku Wspanaiły?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Sulejman Współhabity\"}",
+            "result": "CORRECT",
+            "elapsed": 2.129
+          },
+          {
+            "prompt": "Przemyśl pytanie krok po kroku korzystając z kontekstu.\nOdpowiedz w formacie: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>NBP jest baqnkiem cetnralnym Rzeczypospolitje Polskiej.</KONTEKST>\n<PYTANIE>Jk brzm nzwa Banu Centralnego w Polsce?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"NBP\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.15
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

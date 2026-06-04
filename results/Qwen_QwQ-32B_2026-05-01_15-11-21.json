@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-05-01T15:11:21.201525+00:00",
+  "model": "Qwen/QwQ-32B",
+  "base_url": "https://llmlab.plgrid.pl/api/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "elapsed_sec": 0.12,
+  "datasets": {
+    "identity": {
+      "llmzszl_mcq": {
+        "num_sampled": 1,
+        "score_sum": 0.0,
+        "score_avg": 0.0,
+        "error_count": 1,
+        "elapsed_sec": 0.12,
+        "questions": [
+          {
+            "prompt_id": "llmzszl_mcq-identity-000",
+            "raw_answer": "",
+            "correct_answer": "A",
+            "score": 0.0,
+            "error": true,
+            "elapsed": 0.0
+          }
+        ]
+      }
+    }
+  },
+  "status": "complete"
+}

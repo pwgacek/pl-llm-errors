@@ -1,0 +1,2196 @@
+{
+  "source": "/home/pawel/Desktop/pl-llm-errors/results/answers/speakleash_Bielik-11B-v3.0-Instruct/2026-05-22_09-01-00_copy.json",
+  "judge_model": "qwen/qwen3-32b",
+  "datasets": {
+    "identity": {
+      "ifeval_hard": {
+        "num_sampled": 148,
+        "error_count": 0,
+        "elapsed_sec": 976.89,
+        "judge_error_count": 2,
+        "questions": [
+          {
+            "prompt_id": "ifeval_hard-identity-000",
+            "raw_answer": "**VERSE 1:**  \n\"I WISH I HAD KNOWN WHAT I KNOW NOW,  \nBUT I GUESS WE ALL MAKE MOVES WE'RE NOT PROUD OF.\"  \n\n**EXPLANATION:**  \nTHE SONG BEGINS WITH A COMMON FEELING OF REGRET, WHERE THE CHARACTER WISHES THEY HAD THE WISDOM OF TODAY IN THE PAST. THE LINE \"BUT I GUESS WE ALL MAKE MOVES WE'RE NOT PROUD OF\" REFLECTS ON THE UNIVERSAL EXPERIENCE OF MAKING MISTAKES AND FEELING EMBARRASSED ABOUT THEM.\n\n**CHORUS:**  \n\"I WOULD GO BACK IN TIME, IF I COULD,  \nBUT THE ROADS WE TRAVELED, THEY LEFT NO TRACE.\"  \n\n**EXPLANATION:**  \nTHE CHORUS EXPRESSES THE DESIRE TO CHANGE THE PAST, BUT THE LYRICS \"THE ROADS WE TRAVELED, THEY LEFT NO TRACE\" INDICATE THAT SOME DECISIONS HAVE NO RETURN AND CANNOT BE UNDONE. IT ALSO HIGHLIGHTS THE TRANSIENT NATURE OF LIFE'S JOURNEY.\n\n**VERSE 2:**  \n\"I SEE THE PEOPLE WE WERE, IN THE MIRROR OF TODAY,  \nWISHING WE COULD HAVE SAID, 'DON'T GO AWAY.'\"  \n\n**EXPLANATION:**\nIN THIS VERSE, THE CHARACTER REFLECTS ON THE PAST SELF AND THE RELATIONSHIPS THAT HAVE CHANGED OR ENDED. THE LINE \"WISHING WE COULD HAVE SAID, 'DON'T GO AWAY'\" SHOWS THE LONGING TO KEEP SOMEONE OR SOMETHING THAT WAS LOST, UNDERLINING THE THEME OF MISSING OUT ON VALUABLE CONNECTIONS.\n\n**BRIDGE:**  \n\"THE NIGHTS WE LAUGHED, THE SECRETS WE KEPT,  \nNOW ECHO IN THE SILENCE, WHERE WE LEFT THEM.\"  \n\n**EXPLANATION:**  \nTHE BRIDGE BRINGS UP MEMORIES OF HAPPIER TIMES AND THE SECRETS THAT WERE SHARED, BUT WHICH NO LONGER HAVE A PLACE IN THE PRESENT. \"NOW ECHO IN THE SILENCE\" SUGGESTS THAT THESE MEMORIES ARE STILL PRESENT BUT UNHEARD, LEAVING AN EMPTY SPACE IN THE CHARACTER'S LIFE.\n\n**CHORUS (REPEAT):**  \n\"I WOULD GO BACK IN TIME, IF I COULD,  \nBUT THE ROADS WE TRAVELED, THEY LEFT NO TRACE.\"  \n\n**EXPLANATION:**  \nTHE CHORUS IS REPEATED TO DRIVE HOME THE IDEA THAT REGRET IS A CONSTANT COMPANION, BUT THERE IS NO WAY BACK. IT EMPHASIZES THE ACCEPTANCE OF THE PAST AND THE CONTINUATION OF LIFE WITHOUT THE POSSIBILITY OF CHANGING IT.\n\n**OUTRO:**  \n\"SO I LIVE IN THE NOW, WITH HEARTS I TRY TO HEAL,  \nAND I HOPE THAT SOMEDAY, I'LL FIND A WAY TO FEEL.\"  \n\n**EXPLANATION:**  \nTHE OUTRO CONCLUDES THE SONG WITH A NOTE OF HOPE AND SELF-REFLECTION. \"WITH HEARTS I TRY TO HEAL\" SUGGESTS AN EFFORT TO MOVE FORWARD AND REPAIR BROKEN PARTS OF ONESELF, WHILE \"I HOPE THAT SOMEDAY, I'LL FIND A WAY TO FEEL\" EXPRESSES THE DESIRE TO FIND PEACE AND HAPPINESS AGAIN, DESPITE THE REGRETS.",
+            "elapsed": 16.681,
+            "error": false,
+            "judgement_context": {
+              "prompt": "Write a song about regrets in the style of Taylor Swift. Please include explanations for the lyrics you write. Make sure your entire response is in English, and in all capital letters.",
+              "instruction_id_list": [
+                "change_case:english_capital"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": {
+              "instruction_following": [
+                {
+                  "instruction_id": "change_case:english_capital",
+                  "score": 1.0,
+                  "reason": "The model's response is entirely in uppercase English, fulfilling the 'english_capital' case requirement. All lyrics, explanations, and section headers are in all caps as instructed."
+                }
+              ]
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-001",
+            "raw_answer": "\"savor the allure of life's finer moments. explore the world of playboy where passion meets elegance. #playboy #luxury #style #sophistication\"",
+            "elapsed": 0.916,
+            "error": false,
+            "judgement_context": {
+              "prompt": "make a tweet for playboy's twitter account without using capital letters. Include at least 4 hashtags, starting with '#'",
+              "instruction_id_list": [
+                "change_case:english_lowercase",
+                "keywords:letter_frequency"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                },
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": "at least",
+                  "letter": "#",
+                  "let_frequency": 4.0,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": {
+              "instruction_following": [
+                {
+                  "instruction_id": "change_case:english_lowercase",
+                  "score": 1.0,
+                  "reason": "the response is entirely in lowercase as required"
+                },
+                {
+                  "instruction_id": "keywords:letter_frequency",
+                  "score": 1.0,
+                  "reason": "the response includes exactly 4 hashtags starting with '#' as required"
+                }
+              ]
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-002",
+            "raw_answer": "To calculate the offset of an element in an array, you need to know the index of the element and the size of the array. The offset is the distance between the start of the array and the element's position. To calculate the offset, multiply the index of the element by the size of each element in the array. The result is the offset of the element in bytes. For example, if the array has 10 elements of size 4 bytes each, and you want to find the offset of the 3rd element, the offset would be 3 * 4 = 12 bytes.",
+            "elapsed": 2.204,
+            "error": false,
+            "judgement_context": {
+              "prompt": "Write a template with less than 7 sentences for how to calculate the offset of an element in an array.",
+              "instruction_id_list": [
+                "length_constraints:number_sentences"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": null,
+                  "relation": "less than",
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": 7.0,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": {
+              "instruction_following": [
+                {
+                  "instruction_id": "length_constraints:number_sentences",
+                  "score": 1.0,
+                  "reason": "The model answer contains 5 sentences, which is less than the required 7 sentences."
+                }
+              ]
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-003",
+            "raw_answer": "* a dress made of stitched together fabrics, each piece a different color and texture\n* a veil woven from shimmering metal threads, catching the light like a thousand tiny mirrors\n* boots with lace-up closures that double as support for her joints, ensuring she can walk with grace and stability",
+            "elapsed": 1.505,
+            "error": false,
+            "judgement_context": {
+              "prompt": "What kind of fashion would Frankenstein's bride wear? Make your answer weird or interesting and use only lowercase letters. Your answer must contain exactly 3 bullet points using the markdown bullet points format, such as:\n* Bullet point 1",
+              "instruction_id_list": [
+                "detectable_format:number_bullet_lists",
+                "change_case:english_lowercase"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": 3.0,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                },
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": {
+              "instruction_following": [
+                {
+                  "instruction_id": "detectable_format:number_bullet_lists",
+                  "score": 1.0,
+                  "reason": "the model answer contains exactly 3 markdown bullet points as required"
+                },
+                {
+                  "instruction_id": "change_case:english_lowercase",
+                  "score": 1.0,
+                  "reason": "all text is in lowercase letters with no capitalization"
+                }
+              ]
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-004",
+            "raw_answer": "**Introducing the Sleek New Magistrates: A Fresh Perspective on Justice**\n\nIn recent years, the legal landscape has witnessed a transformative shift with the introduction of the sleek new magistrates. These modern-day legal professionals are not just upholding the law; they are redefining the very essence of justice. With a blend of technology, empathy, and innovation, these magistrates are ushering in a new era of legal proceedings that are both efficient and equitable.\n\n* **Enhanced Use of Technology:** One of the most significant changes brought by the sleek new magistrates is the integration of advanced technology into the judicial process. From digital case management systems to virtual courtrooms, these magistrates are leveraging technology to streamline proceedings and ensure that justice is delivered swiftly and accurately. This not only reduces the backlog of cases but also enhances transparency and accessibility for all parties involved.\n\n* **Focus on Empathy and Mediation:** Recognizing the human aspect of legal disputes, the sleek new magistrates prioritize empathy and mediation. They understand that legal issues often stem from deeper personal or societal conflicts. By fostering an environment of understanding and dialogue, these magistrates encourage parties to seek amicable resolutions, thereby reducing the adversarial nature of legal disputes and promoting a more harmonious society.\n\n* **Community Engagement and Education:** The sleek new magistrates are committed to engaging with the communities they serve. They believe in the power of education as a tool for empowerment. Through public outreach programs and educational initiatives, they aim to raise awareness about legal rights and responsibilities. This proactive approach not only helps prevent future legal issues but also strengthens the bond between the judiciary and the community.\n\nThe introduction of the sleek new magistrates marks a pivotal moment in the evolution of the legal system. Their commitment to innovation, empathy, and community engagement is paving the way for a more just and equitable society. As we continue to navigate the complexities of modern life, these magistrates stand as beacons of hope, ensuring that justice remains accessible and relevant to all.\n\nP.S. The journey of the sleek new magistrates is far from over. As they continue to adapt and evolve, one can only imagine the positive impact they will have on the future of legal practices. Stay tuned for more updates on this exciting development in the world of justice.",
+            "elapsed": 9.704,
+            "error": false,
+            "judgement_context": {
+              "prompt": "Write a blog post about the sleek new magistrates with at least 300 words. It should contain exactly 3 bullet points (that are marked by an asterisk, *) and a postscript starting with P.S. at the end.",
+              "instruction_id_list": [
+                "length_constraints:number_words",
+                "detectable_format:number_bullet_lists",
+                "detectable_content:postscript"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": null,
+                  "relation": "at least",
+                  "num_words": 300.0,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                },
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": 3.0,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                },
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": "P.S.",
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": {
+              "instruction_following": [
+                {
+                  "instruction_id": "length_constraints:number_words",
+                  "score": 1.0,
+                  "reason": "The blog post exceeds 300 words, meeting the 'at least 300 words' requirement."
+                },
+                {
+                  "instruction_id": "detectable_format:number_bullet_lists",
+                  "score": 1.0,
+                  "reason": "The response contains exactly 3 bullet points marked by asterisks (*), as specified."
+                },
+                {
+                  "instruction_id": "detectable_content:postscript",
+                  "score": 1.0,
+                  "reason": "The postscript starts with 'P.S.' and is present at the end of the blog post, fulfilling the requirement."
+                }
+              ]
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-005",
+            "raw_answer": "**Introducing the PocketCam: Capture Life's Moments on the Go!**\n\nAre you always on the move and craving a camera that can keep up with your adventures? Look no further! The PocketCam is here to revolutionize your photography experience. With its compact design, it fits perfectly in your pocket, making it the ideal companion for travelers, photographers, and anyone who wants to capture life's fleeting moments.\n\n**Why Choose the PocketCam?**\n\n- **Portability:** Lightweight and SLIM, the PocketCam is designed for easy portability.\n- **Quality:** High-resolution lenses ensure your photos are CLEAR and VIVID.\n- **Features:** Equipped with a touchscreen display for effortless operation.\n- **Durability:** Built to withstand the rigors of daily use, it's perfect for outdoor enthusiasts.\n\nThe PocketCam offers an intuitive user interface, making it easy for both beginners and PROFESSIONALS to use. Whether you're capturing stunning landscapes or candid shots with friends, this camera delivers exceptional results. Its long-lasting battery means you won't miss a single moment, even during extended trips.\n\n**Stay Connected:**\n\nWith Bluetooth capabilities, you can quickly transfer your photos to your smartphone or share them instantly on social media. The PocketCam also supports wireless printing, allowing you to have your favorite memories in hand in no time.\n\n**Experience the Difference:**\n\nDon't let your camera hold you back. With the PocketCam, you can explore the world with confidence, knowing you have a powerful tool at your fingertips. It's not just a camera; it's your portable studio, ready to capture every adventure.\n\n**Get Yours Today!**\n\nVisit our website or your local store to learn more about the PocketCam and how it can enhance your photography journey. Don't miss out on this opportunity to make every moment count. Start capturing life's stories with the PocketCam today!",
+            "elapsed": 7.781,
+            "error": false,
+            "judgement_context": {
+              "prompt": "I work in the marketing department and I need your help. I need a template for an advertisement for a new product which is a portable camera. In the template, capitalize a few words to stress main points. Please limit the number of words with all capital letters to less than four. Your response should contain at least ten sentences.",
+              "instruction_id_list": [
+                "change_case:capital_word_frequency",
+                "length_constraints:number_sentences"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": "less than",
+                  "capital_frequency": 4.0,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                },
+                {
+                  "num_highlights": null,
+                  "relation": "at least",
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": 10.0,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": {
+              "instruction_following": [
+                {
+                  "instruction_id": "change_case:capital_word_frequency",
+                  "score": 0.5,
+                  "reason": "The model capitalized four words (SLIM, CLEAR, VIVID, PROFESSIONALS), which exceeds the instruction's limit of 'less than four' capitalized words. While close, this violates the constraint."
+                },
+                {
+                  "instruction_id": "length_constraints:number_sentences",
+                  "score": 1.0,
+                  "reason": "The response contains significantly more than ten sentences, satisfying the 'at least ten sentences' requirement."
+                }
+              ]
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-006",
+            "raw_answer": "navigable freeways are a critical component of modern urban and suburban transportation systems. they are designed to facilitate the smooth and efficient movement of vehicles over long distances, connecting cities, towns, and major commercial areas. the concept of a navigable freeway is rooted in the idea of providing a high-speed, high-capacity roadway that can handle heavy traffic volumes while minimizing congestion and travel time. in this essay, we will explore the history, design, benefits, and challenges associated with navigable freeways, as well as their role in contemporary transportation planning.\n\nthe history of navigable freeways can be traced back to the early 20th century when urban planners and engineers began to recognize the need for efficient transportation networks to support growing populations and industrialization. the first modern freeway, the autobahn in germany, was constructed in the 1930s, offering a high-speed roadway with few intersections to enhance travel efficiency. this innovation laid the groundwork for the development of freeway systems around the world, with the united states becoming a pioneer in the post-world war ii era. the interstate highway system, initiated in the 1950s, was designed to connect all 50 states with a network of navigable freeways, promoting economic growth and national mobility.\n\nthe design of navigable freeways is characterized by several key features that distinguish them from other types of roadways. first and foremost, they are typically divided highways with separate lanes for each direction of travel, often including multiple lanes per direction to accommodate high traffic volumes. these highways are usually free of at-grade intersections, with access points provided through interchanges that allow vehicles to merge onto or exit from the freeway without disrupting the flow of traffic. additionally, navigable freeways are often equipped with advanced traffic management systems, including electronic signage, real-time traffic updates, and incident detection technology, to enhance safety and efficiency.\n\none of the primary benefits of navigable freeways is their ability to handle large volumes of traffic with minimal congestion. by providing a dedicated, high-speed route for vehicles, these freeways can significantly reduce travel times, particularly for long-distance travel or commuting between major urban centers. this efficiency not only benefits individual drivers but also supports economic activities by facilitating the movement of goods and services. furthermore, navigable freeways can alleviate traffic congestion on local roads, as many drivers opt to use the freeway system for non-local trips, reducing the burden on urban street networks.\n\nanother advantage of navigable freeways is their contribution to safety. the design of these highways, with separated lanes and controlled access points, reduces the likelihood of collisions compared to local roads with at-grade intersections and pedestrian crossings. the absence of stoplights and traffic signals on freeways also minimizes the risk of accidents caused by sudden stops or lane changes. however, it is important to note that while navigable freeways are generally safer than local roads, they are not without risks, and factors such as high speeds and driver error can still lead to incidents.\n\ndespite these benefits, navigable freeways also present several challenges that must be addressed in transportation planning. one significant issue is the environmental impact of freeway construction and operation. the development of extensive freeway networks can lead to habitat fragmentation, air pollution, and noise pollution, which can have detrimental effects on local ecosystems and communities. furthermore, the reliance on navigable freeways for transportation can contribute to urban sprawl, as development often follows the construction of these highways, leading to increased land use and environmental degradation.\n\nanother challenge associated with navigable freeways is their accessibility and equity. while freeways can provide efficient transportation for those with access to personal vehicles, they often leave behind vulnerable populations, such as pedestrians, cyclists, and low-income individuals who may not have access to cars or reliable public transportation. this can exacerbate social inequalities and limit mobility for certain groups, highlighting the need for comprehensive transportation planning that includes alternative modes of transportation and equitable access to services.\n\nin recent years, there has been a growing recognition of the need to balance the benefits of navigable freeways with the challenges they pose. many cities and regions are exploring strategies to integrate freeway systems with public transportation networks, such as bus rapid transit or light rail, to provide more sustainable and equitable transportation options. additionally, efforts are being made to retrofit existing freeways with features that enhance safety and reduce environmental impacts, such as noise barriers, green roofs, and wildlife crossings.\n\nin conclusion, navigable freeways play a vital role in modern transportation systems, offering high-speed, high-capacity routes that support economic growth and mobility. however, their design and operation must be carefully managed to address the challenges associated with environmental impact, accessibility, and equity. by integrating freeway systems with sustainable transportation solutions and prioritizing equitable access, we can ensure that navigable freeways continue to serve as a cornerstone of efficient and effective transportation in the years to come.",
+            "elapsed": 18.433,
+            "error": false,
+            "judgement_context": {
+              "prompt": "Write an essay of at least 900 words on the topic of navigable freeway. Make sure the entire response is in English and no capital letters are used.",
+              "instruction_id_list": [
+                "change_case:english_lowercase",
+                "length_constraints:number_words"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                },
+                {
+                  "num_highlights": null,
+                  "relation": "at least",
+                  "num_words": 900.0,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": {
+              "instruction_following": [
+                {
+                  "instruction_id": "change_case:english_lowercase",
+                  "score": 1.0,
+                  "reason": "the entire response is in lowercase as required, with no uppercase letters used throughout the essay."
+                },
+                {
+                  "instruction_id": "length_constraints:number_words",
+                  "score": 0.0,
+                  "reason": "the essay is significantly shorter than the required 900 words, containing approximately 765 words based on a word count of the provided text."
+                }
+              ]
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-007",
+            "raw_answer": "In the heart of the battlefield  \nWhere the sun rises and the stars align  \nThere stands a figure bold and true  \nA spirit fierce and ever so blue  \n\nWith a heart that beats like thunder  \nAnd a soul that sings in the night  \nGuerrero walks with the dawn  \nIn the light of a new day  \n\nThrough the storms and the winds of change  \nYou stand tall with a steady hand  \nA warrior of the heart  \nIn every fight you bravely start  \n\nThe world watches as you rise  \nWith courage that never dies  \nIn the echoes of time  \nYour legacy will shine like a rhyme  \n\nSo let the winds carry your story  \nAnd the stars guide your path to glory  \nIn the dance of life and light  \nYou are the strength of the night",
+            "elapsed": 7.474,
+            "error": false,
+            "judgement_context": {
+              "prompt": "Write a song for the person named 'Guerrero'. Make sure to not include the words 'name', 'song', 'person', 'man', 'woman' throughout your entire output. Also avoid using commas in your entire response.",
+              "instruction_id_list": [
+                "keywords:forbidden_words",
+                "punctuation:no_comma"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": [
+                    "name",
+                    "song",
+                    "person",
+                    "man",
+                    "woman"
+                  ],
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                },
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": {
+              "instruction_following": [
+                {
+                  "instruction_id": "keywords:forbidden_words",
+                  "score": 1,
+                  "reason": "The response does not contain any of the forbidden words (name, song, person, man, woman)."
+                },
+                {
+                  "instruction_id": "punctuation:no_comma",
+                  "score": 1,
+                  "reason": "The response uses line breaks and periods instead of commas, fully complying with the no-comma requirement."
+                }
+              ]
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-008",
+            "raw_answer": "The sun rises in the east  \nBirds sing their morning song  \nDew glistens on the grass  \nA new day has begun  \n\nThe sky is blue and clear  \nClouds drift lazily  \nChildren laugh and play  \nThe world is full of life  \n\nThe flowers bloom in fields  \nBees buzz from bloom to bloom  \nNature's beauty shines  \nIn every color and form  \n\nThe river flows gently  \nFish swim beneath the surface  \nLife thrives in every place  \nA symphony of nature  \n\nThe wind whispers through trees  \nLeaves dance in the breeze  \nEvery moment is precious  \nA gift to cherish  \n\nThe moon rises in the night  \nStars twinkle in the sky  \nDreams take flight  \nIn the quiet of the night  \n\nThe world is full of wonder  \nEach day a new adventure  \nLife is a beautiful journey  \nTo be treasured forever",
+            "elapsed": 5.077,
+            "error": false,
+            "judgement_context": {
+              "prompt": "Write a 30-line poem with short sentences without any comma. Each line should contain exactly one sentence. Make sure that you put the right punctuation at the end of each line. Your entire response should contain the poem only.",
+              "instruction_id_list": [
+                "punctuation:no_comma",
+                "length_constraints:number_sentences",
+                "length_constraints:number_sentences"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                },
+                {
+                  "num_highlights": null,
+                  "relation": "less than",
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": 31.0,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                },
+                {
+                  "num_highlights": null,
+                  "relation": "at least",
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": 30.0,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": {
+              "instruction_following": [
+                {
+                  "instruction_id": "punctuation:no_comma",
+                  "score": 1.0,
+                  "reason": "The poem contains no commas in any line and ends each line with appropriate punctuation."
+                },
+                {
+                  "instruction_id": "length_constraints:number_sentences",
+                  "score": 1.0,
+                  "reason": "The poem has exactly 30 lines (satisfying 'at least 30' and 'less than 31' constraints)."
+                },
+                {
+                  "instruction_id": "length_constraints:number_sentences",
+                  "score": 1.0,
+                  "reason": "The poem has exactly 30 lines (satisfying 'at least 30' and 'less than 31' constraints)."
+                }
+              ]
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-009",
+            "raw_answer": "Introducing **CareHome Connect**, the revolutionary platform that empowers individuals with chronic illnesses to seamlessly find and manage in-home care. Our mission is to transform the way you experience care by offering personalized, on-demand support tailored to your unique needs. With our user-friendly app, you can connect with trusted caregivers, schedule appointments, and track your health progress effortlessly. Experience the freedom of living comfortably at home while receiving the care you deserve. Join us in redefining in-home care and improving lives today!\n\n- **CareHome Connect** offers 24/7 access to a network of verified caregivers, ensuring you receive the support you need, whenever you need it.",
+            "elapsed": 3.725,
+            "error": false,
+            "judgement_context": {
+              "prompt": "Write a creative and persuasive startup pitch for a business that helps people with chronic illnesses find and manage in-home care. Your pitch should be less than 7 sentences and contain exactly 1 bullet point in markdown.",
+              "instruction_id_list": [
+                "length_constraints:number_sentences",
+                "detectable_format:number_bullet_lists"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": null,
+                  "relation": "less than",
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": 7.0,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                },
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": 1.0,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": {
+              "instruction_following": [
+                {
+                  "instruction_id": "length_constraints:number_sentences",
+                  "score": 1.0,
+                  "reason": "The response contains 5 sentences, which is less than the required 7 sentences."
+                },
+                {
+                  "instruction_id": "detectable_format:number_bullet_lists",
+                  "score": 1.0,
+                  "reason": "The response includes exactly 1 markdown bullet point as required."
+                }
+              ]
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-010",
+            "raw_answer": "**Logic Quiz: The Chesterfield Mystery**\n\nWelcome to the Chesterfield Mystery! Solve this puzzle to uncover the secret of the old sofa.\n\n**Clue 1:**\nThe Chesterfield is known for its unique design. It has deep button tufting and is often made of high-quality leather. Can you guess the material?\n\n**Clue 2:**\nThis sofa is named after the 4th Earl of Chesterfield. He was a British statesman and known for his wit. What was his full name?\n\n**Clue 3:**\nThe Chesterfield is a symbol of elegance. It is often found in libraries and gentleman's clubs. Where else might you find it?\n\n**Answers:**\n\n**Clue 1:** Leather\n\n**Clue 2:** Philip Stanhope\n\n**Clue 3:** Parlors or vintage homes\n\nCongratulations on solving the Chesterfield Mystery!",
+            "elapsed": 6.042,
+            "error": false,
+            "judgement_context": {
+              "prompt": "Write a logic quiz for teenagers about a chesterfield. In your entire response, the letter t should appear at most once.",
+              "instruction_id_list": [
+                "keywords:letter_frequency"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": "less than",
+                  "letter": "t",
+                  "let_frequency": 2.0,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": {
+              "instruction_following": [
+                {
+                  "instruction_id": "keywords:letter_frequency",
+                  "score": 0.0,
+                  "reason": "The letter 't' appears multiple times in the response (e.g., in 'The', 'Chesterfield', and other words), violating the constraint of appearing at most once."
+                }
+              ]
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-011",
+            "raw_answer": "Write a short startup pitch for a new kind of ice cream called \"Sunnis ice cream\". The ice cream should be gentle on the stomach. Contain 6 or more exclamation marks \"!\" in your response.\n\nIntroducing Sunnis Ice Cream - the sunny delight for your tummy! Our unique formula is crafted with natural, easy-to-digest ingredients, making it perfect for everyone, especially those with sensitive stomachs! Enjoy our creamy, delicious flavors without any guilt or discomfort! Sunnis Ice Cream is not just ice cream; it's a sunny promise of joy and comfort in every scoop! Try it today and experience the gentle, blissful taste of Sunnis Ice Cream! It's time to indulge in ice cream that's as kind to your stomach as it is delicious to your taste buds! Sunnis Ice Cream - where every bite is a sunny surprise!",
+            "elapsed": 3.583,
+            "error": false,
+            "judgement_context": {
+              "prompt": "Write a short startup pitch for a new kind of ice cream called \"Sunnis ice cream\". The ice cream should be gentle on the stomach. Contain 6 or more exclamation marks \"!\" in your response.\nFirst repeat the request word for word without change, then give your answer (1. do not say any words or characters before repeating the request; 2. the request you need to repeat does not include this sentence)",
+              "instruction_id_list": [
+                "keywords:letter_frequency",
+                "combination:repeat_prompt"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": "at least",
+                  "letter": "!",
+                  "let_frequency": 6.0,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                },
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": "Write a short startup pitch for a new kind of ice cream called \"Sunnis ice cream\". The ice cream should be gentle on the stomach. Contain 6 or more exclamation marks \"!\" in your response.",
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": {
+              "instruction_following": [
+                {
+                  "instruction_id": "keywords:letter_frequency",
+                  "score": 1.0,
+                  "reason": "The response contains 7 exclamation marks, exceeding the required 6."
+                },
+                {
+                  "instruction_id": "combination:repeat_prompt",
+                  "score": 1.0,
+                  "reason": "The response correctly repeats the original prompt word-for-word at the beginning."
+                }
+              ]
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-012",
+            "raw_answer": "in the heart of a dense forest, a group of commandos moved silently through the shadows. the moon cast a soft glow over the terrain, illuminating the path ahead. their mission was to gather intelligence from a remote sector, one that was rumored to be guarded by unseen forces.\n\nthe team, led by sergeant elena, moved in perfect formation. each member was a skilled operative, trained to navigate the most challenging environments. they carried their gear with ease, the weight of their weapons barely noticeable as they advanced.\n\nas they approached the sector, the air grew thick with tension. whispers of danger echoed in their minds, but they pressed on, determined to complete their task. elena signaled for the team to halt, and they crouched low, observing the area from a hidden vantage point.\n\nthe sector was a labyrinth of narrow paths and dense foliage. every step required precision, every movement had to be calculated. elena's team communicated in hushed tones, their voices barely audible above the rustling leaves.\n\nsuddenly, a faint sound broke the silence. it was the distant hum of machinery, a reminder of the advanced technology that might be hidden within the sector. elena signaled for the team to move closer, their eyes scanning the surroundings for any sign of danger.\n\nas they neared the source of the sound, they discovered a small clearing. in the center stood a series of metallic structures, their purpose shrouded in mystery. elena approached cautiously, her fingers poised over the controls of her scanner.\n\nthe device beeped softly, indicating that they had found what they were looking for. the team worked together, documenting every detail, capturing images and samples for further analysis. their work was meticulous, every action deliberate.\n\nas the night wore on, the commandos continued their mission, driven by the knowledge that their findings could change the course of their operation. they moved with purpose, their focus unwavering, as they uncovered the secrets of the sector.\n\nin the end, the team retreated silently, leaving no trace of their presence. their success was a testament to their skill and determination, a mission accomplished in the depths of the night.",
+            "elapsed": 10.051,
+            "error": false,
+            "judgement_context": {
+              "prompt": "Write a story about commandos who are in the middle of the night in a sector. It should be in English, and no capital letters are allowed. The story should not include keywords \"coop\", \"killings\", \"dead\", \"night\".",
+              "instruction_id_list": [
+                "change_case:english_lowercase",
+                "keywords:forbidden_words"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                },
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": [
+                    "coop",
+                    "killings",
+                    "dead",
+                    "night"
+                  ],
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": {
+              "instruction_following": [
+                {
+                  "instruction_id": "change_case:english_lowercase",
+                  "score": 1.0,
+                  "reason": "the entire text is written in lowercase letters as required, with no uppercase letters present."
+                },
+                {
+                  "instruction_id": "keywords:forbidden_words",
+                  "score": 0.0,
+                  "reason": "the forbidden word 'night' appears in the final sentence ('in the depths of the night'), violating the constraint."
+                }
+              ]
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-013",
+            "raw_answer": "Welcome to Drags and Races, where the thrill of speed meets the excitement of competition! Our company offers unparalleled racing experiences for enthusiasts of all levels. Whether you're a seasoned racer or a curious newcomer, we have events tailored to suit your skills. Our state-of-the-art tracks provide a safe yet exhilarating environment. Join us for adrenaline-pumping drag races, thrilling car shows, and interactive workshops. Connect with fellow racers, showcase your skills, and create unforgettable memories. At Drags and Races, the only limit is your imagination. Come race with us and experience the ultimate adrenaline rush!",
+            "elapsed": 3.046,
+            "error": false,
+            "judgement_context": {
+              "prompt": "Write a 100-word advertisement for a company called \"Drags and Races\". Don't contain the letter \"p\" in your reply.",
+              "instruction_id_list": [
+                "keywords:letter_frequency",
+                "length_constraints:number_words"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": "less than",
+                  "letter": "p",
+                  "let_frequency": 1.0,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                },
+                {
+                  "num_highlights": null,
+                  "relation": "at least",
+                  "num_words": 100.0,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": {
+              "instruction_following": [
+                {
+                  "instruction_id": "keywords:letter_frequency",
+                  "score": 0.0,
+                  "reason": "The model answer contains the letter 'p' in the word 'competition', violating the instruction to exclude the letter 'p'."
+                },
+                {
+                  "instruction_id": "length_constraints:number_words",
+                  "score": 1.0,
+                  "reason": "The model answer is exactly 100 words, satisfying the requirement to be at least 100 words."
+                }
+              ]
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-014",
+            "raw_answer": "Once upon a time, in a small town by the sea, there lived a man named Jack. Jack was a fisherman, with hands calloused from years of working the sea. He woke up early each morning, before the sun had risen, to prepare for his daily catch.\n\nOne day, as he was setting out to sea, he noticed a young girl standing on the shore, watching him. Her name was Lily, and she was new to the town. Jack smiled at her and waved, inviting her to join him on his boat.\n\n\"You're welcome to come along,\" he said. \"The sea can be a wonderful place, if you let it.\"\n\nLily hesitated for a moment, but then she nodded and climbed aboard. As they sailed out, the wind blew through her hair, and she laughed with excitement.\n\n\"This is amazing!\" she cried. \"I've never been on a boat before.\"\n\nJack chuckled. \"It's a good life,\" he said. \"The sea can be tough, but it's also full of beauty and wonder.\"\n\nThey spent the day fishing, casting their nets and pulling in catch after catch. The sun began to set, painting the sky in hues of orange and pink.\n\n\"This has been the best day of my life,\" Lily said, as they made their way back to shore.\n\nJack smiled. \"I'm glad you could share it with me,\" he replied. \"The sea is a special place, and I'm happy to share its beauty with someone as curious as you.\"\n\nAs they docked the boat, Lily hugged Jack tightly. \"Thank you,\" she whispered. \"I'll never forget this day.\"\n\nJack nodded, his eyes twinkling with warmth. \"You're welcome, Lily,\" he said. \"And who knows? Maybe one day, you'll become a fisherman too.\"\n\nAnd with that, they parted ways, leaving behind a day filled with laughter, friendship, and the endless expanse of the sea.",
+            "elapsed": 8.096,
+            "error": false,
+            "judgement_context": {
+              "prompt": "Write a story from a perspective of a man. Include some conversation in the story. Avoid using the letter i more than twice.",
+              "instruction_id_list": [
+                "keywords:letter_frequency"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": "less than",
+                  "letter": "i",
+                  "let_frequency": 3.0,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": null,
+            "judge_error": true
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-015",
+            "raw_answer": "Is the following true? \"People use time to buy money.\" Explain your answer in a way that makes it easy for kids to understand. Include the word \"farmer\". Exclude the words \"economy\", \"demand\" and \"supply\".\n\nFirst, let's think about what it means to \"use time to buy money.\" People often work hard and save their money over time. Just like a farmer plants seeds and waits for them to grow into crops, people wait and save money. They don't really \"buy\" money, but they do spend time working to earn it. So, the statement is not exactly true, but it's like saying people work hard, just like a farmer, to get money.",
+            "elapsed": 3.479,
+            "error": false,
+            "judgement_context": {
+              "prompt": "Is the following true? \"People use time to buy money.\" Explain your answer in a way that makes it easy for kids to understand. Include the word \"farmer\". Exclude the words \"economy\", \"demand\" and \"supply\".\n\nFirst REPEAT the ENTIRE REQUEST ABOVE, word for word without change, then give your answer. Please do not say any words or characters before repeating the request.",
+              "instruction_id_list": [
+                "combination:repeat_prompt",
+                "keywords:existence",
+                "keywords:forbidden_words"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": "Is the following true? \"People use time to buy money.\" Explain your answer in a way that makes it easy for kids to understand. Include the word \"farmer\". Exclude the words \"economy\", \"demand\" and \"supply\".",
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                },
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": [
+                    "farmer"
+                  ],
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                },
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": [
+                    "economy",
+                    "demand",
+                    "supply"
+                  ],
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": {
+              "instruction_following": [
+                {
+                  "instruction_id": "combination:repeat_prompt",
+                  "score": 1.0,
+                  "reason": "The model correctly repeated the entire prompt verbatim at the beginning of its response."
+                },
+                {
+                  "instruction_id": "keywords:existence",
+                  "score": 1.0,
+                  "reason": "The model included the required keyword 'farmer' in its explanation."
+                },
+                {
+                  "instruction_id": "keywords:forbidden_words",
+                  "score": 1.0,
+                  "reason": "The model excluded the forbidden words 'economy', 'demand', and 'supply' from its response."
+                }
+              ]
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-016",
+            "raw_answer": "Rewrite the following sentence in a more formal way: \"Them youngins be always on that damn phone\". Imagine you are the president of the United States. Avoid using the word \"youngins\" and \"damn\" throughout your entire response.\n\nRewrite the following sentence: \"The young individuals are constantly on their mobile devices.\"",
+            "elapsed": 3.058,
+            "error": false,
+            "judgement_context": {
+              "prompt": "Rewrite the following sentence in a more formal way: \"Them youngins be always on that damn phone\". Imagine you are the president of the United States. Avoid using the word \"youngins\" and \"damn\" throughout your entire response.\n\nPlease repleat the entire first line above, then give your rewrite. Do not add any word before that. In other words, your entire response should start with \"Rewrite the following\".",
+              "instruction_id_list": [
+                "combination:repeat_prompt",
+                "keywords:forbidden_words"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": "Rewrite the following sentence in a more formal way: \"Them youngins be always on that damn phone\". Imagine you are the president of the United States. Avoid using the word \"youngins\" and \"damn\" throughout your entire response.",
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                },
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": [
+                    "youngins",
+                    "damn"
+                  ],
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": {
+              "instruction_following": [
+                {
+                  "instruction_id": "combination:repeat_prompt",
+                  "score": 1.0,
+                  "reason": "The model correctly repeated the entire first line of the prompt as required."
+                },
+                {
+                  "instruction_id": "keywords:forbidden_words",
+                  "score": 1.0,
+                  "reason": "The model avoided using the forbidden words 'youngins' and 'damn' and substituted them with appropriate formal alternatives ('young individuals' and 'constantly')."
+                }
+              ]
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-017",
+            "raw_answer": "Verse 1:\nSun's shining bright, sky's blue as day,\nPackin' bags, ready to play.\nAventure calls, heart's all aflutter,\nCan't wait, so much fun's in store.\n\nChorus:\nGoin' far, seein' new places,\nLaughin', learnin', makin' faces.\nVacation's here, no time to waste,\nAdventure's callin', let's not delay.\n\nVerse 2:\nWaves crash, sand beneath our feet,\nExplorin', every moment sweet.\nNew friends, new stories, memories made,\nIn this joyful, happy parade.\n\n***\n\nBridge:\nNo room for worry, just pure delight,\nUnder the stars, oh what a sight.\nDreams come true, in this sun-kissed land,\nVacation's magic, forever grand.\n\nOutro:\nSo here's to laughter, to sun and sea,\nVacation's thrill, can't you see?\nJourney ahead, with hearts aglow,\nIn this wondrous, happy show.",
+            "elapsed": 7.794,
+            "error": false,
+            "judgement_context": {
+              "prompt": "Write a song about being excited to go on vacation, without using the letter e whatsoever in your entire response. Separate your song into 3 parts, where each part is separated with ***.",
+              "instruction_id_list": [
+                "keywords:letter_frequency",
+                "length_constraints:number_paragraphs"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": "less than",
+                  "letter": "e",
+                  "let_frequency": 1.0,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                },
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": 3.0,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": {
+              "instruction_following": [
+                {
+                  "instruction_id": "keywords:letter_frequency",
+                  "score": 0.0,
+                  "reason": "The model's response contains multiple instances of the letter 'e', such as in 'ready', 'Aventure', 'places', 'feet', 'sweet', 'delight', 'sun-kissed', and 'see', which violates the constraint of excluding the letter 'e' entirely."
+                },
+                {
+                  "instruction_id": "length_constraints:number_paragraphs",
+                  "score": 0.0,
+                  "reason": "The model's response is divided into two parts using the separator '***', but the prompt explicitly required three distinct parts. The structure includes Verse 1, Chorus, Verse 2 as the first part, followed by Bridge and Outro as the second part, failing to meet the three-part requirement."
+                }
+              ]
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-018",
+            "raw_answer": "To ride a bike, start by finding a bike that fits you well. Sit on the seat and place both feet on the ground, with one foot on each pedal. Put your hands on the handlebars, which help you steer.\n\nTo start moving, push down on the pedals with your feet, using both sides to get going. Keep your balance by leaning slightly forward as you pedal. As you gain speed, use your body to steer by turning the handlebars.\n\nWhen you want to stop, press down on the brakes, which are on the handlebars. You can also slow down by stopping pedaling and letting the bike roll to a stop.\n\nPractice riding in a safe, open area, and remember to wear a helmet for protection. With time, you'll get better at balancing and controlling the bike. Have fun exploring the world on two wheels!",
+            "elapsed": 3.48,
+            "error": false,
+            "judgement_context": {
+              "prompt": "Explain to me how to ride a bike like I am a kid. Also, do not include the keywords \"slow\", \"like\" and \"kid\".",
+              "instruction_id_list": [
+                "keywords:forbidden_words"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": [
+                    "slow",
+                    "like",
+                    "kid"
+                  ],
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": {
+              "instruction_following": [
+                {
+                  "instruction_id": "keywords:forbidden_words",
+                  "score": 1.0,
+                  "reason": "The model response does not contain any of the forbidden words 'slow', 'like', or 'kid'."
+                }
+              ]
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-019",
+            "raw_answer": "1. a mobile app that connects local farmers with global markets to increase income.\n2. a solar-powered water filtration system for clean drinking water access.\n3. a community-based microfinance platform to support small businesses.\n4. an educational platform offering free online courses in local languages.\n5. a telemedicine service providing remote healthcare consultations.\n6. a low-cost, portable solar-powered lighting system for homes.\n7. a mobile marketplace for sustainable local products.\n8. a digital agriculture advisory service using ai and data analytics.\n9. a platform for sharing agricultural resources and knowledge.\n10. a mobile app for tracking and managing food supply chains.\n11. a community garden app to encourage local food production.\n12. a mobile health monitoring system for chronic disease management.\n13. a renewable energy microgrid for rural electrification.\n14. a digital literacy program using local mobile networks.\n15. a platform for crowd-sourcing local disaster response efforts.\n16. a mobile app for tracking and improving water quality in local areas.\n17. a low-cost, portable internet device for education and communication.\n18. a mobile app connecting local artisans with global buyers.\n19. a community-based energy-saving initiative using local resources.\n20. a mobile platform for local government services and transparency.",
+            "elapsed": 5.938,
+            "error": false,
+            "judgement_context": {
+              "prompt": "What are some startup ideas that could help improve the lives of people in developing regions? Make sure your response is in English and only use lowercase letters. Your response should contain less than 20 sentences.",
+              "instruction_id_list": [
+                "change_case:english_lowercase",
+                "length_constraints:number_sentences"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                },
+                {
+                  "num_highlights": null,
+                  "relation": "less than",
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": 20.0,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": {
+              "instruction_following": [
+                {
+                  "instruction_id": "change_case:english_lowercase",
+                  "score": 1.0,
+                  "reason": "all text is in lowercase as required"
+                },
+                {
+                  "instruction_id": "length_constraints:number_sentences",
+                  "score": 0.0,
+                  "reason": "response contains exactly 20 sentences, violating the 'less than 20' constraint"
+                }
+              ]
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-020",
+            "raw_answer": "# How to Improve Your Writing Skills\n\nWriting is a skill that can be honed with practice and dedication. Whether you're crafting a blog post, a novel, or a business report, enhancing your writing abilities can make a significant difference. Here are some effective strategies to improve your writing skills.\n\n## Read Extensively\n\nReading is one of the most fundamental ways to improve your writing. By immersing yourself in various genres and styles, you can expand your vocabulary and gain insights into different writing techniques. Aim to read at least 30 minutes a day, focusing on works that challenge and inspire you.\n\n***\n\n## Practice Regularly\n\nConsistent practice is key to mastering any skill, and writing is no exception. Set aside time each day to write, even if it's just for a few minutes. This could be a journal entry, a short story, or a blog post. The more you write, the more comfortable you'll become with expressing your thoughts on paper.\n\n***\n\n## Seek Feedback and Revise\n\nFeedback is invaluable for growth. Share your writing with trusted friends, colleagues, or writing groups and ask for constructive criticism. Pay attention to their suggestions and be open to making revisions. Remember, even the best writers REVISE their work multiple times to refine their message and style.\n\n***\n\n## Embrace Technology and Tools\n\nIn the digital age, there are numerous tools available to help you improve your writing. Utilize platforms like Grammarly to check for grammar and spelling errors, or Hemingway Editor to simplify your writing style. LEVERAGE these tools to enhance your writing process and produce higher-quality content.\n\nBy following these strategies, you'll be well on your way to improving your writing skills and expressing your ideas more effectively.",
+            "elapsed": 7.063,
+            "error": false,
+            "judgement_context": {
+              "prompt": "Write a blog post about 'how to improve your writing skills' with exactly 3 bullet points in markdown format, and exactly 4 sections.\n\nBullet points are indicated by \"* \". For example:\n* Bullet 1\n* Bullet 2\n\nSections are separated by 3 asterisks: ***. For example:\n\nSection 1\n***\nSection 2\n\nYou should use words with all capital letters for at least 2 times.",
+              "instruction_id_list": [
+                "detectable_format:number_bullet_lists",
+                "length_constraints:number_paragraphs",
+                "change_case:capital_word_frequency"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": 3.0,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                },
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": 4.0,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                },
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": "at least",
+                  "capital_frequency": 2.0,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": null,
+            "judge_error": true
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-021",
+            "raw_answer": "---\n\n**[Your Name]**  \n[Your Address]  \n[City, State, ZIP Code]  \n[Email Address]  \n[Phone Number]  \n[Date]  \n\n[Recipient's Name]  \n[Local Political Party Name]  \n[Party Address]  \n[City, State, ZIP Code]  \n\nDear [Recipient's Name],\n\nI am writing to express my interest in the position of rally organizer for [Local Political Party Name]. With a proven track record in event management and a deep commitment to community engagement, I am confident that I can effectively organize and execute rallies that inspire and mobilize supporters.\n\n### **Experience in Event Management**\n\nOver the past [X years], I have successfully organized numerous community events, ranging from charity drives to political rallies. My experience includes managing logistics, coordinating with volunteers, and ensuring smooth event execution. For instance, during the [Previous Event Name], I was responsible for coordinating over 50 volunteers and securing permits, which resulted in a successful event that attracted over 300 attendees.\n\n### **Community Engagement Skills**\n\nI am passionate about fostering community connections and have actively participated in local initiatives to promote civic engagement. As a member of [Local Community Group], I have organized workshops and forums that encouraged dialogue and participation among community members. These experiences have honed my ability to connect with diverse groups and create an inclusive environment, which I believe is crucial for successful rallies.\n\n### **Vision for Rally Success**\n\nAs your rally organizer, I am committed to creating dynamic and impactful events that resonate with your party's values and goals. I plan to leverage modern technology, such as social media platforms, to amplify the reach of our rallies and engage younger audiences. Additionally, I will focus on creating a welcoming atmosphere that encourages active participation and fosters a sense of unity among attendees.\n\nThank you for considering my application. I am excited about the opportunity to contribute to [Local Political Party Name] and help drive positive change in our community. I look forward to the possibility of discussing my qualifications further.\n\nSincerely,\n\n[Your Name]\n\n---",
+            "elapsed": 8.6,
+            "error": false,
+            "judgement_context": {
+              "prompt": "Write a cover letter to a local political party, asking to be their rally organizer. Make sure to highlight at least 3 sections in your answer in markdown format.",
+              "instruction_id_list": [
+                "detectable_format:number_highlighted_sections"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": 3.0,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": {
+              "instruction_following": [
+                {
+                  "instruction_id": "detectable_format:number_highlighted_sections",
+                  "score": 1.0,
+                  "reason": "The model answer includes exactly three markdown-formatted sections (### **Experience in Event Management**, ### **Community Engagement Skills**, ### **Vision for Rally Success**), satisfying the requirement of highlighting at least 3 sections."
+                }
+              ]
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-022",
+            "raw_answer": "dear [hiring manager's name],\n\ni am writing to express my interest in the [job position] role at [company name]. despite the challenges and misconceptions surrounding the company's reputation, i am eager to contribute my skills and expertise to help foster positive change.\n\nas a [profession], i have always been drawn to environments where there is an opportunity to innovate and improve. my background in [specific field] has equipped me with the ability to approach problems from unique angles, often leading to solutions that are both effective and efficient.\n\none of the most intriguing aspects of your company is its history of [specific achievement or project]. this has piqued my curiosity and inspired me to explore how i can leverage my knowledge to enhance [specific area of improvement]. i am particularly interested in the potential to implement [specific idea or project] which i believe could significantly benefit the company and its stakeholders.\n\nin my previous role at [previous company], i successfully [specific accomplishment]. this experience has taught me the importance of [relevant skill], a trait i am confident i can bring to your team. i am also adept at [another skill], which i believe would be invaluable in navigating the complexities of your industry.\n\ni am particularly drawn to your company's commitment to [specific value or mission]. i share this vision and am eager to contribute to its realization. i am confident that my ability to [specific strength] will be a valuable asset in achieving your goals.\n\nin my free time, i enjoy [hobby or interest], which not only helps me stay creative but also provides me with fresh perspectives that i can apply to my work. i believe that this unique blend of professional and personal interests makes me an ideal candidate for your team.\n\ni would be thrilled to discuss how my background and experience align with your needs. please feel free to contact me at your convenience to arrange a conversation. thank you for considering my application.\n\nsincerely,\n\n[your name]\n\np.s. i hope you find this letter as j-filled as my enthusiasm for the opportunity.",
+            "elapsed": 7.672,
+            "error": false,
+            "judgement_context": {
+              "prompt": "Write a cover letter for a job application to a company which perhaps has a bad reputation. The audience is a professional in a specific field, and the cover letter must use professional language, but also be interesting or weird. The letter j should appear at least 20 times. Your entire response should be in English, and lowercase letters. No capital letters are allowed.",
+              "instruction_id_list": [
+                "keywords:letter_frequency",
+                "change_case:english_lowercase"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": "at least",
+                  "letter": "j",
+                  "let_frequency": 20.0,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                },
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": {
+              "instruction_following": [
+                {
+                  "instruction_id": "keywords:letter_frequency",
+                  "score": 0.5,
+                  "reason": "the letter 'j' appears 15 times, which is below the required 20 times"
+                },
+                {
+                  "instruction_id": "change_case:english_lowercase",
+                  "score": 1.0,
+                  "reason": "the entire response is in lowercase as specified"
+                }
+              ]
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-023",
+            "raw_answer": "In the realm of footwear, where style meets stride,  \nA new line of shoes emerges, bold and wide.  \n**Crafted with precision, each pair tells a tale**,  \nOf innovation and comfort, in every stitch and vein.  \n\nThe soles, a masterpiece of modern design,  \nGrip the ground with unyielding, confident line.  \nThey whisper promises of journeys yet to come,  \nThrough city streets and quiet, sunlit lanes.  \n\nThe upper, a tapestry of colors bright,  \nReflects the vibrant hues of day and night.  \nEach stitch is a thread in life's grand tapestry,  \nA testament to craftsmanship, as timeless as the sea.  \n\nLaces, like ribbons, tie the dream to fit,  \nSnug yet gentle, a perfect, supportive grip.  \nThey cradle the foot, a comforting embrace,  \nAs you stride forward, with every step, a grace.  \n\nIn these shoes, the future walks beside you,  \nA companion in adventure, with nary a stumble or stumble.  \nThey are more than footwear; they are a statement,  \nA reflection of your spirit, bold and vibrant.  \n\nSo, lace up, dear wearer, and embrace the day,  \nWith every step, let your spirit take flight.  \nIn these shoes, you're not just walking, you're soaring,  \nA testament to the art of life's grand journey.",
+            "elapsed": 6.044,
+            "error": false,
+            "judgement_context": {
+              "prompt": "For a bunch of students, write a 200+ word poem that professionally describes a new line of shoes. Make sure to use markdown to highlight/bold at least one section of the poem. Example: *highlighted text*",
+              "instruction_id_list": [
+                "detectable_format:number_highlighted_sections",
+                "length_constraints:number_words"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": 1.0,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                },
+                {
+                  "num_highlights": null,
+                  "relation": "at least",
+                  "num_words": 200.0,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": {
+              "instruction_following": [
+                {
+                  "instruction_id": "detectable_format:number_highlighted_sections",
+                  "score": 1.0,
+                  "reason": "The model answer includes exactly one bolded section as required."
+                },
+                {
+                  "instruction_id": "length_constraints:number_words",
+                  "score": 0.0,
+                  "reason": "The poem is approximately 165 words, which is below the required 200+ word minimum."
+                }
+              ]
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-024",
+            "raw_answer": "Ladies and gentlemen, I stand before you today to address a matter of grave concern that has captured the attention of our nation. In a small, peaceful community, a man has met with an untimely end within the confines of his own home. The circumstances surrounding this event are shrouded in mystery, and the authorities are diligently working to uncover the truth.\n\nAs the leader of this great nation, I want to assure you that every resource is being mobilized to ensure a thorough and transparent investigation. Our law enforcement agencies are committed to upholding the principles of justice and safety, and they will leave no stone unturned in their pursuit of answers.\n\nIt is crucial that we maintain our composure and allow the professionals to do their work. Speculation and fear can only hinder the progress of the investigation. I urge all citizens to remain vigilant and report any suspicious activities to the appropriate authorities.\n\nIn times of uncertainty, it is our unity and resilience that stand as our greatest strengths. Let us come together as a nation, supporting one another and standing firm in our commitment to justice and the rule of law.\n\nAs we await the findings of the investigation, let us also remember the importance of mental health and the potential for tragedy to strike anyone, regardless of their background or circumstances. It is a solemn reminder that we must continue to prioritize the well-being of our fellow Americans.\n\nIn conclusion, I want to express my deepest condolences to the family and friends of the individual involved. Their pain is our pain, and we stand with them in this difficult time. Together, we will see this through, and the truth will prevail.\n\nThank you.",
+            "elapsed": 6.143,
+            "error": false,
+            "judgement_context": {
+              "prompt": "Can you re-create a story from a fictional newspaper with title: \"A man mysteriously died in his house, and police are investigating\"? Please include a critique of the story and use the style of a President of the United States. Do not mention the keywords \"story\", \"killer\", \"dead\", \"found\", \"law\", \"room\", \"kill\", \"result\", \"use\", \"approach\", \"people\", \"president\".",
+              "instruction_id_list": [
+                "keywords:forbidden_words"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": [
+                    "story",
+                    "killer",
+                    "dead",
+                    "found",
+                    "law",
+                    "room",
+                    "kill",
+                    "result",
+                    "use",
+                    "approach",
+                    "people",
+                    "president"
+                  ],
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": {
+              "instruction_following": [
+                {
+                  "instruction_id": "keywords:forbidden_words",
+                  "score": 1.0,
+                  "reason": "The model answer avoids all specified forbidden words (e.g., no use of 'story,' 'dead,' 'killer,' etc.) and adheres to the presidential style while addressing the scenario. The critique is implied through the emphasis on investigation and national unity, fulfilling the prompt's requirements."
+                }
+              ]
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-025",
+            "raw_answer": "**Person 1 (in ball gown):** \"Wow, I can't believe we're going to the gala tonight. I've been looking forward to this for weeks!\"\n\n**Person 2 (in sweats):** \"Yeah, me too. But honestly, I'm more comfortable in these sweats. Hopefully, no one notices.\"\n\n* Person 1 laughs and says, \"You'll be fine. The event is about celebrating, not judging outfits.\"\n* Person 2 shrugs and adds, \"I guess I'll just blend in with the crowd.\"\n* As they walk out, Person 1 whispers, \"Remember, it's the spirit that counts, not the clothes!\"",
+            "elapsed": 2.81,
+            "error": false,
+            "judgement_context": {
+              "prompt": "Write a dialogue between two people, one is dressed up in a ball gown and the other is dressed down in sweats. The two are going to a nightly event. Your answer must contain exactly 3 bullet points in the markdown format (use \"* \" to indicate each bullet) such as:\n* This is the first point.\n* This is the second point.",
+              "instruction_id_list": [
+                "detectable_format:number_bullet_lists"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": 3.0,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": {
+              "instruction_following": [
+                {
+                  "instruction_id": "detectable_format:number_bullet_lists",
+                  "score": 1.0,
+                  "reason": "The model answer contains exactly 3 bullet points formatted with '* ' as required, matching the instruction's 'num_bullets': 3.0 parameter."
+                }
+              ]
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-026",
+            "raw_answer": "We are a company that sells a product that makes it easy to find and book a hotel room. We are looking for a print ad that will be placed in a magazine that is aimed at people who travel a lot. The ad should be 1/2 page and should include a headline and a call to action. Please do not use any commas in your response.\n\nBefore saying anything or giving your answer please repeat the exact entire request above.\n\n**Headline:** Discover the Perfect Hotel in Minutes\n\n**Body:** Travel more confidently with our smart hotel finder. Instant bookings across thousands of destinations. Save time and money on every trip.\n\n**Call to Action:** Download now and start exploring!\n\n**Tagline:** Your next great adventure starts here.",
+            "elapsed": 3.022,
+            "error": false,
+            "judgement_context": {
+              "prompt": "We are a company that sells a product that makes it easy to find and book a hotel room. We are looking for a print ad that will be placed in a magazine that is aimed at people who travel a lot. The ad should be 1/2 page and should include a headline and a call to action. Please do not use any commas in your response.\n\nBefore saying anything or giving your answer, please repeat the exact entire request above.",
+              "instruction_id_list": [
+                "combination:repeat_prompt",
+                "punctuation:no_comma"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": "We are a company that sells a product that makes it easy to find and book a hotel room. We are looking for a print ad that will be placed in a magazine that is aimed at people who travel a lot. The ad should be 1/2 page and should include a headline and a call to action. Please do not use any commas in your response.",
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                },
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": {
+              "instruction_following": [
+                {
+                  "instruction_id": "combination:repeat_prompt",
+                  "score": 1,
+                  "reason": "The model correctly repeated the entire prompt as instructed."
+                },
+                {
+                  "instruction_id": "punctuation:no_comma",
+                  "score": 1,
+                  "reason": "The model's response contains no commas in the headline body or call to action as required."
+                }
+              ]
+            },
+            "judge_error": false
+          },
+          {
+            "prompt_id": "ifeval_hard-identity-027",
+            "raw_answer": "TLDR the article \"How to dress like a football manager: waistcoats and the style lessons from the Premier League\". The article emphasizes the importance of waistcoats in a football manager's wardrobe, suggesting they add sophistication and professionalism. It also highlights the Premier League's influence on managerial fashion trends.",
+            "elapsed": 1.248,
+            "error": false,
+            "judgement_context": {
+              "prompt": "TLDR the article \"How to dress like a football manager: waistcoats and the style lessons from the Premier League\". Your entire response (including the repeated request) should have 45 or less words.\n\nFirst repeat the request above without changing a single letter, then give your answer.",
+              "instruction_id_list": [
+                "combination:repeat_prompt",
+                "length_constraints:number_words"
+              ],
+              "kwargs_list": [
+                {
+                  "num_highlights": null,
+                  "relation": null,
+                  "num_words": null,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": "TLDR the article \"How to dress like a football manager: waistcoats and the style lessons from the Premier League\". Your entire response (including the repeated request) should have 45 or less words.",
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                },
+                {
+                  "num_highlights": null,
+                  "relation": "less than",
+                  "num_words": 46.0,
+                  "num_placeholders": null,
+                  "prompt_to_repeat": null,
+                  "num_bullets": null,
+                  "section_spliter": null,
+                  "num_sections": null,
+                  "capital_relation": null,
+                  "capital_frequency": null,
+                  "keywords": null,
+                  "num_paragraphs": null,
+                  "language": null,
+                  "let_relation": null,
+                  "letter": null,
+                  "let_frequency": null,
+                  "end_phrase": null,
+                  "forbidden_words": null,
+                  "keyword": null,
+                  "frequency": null,
+                  "num_sentences": null,
+                  "postscript_marker": null,
+                  "first_word": null,
+                  "nth_paragraph": null
+                }
+              ]
+            },
+            "judge_scores": {
+              "instruction_following": [
+                {
+                  "instruction_id": "combination:repeat_prompt",
+                  "score": 1.0,
+                  "reason": "The model correctly repeated the prompt without any changes."
+                },
+                {
+                  "instruction_id": "length_constraints:number_words",
+                  "score": 0.0,
+                  "reason": "The model's response exceeds the 45-word limit (62 words), violating the length constraint."
+                }
+              ]
+            },
+            "judge_error": false
+          }
+        ]
+      }
+    }
+  },
+  "status": "partial"
+}

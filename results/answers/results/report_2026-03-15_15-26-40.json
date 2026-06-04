@@ -1,0 +1,646 @@
+{
+  "timestamp": "2026-03-15T15:26:40.361020+00:00",
+  "model": "gemma3:4b",
+  "base_url": "http://localhost:11434/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "datasets": {
+    "diacritic": {
+      "cds": {
+        "num_sampled": 10,
+        "correct": 6,
+        "incorrect": 4,
+        "error": 0,
+        "accuracy": 0.6,
+        "elapsed_sec": 15.36,
+        "questions": [
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>Mezczyzna z dzieckiem w nosidelku i mezczyzna z dzieckiem na grzbiecie stoja w poblizu stromych skal .</ZDANIE_A>\n<ZDANIE_B>Mezczyzna z dzieckiem w nosidelku i mezczyzna z turbanem na glowie stoja w poblizu stromych skal .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 2.333
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>Chlopiec w spodenkach kapielowych i dmuchanych rekawkach zjezdza do basenu ze zjezdzalni .</ZDANIE_A>\n<ZDANIE_B>Czlowiek z duzym plecakiem wchodzi po gorskim zboczu .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 1.417
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>Kobieta siedzi na krawezniku obok kosza na smieci i trzyma przy uchu telefon komorkowy .</ZDANIE_A>\n<ZDANIE_B>Brazowy pies biegnie po trawie , niosac w zebach zabawke .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 1.349
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>Taniec na parkiecie innej dziewczynki ubranej w stroj baletnicy jest obserwowany przez dwie dziewczynki .</ZDANIE_A>\n<ZDANIE_B>Dziewczynka w stroju baletowym , obserwowana przez dwie inne dziewczynki , podskakuje nad podloga .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"ENTAILMENT\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.503
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>Jasnowlosa dziewczynka wspina sie po sciance wspinaczkowej .</ZDANIE_A>\n<ZDANIE_B>Czlowiek z dlugimi wlosami wisi na linie obok klifu nad woda .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 1.295
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>Trzej mezczyzni w zielonych bluzkach stoja obok siebie w roznych pozach , trzymajac sie za rece , a za nimi stoi czwarty mezczyzna .</ZDANIE_A>\n<ZDANIE_B>Ciemnoskory mezczyzna , ktory jest podparty o uda dwoch innych mezczyzn , trzyma ich jednoczesnie za rece .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"ENTAILMENT\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.684
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>Turysta z duzym plecakiem i kijkami wskazuje w kierunku gor , ktore sa osniezone .</ZDANIE_A>\n<ZDANIE_B>Czlowiek z duzym plecakiem wchodzi po gorskim zboczu .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"ENTAILMENT\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.434
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>Czlowiek wspina sie po skale asekurowany przez druga osobe z dolu .</ZDANIE_A>\n<ZDANIE_B>Czlowiek asekurowany przez druga osobe z dolu nie wspina sie po skale .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"CONTRADICTION\"}",
+            "result": "CORRECT",
+            "elapsed": 1.396
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>Kilka kolorowo ubranych osob tanczy z uniesionymi rekami .</ZDANIE_A>\n<ZDANIE_B>Kilka kolorowo ubranych osob tanczy z rekami , ktore sa uniesione .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"ENTAILMENT\"}",
+            "result": "CORRECT",
+            "elapsed": 1.401
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>Trzy dziewczyny i jeden chlopiec spedzaja czas na trampolinie w zimowy dzien .</ZDANIE_A>\n<ZDANIE_B>Trzy skosnookie dziewczyny i jeden chlopiec spedzaja czas na trampolinie w zimowy dzien .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"CONTRADICTION\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.546
+          }
+        ]
+      },
+      "ldek": {
+        "num_sampled": 10,
+        "correct": 2,
+        "incorrect": 8,
+        "error": 0,
+        "accuracy": 0.2,
+        "elapsed_sec": 22.14,
+        "questions": [
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Do lekarza zglasza sie 70-letni pacjent uzytkujacy od 12 miesiecy protezy calkowite. Jako powod zgloszenia podaje pieczenie w jamie ustnej i dyskomfort w uzytkowaniu protez, ktory pojawil sie w okresie ostatniego miesiaca. W wywiadzie podaje astme atopowa leczona farmakologicznie. Badaniem klinicznym stwierdzasz zly stan higieny i zaczerwienienie blony sluzowej podloza sluzowkowo-kostnego. Najbardziej prawdopodobna przyczyna dolegliwosci moze byc:</PYTANIE>\n<ODPOWIEDZI>A. reakcja alergiczna na metakrylan metylu.\nB. reakcja alergiczna na barwniki zawarte w tworzywie akrylowym.\nC. toksyczne dzialanie monomeru resztkowego.\nD. zakazenie grzybicze.\nE. zadna z powyzszych odpowiedzi nie jest poprawna.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.609
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Wskaz nieprawdziwe stwierdzenie dotyczace tymczasowego wypelnienia ubytku w trakcie leczenia kanalowego:</PYTANIE>\n<ODPOWIEDZI>A. dziala przeciwbakteryjnie.\nB. powinno miec grubosc 4 mm.\nC. chroni przed przedostawaniem sie bakterii i plynow z jamy ustnej.\nD. zapobiega wyciekaniu lekow z kanalu do jamy ustnej.\nE. posiada odpowiednia wytrzymalosc mechaniczna.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.974
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Choroba Volkmana to:</PYTANIE>\n<ODPOWIEDZI>A. postac gruczolowego zapalenia warg – surowicze zapalenie warg.\nB. postac gruczolowego zapalenia warg – powierzchowne ropne zapalenie warg.\nC. postac gruczolowego zapalenia warg – glebokie ropne zapalenie warg.\nD. postac ziarniniakowego zapalenia warg.\nE. postac slonecznego zapalenia warg.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.086
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Co to jest tzw. „prochnica resztkowa”?</PYTANIE>\n<ODPOWIEDZI>A. prochnica o gwaltownym przebiegu, powodujaca szybka destrukcje uzebienia.\nB. prochnica rozwijajaca sie pod makroskopowo zdrowym szkliwem.\nC. jedna z postaci prochnicy korzenia.\nD. prochnica, ktora ulegla zatrzymaniu.\nE. tkanka prochnicowa pozostawiona w ubytku przed zalozeniem wypelnienia.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.032
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Wskaz prawdziwe informacje dotyczace blonki nabytej (pellicle):1) jest to bezkomorkowa, bialkowa oslonka;2) jest to nieorganiczna oslonka wytracajaca sie z mineralow sliny;3) poczatkowym jej kolonizatorem jest S. sanguinis;4) powstaje po 24-48 godzinach po mechanicznym oczyszczeniu zebow.Prawidlowa odpowiedz to:</PYTANIE>\n<ODPOWIEDZI>A. 1,3.\nB. 1,4.\nC. 2,3.\nD. 2,4.\nE. 3,4.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.333
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Zgodnie z Konstytucja obywatelom Rzeczypospolitej Polskiej przysluguje rowny dostep do:</PYTANIE>\n<ODPOWIEDZI>A. ochrony zdrowia.\nB. leczenia eksperymentalnego.\nC. swiadczen opieki zdrowotnej finansowanej ze srodkow publicznych.\nD. kultury fizycznej.\nE. bezplatnego leczenia. L-DEP</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "CORRECT",
+            "elapsed": 1.752
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Wybierz prawidlowe stwierdzenie odnoszace sie do urazow zebow:</PYTANIE>\n<ODPOWIEDZI>A. w wyniku urazu zebow stalych najczesciej dochodzi do zwichniecia zebow, a w uzebieniu mlecznym najczesciej zdarzaja sie zlamania koron.\nB. w wyniku urazu zebow stalych najczesciej dochodzi do zlamania korony, a w uzebieniu mlecznym najczesciej zdarzaja sie zwichniecia zebow.\nC. zarowno w uzebieniu mlecznym jak i stalym najczesciej dochodzi do zwichniecia zebow.\nD. zarowno w uzebieniu mlecznym jak i stalym najczesciej dochodzi do zlamania korony.\nE. zarowno w uzebieniu mlecznym jak i stalym najczesciej dochodzi do zlamania w obrebie korzeni zebow.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.998
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Ktory z ponizszych czynnikow nie jest uwazany za przyczyne patologicznego starcia zebow?</PYTANIE>\n<ODPOWIEDZI>A. parafunkcje.\nB. bruksizm.\nC. nawyki zywieniowe: spozywanie pokarmow kwasnych i gruboziarnistych.\nD. palenie papierosow.\nE. wzmozone napiecie psychoemocjonalne. L-DEP</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.806
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Ktory z wymienionych srodkow do plukania kanalow korzeniowych nalezy stosowac naprzemiennie z roztworem EDTA, aby calkowicie usunac warstwe mazista?</PYTANIE>\n<ODPOWIEDZI>A. sol fizjologiczna.\nB. wode utleniona.\nC. kwas cytrynowy.\nD. podchloryn sodu.\nE. chlorheksydyne.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "CORRECT",
+            "elapsed": 1.763
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>W klimacie umiarkowanym maksymalnym, dopuszczalnym ze wzgledu na profilaktyke fluorozy zebow, poziomem fluoru w wodzie pitnej jest:</PYTANIE>\n<ODPOWIEDZI>A. 0,3 mg F/L.\nB. 0,5 mg F/L. C. 1 mg F/l.\nC. 2 mg F/l.\nD. 3,5 mg F/l.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.782
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 10,
+        "correct": 4,
+        "incorrect": 6,
+        "error": 0,
+        "accuracy": 0.4,
+        "elapsed_sec": 15.52,
+        "questions": [
+          {
+            "prompt": "Odpowiedz na poniższe pytanie, wybierając poprawną odpowiedź spośród podanych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Miara kata wpisanego w okrag jest o 20° mniejsza od miary kata srodkowego opartego na tym samym luku. Wynika stad, ze miara kata wpisanego jest rowna</PYTANIE>\n<ODPOWIEDZI>A. 5°\nB. 10°\nC. 20°\nD. 30°</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.102
+          },
+          {
+            "prompt": "Odpowiedz na poniższe pytanie, wybierając poprawną odpowiedź spośród podanych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Do zbioru rozwiazan nierownosci (x^4+1)(2-x)>0 nie nalezy liczba</PYTANIE>\n<ODPOWIEDZI>A. -3\nB. -1\nC. 1\nD. 3</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.331
+          },
+          {
+            "prompt": "Odpowiedz na poniższe pytanie, wybierając poprawną odpowiedź spośród podanych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Liczby a i c sa dodatnie. Liczba b stanowi 48% liczby a oraz 32% liczby c. Wynika stad, ze</PYTANIE>\n<ODPOWIEDZI>A. c=1,5a\nB. c=1,6a\nC. c=0,8a\nD. c=0,16a</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.657
+          },
+          {
+            "prompt": "Odpowiedz na poniższe pytanie, wybierając poprawną odpowiedź spośród podanych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Po przejsciu monochromatycznej fali swietlnej z powietrza (np = 1) do szkla o wspolczynniku zalamania ns</PYTANIE>\n<ODPOWIEDZI>A. czestotliwosc fali zmaleje ns razy.\nB. predkosc fali sie nie zmieni.\nC. dlugosc fali zmaleje ns razy.\nD. okres fali zmaleje ns razy.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "CORRECT",
+            "elapsed": 1.779
+          },
+          {
+            "prompt": "Odpowiedz na poniższe pytanie, wybierając poprawną odpowiedź spośród podanych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Rozblyski sloneczne nie wywoluja na Ziemi</PYTANIE>\n<ODPOWIEDZI>A. zorz polarnych.\nB. zaklocen lacznosci radiowej.\nC. zmian magnetosfery.\nD. przyplywow i odplywow morza.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.418
+          },
+          {
+            "prompt": "Odpowiedz na poniższe pytanie, wybierając poprawną odpowiedź spośród podanych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Objawy ktorej choroby pszczol opisano w ramce?</PYTANIE>\n<ODPOWIEDZI>A. Zgnilca zlosliwego.\nB. Choroby woreczkowej.\nC. Chronicznego paralizu pszczol.\nD. Choroby czarnych matecznikow.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "CORRECT",
+            "elapsed": 1.425
+          },
+          {
+            "prompt": "Odpowiedz na poniższe pytanie, wybierając poprawną odpowiedź spośród podanych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Cyklon jest elementem przeno snika</PYTANIE>\n<ODPOWIEDZI>A. pneum atycznego.\nB. wstrzasowego.\nC. slimakowego.\nD. slizgowego.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "CORRECT",
+            "elapsed": 1.244
+          },
+          {
+            "prompt": "Odpowiedz na poniższe pytanie, wybierając poprawną odpowiedź spośród podanych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Podsterownoscia pojazdu nazywa sie tendencje do</PYTANIE>\n<ODPOWIEDZI>A. zmniejszania promienia skretu.\nB. zwiekszania promienia skretu.\nC. poslizgu kol osi napedzanej.\nD. poslizgu kol osi kierowanej.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.499
+          },
+          {
+            "prompt": "Odpowiedz na poniższe pytanie, wybierając poprawną odpowiedź spośród podanych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Dokoncz zdanie. Zaznacz wlasciwa odpowiedz sposrod podanych. Wystepowanie tkanki kostnej jest charakterystyczne dla wszystkich</PYTANIE>\n<ODPOWIEDZI>A. skorupiakow.\nB. glowonogow.\nC. strunowcow.\nD. kregowcow.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "CORRECT",
+            "elapsed": 1.515
+          },
+          {
+            "prompt": "Odpowiedz na poniższe pytanie, wybierając poprawną odpowiedź spośród podanych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Sposrod wymienionych narzadow organizmu czlowieka wybierz i zaznacz ten, ktory oprocz swojej podstawowej funkcji moze rowniez pelnic funkcje termogeniczna.</PYTANIE>\n<ODPOWIEDZI>A. miesnie szkieletowe\nB. skora\nC. mozgowie\nD. tarczyca</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.548
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 10,
+        "correct": 8,
+        "incorrect": 2,
+        "error": 0,
+        "accuracy": 0.8,
+        "elapsed_sec": 23.12,
+        "questions": [
+          {
+            "prompt": "Odpowiedz na pytanie korzystając z dostarczonego kontekstu.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Wojna persko-turecka toczona byla w latach 1532–1555 miedzy Imperium Osmanskim rzadzonym przez Sulejmana Wspanialego a Persja pod rzadami Tahmaspa I.</KONTEKST>\n<PYTANIE>Jak nazywal sie sultan turecki z XVI wieku o przydomku Wspanialy?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Sulejman Wspanialy\"}",
+            "result": "CORRECT",
+            "elapsed": 2.304
+          },
+          {
+            "prompt": "Odpowiedz na pytanie korzystając z dostarczonego kontekstu.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>NBP jest bankiem centralnym Rzeczypospolitej Polskiej.</KONTEKST>\n<PYTANIE>Jak brzmi nazwa Banku Centralnego w Polsce?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"NBP jest bankiem centralnym Rzeczypospolitej Polskiej.\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.662
+          },
+          {
+            "prompt": "Odpowiedz na pytanie korzystając z dostarczonego kontekstu.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Sluby panienskie, czyli Magnetyzm serca – komediowy utwor dramatyczny Aleksandra Fredry z 1832 roku, napisany wierszem.</KONTEKST>\n<PYTANIE>Czy komedia „Sluby Panienskie” Aleksandra Fredry jest napisana proza, czy wierszem?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Komedia „Sluby Panienskie” Aleksandra Fredry jest napisana wierszem.\"}",
+            "result": "CORRECT",
+            "elapsed": 2.269
+          },
+          {
+            "prompt": "Odpowiedz na pytanie korzystając z dostarczonego kontekstu.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Trakt Krolewski. Trakt Krolewski rozpoczyna sie od placu Zamkowego, biegnie ulicami Krakowskie Przedmiescie, Nowy Swiat, Alejami Ujazdowskimi i prowadzi do rezydencji krolewskich na Lazienkach i na Wilanowie. Przy Krakowskim Przedmiesciu, przewaza zabudowa barokowa z XVII-XVIII wieku (koscioly i rezydencje magnackie), a ponadto zachowal sie cenny zespol budowli klasycystycznych (glownie palace) i eklektycznych (hotele i kamienice czynszowe) z XIX stulecia.</KONTEKST>\n<PYTANIE>Czy warszawskie Aleje Ujazdowskie naleza do tzw. Traktu Krolewskiego?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Tak, Trakt Krolewski prowadzi także przez Aleje Ujazdowskie.\"}",
+            "result": "CORRECT",
+            "elapsed": 3.193
+          },
+          {
+            "prompt": "Odpowiedz na pytanie korzystając z dostarczonego kontekstu.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Ceroplastyka (lac. \"cera\" – wosk, \"plastica\" – modelowanie) – sztuka modelowania i rzezbienia w wosku, wykorzystywana glownie w rzezbie portretowej i wotywnej. Znana juz od starozytnosci w Egipcie, Persji, Grecji i Italii do wykonywania drobnych form rzezbiarskich, sluzacych celom sepulkralnym i wotywnym. Szczegolnie rozwinela sie i znaczenia nabrala u Rzymian, praktykujacych zwyczaj sporzadzania woskowych popiersi przodkow (tzw. \"imagines\"), stawianych w domowym atrium.</KONTEKST>\n<PYTANIE>Ceroplastyka to sztuka rzezbienia w ktorym materiale?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Ceroplastyka to sztuka rzezbienia w wosku.\"}",
+            "result": "CORRECT",
+            "elapsed": 3.183
+          },
+          {
+            "prompt": "Odpowiedz na pytanie korzystając z dostarczonego kontekstu.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Legenda. Wedlug jednej z najbardziej znanych wersji Romulus i Remus byli dziecmi westalki o imieniu Rea Sylwia i boga wojny Marsa. Ojciec ich matki, Numitor, krol dynastycznego miasta Alba Longa, zostal stracony z tronu, przez uzurpatora, a zarazem wlasnego brata Amuliusa. Nowo koronowany wladca starannie zadbal o to, aby stary krol nie doczekal sie juz potomkow.</KONTEKST>\n<PYTANIE>Synami ktorego z bogow byli Remus i Romulus?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Remus i Romulus byli synami boga wojny Marsa.\"}",
+            "result": "CORRECT",
+            "elapsed": 2.7
+          },
+          {
+            "prompt": "Odpowiedz na pytanie korzystając z dostarczonego kontekstu.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Siec niskiego napiecia (nn) – siec elektroenergetyczna, ktora dostarcza energie elektryczna do indywidualnych odbiorcow. W Europie i wiekszosci krajow swiata lokalna siec elektroenergetyczna tzw. „niskiego napiecia“, tzn. doprowadzona bezposrednio do odbiorcow indywidualnych dostarcza prad przemienny o czestotliwosci 50 Hz, pod napieciem fazowym 230 V. Odbiorcy wymagajacy nieco wiekszej mocy dostarczanej zasilani sa z sieci trojfazowej o napieciu miedzyfazowym 400 V.</KONTEKST>\n<PYTANIE>Jaka jest czestotliwosc sieci zasilajacej pradu przemiennego w Polsce?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"50 Hz\"}",
+            "result": "CORRECT",
+            "elapsed": 2.646
+          },
+          {
+            "prompt": "Odpowiedz na pytanie korzystając z dostarczonego kontekstu.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>W La Higuera w Boliwii zostal zastrzelony schwytany poprzedniego dnia przez zolnierzy argentynski rewolucjonista Ernesto „Che” Guevara.</KONTEKST>\n<PYTANIE>Jakiej narodowosci byl Ernesto Guevara?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Ernesto „Che” Guevara byl argentynian\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.746
+          },
+          {
+            "prompt": "Odpowiedz na pytanie korzystając z dostarczonego kontekstu.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Tomek w krainie kangurow – pierwszy tom z cyklu powiesci Alfreda Szklarskiego, opowiadajacy o przygodach Tomka Wilmowskiego.</KONTEKST>\n<PYTANIE>Jak brzmi nazwisko autora serii przygod Tomka Wilmowskiego, ktory wraz z przyjacielem podrozuje po roznych czesciach swiata?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Alfred Szklarski\"}",
+            "result": "CORRECT",
+            "elapsed": 1.734
+          },
+          {
+            "prompt": "Odpowiedz na pytanie korzystając z dostarczonego kontekstu.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Ta bitwa byla pierwszym uzyciem na masowa skale gazow bojowych (Niemcy uzyli 168 ton trujacych substancji tylko w tym konkretnym przypadku), ktore spowodowaly smierc 5 tys. ludzi.</KONTEKST>\n<PYTANIE>Jakie panstwo po raz pierwszy zastosowalo gazy bojowe podczas I wojny swiatowej?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Niemcy\"}",
+            "result": "CORRECT",
+            "elapsed": 1.679
+          }
+        ]
+      }
+    },
+    "identity": {
+      "cds": {
+        "num_sampled": 10,
+        "correct": 7,
+        "incorrect": 3,
+        "error": 0,
+        "accuracy": 0.7,
+        "elapsed_sec": 15.6,
+        "questions": [
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>Mężczyzna z dzieckiem w nosidełku i mężczyzna z dzieckiem na grzbiecie stoją w pobliżu stromych skał .</ZDANIE_A>\n<ZDANIE_B>Mężczyzna z dzieckiem w nosidełku i mężczyzna z turbanem na głowie stoją w pobliżu stromych skał .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 2.304
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>Chłopiec w spodenkach kąpielowych i dmuchanych rękawkach zjeżdża do basenu ze zjeżdżalni .</ZDANIE_A>\n<ZDANIE_B>Człowiek z dużym plecakiem wchodzi po górskim zboczu .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 1.477
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>Kobieta siedzi na krawężniku obok kosza na śmieci i trzyma przy uchu telefon komórkowy .</ZDANIE_A>\n<ZDANIE_B>Brązowy pies biegnie po trawie , niosąc w zębach zabawkę .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 1.479
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>Taniec na parkiecie innej dziewczynki ubranej w strój baletnicy jest obserwowany przez dwie dziewczynki .</ZDANIE_A>\n<ZDANIE_B>Dziewczynka w stroju baletowym , obserwowana przez dwie inne dziewczynki , podskakuje nad podłogą .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"ENTAILMENT\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.628
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>Jasnowłosa dziewczynka wspina się po ściance wspinaczkowej .</ZDANIE_A>\n<ZDANIE_B>Człowiek z długimi włosami wisi na linie obok klifu nad wodą .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 1.352
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>Trzej mężczyźni w zielonych bluzkach stoją obok siebie w różnych pozach , trzymając się za ręce , a za nimi stoi czwarty mężczyzna .</ZDANIE_A>\n<ZDANIE_B>Ciemnoskóry mężczyzna , który jest podparty o uda dwóch innych mężczyzn , trzyma ich jednocześnie za ręce .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"ENTAILMENT\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.654
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>Turysta z dużym plecakiem i kijkami wskazuje w kierunku gór , które są ośnieżone .</ZDANIE_A>\n<ZDANIE_B>Człowiek z dużym plecakiem wchodzi po górskim zboczu .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"ENTAILMENT\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.427
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>Człowiek wspina się po skale asekurowany przez drugą osobę z dołu .</ZDANIE_A>\n<ZDANIE_B>Człowiek asekurowany przez drugą osobę z dołu nie wspina się po skale .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"CONTRADICTION\"}",
+            "result": "CORRECT",
+            "elapsed": 1.499
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>Kilka kolorowo ubranych osób tańczy z uniesionymi rękami .</ZDANIE_A>\n<ZDANIE_B>Kilka kolorowo ubranych osób tańczy z rękami , które są uniesione .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"ENTAILMENT\"}",
+            "result": "CORRECT",
+            "elapsed": 1.333
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>Trzy dziewczyny i jeden chłopiec spędzają czas na trampolinie w zimowy dzień .</ZDANIE_A>\n<ZDANIE_B>Trzy skośnookie dziewczyny i jeden chłopiec spędzają czas na trampolinie w zimowy dzień .</ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"ENTAILMENT\"}",
+            "result": "CORRECT",
+            "elapsed": 1.448
+          }
+        ]
+      },
+      "ldek": {
+        "num_sampled": 10,
+        "correct": 3,
+        "incorrect": 6,
+        "error": 1,
+        "accuracy": 0.3,
+        "elapsed_sec": 21.47,
+        "questions": [
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Do lekarza zgłasza się 70-letni pacjent użytkujący od 12 miesięcy protezy całkowite. Jako powód zgłoszenia podaje pieczenie w jamie ustnej i dyskomfort w użytkowaniu protez, który pojawił się w okresie ostatniego miesiąca. W wywiadzie podaje astmę atopową leczoną farmakologicznie. Badaniem klinicznym stwierdzasz zły stan higieny i zaczerwienienie błony śluzowej podłoża śluzówkowo-kostnego. Najbardziej prawdopodobną przyczyną dolegliwości może być:</PYTANIE>\n<ODPOWIEDZI>A. reakcja alergiczna na metakrylan metylu.\nB. reakcja alergiczna na barwniki zawarte w tworzywie akrylowym.\nC. toksyczne działanie monomeru resztkowego.\nD. zakażenie grzybicze.\nE. żadna z powyższych odpowiedzi nie jest poprawna.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 3.383
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Wskaż nieprawdziwe stwierdzenie dotyczące tymczasowego wypełnienia ubytku w trakcie leczenia kanałowego:</PYTANIE>\n<ODPOWIEDZI>A. działa przeciwbakteryjnie.\nB. powinno mieć grubość 4 mm.\nC. chroni przed przedostawaniem się bakterii i płynów z jamy ustnej.\nD. zapobiega wyciekaniu leków z kanału do jamy ustnej.\nE. posiada odpowiednią wytrzymałość mechaniczną.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.921
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Choroba Volkmana to:</PYTANIE>\n<ODPOWIEDZI>A. postać gruczołowego zapalenia warg – surowicze zapalenie warg.\nB. postać gruczołowego zapalenia warg – powierzchowne ropne zapalenie warg.\nC. postać gruczołowego zapalenia warg – głębokie ropne zapalenie warg.\nD. postać ziarniniakowego zapalenia warg.\nE. postać słonecznego zapalenia warg.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "CORRECT",
+            "elapsed": 2.066
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Co to jest tzw. „próchnica resztkowa”?</PYTANIE>\n<ODPOWIEDZI>A. próchnica o gwałtownym przebiegu, powodująca szybką destrukcję uzębienia.\nB. próchnica rozwijająca się pod makroskopowo zdrowym szkliwem.\nC. jedna z postaci próchnicy korzenia.\nD. próchnica, która uległa zatrzymaniu.\nE. tkanka próchnicowa pozostawiona w ubytku przed założeniem wypełnienia.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"E\"}",
+            "result": "CORRECT",
+            "elapsed": 1.954
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Wskaż prawdziwe informacje dotyczące błonki nabytej (pellicle):1) jest to bezkomórkowa, białkowa osłonka;2) jest to nieorganiczna osłonka wytrącająca się z minerałów śliny;3) początkowym jej kolonizatorem jest S. sanguinis;4) powstaje po 24-48 godzinach po mechanicznym oczyszczeniu zębów.Prawidłowa odpowiedź to:</PYTANIE>\n<ODPOWIEDZI>A. 1,3.\nB. 1,4.\nC. 2,3.\nD. 2,4.\nE. 3,4.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.298
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Zgodnie z Konstytucją obywatelom Rzeczypospolitej Polskiej przysługuje równy dostęp do:</PYTANIE>\n<ODPOWIEDZI>A. ochrony zdrowia.\nB. leczenia eksperymentalnego.\nC. świadczeń opieki zdrowotnej finansowanej ze środków publicznych.\nD. kultury fizycznej.\nE. bezpłatnego leczenia. L-DEP</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "CORRECT",
+            "elapsed": 1.601
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Wybierz prawidłowe stwierdzenie odnoszące się do urazów zębów:</PYTANIE>\n<ODPOWIEDZI>A. w wyniku urazu zębów stałych najczęściej dochodzi do zwichnięcia zębów, a w uzębieniu mlecznym najczęściej zdarzają się złamania koron.\nB. w wyniku urazu zębów stałych najczęściej dochodzi do złamania korony, a w uzębieniu mlecznym najczęściej zdarzają się zwichnięcia zębów.\nC. zarówno w uzębieniu mlecznym jak i stałym najczęściej dochodzi do zwichnięcia zębów.\nD. zarówno w uzębieniu mlecznym jak i stałym najczęściej dochodzi do złamania korony.\nE. zarówno w uzębieniu mlecznym jak i stałym najczęściej dochodzi do złamania w obrębie korzeni zębów.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.771
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Który z poniższych czynników nie jest uważany za przyczynę patologicznego starcia zębów?</PYTANIE>\n<ODPOWIEDZI>A. parafunkcje.\nB. bruksizm.\nC. nawyki żywieniowe: spożywanie pokarmów kwaśnych i gruboziarnistych.\nD. palenie papierosów.\nE. wzmożone napięcie psychoemocjonalne. L-DEP</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"L-DEP\"}",
+            "result": "ERROR",
+            "elapsed": 1.918
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Który z wymienionych środków do płukania kanałów korzeniowych należy stosować naprzemiennie z roztworem EDTA, aby całkowicie usunąć warstwę mazistą?</PYTANIE>\n<ODPOWIEDZI>A. sól fizjologiczną.\nB. wodę utlenioną.\nC. kwas cytrynowy.\nD. podchloryn sodu.\nE. chlorheksydynę.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.76
+          },
+          {
+            "prompt": "Wybierz poprawną odpowiedź spośród możliwych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>W klimacie umiarkowanym maksymalnym, dopuszczalnym ze względu na profilaktykę fluorozy zębów, poziomem fluoru w wodzie pitnej jest:</PYTANIE>\n<ODPOWIEDZI>A. 0,3 mg F/L.\nB. 0,5 mg F/L. C. 1 mg F/l.\nC. 2 mg F/l.\nD. 3,5 mg F/l.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.793
+          }
+        ]
+      },
+      "llmzszl": {
+        "num_sampled": 10,
+        "correct": 3,
+        "incorrect": 7,
+        "error": 0,
+        "accuracy": 0.3,
+        "elapsed_sec": 15.57,
+        "questions": [
+          {
+            "prompt": "Odpowiedz na poniższe pytanie, wybierając poprawną odpowiedź spośród podanych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Miara kąta wpisanego w okrąg jest o 20° mniejsza od miary kąta środkowego opartego na tym samym łuku. Wynika stąd, że miara kąta wpisanego jest równa</PYTANIE>\n<ODPOWIEDZI>A. 5°\nB. 10°\nC. 20°\nD. 30°</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.146
+          },
+          {
+            "prompt": "Odpowiedz na poniższe pytanie, wybierając poprawną odpowiedź spośród podanych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Do zbioru rozwiązań nierówności (x^4+1)(2-x)>0 nie należy liczba</PYTANIE>\n<ODPOWIEDZI>A. -3\nB. -1\nC. 1\nD. 3</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"A\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.311
+          },
+          {
+            "prompt": "Odpowiedz na poniższe pytanie, wybierając poprawną odpowiedź spośród podanych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Liczby a i c są dodatnie. Liczba b stanowi 48% liczby a oraz 32% liczby c. Wynika stąd, że</PYTANIE>\n<ODPOWIEDZI>A. c=1,5a\nB. c=1,6a\nC. c=0,8a\nD. c=0,16a</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.678
+          },
+          {
+            "prompt": "Odpowiedz na poniższe pytanie, wybierając poprawną odpowiedź spośród podanych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Po przejściu monochromatycznej fali świetlnej z powietrza (np = 1) do szkła o współczynniku załamania ns</PYTANIE>\n<ODPOWIEDZI>A. częstotliwość fali zmaleje ns razy.\nB. prędkość fali się nie zmieni.\nC. długość fali zmaleje ns razy.\nD. okres fali zmaleje ns razy.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "CORRECT",
+            "elapsed": 1.747
+          },
+          {
+            "prompt": "Odpowiedz na poniższe pytanie, wybierając poprawną odpowiedź spośród podanych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Rozbłyski słoneczne nie wywołują na Ziemi</PYTANIE>\n<ODPOWIEDZI>A. zórz polarnych.\nB. zakłóceń łączności radiowej.\nC. zmian magnetosfery.\nD. przypływów i odpływów morza.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.464
+          },
+          {
+            "prompt": "Odpowiedz na poniższe pytanie, wybierając poprawną odpowiedź spośród podanych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Objawy której choroby pszczół opisano w ramce?</PYTANIE>\n<ODPOWIEDZI>A. Zgnilca złośliwego.\nB. Choroby woreczkowej.\nC. Chronicznego paraliżu pszczół.\nD. Choroby czarnych mateczników.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "CORRECT",
+            "elapsed": 1.437
+          },
+          {
+            "prompt": "Odpowiedz na poniższe pytanie, wybierając poprawną odpowiedź spośród podanych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Cyklon jest elementem przeno śnika</PYTANIE>\n<ODPOWIEDZI>A. pneum atycznego.\nB. wstrząsowego.\nC. ślimakowego.\nD. ślizgowego.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.33
+          },
+          {
+            "prompt": "Odpowiedz na poniższe pytanie, wybierając poprawną odpowiedź spośród podanych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Podsterownością pojazdu nazywa się tendencję do</PYTANIE>\n<ODPOWIEDZI>A. zmniejszania promienia skrętu.\nB. zwiększania promienia skrętu.\nC. poślizgu kół osi napędzanej.\nD. poślizgu kół osi kierowanej.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"B\"}",
+            "result": "CORRECT",
+            "elapsed": 1.524
+          },
+          {
+            "prompt": "Odpowiedz na poniższe pytanie, wybierając poprawną odpowiedź spośród podanych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Dokończ zdanie. Zaznacz właściwą odpowiedź spośród podanych. Występowanie tkanki kostnej jest charakterystyczne dla wszystkich</PYTANIE>\n<ODPOWIEDZI>A. skorupiaków.\nB. głowonogów.\nC. strunowców.\nD. kręgowców.</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"C\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.499
+          },
+          {
+            "prompt": "Odpowiedz na poniższe pytanie, wybierając poprawną odpowiedź spośród podanych.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"LITERA\"}\n<PYTANIE>Spośród wymienionych narządów organizmu człowieka wybierz i zaznacz ten, który oprócz swojej podstawowej funkcji może również pełnić funkcję termogeniczną.</PYTANIE>\n<ODPOWIEDZI>A. mięśnie szkieletowe\nB. skóra\nC. mózgowie\nD. tarczyca</ODPOWIEDZI>\n",
+            "raw_answer": "{\"odpowiedź\": \"D\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.431
+          }
+        ]
+      },
+      "polqa": {
+        "num_sampled": 10,
+        "correct": 8,
+        "incorrect": 2,
+        "error": 0,
+        "accuracy": 0.8,
+        "elapsed_sec": 22.65,
+        "questions": [
+          {
+            "prompt": "Odpowiedz na pytanie korzystając z dostarczonego kontekstu.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Wojna persko-turecka toczona była w latach 1532–1555 między Imperium Osmańskim rządzonym przez Sulejmana Wspaniałego a Persją pod rządami Tahmaspa I.</KONTEKST>\n<PYTANIE>Jak nazywał się sułtan turecki z XVI wieku o przydomku Wspaniały?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Sulejman Wspaniały\"}",
+            "result": "CORRECT",
+            "elapsed": 2.22
+          },
+          {
+            "prompt": "Odpowiedz na pytanie korzystając z dostarczonego kontekstu.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>NBP jest bankiem centralnym Rzeczypospolitej Polskiej.</KONTEKST>\n<PYTANIE>Jak brzmi nazwa Banku Centralnego w Polsce?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"NBP jest bankiem centralnym Rzeczypospolitej Polskiej.\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.621
+          },
+          {
+            "prompt": "Odpowiedz na pytanie korzystając z dostarczonego kontekstu.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Śluby panieńskie, czyli Magnetyzm serca – komediowy utwór dramatyczny Aleksandra Fredry z 1832 roku, napisany wierszem.</KONTEKST>\n<PYTANIE>Czy komedia „Śluby Panieńskie” Aleksandra Fredry jest napisana prozą, czy wierszem?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Komedia „Śluby Panieńskie” Aleksandra Fredry jest napisana wierszem.\"}",
+            "result": "CORRECT",
+            "elapsed": 2.257
+          },
+          {
+            "prompt": "Odpowiedz na pytanie korzystając z dostarczonego kontekstu.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Trakt Królewski. Trakt Królewski rozpoczyna się od placu Zamkowego, biegnie ulicami Krakowskie Przedmieście, Nowy Świat, Alejami Ujazdowskimi i prowadzi do rezydencji królewskich na Łazienkach i na Wilanowie. Przy Krakowskim Przedmieściu, przeważa zabudowa barokowa z XVII-XVIII wieku (kościoły i rezydencje magnackie), a ponadto zachował się cenny zespół budowli klasycystycznych (głównie pałace) i eklektycznych (hotele i kamienice czynszowe) z XIX stulecia.</KONTEKST>\n<PYTANIE>Czy warszawskie Aleje Ujazdowskie należą do tzw. Traktu Królewskiego?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Tak, Trakt Królewski prowadzi również przez Aleje Ujazdowe.\"}",
+            "result": "CORRECT",
+            "elapsed": 3.302
+          },
+          {
+            "prompt": "Odpowiedz na pytanie korzystając z dostarczonego kontekstu.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Ceroplastyka (łac. \"cera\" – wosk, \"plastica\" – modelowanie) – sztuka modelowania i rzeźbienia w wosku, wykorzystywana głównie w rzeźbie portretowej i wotywnej. Znana już od starożytności w Egipcie, Persji, Grecji i Italii do wykonywania drobnych form rzeźbiarskich, służących celom sepulkralnym i wotywnym. Szczególnie rozwinęła się i znaczenia nabrała u Rzymian, praktykujących zwyczaj sporządzania woskowych popiersi przodków (tzw. \"imagines\"), stawianych w domowym atrium.</KONTEKST>\n<PYTANIE>Ceroplastyka to sztuka rzeźbienia w którym materiale?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"w wosku\"}",
+            "result": "CORRECT",
+            "elapsed": 2.695
+          },
+          {
+            "prompt": "Odpowiedz na pytanie korzystając z dostarczonego kontekstu.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Legenda. Według jednej z najbardziej znanych wersji Romulus i Remus byli dziećmi westalki o imieniu Rea Sylwia i boga wojny Marsa. Ojciec ich matki, Numitor, król dynastycznego miasta Alba Longa, został strącony z tronu, przez uzurpatora, a zarazem własnego brata Amuliusa. Nowo koronowany władca starannie zadbał o to, aby stary król nie doczekał się już potomków.</KONTEKST>\n<PYTANIE>Synami którego z bogów byli Remus i Romulus?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Remus i Romulus byli synami boga wojny Marsa.\"}",
+            "result": "CORRECT",
+            "elapsed": 2.671
+          },
+          {
+            "prompt": "Odpowiedz na pytanie korzystając z dostarczonego kontekstu.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Sieć niskiego napięcia (nn) – sieć elektroenergetyczna, która dostarcza energię elektryczną do indywidualnych odbiorców. W Europie i większości krajów świata lokalna sieć elektroenergetyczna tzw. „niskiego napięcia“, tzn. doprowadzona bezpośrednio do odbiorców indywidualnych dostarcza prąd przemienny o częstotliwości 50 Hz, pod napięciem fazowym 230 V. Odbiorcy wymagający nieco większej mocy dostarczanej zasilani są z sieci trójfazowej o napięciu międzyfazowym 400 V.</KONTEKST>\n<PYTANIE>Jaka jest częstotliwość sieci zasilającej prądu przemiennego w Polsce?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"50 Hz\"}",
+            "result": "CORRECT",
+            "elapsed": 2.559
+          },
+          {
+            "prompt": "Odpowiedz na pytanie korzystając z dostarczonego kontekstu.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>W La Higuera w Boliwii został zastrzelony schwytany poprzedniego dnia przez żołnierzy argentyński rewolucjonista Ernesto „Che” Guevara.</KONTEKST>\n<PYTANIE>Jakiej narodowości był Ernesto Guevara?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Ernesto „Che” Guevara był argentyńskim rewolucjonistą.\"}",
+            "result": "INCORRECT",
+            "elapsed": 2.02
+          },
+          {
+            "prompt": "Odpowiedz na pytanie korzystając z dostarczonego kontekstu.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Tomek w krainie kangurów – pierwszy tom z cyklu powieści Alfreda Szklarskiego, opowiadający o przygodach Tomka Wilmowskiego.</KONTEKST>\n<PYTANIE>Jak brzmi nazwisko autora serii przygód Tomka Wilmowskiego, który wraz z przyjacielem podróżuje po różnych częściach świata?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Alfred Szklarski\"}",
+            "result": "CORRECT",
+            "elapsed": 1.651
+          },
+          {
+            "prompt": "Odpowiedz na pytanie korzystając z dostarczonego kontekstu.\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"WYRAŻENIE\"}\n<KONTEKST>Ta bitwa była pierwszym użyciem na masową skalę gazów bojowych (Niemcy użyli 168 ton trujących substancji tylko w tym konkretnym przypadku), które spowodowały śmierć 5 tys. ludzi.</KONTEKST>\n<PYTANIE>Jakie państwo po raz pierwszy zastosowało gazy bojowe podczas I wojny światowej?</PYTANIE>\n",
+            "raw_answer": "{\"odpowiedź\": \"Niemcy\"}",
+            "result": "CORRECT",
+            "elapsed": 1.645
+          }
+        ]
+      }
+    },
+    "punctuation_all": {
+      "cds": {
+        "num_sampled": 10,
+        "correct": 8,
+        "incorrect": 2,
+        "error": 0,
+        "accuracy": 0.8,
+        "elapsed_sec": 15.81,
+        "questions": [
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>mężczyzna z dzieckiem w nosidełku i mężczyzna z dzieckiem na grzbiecie stoją w pobliżu stromych skał </ZDANIE_A>\n<ZDANIE_B>mężczyzna z dzieckiem w nosidełku i mężczyzna z turbanem na głowie stoją w pobliżu stromych skał </ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 2.379
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>chłopiec w spodenkach kąpielowych i dmuchanych rękawkach zjeżdża do basenu ze zjeżdżalni </ZDANIE_A>\n<ZDANIE_B>człowiek z dużym plecakiem wchodzi po górskim zboczu </ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 1.528
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>kobieta siedzi na krawężniku obok kosza na śmieci i trzyma przy uchu telefon komórkowy </ZDANIE_A>\n<ZDANIE_B>brązowy pies biegnie po trawie  niosąc w zębach zabawkę </ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 1.441
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>taniec na parkiecie innej dziewczynki ubranej w strój baletnicy jest obserwowany przez dwie dziewczynki </ZDANIE_A>\n<ZDANIE_B>dziewczynka w stroju baletowym  obserwowana przez dwie inne dziewczynki  podskakuje nad podłogą </ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"ENTAILMENT\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.631
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>jasnowłosa dziewczynka wspina się po ściance wspinaczkowej </ZDANIE_A>\n<ZDANIE_B>człowiek z długimi włosami wisi na linie obok klifu nad wodą </ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 1.336
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>trzej mężczyźni w zielonych bluzkach stoją obok siebie w różnych pozach  trzymając się za ręce  a za nimi stoi czwarty mężczyzna </ZDANIE_A>\n<ZDANIE_B>ciemnoskóry mężczyzna  który jest podparty o uda dwóch innych mężczyzn  trzyma ich jednocześnie za ręce </ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"NEUTRAL\"}",
+            "result": "CORRECT",
+            "elapsed": 1.596
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>turysta z dużym plecakiem i kijkami wskazuje w kierunku gór  które są ośnieżone </ZDANIE_A>\n<ZDANIE_B>człowiek z dużym plecakiem wchodzi po górskim zboczu </ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"ENTAILMENT\"}",
+            "result": "INCORRECT",
+            "elapsed": 1.432
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>człowiek wspina się po skale asekurowany przez drugą osobę z dołu </ZDANIE_A>\n<ZDANIE_B>człowiek asekurowany przez drugą osobę z dołu nie wspina się po skale </ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"CONTRADICTION\"}",
+            "result": "CORRECT",
+            "elapsed": 1.566
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>kilka kolorowo ubranych osób tańczy z uniesionymi rękami </ZDANIE_A>\n<ZDANIE_B>kilka kolorowo ubranych osób tańczy z rękami  które są uniesione </ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"ENTAILMENT\"}",
+            "result": "CORRECT",
+            "elapsed": 1.414
+          },
+          {
+            "prompt": "Sklasyfikuj relację między przesłanką a hipotezą jako ENTAILMENT (wynikanie), CONTRADICTION (sprzeczność) lub NEUTRAL (neutralność).\nOdpowiedź powinna mieć format: {\"odpowiedź\": \"RELATION\"}.\n\n<ZDANIE_A>trzy dziewczyny i jeden chłopiec spędzają czas na trampolinie w zimowy dzień </ZDANIE_A>\n<ZDANIE_B>trzy skośnookie dziewczyny i jeden chłopiec spędzają czas na trampolinie w zimowy dzień </ZDANIE_B>\n",
+            "raw_answer": "{\"odpowiedź\": \"ENTAILMENT\"}",
+            "result": "CORRECT",
+            "elapsed": 1.487
+          }
+        ]
+      }
+    }
+  },
+  "status": "partial"
+}

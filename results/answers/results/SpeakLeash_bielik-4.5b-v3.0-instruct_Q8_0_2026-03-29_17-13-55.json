@@ -1,0 +1,2854 @@
+{
+  "timestamp": "2026-03-29T17:13:55.116146+00:00",
+  "model": "SpeakLeash/bielik-4.5b-v3.0-instruct:Q8_0",
+  "base_url": "http://localhost:11434/v1",
+  "workers": 1,
+  "prompts_dir": "prompts",
+  "datasets": {
+    "diacritic": {
+      "bbh_open": {
+        "num_sampled": 100,
+        "score_sum": 45.241671,
+        "score_avg": 0.452417,
+        "error_count": 0,
+        "elapsed_sec": 386.54,
+        "questions": [
+          {
+            "prompt_id": "bbh_open-diacritic-000",
+            "raw_answer": "{\"odpowiedź\": \"koliber, przepióreczka, kruk, sokół, sokół, sokół, kardynał, sowa\"}",
+            "score": 0.3076923076923077,
+            "error": false,
+            "elapsed": 4.732
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-001",
+            "raw_answer": "{\"odpowiedź\": \"autobus, limuzyna, kombi, ciezarowka, minivan, ciagnik, kabriolet\"}",
+            "score": 0.2790697674418605,
+            "error": false,
+            "elapsed": 4.152
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-002",
+            "raw_answer": "{\"odpowiedź\": \"Eve, Dan, Rob, Joe, Ada, Mel, Amy\"}",
+            "score": 0.6060606060606061,
+            "error": false,
+            "elapsed": 3.131
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-003",
+            "raw_answer": "{\"odpowiedź\": \"pomaranczowa, czerwona, zielona, fioletowa, brazow, biala, zolta\"}",
+            "score": 0.5076923076923077,
+            "error": false,
+            "elapsed": 4.434
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-004",
+            "raw_answer": "{\"odpowiedź\": \"sojka, sojka, sojka, sojka, sojka, sojka, sojka\"}",
+            "score": 0.42105263157894735,
+            "error": false,
+            "elapsed": 3.634
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-005",
+            "raw_answer": "{\"odpowiedź\": \"zielona, czarna, szara, pomaranczoowa, zielona, fioletowa, brazowata\"}",
+            "score": 0.4852941176470589,
+            "error": false,
+            "elapsed": 4.045
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-006",
+            "raw_answer": "{\"odpowiedź\": \"sojka, rudzik, soła, koliber, kardynał, wrona, przepiórka\"}",
+            "score": 0.21794871794871795,
+            "error": false,
+            "elapsed": 3.55
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-007",
+            "raw_answer": "{\"odpowiedź\": \"szara, czerwona, pomaranczoowa, fioletowa, zielona, niebieska, biala\"}",
+            "score": 0.4558823529411765,
+            "error": false,
+            "elapsed": 4.249
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-008",
+            "raw_answer": "{\"odpowiedź\": \"Joe, Rob, Eli, Dan, Mya, Ada, Ana\"}",
+            "score": 0.5151515151515151,
+            "error": false,
+            "elapsed": 3.253
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-009",
+            "raw_answer": "{\"odpowiedź\": \"limuzyna, sedan, minivan, hachtback, ciezarowka, motocykl, ciagnik\"}",
+            "score": 0.5606060606060606,
+            "error": false,
+            "elapsed": 4.239
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-010",
+            "raw_answer": "{\"odpowiedź\": \"Ana, Dan, Mya, Joe, Eli, Amy, Mel\"}",
+            "score": 0.7272727272727273,
+            "error": false,
+            "elapsed": 3.221
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-011",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, wrona, sofa, koliber, przepióra, jastrząb, kardynał\"}",
+            "score": 0.4666666666666667,
+            "error": false,
+            "elapsed": 3.825
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-012",
+            "raw_answer": "{\"odpowiedź\": \"motocykl, hatchback, minivan, sedan, limuzyna, ciągnik, ciężarówka\"}",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 4.028
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-013",
+            "raw_answer": "{\"odpowiedź\": \"Eli, Joe, Mel, Rob, Ana, Mya, Eve\"}",
+            "score": 0.4545454545454546,
+            "error": false,
+            "elapsed": 3.246
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-014",
+            "raw_answer": "{\"odpowiedź\": \"sova, wrona, sokol, kardynal, przepiorka, koliber, jastrzab\"}",
+            "score": 0.288135593220339,
+            "error": false,
+            "elapsed": 3.816
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-015",
+            "raw_answer": "{\"odpowiedź\": \"autobus, ciezarowka, kombi, sedan, minivan, ciagnik, motocykl\"}",
+            "score": 0.7540983606557377,
+            "error": false,
+            "elapsed": 4.002
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-016",
+            "raw_answer": "{\"odpowiedź\": \"Joe, Eli, Ada, Mel, Eve, Rob, Ana\"}",
+            "score": 0.4545454545454546,
+            "error": false,
+            "elapsed": 3.247
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-017",
+            "raw_answer": "{\"odpowiedź\": \"autobus, limuzyna, hachtback, ciezarowka, minivan, ciagnik, kabriolet\"}",
+            "score": 0.46376811594202894,
+            "error": false,
+            "elapsed": 4.417
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-018",
+            "raw_answer": "{\"odpowiedź\": \"brzoskwinie, kiwi, mango, śliwki, pomarańcze, jabłka, śliwki\"}",
+            "score": 0.6557377049180328,
+            "error": false,
+            "elapsed": 4.135
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-019",
+            "raw_answer": "{\"odpowiedź\": \"mango, kiwi, gruszki, brzoskwinie, kantalupy, arbuzy, pomarańcze\"}",
+            "score": 0.578125,
+            "error": false,
+            "elapsed": 4.162
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-020",
+            "raw_answer": "{\"odpowiedź\": \"kruk, rudzik, wrona, koliber, przepiorka, sojka, kardynal\"}",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 3.754
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-021",
+            "raw_answer": "{\"odpowiedź\": \"szara, niebieska, czarna, czerwona, biała, pomarańczowa, fioletowa\"}",
+            "score": 0.5151515151515151,
+            "error": false,
+            "elapsed": 3.796
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-022",
+            "raw_answer": "{\"odpowiedź\": \"brzoskwinie, kiwi, gruszki, pomarańcze, kantalupy, lokwaty, arbuzy\"}",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 4.456
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-023",
+            "raw_answer": "{\"odpowiedź\": \"pomarańczy, czarnej, zielonej, niebieskiej, czerwonej, żółtej, białej\"}",
+            "score": 0.37681159420289856,
+            "error": false,
+            "elapsed": 3.743
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-024",
+            "raw_answer": "{\"odpowiedź\": \"czerwona, zielona, fioletowa, czarna, biała, szara, żółta\"}",
+            "score": 0.42105263157894735,
+            "error": false,
+            "elapsed": 3.389
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-025",
+            "raw_answer": "{\"odpowiedź\": \"sojka, sosawa, kruk, sokol, jastrzab, koliber, wrona\"}",
+            "score": 0.42307692307692313,
+            "error": false,
+            "elapsed": 3.779
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-026",
+            "raw_answer": "{\"odpowiedź\": \"mango, brzoskwinie, sliwki, kantalupy, lokwaty, jabłka, arbuzy\"}",
+            "score": 0.25806451612903225,
+            "error": false,
+            "elapsed": 4.547
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-027",
+            "raw_answer": "{\"odpowiedź\": \"Rob,Ada,Eli,Dan,Joe,Ana,Amy\"}",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 3.599
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-028",
+            "raw_answer": "{\"odpowiedź\": \"jabłka, kiwi, gruszki, arbuzy, mango, pomarańcze, lokwaty\"}",
+            "score": 0.45614035087719296,
+            "error": false,
+            "elapsed": 4.203
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-029",
+            "raw_answer": "{\"odpowiedź\": \"kiwi, sliwki, gruszki, arbuzy, pomarancze, brzoskwinie, kantalupy\"}",
+            "score": 0.3846153846153846,
+            "error": false,
+            "elapsed": 4.331
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-030",
+            "raw_answer": "{\"odpowiedź\": \"autobus, ciezarowka, motocykl, kabriolet, limuzyna, minivan, ciagnik\"}",
+            "score": 0.4558823529411765,
+            "error": false,
+            "elapsed": 4.284
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-031",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, sokol, wrona, sojka, kruk, kardynal, jastrzab\"}",
+            "score": 0.31081081081081086,
+            "error": false,
+            "elapsed": 3.667
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-032",
+            "raw_answer": "{\"odpowiedź\": \"minivan, sedan, kabriolet, autobus, kombi, ciezarowka, motocykl\"}",
+            "score": 0.2142857142857143,
+            "error": false,
+            "elapsed": 4.05
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-033",
+            "raw_answer": "{\"odpowiedź\": \"fioletowa, zolta, czerwona, niebieska, biala, pomaranczova, szara\"}",
+            "score": 0.32307692307692304,
+            "error": false,
+            "elapsed": 4.315
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-034",
+            "raw_answer": "{\"odpowiedź\": \"autobus, ciezarowka, motocykl, kabriolet, limuzyna, minivan, ciagnik\"}",
+            "score": 0.4558823529411765,
+            "error": false,
+            "elapsed": 4.216
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-035",
+            "raw_answer": "{\"odpowiedź\": \"szara, czerwona, niebieska, czarna, pomaranczoowa, brazowata, biala\"}",
+            "score": 0.4477611940298507,
+            "error": false,
+            "elapsed": 4.082
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-036",
+            "raw_answer": "{\"odpowiedź\": \"sliwki, lokwaty, jabłka, gruszki, kichi, kantalupy, arbuzy\"}",
+            "score": 0.4482758620689655,
+            "error": false,
+            "elapsed": 4.402
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-037",
+            "raw_answer": "{\"odpowiedź\": \"autobus, minivan, hatchback, kombi, ciezarowka, limuzyna, motocykl\"}",
+            "score": 0.6515151515151515,
+            "error": false,
+            "elapsed": 4.064
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-038",
+            "raw_answer": "{\"odpowiedź\": \"sojka, kruk, rudzik, sokol, koliber, przepiorka, sowa\"}",
+            "score": 0.2702702702702703,
+            "error": false,
+            "elapsed": 3.696
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-039",
+            "raw_answer": "{\"odpowiedź\": \"jabłka, brzoskwinie, śliwki, kantalupy, gruszki, lokwaty, mango\"}",
+            "score": 0.4920634920634921,
+            "error": false,
+            "elapsed": 4.254
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-040",
+            "raw_answer": "{\"odpowiedź\": \"pomarancze, kiwi, sliwki, jablka, lokwaty, mango, arbuzy\"}",
+            "score": 0.4642857142857143,
+            "error": false,
+            "elapsed": 4.232
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-041",
+            "raw_answer": "{\"odpowiedź\": \"Dan, Ana, Joe, Ada, Eve, Amy, Mel\"}",
+            "score": 0.5454545454545454,
+            "error": false,
+            "elapsed": 3.17
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-042",
+            "raw_answer": "{\"odpowiedź\": \"minivan, kombi, hachtback, autobus, sedan, motocykl, ciagnik\"}",
+            "score": 0.5333333333333333,
+            "error": false,
+            "elapsed": 3.656
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-043",
+            "raw_answer": "{\"odpowiedź\": \"autobus, motocykl, limuzyna, kombi, minivan, hachtback, ciezarowka\"}",
+            "score": 0.31818181818181823,
+            "error": false,
+            "elapsed": 3.851
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-044",
+            "raw_answer": "{\"odpowiedź\": \"Mel, Eli, Rob, Dan, Mya, Ada, Ana\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 3.31
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-045",
+            "raw_answer": "{\"odpowiedź\": \"Eli, Ana, Amy, Joe, Mya, Mel, Ada\"}",
+            "score": 0.48484848484848486,
+            "error": false,
+            "elapsed": 3.236
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-046",
+            "raw_answer": "{\"odpowiedź\": \"zielona, czarna, szara, pomaranczoowa, zielona, fioletowa, brazowata\"}",
+            "score": 0.4852941176470589,
+            "error": false,
+            "elapsed": 4.029
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-047",
+            "raw_answer": "{\"odpowiedź\": \"śliwki, lokwaty, jabłka, pomarańcze, kiwi, brzoskwinie, arbuzy\"}",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 4.191
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-048",
+            "raw_answer": "{\"odpowiedź\": \"autobus, minivan, hatchback, kombi, ciezarowka, limuzyna, motocykl\"}",
+            "score": 0.6515151515151515,
+            "error": false,
+            "elapsed": 4.104
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-049",
+            "raw_answer": "{\"odpowiedź\": \"autobus, limuzyna, kombi, ciezarowka, minivan, ciagnik, kabriolet\"}",
+            "score": 0.2790697674418605,
+            "error": false,
+            "elapsed": 4.135
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-050",
+            "raw_answer": "{\"odpowiedź\": \"brzoskwinie, kiwi, mango, śliwki, pomarańcze, jabłka, śliwki\"}",
+            "score": 0.6557377049180328,
+            "error": false,
+            "elapsed": 4.112
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-051",
+            "raw_answer": "{\"odpowiedź\": \"Eve, Ada, Ana, Dan, Rob, Joe, Amy\"}",
+            "score": 0.5757575757575757,
+            "error": false,
+            "elapsed": 3.361
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-052",
+            "raw_answer": "{\"odpowiedź\": \"sojka, kruk, przepiorka, koliber, rudzik, kardynał, sokol\"}",
+            "score": 0.28205128205128205,
+            "error": false,
+            "elapsed": 3.612
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-053",
+            "raw_answer": "{\"odpowiedź\": \"sojka, kruk, przepiorka, koliber, rudzik, kardynał, sokol\"}",
+            "score": 0.28205128205128205,
+            "error": false,
+            "elapsed": 2.168
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-054",
+            "raw_answer": "{\"odpowiedź\": \"pomaranczowa, czerwona, zielona, fioletowa, brazow, biala, zolta\"}",
+            "score": 0.5076923076923077,
+            "error": false,
+            "elapsed": 4.553
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-055",
+            "raw_answer": "{\"odpowiedź\": \"Rob, Joe, Mel, Mya, Ada, Dan, Eve\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 3.258
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-056",
+            "raw_answer": "{\"odpowiedź\": \"Ana, Dan, Mya, Joe, Eli, Amy, Mel\"}",
+            "score": 0.7272727272727273,
+            "error": false,
+            "elapsed": 3.105
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-057",
+            "raw_answer": "{\"odpowiedź\": \"biala, zielona, niebieska, czarna, pomaranczoowa, brazowata, zolta\"}",
+            "score": 0.696969696969697,
+            "error": false,
+            "elapsed": 4.241
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-058",
+            "raw_answer": "{\"odpowiedź\": \"Joe, Rob, Eli, Dan, Mya, Ada, Ana\"}",
+            "score": 0.5151515151515151,
+            "error": false,
+            "elapsed": 3.268
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-059",
+            "raw_answer": "{\"odpowiedź\": \"kwii, kantalupy, gruszki, brzoskwinie, arbuzy, pomarańcze, mango\"}",
+            "score": 0.53125,
+            "error": false,
+            "elapsed": 4.329
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-060",
+            "raw_answer": "{\"odpowiedź\": \"czarna, brazzowa, biala, pomaranczova, niebieska, fioletowa, zolta\"}",
+            "score": 0.3484848484848485,
+            "error": false,
+            "elapsed": 4.366
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-061",
+            "raw_answer": "{\"odpowiedź\": \"Melanie, Dan, Ada, Joe, Amy, Rob, Mya\"}",
+            "score": 0.4054054054054054,
+            "error": false,
+            "elapsed": 3.282
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-062",
+            "raw_answer": "{\"odpowiedź\": \"sliwki, lokwaty, jabłka, gruszki, kichi, kantalupy, arbuzy\"}",
+            "score": 0.4482758620689655,
+            "error": false,
+            "elapsed": 4.353
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-063",
+            "raw_answer": "{\"odpowiedź\": \"kruk, kardynał, sojka, sokol, przepiorka, rudzik, sofa\"}",
+            "score": 0.2533333333333333,
+            "error": false,
+            "elapsed": 3.611
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-064",
+            "raw_answer": "{\"odpowiedź\": \"fioletowa, zolta, czerwona, niebieska, biala, pomaranczova, szara\"}",
+            "score": 0.32307692307692304,
+            "error": false,
+            "elapsed": 4.269
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-065",
+            "raw_answer": "{\"odpowiedź\": \"jastrząb, kruk, wrona, sokół, sokół, sokół, przepiórka, koliber\"}",
+            "score": 0.4126984126984127,
+            "error": false,
+            "elapsed": 4.094
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-066",
+            "raw_answer": "{\"odpowiedź\": \"czarna, fioletowa, zielona, pomaranczova, zolta, szara, biala\"}",
+            "score": 0.7049180327868853,
+            "error": false,
+            "elapsed": 4.01
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-067",
+            "raw_answer": "{\"odpowiedź\": \"sojka, kruk, sojka, rudzik, sojka, soła, koliber\"}",
+            "score": 0.47916666666666663,
+            "error": false,
+            "elapsed": 3.641
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-068",
+            "raw_answer": "{\"odpowiedź\": \"biala, zielona, niebieska, czarna, pomaranczoowa, brazowata, zolta\"}",
+            "score": 0.696969696969697,
+            "error": false,
+            "elapsed": 4.133
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-069",
+            "raw_answer": "{\"odpowiedź\": \"minivan, kombi, hachtback, autobus, sedan, motocykl, ciagnik\"}",
+            "score": 0.5333333333333333,
+            "error": false,
+            "elapsed": 3.706
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-070",
+            "raw_answer": "{\"odpowiedź\": \"pomarancze, kiwi, sliwki, jablka, lokwaty, mango, arbuzy\"}",
+            "score": 0.4642857142857143,
+            "error": false,
+            "elapsed": 4.257
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-071",
+            "raw_answer": "{\"odpowiedź\": \"czarna, zielona, pomaranczoowa, fioletowa, brazowata, biala, zolta\"}",
+            "score": 0.3939393939393939,
+            "error": false,
+            "elapsed": 4.426
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-072",
+            "raw_answer": "{\"odpowiedź\": \"Joe, Rob, Eli, Dan, Mya, Ada, Ana\"}",
+            "score": 0.5151515151515151,
+            "error": false,
+            "elapsed": 3.305
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-073",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, kruk, sojka, koliber, wrona, przepiorka, kardynal\"}",
+            "score": 0.631578947368421,
+            "error": false,
+            "elapsed": 3.871
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-074",
+            "raw_answer": "{\"odpowiedź\": \"pomarańcze, jabłka, gruszki, kantalupy, mango, arbuzy, lokwaty\"}",
+            "score": 0.30645161290322576,
+            "error": false,
+            "elapsed": 4.194
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-075",
+            "raw_answer": "{\"odpowiedź\": \"autobus, minivan, hatchback, kombi, ciezarowka, limuzyna, motocykl\"}",
+            "score": 0.6515151515151515,
+            "error": false,
+            "elapsed": 4.218
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-076",
+            "raw_answer": "{\"odpowiedź\": \"śliwki, lokwaty, jabłka, pomarańcze, kiwi, brzoskwinie, arbuzy\"}",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 4.251
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-077",
+            "raw_answer": "{\"odpowiedź\": \"limuzyna, motocykl, minivan, sedan, hatchback, ciezarowka, ciagnik\"}",
+            "score": 0.22988505747126442,
+            "error": false,
+            "elapsed": 4.229
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-078",
+            "raw_answer": "{\"odpowiedź\": \"sojka, sosawa, kruk, sokol, jastrzab, koliber, wrona\"}",
+            "score": 0.42307692307692313,
+            "error": false,
+            "elapsed": 3.798
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-079",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, kruk, wrona, jastrzab, sokol, kardynal, koliber\"}",
+            "score": 0.4,
+            "error": false,
+            "elapsed": 3.592
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-080",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, sokol, koliber, wrona, kardynal, przepiorka, sofa\"}",
+            "score": 0.2692307692307693,
+            "error": false,
+            "elapsed": 3.626
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-081",
+            "raw_answer": "{\"odpowiedź\": \"motocykl, hatchback, minivan, sedan, limuzyna, ciągnik, ciężarówka\"}",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 4.087
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-082",
+            "raw_answer": "{\"odpowiedź\": \"limuzyna, minivan, autobus, hachtback, kombi, kabriolet, ciagnik\"}",
+            "score": 0.28125,
+            "error": false,
+            "elapsed": 3.84
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-083",
+            "raw_answer": "{\"odpowiedź\": \"czarna, zielona, pomaranczoowa, fioletowa, brazowata, biala, zolta\"}",
+            "score": 0.3939393939393939,
+            "error": false,
+            "elapsed": 4.393
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-084",
+            "raw_answer": "{\"odpowiedź\": \"czerwona, zielona, fioletowa, czarna, biała, szara, żółta\"}",
+            "score": 0.42105263157894735,
+            "error": false,
+            "elapsed": 3.483
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-085",
+            "raw_answer": "{\"odpowiedź\": \"Eli, Joe, Eve, Rob, Ada, Ana, Amy\"}",
+            "score": 0.6060606060606061,
+            "error": false,
+            "elapsed": 3.335
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-086",
+            "raw_answer": "{\"odpowiedź\": \"Joe, Eli, Ada, Mel, Eve, Rob, Ana\"}",
+            "score": 0.4545454545454546,
+            "error": false,
+            "elapsed": 3.058
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-087",
+            "raw_answer": "{\"odpowiedź\": \"kombi, minivan, sedan, motocykl, ciezarowka, hachtback, ciagnik\"}",
+            "score": 0.5079365079365079,
+            "error": false,
+            "elapsed": 4.063
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-088",
+            "raw_answer": "{\"odpowiedź\": \"pomarańcze, kantalupy, brzoskwinie, jabłka, gruszki, arbuzy, mango\"}",
+            "score": 0.3787878787878788,
+            "error": false,
+            "elapsed": 4.275
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-089",
+            "raw_answer": "{\"odpowiedź\": \"autobus, ciezarowka, hatchback, kombi, minivan, ciagnik, kabriolet\"}",
+            "score": 0.3484848484848485,
+            "error": false,
+            "elapsed": 4.169
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-090",
+            "raw_answer": "{\"odpowiedź\": \"limuzyna, minivan, kombi, hachtback, autobus, ciagnik, ciezarowka\"}",
+            "score": 0.3846153846153846,
+            "error": false,
+            "elapsed": 3.786
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-091",
+            "raw_answer": "{\"odpowiedź\": \"sojka, kruk, sojka, rudzik, sojka, soła, koliber\"}",
+            "score": 0.47916666666666663,
+            "error": false,
+            "elapsed": 3.565
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-092",
+            "raw_answer": "{\"odpowiedź\": \"Eli, Joe, Eve, Rob, Ada, Ana, Amy\"}",
+            "score": 0.6060606060606061,
+            "error": false,
+            "elapsed": 3.241
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-093",
+            "raw_answer": "{\"odpowiedź\": \"mango, kiwi, gruszki, brzoskwinie, kantalupy, arbuzy, pomarańcze\"}",
+            "score": 0.578125,
+            "error": false,
+            "elapsed": 4.362
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-094",
+            "raw_answer": "{\"odpowiedź\": \"Eve, Dan, Rob, Joe, Ada, Mel, Amy\"}",
+            "score": 0.6060606060606061,
+            "error": false,
+            "elapsed": 3.143
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-095",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, sokol, wrona, sojka, kruk, kardynal, jastrzab\"}",
+            "score": 0.31081081081081086,
+            "error": false,
+            "elapsed": 3.785
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-096",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, sokol, wrona, sojka, kruk, kardynal, jastrzab\"}",
+            "score": 0.31081081081081086,
+            "error": false,
+            "elapsed": 2.245
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-097",
+            "raw_answer": "{\"odpowiedź\": \"zielona, czarna, szara, pomaranczoowa, zielona, fioletowa, brazowata\"}",
+            "score": 0.4852941176470589,
+            "error": false,
+            "elapsed": 4.043
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-098",
+            "raw_answer": "{\"odpowiedź\": \"sokół, wrona, kruk, rudzik, sojka, jastrzab, koliber\"}",
+            "score": 0.26027397260273977,
+            "error": false,
+            "elapsed": 3.706
+          },
+          {
+            "prompt_id": "bbh_open-diacritic-099",
+            "raw_answer": "{\"odpowiedź\": \"autobus, kombi, sedan, limuzyna, ciezarowka, kabriolet, ciagnik\"}",
+            "score": 0.29761904761904767,
+            "error": false,
+            "elapsed": 4.107
+          }
+        ]
+      }
+    },
+    "identity": {
+      "bbh_open": {
+        "num_sampled": 100,
+        "score_sum": 51.100409,
+        "score_avg": 0.511004,
+        "error_count": 0,
+        "elapsed_sec": 369.48,
+        "questions": [
+          {
+            "prompt_id": "bbh_open-identity-000",
+            "raw_answer": "{\"odpowiedź\": \"jastrząb, koliber, kruk, sokół, sopa, kardynał, przepiórka\"}",
+            "score": 0.2068965517241379,
+            "error": false,
+            "elapsed": 3.914
+          },
+          {
+            "prompt_id": "bbh_open-identity-001",
+            "raw_answer": "{\"odpowiedź\": \"autobus, limuzyna, ciągnik, ciężarówka, kombi, minivan, kabriolet\"}",
+            "score": 0.3384615384615385,
+            "error": false,
+            "elapsed": 3.923
+          },
+          {
+            "prompt_id": "bbh_open-identity-002",
+            "raw_answer": "{\"odpowiedź\": \"Eve, Rob, Joe, Ada, Dan, Mel, Amy\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 3.008
+          },
+          {
+            "prompt_id": "bbh_open-identity-003",
+            "raw_answer": "{\"odpowiedź\": \"pomaranczowa,biala,zielona,fioletowa,brązowa,czerwona,żółta\"}",
+            "score": 0.5538461538461539,
+            "error": false,
+            "elapsed": 4.224
+          },
+          {
+            "prompt_id": "bbh_open-identity-004",
+            "raw_answer": "{\"odpowiedź\": \"sojka, sokol, jastrzyb, koliber, rudzik, sofa, sójka\"}",
+            "score": 0.42105263157894735,
+            "error": false,
+            "elapsed": 3.73
+          },
+          {
+            "prompt_id": "bbh_open-identity-005",
+            "raw_answer": "{\"odpowiedź\": \"brązowa, żółta, zielona, pomaranczowa, szara, czarna, fioletowa\"}",
+            "score": 0.38095238095238093,
+            "error": false,
+            "elapsed": 3.603
+          },
+          {
+            "prompt_id": "bbh_open-identity-006",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, sojka, koliber, sójka, kardynał, wrona, przepiórka\"}",
+            "score": 0.23076923076923073,
+            "error": false,
+            "elapsed": 3.602
+          },
+          {
+            "prompt_id": "bbh_open-identity-007",
+            "raw_answer": "{\"odpowiedź\": \"szara, niebieska, czerwona, fioletowa, zielona, pomaranczowa, biała\"}",
+            "score": 0.4626865671641791,
+            "error": false,
+            "elapsed": 3.715
+          },
+          {
+            "prompt_id": "bbh_open-identity-008",
+            "raw_answer": "{\"odpowiedź\": \"Joe, Rob, Eli, Dan, Mya, Ada, Ana\"}",
+            "score": 0.5151515151515151,
+            "error": false,
+            "elapsed": 3.118
+          },
+          {
+            "prompt_id": "bbh_open-identity-009",
+            "raw_answer": "{\"odpowiedź\": \"sedan, minivan, limuzyna, hachtback, ciężarówka, ciągnik, motocykl\"}",
+            "score": 0.7575757575757576,
+            "error": false,
+            "elapsed": 3.757
+          },
+          {
+            "prompt_id": "bbh_open-identity-010",
+            "raw_answer": "{\"odpowiedź\": \"Ana, Dan, Mya, Joe, Eli, Amy, Mel\"}",
+            "score": 0.7272727272727273,
+            "error": false,
+            "elapsed": 3.189
+          },
+          {
+            "prompt_id": "bbh_open-identity-011",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, kardynał, jastrząb, sofa, wrona, przepiórka, koliber\"}",
+            "score": 0.2716049382716049,
+            "error": false,
+            "elapsed": 3.517
+          },
+          {
+            "prompt_id": "bbh_open-identity-012",
+            "raw_answer": "{\"odpowiedź\": \"motocykl, hatchback, ciągnik, sedan, ciężarówka, minivan, limuzyna\"}",
+            "score": 0.696969696969697,
+            "error": false,
+            "elapsed": 4.108
+          },
+          {
+            "prompt_id": "bbh_open-identity-013",
+            "raw_answer": "{\"odpowiedź\": \"Eli, Joe, Mel, Rob, Ana, Mya, Eve\"}",
+            "score": 0.4545454545454546,
+            "error": false,
+            "elapsed": 3.183
+          },
+          {
+            "prompt_id": "bbh_open-identity-014",
+            "raw_answer": "{\"odpowiedź\": \"soła, kardynał, przepiórka, koliber, jastrząb, sokół, wrona\"}",
+            "score": 0.7966101694915254,
+            "error": false,
+            "elapsed": 3.62
+          },
+          {
+            "prompt_id": "bbh_open-identity-015",
+            "raw_answer": "{\"odpowiedź\": \"autobus, ciężarówka, kombi, sedan, ciągnik, minivan, motocykl\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.653
+          },
+          {
+            "prompt_id": "bbh_open-identity-016",
+            "raw_answer": "{\"odpowiedź\": \"Joe, Ada, Rob, Eve, Eli, Mel, Ana\"}",
+            "score": 0.8181818181818181,
+            "error": false,
+            "elapsed": 3.074
+          },
+          {
+            "prompt_id": "bbh_open-identity-017",
+            "raw_answer": "{\"odpowiedź\": \"autobus, limuzyna, hachtback, ciężarówka, minivan, ciągnik, kabriolet\"}",
+            "score": 0.5072463768115942,
+            "error": false,
+            "elapsed": 3.989
+          },
+          {
+            "prompt_id": "bbh_open-identity-018",
+            "raw_answer": "{\"odpowiedź\": \"brzoskwinie, kiwi, mango, śliwki, jabłka, lokwaty, pomarancze\"}",
+            "score": 0.3770491803278688,
+            "error": false,
+            "elapsed": 4.159
+          },
+          {
+            "prompt_id": "bbh_open-identity-019",
+            "raw_answer": "{\"odpowiedź\": \"mango, kiwi, gruszki, kantalupy, brzoskwinie, pomrańcze\"}",
+            "score": 0.671875,
+            "error": false,
+            "elapsed": 3.947
+          },
+          {
+            "prompt_id": "bbh_open-identity-020",
+            "raw_answer": "{\"odpowiedź\": \"kruk, koliber, rudzik, sójka, kardynał, wrona, przepiórka\"}",
+            "score": 0.543859649122807,
+            "error": false,
+            "elapsed": 3.675
+          },
+          {
+            "prompt_id": "bbh_open-identity-021",
+            "raw_answer": "{\"odpowiedź\": \"szara, czarna, niebieska, czerwona, biała, pomaranczowa, fioletowa\"}",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 3.759
+          },
+          {
+            "prompt_id": "bbh_open-identity-022",
+            "raw_answer": "{\"odpowiedź\": \"pomarkańcze, gruszki, kantalupy, brzoskwinie, arbuzy, lokwaty, kiwi\"}",
+            "score": 0.3448275862068966,
+            "error": false,
+            "elapsed": 4.5
+          },
+          {
+            "prompt_id": "bbh_open-identity-023",
+            "raw_answer": "{\"odpowiedź\": \"pomaranczowa,czarna,czerwona,żółta,niebieska,biała,zielona\"}",
+            "score": 0.546875,
+            "error": false,
+            "elapsed": 3.88
+          },
+          {
+            "prompt_id": "bbh_open-identity-024",
+            "raw_answer": "{\"odpowiedź\": \"czerwona, biała, żółta, zielona, szara, fioletowa, czarna\"}",
+            "score": 0.4385964912280702,
+            "error": false,
+            "elapsed": 3.193
+          },
+          {
+            "prompt_id": "bbh_open-identity-025",
+            "raw_answer": "{\"odpowiedź\": \"sojka, sosa, kruk, sokół, koliber, jastrząb, wrona\"}",
+            "score": 0.7,
+            "error": false,
+            "elapsed": 3.851
+          },
+          {
+            "prompt_id": "bbh_open-identity-026",
+            "raw_answer": "{\"odpowiedź\": \"lokwaty, kantalupy, śliwki, jabłka, brzoskwinie, mango, arbuzy\"}",
+            "score": 0.467741935483871,
+            "error": false,
+            "elapsed": 4.19
+          },
+          {
+            "prompt_id": "bbh_open-identity-027",
+            "raw_answer": "{\"odpowiedź\": \"Rob,Ada,Eli,Dan,Ana,Joe,Amy\"}",
+            "score": 0.303030303030303,
+            "error": false,
+            "elapsed": 3.535
+          },
+          {
+            "prompt_id": "bbh_open-identity-028",
+            "raw_answer": "{\"odpowiedź\": \"jabłka, kiwi, gruszki, arbuzy, mango, pomarancze, lokwaty\"}",
+            "score": 0.4385964912280702,
+            "error": false,
+            "elapsed": 4.049
+          },
+          {
+            "prompt_id": "bbh_open-identity-029",
+            "raw_answer": "{\"odpowiedź\": \"śliwki, kiwi, gruszki, brzoskwinie, arbuzy, pomarancze, kantalupy\"}",
+            "score": 0.6461538461538461,
+            "error": false,
+            "elapsed": 4.08
+          },
+          {
+            "prompt_id": "bbh_open-identity-030",
+            "raw_answer": "{\"odpowiedź\": \"autobus, ciężarówka, motocykl, kabriolet, ciągnik, limuzyna, minivan\"}",
+            "score": 0.5147058823529411,
+            "error": false,
+            "elapsed": 4.041
+          },
+          {
+            "prompt_id": "bbh_open-identity-031",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, kardynał, sokół, wrona, sójka, jastrząb, kruk\"}",
+            "score": 0.6037735849056604,
+            "error": false,
+            "elapsed": 3.797
+          },
+          {
+            "prompt_id": "bbh_open-identity-032",
+            "raw_answer": "{\"odpowiedź\": \"minivan, sedan, kabriolet, autobus, kombi, ciężarówka, motocykl\"}",
+            "score": 0.2142857142857143,
+            "error": false,
+            "elapsed": 3.769
+          },
+          {
+            "prompt_id": "bbh_open-identity-033",
+            "raw_answer": "{\"odpowiedź\": \"szara, fioletowa, żółta, niebieska, czerwona, biała, pomaranczowa\"}",
+            "score": 0.3553719008264463,
+            "error": false,
+            "elapsed": 3.988
+          },
+          {
+            "prompt_id": "bbh_open-identity-034",
+            "raw_answer": "{\"odpowiedź\": \"autobus, ciężarówka, motocykl, kabriolet, ciągnik, limuzyna, minivan\"}",
+            "score": 0.5147058823529411,
+            "error": false,
+            "elapsed": 4.061
+          },
+          {
+            "prompt_id": "bbh_open-identity-035",
+            "raw_answer": "{\"odpowiedź\": \"szara, czerwona, biała, niebieska, pomaranczowa, czarna, brązowa\"}",
+            "score": 0.453125,
+            "error": false,
+            "elapsed": 3.815
+          },
+          {
+            "prompt_id": "bbh_open-identity-036",
+            "raw_answer": "{\"odpowiedź\": \"śliwki, lokwaty, jabłka, gruszki, kantalupy, śliwki, arbuzy\"}",
+            "score": 0.4915254237288136,
+            "error": false,
+            "elapsed": 4.174
+          },
+          {
+            "prompt_id": "bbh_open-identity-037",
+            "raw_answer": "{\"odpowiedź\": \"limuzyna, autobus, minivan, motocykl, ciężarówka, kombi, hatchback\"}",
+            "score": 0.3787878787878788,
+            "error": false,
+            "elapsed": 4.064
+          },
+          {
+            "prompt_id": "bbh_open-identity-038",
+            "raw_answer": "{\"odpowiedź\": \"sokół, sójka, kruk, rudzik, koliber, przepiórka, sowa\"}",
+            "score": 0.4528301886792453,
+            "error": false,
+            "elapsed": 3.797
+          },
+          {
+            "prompt_id": "bbh_open-identity-039",
+            "raw_answer": "{\"odpowiedź\": \"lokwaty, śliwki, brzoskwinie, jabłka, kantalupy, gruszki, mango\"}",
+            "score": 0.39682539682539686,
+            "error": false,
+            "elapsed": 4.249
+          },
+          {
+            "prompt_id": "bbh_open-identity-040",
+            "raw_answer": "{\"odpowiedź\": \"pomarańczy, kiwi, jabłka, śliwki, arbuzy, lokwaty, mango\"}",
+            "score": 0.4821428571428571,
+            "error": false,
+            "elapsed": 4.103
+          },
+          {
+            "prompt_id": "bbh_open-identity-041",
+            "raw_answer": "{\"odpowiedź\": \"Dan, Ana, Joe, Ada, Eve, Amy, Mel\"}",
+            "score": 0.5454545454545454,
+            "error": false,
+            "elapsed": 3.19
+          },
+          {
+            "prompt_id": "bbh_open-identity-042",
+            "raw_answer": "{\"odpowiedź\": \"minivan, kombi, ciągnik, sedan, autobus, hachtback, motocykl\"}",
+            "score": 0.4833333333333333,
+            "error": false,
+            "elapsed": 3.602
+          },
+          {
+            "prompt_id": "bbh_open-identity-043",
+            "raw_answer": "{\"odpowiedź\": \"autobus, limuzyna, kombi, minivan, hachtback, motocykl, ciężarówka\"}",
+            "score": 0.22988505747126442,
+            "error": false,
+            "elapsed": 3.82
+          },
+          {
+            "prompt_id": "bbh_open-identity-044",
+            "raw_answer": "{\"odpowiedź\": \"Dan, Mya, Rob, Eli, Mel, Ada, Ana\"}",
+            "score": 0.7272727272727273,
+            "error": false,
+            "elapsed": 3.432
+          },
+          {
+            "prompt_id": "bbh_open-identity-045",
+            "raw_answer": "{\"odpowiedź\": \"Mya, Joe, Amy, Ana, Ada, Mel, Eli\"}",
+            "score": 0.5757575757575757,
+            "error": false,
+            "elapsed": 3.208
+          },
+          {
+            "prompt_id": "bbh_open-identity-046",
+            "raw_answer": "{\"odpowiedź\": \"brązowa, żółta, zielona, pomaranczowa, szara, czarna, fioletowa\"}",
+            "score": 0.38095238095238093,
+            "error": false,
+            "elapsed": 3.791
+          },
+          {
+            "prompt_id": "bbh_open-identity-047",
+            "raw_answer": "{\"odpowiedź\": \"śliwki, lokwaty, jabłka, pomarancze, brzoskwinie, kiwi, arbuzy\"}",
+            "score": 0.564516129032258,
+            "error": false,
+            "elapsed": 4.317
+          },
+          {
+            "prompt_id": "bbh_open-identity-048",
+            "raw_answer": "{\"odpowiedź\": \"limuzyna, autobus, minivan, motocykl, ciężarówka, kombi, hatchback\"}",
+            "score": 0.3787878787878788,
+            "error": false,
+            "elapsed": 3.784
+          },
+          {
+            "prompt_id": "bbh_open-identity-049",
+            "raw_answer": "{\"odpowiedź\": \"autobus, limuzyna, ciągnik, ciężarówka, kombi, minivan, kabriolet\"}",
+            "score": 0.3384615384615385,
+            "error": false,
+            "elapsed": 3.985
+          },
+          {
+            "prompt_id": "bbh_open-identity-050",
+            "raw_answer": "{\"odpowiedź\": \"brzoskwinie, kiwi, mango, śliwki, jabłka, lokwaty, pomarancze\"}",
+            "score": 0.3770491803278688,
+            "error": false,
+            "elapsed": 4.169
+          },
+          {
+            "prompt_id": "bbh_open-identity-051",
+            "raw_answer": "{\"odpowiedź\": \"Joe, Rob, Dan, Ana, Ada, Eve, Amy\"}",
+            "score": 1.0,
+            "error": false,
+            "elapsed": 3.134
+          },
+          {
+            "prompt_id": "bbh_open-identity-052",
+            "raw_answer": "{\"odpowiedź\": \"kruk, sokół, kardynał, sójka, rudzik, koliber, przepiórka\"}",
+            "score": 0.3508771929824561,
+            "error": false,
+            "elapsed": 3.685
+          },
+          {
+            "prompt_id": "bbh_open-identity-053",
+            "raw_answer": "{\"odpowiedź\": \"kruk, sokół, kardynał, sójka, rudzik, koliber, przepiórka\"}",
+            "score": 0.3508771929824561,
+            "error": false,
+            "elapsed": 2.169
+          },
+          {
+            "prompt_id": "bbh_open-identity-054",
+            "raw_answer": "{\"odpowiedź\": \"pomaranczowa,biala,zielona,fioletowa,brązowa,czerwona,żółta\"}",
+            "score": 0.5538461538461539,
+            "error": false,
+            "elapsed": 4.344
+          },
+          {
+            "prompt_id": "bbh_open-identity-055",
+            "raw_answer": "{\"odpowiedź\": \"Rob, Joe, Mel, Mya, Ada, Dan, Eve\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 3.278
+          },
+          {
+            "prompt_id": "bbh_open-identity-056",
+            "raw_answer": "{\"odpowiedź\": \"Ana, Dan, Mya, Joe, Eli, Amy, Mel\"}",
+            "score": 0.7272727272727273,
+            "error": false,
+            "elapsed": 3.072
+          },
+          {
+            "prompt_id": "bbh_open-identity-057",
+            "raw_answer": "{\"odpowiedź\": \"biała, zielona, niebieska, czarna, pomaranczowa, brązowa, czerwona\"}",
+            "score": 0.6818181818181819,
+            "error": false,
+            "elapsed": 3.765
+          },
+          {
+            "prompt_id": "bbh_open-identity-058",
+            "raw_answer": "{\"odpowiedź\": \"Joe, Rob, Eli, Dan, Mya, Ada, Ana\"}",
+            "score": 0.5151515151515151,
+            "error": false,
+            "elapsed": 3.258
+          },
+          {
+            "prompt_id": "bbh_open-identity-059",
+            "raw_answer": "{\"odpowiedź\": \"kwi, kantalupa, gruszka, kiwi, mango, brzoskwinia, pomarańcza\"}",
+            "score": 0.3529411764705882,
+            "error": false,
+            "elapsed": 4.108
+          },
+          {
+            "prompt_id": "bbh_open-identity-060",
+            "raw_answer": "{\"odpowiedź\": \"brązowa, biała, pomarańczowa, czarna, fioletowa, żółta, niebieska\"}",
+            "score": 0.3384615384615385,
+            "error": false,
+            "elapsed": 3.801
+          },
+          {
+            "prompt_id": "bbh_open-identity-061",
+            "raw_answer": "{\"odpowiedź\": \"Dan, Ada, Amy, Joe, Mya, Rob, Mel\"}",
+            "score": 0.48484848484848486,
+            "error": false,
+            "elapsed": 3.255
+          },
+          {
+            "prompt_id": "bbh_open-identity-062",
+            "raw_answer": "{\"odpowiedź\": \"śliwki, lokwaty, jabłka, gruszki, kantalupy, śliwki, arbuzy\"}",
+            "score": 0.4915254237288136,
+            "error": false,
+            "elapsed": 4.191
+          },
+          {
+            "prompt_id": "bbh_open-identity-063",
+            "raw_answer": "{\"odpowiedź\": \"kruk, kardynał, sokół, sójka, przepiórka, rudzik, soła\"}",
+            "score": 0.2666666666666667,
+            "error": false,
+            "elapsed": 3.652
+          },
+          {
+            "prompt_id": "bbh_open-identity-064",
+            "raw_answer": "{\"odpowiedź\": \"szara, fioletowa, żółta, niebieska, czerwona, biała, pomaranczowa\"}",
+            "score": 0.3553719008264463,
+            "error": false,
+            "elapsed": 3.832
+          },
+          {
+            "prompt_id": "bbh_open-identity-065",
+            "raw_answer": "{\"odpowiedź\": \"jastrząb, kruk, wrona, sokół, sopa, koliber, przepiórka\"}",
+            "score": 0.3026315789473685,
+            "error": false,
+            "elapsed": 3.82
+          },
+          {
+            "prompt_id": "bbh_open-identity-066",
+            "raw_answer": "{\"odpowiedź\": \"szara, czarna, fioletowa, biała, żółta, pomaranczowa, zielona\"}",
+            "score": 0.4918032786885246,
+            "error": false,
+            "elapsed": 3.718
+          },
+          {
+            "prompt_id": "bbh_open-identity-067",
+            "raw_answer": "{\"odpowiedź\": \"sójka, kruk, rudzik, sojka, sójka, sokół, soła\"}",
+            "score": 0.75,
+            "error": false,
+            "elapsed": 3.71
+          },
+          {
+            "prompt_id": "bbh_open-identity-068",
+            "raw_answer": "{\"odpowiedź\": \"biała, zielona, niebieska, czarna, pomaranczowa, brązowa, czerwona\"}",
+            "score": 0.6818181818181819,
+            "error": false,
+            "elapsed": 3.731
+          },
+          {
+            "prompt_id": "bbh_open-identity-069",
+            "raw_answer": "{\"odpowiedź\": \"minivan, kombi, ciągnik, sedan, autobus, hachtback, motocykl\"}",
+            "score": 0.4833333333333333,
+            "error": false,
+            "elapsed": 3.54
+          },
+          {
+            "prompt_id": "bbh_open-identity-070",
+            "raw_answer": "{\"odpowiedź\": \"pomarańczy, kiwi, jabłka, śliwki, arbuzy, lokwaty, mango\"}",
+            "score": 0.4821428571428571,
+            "error": false,
+            "elapsed": 4.085
+          },
+          {
+            "prompt_id": "bbh_open-identity-071",
+            "raw_answer": "{\"odpowiedź\": \"czarna, zielona, fioletowa, pomaranczowa, biała, brązowa, żółta\"}",
+            "score": 0.3492063492063492,
+            "error": false,
+            "elapsed": 3.804
+          },
+          {
+            "prompt_id": "bbh_open-identity-072",
+            "raw_answer": "{\"odpowiedź\": \"Joe, Rob, Eli, Dan, Mya, Ada, Ana\"}",
+            "score": 0.5151515151515151,
+            "error": false,
+            "elapsed": 3.228
+          },
+          {
+            "prompt_id": "bbh_open-identity-073",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, kruk, kardynał, sójka, koliber, przepiórka, wrona\"}",
+            "score": 0.5263157894736843,
+            "error": false,
+            "elapsed": 3.716
+          },
+          {
+            "prompt_id": "bbh_open-identity-074",
+            "raw_answer": "{\"odpowiedź\": \"pomarańcze, jabłka, gruszki, kantalupy, mango, arbuzy, lokwaty\"}",
+            "score": 0.30645161290322576,
+            "error": false,
+            "elapsed": 4.245
+          },
+          {
+            "prompt_id": "bbh_open-identity-075",
+            "raw_answer": "{\"odpowiedź\": \"limuzyna, autobus, minivan, motocykl, ciężarówka, kombi, hatchback\"}",
+            "score": 0.3787878787878788,
+            "error": false,
+            "elapsed": 3.691
+          },
+          {
+            "prompt_id": "bbh_open-identity-076",
+            "raw_answer": "{\"odpowiedź\": \"śliwki, lokwaty, jabłka, pomarancze, brzoskwinie, kiwi, arbuzy\"}",
+            "score": 0.564516129032258,
+            "error": false,
+            "elapsed": 4.164
+          },
+          {
+            "prompt_id": "bbh_open-identity-077",
+            "raw_answer": "{\"odpowiedź\": \"motocykl, limuzyna, ciągnik, sedan, hachtback, ciężarówka, minivan\"}",
+            "score": 0.27586206896551724,
+            "error": false,
+            "elapsed": 3.953
+          },
+          {
+            "prompt_id": "bbh_open-identity-078",
+            "raw_answer": "{\"odpowiedź\": \"sojka, sosa, kruk, sokół, koliber, jastrząb, wrona\"}",
+            "score": 0.7,
+            "error": false,
+            "elapsed": 3.713
+          },
+          {
+            "prompt_id": "bbh_open-identity-079",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, kruk, jastrząb, sokół, kardynał, wrona, koliber\"}",
+            "score": 0.34545454545454546,
+            "error": false,
+            "elapsed": 3.475
+          },
+          {
+            "prompt_id": "bbh_open-identity-080",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, sokół, koliber, sofa, kardynał, przepiórka, wrona\"}",
+            "score": 0.3508771929824561,
+            "error": false,
+            "elapsed": 3.418
+          },
+          {
+            "prompt_id": "bbh_open-identity-081",
+            "raw_answer": "{\"odpowiedź\": \"motocykl, hatchback, ciągnik, sedan, ciężarówka, minivan, limuzyna\"}",
+            "score": 0.696969696969697,
+            "error": false,
+            "elapsed": 3.903
+          },
+          {
+            "prompt_id": "bbh_open-identity-082",
+            "raw_answer": "{\"odpowiedź\": \"kabriolet, limuzyna, ciągnik, minivan, autobus, hachtback, kombi\"}",
+            "score": 0.2705882352941177,
+            "error": false,
+            "elapsed": 3.754
+          },
+          {
+            "prompt_id": "bbh_open-identity-083",
+            "raw_answer": "{\"odpowiedź\": \"czarna, zielona, fioletowa, pomaranczowa, biała, brązowa, żółta\"}",
+            "score": 0.3492063492063492,
+            "error": false,
+            "elapsed": 3.657
+          },
+          {
+            "prompt_id": "bbh_open-identity-084",
+            "raw_answer": "{\"odpowiedź\": \"czerwona, biała, żółta, zielona, szara, fioletowa, czarna\"}",
+            "score": 0.4385964912280702,
+            "error": false,
+            "elapsed": 3.121
+          },
+          {
+            "prompt_id": "bbh_open-identity-085",
+            "raw_answer": "{\"odpowiedź\": \"Eli, Joe, Eve, Rob, Ada, Ana, Amy\"}",
+            "score": 0.6060606060606061,
+            "error": false,
+            "elapsed": 3.149
+          },
+          {
+            "prompt_id": "bbh_open-identity-086",
+            "raw_answer": "{\"odpowiedź\": \"Joe, Ada, Rob, Eve, Eli, Mel, Ana\"}",
+            "score": 0.8181818181818181,
+            "error": false,
+            "elapsed": 2.956
+          },
+          {
+            "prompt_id": "bbh_open-identity-087",
+            "raw_answer": "{\"odpowiedź\": \"kombi, minivan, sedan, ciągnik, motocykl, ciężarówka, hachtback\"}",
+            "score": 0.6349206349206349,
+            "error": false,
+            "elapsed": 3.695
+          },
+          {
+            "prompt_id": "bbh_open-identity-088",
+            "raw_answer": "{\"odpowiedź\": \"brzoskwinie, kantalupy, gruszki, jabłka, pomarancze, arbuzy, mango\"}",
+            "score": 0.7121212121212122,
+            "error": false,
+            "elapsed": 4.179
+          },
+          {
+            "prompt_id": "bbh_open-identity-089",
+            "raw_answer": "{\"odpowiedź\": \"ciężarówka, hachtback, minivan, autobus, ciągnik, kombi, kabriolet\"}",
+            "score": 0.4545454545454546,
+            "error": false,
+            "elapsed": 3.894
+          },
+          {
+            "prompt_id": "bbh_open-identity-090",
+            "raw_answer": "{\"odpowiedź\": \"limuzyna, minivan, kombi, hatchback, ciągnik, autobus, ciężarówka\"}",
+            "score": 0.5692307692307692,
+            "error": false,
+            "elapsed": 3.477
+          },
+          {
+            "prompt_id": "bbh_open-identity-091",
+            "raw_answer": "{\"odpowiedź\": \"sójka, kruk, rudzik, sojka, sójka, sokół, soła\"}",
+            "score": 0.75,
+            "error": false,
+            "elapsed": 3.686
+          },
+          {
+            "prompt_id": "bbh_open-identity-092",
+            "raw_answer": "{\"odpowiedź\": \"Eli, Joe, Eve, Rob, Ada, Ana, Amy\"}",
+            "score": 0.6060606060606061,
+            "error": false,
+            "elapsed": 3.133
+          },
+          {
+            "prompt_id": "bbh_open-identity-093",
+            "raw_answer": "{\"odpowiedź\": \"mango, kiwi, gruszki, kantalupy, brzoskwinie, pomrańcze\"}",
+            "score": 0.671875,
+            "error": false,
+            "elapsed": 3.872
+          },
+          {
+            "prompt_id": "bbh_open-identity-094",
+            "raw_answer": "{\"odpowiedź\": \"Eve, Rob, Joe, Ada, Dan, Mel, Amy\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 3.121
+          },
+          {
+            "prompt_id": "bbh_open-identity-095",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, kardynał, sokół, wrona, sójka, jastrząb, kruk\"}",
+            "score": 0.6037735849056604,
+            "error": false,
+            "elapsed": 3.626
+          },
+          {
+            "prompt_id": "bbh_open-identity-096",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, kardynał, sokół, wrona, sójka, jastrząb, kruk\"}",
+            "score": 0.6037735849056604,
+            "error": false,
+            "elapsed": 2.247
+          },
+          {
+            "prompt_id": "bbh_open-identity-097",
+            "raw_answer": "{\"odpowiedź\": \"brązowa, żółta, zielona, pomaranczowa, szara, czarna, fioletowa\"}",
+            "score": 0.38095238095238093,
+            "error": false,
+            "elapsed": 3.607
+          },
+          {
+            "prompt_id": "bbh_open-identity-098",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, kruk, sokół, koliber, wrona, jastrząb, sójka\"}",
+            "score": 0.7307692307692308,
+            "error": false,
+            "elapsed": 3.73
+          },
+          {
+            "prompt_id": "bbh_open-identity-099",
+            "raw_answer": "{\"odpowiedź\": \"ciągnik, sedan, kombi, autobus, kabriolet, limuzyna, ciężarówka\"}",
+            "score": 0.6507936507936508,
+            "error": false,
+            "elapsed": 3.684
+          }
+        ]
+      }
+    },
+    "punctuation_all": {
+      "bbh_open": {
+        "num_sampled": 100,
+        "score_sum": 48.906623,
+        "score_avg": 0.489066,
+        "error_count": 0,
+        "elapsed_sec": 342.39,
+        "questions": [
+          {
+            "prompt_id": "bbh_open-punctuation_all-000",
+            "raw_answer": "{\"odpowiedź\": \"jaźwiec, kruk, koliber, sokół, sopa, przepiórka, kardynał\"}",
+            "score": 0.240506329113924,
+            "error": false,
+            "elapsed": 3.834
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-001",
+            "raw_answer": "{\"odpowiedź\": \"autobus, limuzyna, kabriolet, kombi, ciągnik, ciężarówka, minivan\"}",
+            "score": 0.32558139534883723,
+            "error": false,
+            "elapsed": 3.788
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-002",
+            "raw_answer": "{\"odpowiedź\": \"Amy, Eve, Rob, Dan, Mel, Joe, Ada\"}",
+            "score": 0.4242424242424242,
+            "error": false,
+            "elapsed": 3.009
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-003",
+            "raw_answer": "{\"odpowiedź\": \"pomarańczowa, czerwona, żółta, biała, zielona, brązowa, fioletowa\"}",
+            "score": 0.6307692307692307,
+            "error": false,
+            "elapsed": 3.416
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-004",
+            "raw_answer": "{\"odpowiedź\": \"sojka, soow, jastrząb, koliber, rudzik, sokół, przepiórka\"}",
+            "score": 0.6140350877192983,
+            "error": false,
+            "elapsed": 3.607
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-005",
+            "raw_answer": "{\"odpowiedź\": \"żółta, brązowa, fioletowa, zielona, pomaranczowo-czerwona, szara, czarna\"}",
+            "score": 0.4305555555555556,
+            "error": false,
+            "elapsed": 3.88
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-006",
+            "raw_answer": "{\"odpowiedź\": \"sojka, koliber, sójka, rudzik, wrona, kardynał, przepiórka\"}",
+            "score": 0.3620689655172413,
+            "error": false,
+            "elapsed": 3.426
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-007",
+            "raw_answer": "{\"odpowiedź\": \"biała fioletowa zielona czerwona pomaranczowa szara niebieska niebieska\"}",
+            "score": 0.3380281690140845,
+            "error": false,
+            "elapsed": 3.175
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-008",
+            "raw_answer": "{\"odpowiedź\": \"joe, eli, dan, mya, ada, ana, dan\"}",
+            "score": 0.7272727272727273,
+            "error": false,
+            "elapsed": 3.202
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-009",
+            "raw_answer": "{\"odpowiedź\": \"sedan, minivan, limuzyna, ciężarówka, ciągnik, hachtback, motocykl\"}",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 3.623
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-010",
+            "raw_answer": "{\"odpowiedź\": \"ana, mya, eli, joe, dan, mel, amy\"}",
+            "score": 0.5454545454545454,
+            "error": false,
+            "elapsed": 3.197
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-011",
+            "raw_answer": "{\"odpowiedź\": \"sova, koliber, rudzik, przepiórka, jastrząb, wrona, kardian\"}",
+            "score": 0.55,
+            "error": false,
+            "elapsed": 3.451
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-012",
+            "raw_answer": "{\"odpowiedź\": \"motocykl limuzyna sedan minivan ciągnik hatchback ciężarówka\"}",
+            "score": 0.2727272727272727,
+            "error": false,
+            "elapsed": 3.345
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-013",
+            "raw_answer": "{\"odpowiedź\": \"eli, joe, mya, mel, rob, ana, eve\"}",
+            "score": 0.5757575757575757,
+            "error": false,
+            "elapsed": 3.087
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-014",
+            "raw_answer": "{\"odpowiedź\": \"sosawkardynałkoliberprzepiórkawronasokółjastrząb\"}",
+            "score": 0.339622641509434,
+            "error": false,
+            "elapsed": 3.285
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-015",
+            "raw_answer": "{\"odpowiedź\": \"autobus, minivan, ciągnik, sedan, ciężarówka, kombi, motocykl\"}",
+            "score": 0.5245901639344263,
+            "error": false,
+            "elapsed": 3.379
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-016",
+            "raw_answer": "{\"odpowiedź\": \"joe, ada, eli, rob, mel, ana, eve\"}",
+            "score": 0.5757575757575757,
+            "error": false,
+            "elapsed": 3.107
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-017",
+            "raw_answer": "{\"odpowiedź\": \"autobus, limuzyna, hachtback, ciężarówka, minivan, ciągnik, kabriolet\"}",
+            "score": 0.5072463768115942,
+            "error": false,
+            "elapsed": 3.885
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-018",
+            "raw_answer": "{\"odpowiedź\": \"brzoskwinie, jabłka, lokwaty, śliwki, mango, kiwi, pomarańcze\"}",
+            "score": 0.639344262295082,
+            "error": false,
+            "elapsed": 3.955
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-019",
+            "raw_answer": "{\"odpowiedź\": \"mango, kiwi, gruszki, brzoskwinie, kantalupy, arbuzy, pomarancze\"}",
+            "score": 0.5625,
+            "error": false,
+            "elapsed": 3.945
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-020",
+            "raw_answer": "{\"odpowiedź\": \"kruk, koliber, rudzik, wrona, przepiórka, sójka, kardynał\"}",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 3.424
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-021",
+            "raw_answer": "{\"odpowiedź\": \"szara czarna biała pomaranczowa niebieska fioletowa czerwona\"}",
+            "score": 0.3666666666666667,
+            "error": false,
+            "elapsed": 2.967
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-022",
+            "raw_answer": "{\"odpowiedź\": \"kiwi, brzoskwinie, lokwaty, gruszki, arbuzy, pomarancze, kantalupy\"}",
+            "score": 0.5151515151515151,
+            "error": false,
+            "elapsed": 4.071
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-023",
+            "raw_answer": "{\"odpowiedź\": \"pomarańczowa zielona czerwona biała niebieska czarna pomaranczowa żółta\"}",
+            "score": 0.5352112676056338,
+            "error": false,
+            "elapsed": 3.148
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-024",
+            "raw_answer": "{\"odpowiedź\": \"biała szara żółta fioletowa czerwona czarna zielona\"}",
+            "score": 0.5294117647058824,
+            "error": false,
+            "elapsed": 2.421
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-025",
+            "raw_answer": "{\"odpowiedź\": \"sojka, sokół, kruk, sójka, jastrząb, wrona, koliber\"}",
+            "score": 0.4901960784313726,
+            "error": false,
+            "elapsed": 3.595
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-026",
+            "raw_answer": "{\"odpowiedź\": \"lokwaty, kantalupy, brzoskwinie, śliwki, mango, jabłka, arbuzy\"}",
+            "score": 0.3373493975903614,
+            "error": false,
+            "elapsed": 3.987
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-027",
+            "raw_answer": "{\"odpowiedź\": \"amy, ana, ada, rob, dan, joe, eli\"}",
+            "score": 0.4545454545454546,
+            "error": false,
+            "elapsed": 3.12
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-028",
+            "raw_answer": "{\"odpowiedź\": \"jabłka, lokwaty, gruszki, kiwi, arbuzy, pomarańcze, mango\"}",
+            "score": 0.5964912280701755,
+            "error": false,
+            "elapsed": 3.919
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-029",
+            "raw_answer": "{\"odpowiedź\": \"kwii, śliwki, gruszki, brzoskwinie, arbuzy, pomarancze, kantalupy\"}",
+            "score": 0.5384615384615384,
+            "error": false,
+            "elapsed": 3.853
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-030",
+            "raw_answer": "{\"odpowiedź\": \"autobus ciężarówka minivan limuzyna ciągnik kabriolet motocykl\"}",
+            "score": 0.6129032258064516,
+            "error": false,
+            "elapsed": 3.278
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-031",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, kardynał, kruk, wrona, sójka, sokół, jastrząb\"}",
+            "score": 0.4716981132075472,
+            "error": false,
+            "elapsed": 3.528
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-032",
+            "raw_answer": "{\"odpowiedź\": \"motocykl ciężarówka kombi minivan autobus sedan kabriolet\"}",
+            "score": 0.6842105263157895,
+            "error": false,
+            "elapsed": 3.119
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-033",
+            "raw_answer": "{\"odpowiedź\": \"szara czerwona fioletowa żółta niebieska biała pomaranczowa\"}",
+            "score": 0.44067796610169496,
+            "error": false,
+            "elapsed": 2.951
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-034",
+            "raw_answer": "{\"odpowiedź\": \"autobus limuzyna ciężarówka minivan ciągnik kabriolet motocykl\"}",
+            "score": 0.532258064516129,
+            "error": false,
+            "elapsed": 3.268
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-035",
+            "raw_answer": "{\"odpowiedź\": \"pomarańczowa, czerwona, niebieska, szara, czarna, biała, brązowa\"}",
+            "score": 0.328125,
+            "error": false,
+            "elapsed": 3.208
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-036",
+            "raw_answer": "{\"odpowiedź\": \"śliwki, lokwaty, jabłka, kantalupy, arbuzy\"}",
+            "score": 0.736842105263158,
+            "error": false,
+            "elapsed": 3.423
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-037",
+            "raw_answer": "{\"odpowiedź\": \"autobus, minivan, hachtback, motocykl, kombi, ciężarówka, limuzyna\"}",
+            "score": 0.7575757575757576,
+            "error": false,
+            "elapsed": 3.651
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-038",
+            "raw_answer": "{\"odpowiedź\": \"sokół, sójka, kruk, rudzik, koliber, przepiórka, sopa\"}",
+            "score": 0.4528301886792453,
+            "error": false,
+            "elapsed": 3.493
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-039",
+            "raw_answer": "{\"odpowiedź\": \"lokwaty, śliwki, brzoskwinie, jabłka, kantalupy, gruszki, mango\"}",
+            "score": 0.39682539682539686,
+            "error": false,
+            "elapsed": 3.854
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-040",
+            "raw_answer": "{\"odpowiedź\": \"pomarańczy, jabłka, śliwki, mango, arbuzy, kiwi, lokwaty\"}",
+            "score": 0.4821428571428571,
+            "error": false,
+            "elapsed": 3.665
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-041",
+            "raw_answer": "{\"odpowiedź\": \"joe, ana, dan, mel, eve, amy, ada\"}",
+            "score": 0.4545454545454546,
+            "error": false,
+            "elapsed": 3.261
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-042",
+            "raw_answer": "{\"odpowiedź\": \"samochód kombi, minivan, ciągnik, autobus, hachtback, sedan, motocykl\"}",
+            "score": 0.3913043478260869,
+            "error": false,
+            "elapsed": 3.469
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-043",
+            "raw_answer": "{\"odpowiedź\": \"autobus, limuzyna, minivan, kombi, motocykl, hachtback, ciężarówka\"}",
+            "score": 0.24137931034482762,
+            "error": false,
+            "elapsed": 3.453
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-044",
+            "raw_answer": "{\"odpowiedź\": \"eli, rob, mya, dan, mel, ada, ana\"}",
+            "score": 0.7272727272727273,
+            "error": false,
+            "elapsed": 3.105
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-045",
+            "raw_answer": "{\"odpowiedź\": \"eli ana mya amy joe mel ada\"}",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 2.611
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-046",
+            "raw_answer": "{\"odpowiedź\": \"żółta, brązowa, fioletowa, zielona, pomaranczowo-czerwona, szara, czarna\"}",
+            "score": 0.4305555555555556,
+            "error": false,
+            "elapsed": 3.803
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-047",
+            "raw_answer": "{\"odpowiedź\": \"lokwaty, śliwki, jabłka, arbuzy, pomarancze, kiwi, brzoskwinie\"}",
+            "score": 0.32530120481927716,
+            "error": false,
+            "elapsed": 3.944
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-048",
+            "raw_answer": "{\"odpowiedź\": \"autobus, minivan, hachtback, motocykl, kombi, ciężarówka, limuzyna\"}",
+            "score": 0.7575757575757576,
+            "error": false,
+            "elapsed": 3.602
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-049",
+            "raw_answer": "{\"odpowiedź\": \"autobus, limuzyna, kabriolet, kombi, ciągnik, ciężarówka, minivan\"}",
+            "score": 0.32558139534883723,
+            "error": false,
+            "elapsed": 3.561
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-050",
+            "raw_answer": "{\"odpowiedź\": \"brzoskwinie, jabłka, lokwaty, śliwki, mango, kiwi, pomarańcze\"}",
+            "score": 0.639344262295082,
+            "error": false,
+            "elapsed": 3.92
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-051",
+            "raw_answer": "{\"odpowiedź\": \"ROB, JOE, EVE, ADAM, DAN, AMY, ADA\"}",
+            "score": 0.5294117647058824,
+            "error": false,
+            "elapsed": 3.655
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-052",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, koliber, sójka, sokół, kruk, przepiórka, kardynał\"}",
+            "score": 0.45614035087719296,
+            "error": false,
+            "elapsed": 3.443
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-053",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, koliber, sójka, sokół, kruk, przepiórka, kardynał\"}",
+            "score": 0.45614035087719296,
+            "error": false,
+            "elapsed": 2.184
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-054",
+            "raw_answer": "{\"odpowiedź\": \"pomarańczowa, czerwona, żółta, biała, zielona, brązowa, fioletowa\"}",
+            "score": 0.6307692307692307,
+            "error": false,
+            "elapsed": 3.449
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-055",
+            "raw_answer": "{\"odpowiedź\": \"rob, joe, dan, ada, mya, eve, mel\"}",
+            "score": 0.5454545454545454,
+            "error": false,
+            "elapsed": 3.284
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-056",
+            "raw_answer": "{\"odpowiedź\": \"ana, mya, eli, joe, dan, mel, amy\"}",
+            "score": 0.5454545454545454,
+            "error": false,
+            "elapsed": 3.115
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-057",
+            "raw_answer": "{\"odpowiedź\": \"biała, brązowa, czarna, niebieska, zielona, pomaranczowa, żółta\"}",
+            "score": 0.6031746031746033,
+            "error": false,
+            "elapsed": 3.442
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-058",
+            "raw_answer": "{\"odpowiedź\": \"joe, eli, dan, mya, ada, ana, dan\"}",
+            "score": 0.7272727272727273,
+            "error": false,
+            "elapsed": 3.197
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-059",
+            "raw_answer": "{\"odpowiedź\": \"gruszki, kantalupy, brzoskwinie, arbuzy, mango, pomarancze, kiwi\"}",
+            "score": 0.4375,
+            "error": false,
+            "elapsed": 4.077
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-060",
+            "raw_answer": "{\"odpowiedź\": \"żółta, biała, brązowa, czarna, fioletowa, niebieska, pomaranczowa\"}",
+            "score": 0.5538461538461539,
+            "error": false,
+            "elapsed": 3.43
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-061",
+            "raw_answer": "{\"odpowiedź\": \"joe, dane, ada, amy, mel, rob, mya\"}",
+            "score": 0.5,
+            "error": false,
+            "elapsed": 3.143
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-062",
+            "raw_answer": "{\"odpowiedź\": \"śliwki, lokwaty, jabłka, kantalupy, arbuzy\"}",
+            "score": 0.736842105263158,
+            "error": false,
+            "elapsed": 3.459
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-063",
+            "raw_answer": "{\"odpowiedź\": \"sokół, soła, sójka, kruk, kardynał, przepiórka, rudzik\"}",
+            "score": 0.33333333333333337,
+            "error": false,
+            "elapsed": 3.357
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-064",
+            "raw_answer": "{\"odpowiedź\": \"szara czerwona fioletowa żółta niebieska biała pomaranczowa\"}",
+            "score": 0.44067796610169496,
+            "error": false,
+            "elapsed": 2.947
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-065",
+            "raw_answer": "{\"odpowiedź\": \"wrona, jastrząb, sokół, kruk, sopa, przepiórka, koliber\"}",
+            "score": 0.6,
+            "error": false,
+            "elapsed": 3.571
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-066",
+            "raw_answer": "{\"odpowiedź\": \"szara pomaranczowa zielona fioletowa czarna biała żółta\"}",
+            "score": 0.35820895522388063,
+            "error": false,
+            "elapsed": 2.941
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-067",
+            "raw_answer": "{\"odpowiedź\": \"sojka, kruk, sójka, rudzik, sosa, wrona, koliber\"}",
+            "score": 0.4375,
+            "error": false,
+            "elapsed": 3.444
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-068",
+            "raw_answer": "{\"odpowiedź\": \"biała, brązowa, czarna, niebieska, zielona, pomaranczowa, żółta\"}",
+            "score": 0.6031746031746033,
+            "error": false,
+            "elapsed": 3.449
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-069",
+            "raw_answer": "{\"odpowiedź\": \"samochód kombi, minivan, ciągnik, autobus, hachtback, sedan, motocykl\"}",
+            "score": 0.3913043478260869,
+            "error": false,
+            "elapsed": 3.464
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-070",
+            "raw_answer": "{\"odpowiedź\": \"pomarańczy, jabłka, śliwki, mango, arbuzy, kiwi, lokwaty\"}",
+            "score": 0.4821428571428571,
+            "error": false,
+            "elapsed": 3.765
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-071",
+            "raw_answer": "{\"odpowiedź\": \"pomarańczowa, fioletowa, zielona, biała, czarna, brązowa, żółta\"}",
+            "score": 0.5555555555555556,
+            "error": false,
+            "elapsed": 3.413
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-072",
+            "raw_answer": "{\"odpowiedź\": \"joe, eli, dan, mya, ada, ana, dan\"}",
+            "score": 0.7272727272727273,
+            "error": false,
+            "elapsed": 3.2
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-073",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, koliber, kruk, sójka, wrona, przepiórka, kardynał\"}",
+            "score": 0.7894736842105263,
+            "error": false,
+            "elapsed": 3.512
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-074",
+            "raw_answer": "{\"odpowiedź\": \"pomarańcze, jabłka, gruszki, kantalupy, mango, arbuzy, lokwaty\"}",
+            "score": 0.30645161290322576,
+            "error": false,
+            "elapsed": 3.917
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-075",
+            "raw_answer": "{\"odpowiedź\": \"autobus, minivan, hachtback, motocykl, kombi, ciężarówka, limuzyna\"}",
+            "score": 0.7575757575757576,
+            "error": false,
+            "elapsed": 3.719
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-076",
+            "raw_answer": "{\"odpowiedź\": \"lokwaty, śliwki, jabłka, arbuzy, pomarancze, kiwi, brzoskwinie\"}",
+            "score": 0.32530120481927716,
+            "error": false,
+            "elapsed": 3.901
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-077",
+            "raw_answer": "{\"odpowiedź\": \"limuzyna motocykl ciągnik sedan minivan hatchback ciężarówka\"}",
+            "score": 0.1923076923076923,
+            "error": false,
+            "elapsed": 3.234
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-078",
+            "raw_answer": "{\"odpowiedź\": \"sojka, sokół, kruk, sójka, jastrząb, wrona, koliber\"}",
+            "score": 0.4901960784313726,
+            "error": false,
+            "elapsed": 3.565
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-079",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, kruk, wrona, sokół, kardynał, koliber, jastrząb\"}",
+            "score": 0.4545454545454546,
+            "error": false,
+            "elapsed": 3.331
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-080",
+            "raw_answer": "{\"odpowiedź\": \"sokół, rudzik, kardynał, przepiórka, sora, koliber, wrona\"}",
+            "score": 0.38596491228070173,
+            "error": false,
+            "elapsed": 3.29
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-081",
+            "raw_answer": "{\"odpowiedź\": \"motocykl limuzyna sedan minivan ciągnik hatchback ciężarówka\"}",
+            "score": 0.2727272727272727,
+            "error": false,
+            "elapsed": 3.291
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-082",
+            "raw_answer": "{\"odpowiedź\": \"autobus, hachtback, kombi, kabriolet, ciągnik, limuzyna, minivan\"}",
+            "score": 0.453125,
+            "error": false,
+            "elapsed": 3.728
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-083",
+            "raw_answer": "{\"odpowiedź\": \"pomarańczowa, fioletowa, zielona, biała, czarna, brązowa, żółta\"}",
+            "score": 0.5555555555555556,
+            "error": false,
+            "elapsed": 3.416
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-084",
+            "raw_answer": "{\"odpowiedź\": \"biała szara żółta fioletowa czerwona czarna zielona\"}",
+            "score": 0.5294117647058824,
+            "error": false,
+            "elapsed": 2.389
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-085",
+            "raw_answer": "{\"odpowiedź\": \"joe, ada, ana, rob, eli, eve, amy\"}",
+            "score": 0.5151515151515151,
+            "error": false,
+            "elapsed": 3.248
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-086",
+            "raw_answer": "{\"odpowiedź\": \"joe, ada, eli, rob, mel, ana, eve\"}",
+            "score": 0.5757575757575757,
+            "error": false,
+            "elapsed": 3.016
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-087",
+            "raw_answer": "{\"odpowiedź\": \"samochód kombi, samochód sedan, samochód minivan, motocykl, ciężarówka, ciągnik, samochód hatchback\"}",
+            "score": 0.38383838383838387,
+            "error": false,
+            "elapsed": 3.852
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-088",
+            "raw_answer": "{\"odpowiedź\": \"jabłka, brzoskwinie, gruszki, kantalupy, pomarancze, arbuzy, mango\"}",
+            "score": 0.4545454545454546,
+            "error": false,
+            "elapsed": 4.052
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-089",
+            "raw_answer": "{\"odpowiedź\": \"autobus, ciężarówka, hachtback, kombi, minivan, ciągnik, kabriolet\"}",
+            "score": 0.3939393939393939,
+            "error": false,
+            "elapsed": 3.652
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-090",
+            "raw_answer": "{\"odpowiedź\": \"limuzyna kombi autobus minivan ciągnik ciężarówka hatchback\"}",
+            "score": 0.2987012987012987,
+            "error": false,
+            "elapsed": 2.873
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-091",
+            "raw_answer": "{\"odpowiedź\": \"sojka, kruk, sójka, rudzik, sosa, wrona, koliber\"}",
+            "score": 0.4375,
+            "error": false,
+            "elapsed": 3.467
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-092",
+            "raw_answer": "{\"odpowiedź\": \"joe, ada, ana, rob, eli, eve, amy\"}",
+            "score": 0.5151515151515151,
+            "error": false,
+            "elapsed": 3.222
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-093",
+            "raw_answer": "{\"odpowiedź\": \"mango, kiwi, gruszki, brzoskwinie, kantalupy, arbuzy, pomarancze\"}",
+            "score": 0.5625,
+            "error": false,
+            "elapsed": 4.01
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-094",
+            "raw_answer": "{\"odpowiedź\": \"Amy, Eve, Rob, Dan, Mel, Joe, Ada\"}",
+            "score": 0.4242424242424242,
+            "error": false,
+            "elapsed": 3.015
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-095",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, kardynał, kruk, wrona, sójka, sokół, jastrząb\"}",
+            "score": 0.4716981132075472,
+            "error": false,
+            "elapsed": 3.482
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-096",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, kardynał, kruk, wrona, sójka, sokół, jastrząb\"}",
+            "score": 0.4716981132075472,
+            "error": false,
+            "elapsed": 2.199
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-097",
+            "raw_answer": "{\"odpowiedź\": \"żółta, brązowa, fioletowa, zielona, pomaranczowo-czerwona, szara, czarna\"}",
+            "score": 0.4305555555555556,
+            "error": false,
+            "elapsed": 3.797
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-098",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, sójka, kruk, sokół, wrona, koliber, jastrząb\"}",
+            "score": 0.31506849315068497,
+            "error": false,
+            "elapsed": 3.595
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_all-099",
+            "raw_answer": "{\"odpowiedź\": \"ciągnik, limuzyna, sedan, autobus, kombi, kabriolet, ciężarówka\"}",
+            "score": 0.5873015873015873,
+            "error": false,
+            "elapsed": 3.38
+          }
+        ]
+      }
+    },
+    "punctuation_inner": {
+      "bbh_open": {
+        "num_sampled": 100,
+        "score_sum": 47.125827,
+        "score_avg": 0.471258,
+        "error_count": 0,
+        "elapsed_sec": 334.65,
+        "questions": [
+          {
+            "prompt_id": "bbh_open-punctuation_inner-000",
+            "raw_answer": "{\"odpowiedź\": \"koliber, jastrząb, kruk, sokół, sokół, sowa, kardynał, przepiórka\"}",
+            "score": 0.2615384615384615,
+            "error": false,
+            "elapsed": 4.178
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-001",
+            "raw_answer": "{\"odpowiedź\": \"autobus, limuzyna, ciągnik, ciężarówka, kombi, minivan, kabriolet\"}",
+            "score": 0.3384615384615385,
+            "error": false,
+            "elapsed": 3.867
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-002",
+            "raw_answer": "{\"odpowiedź\": \"Eve, Rob, Joe, Ada, Dan, Mel, Amy\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 2.997
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-003",
+            "raw_answer": "{\"odpowiedź\": \"pomarańcza czerwona zielona biała fioletowa brązowa żółta\"}",
+            "score": 0.3728813559322034,
+            "error": false,
+            "elapsed": 3.127
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-004",
+            "raw_answer": "{\"odpowiedź\": \"soja, sova, jastrzb, koliber, rudzik, sokół, przepiórka\"}",
+            "score": 0.631578947368421,
+            "error": false,
+            "elapsed": 3.782
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-005",
+            "raw_answer": "{\"odpowiedź\": \"żółta brązowa fioletowa zielona pomarańczowa czarna szara\"}",
+            "score": 0.5072463768115942,
+            "error": false,
+            "elapsed": 3.333
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-006",
+            "raw_answer": "{\"odpowiedź\": \"sova rudzik sójka koliber wrona kardynał przepiórka\"}",
+            "score": 0.2222222222222222,
+            "error": false,
+            "elapsed": 3.061
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-007",
+            "raw_answer": "{\"odpowiedź\": \"szara czerwona fioletowa zielona biała pomaranczowa niebieska czerwona\"}",
+            "score": 0.3142857142857143,
+            "error": false,
+            "elapsed": 3.31
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-008",
+            "raw_answer": "{\"odpowiedź\": \"Joe, Eli, Dan, Ada, Mya, Dan, Ana\"}",
+            "score": 0.6060606060606061,
+            "error": false,
+            "elapsed": 3.108
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-009",
+            "raw_answer": "{\"odpowiedź\": \"sedan, minivan, limuzyna, ciężarówka, hachtback, motocykl, ciągnik\"}",
+            "score": 0.4242424242424242,
+            "error": false,
+            "elapsed": 3.678
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-010",
+            "raw_answer": "{\"odpowiedź\": \"Ana,Eli,Dan,Mya,Joe,Mel,Melanie\"}",
+            "score": 0.4242424242424242,
+            "error": false,
+            "elapsed": 3.501
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-011",
+            "raw_answer": "{\"odpowiedź\": \"przepiórka jastrząb sowa rudzik wrona kardynał koliber sova\"}",
+            "score": 0.3389830508474576,
+            "error": false,
+            "elapsed": 3.321
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-012",
+            "raw_answer": "{\"odpowiedź\": \"ciągnik, motocykl, limuzyna, hachtback, minivan, sedan, ciężarówka\"}",
+            "score": 0.29885057471264365,
+            "error": false,
+            "elapsed": 3.954
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-013",
+            "raw_answer": "{\"odpowiedź\": \"Eli, Joe, Mel, Rob, Ana, Mya, Mel\"}",
+            "score": 0.48484848484848486,
+            "error": false,
+            "elapsed": 3.202
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-014",
+            "raw_answer": "{\"odpowiedź\": \"sova, wrona, sokol, kardinal, koliber, przepiórka, jastrzyb\"}",
+            "score": 0.288135593220339,
+            "error": false,
+            "elapsed": 3.76
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-015",
+            "raw_answer": "{\"odpowiedź\": \"autobus minivan kombi sedan ciągnik ciężarówka motocykl\"}",
+            "score": 0.6727272727272727,
+            "error": false,
+            "elapsed": 3.053
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-016",
+            "raw_answer": "{\"odpowiedź\": \"Joe, Ada, Rob, Eli, Eve, Mel, Ana\"}",
+            "score": 0.7575757575757576,
+            "error": false,
+            "elapsed": 3.129
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-017",
+            "raw_answer": "{\"odpowiedź\": \"autobus limuzyna hachtback ciężarówka minivan ciągnik kabriolet\"}",
+            "score": 0.5079365079365079,
+            "error": false,
+            "elapsed": 3.545
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-018",
+            "raw_answer": "{\"odpowiedź\": \"brzozwinie mango kiwi jabłko śliwka lokwaty pomarańcze\"}",
+            "score": 0.3731343283582089,
+            "error": false,
+            "elapsed": 3.725
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-019",
+            "raw_answer": "{\"odpowiedź\": \"mango kiwi gruszki brzoskwinie kantalupy pomrańcze arbuzy\"}",
+            "score": 0.42105263157894735,
+            "error": false,
+            "elapsed": 3.637
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-020",
+            "raw_answer": "{\"odpowiedź\": \"kruk koliber rudzik sójka wrona przepiórka kardynał\"}",
+            "score": 0.4509803921568627,
+            "error": false,
+            "elapsed": 3.17
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-021",
+            "raw_answer": "{\"odpowiedź\": \"szara czarna czerwona biała pomaranczowa niebieska fioletowa\"}",
+            "score": 0.3666666666666667,
+            "error": false,
+            "elapsed": 3.165
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-022",
+            "raw_answer": "{\"odpowiedź\": \"pomaruńcze, brzoskwinie, lokwaty, gruszki, arbuzy, kantalupy, pomarańcze\"}",
+            "score": 0.3055555555555556,
+            "error": false,
+            "elapsed": 4.405
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-023",
+            "raw_answer": "{\"odpowiedź\": \"pomarańczywa czarna zielona czerwona biała niebieska żółta\"}",
+            "score": 0.6724137931034483,
+            "error": false,
+            "elapsed": 3.126
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-024",
+            "raw_answer": "{\"odpowiedź\": \"biała czerwona szara żółta zielona czarna fioletowa\"}",
+            "score": 0.4901960784313726,
+            "error": false,
+            "elapsed": 2.52
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-025",
+            "raw_answer": "{\"odpowiedź\": \"sojka, sokol, kruk, sowa, jastrzb, koliber, wrona\"}",
+            "score": 0.43999999999999995,
+            "error": false,
+            "elapsed": 3.599
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-026",
+            "raw_answer": "{\"odpowiedź\": \"lokwaty kantalupy brzoskwinie śliwki mango jabłka arbuzy\"}",
+            "score": 0.32432432432432434,
+            "error": false,
+            "elapsed": 3.694
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-027",
+            "raw_answer": "{\"odpowiedź\": \"Rob Ana Ada Joe Dan Amy Eli\"}",
+            "score": 0.4444444444444444,
+            "error": false,
+            "elapsed": 2.556
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-028",
+            "raw_answer": "{\"odpowiedź\": \"jabłka lokwaty kiwi gruszki arbuzy mango pomarancze\"}",
+            "score": 0.3529411764705882,
+            "error": false,
+            "elapsed": 3.483
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-029",
+            "raw_answer": "{\"odpowiedź\": \"śliwki kiwi gruszki brzoskwinie śliwki arbuzy kantalupy pomarynacze\"}",
+            "score": 0.5522388059701493,
+            "error": false,
+            "elapsed": 3.739
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-030",
+            "raw_answer": "{\"odpowiedź\": \"autobus ciężarówka limuzyna minivan ciągnik kabriolet motocykl\"}",
+            "score": 0.5161290322580645,
+            "error": false,
+            "elapsed": 3.479
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-031",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, kardynał, kruk, sójka, wrona, sokół, jastrząb\"}",
+            "score": 0.5283018867924528,
+            "error": false,
+            "elapsed": 3.611
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-032",
+            "raw_answer": "{\"odpowiedź\": \"minivan sedan kabriolet autobus kombi ciężarówka motocykl\"}",
+            "score": 0.2028985507246377,
+            "error": false,
+            "elapsed": 3.076
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-033",
+            "raw_answer": "{\"odpowiedź\": \"fioletowa czerwona żółta niebieska szara biała pomaranczowa\"}",
+            "score": 0.28695652173913044,
+            "error": false,
+            "elapsed": 3.217
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-034",
+            "raw_answer": "{\"odpowiedź\": \"autobus ciężarówka motocykl limuzyna minivan kabriolet ciągnik\"}",
+            "score": 0.6451612903225806,
+            "error": false,
+            "elapsed": 3.337
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-035",
+            "raw_answer": "{\"odpowiedź\": \"szara czerwona niebieska pomaranczowa czarna biała czerwona pomarańczowa szara\"}",
+            "score": 0.5512820512820513,
+            "error": false,
+            "elapsed": 3.409
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-036",
+            "raw_answer": "{\"odpowiedź\": \"śliwki lokwaty jabłka kantalupy gruszki arbuzy kiwi\"}",
+            "score": 0.6862745098039216,
+            "error": false,
+            "elapsed": 3.575
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-037",
+            "raw_answer": "{\"odpowiedź\": \"autobus minivan hachtback kombi ciężarówka limuzyna motocykl\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 3.319
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-038",
+            "raw_answer": "{\"odpowiedź\": \"sokół sójka kruk rudzik przepiórka koliber sopa sójka\"}",
+            "score": 0.339622641509434,
+            "error": false,
+            "elapsed": 3.413
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-039",
+            "raw_answer": "{\"odpowiedź\": \"lokwaty, śliwki, brzoskwinie, jabłka, gruszki, kantalupy, mango\"}",
+            "score": 0.4285714285714286,
+            "error": false,
+            "elapsed": 4.047
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-040",
+            "raw_answer": "{\"odpowiedź\": \"pomarańcze, kiwi, arbuzy, pomarancze, jabłka, lokwaty, mango\"}",
+            "score": 0.4666666666666667,
+            "error": false,
+            "elapsed": 3.96
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-041",
+            "raw_answer": "{\"odpowiedź\": \"Joe, Dan, Ana, Ada, Eve, Amy, Mel\"}",
+            "score": 0.6363636363636364,
+            "error": false,
+            "elapsed": 2.989
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-042",
+            "raw_answer": "{\"odpowiedź\": \"kombi minivan sedan hachtback autobus ciągnik motocykl\"}",
+            "score": 0.31481481481481477,
+            "error": false,
+            "elapsed": 3.053
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-043",
+            "raw_answer": "{\"odpowiedź\": \"autobus limuzyna kombi minivan hachtback motocykl ciężarówka\"}",
+            "score": 0.23611111111111116,
+            "error": false,
+            "elapsed": 3.157
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-044",
+            "raw_answer": "{\"odpowiedź\": \"Dan,Mya,Rob,Eli,Mel,Ana,Ada\"}",
+            "score": 0.5454545454545454,
+            "error": false,
+            "elapsed": 3.532
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-045",
+            "raw_answer": "{\"odpowiedź\": \"Ada, Joe, Mya, Amy, Ana, Mel, Eli\"}",
+            "score": 0.5151515151515151,
+            "error": false,
+            "elapsed": 3.02
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-046",
+            "raw_answer": "{\"odpowiedź\": \"żółta brązowa fioletowa zielona pomarańczowa czarna szara\"}",
+            "score": 0.5072463768115942,
+            "error": false,
+            "elapsed": 3.325
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-047",
+            "raw_answer": "{\"odpowiedź\": \"lokwaty śliwki jabłka pomarańcze arbuzy kiwi brzoskwinie\"}",
+            "score": 0.3529411764705882,
+            "error": false,
+            "elapsed": 3.681
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-048",
+            "raw_answer": "{\"odpowiedź\": \"autobus minivan hachtback kombi ciężarówka limuzyna motocykl\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 3.295
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-049",
+            "raw_answer": "{\"odpowiedź\": \"autobus, limuzyna, ciągnik, ciężarówka, kombi, minivan, kabriolet\"}",
+            "score": 0.3384615384615385,
+            "error": false,
+            "elapsed": 3.743
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-050",
+            "raw_answer": "{\"odpowiedź\": \"brzozwinie mango kiwi jabłko śliwka lokwaty pomarańcze\"}",
+            "score": 0.3731343283582089,
+            "error": false,
+            "elapsed": 3.674
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-051",
+            "raw_answer": "{\"odpowiedź\": \"Joe Rob Dan Ana Amy Ada Rob Eve\"}",
+            "score": 0.6774193548387097,
+            "error": false,
+            "elapsed": 2.656
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-052",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, koliber, sójka, kardynał, sokół, przepiórka, kruk\"}",
+            "score": 0.4385964912280702,
+            "error": false,
+            "elapsed": 3.509
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-053",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, koliber, sójka, kardynał, sokół, przepiórka, kruk\"}",
+            "score": 0.4385964912280702,
+            "error": false,
+            "elapsed": 2.163
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-054",
+            "raw_answer": "{\"odpowiedź\": \"pomarańcza czerwona zielona biała fioletowa brązowa żółta\"}",
+            "score": 0.3728813559322034,
+            "error": false,
+            "elapsed": 3.059
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-055",
+            "raw_answer": "{\"odpowiedź\": \"Rob, Joe, Mya, Dan, Ada, Mel, Eve\"}",
+            "score": 0.8181818181818181,
+            "error": false,
+            "elapsed": 3.117
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-056",
+            "raw_answer": "{\"odpowiedź\": \"Ana,Eli,Dan,Mya,Joe,Mel,Melanie\"}",
+            "score": 0.4242424242424242,
+            "error": false,
+            "elapsed": 3.36
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-057",
+            "raw_answer": "{\"odpowiedź\": \"biała zielona niebieska czarna brązowa pomaranczowa żółta\"}",
+            "score": 0.9824561403508771,
+            "error": false,
+            "elapsed": 3.149
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-058",
+            "raw_answer": "{\"odpowiedź\": \"Joe, Eli, Dan, Ada, Mya, Dan, Ana\"}",
+            "score": 0.6060606060606061,
+            "error": false,
+            "elapsed": 3.112
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-059",
+            "raw_answer": "{\"odpowiedź\": \"gruszki kantalupy kiwi brzoskwinie arbuzy pomaryńcze mango\"}",
+            "score": 0.5517241379310345,
+            "error": false,
+            "elapsed": 3.782
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-060",
+            "raw_answer": "{\"odpowiedź\": \"brązowa czarna fioletowa pomarańczowa biała żółta niebieska\"}",
+            "score": 0.5254237288135593,
+            "error": false,
+            "elapsed": 3.209
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-061",
+            "raw_answer": "{\"odpowiedź\": \"Dan, Ada, Joe, Amy, Mya, Rob, Mel\"}",
+            "score": 0.4242424242424242,
+            "error": false,
+            "elapsed": 3.139
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-062",
+            "raw_answer": "{\"odpowiedź\": \"śliwki, lokwaty, jabłka, kantalupy, śliwki kiwi, gruszki, arbuzy\"}",
+            "score": 0.484375,
+            "error": false,
+            "elapsed": 4.226
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-063",
+            "raw_answer": "{\"odpowiedź\": \"kruk, sokół, sójka, soła, przepiórka, rudzik, kardynał\"}",
+            "score": 0.2533333333333333,
+            "error": false,
+            "elapsed": 3.46
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-064",
+            "raw_answer": "{\"odpowiedź\": \"fioletowa czerwona żółta niebieska szara biała pomaranczowa\"}",
+            "score": 0.28695652173913044,
+            "error": false,
+            "elapsed": 3.208
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-065",
+            "raw_answer": "{\"odpowiedź\": \"jastrząb, sokół, kruk, wrona, sova, koliber, przepiórka\"}",
+            "score": 0.3026315789473685,
+            "error": false,
+            "elapsed": 3.734
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-066",
+            "raw_answer": "{\"odpowiedź\": \"czarna pomaranczowa szara zielona fioletowa biała żółta\"}",
+            "score": 0.4363636363636364,
+            "error": false,
+            "elapsed": 3.029
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-067",
+            "raw_answer": "{\"odpowiedź\": \"sojka, kruk, rudzik, sójka, sosa, koliber, wrona\"}",
+            "score": 0.6875,
+            "error": false,
+            "elapsed": 3.538
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-068",
+            "raw_answer": "{\"odpowiedź\": \"biała zielona niebieska czarna brązowa pomaranczowa żółta\"}",
+            "score": 0.9824561403508771,
+            "error": false,
+            "elapsed": 3.142
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-069",
+            "raw_answer": "{\"odpowiedź\": \"kombi minivan sedan hachtback autobus ciągnik motocykl\"}",
+            "score": 0.31481481481481477,
+            "error": false,
+            "elapsed": 2.997
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-070",
+            "raw_answer": "{\"odpowiedź\": \"pomarańcze, kiwi, arbuzy, pomarancze, jabłka, lokwaty, mango\"}",
+            "score": 0.4666666666666667,
+            "error": false,
+            "elapsed": 3.97
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-071",
+            "raw_answer": "{\"odpowiedź\": \"biała zielona fioletowa czarna pomaranczowa żółta brązowa czerwona\"}",
+            "score": 0.3787878787878788,
+            "error": false,
+            "elapsed": 3.207
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-072",
+            "raw_answer": "{\"odpowiedź\": \"Joe, Eli, Dan, Ada, Mya, Dan, Ana\"}",
+            "score": 0.6060606060606061,
+            "error": false,
+            "elapsed": 3.078
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-073",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, kruk, koliber, sójka, kardynał, przepiórka, wrona\"}",
+            "score": 0.6842105263157895,
+            "error": false,
+            "elapsed": 3.642
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-074",
+            "raw_answer": "{\"odpowiedź\": \"pomrańcze jabłka gruszki kantalupy mango arbuzy lokwaty\"}",
+            "score": 0.29729729729729726,
+            "error": false,
+            "elapsed": 3.734
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-075",
+            "raw_answer": "{\"odpowiedź\": \"autobus minivan hachtback kombi ciężarówka limuzyna motocykl\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 3.327
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-076",
+            "raw_answer": "{\"odpowiedź\": \"lokwaty śliwki jabłka pomarańcze arbuzy kiwi brzoskwinie\"}",
+            "score": 0.3529411764705882,
+            "error": false,
+            "elapsed": 3.65
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-077",
+            "raw_answer": "{\"odpowiedź\": \"ciężarówka motocykl limuzyna ciągnik sedan minivan hachtback\"}",
+            "score": 0.4666666666666667,
+            "error": false,
+            "elapsed": 3.385
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-078",
+            "raw_answer": "{\"odpowiedź\": \"sojka, sokol, kruk, sowa, jastrzb, koliber, wrona\"}",
+            "score": 0.43999999999999995,
+            "error": false,
+            "elapsed": 3.607
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-079",
+            "raw_answer": "{\"odpowiedź\": \"rudzik kruk jastrząb sokół kardynał koliber wrona\"}",
+            "score": 0.36734693877551017,
+            "error": false,
+            "elapsed": 2.899
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-080",
+            "raw_answer": "{\"odpowiedź\": \"rudzik sokół koliber sopa kardynał przepiórka wrona\"}",
+            "score": 0.3529411764705882,
+            "error": false,
+            "elapsed": 2.888
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-081",
+            "raw_answer": "{\"odpowiedź\": \"ciągnik, motocykl, limuzyna, hachtback, minivan, sedan, ciężarówka\"}",
+            "score": 0.29885057471264365,
+            "error": false,
+            "elapsed": 3.665
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-082",
+            "raw_answer": "{\"odpowiedź\": \"kabriolet limuzyna minivan autobus hachtback kombi ciągnik\"}",
+            "score": 0.27142857142857146,
+            "error": false,
+            "elapsed": 3.228
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-083",
+            "raw_answer": "{\"odpowiedź\": \"biała zielona fioletowa czarna pomaranczowa żółta brązowa czerwona\"}",
+            "score": 0.3787878787878788,
+            "error": false,
+            "elapsed": 3.193
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-084",
+            "raw_answer": "{\"odpowiedź\": \"biała czerwona szara żółta zielona czarna fioletowa\"}",
+            "score": 0.4901960784313726,
+            "error": false,
+            "elapsed": 2.534
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-085",
+            "raw_answer": "{\"odpowiedź\": \"Eli Joe Rob Ada Eve Ana Joe\"}",
+            "score": 0.37037037037037035,
+            "error": false,
+            "elapsed": 2.607
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-086",
+            "raw_answer": "{\"odpowiedź\": \"Joe, Ada, Rob, Eli, Eve, Mel, Ana\"}",
+            "score": 0.7575757575757576,
+            "error": false,
+            "elapsed": 2.95
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-087",
+            "raw_answer": "{\"odpowiedź\": \"kombi sedan minivan ciągnik hachtback motocykl ciężarówka\"}",
+            "score": 0.4782608695652174,
+            "error": false,
+            "elapsed": 3.157
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-088",
+            "raw_answer": "{\"odpowiedź\": \"brzoskwinie jabłka gruszki kantalupy pomaryancze arbuzy mango\"}",
+            "score": 0.540983606557377,
+            "error": false,
+            "elapsed": 3.763
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-089",
+            "raw_answer": "{\"odpowiedź\": \"ciężarówka kombi autobus ciągnik minivan hatchback kabriolet\"}",
+            "score": 0.41666666666666663,
+            "error": false,
+            "elapsed": 3.346
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-090",
+            "raw_answer": "{\"odpowiedź\": \"limuzyna kombi autobus minivan ciągnik ciężarówka hatchback\"}",
+            "score": 0.2987012987012987,
+            "error": false,
+            "elapsed": 2.989
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-091",
+            "raw_answer": "{\"odpowiedź\": \"sojka, kruk, rudzik, sójka, sosa, koliber, wrona\"}",
+            "score": 0.6875,
+            "error": false,
+            "elapsed": 3.625
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-092",
+            "raw_answer": "{\"odpowiedź\": \"Eli Joe Rob Ada Eve Ana Joe\"}",
+            "score": 0.37037037037037035,
+            "error": false,
+            "elapsed": 2.6
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-093",
+            "raw_answer": "{\"odpowiedź\": \"mango kiwi gruszki brzoskwinie kantalupy pomrańcze arbuzy\"}",
+            "score": 0.42105263157894735,
+            "error": false,
+            "elapsed": 3.749
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-094",
+            "raw_answer": "{\"odpowiedź\": \"Eve, Rob, Joe, Ada, Dan, Mel, Amy\"}",
+            "score": 0.6666666666666667,
+            "error": false,
+            "elapsed": 3.096
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-095",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, kardynał, kruk, sójka, wrona, sokół, jastrząb\"}",
+            "score": 0.5283018867924528,
+            "error": false,
+            "elapsed": 3.585
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-096",
+            "raw_answer": "{\"odpowiedź\": \"rudzik, kardynał, kruk, sójka, wrona, sokół, jastrząb\"}",
+            "score": 0.5283018867924528,
+            "error": false,
+            "elapsed": 2.261
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-097",
+            "raw_answer": "{\"odpowiedź\": \"żółta brązowa fioletowa zielona pomarańczowa czarna szara\"}",
+            "score": 0.5072463768115942,
+            "error": false,
+            "elapsed": 3.335
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-098",
+            "raw_answer": "{\"odpowiedź\": \"sokół kruk wrona rudzik sójka jastrząb koliber\"}",
+            "score": 0.2586206896551724,
+            "error": false,
+            "elapsed": 3.248
+          },
+          {
+            "prompt_id": "bbh_open-punctuation_inner-099",
+            "raw_answer": "{\"odpowiedź\": \"ciągnik, sedan, kombi, autobus, kabriolet, limuzyna, ciężarówka\"}",
+            "score": 0.6507936507936508,
+            "error": false,
+            "elapsed": 3.585
+          }
+        ]
+      }
+    }
+  },
+  "status": "partial"
+}
