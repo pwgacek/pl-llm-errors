@@ -71,10 +71,9 @@ def step_run(
     model_client: LLMClient,
     report_path: Path,
     report_skeleton: dict,
-    existing_answers: dict[str, dict] | None = None,
 ) -> tuple[dict[str, dict], bool]:
     print("\n=== Step 2: Asking LLM ===")
-    answers: dict[str, dict] = existing_answers if existing_answers is not None else {}
+    answers: dict[str, dict] = {}
     processed_any = False
 
     for gen_name, datasets in prompts.items():
@@ -83,34 +82,12 @@ def step_run(
 
         for dataset_name, records in datasets.items():
             total = len(records)
-            existing_dataset = answers[gen_name].get(dataset_name)
-            existing_questions: list[dict] = []
-            if existing_dataset is not None:
-                raw_existing_questions = existing_dataset.get("questions", [])
-                if isinstance(raw_existing_questions, list):
-                    existing_questions = raw_existing_questions
-
             output_records: list[dict] = []
-            did_retry = False
             dataset_start = time.perf_counter()
+            print(f"\n  [{gen_name}/{dataset_name}] Asking {total} questions ...")
 
             for i, record in enumerate(records, start=1):
                 prompt_id = str(record.get("id", f"row-{i:03d}"))
-                existing_record = (
-                    existing_questions[i - 1] if i - 1 < len(existing_questions) else None
-                )
-                can_reuse = (
-                    isinstance(existing_record, dict)
-                    and existing_record.get("prompt_id") == prompt_id
-                    and not bool(existing_record.get("error", False))
-                )
-                if can_reuse:
-                    output_records.append(existing_record)
-                    continue
-
-                if not did_retry:
-                    print(f"\n  [{gen_name}/{dataset_name}] Asking {total} questions ...")
-                did_retry = True
                 processed_any = True
 
                 prompt = record["prompt"]
@@ -151,18 +128,6 @@ def step_run(
                 partial = {**report_skeleton, "datasets": answers, "status": "partial"}
                 _save_partial(report_path, partial)
 
-            if not did_retry:
-                answers[gen_name][dataset_name] = {
-                    "num_sampled": total,
-                    "error_count": sum(1 for r in output_records if r.get("error", False)),
-                    "elapsed_sec": existing_dataset.get("elapsed_sec", 0.0)
-                    if existing_dataset is not None
-                    else 0.0,
-                    "questions": output_records,
-                }
-                print(f"\n  [{gen_name}/{dataset_name}] Already completed, skipping (resume).")
-                continue
-
             error_count = sum(1 for r in output_records if r["error"])
             dataset_elapsed = time.perf_counter() - dataset_start
             print(
@@ -186,7 +151,6 @@ def main() -> None:
     seed = int(settings.common.seed)
     temperature = int(settings.inference.temperature)
     prompts_dir = Path(settings.common.prompt_dir)
-    resume = settings.inference.resume
     timeout = int(settings.inference.timeout)
 
     llm_client = LLMClient(
@@ -213,30 +177,52 @@ def main() -> None:
         "prompts_dir": str(prompts_dir),
     }
 
-    existing_answers: dict[str, dict] | None = None
-    if resume:
-        resume_path = Path(str(resume))
-        if resume_path.exists():
-            prev = json.loads(resume_path.read_text(encoding="utf-8"))
-            existing_answers = prev.get("datasets", {})
-            report_path = resume_path
-            done = sum(len(ds) for ds in existing_answers.values())
-            print(f"  Resuming from {resume_path} ({done} generator+dataset pairs already done.)")  
-        else:
-            print(f"  Resume file {resume_path} not found, starting fresh.")
-
     answers, processed_any = step_run(
-        prompts, llm_client, report_path, report_skeleton, existing_answers,
+        prompts, llm_client, report_path, report_skeleton,
     )
-
-    if not processed_any and resume:
-        return
 
     print("\n=== Summary ===")
     for gen_name, datasets in answers.items():
         total_samples = sum(d["num_sampled"] for d in datasets.values())
         total_errors = sum(d["error_count"] for d in datasets.values())
         print(f"  [{gen_name}] total={total_samples}  errors={total_errors}")
+
+    # Collect and write failed records organized by generator and dataset
+    prompts_to_rerun_base = Path(str(settings.common.prompt_dir) + "_to_rerun")
+    model_subdir = prompts_to_rerun_base / _sanitize_filename_component(str(model)) / timestamp
+    
+    failed_records_by_dataset: dict[tuple[str, str], list[dict]] = {}
+    
+    for gen_name, datasets in answers.items():
+        for dataset_name, dataset_info in datasets.items():
+            questions = dataset_info.get("questions", [])
+            for i, question in enumerate(questions):
+                if question.get("error"):
+                    if gen_name in prompts and dataset_name in prompts[gen_name]:
+                        prompt_record = prompts[gen_name][dataset_name][i]
+                        key = (gen_name, dataset_name)
+                        if key not in failed_records_by_dataset:
+                            failed_records_by_dataset[key] = []
+                        failed_records_by_dataset[key].append(prompt_record)
+
+    # Write failed records to organized files
+    total_failed = 0
+    if failed_records_by_dataset:
+        for (gen_name, dataset_name), records in failed_records_by_dataset.items():
+            gen_dir = model_subdir / gen_name
+            gen_dir.mkdir(parents=True, exist_ok=True)
+            
+            rerun_path = gen_dir / f"{dataset_name}.jsonl"
+            
+            with open(rerun_path, "w", encoding="utf-8") as f:
+                for record in records:
+                    f.write(json.dumps(record, ensure_ascii=False) + "\n")
+            
+            total_failed += len(records)
+            print(f"\nFailed records written to: {rerun_path} ({len(records)} records)")
+        
+        print(f"\nTotal failed records: {total_failed}")
+
 
     report = {
         **report_skeleton,
