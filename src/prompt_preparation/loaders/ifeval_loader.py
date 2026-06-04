@@ -8,7 +8,7 @@ from ..prompts import IFEvalPrompt, Prompt
 
 
 class IFEvalLoader(Loader):
-    def load(self, path: Path, num_samples: int, seed: int) -> list[Prompt]:
+    def load(self, path: Path) -> list[Prompt]:
         prompts: list[Prompt] = []
 
         lines = self._load_lines(path)

@@ -8,7 +8,7 @@ from ..prompts import MaturaPrompt, Prompt
 
 
 class MaturaLoader(Loader):
-    def load(self, path: Path, num_samples: int, seed: int) -> list[Prompt]:
+    def load(self, path: Path) -> list[Prompt]:
         prompts: list[Prompt] = []
 
         lines = self._load_lines(path)

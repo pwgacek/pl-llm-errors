@@ -8,15 +8,6 @@ from ..prompts import Prompt
 from pathlib import Path
 
 class Loader(ABC):
-    @staticmethod
-    def _deterministic_sample(data: list[Any], num_samples: int, seed: int) -> list[Prompt]:
-        """Deterministically sample num_samples from prompts using the given seed."""
-        if num_samples > len(data):
-            raise ValueError(f"num_samples={num_samples} exceeds available data size {len(data)}")
-        
-        rng = __import__('random').Random(seed)
-        return rng.sample(data, num_samples)
-
     
     @staticmethod
     def _load_lines(path: Path) -> list[str]:
@@ -38,9 +29,8 @@ class Loader(ABC):
             return json.load(file)
     
     @abstractmethod
-    def load(self, path: Path, num_samples: int, seed: int) -> list[Prompt]:
+    def load(self, path: Path) -> list[Prompt]:
         """
-        Load up to num_samples prompts, deterministically if seed is set.
-        If num_samples is None, load all prompts.
+        Load prompts.
         """
         raise NotImplementedError

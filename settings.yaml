@@ -12,7 +12,6 @@ default:
     resume: None
 local:
   prompt_preparation:
-    num_questions: 100
   inference:
     model: SpeakLeash/bielik-11b-v3.0-instruct:Q6_K
     base_url: http://localhost:11434/v1
@@ -26,7 +25,6 @@ local:
 
 remote:
   prompt_preparation:
-    num_questions: 200
   inference:
     model: speakleash/Bielik-11B-v3.0-Instruct
     base_url: https://llmlab.plgrid.pl/api/v1

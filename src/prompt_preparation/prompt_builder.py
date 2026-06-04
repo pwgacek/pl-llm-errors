@@ -44,7 +44,7 @@ GENERATORS: dict[str, ErrorGenerator] = {
 DATASETS = [
     {
         "name": "bbh",
-        "url": "https://huggingface.co/datasets/pawel04/bbh-logical-deduction-seven-objects-pl/resolve/main/open.jsonl",
+        "url": "https://huggingface.co/datasets/pawel04/bbh-logical-deduction-seven-objects-pl-100/resolve/main/bbh-100.jsonl",
         "output": Path("datasets/bbh.jsonl"),
         "loader": BBHLoader,
     },
@@ -116,7 +116,7 @@ def _download_datasets() -> None:
         print("  Some downloads failed. Proceeding with available datasets.")
 
 
-def _load_datasets(num_questions: int, seed: int) -> dict[str, list[Prompt]]:
+def _load_datasets() -> dict[str, list[Prompt]]:
     print("\n=== Step 2: Loading datasets ===")
     loaded: dict[str, list[Prompt]] = {}
     for dataset in DATASETS:
@@ -126,7 +126,7 @@ def _load_datasets(num_questions: int, seed: int) -> dict[str, list[Prompt]]:
             continue
         try:
             prompts = dataset["loader"]().load(
-                path=dataset["output"], num_samples=num_questions, seed=seed
+                path=dataset["output"]
             )
             loaded[name] = prompts
             print(f"  [{name}] Loaded {len(prompts)} prompts.")
@@ -206,13 +206,11 @@ def _build_and_save_prompts(loaded: dict[str, list[Prompt]], output_dir: Path) -
 
 
 def build_prompts(
-    num_questions: int,
-    seed: int,
     output_dir: Path,
 ) -> None:
     _download_datasets()
 
-    loaded = _load_datasets(num_questions=num_questions, seed=seed)
+    loaded = _load_datasets()
     if not loaded:
         print("No datasets loaded. Nothing to build.")
         return
@@ -223,8 +221,6 @@ def build_prompts(
 
 def main() -> None:
     build_prompts(
-        num_questions=settings.prompt_preparation.num_questions,
-        seed=settings.common.seed,
         output_dir=Path(settings.common.prompt_dir),
     )
 

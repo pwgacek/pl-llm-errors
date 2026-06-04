@@ -8,11 +8,10 @@ from ..prompts import BBHPrompt, Prompt
 
 
 class BBHLoader(Loader):
-    def load(self, path: Path, num_samples: int, seed: int) -> list[Prompt]:
+    def load(self, path: Path) -> list[Prompt]:
         prompts: list[Prompt] = []
 
         lines = self._load_lines(path)
-        lines = self._deterministic_sample(lines, num_samples, seed)
 
         for line in lines:
             record = json.loads(line)
