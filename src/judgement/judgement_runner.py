@@ -11,9 +11,7 @@ from src.inference.llm_client import LLMClient
 from src.settings import settings
 from .prompts import (
     build_bbh_judge_prompt,
-    build_llmzszl_judge_prompt,
-    build_matematyka_rozszerzona_cke_judge_prompt,
-    build_polqa_judge_prompt,
+    build_matura_judge_prompt,
 )
 
 
@@ -21,27 +19,14 @@ POLISH_TZ = ZoneInfo("Europe/Warsaw")
 
 
 def _build_judge_prompt(dataset_name: str, model_answer: str, judgement_context: dict) -> str | None:
-    if dataset_name == "llmzszl":
-        return build_llmzszl_judge_prompt(
-            question=judgement_context["question"],
-            correct_answer=judgement_context["correct_answer"],
-            model_answer=model_answer,
-        )
-    if dataset_name == "polqa":
-        return build_polqa_judge_prompt(
-            question=judgement_context["question"],
-            context=judgement_context["context"],
-            correct_answer=judgement_context["correct_answer"],
-            model_answer=model_answer,
-        )
     if dataset_name == "bbh":
         return build_bbh_judge_prompt(
             question=judgement_context["question"],
             correct_answer=judgement_context["correct_answer"],
             model_answer=model_answer,
         )
-    if dataset_name == "matematyka_rozszerzona_cke":
-        return build_matematyka_rozszerzona_cke_judge_prompt(
+    if dataset_name == "matura":
+        return build_matura_judge_prompt(
             task=judgement_context["task"],
             key=judgement_context["klucz"],
             points=judgement_context["punkty"],

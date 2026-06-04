@@ -16,29 +16,6 @@ def _render(name: str, values: dict[str, str]) -> str:
     return template
 
 
-def build_llmzszl_judge_prompt(question: str, correct_answer: list[str], model_answer: str) -> str:
-    return _render(
-        "llmzszl",
-        {
-            "question": question,
-            "correct_answer": ", ".join(correct_answer),
-            "model_answer": model_answer,
-        },
-    )
-
-
-def build_polqa_judge_prompt(
-    question: str, context: str, correct_answer: list[str], model_answer: str
-) -> str:
-    return _render(
-        "polqa",
-        {
-            "question": question,
-            "context": context,
-            "correct_answer": ", ".join(correct_answer),
-            "model_answer": model_answer,
-        },
-    )
 
 
 def build_bbh_judge_prompt(
@@ -54,11 +31,11 @@ def build_bbh_judge_prompt(
     )
 
 
-def build_matematyka_rozszerzona_cke_judge_prompt(
+def build_matura_judge_prompt(
     task: str, key: str, points: int | str, model_answer: str
 ) -> str:
     return _render(
-        "matematyka_rozszerzona_cke",
+        "matura",
         {
             "task": task,
             "key": key,

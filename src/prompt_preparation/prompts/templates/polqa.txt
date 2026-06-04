@@ -1,9 +1,0 @@
-Odpowiedz na pytanie korzystając wyłącznie z dostarczonego kontekstu.
-
-Zasady:
-- zwróć jedno słowo lub krótką frazę,
-- nie odpowiadaj pełnym zdaniem,
-- nie podawaj wyjaśnień.
-
-<KONTEKST>{context}</KONTEKST>
-<PYTANIE>{question}</PYTANIE>

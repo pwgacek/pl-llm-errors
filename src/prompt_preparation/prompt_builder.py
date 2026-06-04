@@ -18,16 +18,12 @@ from .errors.base import ErrorGenerator
 from .loaders import (
     BBHLoader,
     IFEvalLoader,
-    LLMZSZLLoader,
-    MatematykaRozszerzonaCKELoader,
-    PolQALoader,
+    MaturaLoader,
 )
 from .prompts import (
     BBHPrompt,
     IFEvalPrompt,
-    LlmzszlPrompt,
-    MatematykaRozszerzonaCKEPrompt,
-    PolQAPrompt,
+    MaturaPrompt,
     Prompt,
 )
 
@@ -35,46 +31,33 @@ from src.settings import settings
 
 GENERATORS: dict[str, ErrorGenerator] = {
     "identity": IdentityGenerator(),
-    # "diacritic": DiacriticErrorGenerator(),
-    # "punctuation_all": PunctuationAllErrorGenerator(),
-    # "punctuation_inner": PunctuationInnerErrorGenerator(),
-    # "spelling_10%": SpellingErrorGenerator(rate=0.1, seed=settings.common.seed),
-    # "spelling_40%": SpellingErrorGenerator(rate=0.4, seed=settings.common.seed),
-    # "typo_10%": TypoErrorGenerator(typo_rate=0.1, seed=settings.common.seed),
+    "diacritic": DiacriticErrorGenerator(),
+    "punctuation_all": PunctuationAllErrorGenerator(),
+    "punctuation_inner": PunctuationInnerErrorGenerator(),
+    "spelling_10%": SpellingErrorGenerator(rate=0.1, seed=settings.common.seed),
+    "spelling_40%": SpellingErrorGenerator(rate=0.4, seed=settings.common.seed),
+    "typo_10%": TypoErrorGenerator(typo_rate=0.1, seed=settings.common.seed),
     "typo_40%": TypoErrorGenerator(typo_rate=0.4, seed=settings.common.seed),
 }
 
 
 DATASETS = [
-    # {
-    #     "name": "llmzszl",
-    #     "url": "https://huggingface.co/datasets/pawel04/llmzszl-open-ended/resolve/main/llmzszl-open-ended.jsonl",
-    #     "output": Path("datasets/llmzszl-open-ended.jsonl"),
-    #     "loader": LLMZSZLLoader,
-    # },
-    # {
-    #     "name": "polqa",
-    #     "url": "https://huggingface.co/datasets/ipipan/polqa/resolve/main/data/test.csv",
-    #     "output": Path("datasets/polqa.csv"),
-    #     "loader": PolQALoader,
-    # },
-
-    # {
-    #     "name": "bbh",
-    #     "url": "https://huggingface.co/datasets/pawel04/bbh-logical-deduction-seven-objects-pl/resolve/main/open.jsonl",
-    #     "output": Path("datasets/bbh.jsonl"),
-    #     "loader": BBHLoader,
-    # },
-    # {
-    #     "name": "cke",
-    #     "url": "https://huggingface.co/datasets/pawel04/otwarte-pytania-matura-cke-100/resolve/main/otwarte-pytania-matura-cke-100.jsonl",
-    #     "output": Path("datasets/otwarte-pytania-matura-cke-100.jsonl"),
-    #     "loader": MatematykaRozszerzonaCKELoader,
-    # },
+    {
+        "name": "bbh",
+        "url": "https://huggingface.co/datasets/pawel04/bbh-logical-deduction-seven-objects-pl/resolve/main/open.jsonl",
+        "output": Path("datasets/bbh.jsonl"),
+        "loader": BBHLoader,
+    },
+    {
+        "name": "matura",
+        "url": "https://huggingface.co/datasets/pawel04/otwarte-pytania-matura-cke-100/resolve/main/otwarte-pytania-matura-cke-100.jsonl",
+        "output": Path("datasets/matura.jsonl"),
+        "loader": MaturaLoader,
+    },
     {
         "name": "ifeval",
-        "url": "https://huggingface.co/datasets/pawel04/ifeval-pl/resolve/main/ifeval-pl-200.jsonl",
-        "output": Path("datasets/ifeval-pl-200.jsonl"),
+        "url": "https://huggingface.co/datasets/pawel04/ifeval-pl-200/resolve/main/ifeval-pl-200.jsonl",
+        "output": Path("datasets/ifeval.jsonl"),
         "loader": IFEvalLoader,
     },
 ]
@@ -88,30 +71,22 @@ def _download_file(url: str, output: Path, timeout: int = 120) -> None:
 
 def _serialize_judgement_context(prompt_item: Prompt) -> dict:
     """Return prompt source text, optional context, and correct answer for LLM-as-a-judge."""
-    if isinstance(prompt_item, LlmzszlPrompt):
-        return {
-            "question": prompt_item.question,
-            "correct_answer": prompt_item.answers,
-        }
-    if isinstance(prompt_item, PolQAPrompt):
-        return {
-            "question": prompt_item.question,
-            "context": prompt_item.context,
-            "correct_answer": prompt_item.answers,
-        }
     if isinstance(prompt_item, BBHPrompt):
         return {
             "question": prompt_item.text,
             "correct_answer": prompt_item.correct_order,
         }
-    if isinstance(prompt_item, MatematykaRozszerzonaCKEPrompt):
+    if isinstance(prompt_item, MaturaPrompt):
         return {
             "task": prompt_item.text,
             "klucz": prompt_item.key,
             "punkty": prompt_item.points,
         }
     if isinstance(prompt_item, IFEvalPrompt):
-        return {}
+        return {
+            "instruction_id_list": prompt_item.instruction_id_list,
+            "kwargs": prompt_item.kwargs,
+        }
     raise TypeError(f"Unknown prompt type: {type(prompt_item)}")
 
 

@@ -28,20 +28,12 @@ class IFEvalLoader(Loader):
             if not isinstance(kwargs_list, list):
                 raise ValueError("Invalid IFEval record, kwargs must be a list.")
 
-            normalized_kwargs: list[dict[str, object]] = []
-            for entry in kwargs_list:
-                if entry is None:
-                    normalized_kwargs.append({})
-                elif isinstance(entry, dict):
-                    normalized_kwargs.append({str(k): v for k, v in entry.items()})
-                else:
-                    raise ValueError("Invalid IFEval record, kwargs entries must be dicts.")
 
             prompts.append(
                 IFEvalPrompt(
                     prompt=prompt_text,
                     instruction_id_list=instruction_ids,
-                    kwargs_list=normalized_kwargs,
+                    kwargs=kwargs_list,
                 )
             )
 

@@ -4,10 +4,10 @@ import json
 from pathlib import Path
 
 from .base import Loader
-from ..prompts import MatematykaRozszerzonaCKEPrompt, Prompt
+from ..prompts import MaturaPrompt, Prompt
 
 
-class MatematykaRozszerzonaCKELoader(Loader):
+class MaturaLoader(Loader):
     def load(self, path: Path, num_samples: int, seed: int) -> list[Prompt]:
         prompts: list[Prompt] = []
 
@@ -22,7 +22,7 @@ class MatematykaRozszerzonaCKELoader(Loader):
 
             if not task_text or not key:
                 raise ValueError(
-                    "Invalid matematyka_rozszerzona_cke record, missing tresc_zadania or klucz."
+                    "Invalid matura record, missing tresc_zadania or klucz."
                 )
 
             points: int | str
@@ -32,7 +32,7 @@ class MatematykaRozszerzonaCKELoader(Loader):
                 points = str(points_raw).strip()
 
             prompts.append(
-                MatematykaRozszerzonaCKEPrompt(
+                MaturaPrompt(
                     text=task_text,
                     key=key,
                     points=points,

@@ -9,11 +9,11 @@ class IFEvalPrompt(Prompt):
         self,
         prompt: str,
         instruction_id_list: list[str],
-        kwargs_list: list[dict[str, object]],
+        kwargs: list[dict[str, object]],
     ) -> None:
         self.prompt = prompt
         self.instruction_id_list = instruction_id_list
-        self.kwargs_list = kwargs_list
+        self.kwargs = kwargs
 
     def build_prompt(self, error_generator: ErrorGenerator) -> str:
         prompt_text = error_generator.apply(self.prompt)

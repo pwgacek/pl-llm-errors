@@ -4,7 +4,7 @@ from ..errors.base import ErrorGenerator
 from .base import Prompt, render_template
 
 
-class MatematykaRozszerzonaCKEPrompt(Prompt):
+class MaturaPrompt(Prompt):
     def __init__(self, text: str, key: str, points: int | str) -> None:
         self.text = text
         self.key = key
@@ -12,4 +12,4 @@ class MatematykaRozszerzonaCKEPrompt(Prompt):
 
     def build_prompt(self, error_generator: ErrorGenerator) -> str:
         text = error_generator.apply(self.text)
-        return render_template("matematyka_rozszerzona_cke", {"text": text})
+        return render_template("matura", {"text": text})
