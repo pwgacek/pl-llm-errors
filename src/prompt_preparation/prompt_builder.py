@@ -31,13 +31,13 @@ from src.settings import settings
 
 GENERATORS: dict[str, ErrorGenerator] = {
     "identity": IdentityGenerator(),
-    # "diacritic": DiacriticErrorGenerator(),
-    # "punctuation": PunctuationAllErrorGenerator(),
+    "diacritic": DiacriticErrorGenerator(),
+    "punctuation": PunctuationAllErrorGenerator(),
     # "punctuation_all": PunctuationAllErrorGenerator(),
     # "punctuation_inner": PunctuationInnerErrorGenerator(),
-    # "spelling_10%": SpellingErrorGenerator(rate=0.1, seed=settings.common.seed),
-    # "spelling_40%": SpellingErrorGenerator(rate=0.4, seed=settings.common.seed),
-    # "typo_10%": TypoErrorGenerator(typo_rate=0.1, seed=settings.common.seed),
+    "spelling_10%": SpellingErrorGenerator(rate=0.1, seed=settings.common.seed),
+    "spelling_40%": SpellingErrorGenerator(rate=0.4, seed=settings.common.seed),
+    "typo_10%": TypoErrorGenerator(typo_rate=0.1, seed=settings.common.seed),
     "typo_40%": TypoErrorGenerator(typo_rate=0.4, seed=settings.common.seed),
 }
 
@@ -49,18 +49,18 @@ DATASETS = [
         "output": Path("datasets/bbh.jsonl"),
         "loader": BBHLoader,
     },
-    # {
-    #     "name": "matura",
-    #     "url": "https://huggingface.co/datasets/pawel04/otwarte-pytania-matura-cke-100/resolve/main/otwarte-pytania-matura-cke-100.jsonl",
-    #     "output": Path("datasets/matura.jsonl"),
-    #     "loader": MaturaLoader,
-    # },
-    # {
-    #     "name": "ifeval",
-    #     "url": "https://huggingface.co/datasets/pawel04/ifeval-pl-200/resolve/main/ifeval-pl-200.jsonl",
-    #     "output": Path("datasets/ifeval.jsonl"),
-    #     "loader": IFEvalLoader,
-    # },
+    {
+        "name": "matura",
+        "url": "https://huggingface.co/datasets/pawel04/otwarte-pytania-matura-cke-100/resolve/main/otwarte-pytania-matura-cke-100.jsonl",
+        "output": Path("datasets/matura.jsonl"),
+        "loader": MaturaLoader,
+    },
+    {
+        "name": "ifeval",
+        "url": "https://huggingface.co/datasets/pawel04/ifeval-pl-200/resolve/main/ifeval-pl-200.jsonl",
+        "output": Path("datasets/ifeval.jsonl"),
+        "loader": IFEvalLoader,
+    },
 ]
 
 def _download_file(url: str, output: Path, timeout: int = 120) -> None:
