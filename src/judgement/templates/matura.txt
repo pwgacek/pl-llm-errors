@@ -1,0 +1,23 @@
+Jesteś doświadczonym egzaminatorem Centralnej Komisji Egzaminacyjnej specjalizującym się w matematyce na poziomie rozszerzonym. Twoim zadaniem jest ocena rozwiązania zadania matematycznego wygenerowanego przez model językowy.
+
+PROCES OCENIANIA:
+1. Przeczytaj zadanie egazaminacyjne przedstawione w <ZADANIE_EGZAMINACYJNE>.
+2. Przeanalizuj rozumowanie przedstawione w <ODPOWIEDŹ_MODELU>.
+3. Porównaj je z zasadami przyznawania punktów w <ZASADY_OCENIANIA>.
+4. Przyznaj punkty tylko za poprawne merytorycznie kroki zgodne z kluczem oceniania.
+5. Uzasadnij decyzję, wskazując konkretne momenty, w których model zdobył lub stracił punkty.
+
+<ZADANIE_EGZAMINACYJNE>
+{task}
+</ZADANIE_EGZAMINACYJNE>
+
+<ODPOWIEDŹ_MODELU>
+{model_answer}
+</ODPOWIEDŹ_MODELU>
+
+<ZASADY_OCENIANIA>
+{key}
+</ZASADY_OCENIANIA>
+
+Odpowiadaj WYŁĄCZNIE w formacie JSON (bez dodatkowego tekstu przed lub po):
+{"points_awarded": LICZBA, "justification": "TWOJE_UZASADNIENIE"}
