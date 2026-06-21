@@ -1,18 +1,18 @@
 common:
   seed: 42
-  prompt_dir: results/prompts
+  prompt_dir: run-7
   answers_dir: results/answers
   judgements_dir: results/judgements
 inference:
   temperature: 0
-  model: speakleash/Bielik-11B-v3.0-Instruct
-  base_url: https://llmlab.plgrid.pl/api/v1
+  model: google/gemma-3-12B-it
+  base_url: http://localhost:8000/v1
   api_key: "@format {env[PLGRID_API_KEY]}"
-  timeout: 120
+  timeout: 200
 judgement:
   temperature: 0
   resume: None
-  model: qwen/qwen3-32b
-  base_url: https://api.groq.com/openai/v1
-  api_key: "@format {env[GROQ_API_KEY]}"
+  model: deepseek-v4-pro
+  base_url: https://api.deepseek.com
+  api_key: "@format {env[DEEP_SEEK_KEY]}"
   timeout: 60
